@@ -1,0 +1,7 @@
+.ConferenceFilter {
+  display: flex;
+}
+
+.ConferenceFilter > div{
+  margin-right: 1.5em;
+}
