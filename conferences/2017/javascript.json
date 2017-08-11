@@ -427,7 +427,9 @@
   {
     "name": "ReactFoo",
     "url": "https://reactfoo.in/2017/",
-    "date": "September 14, 2017 | August 14, 2017 | Bangalore, India |"
+    "date": "September 14, 2017"
+    "city": "Bangalore",
+    "country": "India"
   },
   {
     "name": "UtahJS",
@@ -446,7 +448,7 @@
   {
     "name": "React Boston",
     "url": "http://www.reactboston.com/",
-    "date": "September 23-24, 2017 | [July 31, 2017",
+    "date": "September 23-24, 2017",
     "city": "Boston, MA",
     "country": "USA"
   },
@@ -544,7 +546,7 @@
   {
     "name": "NodeConf Argentina",
     "url": "https://2017.nodeconf.com.ar/",
-    "date": "October 26-28, 2017 | [July 15, 2017",
+    "date": "October 26-28, 2017",
     "city": "Buenos Aires",
     "country": "Argentina "
   },
