@@ -14,32 +14,34 @@ export default class App extends Component {
     conferences: []
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    return !isEqual(this.state, nextState);
-  }
-
   componentDidMount() {
-    loadConference(this.state.filters).then( (conferences) => {
-      this.setState({conferences});
-    });
+    this.loadConference();
   }
 
-  componentWillUpdate(nextProps, nextState) {
-    loadConference(nextState.filters).then( (conferences) => {
-      this.setState({conferences});
-    });
+  loadConference = () => {
+    const {filters} = this.state;
+
+    fetch(getConferenceLink(filters))
+      .then( (result) => result.json())
+      .then( (conferences) => {
+        this.setState({conferences});
+      });
   }
 
   handleDateChange = (date) => {
     const {filters} = this.state;
 
-    this.setState({filters: {...filters, date}});
+    this.setState({
+      filters: {...filters, date}
+    }, this.loadConference);
   }
 
   handleTypeChange = (type) => {
     const {filters} = this.state;
 
-    this.setState({filters: {...filters, type}});
+    this.setState({
+      filters: {...filters, type}
+    }, this.loadConference);
   }
 
   render() {
@@ -80,9 +82,4 @@ function getConferenceLink(state) {
   const {type, date} = state;
 
   return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${date}/${type}.json`
-}
-
-function loadConference(filters) {
-  return fetch(getConferenceLink(filters))
-    .then( (result) => result.json())
 }
