@@ -57,8 +57,8 @@ export default class App extends Component {
           <Layout.Section>
             <ConferenceFilter
               date={date}
-              handleDateChange={this.handleDateChange}
-              handleTypeChange={this.handleTypeChange}
+              onDateChange={this.handleDateChange}
+              onTypeChange={this.handleTypeChange}
             />
           </Layout.Section>
           <Layout.Section>
