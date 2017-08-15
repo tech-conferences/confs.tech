@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {isEqual} from 'lodash';
 import {Link, Page, Layout, DisplayText} from '@shopify/polaris';
 
 import ConferenceList from '../ConferenceList';
@@ -44,8 +43,19 @@ export default class App extends Component {
     }, this.loadConference);
   }
 
+  showDuplicates = (conferences) => {
+    if (process.env.NODE_ENV !== 'development') { return null; }
+    return (
+      <ul>
+        {getDuplicates(conferences).map((conf) =>
+          <li>{conf.name}: {conf.url}</li>
+        )}
+      </ul>
+    );
+  }
+
   render() {
-    const {conferences, filters: {date, type}} = this.state;
+    const {conferences, filters: {date}} = this.state;
 
     return (
       <Page>
@@ -70,6 +80,7 @@ export default class App extends Component {
             </Link>
           </Layout.Section>
           <Layout.Section>
+            {this.showDuplicates(conferences)}
             <ConferenceList conferences={conferences} />
           </Layout.Section>
         </Layout>
@@ -83,3 +94,19 @@ function getConferenceLink(state) {
 
   return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${date}/${type}.json`
 }
+
+function getDuplicates(conferences) {
+  const confURLs = conferences.map((conf) => conf.url)
+  const duplicates = [];
+
+  Object.keys(conferences).forEach((key, index) => {
+    const url = conferences[key].url;
+    if (confURLs.indexOf(url, index + 1) !== -1) {
+      if (duplicates.indexOf(url) === -1) {
+        duplicates.push(conferences[key]);
+      }
+    }
+  });
+  return duplicates;
+}
+
