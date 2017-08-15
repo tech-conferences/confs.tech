@@ -18,7 +18,7 @@ export default class ConferenceFilter extends Component {
           />
           <Select
             label="Type"
-            options={['Javascript']}
+            options={['JavaScript']}
             placeholder="Select"
             onChange={onTypeChange}
             value={'Javascript'}
