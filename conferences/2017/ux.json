@@ -1,35 +1,24 @@
 [
   {
-    "name": "Design Indaba",
-    "url": "http://www.designindaba.com/tags/design-indaba-conference-2016",
-    "date": "Feb 17–19",
-    "city": " ",
-    "country": ""
-  },
-  {
     "name": "Interaction 17",
     "url": "http://interaction17.ixda.org/",
     "date": "Feb 4-8",
-    "city": " NYC"
+    "city": "New York City",
+    "country": "USA"
   },
   {
     "name": "ConveyUX",
     "url": "http://conveyux.com/",
     "date": "Feb28-March2",
-    "city": "Seattle"
+    "city": "Seattle",
+    "country": "USA"
   },
   {
     "name": "Intelligent Content",
     "url": "http://www.intelligentcontentconference.com/",
     "date": "Mar 28-30",
-    "city": "Vegas, baby"
-  },
-  {
-    "name": "Cambridge Workshop on Universal Access and Assistive Tech",
-    "url": "http://www-edc.eng.cam.ac.uk/cwuaat/",
-    "date": "March 21–23",
-    "city": " ",
-    "country": ""
+    "city": "Las Vegas",
+    "country": "USA"
   },
   {
     "name": "Customer Experience Conf",
@@ -39,31 +28,25 @@
     "country": ""
   },
   {
-    "name": "UX Burlington",
-    "url": "http://uxburlington.com/",
-    "date": "4/29/2016",
-    "city": " ",
-    "country": ""
-  },
-  {
     "name": "IA Summit ",
     "url": "http://www.iasummit.org",
     "date": "March 22-26",
-    "city": "Vancouver!",
-    "country": "!"
+    "city": "Vancouver",
+    "country": "Canada"
   },
   {
     "name": "DIBIConference",
     "url": "http://www.dibiconference.com/",
-    "date": "March 30-31",
-    "city": "",
-    "country": ""
+    "date": "November 10",
+    "city": "Newcastle",
+    "country": "UK"
   },
   {
     "name": "Clarity - design systems conf",
     "url": "http://clarityconf.com/",
-    "date": "",
-    "city": ""
+    "date": "November 28, 30",
+    "city": "San Francisco",
+    "country": "USA"
   },
   {
     "name": "WAQ",
@@ -77,41 +60,27 @@
     "url": "http://svpg.com/how-to-create-products-customers-love-2/",
     "date": "April 11–12",
     "city": "Quebec City",
-    "country": "City"
+    "country": "Canada"
   },
   {
     "name": "Unite",
     "url": "https://unite.shopify.com",
     "date": "April 20–21",
-    "city": "San Fran",
-    "country": "Fran"
+    "city": "San Fransisco",
+    "country": "USA"
   },
   {
     "name": "Write the Docs",
     "url": "http://www.writethedocs.org/",
     "date": "May 14-16",
-    "city": "San Fran",
-    "country": "Fran"
-  },
-  {
-    "name": "Design Management Conference Europe",
-    "url": "http://www.dmi.org/?Adam2016Overview",
-    "date": "May 23–25",
-    "city": "Portland, OR",
-    "country": "OR"
-  },
-  {
-    "name": "Design Science Research in Information Systems and Technologies (DESRIST) 2016 Conference",
-    "url": "https://desrist2016.wordpress.com/",
-    "date": "May 24–25",
-    "city": " ",
-    "country": ""
+    "city": "San Fransisco",
+    "country": "USA"
   },
   {
     "name": "UXPA 2017",
     "url": "http://uxpa.github.io/",
     "date": "June 5 - 8",
-    "city": "St John's, NL, Toronto!",
+    "city": "St John's, NL",
     "country": "Canada"
   },
   {
@@ -132,64 +101,36 @@
     "name": "UX Scotland",
     "url": "http://uxscotland.net/2017/",
     "date": "June 7-9 ",
-    "city": " ",
-    "country": ""
+    "city": "Scotland",
+    "country": "UK"
   },
   {
     "name": "Collective",
     "url": "http://collectiveconf.com/",
     "date": "June 8–10",
-    "city": " ",
-    "country": ""
+    "city": "Atlanta",
+    "country": "USA"
   },
   {
     "name": "UX Strat 2017",
     "url": "http://www.uxstrat.com/europe/",
     "date": "June 15-18",
     "city": "Amsterdam",
-    "country": "Amsterdam"
+    "country": "Netherlands"
   },
   {
     "name": "UXcamp Europe",
     "url": "http://www.uxcampeurope.org/",
     "date": "June 25-26",
-    "city": " ",
-    "country": ""
+    "city": "Berlin",
+    "country": "Germany"
   },
   {
     "name": "Eyeo 2017",
     "url": "http://eyeofestival.com/",
     "date": "June 26-29",
-    "city": "MINNEAPOLIS",
-    "country": "MINNEAPOLIS"
-  },
-  {
-    "name": "Design Research Society Conf",
-    "url": "http://www.drs2016.org",
-    "date": "June 27–30 ",
-    "city": "[not until 2018]",
-    "country": "]"
-  },
-  {
-    "name": "LavaCon Dublin",
-    "url": "http://lavacon.org/2016/dublin",
-    "date": "June 5-7",
-    "city": " ",
-    "country": ""
-  },
-  {
-    "name": "Internation Conference of Experience Design",
-    "url": "http://ixdc.org/2016/en/index.php",
-    "date": "June 29–July 3",
-    "city": " ",
-    "country": ""
-  },
-  {
-    "name": "What Design Can Do",
-    "url": "http://www.whatdesigncando.com/amsterdam-2016/",
-    "date": "June 30–July 1",
-    "city": "Amsterdam",
-    "country": "Amsterdam"
+    "city": "Minneapolis",
+    "country": "USA"
   },
   {
     "name": "Design and Content Conf",
@@ -199,38 +140,31 @@
     "country": "Vancouver"
   },
   {
-    "name": "AHFE 2016 ",
-    "url": "http://www.ahfe2016.org",
-    "date": "July 27–31 ",
-    "city": " ",
-    "country": ""
-  },
-  {
     "name": "UX Week",
     "url": "http://uxweek.com/",
     "date": "Aug29-Sept1",
-    "city": "San Fran",
-    "country": "Fran"
+    "city": "San Fransisco",
+    "country": "USA"
   },
   {
     "name": "The Conference",
     "url": "http://2017.theconference.se/",
     "date": "Sept 4-5",
-    "city": "Malmo, Sweden",
+    "city": "Malmo",
     "country": "Sweden"
   },
   {
     "name": "MobileHCI 2017",
     "url": "http://mobilehci.acm.org/2017/",
     "date": "Sept 4-7",
-    "city": "Vienna, Austria",
+    "city": "Vienna",
     "country": "Austria"
   },
   {
     "name": "MOBX (Mobile UX)",
     "url": "https://2017.mobxcon.com/",
     "date": "Sept 7-8",
-    "city": "Berlin, Germany",
+    "city": "Berlin",
     "country": "Germany"
   },
   {
@@ -238,49 +172,35 @@
     "url": "http://www.underconsideration.com/brandnewconference/",
     "date": "Sept 14-15",
     "city": "Chicago",
-    "country": "Chicago"
+    "country": "USA"
   },
   {
     "name": "UX Strat USA",
     "url": "http://www.uxstrat.com/usa/",
     "date": "Sept 18-20",
     "city": "Boulder, CO",
-    "country": "CO"
-  },
-  {
-    "name": "Confab Intensive",
-    "url": "http://confabevents.com/events/intensive/2016",
-    "date": "Sept 11-13",
-    "city": "Denver, CO",
-    "country": "CO"
+    "country": "USA"
   },
   {
     "name": "EuroIA",
     "url": "http://www.euroia.org/",
     "date": "Sept 28-30",
     "city": "Stockholm",
-    "country": "Stockholm"
-  },
-  {
-    "name": "Write the Docs Europe",
-    "url": "---",
-    "date": "FALL 2017",
-    "city": "",
-    "country": ""
+    "country": "Sweden"
   },
   {
     "name": "Design Leadership Conference",
     "url": "http://www.dmi.org/?page=Conferences",
     "date": "Sept 24-26",
     "city": "Minneapolis",
-    "country": "Minneapolis"
+    "country": "USA"
   },
   {
     "name": "Fluxible ",
     "url": "http://www.fluxible.ca/",
     "date": "Sept 18-24",
     "city": "Waterloo, ON",
-    "country": "ON"
+    "country": "Canada"
   },
   {
     "name": "Design Matters '17",
@@ -297,52 +217,38 @@
     "country": "India"
   },
   {
-    "name": "Content Strategy Forum",
-    "url": "http://contentark.com.au/content-strategy-forum-2016/",
-    "date": "Unknown",
-    "city": " ",
-    "country": ""
-  },
-  {
-    "name": "GIANT Conference",
-    "url": "http://www.giantconf.com/details/",
-    "date": "Oct 17–19",
-    "city": " ",
-    "country": ""
-  },
-  {
     "name": "SmashingConf",
     "url": "https://smashingconf.com/barcelona-2017/",
     "date": "Oct 17-18",
-    "city": "Barcelona, Spain",
+    "city": "Barcelona",
     "country": "Spain"
   },
   {
     "name": "EPIC Conf",
     "url": "https://www.epicpeople.org/",
     "date": "Oct 22-25",
-    "city": "Montreal!",
-    "country": "!"
+    "city": "Montreal",
+    "country": "Canada"
   },
   {
     "name": "Design Thinkers",
     "url": "https://www.designthinkers.com/News/2017/DesignThinkers-Montreal-2017.aspx",
     "date": "Oct 19-20",
     "city": "Montreal",
-    "country": "Montreal"
+    "country": "Canada"
   },
   {
     "name": "LavaCon",
     "url": "https://lavacon.org/2017/portland/",
     "date": "Nov 5-8",
     "city": "Portland, Oregon",
-    "country": "Oregon"
+    "country": "USA"
   },
   {
     "name": "Productized",
     "url": "http://www.productized.co/",
     "date": "October?",
-    "city": "Lisbon, Portugal",
+    "city": "Lisbon",
     "country": "Portugal"
   },
   {
@@ -350,20 +256,13 @@
     "url": "http://poptech.org/conferences",
     "date": "October 19-21",
     "city": "Camden, Maine",
-    "country": "Maine"
-  },
-  {
-    "name": "Service Design Network Conf",
-    "url": "http://www.service-design-network.org/conferences/",
-    "date": "Oct / Nov?",
-    "city": " ",
-    "country": ""
+    "country": "USA"
   },
   {
     "name": "Beyond Tellerrand",
     "url": "https://beyondtellerrand.com/",
     "date": "Nov 6-8",
-    "city": "Berlin, Germany",
+    "city": "Berlin",
     "country": "Germany"
   },
   {
@@ -371,27 +270,20 @@
     "url": "http://canux.io/",
     "date": "Nov 3-5",
     "city": "Ottawa",
-    "country": "Ottawa"
+    "country": "Canada"
   },
   {
     "name": "Gather North",
     "url": "https://gathernorth.com/",
     "date": "Nov 17-19",
     "city": "Montebello, Quebec",
-    "country": "Quebec"
+    "country": "Canada"
   },
   {
     "name": "Taxonomy boot camp",
     "url": "http://www.taxonomybootcamp.com/2017/default.aspx",
     "date": "Nov 6-7",
     "city": "Washington, DC",
-    "country": "DC"
-  },
-  {
-    "name": "Delight 2018",
-    "url": "http://delight.us/conference/",
-    "date": "May 2018",
-    "city": " ",
-    "country": ""
+    "country": "USA"
   }
 ]
