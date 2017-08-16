@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import moment from 'moment';
+// import moment from 'moment';
 
 export default class ConferenceItem extends Component {
   render() {
     const {name, url, city, country, date} = this.props;
-    const confDate = moment(date, 'YYYY-MM-DD');
+    // const confDate = moment(date, 'YYYY-MM-DD');
     // {confDate.format('dddd MMMM d')}
 
     return (
