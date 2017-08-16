@@ -4,7 +4,7 @@ import './ConferenceFilter.css';
 
 export default class ConferenceFilter extends Component {
   render() {
-    const {date, onDateChange, onTypeChange} = this.props;
+    const {date, type, onDateChange, onTypeChange} = this.props;
 
     return (
       <Card sectioned>
@@ -21,7 +21,7 @@ export default class ConferenceFilter extends Component {
             options={['JavaScript', 'UX', 'Ruby']}
             placeholder="Select"
             onChange={onTypeChange}
-            value={'Javascript'}
+            value={type}
           />
         </div>
       </Card>

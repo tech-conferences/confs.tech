@@ -58,7 +58,7 @@ export default class App extends Component {
   }
 
   render() {
-    const {conferences, filters: {date}} = this.state;
+    const {conferences, filters: {date, type}} = this.state;
 
     return (
       <Page>
@@ -70,6 +70,7 @@ export default class App extends Component {
           <Layout.Section>
             <ConferenceFilter
               date={date}
+              type={type}
               onDateChange={this.handleDateChange}
               onTypeChange={this.handleTypeChange}
             />
@@ -85,6 +86,17 @@ export default class App extends Component {
           <Layout.Section>
             {this.showDuplicates(conferences)}
             <ConferenceList conferences={conferences} />
+          </Layout.Section>
+          <Layout.Section>
+            <p>
+              Maintained by&nbsp;
+              <Link
+                url="https://github.com/nimzco"
+                external
+              >
+                @nimzco
+              </Link>
+            </p>
           </Layout.Section>
         </Layout>
       </Page>

@@ -7,7 +7,7 @@ export default class ConferenceList extends Component {
   renderTable = () => {
     const {conferences} = this.props;
 
-    if (conferences.length == 0) {
+    if (conferences.length === 0) {
       return (<div>No conferences!</div>)
     } else {
       return (
