@@ -21,10 +21,13 @@ export default class App extends Component {
     const {filters} = this.state;
 
     fetch(getConferenceLink(filters))
-      .then( (result) => result.json())
-      .then( (conferences) => {
+      .then((result) => result.json())
+      .then((conferences) => {
         this.setState({conferences});
-      });
+      })
+      .catch((error) => {
+        console.error(error);
+      })
   }
 
   handleDateChange = (date) => {
@@ -91,8 +94,7 @@ export default class App extends Component {
 
 function getConferenceLink(state) {
   const {type, date} = state;
-
-  return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${date}/${type}.json`
+  return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${date}/${type.toLocaleLowerCase()}.json`
 }
 
 function getDuplicates(conferences) {

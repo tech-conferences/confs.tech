@@ -11,14 +11,14 @@ export default class ConferenceFilter extends Component {
         <div className="ConferenceFilter">
           <Select
             label="Date"
-            options={['2017', '2016']}
+            options={['2018', '2017', '2016', '2015', '2014']}
             placeholder="Select"
             onChange={onDateChange}
             value={date}
           />
           <Select
             label="Type"
-            options={['JavaScript']}
+            options={['JavaScript', 'UX', 'Ruby']}
             placeholder="Select"
             onChange={onTypeChange}
             value={'Javascript'}

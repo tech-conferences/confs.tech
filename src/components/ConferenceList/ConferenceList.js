@@ -4,11 +4,13 @@ import ConferenceItem from '../ConferenceItem';
 import './ConferenceList.css';
 
 export default class ConferenceList extends Component {
-  render() {
+  renderTable = () => {
     const {conferences} = this.props;
 
-    return (
-      <Card sectioned>
+    if (conferences.length == 0) {
+      return (<div>No conferences!</div>)
+    } else {
+      return (
         <table className="ConferenceList">
           <thead className="ConferenceList__head">
             <tr>
@@ -18,9 +20,19 @@ export default class ConferenceList extends Component {
             </tr>
           </thead>
           <tbody>
-            {conferences.map((conf) => <ConferenceItem key={conf.url} {...conf} />)}
+            {conferences.map((conf) => <ConferenceItem key={`${conf.url} ${conf.date}`} {...conf} />)}
           </tbody>
         </table>
+      )
+    }
+  }
+
+  render() {
+    const {conferences} = this.props;
+
+    return (
+      <Card sectioned>
+        {this.renderTable()}
       </Card>
     );
   }
