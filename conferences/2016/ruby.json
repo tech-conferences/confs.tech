@@ -1,0 +1,330 @@
+[
+  {
+    "name": "RubyConf Taiwan",
+    "url": "",
+    "date": "December 2-3, 2016",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "twitter": "https://twitter.com/rubyconftw"
+  },
+  {
+    "name": "RubyDay",
+    "url": "http://www.rubyday.it/",
+    "date": "November 25-26, 2016",
+    "city": "Florence",
+    "country": "Italy",
+    "twitter": "https://twitter.com/rubydayit"
+  },
+  {
+    "name": "Rail Israel",
+    "url": "",
+    "date": "November 14-15, 2016",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "twitter": "https://twitter.com/railsisrael"
+  },
+  {
+    "name": "RubyConf",
+    "url": "http://rubyconf.org/",
+    "date": "November 10-12, 2016",
+    "city": "Cincinnati",
+    "country": "OH",
+    "twitter": "https://twitter.com/rubyconf"
+  },
+  {
+    "name": "Keep Ruby Weird",
+    "url": "http://keeprubyweird.com/",
+    "date": "October 28, 2016",
+    "city": "Austin",
+    "country": "TX",
+    "twitter": "https://twitter.com/keeprubyweird"
+  },
+  {
+    "name": "RubyConf Portugal",
+    "url": "http://rubyconf.pt/",
+    "date": "October 27-28, 2016",
+    "city": "Braga",
+    "country": "Portugal",
+    "twitter": "https://twitter.com/rubyconfpt"
+  },
+  {
+    "name": "London Ruby Unconference",
+    "url": "http://www.eventbrite.com/e/london-ruby-unconference-tickets-27663867372?aff=github",
+    "date": "October 22, 2016",
+    "city": "London",
+    "country": "UK",
+    "twitter": "https://twitter.com/rubyunconf"
+  },
+  {
+    "name": "RailsClub",
+    "url": "http://railsclub.ru/en/main.html",
+    "date": "October 22, 2016",
+    "city": "Moscow",
+    "country": "Russia",
+    "twitter": "https://twitter.com/railsclub_ru"
+  },
+  {
+    "name": "Conferencia Rails",
+    "url": "",
+    "date": "October 14-15, 2016",
+    "city": "Madrid",
+    "country": "Spain",
+    "twitter": "https://twitter.com/conferenciaror"
+  },
+  {
+    "name": "RubyConf Brazil",
+    "url": "http://www.rubyconf.com.br/",
+    "date": "September 23-24, 2016",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "twitter": "https://twitter.com/rubyconfbr"
+  },
+  {
+    "name": "EuRuKo",
+    "url": "http://euruko2016.org/",
+    "date": "September 23-24, 2016",
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "twitter": "https://twitter.com/euruko"
+  },
+  {
+    "name": "Rocky Mountain Ruby",
+    "url": "http://rockymtnruby.com/",
+    "date": "September 21-23, 2016",
+    "city": "Boulder",
+    "country": "CO",
+    "twitter": "https://twitter.com/rockymtnruby"
+  },
+  {
+    "name": "WindyCityRails",
+    "url": "http://www.windycityrails.org/",
+    "date": "September 15-16, 2016",
+    "city": "Chicago",
+    "country": "IL",
+    "twitter": "https://twitter.com/windycityrails"
+  },
+  {
+    "name": "RubyKaigi",
+    "url": "http://rubykaigi.org/",
+    "date": "September 8-10, 2016",
+    "city": "Kyoto",
+    "country": "Japan",
+    "twitter": "https://twitter.com/rubykaigi"
+  },
+  {
+    "name": "RubyConf Colombia",
+    "url": "http://www.rubyconf.co/",
+    "date": "September 2-3, 2016",
+    "city": "Medellin",
+    "country": "Colombia",
+    "twitter": "https://twitter.com/rubyconfco"
+  },
+  {
+    "name": "Tech Day by GURU-PR",
+    "url": "http://www.gurupr.org/eventos/2-tech-day-do-guru-pr",
+    "date": "August 20, 2016",
+    "city": "Curitiba",
+    "country": "Brazil",
+    "twitter": "https://twitter.com/guru_pr"
+  },
+  {
+    "name": "RubyConf KL",
+    "url": "http://www.rubyconf.my/",
+    "date": "August 13, 2016",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "twitter": "https://twitter.com/rubyconfmy"
+  },
+  {
+    "name": "Deccan Ruby Conference",
+    "url": "http://www.deccanrubyconf.org/",
+    "date": "August 6, 2016",
+    "city": "Pune",
+    "country": "India",
+    "twitter": "https://twitter.com/deccanrubyconf"
+  },
+  {
+    "name": "Brighton Ruby Conference",
+    "url": "http://brightonruby.com/",
+    "date": "July 8, 2016",
+    "city": "Brighton",
+    "country": "UK",
+    "twitter": "https://twitter.com/brightonruby"
+  },
+  {
+    "name": "OpenCommerce Conf",
+    "url": "http://opencommerceconf.org/",
+    "date": "June 28-29, 2016",
+    "city": "Rise",
+    "country": "New York City",
+    "twitter": "https://twitter.com/opencommerce_"
+  },
+  {
+    "name": "GORUCO (Gotham Ruby Conference)",
+    "url": "http://goruco.com/",
+    "date": "June 25, 2016",
+    "city": "New York",
+    "country": "NY",
+    "twitter": "https://twitter.com/goruco"
+  },
+  {
+    "name": "GrillRB",
+    "url": "",
+    "date": "June 25-26, 2016",
+    "city": "Wrocław",
+    "country": "Poland",
+    "twitter": "https://twitter.com/grill_rb"
+  },
+  {
+    "name": "RedDotRubyConf",
+    "url": "http://www.reddotrubyconf.com/",
+    "date": "June 23-24, 2016",
+    "city": "",
+    "country": "Singapore",
+    "twitter": "https://twitter.com/reddotrubyconf"
+  },
+  {
+    "name": "NordicRuby",
+    "url": "http://www.nordicruby.org/",
+    "date": "June 17-19, 2016",
+    "city": "",
+    "country": "Stockholm",
+    "twitter": "https://twitter.com/nordicruby"
+  },
+  {
+    "name": "Ruby for Good",
+    "url": "http://www.rubyforgood.org/",
+    "date": "June 16-19, 2016",
+    "city": "Washington",
+    "country": "DC",
+    "twitter": "https://twitter.com/rubyforgood"
+  },
+  {
+    "name": "RubyC",
+    "url": "http://rubyc.eu/",
+    "date": "June 4-5, 2016",
+    "city": "Kiev",
+    "country": "Ukraine",
+    "twitter": "https://twitter.com/rubyc_eu"
+  },
+  {
+    "name": "RubyNation",
+    "url": "http://www.rubynation.org/",
+    "date": "June 3-4, 2016",
+    "city": "Washington",
+    "country": "DC",
+    "twitter": "https://twitter.com/rubynation"
+  },
+  {
+    "name": "Rails Pacific",
+    "url": "http://www.railspacific.com/",
+    "date": "May 20-21, 2016",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "twitter": "https://twitter.com/railspacific"
+  },
+  {
+    "name": "RailsConf",
+    "url": "http://railsconf.com/",
+    "date": "May 4-6, 2016",
+    "city": "Kansas City",
+    "country": "MO",
+    "twitter": "https://twitter.com/railsconf"
+  },
+  {
+    "name": "RubyConfBY",
+    "url": "http://rubyconference.by/en/",
+    "date": "April 24, 2016",
+    "city": "Minsk",
+    "country": "Belarus",
+    "twitter": "https://twitter.com/rubyconfby"
+  },
+  {
+    "name": "RubyConfLT",
+    "url": "http://rubyconf.lt/",
+    "date": "April 23, 2016",
+    "city": "Vilnius",
+    "country": "Lithuania",
+    "twitter": "https://twitter.com/rubyconflt"
+  },
+  {
+    "name": "Rubyconf Philippines",
+    "url": "http://rubyconf.ph/",
+    "date": "April 7-9, 2016",
+    "city": "Manila",
+    "country": "Philippines",
+    "twitter": "https://twitter.com/rubyconfph"
+  },
+  {
+    "name": "Ancient City Ruby",
+    "url": "http://www.ancientcityruby.com/",
+    "date": "April 6-8, 2016",
+    "city": "St. Augustine",
+    "country": "FL",
+    "twitter": "https://twitter.com/ancientcityruby"
+  },
+  {
+    "name": "Ruby on Ales",
+    "url": "",
+    "date": "March 31 & April 1, 2016",
+    "city": "Bend",
+    "country": "Oregon",
+    "twitter": "https://twitter.com/rbonales"
+  },
+  {
+    "name": "MountainWest RubyConf",
+    "url": "http://mtnwestrubyconf.org/2016/",
+    "date": "March 21-22, 2016",
+    "city": "Salt Lake City",
+    "country": "UT",
+    "twitter": "https://twitter.com/mwrc"
+  },
+  {
+    "name": "RubyConfIndia",
+    "url": "http://rubyconfindia.org/",
+    "date": "March 19-20, 2016",
+    "city": "Kochi",
+    "country": "India",
+    "twitter": "https://twitter.com/rubyconfindia"
+  },
+  {
+    "name": "wroc_love.rb",
+    "url": "http://wrocloverb.com/",
+    "date": "March 11-13, 2016",
+    "city": "Wrocław",
+    "country": "Poland",
+    "twitter": "https://twitter.com/wrocloverb"
+  },
+  {
+    "name": "Bath Ruby Conference",
+    "url": "http://2016.bathruby.org/",
+    "date": "March 11, 2016",
+    "city": "Bath",
+    "country": "UK",
+    "twitter": "https://twitter.com/bathruby"
+  },
+  {
+    "name": "RubyConf Australia",
+    "url": "http://www.rubyconf.org.au/2016",
+    "date": "February 10-13, 2016",
+    "city": "Gold Coast",
+    "country": "Australia",
+    "twitter": "https://twitter.com/rubyconf_au"
+  },
+  {
+    "name": "Rubyfuza",
+    "url": "http://www.rubyfuza.org/",
+    "date": "February 4-5, 2016",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "twitter": "https://twitter.com/rubyfuza"
+  },
+  {
+    "name": "Ruby devroom at FOSDEM",
+    "url": "http://fosdem.rubybelgium.be/",
+    "date": "January 31, 2016",
+    "city": "Brussels",
+    "country": "Belgium",
+    "twitter": "https://twitter.com/ruby_fosdem"
+  }
+]

@@ -1,0 +1,394 @@
+[
+  {
+    "name": "RubyConf",
+    "url": "http://rubyconf.org/",
+    "date": "November 17-19, 2014",
+    "city": "San Diego",
+    "country": "CA",
+    "twitter": "https://twitter.com/rubyconf"
+  },
+  {
+    "name": "RubyWorld Conference",
+    "url": "http://www.rubyworld-conf.org/",
+    "date": "November 13-14, 2014",
+    "city": "Matsue",
+    "country": "Japan",
+    "twitter": "https://twitter.com/rubyworldconf"
+  },
+  {
+    "name": "RailsIsrael",
+    "url": "http://railsisrael2014.events.co.il/",
+    "date": "November 4-5, 2014",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "twitter": "https://twitter.com/fogelmania"
+  },
+  {
+    "name": "RubyConf Argentina",
+    "url": "http://rubyconfargentina.org/",
+    "date": "October 24-25, 2014",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "twitter": "https://twitter.com/rubyconfar"
+  },
+  {
+    "name": "Keep Ruby Weird",
+    "url": "http://keeprubyweird.com/",
+    "date": "October 24, 2014",
+    "city": "Austin",
+    "country": "TX",
+    "twitter": "https://twitter.com/keeprubyweird"
+  },
+  {
+    "name": "RubyConf Portugal",
+    "url": "http://rubyconf.pt/",
+    "date": "October 13-14, 2014",
+    "city": "Braga",
+    "country": "Portugal",
+    "twitter": "https://twitter.com/rubyconfpt"
+  },
+  {
+    "name": "Ruby DCamp",
+    "url": "http://rubydcamp.org/",
+    "date": "October 10-12, 2014",
+    "city": "Prince William Forest Park",
+    "country": "VA",
+    "twitter": "https://twitter.com/ruby_dcamp"
+  },
+  {
+    "name": "Nickel City Ruby Conference",
+    "url": "http://nickelcityruby.com/",
+    "date": "October 3-4, 2014",
+    "city": "Buffalo",
+    "country": "NY",
+    "twitter": "https://twitter.com/nickelcityruby"
+  },
+  {
+    "name": "ArrrrCamp",
+    "url": "http://arrrrcamp.be/",
+    "date": "October 2-3, 2014",
+    "city": "Ghent",
+    "country": "Belgium",
+    "twitter": "https://twitter.com/arrrrcamp"
+  },
+  {
+    "name": "RailsClub",
+    "url": "http://railsclub.ru/",
+    "date": "September 27, 2014",
+    "city": "Moscow",
+    "country": "Russia",
+    "twitter": "https://twitter.com/railsclub_ru"
+  },
+  {
+    "name": "Rails Pacific",
+    "url": "http://www.railspacific.com/",
+    "date": "September 26-27, 2014",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "twitter": "https://twitter.com/railspacific"
+  },
+  {
+    "name": "Rocky Mountain Ruby Conference",
+    "url": "http://rockymtnruby.com/",
+    "date": "September 25-26, 2014",
+    "city": "Boulder",
+    "country": "CO",
+    "twitter": "https://twitter.com/rockymtnruby"
+  },
+  {
+    "name": "Golden Gate Ruby Conference",
+    "url": "",
+    "date": "September 19-20, 2014",
+    "city": "San Francisco",
+    "country": "CA",
+    "twitter": "https://twitter.com/gogaruco"
+  },
+  {
+    "name": "RubyKaigi",
+    "url": "http://rubykaigi.org/",
+    "date": "September 18-20, 2014",
+    "city": "Tokyo",
+    "country": "Japan",
+    "twitter": "https://twitter.com/rubykaigi"
+  },
+  {
+    "name": "Barcelona Ruby Conf",
+    "url": "http://www.baruco.org/",
+    "date": "September 11-13, 2014",
+    "city": "Barcelona",
+    "country": "Spain",
+    "twitter": "https://twitter.com/baruco"
+  },
+  {
+    "name": "Frozen Rails",
+    "url": "http://frozenrails.eu/",
+    "date": "September 11-12, 2014",
+    "city": "Helsinki",
+    "country": "Finland",
+    "twitter": "https://twitter.com/frozenrails"
+  },
+  {
+    "name": "WindyCityRails",
+    "url": "http://www.windycityrails.org/",
+    "date": "September 4-5, 2014",
+    "city": "Chicago",
+    "country": "IL",
+    "twitter": "https://twitter.com/windycityrails"
+  },
+  {
+    "name": "RubyConf Brazil",
+    "url": "http://www.rubyconf.com.br/",
+    "date": "August 28-29, 2014",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "twitter": "https://twitter.com/rubyconfbr"
+  },
+  {
+    "name": "RedFrogConf",
+    "url": "http://ruby.froscon.org/",
+    "date": "August 23-24, 2014",
+    "city": "Sankt Augustin",
+    "country": "Germany",
+    "twitter": "https://twitter.com/redfrogconf"
+  },
+  {
+    "name": "Madison+ Ruby",
+    "url": "http://madisonpl.us/ruby/",
+    "date": "August 22-23, 2014",
+    "city": "Madison",
+    "country": "WI",
+    "twitter": "https://twitter.com/madisonruby"
+  },
+  {
+    "name": "Cascadia Ruby",
+    "url": "http://cascadiaruby.com/",
+    "date": "August 11-12, 2014",
+    "city": "Portland",
+    "country": "OR",
+    "twitter": "https://twitter.com/cascadiaruby"
+  },
+  {
+    "name": "JRubyConf EU",
+    "url": "http://jrubyconf.eu/",
+    "date": "August 1, 2014",
+    "city": "Potsdam",
+    "country": "Germany",
+    "twitter": "https://twitter.com/jrubyconfeu"
+  },
+  {
+    "name": "eurucamp",
+    "url": "http://2014.eurucamp.org/",
+    "date": "August 1-3, 2014",
+    "city": "Potsdam",
+    "country": "Germany",
+    "twitter": "https://twitter.com/eurucamp"
+  },
+  {
+    "name": "Burlington Ruby Conference",
+    "url": "http://burlingtonruby.github.io/conference/",
+    "date": "August 1-3, 2014",
+    "city": "Burlington",
+    "country": "VT",
+    "twitter": "https://twitter.com/btvrubyconf"
+  },
+  {
+    "name": "Brighton Ruby Conf",
+    "url": "http://brightonruby.com/",
+    "date": "July 21, 2014",
+    "city": "Brighton",
+    "country": "UK",
+    "twitter": "https://twitter.com/brightonruby"
+  },
+  {
+    "name": "Deccan Ruby Conference",
+    "url": "http://www.deccanrubyconf.org/",
+    "date": "July 19, 2014",
+    "city": "Pune",
+    "country": "India",
+    "twitter": "https://twitter.com/deccanrubyconf"
+  },
+  {
+    "name": "RedDotRubyConf",
+    "url": "http://reddotrubyconf.com/",
+    "date": "June 26-27, 2014",
+    "city": "",
+    "country": "Singapore",
+    "twitter": "https://twitter.com/reddotrubyconf"
+  },
+  {
+    "name": "Gotham Ruby Conference",
+    "url": "http://goruco.com/",
+    "date": "June 21, 2014",
+    "city": "New York",
+    "country": "NY",
+    "twitter": "https://twitter.com/goruco"
+  },
+  {
+    "name": "Ruby Lugdunum",
+    "url": "http://rulu.eu/",
+    "date": "June 19-20, 2014",
+    "city": "Lyon",
+    "country": "France",
+    "twitter": "https://twitter.com/rulu"
+  },
+  {
+    "name": "RubyNation",
+    "url": "http://www.rubynation.org/",
+    "date": "June 6-7, 2014",
+    "city": "Washington",
+    "country": "DC",
+    "twitter": "https://twitter.com/rubynation"
+  },
+  {
+    "name": "Ruby Conference Kiev",
+    "url": "http://rubyc.eu/",
+    "date": "May 31-June 1, 2014",
+    "city": "Kiev",
+    "country": "Ukraine",
+    "twitter": "https://twitter.com/rubyc_eu"
+  },
+  {
+    "name": "RubyMotion #inspect",
+    "url": "http://www.rubymotion.com/conference/2014/",
+    "date": "May 28-29, 2014",
+    "city": "San Francisco",
+    "country": "CA",
+    "twitter": "https://twitter.com/rubymotion"
+  },
+  {
+    "name": "RubyConf Uruguay",
+    "url": "",
+    "date": "May 23-24, 2014",
+    "city": "Montevideo",
+    "country": "Uruguay",
+    "twitter": "https://twitter.com/rubyconfuruguay"
+  },
+  {
+    "name": "Scottish Ruby Conf",
+    "url": "http://scottishrubyconference.com/",
+    "date": "May 12-13, 2014",
+    "city": "Perthshire",
+    "country": "Scotland",
+    "twitter": "https://twitter.com/scotrubyconf"
+  },
+  {
+    "name": "RubyConf Taiwan",
+    "url": "http://rubyconf.tw/",
+    "date": "April 25-26, 2014",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "twitter": "https://twitter.com/rubytaiwan"
+  },
+  {
+    "name": "Abril Pro Ruby",
+    "url": "http://abrilproruby.com/",
+    "date": "April 24-27, 2014",
+    "city": "Porto de Galinhas",
+    "country": "Brazil",
+    "twitter": "https://twitter.com/abrilproruby"
+  },
+  {
+    "name": "RailsConf",
+    "url": "http://www.railsconf.com/",
+    "date": "April 22-25, 2014",
+    "city": "Chicago",
+    "country": "IL",
+    "twitter": "https://twitter.com/railsconf"
+  },
+  {
+    "name": "Ancient City Ruby",
+    "url": "http://www.ancientcityruby.com/",
+    "date": "April 3-4, 2014",
+    "city": "St. Augustine",
+    "country": "FL",
+    "twitter": "https://twitter.com/ancientcityruby"
+  },
+  {
+    "name": "RubyConf Philippines",
+    "url": "http://rubyconf.ph/",
+    "date": "March 28-29, 2014",
+    "city": "Manila",
+    "country": "Philippines",
+    "twitter": "https://twitter.com/rubyconfph"
+  },
+  {
+    "name": "RubyConf India",
+    "url": "http://rubyconfindia.org/",
+    "date": "March 22-23, 2014",
+    "city": "Goa",
+    "country": "India",
+    "twitter": "https://twitter.com/rubyconfindia"
+  },
+  {
+    "name": "MountainWest RubyConf",
+    "url": "http://mtnwestrubyconf.org/",
+    "date": "March 20-21, 2014",
+    "city": "Salt Lake City",
+    "country": "UT",
+    "twitter": "https://twitter.com/mwrc"
+  },
+  {
+    "name": "wroc_love.rb",
+    "url": "http://wrocloverb.com/",
+    "date": "March 14-16, 2014",
+    "city": "Wrocław",
+    "country": "Poland",
+    "twitter": "https://twitter.com/wrocloverb"
+  },
+  {
+    "name": "Ruby on Ales",
+    "url": "",
+    "date": "March 6-7, 2014",
+    "city": "Bend",
+    "country": "OR",
+    "twitter": "https://twitter.com/rbonales"
+  },
+  {
+    "name": "RubySauna",
+    "url": "",
+    "date": "February 27, 2014",
+    "city": "Oulu",
+    "country": "Finland",
+    "twitter": "https://twitter.com/rubysauna"
+  },
+  {
+    "name": "Big Ruby",
+    "url": "",
+    "date": "February 20-21, 2014",
+    "city": "Dallas",
+    "country": "TX",
+    "twitter": "https://twitter.com/bigrubyconf"
+  },
+  {
+    "name": "Ruby Conf Australia",
+    "url": "http://www.rubyconf.org.au/",
+    "date": "February 20-21, 2014",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "https://twitter.com/rubyconf_au"
+  },
+  {
+    "name": "Los Angeles Ruby Conference",
+    "url": "",
+    "date": "February 8, 2014",
+    "city": "Los Angeles",
+    "country": "CA",
+    "twitter": "https://twitter.com/larubyconf"
+  },
+  {
+    "name": "Rubyfuza",
+    "url": "http://rubyfuza.org/",
+    "date": "February 6-8, 2014",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "twitter": "https://twitter.com/rubyfuza"
+  },
+  {
+    "name": "Garden City RubyConf",
+    "url": "http://www.gardencityruby.org/",
+    "date": "January 3-4, 2014",
+    "city": "Bangalore",
+    "country": "India",
+    "twitter": "https://twitter.com/gardencityrb"
+  }
+]

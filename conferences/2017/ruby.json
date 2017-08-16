@@ -1,0 +1,138 @@
+[
+  {
+    "name": "Brighton Ruby Conf",
+    "url": "http://brightonruby.com/",
+    "date": "July 7, 2017",
+    "city": "Brighton",
+    "country": "UK",
+    "twitter": "https://twitter.com/brightonruby"
+  },
+  {
+    "name": "GrillRB",
+    "url": "http://grillrb.com/",
+    "date": "July 1 - 2, 2017",
+    "city": "Wrocław",
+    "country": "PL",
+    "twitter": "https://twitter.com/grill_rb"
+  },
+  {
+    "name": "GORUCO",
+    "url": "http://goruco.com/",
+    "date": "June 24, 2017",
+    "city": "New York",
+    "country": "NY",
+    "twitter": "https://twitter.com/goruco"
+  },
+  {
+    "name": "RedDotRubyConf",
+    "url": "http://www.reddotrubyconf.com/",
+    "date": "June 22-23, 2017",
+    "city": "",
+    "country": "Singapore",
+    "twitter": "https://twitter.com/reddotrubyconf"
+  },
+  {
+    "name": "RubyNation",
+    "url": "http://www.rubynation.org/",
+    "date": "June 16, 2017",
+    "city": "Arlington",
+    "country": "Virginia",
+    "twitter": "https://twitter.com/rubynation"
+  },
+  {
+    "name": "RubyConf EA",
+    "url": "http://rubyconf.nairuby.org/",
+    "date": "June 8-10, 2017",
+    "city": "Nairobi",
+    "country": "Kenya",
+    "twitter": "https://twitter.com/nairubyke"
+  },
+  {
+    "name": "RubyC",
+    "url": "http://rubyc.eu/",
+    "date": "June 3-4, 2017",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "twitter": "https://twitter.com/rubyc_eu"
+  },
+  {
+    "name": "RailsConf",
+    "url": "http://www.railsconf.com/",
+    "date": "April 25-27, 2017",
+    "city": "Phoenix",
+    "country": "AZ",
+    "twitter": "https://twitter.com/railsconf"
+  },
+  {
+    "name": "RubyHACK",
+    "url": "http://rubyhack.com/",
+    "date": "April 20-21, 2017",
+    "city": "Salt Lake City",
+    "country": "Utah",
+    "twitter": "https://twitter.com/utrubyhack"
+  },
+  {
+    "name": "RubyConfBY",
+    "url": "http://rubyconference.by/en/",
+    "date": "April 2, 2017",
+    "city": "Minsk",
+    "country": "Belarus",
+    "twitter": "https://twitter.com/rubyconfby"
+  },
+  {
+    "name": "RubyConfLT",
+    "url": "https://rubyconf.lt/",
+    "date": "April 1, 2017",
+    "city": "Vilnius",
+    "country": "Lithuania",
+    "twitter": "https://twitter.com/rubyconflt"
+  },
+  {
+    "name": "wroc_love.rb",
+    "url": "http://www.wrocloverb.com/",
+    "date": "March 17-19, 2017",
+    "city": "Wrocław",
+    "country": "Poland",
+    "twitter": "https://twitter.com/wrocloverb"
+  },
+  {
+    "name": "RubyConf Philippines",
+    "url": "http://rubyconf.ph/",
+    "date": "March 16-18, 2017",
+    "city": "Bohol",
+    "country": "Philippines",
+    "twitter": "https://twitter.com/rubyconfph"
+  },
+  {
+    "name": "Ruby Conf AU",
+    "url": "http://www.rubyconf.org.au/2017",
+    "date": "February 9-10, 2017",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "https://twitter.com/rubyconf_au"
+  },
+  {
+    "name": "Ruby devroom at FOSDEM",
+    "url": "http://fosdem.rubybelgium.be/",
+    "date": "February 3-4, 2017",
+    "city": "Brussels",
+    "country": "Belgium",
+    "twitter": "https://twitter.com/ruby_fosdem"
+  },
+  {
+    "name": "Rubyfuza",
+    "url": "http://www.rubyfuza.org/",
+    "date": "February 2-4, 2017",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "twitter": "https://twitter.com/rubyfuza"
+  },
+  {
+    "name": "Ruby Conf India",
+    "url": "http://rubyconfindia.org/",
+    "date": "January 27-29, 2017",
+    "city": "Kochi",
+    "country": "India",
+    "twitter": "https://twitter.com/rubyconfindia"
+  }
+]
