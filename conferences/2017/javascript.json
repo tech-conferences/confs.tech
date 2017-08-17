@@ -2,643 +2,735 @@
   {
     "name": "Budapest NodeConf 2017",
     "url": "https://nodeconf.risingstack.com/",
-    "date": "January 19-20, 2017",
+    "date": "January 19-20",
+    "startDate": "01/19",
     "city": "Budapest",
     "country": "Hungary"
   },
   {
     "name": "Agent Conference",
     "url": "http://agent.sh/",
-    "date": "January 20-21, 2017",
+    "date": "January 20-21",
+    "startDate": "01/20",
     "city": "Dornbirn",
     "country": "Austria"
   },
   {
     "name": "So Ember",
     "url": "http://soember.com/",
-    "date": "January 27, 2017",
+    "date": "January 27",
+    "startDate": "01/27",
     "city": "San Diego, CA",
     "country": "USA"
   },
   {
     "name": "Script",
     "url": "https://scriptconf.org/",
-    "date": "January 27, 2017",
+    "date": "January 27",
+    "startDate": "01/27",
     "city": "Linz",
     "country": "Austria"
   },
   {
     "name": "ngVikings",
     "url": "https://ngvikings.org/",
-    "date": "February 11, 2017",
+    "date": "February 11",
+    "startDate": "02/11",
     "city": "Copenhagen",
     "country": "Denmark"
   },
   {
     "name": "FrontFest",
     "url": "http://frontfest.es/",
-    "date": "February 18, 2017",
+    "date": "February 18",
+    "startDate": "02/18",
     "city": "Madrid",
     "country": "Spain"
   },
   {
     "name": "The Rolling Scopes",
     "url": "https://2017.conf.rollingscopes.com/",
-    "date": "February 18-19, 2017",
+    "date": "February 18-19",
+    "startDate": "02/18",
     "city": "Minsk",
     "country": "Belarus"
   },
   {
     "name": "ForwardJS",
     "url": "https://forwardjs.com/",
-    "date": "February 25-March 5, 2017",
+    "date": "February 25-March 5",
+    "startDate": "03/25",
     "city": "San Francisco, CA",
     "country": "USA"
   },
   {
     "name": "React Conf",
     "url": "http://conf.reactjs.org/",
-    "date": "March 13-14, 2017",
+    "date": "March 13-14",
+    "startDate": "03/13",
     "city": "Santa Clara, CA",
     "country": "USA"
   },
   {
     "name": "JS Remote Conf",
     "url": "https://devchat.tv/conferences/js-remote-conf-2017",
-    "date": "March 15-16, 2017",
+    "date": "March 15-16",
+    "startDate": "03/15",
     "city": "Online",
     "country": "Online"
   },
   {
     "name": "boost(js)",
     "url": "http://boostjs.io/",
-    "date": "March 20-22, 2017",
+    "date": "March 20-22",
+    "startDate": "03/20",
     "city": "Tel Aviv",
     "country": "Israel"
   },
   {
     "name": "JazzCon.Tech",
-    "date": "March 22-24, 2017",
+    "date": "March 22-24",
+    "startDate": "03/22",
     "city": "New Orleans, LA",
     "country": "USA"
   },
   {
     "name": "JSUnconf",
     "url": "http://2017.jsunconf.eu/",
-    "date": "March 25-26, 2017",
+    "date": "March 25-26",
+    "startDate": "03/25",
     "city": "Hamburg",
     "country": "Germany"
   },
   {
     "name": "React London",
     "url": "https://react.london/",
-    "date": "March 28, 2017",
+    "date": "March 28",
+    "startDate": "03/28",
     "city": "London",
     "country": "UK"
   },
   {
     "name": "EmberConf",
     "url": "http://emberconf.com/",
-    "date": "March 28-29, 2017",
+    "date": "March 28-29",
+    "startDate": "03/28",
     "city": "Portland, OR",
     "country": "USA"
   },
   {
     "name": "Render",
     "url": "http://2017.render-conf.com/",
-    "date": "March 30-31, 2017",
+    "date": "March 30-31",
+    "startDate": "03/30",
     "city": "Oxford",
     "country": "UK"
   },
   {
     "name": "SmashingConf San Francisco",
     "url": "https://smashingconf.com/",
-    "date": "April 4-5, 2017",
+    "date": "April 4-5",
+    "startDate": "04/04",
     "city": "San Francisco, CA",
     "country": "USA"
   },
   {
     "name": "ng-conf",
     "url": "https://www.ng-conf.org/",
-    "date": "April 5-7, 2017",
+    "date": "April 5-7",
+    "startDate": "04/05",
     "city": "Salt Lake City, UT",
     "country": "USA"
   },
   {
     "name": "Bulgaria Web Summit",
     "url": "https://bulgariawebsummit.com/",
-    "date": "April 7-8, 2017",
+    "date": "April 7-8",
+    "startDate": "04/07",
     "city": "Sofia",
     "country": "Bulgaria"
   },
   {
     "name": "Universal JS Day",
     "url": "http://2017.universaljsday.com/",
-    "date": "April 8, 2017",
+    "date": "April 8",
+    "startDate": "04/08",
     "city": "Ferrara",
     "country": "Italy"
   },
   {
     "name": "React Amsterdam",
     "url": "https://react.amsterdam",
-    "date": "April 21, 2017",
+    "date": "April 21",
+    "startDate": "04/21",
     "city": "Amsterdam, Th",
     "country": "Netherlands"
   },
   {
     "name": "JS fwdays",
     "url": "http://frameworksdays.com/event/js-frameworks-day-2017",
-    "date": "April 22, 2017",
+    "date": "April 22",
+    "startDate": "04/22",
     "city": "Kyiv",
     "country": "Ukraine"
   },
   {
     "name": "Jazoon",
     "url": "http://jazoon.com/",
-    "date": "April 24, 2017",
+    "date": "April 24",
+    "startDate": "04/24",
     "city": "Bern",
     "country": "Switzerland"
   },
   {
     "name": "Active Ingredients",
     "url": "https://activeingredients.info/",
-    "date": "April 27, 2017",
+    "date": "April 27",
+    "startDate": "04/27",
     "city": "San Francisco, CA",
     "country": "USA"
   },
   {
     "name": "CSSConf EU",
     "url": "http://2017.cssconf.eu/",
-    "date": "May 5, 2017",
+    "date": "May 5",
+    "startDate": "05/05",
     "city": "Berlin",
     "country": "Germany"
   },
   {
     "name": "JSConf EU",
     "url": "http://2017.jsconf.eu/",
-    "date": "May 6-7, 2017",
+    "date": "May 6-7",
+    "startDate": "05/06",
     "city": "Berlin",
     "country": "Germany"
   },
   {
     "name": "JSDay Italy",
     "url": "http://2017.jsday.it/",
-    "date": "May 10-11, 2017",
+    "date": "May 10-11",
+    "startDate": "05/10",
     "city": "Verona",
     "country": "Italy"
   },
   {
     "name": "Beyond Tellerrand",
     "url": "https://beyondtellerrand.com/events/duesseldorf-2017",
-    "date": "May 15-17, 2017",
+    "date": "May 15-17",
+    "startDate": "05/15",
     "city": "Düsseldorf",
     "country": "Germany"
   },
   {
     "name": "React Europe",
     "url": "https://www.react-europe.org/",
-    "date": "May 18-19, 2017",
+    "date": "May 18-19",
+    "startDate": "05/18",
     "city": "Paris",
     "country": "France"
   },
   {
     "name": "DEVit",
     "url": "http://devitconf.org",
-    "date": "May 20-21, 2017",
+    "date": "May 20-21",
+    "startDate": "05/20",
     "city": "Thessaloniki",
     "country": "Greece"
   },
   {
     "name": "Front-Trends",
     "url": "https://2017.front-trends.com/",
-    "date": "May 24-26, 2017",
+    "date": "May 24-26",
+    "startDate": "05/24",
     "city": "Warsaw",
     "country": "Poland"
   },
   {
     "name": "Frontend United",
     "url": "http://frontendunited.org/",
-    "date": "May 26-27, 2017",
+    "date": "May 26-27",
+    "startDate": "05/26",
     "city": "Athens",
     "country": "Greece"
   },
   {
     "name": "ng-cruise",
     "url": "https://ngcruise.com/",
-    "date": "May 29-June 2, 2017",
+    "date": "May 29-June 2",
+    "startDate": "06/29",
     "city": "Miami, FL",
     "country": "USA"
   },
   {
     "name": "Web Rebels",
     "url": "https://www.webrebels.org/",
-    "date": "June 1-2, 2017",
+    "date": "June 1-2",
+    "startDate": "06/01",
     "city": "Oslo",
     "country": "Norway"
   },
   {
     "name": "HolyJS",
     "url": "https://holyjs-piter.ru/",
-    "date": "June 2-3, 2017",
+    "date": "June 2-3",
+    "startDate": "06/02",
     "city": "St. Petersburg",
     "country": "Russia"
   },
   {
     "name": "JS Heroes",
     "url": "http://jsheroes.io/",
-    "date": "June 8-9, 2017",
+    "date": "June 8-9",
+    "startDate": "06/08",
     "city": "Cluj-Napoca",
     "country": "Romania"
   },
   {
     "name": "AmsterdamJS",
     "url": "https://amsterdamjs.com/",
-    "date": "June 9, 2017",
+    "date": "June 9",
+    "startDate": "06/09",
     "city": "Amsterdam, Th",
     "country": "Netherlands"
   },
   {
     "name": "ConvergeSE",
     "url": "http://convergese.com/",
-    "date": "June 14-16, 2017",
+    "date": "June 14-16",
+    "startDate": "06/14",
     "city": "Columbia, SC",
     "country": "USA"
   },
   {
     "name": "DinosaurJS",
     "url": "https://dinosaurjs.org/",
-    "date": "June 15-16, 2017",
+    "date": "June 15-16",
+    "startDate": "06/15",
     "city": "Denver, CO",
     "country": "USA"
   },
   {
     "name": "pitercss",
     "url": "https://pitercss.com/",
-    "date": "June 16, 2017",
+    "date": "June 16",
+    "startDate": "06/16",
     "city": "St. Petersburg",
     "country": "Russia"
   },
   {
     "name": "JS Poland",
     "url": "http://js-poland.pl/",
-    "date": "June 19, 2017",
+    "date": "June 19",
+    "startDate": "06/19",
     "city": "Warsaw",
     "country": "Poland"
   },
   {
     "name": "EnterJS",
     "url": "https://www.enterjs.de/",
-    "date": "June 20-22, 2017",
+    "date": "June 20-22",
+    "startDate": "06/20",
     "city": "Darmstadt",
     "country": "Germany"
   },
   {
     "name": "Fluent",
     "url": "http://conferences.oreilly.com/fluent",
-    "date": "June 19-22, 2017",
+    "date": "June 19-22",
+    "startDate": "06/19",
     "city": "San Jose, CA",
     "country": "USA"
   },
   {
     "name": "VueConf",
     "url": "https://conf.vuejs.org/",
-    "date": "June 21-23, 2017",
+    "date": "June 21-23",
+    "startDate": "06/21",
     "city": "Wroclaw",
     "country": "Poland"
   },
   {
     "name": "AngularUP",
     "url": "http://angular-up.com/",
-    "date": "June 25, 2017",
+    "date": "June 25",
+    "startDate": "06/25",
     "city": "Tel Aviv",
     "country": "Israel"
   },
   {
     "name": "jsconf.be",
     "url": "https://www.jsconf.be/en/",
-    "date": "June 29, 2017",
+    "date": "June 29",
+    "startDate": "06/29",
     "city": "Brugge",
     "country": "Belgium"
   },
   {
     "name": "OdessaJS",
     "url": "http://odessajs.org/",
-    "date": "July 1-2, 2017",
+    "date": "July 1-2",
+    "startDate": "07/01",
     "city": "Odessa",
     "country": "Ukraine"
   },
   {
     "name": "Chain React",
     "url": "https://infinite.red/ChainReactConf",
-    "date": "July 10-11, 2017",
+    "date": "July 10-11",
+    "startDate": "07/10",
     "city": "Portland, OR",
     "country": "USA"
   },
   {
     "name": "JSinSA",
     "url": "http://www.jsinsa.com/",
-    "date": "July 15, 2017",
+    "date": "July 15",
+    "startDate": "07/15",
     "city": "Johannesburg, Sout",
     "country": "Africa"
   },
   {
     "name": "CSS Day",
     "url": "https://cssday.nl/2017",
-    "date": "July 15-16, 2017",
+    "date": "July 15-16",
+    "startDate": "07/15",
     "city": "Amsterdam",
     "country": "Netherlands"
   },
   {
     "name": "Node Summit",
     "url": "http://nodesummit.com/",
-    "date": "July 25-27, 2017",
+    "date": "July 25-27",
+    "startDate": "07/25",
     "city": "San Francisco, CA",
     "country": "USA"
   },
   {
     "name": "JSChannel",
     "url": "http://2017.jschannel.com/",
-    "date": "July 28-29, 2017",
+    "date": "July 28-29",
+    "startDate": "07/28",
     "city": "Bengaluru",
     "country": "India"
   },
   {
     "name": "SeattleJS",
     "url": "http://seattlejs.com/",
-    "date": "August 10-11, 2017",
+    "date": "August 10-11",
+    "startDate": "08/10",
     "city": "Seattle, WA",
     "country": "USA"
   },
   {
     "name": "MidwestJS",
     "url": "http://www.midwestjs.com/",
-    "date": "August 16-18, 2017",
+    "date": "August 16-18",
+    "startDate": "08/16",
     "city": "Minneapolis, MN",
     "country": "USA"
   },
   {
     "name": "React Rally",
     "url": "http://www.reactrally.com/",
-    "date": "August 24-25, 2017",
+    "date": "August 24-25",
+    "startDate": "08/24",
     "city": "Salt Lake City, UT",
     "country": "USA"
   },
   {
     "name": "Frontend Conference Zurich",
     "url": "https://frontendconf.ch/",
-    "date": "August 31-September 1, 2017",
+    "date": "August 31-September 1",
+    "startDate": "10/01",
     "city": "Zurich",
     "country": "Switzerland"
   },
   {
     "name": "Full Stack Fest",
     "url": "https://2017.fullstackfest.com/",
-    "date": "September 4-8, 2017",
+    "date": "September 4-8",
+    "startDate": "09/04",
     "city": "Barcelona",
     "country": "Spain"
   },
   {
     "name": "NordicJS",
     "url": "http://nordicjs.com/",
-    "date": "September 7-8, 2017",
+    "date": "September 7-8",
+    "startDate": "09/07",
     "city": "Stockholm",
     "country": "Sweden"
   },
   {
     "name": "Refresh",
     "url": "http://refresh.rocks/",
-    "date": "September 8, 2017",
+    "date": "September 8",
+    "startDate": "09/08",
     "city": "Tallinn",
     "country": "Estonia"
   },
   {
     "name": "jsfoo",
     "url": "https://jsfoo.in/2017/",
-    "date": "September 8–9, 2017",
+    "date": "September 8–9",
+    "startDate": "09/08",
     "city": "Bangalore",
     "country": "India"
   },
   {
     "name": "ReactNext",
     "url": "http://react-next.com/",
-    "date": "September 10, 2017",
+    "date": "September 10",
+    "startDate": "09/10",
     "city": "Tel Aviv",
     "country": "Israel"
   },
   {
     "name": "ReactFoo",
     "url": "https://reactfoo.in/2017/",
-    "date": "September 14, 2017",
+    "date": "September 14",
+    "startDate": "09/14",
     "city": "Bangalore",
     "country": "India"
   },
   {
     "name": "UtahJS",
     "url": "https://conf.utahjs.com/",
-    "date": "September 18, 2017",
+    "date": "September 18",
+    "startDate": "09/18",
     "city": "Salt Lake City, UT",
     "country": "USA"
   },
   {
     "name": "CONNECT.TECH",
     "url": "http://connect.tech/",
-    "date": "September 20-24, 2017",
+    "date": "September 20-24",
+    "startDate": "09/20",
     "city": "Atlanta, GA",
     "country": "USA"
   },
   {
     "name": "React Boston",
     "url": "http://www.reactboston.com/",
-    "date": "September 23-24, 2017",
+    "date": "September 23-24",
+    "startDate": "09/23",
     "city": "Boston, MA",
     "country": "USA"
   },
   {
     "name": "Web Unleashed",
     "url": "http://fitc.ca/event/webu17/",
-    "date": "September 25-27, 2017",
+    "date": "September 25-27",
+    "startDate": "09/25",
     "city": "Toronto",
     "country": "Canada"
   },
   {
     "name": "React Alicante",
     "url": "http://reactalicante.es/",
-    "date": "September 28-30, 2017",
+    "date": "September 28-30",
+    "startDate": "09/28",
     "city": "Alicante",
     "country": "Spain"
   },
   {
     "name": "Node Interactive",
     "url": "http://events.linuxfoundation.org/events/node-interactive",
-    "date": "October 4-6, 2017",
+    "date": "October 4-6",
+    "startDate": "10/04",
     "city": "Vancouver",
     "country": "Canada"
   },
   {
     "name": "Paris Web",
     "url": "http://www.paris-web.fr/",
-    "date": "October 5-7, 2017",
+    "date": "October 5-7",
+    "startDate": "10/05",
     "city": "Paris",
     "country": "France"
   },
   {
     "name": "NCDevCon",
     "url": "http://www.ncdevcon.com/",
-    "date": "October 7-8, 2017",
+    "date": "October 7-8",
+    "startDate": "10/07",
     "city": "Raleigh, NC",
     "country": "USA"
   },
   {
     "name": "Angular Mix",
     "url": "https://angularmix.com",
-    "date": "October 10-11, 2017",
+    "date": "October 10-11",
+    "startDate": "10/10",
     "city": "Orlando, FL",
     "country": "USA"
   },
   {
     "name": "EmberFest",
     "url": "https://emberfest.eu/",
-    "date": "October 12-13, 2017",
+    "date": "October 12-13",
+    "startDate": "10/12",
     "city": "Berlin",
     "country": "Germany"
   },
   {
     "name": "Empire Conf",
     "url": "http://2017.empireconf.org/",
-    "date": "October 12-13, 2017",
+    "date": "October 12-13",
+    "startDate": "10/12",
     "city": "New York, NY",
     "country": "USA"
   },
   {
     "name": "RuhrJS",
     "url": "https://ruhrjs.de/",
-    "date": "October 14-15, 2017",
+    "date": "October 14-15",
+    "startDate": "10/14",
     "city": "Bochum",
     "country": "Germany"
   },
   {
     "name": "Chrome Dev Summit 2017",
     "url": "https://developer.chrome.com/devsummit/",
-    "date": "October 23-24, 2017",
+    "date": "October 23-24",
+    "startDate": "10/23",
     "city": "San Francisco",
     "country": "USA"
   },
   {
     "name": "International JavaScript Conference",
     "url": "https://javascript-conference.com/en",
-    "date": "October 23-27, 2017",
+    "date": "October 23-27",
+    "startDate": "10/23",
     "city": "Munich",
     "country": "Germany"
   },
   {
     "name": "ReactiveConf",
     "url": "https://reactiveconf.com/",
-    "date": "October 25-27, 2017",
+    "date": "October 25-27",
+    "startDate": "10/25",
     "city": "Bratislava",
     "country": "Slovakia"
   },
   {
     "name": "JSConf Budapest",
     "url": "http://jsconfbp.com/",
-    "date": "October 26-27, 2017",
+    "date": "October 26-27",
+    "startDate": "10/26",
     "city": "Budapest",
     "country": "Hungary"
   },
   {
     "name": "NodeConf Argentina",
     "url": "https://2017.nodeconf.com.ar/",
-    "date": "October 26-28, 2017",
+    "date": "October 26-28",
+    "startDate": "10/26",
     "city": "Buenos Aires",
     "country": "Argentina "
   },
   {
     "name": "You Gotta Love Frontend",
     "url": "http://yougottalovefrontend.com/",
-    "date": "October 30-31, 2017",
+    "date": "October 30-31",
+    "startDate": "10/30",
     "city": "Tel Aviv",
     "country": "Israel"
   },
   {
     "name": "JSConf Colombia",
     "url": "https://jsconf.co/",
-    "date": "November 3-4, 2017",
+    "date": "November 3-4",
+    "startDate": "11/03",
     "city": "Medellin",
     "country": "Colombia"
   },
   {
     "name": "NodeConf EU",
     "url": "http://www.nodeconf.eu/",
-    "date": "November 5-8, 2017",
+    "date": "November 5-8",
+    "startDate": "11/05",
     "city": "Kilkenny",
     "country": "Ireland"
   },
   {
     "name": "AngularConnect",
     "url": "http://angularconnect.com/",
-    "date": "November 7-8, 2017",
+    "date": "November 7-8",
+    "startDate": "11/07",
     "city": "London",
     "country": "UK"
   },
   {
     "name": "FFConf",
     "url": "https://2017.ffconf.org",
-    "date": "November 9-10, 2017",
+    "date": "November 9-10",
+    "startDate": "11/09",
     "city": "Brighton",
     "country": "UK"
   },
   {
     "name": "JS Kongress",
     "url": "http://js-kongress.de/",
-    "date": "November 13-14, 2017",
+    "date": "November 13-14",
+    "startDate": "11/13",
     "city": "Munich",
     "country": "Germany"
   },
   {
     "name": "HalfStack",
     "url": "http://halfstackconf.com/",
-    "date": "November 17, 2017",
+    "date": "November 17",
+    "startDate": "11/17",
     "city": "London",
     "country": "UK"
   },
   {
     "name": "ngPoland",
     "url": "http://ng-poland.pl/",
-    "date": "November 20, 2017",
+    "date": "November 20",
+    "startDate": "11/20",
     "city": "Warsaw",
     "country": "Poland"
   },
   {
     "name": "Nodevember",
     "url": "http://nodevember.org/",
-    "date": "November 27-28, 2017",
+    "date": "November 27-28",
+    "startDate": "11/27",
     "city": "Nashville, TN",
     "country": "USA"
   },
   {
     "name": "dotCSS",
     "url": "https://2017.dotcss.io/",
-    "date": "November 30, 2017",
+    "date": "November 30",
+    "startDate": "11/30",
     "city": "Paris",
     "country": "France"
   },
   {
     "name": "NationJS",
     "url": "http://nationjs.com/",
-    "date": "November 30 - December 1, 2017",
+    "date": "November 30 - December 1",
+    "startDate": "11/30",
     "city": "Washington, DC",
     "country": "USA"
   },
   {
     "name": "dotJS",
     "url": "https://2017.dotjs.io",
-    "date": "December 1, 2017",
+    "date": "December 1",
+    "startDate": "12/01",
     "city": "Paris",
     "country": "France"
   },
   {
     "name": "NG-BE",
     "url": "https://ng-be.org/",
-    "date": "December 7-8, 2017",
+    "date": "December 7-8",
+    "startDate": "12/07",
     "city": "Ghent",
     "country": "Belgium"
   }
