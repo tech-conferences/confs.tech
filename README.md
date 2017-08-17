@@ -14,7 +14,6 @@
   - JS: https://github.com/ryanburgess/2016-conferences
   - JS: https://github.com/ryanburgess/2017-conferences
   - Android: https://github.com/AndroidStudyGroup/conferences
-  - Ruby: https://github.com/newhavenrb/conferences
 - Normalize dates
 - Sort per date
 - Add filters
