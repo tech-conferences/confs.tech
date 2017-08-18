@@ -159,28 +159,12 @@
     "country": "USA"
   },
   {
-    "name": "CSSConf EU",
-    "url": "http://2017.cssconf.eu/",
-    "date": "May 5",
-    "startDate": "2017/05/05",
-    "city": "Berlin",
-    "country": "Germany"
-  },
-  {
     "name": "JSConf EU",
     "url": "http://2017.jsconf.eu/",
     "date": "May 6-7",
     "startDate": "2017/05/06",
     "city": "Berlin",
     "country": "Germany"
-  },
-  {
-    "name": "JSDay Italy",
-    "url": "http://2017.jsday.it/",
-    "date": "May 10-11",
-    "startDate": "2017/05/10",
-    "city": "Verona",
-    "country": "Italy"
   },
   {
     "name": "Beyond Tellerrand",
@@ -191,28 +175,12 @@
     "country": "Germany"
   },
   {
-    "name": "React Europe",
-    "url": "https://www.react-europe.org/",
-    "date": "May 18-19",
-    "startDate": "2017/05/18",
-    "city": "Paris",
-    "country": "France"
-  },
-  {
     "name": "DEVit",
     "url": "http://devitconf.org",
     "date": "May 20-21",
     "startDate": "2017/05/20",
     "city": "Thessaloniki",
     "country": "Greece"
-  },
-  {
-    "name": "Front-Trends",
-    "url": "https://2017.front-trends.com/",
-    "date": "May 24-26",
-    "startDate": "2017/05/24",
-    "city": "Warsaw",
-    "country": "Poland"
   },
   {
     "name": "Frontend United",
@@ -229,22 +197,6 @@
     "startDate": "2017/06/29",
     "city": "Miami, FL",
     "country": "USA"
-  },
-  {
-    "name": "Web Rebels",
-    "url": "https://www.webrebels.org/",
-    "date": "June 1-2",
-    "startDate": "2017/06/01",
-    "city": "Oslo",
-    "country": "Norway"
-  },
-  {
-    "name": "HolyJS",
-    "url": "https://holyjs-piter.ru/",
-    "date": "June 2-3",
-    "startDate": "2017/06/02",
-    "city": "St. Petersburg",
-    "country": "Russia"
   },
   {
     "name": "AmsterdamJS",
@@ -864,13 +816,6 @@
     "city": "Minsk",
     "country": "Belarus",
     "url": "http://unitedconf.com/"
-  },
-  {
-    "name": "Bulgaria Web Summit",
-    "startDate": "2017/04/07",
-    "city": "Sofia, ",
-    "country": "Bulgaria",
-    "url": "https://bulgariawebsummit.com/"
   },
   {
     "name": "Front End Design Conference",
