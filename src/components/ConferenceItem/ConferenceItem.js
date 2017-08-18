@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import {parse, format} from 'date-fns'
+import {Link} from '@shopify/polaris';
+import {isPast, parse, format} from 'date-fns'
+import './ConferenceItem.css';
 
 export default class ConferenceItem extends Component {
   render() {
     const {name, url, city, country, startDate} = this.props;
 
     return (
-      <tr>
+      <tr className={isPast(parse(startDate)) ? "past" : ""}>
         <td>
-          <a href={url} target="_blank">
+          <Link url={url} external>
             {name}
-          </a>
+          </Link>
         </td>
         <td>
           {city}, <strong>{country}</strong>

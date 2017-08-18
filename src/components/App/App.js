@@ -8,7 +8,7 @@ import ConferenceFilter from '../ConferenceFilter';
 export default class App extends Component {
   state =  {
     filters: {
-      date: 2017,
+      year: '2017',
       type: 'javascript'
     },
     loading: true,
@@ -32,11 +32,11 @@ export default class App extends Component {
       })
   }
 
-  handleDateChange = (date) => {
+  handleYearChange = (year) => {
     const {filters} = this.state;
 
     this.setState({
-      filters: {...filters, date}
+      filters: {...filters, year}
     }, this.loadConference);
   }
 
@@ -68,7 +68,8 @@ export default class App extends Component {
   }
 
   render() {
-    const {loading, conferences, filters: {date, type}} = this.state;
+    const {loading, conferences, filters: {year, type}} = this.state;
+    const activeYear = (new Date()).getFullYear().toString() === year;
 
     return (
       <Page>
@@ -79,9 +80,9 @@ export default class App extends Component {
           </Layout.Section>
           <Layout.Section>
             <ConferenceFilter
-              date={date}
+              year={year}
               type={type}
-              onDateChange={this.handleDateChange}
+              onYearChange={this.handleYearChange}
               onTypeChange={this.handleTypeChange}
             />
           </Layout.Section>
@@ -96,7 +97,7 @@ export default class App extends Component {
           <Layout.Section>
             {this.showDuplicates(conferences)}
             {loading ? '...' :
-              <ConferenceList conferences={conferences} sortByDate={this.sortByDate}/>
+              <ConferenceList activeYear={activeYear} conferences={conferences} sortByDate={this.sortByDate}/>
             }
           </Layout.Section>
           <Layout.Section>
@@ -117,8 +118,8 @@ export default class App extends Component {
 }
 
 function getConferenceLink(state) {
-  const {type, date} = state;
-  return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${date}/${type.toLocaleLowerCase()}.json`
+  const {type, year} = state;
+  return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${year}/${type.toLocaleLowerCase()}.json`
 }
 
 function getDuplicates(conferences) {
