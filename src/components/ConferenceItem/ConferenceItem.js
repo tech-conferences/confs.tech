@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-// import moment from 'moment';
+import {parse, format} from 'date-fns'
 
 export default class ConferenceItem extends Component {
   render() {
-    const {name, url, city, country, date} = this.props;
-    // const confDate = moment(date, 'YYYY-MM-DD');
-    // {confDate.format('dddd MMMM d')}
+    const {name, url, city, country, startDate} = this.props;
 
     return (
       <tr>
@@ -15,10 +13,10 @@ export default class ConferenceItem extends Component {
           </a>
         </td>
         <td>
-          {city}, {country}
+          {city}, <strong>{country}</strong>
         </td>
         <td>
-          {date}
+          {format(parse(startDate), 'MMMM, Do')}
         </td>
       </tr>
     );

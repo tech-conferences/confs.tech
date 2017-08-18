@@ -11,7 +11,7 @@ export default class ConferenceFilter extends Component {
         <div className="ConferenceFilter">
           <Select
             label="Date"
-            options={['2018', '2017', '2016', '2015', '2014']}
+            options={['2017', '2018']}
             placeholder="Select"
             onChange={onDateChange}
             value={date}

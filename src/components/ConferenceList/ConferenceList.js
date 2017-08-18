@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
-import {Card} from '@shopify/polaris';
+import {Link, Card} from '@shopify/polaris';
 import ConferenceItem from '../ConferenceItem';
 import './ConferenceList.css';
 
 export default class ConferenceList extends Component {
+  state = {
+    sortDateDirection: 'asc'
+  }
+
+  sortConferencesByDate = () => {
+    const {sortByDate} = this.props;
+    const {sortDateDirection} = this.state;
+    const newSortDateDirection = (sortDateDirection == 'desc' ? 'asc' : 'desc');
+
+    sortByDate(newSortDateDirection);
+    this.setState({sortDateDirection: newSortDateDirection});
+  }
+
   renderTable = () => {
     const {conferences} = this.props;
+    const {sortDateDirection} = this.state;
 
     if (conferences.length === 0) {
       return (<div>No conferences!</div>)
@@ -16,7 +30,11 @@ export default class ConferenceList extends Component {
             <tr>
               <th>Name</th>
               <th>Location</th>
-              <th>Date</th>
+              <th>
+                <Link onClick={this.sortConferencesByDate}>
+                  Date {sortDateDirection == 'asc' ? '⬇' : '⬆'}
+                </Link>
+              </th>
             </tr>
           </thead>
           <tbody>

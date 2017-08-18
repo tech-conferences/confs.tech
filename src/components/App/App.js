@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link, Page, Layout, DisplayText} from '@shopify/polaris';
+import {compareAsc, compareDesc} from 'date-fns'
 
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
@@ -23,7 +24,7 @@ export default class App extends Component {
     fetch(getConferenceLink(filters))
       .then((result) => result.json())
       .then((conferences) => {
-        this.setState({conferences});
+        this.setState({conferences: sortByDate(conferences, 'asc')});
       })
       .catch((error) => {
         console.error(error);
@@ -57,6 +58,14 @@ export default class App extends Component {
     );
   }
 
+  sortByDate = (direction) => {
+    const {conferences} = this.state;
+
+    this.setState({
+      conferences: sortByDate(conferences, direction)
+    })
+  }
+
   render() {
     const {conferences, filters: {date, type}} = this.state;
 
@@ -85,7 +94,7 @@ export default class App extends Component {
           </Layout.Section>
           <Layout.Section>
             {this.showDuplicates(conferences)}
-            <ConferenceList conferences={conferences} />
+            <ConferenceList conferences={conferences} sortByDate={this.sortByDate}/>
           </Layout.Section>
           <Layout.Section>
             <p>
@@ -124,3 +133,10 @@ function getDuplicates(conferences) {
   return duplicates;
 }
 
+function sortByDate(items, direction) {
+  const compFunc = direction === 'asc' ? compareAsc : compareDesc
+
+  return Array.from(items).sort((itemA, itemB) => {
+    return compFunc(itemA.startDate, itemB.startDate);
+  })
+}
