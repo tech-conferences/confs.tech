@@ -8,14 +8,6 @@
     "country": "Hungary"
   },
   {
-    "name": "Agent Conference",
-    "url": "http://agent.sh/",
-    "date": "January 20-21",
-    "startDate": "2017/01/20",
-    "city": "Dornbirn",
-    "country": "Austria"
-  },
-  {
     "name": "So Ember",
     "url": "http://soember.com/",
     "date": "January 27",
@@ -38,22 +30,6 @@
     "startDate": "2017/02/11",
     "city": "Copenhagen",
     "country": "Denmark"
-  },
-  {
-    "name": "FrontFest",
-    "url": "http://frontfest.es/",
-    "date": "February 18",
-    "startDate": "2017/02/18",
-    "city": "Madrid",
-    "country": "Spain"
-  },
-  {
-    "name": "The Rolling Scopes",
-    "url": "https://2017.conf.rollingscopes.com/",
-    "date": "February 18-19",
-    "startDate": "2017/02/18",
-    "city": "Minsk",
-    "country": "Belarus"
   },
   {
     "name": "ForwardJS",
@@ -101,14 +77,6 @@
     "startDate": "2017/03/25",
     "city": "Hamburg",
     "country": "Germany"
-  },
-  {
-    "name": "React London",
-    "url": "https://react.london/",
-    "date": "March 28",
-    "startDate": "2017/03/28",
-    "city": "London",
-    "country": "UK"
   },
   {
     "name": "EmberConf",
@@ -279,14 +247,6 @@
     "country": "Russia"
   },
   {
-    "name": "JS Heroes",
-    "url": "http://jsheroes.io/",
-    "date": "June 8-9",
-    "startDate": "2017/06/08",
-    "city": "Cluj-Napoca",
-    "country": "Romania"
-  },
-  {
     "name": "AmsterdamJS",
     "url": "https://amsterdamjs.com/",
     "date": "June 9",
@@ -295,28 +255,12 @@
     "country": "Netherlands"
   },
   {
-    "name": "ConvergeSE",
-    "url": "http://convergese.com/",
-    "date": "June 14-16",
-    "startDate": "2017/06/14",
-    "city": "Columbia, SC",
-    "country": "USA"
-  },
-  {
     "name": "DinosaurJS",
     "url": "https://dinosaurjs.org/",
     "date": "June 15-16",
     "startDate": "2017/06/15",
     "city": "Denver, CO",
     "country": "USA"
-  },
-  {
-    "name": "pitercss",
-    "url": "https://pitercss.com/",
-    "date": "June 16",
-    "startDate": "2017/06/16",
-    "city": "St. Petersburg",
-    "country": "Russia"
   },
   {
     "name": "JS Poland",
@@ -341,14 +285,6 @@
     "startDate": "2017/06/19",
     "city": "San Jose, CA",
     "country": "USA"
-  },
-  {
-    "name": "VueConf",
-    "url": "https://conf.vuejs.org/",
-    "date": "June 21-23",
-    "startDate": "2017/06/21",
-    "city": "Wroclaw",
-    "country": "Poland"
   },
   {
     "name": "AngularUP",
@@ -734,21 +670,6 @@
     "country": "USA"
   },
   {
-    "name": "NG-BE",
-    "url": "https://ng-be.org/",
-    "date": "December 7-8",
-    "startDate": "2017/12/07",
-    "city": "Ghent",
-    "country": "Belgium"
-  },
-  {
-    "name": "Front",
-    "startDate": "2017/01/05",
-    "city": "Park City, Utah",
-    "country": "USA",
-    "url": "https://www.frontutah.com/"
-  },
-  {
     "name": "CodeMash",
     "startDate": "2017/01/10",
     "city": "Sandusky, OH",
@@ -861,19 +782,6 @@
     "url": "http://www.jdays.se/"
   },
   {
-    "name": "React Conf",
-    "startDate": "2017/03/13",
-    "city": "Santa Clara",
-    "country": "USA"
-  },
-  {
-    "name": "JS Remote Conf",
-    "startDate": "2017/03/15",
-    "city": "Online",
-    "country": "",
-    "url": "https://devchat.tv/conferences/js-remote-conf-2017"
-  },
-  {
     "name": "NG-NL",
     "startDate": "2017/03/16",
     "city": "Amsterdam",
@@ -923,13 +831,6 @@
     "url": "http://emberconf.com"
   },
   {
-    "name": "Render Conf",
-    "startDate": "2017/03/30",
-    "city": "Oxford, UK",
-    "country": "USA",
-    "url": "http://2017.render-conf.com/"
-  },
-  {
     "name": "AlterConf",
     "startDate": "2017/04/01",
     "city": "London",
@@ -963,13 +864,6 @@
     "city": "Minsk",
     "country": "Belarus",
     "url": "http://unitedconf.com/"
-  },
-  {
-    "name": "ng-conf 2017",
-    "startDate": "2017/04/05",
-    "city": "Salt Lake City, Utah",
-    "country": "USA",
-    "url": "https://www.ng-conf.org/"
   },
   {
     "name": "Bulgaria Web Summit",
@@ -1329,32 +1223,11 @@
     "url": "https://www.webdirections.org/code/"
   },
   {
-    "name": "DjangoCon US",
-    "startDate": "2017/08/13",
-    "city": "Spokane, WA",
-    "country": "USA",
-    "url": "https://2017.djangocon.us"
-  },
-  {
     "name": "Web Animations Workshops Denver",
     "startDate": "2017/08/18",
     "city": "Denver, CO",
     "country": "USA",
     "url": "https://webanimationworkshops.com/"
-  },
-  {
-    "name": "MidwestJS",
-    "startDate": "2017/08/16",
-    "city": "Minneapolis",
-    "country": "USA",
-    "url": "http://www.midwestjs.com/"
-  },
-  {
-    "name": "React Rally",
-    "startDate": "2017/08/24",
-    "city": "Salt Lake City, Utah",
-    "country": "Salt USA",
-    "url": "http://www.reactrally.com/"
   },
   {
     "name": "BrazilJS",
@@ -1371,13 +1244,6 @@
     "url": "https://aneventapart.com/event/chicago-2017"
   },
   {
-    "name": "Frontend Conference Zurich",
-    "startDate": "2017/09/31",
-    "city": "Zurich",
-    "country": "Switzerland",
-    "url": "https://frontendconf.ch/"
-  },
-  {
     "name": "Web Animations Workshops Paris",
     "startDate": "2017/09/04",
     "city": "Paris",
@@ -1390,13 +1256,6 @@
     "city": "Stockholm",
     "country": "Sweden",
     "url": "http://nordicjs.com"
-  },
-  {
-    "name": "Refresh",
-    "startDate": "2017/09/08",
-    "city": "Tallinn",
-    "country": "Estonia",
-    "url": "http://refresh.rocks/"
   },
   {
     "name": "At the Frontend",
