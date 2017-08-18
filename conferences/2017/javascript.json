@@ -159,14 +159,6 @@
     "country": "USA"
   },
   {
-    "name": "JSConf EU",
-    "url": "http://2017.jsconf.eu/",
-    "date": "May 6-7",
-    "startDate": "2017/05/06",
-    "city": "Berlin",
-    "country": "Germany"
-  },
-  {
     "name": "Beyond Tellerrand",
     "url": "https://beyondtellerrand.com/events/duesseldorf-2017",
     "date": "May 15-17",
@@ -180,14 +172,6 @@
     "date": "May 20-21",
     "startDate": "2017/05/20",
     "city": "Thessaloniki",
-    "country": "Greece"
-  },
-  {
-    "name": "Frontend United",
-    "url": "http://frontendunited.org/",
-    "date": "May 26-27",
-    "startDate": "2017/05/26",
-    "city": "Athens",
     "country": "Greece"
   },
   {
@@ -699,13 +683,6 @@
     "url": "https://2017.conf.rollingscopes.com/"
   },
   {
-    "name": "Web Animation Workshops SF",
-    "startDate": "2017/02/20",
-    "city": "San Francisco",
-    "country": "USA",
-    "url": "https://webanimationworkshops.com/"
-  },
-  {
     "name": "DEVNEXUS",
     "startDate": "2017/02/22",
     "city": "Atlanta, GA",
@@ -1168,13 +1145,6 @@
     "url": "https://www.webdirections.org/code/"
   },
   {
-    "name": "Web Animations Workshops Denver",
-    "startDate": "2017/08/18",
-    "city": "Denver, CO",
-    "country": "USA",
-    "url": "https://webanimationworkshops.com/"
-  },
-  {
     "name": "BrazilJS",
     "startDate": "2017/08/25",
     "city": "Porto Alegre",
@@ -1187,13 +1157,6 @@
     "city": "Chicago",
     "country": "USA",
     "url": "https://aneventapart.com/event/chicago-2017"
-  },
-  {
-    "name": "Web Animations Workshops Paris",
-    "startDate": "2017/09/04",
-    "city": "Paris",
-    "country": "France",
-    "url": "https://webanimationworkshops.com/"
   },
   {
     "name": "NordicJS",
@@ -1278,13 +1241,6 @@
     "city": "Cincinnati, OH",
     "country": "USA",
     "url": "http://2017.midwestuxconference.com/"
-  },
-  {
-    "name": "Web Animations Workshops Pittsburgh",
-    "startDate": "2017/10/13",
-    "city": "Pittsburgh, PA",
-    "country": "USA",
-    "url": "https://webanimationworkshops.com/"
   },
   {
     "name": "Empire JS",
