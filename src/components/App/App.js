@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link, Page, Layout, DisplayText} from '@shopify/polaris';
-import {compareAsc, compareDesc} from 'date-fns'
+import {format, isPast, compareAsc, compareDesc} from 'date-fns'
 
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
@@ -11,6 +11,7 @@ export default class App extends Component {
       year: '2017',
       type: 'javascript'
     },
+    showPast: false,
     loading: true,
     conferences: []
   }
@@ -48,10 +49,31 @@ export default class App extends Component {
     }, this.loadConference);
   }
 
+  togglePast = () => {
+    const {showPast} = this.state;
+    this.setState({showPast: !showPast});
+  }
+
+  pastConferenceToggler = () => {
+    const {showPast, filters: {year}} = this.state;
+    const activeYear = (new Date()).getFullYear().toString() === year;
+
+    if (!activeYear) { return null; }
+
+    return (
+      <p>
+        <Link onClick={this.togglePast}>
+          {showPast ? 'Hide past conferences' : 'Show past conferences' }
+        </Link>
+      </p>
+    )
+  }
+
   showDuplicates = (conferences) => {
     if (process.env.NODE_ENV !== 'development') { return null; }
     return (
       <ul>
+        <li><strong>DUPLICATES</strong></li>
         {getDuplicates(conferences).map((conf) =>
           <li>{conf.name}: {conf.url}</li>
         )}
@@ -67,9 +89,18 @@ export default class App extends Component {
     })
   }
 
+  filterConferences = (conferences) => {
+    const {showPast} = this.state;
+
+    if (showPast) { return conferences; }
+
+    return conferences.filter((conference) => {
+      return !isPast(format(conference.startDate))
+    })
+  }
+
   render() {
     const {loading, conferences, filters: {year, type}} = this.state;
-    const activeYear = (new Date()).getFullYear().toString() === year;
 
     return (
       <Page>
@@ -96,8 +127,9 @@ export default class App extends Component {
           </Layout.Section>
           <Layout.Section>
             {this.showDuplicates(conferences)}
+            {this.pastConferenceToggler()}
             {loading ? '...' :
-              <ConferenceList activeYear={activeYear} conferences={conferences} sortByDate={this.sortByDate}/>
+              <ConferenceList conferences={this.filterConferences(conferences)} sortByDate={this.sortByDate}/>
             }
           </Layout.Section>
           <Layout.Section>
