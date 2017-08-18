@@ -11,6 +11,7 @@ export default class App extends Component {
       date: 2017,
       type: 'javascript'
     },
+    loading: true,
     conferences: []
   }
 
@@ -24,7 +25,7 @@ export default class App extends Component {
     fetch(getConferenceLink(filters))
       .then((result) => result.json())
       .then((conferences) => {
-        this.setState({conferences: sortByDate(conferences, 'asc')});
+        this.setState({loading: false, conferences: sortByDate(conferences, 'asc')});
       })
       .catch((error) => {
         console.error(error);
@@ -67,7 +68,7 @@ export default class App extends Component {
   }
 
   render() {
-    const {conferences, filters: {date, type}} = this.state;
+    const {loading, conferences, filters: {date, type}} = this.state;
 
     return (
       <Page>
@@ -94,7 +95,9 @@ export default class App extends Component {
           </Layout.Section>
           <Layout.Section>
             {this.showDuplicates(conferences)}
-            <ConferenceList conferences={conferences} sortByDate={this.sortByDate}/>
+            {loading ? '...' :
+              <ConferenceList conferences={conferences} sortByDate={this.sortByDate}/>
+            }
           </Layout.Section>
           <Layout.Section>
             <p>

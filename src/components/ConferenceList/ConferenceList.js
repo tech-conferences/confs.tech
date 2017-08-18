@@ -22,7 +22,7 @@ export default class ConferenceList extends Component {
     const {sortDateDirection} = this.state;
 
     if (conferences.length === 0) {
-      return (<div>No conferences!</div>)
+      return (<div>Oh shoe... We don't have any conferences yet. :(</div>)
     } else {
       return (
         <table className="ConferenceList">
