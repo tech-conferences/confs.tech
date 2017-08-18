@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Link, Card} from '@shopify/polaris';
-import {isPast} from 'date-fns'
+import {groupBy, range} from 'lodash'
+import {parse, format} from 'date-fns'
+
 import ConferenceItem from '../ConferenceItem';
 import './ConferenceList.css';
 
@@ -37,9 +39,22 @@ export default class ConferenceList extends Component {
     )
   }
 
+  renderMonth = (month, conferences) => {
+    return [
+      (<tr><td colspan={3}><strong>{getMonthName(month)}</strong></td></tr>),
+      conferences.map((conf) => {
+        return (
+          <ConferenceItem
+            key={`${conf.url} ${conf.date}`} {...conf}
+          />)
+      })
+    ]
+  }
+
   renderTable = () => {
     const {conferences} = this.props;
-    const {showPast, sortDateDirection} = this.state;
+    const {sortDateDirection} = this.state;
+    const groupedConferences = groupBy(conferences, (conf) => format(conf.startDate, 'M'));
 
     if (conferences.length === 0) {
       return (<div>Oh shoe... We don't have any conferences yet. :(</div>)
@@ -63,13 +78,9 @@ export default class ConferenceList extends Component {
               </tr>
             </thead>
             <tbody>
-              {conferences.map((conf) => {
-                if (!showPast && isPast(conf.startDate)) { return null; }
-                return (
-                  <ConferenceItem
-                    key={`${conf.url} ${conf.date}`} {...conf}
-                  />)
-              })}
+              {range(1, 12).map(((month) => {
+                return this.renderMonth(month, groupedConferences[month]);
+              }))}
             </tbody>
           </table>
         </div>
@@ -84,4 +95,8 @@ export default class ConferenceList extends Component {
       </Card>
     );
   }
+}
+
+function getMonthName(month) {
+  return format(parse(`2017/${month}/01`), 'MMMM');
 }
