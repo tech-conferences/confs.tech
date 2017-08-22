@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://nimzco.github.io/the-conference-list",
+  "homepage": "https://confs.tech",
   "devDependencies": {
     "eslint": "^4.5.0",
     "prettier": "^1.5.3"
