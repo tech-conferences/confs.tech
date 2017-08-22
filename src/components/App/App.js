@@ -128,7 +128,10 @@ export default class App extends Component {
           <Layout.Section>
             {this.pastConferenceToggler()}
             {loading ? '...' :
-              <ConferenceList conferences={this.filterConferences(conferences)} sortByDate={this.sortByDate}/>
+              <ConferenceList
+                conferences={this.filterConferences(conferences)}
+                sortByDate={this.sortByDate}
+              />
             }
           </Layout.Section>
           <Layout.Section>

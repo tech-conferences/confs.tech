@@ -54,7 +54,7 @@ export default class ConferenceList extends Component {
             </tr>
           </thead>
           <tbody>
-            {Object.keys(groupedConferences).map(((month) => {
+            {months(groupedConferences, sortDateDirection).map(((month) => {
               return this.renderMonth(month, groupedConferences[month]);
             }))}
           </tbody>
@@ -74,4 +74,12 @@ export default class ConferenceList extends Component {
 
 function getMonthName(month) {
   return format(parse(`2017/${month}/01`), 'MMMM');
+}
+
+function months(groupedConferences, sortDirection) {
+  if (sortDirection === 'asc') {
+    return Object.keys(groupedConferences);
+  } else {
+    return Object.keys(groupedConferences).reverse();
+  }
 }
