@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import {Link, Page, Layout, DisplayText} from '@shopify/polaris';
-import {format, isPast, compareAsc, compareDesc} from 'date-fns'
+import './App.css';
+import { Link, Page, Layout, DisplayText } from '@shopify/polaris';
+import { format, isPast, compareAsc, compareDesc } from 'date-fns';
 
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
 
 export default class App extends Component {
-  state =  {
+  state = {
     filters: {
       year: '2017',
       type: 'javascript'
@@ -14,100 +15,120 @@ export default class App extends Component {
     showPast: false,
     loading: true,
     conferences: []
-  }
+  };
 
   componentDidMount() {
     this.loadConference();
   }
 
   loadConference = () => {
-    const {filters} = this.state;
+    const { filters } = this.state;
 
     fetch(getConferenceLink(filters))
-      .then((result) => result.json())
-      .then((conferences) => {
-        this.setState({loading: false, conferences: sortByDate(conferences, 'asc')});
+      .then(result => result.json())
+      .then(conferences => {
+        this.setState({
+          loading: false,
+          conferences: sortByDate(conferences, 'asc')
+        });
       })
-      .catch((error) => {
+      .catch(error => {
         console.error(error);
-      })
-  }
+      });
+  };
 
-  handleYearChange = (year) => {
-    const {filters} = this.state;
+  handleYearChange = year => {
+    const { filters } = this.state;
 
-    this.setState({
-      filters: {...filters, year}
-    }, this.loadConference);
-  }
+    this.setState(
+      {
+        filters: { ...filters, year }
+      },
+      this.loadConference
+    );
+  };
 
-  handleTypeChange = (type) => {
-    const {filters} = this.state;
+  handleTypeChange = type => {
+    const { filters } = this.state;
 
-    this.setState({
-      filters: {...filters, type}
-    }, this.loadConference);
-  }
+    this.setState(
+      {
+        filters: { ...filters, type }
+      },
+      this.loadConference
+    );
+  };
 
   togglePast = () => {
-    const {showPast} = this.state;
-    this.setState({showPast: !showPast});
-  }
+    const { showPast } = this.state;
+    this.setState({ showPast: !showPast });
+  };
 
   pastConferenceToggler = () => {
-    const {showPast, filters: {year}} = this.state;
-    const activeYear = (new Date()).getFullYear().toString() === year;
+    const { showPast, filters: { year } } = this.state;
+    const activeYear = new Date().getFullYear().toString() === year;
 
-    if (!activeYear) { return null; }
+    if (!activeYear) {
+      return null;
+    }
 
     return (
       <p>
         <Link onClick={this.togglePast}>
-          {showPast ? 'Hide past conferences' : 'Show past conferences' }
+          {showPast ? 'Hide past conferences' : 'Show past conferences'}
         </Link>
       </p>
-    )
-  }
+    );
+  };
 
-  showDuplicates = (conferences) => {
-    if (process.env.NODE_ENV !== 'development') { return null; }
+  showDuplicates = conferences => {
+    if (process.env.NODE_ENV !== 'development') {
+      return null;
+    }
     return (
       <ul>
-        <li><strong>DUPLICATES</strong></li>
-        {getDuplicates(conferences).map((conf) =>
-          <li>{conf.name}: {conf.url}</li>
+        <li>
+          <strong>DUPLICATES</strong>
+        </li>
+        {getDuplicates(conferences).map(conf =>
+          <li>
+            {conf.name}: {conf.url}
+          </li>
         )}
       </ul>
     );
-  }
+  };
 
-  sortByDate = (direction) => {
-    const {conferences} = this.state;
+  sortByDate = direction => {
+    const { conferences } = this.state;
 
     this.setState({
       conferences: sortByDate(conferences, direction)
-    })
-  }
+    });
+  };
 
-  filterConferences = (conferences) => {
-    const {showPast} = this.state;
+  filterConferences = conferences => {
+    const { showPast } = this.state;
 
-    if (showPast) { return conferences; }
+    if (showPast) {
+      return conferences;
+    }
 
-    return conferences.filter((conference) => {
-      return !isPast(format(conference.startDate))
-    })
-  }
+    return conferences.filter(conference => {
+      return !isPast(format(conference.startDate));
+    });
+  };
 
   render() {
-    const {loading, conferences, filters: {year, type}} = this.state;
+    const { loading, conferences, filters: { year, type } } = this.state;
 
     return (
       <Page>
         <Layout>
           <Layout.Section>
-            <DisplayText size="extraLarge">The conference list</DisplayText>
-            <DisplayText size="small">An exaustive list</DisplayText>
+            <DisplayText size="extraLarge">
+              Find your next conference
+            </DisplayText>
           </Layout.Section>
           <Layout.Section>
             <ConferenceFilter
@@ -126,21 +147,17 @@ export default class App extends Component {
             </Link>
           </Layout.Section>
           <Layout.Section>
-            {this.pastConferenceToggler()}
-            {loading ? '...' :
-              <ConferenceList
-                conferences={this.filterConferences(conferences)}
-                sortByDate={this.sortByDate}
-              />
-            }
+            {loading
+              ? '...'
+              : <ConferenceList
+                  conferences={this.filterConferences(conferences)}
+                  sortByDate={this.sortByDate}
+                />}
           </Layout.Section>
           <Layout.Section>
             <p>
               Maintained by&nbsp;
-              <Link
-                url="https://github.com/nimzco"
-                external
-              >
+              <Link url="https://github.com/nimzco" external>
                 @nimzco
               </Link>
             </p>
@@ -152,12 +169,12 @@ export default class App extends Component {
 }
 
 function getConferenceLink(state) {
-  const {type, year} = state;
-  return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${year}/${type.toLocaleLowerCase()}.json`
+  const { type, year } = state;
+  return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${year}/${type.toLocaleLowerCase()}.json`;
 }
 
 function getDuplicates(conferences) {
-  const confURLs = conferences.map((conf) => conf.url)
+  const confURLs = conferences.map(conf => conf.url);
   const duplicates = [];
 
   Object.keys(conferences).forEach((key, index) => {
@@ -172,9 +189,9 @@ function getDuplicates(conferences) {
 }
 
 function sortByDate(items, direction) {
-  const compFunc = direction === 'asc' ? compareAsc : compareDesc
+  const compFunc = direction === 'asc' ? compareAsc : compareDesc;
 
   return Array.from(items).sort((itemA, itemB) => {
     return compFunc(itemA.startDate, itemB.startDate);
-  })
+  });
 }
