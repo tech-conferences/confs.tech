@@ -126,7 +126,6 @@ export default class App extends Component {
             </Link>
           </Layout.Section>
           <Layout.Section>
-            {this.showDuplicates(conferences)}
             {this.pastConferenceToggler()}
             {loading ? '...' :
               <ConferenceList conferences={this.filterConferences(conferences)} sortByDate={this.sortByDate}/>
