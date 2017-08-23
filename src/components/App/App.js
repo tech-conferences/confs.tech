@@ -123,7 +123,7 @@ export default class App extends Component {
       <div className={styles.App}>
         <div>
           <div>
-            <Heading element="h1">Find your next conference</Heading>
+            <Heading element="h1">Find your next {TYPES[type]} conference</Heading>
           </div>
           <div>
             {this.pastConferenceToggler()}
