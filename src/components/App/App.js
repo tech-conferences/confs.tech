@@ -12,6 +12,11 @@ import ConferenceFilter from '../ConferenceFilter';
 
 const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/conferences';
 const CURRENT_YEAR = (new Date()).getFullYear().toString();
+const TYPES = {
+  javascript: 'JavaScript',
+  ux: 'UX',
+  ruby: 'Ruby',
+};
 
 export default class App extends Component {
   state = {
