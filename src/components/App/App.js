@@ -126,7 +126,6 @@ export default class App extends Component {
             <Heading element="h1">Find your next {TYPES[type]} conference</Heading>
           </div>
           <div>
-            {this.pastConferenceToggler()}
             <ConferenceFilter
               sortDateDirection={sortDateDirection}
               sortByDate={this.sortByDate}
@@ -143,6 +142,7 @@ export default class App extends Component {
             >
               Add a conference
             </Link>
+            {this.pastConferenceToggler()}
           </div>
           <div>
             {loading
