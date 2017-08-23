@@ -9,7 +9,7 @@ import styles from './ConferenceList.css';
 export default class ConferenceList extends Component {
   renderMonth = (month, conferences) => {
     return [
-      <Heading element="h2" level={2}>
+      <Heading key={month} element="h2" level={2}>
         {getMonthName(month)}
       </Heading>,
       conferences.map(conf => {
@@ -25,7 +25,7 @@ export default class ConferenceList extends Component {
     );
 
     if (conferences.length === 0) {
-      return <p>Oh shoot! We don't have any conferences yet. :(</p>;
+      return (<p>{"Oh shoot! We don't have any conferences yet."}</p>);
     } else {
       return (
         <div className={styles.ConferenceList}>

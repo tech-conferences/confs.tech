@@ -1,3 +1,4 @@
+import React from 'react';
 import { compareAsc, compareDesc } from 'date-fns';
 
 export function sortByDate(items, direction) {
@@ -23,14 +24,14 @@ function getDuplicates(conferences) {
   return duplicates;
 }
 
-showDuplicates = conferences => {
+function showDuplicates(conferences) {
   return (
     <ul>
       <li>
         <strong>DUPLICATES</strong>
       </li>
       {getDuplicates(conferences).map(conf =>
-        <li>
+        <li key={`${conf.url} ${conf.name}`}>
           {conf.name}: {conf.url}
         </li>
       )}

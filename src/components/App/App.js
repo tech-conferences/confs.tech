@@ -29,6 +29,7 @@ export default class App extends Component {
 
     fetch(getConferenceLink(filters))
       .then(result => result.json())
+      // eslint-disable-next-line promise/always-return
       .then(conferences => {
         this.setState({
           loading: false,

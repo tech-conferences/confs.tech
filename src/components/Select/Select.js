@@ -22,7 +22,7 @@ export default class Select extends Component {
       const [label, value] = option;
 
       return (
-        <option value={value}>
+        <option key={value} value={value}>
           {label}
         </option>
       );
