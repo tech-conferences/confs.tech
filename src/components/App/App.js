@@ -11,6 +11,7 @@ import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
 
 const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/conferences';
+const CURRENT_YEAR = (new Date()).getFullYear().toString();
 
 export default class App extends Component {
   state = {
@@ -74,9 +75,8 @@ export default class App extends Component {
 
   pastConferenceToggler = () => {
     const {showPast, filters: {year}} = this.state;
-    const activeYear = (new Date().getFullYear().toString() === year);
 
-    if (!activeYear) {
+    if (CURRENT_YEAR !== year) {
       return null;
     }
 
@@ -116,7 +116,7 @@ export default class App extends Component {
       loading,
       conferences,
       filters: {year, type},
-  } = this.state;
+    } = this.state;
 
     return (
       <div className={styles.App}>
