@@ -10,13 +10,16 @@ $font-family-data: (
 
 $line-height-data: (
   heading: (
-    base: em(24px)
+    base: rem(24px)
   ),
 );
 
 $font-size-data: (
   heading: (
-    base: em(20px)
+    base: rem(20px)
+  ),
+  footer: (
+    base: rem(14px)
   ),
 );
 

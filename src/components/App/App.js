@@ -3,6 +3,7 @@ import {format, isPast} from 'date-fns';
 
 import {sortByDate} from './utils';
 import styles from './App.scss';
+import Footer from '../Footer';
 import Link from '../Link';
 import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
@@ -148,14 +149,7 @@ export default class App extends Component {
                 />
             }
           </div>
-          <div>
-            <p>
-              Maintained by&nbsp;
-              <Link url="https://github.com/nimzco" external>
-                @nimzco
-              </Link>
-            </p>
-          </div>
+          <Footer />
         </div>
       </div>
     );

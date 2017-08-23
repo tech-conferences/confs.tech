@@ -1,0 +1,9 @@
+@import '../style/foundation/spacing.scss';
+@import '../style/foundation/typography.scss';
+@import '../style/foundation/colors.scss';
+
+.Footer {
+  padding-top: spacing(extra-loose);
+  color: color(gray);
+  font-size: font-size(footer);
+}
