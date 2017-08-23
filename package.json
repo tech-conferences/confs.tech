@@ -63,7 +63,7 @@
     "lint": "eslint src",
     "precommit": "npm run lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo 'confs.tech' > ./build/CNAME && gh-pages -d build"
   },
   "homepage": "https://confs.tech",
   "jest": {
