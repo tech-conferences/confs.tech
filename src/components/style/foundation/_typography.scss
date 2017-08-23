@@ -1,0 +1,68 @@
+@import './utilities';
+
+// TYPOGRAPHY
+// -----------------------------------------------------------------------------
+
+$font-family-data: (
+  heading: #{'Merriweather', 'BlinkMacSystemFont', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif},
+  base: #{'Merriweather', 'BlinkMacSystemFont', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif}
+);
+
+$line-height-data: (
+  heading: (
+    base: em(24px)
+  ),
+);
+
+$font-size-data: (
+  heading: (
+    base: em(20px)
+  ),
+);
+
+/// Returns the font stack for a given family.
+///
+/// @param {String} $family - The key for the given family.
+/// @return {Number} The font stack for the family.
+
+@function font-family($family: base) {
+  $fetched-value: map-get($font-family-data, $family);
+
+  @if $fetched-value != null {
+    @return $fetched-value;
+  } @else {
+    @error 'Font family `#{$family}` not found. Available font families: #{available-names($font-family-data)}';
+  }
+}
+
+/// Returns the line height for a given text style and variant.
+///
+/// @param {String} $style - The font style.
+/// @param {String} $variant [base] - The variant on the font-size.
+/// @return {Number} The line-height for the text-style.
+
+@function line-height($style, $variant: base) {
+  $fetched-line-height: map-get(map-get($line-height-data, $style), $variant);
+
+  @if type-of($fetched-line-height) != null {
+    @return $fetched-line-height;
+  } @else {
+    @error 'Line height `#{$style} - #{$variant}` not found. Available line heights: #{available-names($line-height-data)}';
+  }
+}
+
+/// Returns the font size for a given text style and variant.
+///
+/// @param {String} $style - The font style.
+/// @param {String} $variant [base] - The variant on the font-size.
+/// @return {Number} The font-size for the text-style.
+
+@function font-size($style, $variant: base) {
+  $fetched-font-size: map-get(map-get($font-size-data, $style), $variant);
+
+  @if type-of($fetched-font-size) != null {
+    @return $fetched-font-size;
+  } @else {
+    @error 'Line height `#{$style} - #{$variant}` not found. Available font sizes: #{available-names($line-height-data)}';
+  }
+}

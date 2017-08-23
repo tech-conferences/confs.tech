@@ -1,0 +1,9 @@
+@import '../style/foundation/spacing.scss';
+
+.ConferenceItem {
+  margin-bottom: spacing(base);
+}
+
+.past {
+  opacity: 0.7;
+}

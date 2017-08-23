@@ -1,5 +1,6 @@
 .ConferenceFilter {
   display: flex;
+  align-items: center;
 }
 
 .ConferenceFilter > div {
