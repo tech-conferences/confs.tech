@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {format, isPast} from 'date-fns';
+import Favicon from 'react-favicon';
 
 import {sortByDate} from './utils';
 import styles from './App.scss';
@@ -126,6 +127,7 @@ export default class App extends Component {
 
     return (
       <div className={styles.App}>
+        <Favicon url={`${type}.png`} />
         <div>
           <div>
             <Heading element="h1">Find your next {TYPES[type]} conference</Heading>
