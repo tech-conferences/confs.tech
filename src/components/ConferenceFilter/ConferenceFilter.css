@@ -1,8 +1,18 @@
+@import '../style/foundation/spacing.scss';
+
+.ConferenceFilterWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .ConferenceFilter {
   display: flex;
   align-items: center;
+  margin-right: spacing(loose);
+  margin-bottom: spacing(base);
 }
 
-.ConferenceFilter > div {
-  margin-right: 1.5em;
+.Filter {
+  margin-right: spacing(base);
 }
