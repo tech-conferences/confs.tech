@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
 import styles from './ConferenceFilter.css';
+import Link from '../Link';
 import Select from '../Select';
 
 export default class ConferenceFilter extends Component {
+  sortConferencesByDate = () => {
+    const { sortDateDirection, sortByDate } = this.props;
+    const newSortDateDirection = sortDateDirection === 'desc' ? 'asc' : 'desc';
+
+    sortByDate(newSortDateDirection);
+    this.setState({ sortDateDirection: newSortDateDirection });
+  };
+
   render() {
-    const { year, type, onYearChange, onTypeChange } = this.props;
+    const {
+      sortDateDirection,
+      year,
+      type,
+      onYearChange,
+      onTypeChange
+    } = this.props;
 
     return (
       <div>
@@ -25,6 +40,9 @@ export default class ConferenceFilter extends Component {
             onChange={onTypeChange}
             value={type}
           />
+          <Link onClick={this.sortConferencesByDate}>
+            Sort by date {sortDateDirection === 'asc' ? '⬇' : '⬆'}
+          </Link>
         </div>
       </div>
     );

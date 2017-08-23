@@ -2,33 +2,16 @@ import React, { Component } from 'react';
 import { groupBy } from 'lodash';
 import { parse, format } from 'date-fns';
 
-import Link from '../Link';
+import Heading from '../Heading';
 import ConferenceItem from '../ConferenceItem';
 import styles from './ConferenceList.css';
 
 export default class ConferenceList extends Component {
-  state = {
-    sortDateDirection: 'asc'
-  };
-
-  sortConferencesByDate = () => {
-    const { sortByDate } = this.props;
-    const { sortDateDirection } = this.state;
-    const newSortDateDirection = sortDateDirection === 'desc' ? 'asc' : 'desc';
-
-    sortByDate(newSortDateDirection);
-    this.setState({ sortDateDirection: newSortDateDirection });
-  };
-
   renderMonth = (month, conferences) => {
     return [
-      <tr>
-        <td colSpan={3}>
-          <strong>
-            {getMonthName(month)}
-          </strong>
-        </td>
-      </tr>,
+      <Heading element="h2" level={2}>
+        {getMonthName(month)}
+      </Heading>,
       conferences.map(conf => {
         return <ConferenceItem key={`${conf.url} ${conf.date}`} {...conf} />;
       })
@@ -36,34 +19,20 @@ export default class ConferenceList extends Component {
   };
 
   renderTable = () => {
-    const { conferences } = this.props;
-    const { sortDateDirection } = this.state;
+    const { conferences, sortDateDirection } = this.props;
     const groupedConferences = groupBy(conferences, conf =>
       format(conf.startDate, 'M')
     );
 
     if (conferences.length === 0) {
-      return <div>Oh shoe... We don't have any conferences yet. :(</div>;
+      return <p>Oh shoot! We don't have any conferences yet. :(</p>;
     } else {
       return (
-        <table className={styles.ConferenceList}>
-          <thead className={styles.ConferenceList__head}>
-            <tr>
-              <th>Name</th>
-              <th>Location</th>
-              <th>
-                <Link onClick={this.sortConferencesByDate}>
-                  Date {sortDateDirection === 'asc' ? '⬇' : '⬆'}
-                </Link>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {months(groupedConferences, sortDateDirection).map(month => {
-              return this.renderMonth(month, groupedConferences[month]);
-            })}
-          </tbody>
-        </table>
+        <div className={styles.ConferenceList}>
+          {months(groupedConferences, sortDateDirection).map(month => {
+            return this.renderMonth(month, groupedConferences[month]);
+          })}
+        </div>
       );
     }
   };

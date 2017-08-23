@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './App.scss';
-import { format, isPast, compareAsc, compareDesc } from 'date-fns';
+import { sortByDate } from './utils.js';
+import { format, isPast } from 'date-fns';
 
 import Link from '../Link';
 import Heading from '../Heading';
@@ -15,7 +16,8 @@ export default class App extends Component {
     },
     showPast: false,
     loading: true,
-    conferences: []
+    conferences: [],
+    sortDateDirection: 'asc'
   };
 
   componentDidMount() {
@@ -104,7 +106,8 @@ export default class App extends Component {
     const { conferences } = this.state;
 
     this.setState({
-      conferences: sortByDate(conferences, direction)
+      conferences: sortByDate(conferences, direction),
+      sortDateDirection: direction
     });
   };
 
@@ -121,7 +124,12 @@ export default class App extends Component {
   };
 
   render() {
-    const { loading, conferences, filters: { year, type } } = this.state;
+    const {
+      sortDateDirection,
+      loading,
+      conferences,
+      filters: { year, type }
+    } = this.state;
 
     return (
       <div className={styles.App}>
@@ -130,7 +138,10 @@ export default class App extends Component {
             <Heading element="h1">Find your next conference</Heading>
           </div>
           <div>
+            {this.pastConferenceToggler()}
             <ConferenceFilter
+              sortDateDirection={sortDateDirection}
+              sortByDate={this.sortByDate}
               year={year}
               type={type}
               onYearChange={this.handleYearChange}
@@ -149,8 +160,8 @@ export default class App extends Component {
             {loading
               ? '...'
               : <ConferenceList
+                  sortDateDirection={sortDateDirection}
                   conferences={this.filterConferences(conferences)}
-                  sortByDate={this.sortByDate}
                 />}
           </div>
           <div>
@@ -185,12 +196,4 @@ function getDuplicates(conferences) {
     }
   });
   return duplicates;
-}
-
-function sortByDate(items, direction) {
-  const compFunc = direction === 'asc' ? compareAsc : compareDesc;
-
-  return Array.from(items).sort((itemA, itemB) => {
-    return compFunc(itemA.startDate, itemB.startDate);
-  });
 }
