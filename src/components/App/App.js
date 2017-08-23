@@ -9,6 +9,8 @@ import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
 
+const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/conferences';
+
 export default class App extends Component {
   state = {
     filters: {
@@ -158,5 +160,5 @@ export default class App extends Component {
 
 function getConferenceLink(state) {
   const {type, year} = state;
-  return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${year}/${type.toLocaleLowerCase()}.json`;
+  return `${BASE_URL}/${year}/${type.toLocaleLowerCase()}.json`;
 }
