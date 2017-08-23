@@ -134,14 +134,6 @@ export default class App extends Component {
               onYearChange={this.handleYearChange}
               onTypeChange={this.handleTypeChange}
             />
-          </div>
-          <div>
-            <Link
-              url="https://github.com/nimzco/the-conference-list/issues/new"
-              external
-            >
-              Add a conference
-            </Link>
             {this.pastConferenceToggler()}
           </div>
           <div>
