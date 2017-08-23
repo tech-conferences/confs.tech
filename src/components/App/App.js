@@ -84,24 +84,6 @@ export default class App extends Component {
     );
   };
 
-  showDuplicates = conferences => {
-    if (process.env.NODE_ENV !== 'development') {
-      return null;
-    }
-    return (
-      <ul>
-        <li>
-          <strong>DUPLICATES</strong>
-        </li>
-        {getDuplicates(conferences).map(conf =>
-          <li>
-            {conf.name}: {conf.url}
-          </li>
-        )}
-      </ul>
-    );
-  };
-
   sortByDate = direction => {
     const { conferences } = this.state;
 
@@ -181,19 +163,4 @@ export default class App extends Component {
 function getConferenceLink(state) {
   const { type, year } = state;
   return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${year}/${type.toLocaleLowerCase()}.json`;
-}
-
-function getDuplicates(conferences) {
-  const confURLs = conferences.map(conf => conf.url);
-  const duplicates = [];
-
-  Object.keys(conferences).forEach((key, index) => {
-    const url = conferences[key].url;
-    if (confURLs.indexOf(url, index + 1) !== -1) {
-      if (duplicates.indexOf(url) === -1) {
-        duplicates.push(conferences[key]);
-      }
-    }
-  });
-  return duplicates;
 }
