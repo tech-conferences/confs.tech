@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import classNames from 'classnames';
 import {isPast, parse, format} from 'date-fns';
 
+import Heading from '../Heading';
 import Link from '../Link';
 import styles from './ConferenceItem.scss';
 
@@ -16,11 +17,11 @@ export default class ConferenceItem extends PureComponent {
           styles.ConferenceItem
         )}
       >
-        <div>
+        <Heading element="h3" level={3} className={styles.ConferenceItemTitle}>
           <Link url={url} external>
             {name}
           </Link>
-        </div>
+        </Heading>
         <div>
           {city}, <strong>{country}</strong>
           &nbsp;–&nbsp;
