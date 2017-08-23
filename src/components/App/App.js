@@ -31,6 +31,7 @@ export default class App extends Component {
 
   loadConference = () => {
     const {filters} = this.state;
+    this.setState({loading: true});
 
     fetch(getConferenceLink(filters))
       .then((result) => result.json())
