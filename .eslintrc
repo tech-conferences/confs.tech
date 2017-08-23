@@ -1,4 +1,4 @@
 {
-  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+  "extends": ["plugin:shopify/react", "plugin:jsx-a11y/recommended"],
   "plugins": ["jsx-a11y"]
 }

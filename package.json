@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "eslint": "^4.5.0",
+    "eslint-plugin-shopify": "^17.0.0",
     "prettier": "^1.5.3"
   },
   "scripts": {
