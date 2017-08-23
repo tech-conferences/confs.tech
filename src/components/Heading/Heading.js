@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, {PureComponent} from 'react';
 import classNames from 'classnames';
 
 import styles from './Heading.scss';
 
-export default class Heading extends Component {
+export default class Heading extends PureComponent {
   render() {
-    const { level } = this.props;
+    const {level} = this.props;
     const Element = this.props.element;
 
     return (

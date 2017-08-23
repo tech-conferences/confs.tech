@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import styles from './ConferenceFilter.css';
 import Link from '../Link';
 import Select from '../Select';
 
 export default class ConferenceFilter extends Component {
   sortConferencesByDate = () => {
-    const { sortDateDirection, sortByDate } = this.props;
+    const {sortDateDirection, sortByDate} = this.props;
     const newSortDateDirection = sortDateDirection === 'desc' ? 'asc' : 'desc';
 
     sortByDate(newSortDateDirection);
-    this.setState({ sortDateDirection: newSortDateDirection });
+    this.setState({sortDateDirection: newSortDateDirection});
   };
 
   render() {
@@ -18,8 +18,8 @@ export default class ConferenceFilter extends Component {
       year,
       type,
       onYearChange,
-      onTypeChange
-    } = this.props;
+      onTypeChange,
+   } = this.props;
 
     return (
       <div>
@@ -35,7 +35,7 @@ export default class ConferenceFilter extends Component {
             options={[
               ['JavaScript', 'javascript'],
               ['UX', 'ux'],
-              ['Ruby', 'ruby']
+              ['Ruby', 'ruby'],
             ]}
             onChange={onTypeChange}
             value={type}

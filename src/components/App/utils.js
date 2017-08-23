@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
+
 import React from 'react';
-import { compareAsc, compareDesc } from 'date-fns';
+import {compareAsc, compareDesc} from 'date-fns';
 
 export function sortByDate(items, direction) {
   const compFunc = direction === 'asc' ? compareAsc : compareDesc;
@@ -10,7 +12,7 @@ export function sortByDate(items, direction) {
 }
 
 function getDuplicates(conferences) {
-  const confURLs = conferences.map(conf => conf.url);
+  const confURLs = conferences.map((conf) => conf.url);
   const duplicates = [];
 
   Object.keys(conferences).forEach((key, index) => {
@@ -30,11 +32,13 @@ function showDuplicates(conferences) {
       <li>
         <strong>DUPLICATES</strong>
       </li>
-      {getDuplicates(conferences).map(conf =>
-        <li key={`${conf.url} ${conf.name}`}>
-          {conf.name}: {conf.url}
-        </li>
-      )}
+      {getDuplicates(conferences).map((conf) => {
+        return (
+          <li key={`${conf.url} ${conf.name}`}>
+            {conf.name}: {conf.url}
+          </li>
+        );
+      })}
     </ul>
   );
-};
+}

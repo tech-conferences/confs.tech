@@ -30,7 +30,6 @@
     "html-webpack-plugin": "2.29.0",
     "husky": "^0.14.3",
     "jest": "20.0.4",
-    "lint-staged": "^4.0.3",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "object-assign": "4.1.1",
@@ -59,17 +58,12 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "precommit": "lint-staged",
+    "lint": "eslint src",
+    "precommit": "npm run lint",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "homepage": "https://confs.tech",
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --single-quote",
-      "git add"
-    ]
-  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"

@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, {PureComponent} from 'react';
 
 import styles from './Link.scss';
 
-export default class Link extends Component {
+export default class Link extends PureComponent {
   render() {
-    const { url, external, onClick } = this.props;
+    const {url, external, onClick} = this.props;
 
     return (
       <a

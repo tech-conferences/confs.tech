@@ -1,1 +1,1 @@
-export { default } from './Link.js';
+export {default} from './Link.js';

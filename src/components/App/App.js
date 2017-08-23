@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import styles from './App.scss';
-import { sortByDate } from './utils.js';
-import { format, isPast } from 'date-fns';
+import React, {Component} from 'react';
+import {format, isPast} from 'date-fns';
 
+import {sortByDate} from './utils';
+import styles from './App.scss';
 import Link from '../Link';
 import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
@@ -12,12 +12,12 @@ export default class App extends Component {
   state = {
     filters: {
       year: '2017',
-      type: 'javascript'
+      type: 'javascript',
     },
     showPast: false,
     loading: true,
     conferences: [],
-    sortDateDirection: 'asc'
+    sortDateDirection: 'asc',
   };
 
   componentDidMount() {
@@ -25,52 +25,52 @@ export default class App extends Component {
   }
 
   loadConference = () => {
-    const { filters } = this.state;
+    const {filters} = this.state;
 
     fetch(getConferenceLink(filters))
-      .then(result => result.json())
+      .then((result) => result.json())
       // eslint-disable-next-line promise/always-return
-      .then(conferences => {
+      .then((conferences) => {
         this.setState({
           loading: false,
-          conferences: sortByDate(conferences, 'asc')
+          conferences: sortByDate(conferences, 'asc'),
         });
       })
-      .catch(error => {
-        console.error(error);
+      .catch((error) => {
+        console.warn(error); // eslint-disable-line no-console
       });
   };
 
-  handleYearChange = year => {
-    const { filters } = this.state;
+  handleYearChange = (year) => {
+    const {filters} = this.state;
 
     this.setState(
       {
-        filters: { ...filters, year }
+        filters: {...filters, year},
       },
       this.loadConference
     );
   };
 
-  handleTypeChange = type => {
-    const { filters } = this.state;
+  handleTypeChange = (type) => {
+    const {filters} = this.state;
 
     this.setState(
       {
-        filters: { ...filters, type }
+        filters: {...filters, type},
       },
       this.loadConference
     );
   };
 
   togglePast = () => {
-    const { showPast } = this.state;
-    this.setState({ showPast: !showPast });
+    const {showPast} = this.state;
+    this.setState({showPast: !showPast});
   };
 
   pastConferenceToggler = () => {
-    const { showPast, filters: { year } } = this.state;
-    const activeYear = new Date().getFullYear().toString() === year;
+    const {showPast, filters: {year}} = this.state;
+    const activeYear = (new Date().getFullYear().toString() === year);
 
     if (!activeYear) {
       return null;
@@ -85,23 +85,23 @@ export default class App extends Component {
     );
   };
 
-  sortByDate = direction => {
-    const { conferences } = this.state;
+  sortByDate = (direction) => {
+    const {conferences} = this.state;
 
     this.setState({
       conferences: sortByDate(conferences, direction),
-      sortDateDirection: direction
+      sortDateDirection: direction,
     });
   };
 
-  filterConferences = conferences => {
-    const { showPast } = this.state;
+  filterConferences = (conferences) => {
+    const {showPast} = this.state;
 
     if (showPast) {
       return conferences;
     }
 
-    return conferences.filter(conference => {
+    return conferences.filter((conference) => {
       return !isPast(format(conference.startDate));
     });
   };
@@ -111,8 +111,8 @@ export default class App extends Component {
       sortDateDirection,
       loading,
       conferences,
-      filters: { year, type }
-    } = this.state;
+      filters: {year, type},
+  } = this.state;
 
     return (
       <div className={styles.App}>
@@ -143,9 +143,10 @@ export default class App extends Component {
             {loading
               ? '...'
               : <ConferenceList
-                  sortDateDirection={sortDateDirection}
-                  conferences={this.filterConferences(conferences)}
-                />}
+                sortDateDirection={sortDateDirection}
+                conferences={this.filterConferences(conferences)}
+                />
+            }
           </div>
           <div>
             <p>
@@ -162,6 +163,6 @@ export default class App extends Component {
 }
 
 function getConferenceLink(state) {
-  const { type, year } = state;
+  const {type, year} = state;
   return `https://raw.githubusercontent.com/nimzco/the-conference-list/master/conferences/${year}/${type.toLocaleLowerCase()}.json`;
 }

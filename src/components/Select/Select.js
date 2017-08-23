@@ -1,24 +1,24 @@
 /* eslint-disable jsx-a11y/no-onchange */
-import React, { Component } from 'react';
-import { uniqueId } from 'lodash';
+import React, {Component} from 'react';
+import {uniqueId} from 'lodash';
 import styles from './Select.scss';
 
 export default class Select extends Component {
   componentWillMount() {
     const id = uniqueId('Select-');
-    this.setState({ id });
+    this.setState({id});
   }
 
-  handleSelect = event => {
-    const { onChange } = this.props;
+  handleSelect = (event) => {
+    const {onChange} = this.props;
 
     onChange(event.target.value);
   };
 
   renderOptions = () => {
-    const { options } = this.props;
+    const {options} = this.props;
 
-    return options.map(option => {
+    return options.map((option) => {
       const [label, value] = option;
 
       return (
@@ -30,8 +30,8 @@ export default class Select extends Component {
   };
 
   render() {
-    const { label, value } = this.props;
-    const { id } = this.state;
+    const {label, value} = this.props;
+    const {id} = this.state;
 
     return (
       <div className={styles.Wrapper}>
