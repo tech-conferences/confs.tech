@@ -6,6 +6,7 @@ import styles from './App.scss';
 import Footer from '../Footer';
 import Link from '../Link';
 import Heading from '../Heading';
+import Icon from '../Icon';
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
 
@@ -144,7 +145,7 @@ export default class App extends Component {
           </div>
           <div>
             {loading
-              ? '...'
+              ? Loader()
               : <ConferenceList
                 sortDateDirection={sortDateDirection}
                 conferences={this.filterConferences(conferences)}
@@ -161,4 +162,12 @@ export default class App extends Component {
 function getConferenceLink(state) {
   const {type, year} = state;
   return `${BASE_URL}/${year}/${type.toLocaleLowerCase()}.json`;
+}
+
+function Loader() {
+  return (
+    <div className={styles.Loader}>
+      <Icon source="loading" size={64} />
+    </div>
+  );
 }
