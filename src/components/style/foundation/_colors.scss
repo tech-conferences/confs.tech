@@ -1,0 +1,35 @@
+// COLORS
+// -----------------------------------------------------------------------------
+
+// stylelint-disable color-no-hex, no-indistinguishable-colors, function-max-empty-lines, value-list-max-empty-lines
+$color-palette-data: (
+  accent: (
+    base: blue,
+  ),
+  gray: (
+    base: #CCCCCC,
+    lighter: #EEEEEE,
+  )
+);
+
+
+/// Returns the color value for a given color name and group.
+///
+/// @param {String} $hue - The color's hue.
+/// @param {String} $value - The darkness/lightness of the color. Defaults to base.
+/// appear. Applies a multiply filter to ensure appropriate contrast.
+/// @return {Color} The color value.
+
+@function color($hue, $value: base) {
+  $fetched-color: map-get(map-get($color-palette-data, $hue), $value);
+
+  @if map-has-key($color-palette-data, $fetched-color) {
+    $fetched-color: map-get(map-get($color-palette-data, $fetched-color), $value);
+  }
+
+  @if type-of($fetched-color) == color {
+    @return $fetched-color;
+  } @else {
+    @error 'Color `#{$hue} - #{$value}` not found. Available colors: #{available-names($color-palette-data)}';
+  }
+}

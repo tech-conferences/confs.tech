@@ -1,48 +1,53 @@
 import React, { Component } from 'react';
-import {Link, Card} from '@shopify/polaris';
-import {groupBy} from 'lodash'
-import {parse, format} from 'date-fns'
+import { groupBy } from 'lodash';
+import { parse, format } from 'date-fns';
 
+import Link from '../Link';
 import ConferenceItem from '../ConferenceItem';
-import './ConferenceList.css';
+import styles from './ConferenceList.css';
 
 export default class ConferenceList extends Component {
   state = {
-    sortDateDirection: 'asc',
-  }
+    sortDateDirection: 'asc'
+  };
 
   sortConferencesByDate = () => {
-    const {sortByDate} = this.props;
-    const {sortDateDirection} = this.state;
-    const newSortDateDirection = (sortDateDirection === 'desc' ? 'asc' : 'desc');
+    const { sortByDate } = this.props;
+    const { sortDateDirection } = this.state;
+    const newSortDateDirection = sortDateDirection === 'desc' ? 'asc' : 'desc';
 
     sortByDate(newSortDateDirection);
-    this.setState({sortDateDirection: newSortDateDirection});
-  }
+    this.setState({ sortDateDirection: newSortDateDirection });
+  };
 
   renderMonth = (month, conferences) => {
     return [
-      (<tr><td colSpan={3}><strong>{getMonthName(month)}</strong></td></tr>),
-      conferences.map((conf) => {
-        return (
-          <ConferenceItem
-            key={`${conf.url} ${conf.date}`} {...conf}
-          />)
+      <tr>
+        <td colSpan={3}>
+          <strong>
+            {getMonthName(month)}
+          </strong>
+        </td>
+      </tr>,
+      conferences.map(conf => {
+        return <ConferenceItem key={`${conf.url} ${conf.date}`} {...conf} />;
       })
-    ]
-  }
+    ];
+  };
 
   renderTable = () => {
-    const {conferences} = this.props;
-    const {sortDateDirection} = this.state;
-    const groupedConferences = groupBy(conferences, (conf) => format(conf.startDate, 'M'));
+    const { conferences } = this.props;
+    const { sortDateDirection } = this.state;
+    const groupedConferences = groupBy(conferences, conf =>
+      format(conf.startDate, 'M')
+    );
 
     if (conferences.length === 0) {
-      return (<div>Oh shoe... We don't have any conferences yet. :(</div>)
+      return <div>Oh shoe... We don't have any conferences yet. :(</div>;
     } else {
       return (
-        <table className="ConferenceList">
-          <thead className="ConferenceList__head">
+        <table className={styles.ConferenceList}>
+          <thead className={styles.ConferenceList__head}>
             <tr>
               <th>Name</th>
               <th>Location</th>
@@ -54,21 +59,17 @@ export default class ConferenceList extends Component {
             </tr>
           </thead>
           <tbody>
-            {months(groupedConferences, sortDateDirection).map(((month) => {
+            {months(groupedConferences, sortDateDirection).map(month => {
               return this.renderMonth(month, groupedConferences[month]);
-            }))}
+            })}
           </tbody>
         </table>
-      )
+      );
     }
-  }
+  };
 
   render() {
-    return (
-      <Card sectioned>
-        {this.renderTable()}
-      </Card>
-    );
+    return this.renderTable();
   }
 }
 

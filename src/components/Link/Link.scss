@@ -1,0 +1,8 @@
+.Link {
+  color: blue;
+  cursor: pointer;
+
+  &:hover {
+    background: red;
+  }
+}

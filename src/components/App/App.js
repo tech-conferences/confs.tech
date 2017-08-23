@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
-import { Link, Page, Layout, DisplayText } from '@shopify/polaris';
+import styles from './App.scss';
 import { format, isPast, compareAsc, compareDesc } from 'date-fns';
 
+import Link from '../Link';
+import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
 
@@ -123,47 +124,45 @@ export default class App extends Component {
     const { loading, conferences, filters: { year, type } } = this.state;
 
     return (
-      <Page>
-        <Layout>
-          <Layout.Section>
-            <DisplayText size="extraLarge">
-              Find your next conference
-            </DisplayText>
-          </Layout.Section>
-          <Layout.Section>
+      <div className={styles.App}>
+        <div>
+          <div>
+            <Heading element="h1">Find your next conference</Heading>
+          </div>
+          <div>
             <ConferenceFilter
               year={year}
               type={type}
               onYearChange={this.handleYearChange}
               onTypeChange={this.handleTypeChange}
             />
-          </Layout.Section>
-          <Layout.Section>
+          </div>
+          <div>
             <Link
               url="https://github.com/nimzco/the-conference-list/issues/new"
               external
             >
               Add a conference
             </Link>
-          </Layout.Section>
-          <Layout.Section>
+          </div>
+          <div>
             {loading
               ? '...'
               : <ConferenceList
                   conferences={this.filterConferences(conferences)}
                   sortByDate={this.sortByDate}
                 />}
-          </Layout.Section>
-          <Layout.Section>
+          </div>
+          <div>
             <p>
               Maintained by&nbsp;
               <Link url="https://github.com/nimzco" external>
                 @nimzco
               </Link>
             </p>
-          </Layout.Section>
-        </Layout>
-      </Page>
+          </div>
+        </div>
+      </div>
     );
   }
 }

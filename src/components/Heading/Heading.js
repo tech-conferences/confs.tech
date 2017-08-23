@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-import './Heading.css';
+import styles from './Heading.scss';
 
 export default class Heading extends Component {
   render() {
     const Element = this.props.element;
 
     return (
-      <Element className={classNames(styles.Heading)}>
+      <Element className={styles.Heading}>
         {this.props.children}
       </Element>
     );

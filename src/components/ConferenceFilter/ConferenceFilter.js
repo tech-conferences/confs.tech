@@ -1,30 +1,32 @@
 import React, { Component } from 'react';
-import {Select, Card} from '@shopify/polaris';
-import './ConferenceFilter.css';
+import styles from './ConferenceFilter.css';
+import Select from '../Select';
 
 export default class ConferenceFilter extends Component {
   render() {
-    const {year, type, onYearChange, onTypeChange} = this.props;
+    const { year, type, onYearChange, onTypeChange } = this.props;
 
     return (
-      <Card sectioned>
-        <div className="ConferenceFilter">
+      <div>
+        <div className={styles.ConferenceFilter}>
           <Select
             label="Date"
-            options={['2017', '2018']}
-            placeholder="Select"
+            options={[['2017', '2017'], ['2018', '2018']]}
             onChange={onYearChange}
             value={year}
           />
           <Select
             label="Type"
-            options={['JavaScript', 'UX', 'Ruby']}
-            placeholder="Select"
+            options={[
+              ['JavaScript', 'javascript'],
+              ['UX', 'ux'],
+              ['Ruby', 'ruby']
+            ]}
             onChange={onTypeChange}
             value={type}
           />
         </div>
-      </Card>
+      </div>
     );
   }
 }

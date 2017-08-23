@@ -1,0 +1,21 @@
+// OUTSIDE BORDER
+// -----------------------------------------------------------------------------
+@import './colors';
+
+$borders-data: (
+  base: solid 1px color(gray),
+);
+
+/// Returns the default border
+/// @param {String} $variant [base] - The border variant key.
+/// @return {List} The border value.
+
+@function border($variant: base) {
+  $fetched-value: map-get($borders-data, $variant);
+
+  @if $fetched-value {
+    @return $fetched-value;
+  } @else {
+    @error 'Outside border variant `#{$variant}` not found. Available variants: #{available-names($borders-data)}';
+  }
+}
