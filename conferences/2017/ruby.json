@@ -278,12 +278,12 @@
     "twitter": "@rubyconf"
   },
   {
-    "name": "RailsIsrael",
-    "url": "",
-    "startDate": "2017/11/28",
-    "endDate": "2017/11/30",
-    "city": "Tel Aviv",
-    "country": "Israel",
-    "twitter": "@fogelmania"
+    "name": "Functional Conf",
+    "url": "https://functionalconf.com/",
+    "startDate": "2017/11/16",
+    "endDate": "2017/11/19",
+    "city": "Bangalore",
+    "country": "India",
+    "twitter": "@fnConf"
   }
 ]
