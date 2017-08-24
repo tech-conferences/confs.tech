@@ -391,14 +391,6 @@
     "country": "USA"
   },
   {
-    "name": "Web Unleashed",
-    "url": "http://fitc.ca/event/webu17/",
-    "date": "September 25-27",
-    "startDate": "2017/09/25",
-    "city": "Toronto",
-    "country": "Canada"
-  },
-  {
     "name": "React Alicante",
     "url": "http://reactalicante.es/",
     "date": "September 28-30",
@@ -1196,9 +1188,10 @@
   {
     "name": "The Web Unleashed",
     "startDate": "2017/09/25",
+    "endDate": "2017/09/26",
     "city": "Toronto",
     "country": "Canada",
-    "url": "Fitc.ca"
+    "url": "http://fitc.ca/event/webu17/"
   },
   {
     "name": "Design Matters",

@@ -326,5 +326,12 @@
     "startDate": "2017/11/06",
     "city": "Washington, DC",
     "country": "USA"
+  },
+  {
+    "name": "One & All",
+    "url": "http://oneandall.io/",
+    "startDate": "2017/09/07",
+    "city": "Montréal",
+    "country": "Canada"
   }
 ]
