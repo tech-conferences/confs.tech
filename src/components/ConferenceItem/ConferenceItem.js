@@ -8,9 +8,15 @@ import styles from './ConferenceItem.scss';
 
 export default class ConferenceItem extends PureComponent {
   render() {
-    const {name, url, city, country, startDate, endDate} = this.props;
-
-    const showEndDate = (endDate && endDate !== startDate);
+    const {
+      name,
+      url,
+      city,
+      country,
+      startDate,
+      endDate,
+      twitter,
+    } = this.props;
 
     return (
       <div
@@ -28,9 +34,20 @@ export default class ConferenceItem extends PureComponent {
           {city}, <strong>{country}</strong>
           &nbsp;–&nbsp;
           {format(parse(startDate), 'MMM, Do')}
-          {showEndDate ? format(parse(endDate), '-Do') : null}
+          {endDate && endDate !== startDate ? format(parse(endDate), '-Do') : null}
+          {Twitter(twitter)}
         </div>
       </div>
     );
   }
+}
+
+function Twitter(twitter) {
+  if (!twitter) { return null; }
+
+  return (
+    <Link url={`https://twitter.com/${twitter}`} external className={styles.Twitter}>
+      {twitter}
+    </Link>
+  );
 }

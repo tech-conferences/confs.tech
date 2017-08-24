@@ -6,7 +6,7 @@
     "endDate": "2018/01/28",
     "city": "Tegernsee",
     "country": " Germany",
-    "twitter": "https://twitter.com/rubyoniceconf"
+    "twitter": "@rubyoniceconf"
   },
   {
     "name": "Bath Ruby Conference",
@@ -15,6 +15,6 @@
     "endDate": "2018/03/23",
     "city": "Bath",
     "country": " UK",
-    "twitter": "https://twitter.com/bathruby"
+    "twitter": "@bathruby"
   }
 ]

@@ -9,11 +9,11 @@ export default class Link extends PureComponent {
   };
 
   render() {
-    const {url, external, onClick, selected, dataValue} = this.props;
+    const {url, external, onClick, selected, dataValue, className} = this.props;
 
     return (
       <a
-        className={classNames(styles.Link, selected && styles.Selected)}
+        className={classNames(styles.Link, selected && styles.Selected, className)}
         onClick={onClick}
         target={external ? '_blank' : null}
         data-value={dataValue}
