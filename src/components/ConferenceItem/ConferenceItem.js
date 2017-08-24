@@ -8,7 +8,9 @@ import styles from './ConferenceItem.scss';
 
 export default class ConferenceItem extends PureComponent {
   render() {
-    const {name, url, city, country, startDate} = this.props;
+    const {name, url, city, country, startDate, endDate} = this.props;
+
+    const showEndDate = (endDate && endDate !== startDate);
 
     return (
       <div
@@ -25,7 +27,8 @@ export default class ConferenceItem extends PureComponent {
         <div>
           {city}, <strong>{country}</strong>
           &nbsp;–&nbsp;
-          {format(parse(startDate), 'MMMM, Do')}
+          {format(parse(startDate), 'MMM, Do')}
+          {showEndDate ? format(parse(endDate), '-Do') : null}
         </div>
       </div>
     );
