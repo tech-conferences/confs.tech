@@ -19,7 +19,7 @@ export default class ConferenceList extends Component {
   };
 
   renderTable = () => {
-    const {conferences, sortDateDirection} = this.props;
+    const {conferences} = this.props;
     const groupedConferences = groupBy(conferences, (conf) =>
       format(conf.startDate, 'M')
     );
@@ -29,7 +29,7 @@ export default class ConferenceList extends Component {
     } else {
       return (
         <div className={styles.ConferenceList}>
-          {months(groupedConferences, sortDateDirection).map((month) => {
+          {Object.keys(groupedConferences).map((month) => {
             return this.renderMonth(month, groupedConferences[month]);
           })}
         </div>
@@ -44,12 +44,4 @@ export default class ConferenceList extends Component {
 
 function getMonthName(month) {
   return format(parse(`2017/${month}/01`), 'MMMM');
-}
-
-function months(groupedConferences, sortDirection) {
-  if (sortDirection === 'asc') {
-    return Object.keys(groupedConferences);
-  } else {
-    return Object.keys(groupedConferences).reverse();
-  }
 }

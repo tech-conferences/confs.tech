@@ -22,16 +22,8 @@ export default class ConferenceFilter extends Component {
     onTypeChange(event.target.dataset.value);
   };
 
-  sortConferencesByDate = () => {
-    const {sortDateDirection, sortByDate} = this.props;
-    const newSortDateDirection = sortDateDirection === 'desc' ? 'asc' : 'desc';
-
-    sortByDate(newSortDateDirection);
-    this.setState({sortDateDirection: newSortDateDirection});
-  };
-
   render() {
-    const {sortDateDirection, year, type} = this.props;
+    const {year, type} = this.props;
 
     return (
       <div>
@@ -41,11 +33,6 @@ export default class ConferenceFilter extends Component {
           </div>
           <div className={styles.ConferenceFilter}>
             {Types(type, this.handleTypeClick)}
-          </div>
-          <div className={styles.ConferenceFilter}>
-            <Link onClick={this.sortConferencesByDate}>
-              Sort by date {sortDateDirection === 'asc' ? '⬇' : '⬆'}
-            </Link>
           </div>
         </div>
       </div>

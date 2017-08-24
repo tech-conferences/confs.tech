@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {format, isPast} from 'date-fns';
 import Favicon from 'react-favicon';
 
-import {sortByDate} from './utils';
 import styles from './App.scss';
 import Footer from '../Footer';
 import Link from '../Link';
@@ -28,7 +27,6 @@ export default class App extends Component {
     showPast: false,
     loading: true,
     conferences: [],
-    sortDateDirection: 'asc',
   };
 
   componentDidMount() {
@@ -45,7 +43,7 @@ export default class App extends Component {
       .then((conferences) => {
         this.setState({
           loading: false,
-          conferences: sortByDate(conferences, 'asc'),
+          conferences,
         });
       })
       .catch((error) => {
@@ -96,15 +94,6 @@ export default class App extends Component {
     );
   };
 
-  sortByDate = (direction) => {
-    const {conferences} = this.state;
-
-    this.setState({
-      conferences: sortByDate(conferences, direction),
-      sortDateDirection: direction,
-    });
-  };
-
   filterConferences = (conferences) => {
     const {showPast} = this.state;
 
@@ -119,7 +108,6 @@ export default class App extends Component {
 
   render() {
     const {
-      sortDateDirection,
       loading,
       conferences,
       filters: {year, type},
@@ -134,8 +122,6 @@ export default class App extends Component {
           </div>
           <div>
             <ConferenceFilter
-              sortDateDirection={sortDateDirection}
-              sortByDate={this.sortByDate}
               year={year}
               type={type}
               onYearChange={this.handleYearChange}
@@ -147,7 +133,6 @@ export default class App extends Component {
             {loading
               ? Loader()
               : <ConferenceList
-                sortDateDirection={sortDateDirection}
                 conferences={this.filterConferences(conferences)}
                 />
             }
