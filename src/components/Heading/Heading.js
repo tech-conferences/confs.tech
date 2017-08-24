@@ -5,12 +5,12 @@ import styles from './Heading.scss';
 
 export default class Heading extends PureComponent {
   render() {
-    const {level} = this.props;
+    const {level, className} = this.props;
     const Element = this.props.element;
 
     return (
       <Element
-        className={classNames(styles.Heading, styles[`Heading-${level || 1}`])}
+        className={classNames(styles.Heading, styles[`Heading-${level || 1}`], className)}
       >
         <span className={styles.Inner}>
           {this.props.children}

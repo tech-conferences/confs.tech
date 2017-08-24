@@ -7,6 +7,11 @@ export default function Footer() {
   return (
     <footer className={styles.Footer}>
       <p>
+        <Link url="https://github.com/nimzco/confs.tech/issues/new" external>
+          Add a conference
+        </Link>
+      </p>
+      <p>
         Maintained by&nbsp;
         <Link url="https://github.com/nimzco" external>
           @nimzco

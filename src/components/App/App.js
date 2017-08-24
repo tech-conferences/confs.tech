@@ -1,15 +1,23 @@
 import React, {Component} from 'react';
 import {format, isPast} from 'date-fns';
+import Favicon from 'react-favicon';
 
 import {sortByDate} from './utils';
 import styles from './App.scss';
 import Footer from '../Footer';
 import Link from '../Link';
 import Heading from '../Heading';
+import Icon from '../Icon';
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
 
 const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/conferences';
+const CURRENT_YEAR = (new Date()).getFullYear().toString();
+const TYPES = {
+  javascript: 'JavaScript',
+  ux: 'UX',
+  ruby: 'Ruby',
+};
 
 export default class App extends Component {
   state = {
@@ -29,6 +37,7 @@ export default class App extends Component {
 
   loadConference = () => {
     const {filters} = this.state;
+    this.setState({loading: true});
 
     fetch(getConferenceLink(filters))
       .then((result) => result.json())
@@ -73,9 +82,8 @@ export default class App extends Component {
 
   pastConferenceToggler = () => {
     const {showPast, filters: {year}} = this.state;
-    const activeYear = (new Date().getFullYear().toString() === year);
 
-    if (!activeYear) {
+    if (CURRENT_YEAR !== year) {
       return null;
     }
 
@@ -115,16 +123,16 @@ export default class App extends Component {
       loading,
       conferences,
       filters: {year, type},
-  } = this.state;
+    } = this.state;
 
     return (
       <div className={styles.App}>
+        <Favicon url={`${type}.png`} />
         <div>
           <div>
-            <Heading element="h1">Find your next conference</Heading>
+            <Heading element="h1">Find your next {TYPES[type]} conference</Heading>
           </div>
           <div>
-            {this.pastConferenceToggler()}
             <ConferenceFilter
               sortDateDirection={sortDateDirection}
               sortByDate={this.sortByDate}
@@ -133,18 +141,11 @@ export default class App extends Component {
               onYearChange={this.handleYearChange}
               onTypeChange={this.handleTypeChange}
             />
-          </div>
-          <div>
-            <Link
-              url="https://github.com/nimzco/the-conference-list/issues/new"
-              external
-            >
-              Add a conference
-            </Link>
+            {this.pastConferenceToggler()}
           </div>
           <div>
             {loading
-              ? '...'
+              ? Loader()
               : <ConferenceList
                 sortDateDirection={sortDateDirection}
                 conferences={this.filterConferences(conferences)}
@@ -161,4 +162,12 @@ export default class App extends Component {
 function getConferenceLink(state) {
   const {type, year} = state;
   return `${BASE_URL}/${year}/${type.toLocaleLowerCase()}.json`;
+}
+
+function Loader() {
+  return (
+    <div className={styles.Loader}>
+      <Icon source="loading" size={64} />
+    </div>
+  );
 }
