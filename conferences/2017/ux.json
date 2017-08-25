@@ -333,5 +333,13 @@
     "startDate": "2017/09/07",
     "city": "Montréal",
     "country": "Canada"
+  },
+  {
+    "name": "Game UX Summit '17",
+    "url": "http://toronto.ubisoft.com/gameuxsummit/",
+    "startDate": "2017/09/04",
+    "endDate": "2017/10/05",
+    "city": "Toronto",
+    "country": "Canada"
   }
 ]
