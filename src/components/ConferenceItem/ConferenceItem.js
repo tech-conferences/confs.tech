@@ -33,8 +33,10 @@ export default class ConferenceItem extends PureComponent {
         <div>
           {city}, <strong>{country}</strong>
           &nbsp;–&nbsp;
-          {format(parse(startDate), 'MMM, Do')}
-          {endDate && endDate !== startDate ? format(parse(endDate), '-Do') : null}
+          <span className={styles.Date}>
+            {format(parse(startDate), 'MMM, Do')}
+            {endDate && endDate !== startDate ? format(parse(endDate), '-Do') : null}
+          </span>
           {Twitter(twitter)}
         </div>
       </div>
@@ -46,7 +48,7 @@ function Twitter(twitter) {
   if (!twitter) { return null; }
 
   return (
-    <Link url={`https://twitter.com/${twitter}`} external className={styles.Twitter}>
+    <Link url={`https://twitter.com/${twitter}`} external>
       {twitter}
     </Link>
   );
