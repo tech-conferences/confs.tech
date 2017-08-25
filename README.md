@@ -11,9 +11,5 @@
 
 ## TODO
 - Find list of conferences and add new JSON files
-  - JS: https://github.com/ryanburgess/2017-conferences
   - Android: https://github.com/AndroidStudyGroup/conferences
-- Normalize dates
-- Add filters
-- Add usefull fields: CFP URL, CFP dates, description, tags, etc?
-- Add Router
+- Add other fields? CFP URL, CFP dates, description, tags, etc?
