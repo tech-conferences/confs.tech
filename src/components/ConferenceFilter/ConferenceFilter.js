@@ -10,16 +10,10 @@ const TYPES = {
 };
 
 export default class ConferenceFilter extends Component {
-  handleYearClick = (event) => {
-    const {onYearChange} = this.props;
+  getUrl = (filters) => {
+    const {year, type} = this.props;
 
-    onYearChange(event.target.dataset.value);
-  };
-
-  handleTypeClick = (event) => {
-    const {onTypeChange} = this.props;
-
-    onTypeChange(event.target.dataset.value);
+    return `/${filters.year || year}/${filters.type || type}`;
   };
 
   render() {
@@ -29,10 +23,10 @@ export default class ConferenceFilter extends Component {
       <div>
         <div className={styles.ConferenceFilterWrapper}>
           <div className={styles.ConferenceFilter}>
-            {Years(year, this.handleYearClick)}
+            {Years(year, this.getUrl)}
           </div>
           <div className={styles.ConferenceFilter}>
-            {Types(type, this.handleTypeClick)}
+            {Types(type, this.getUrl)}
           </div>
         </div>
       </div>
@@ -40,14 +34,14 @@ export default class ConferenceFilter extends Component {
   }
 }
 
-function Years(selectedYear, handleClick) {
+function Years(selectedYear, getUrl) {
   return YEARS.map((year) => {
     return (
       <div key={year} className={styles.Filter}>
         <Link
+          url={getUrl({year})}
           selected={selectedYear === year}
-          onClick={handleClick}
-          dataValue={year}
+          routed
         >
           {year}
         </Link>
@@ -56,14 +50,14 @@ function Years(selectedYear, handleClick) {
   });
 }
 
-function Types(selectedType, handleClick) {
+function Types(selectedType, getUrl) {
   return Object.keys(TYPES).map((type) => {
     return (
       <div key={type} className={styles.Filter}>
         <Link
+          url={getUrl({type})}
           selected={selectedType === type}
-          onClick={handleClick}
-          dataValue={type}
+          routed
         >
           {TYPES[type]}
         </Link>

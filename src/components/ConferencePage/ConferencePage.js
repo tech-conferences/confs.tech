@@ -40,6 +40,18 @@ export default class ConferencePage extends Component {
     });
   }
 
+  componentWillReceiveProps(nextProps) {
+    const {match: {params: {year, type}}} = nextProps;
+    if (!type) { return; }
+
+    this.setState({
+      filters: {
+        year: year || CURRENT_YEAR,
+        type,
+      },
+    }, this.loadConference);
+  }
+
   componentDidMount() {
     this.loadConference();
   }
@@ -60,28 +72,6 @@ export default class ConferencePage extends Component {
       .catch((error) => {
         console.warn(error); // eslint-disable-line no-console
       });
-  };
-
-  handleYearChange = (year) => {
-    const {filters} = this.state;
-
-    this.setState(
-      {
-        filters: {...filters, year},
-      },
-      this.loadConference
-    );
-  };
-
-  handleTypeChange = (type) => {
-    const {filters} = this.state;
-
-    this.setState(
-      {
-        filters: {...filters, type},
-      },
-      this.loadConference
-    );
   };
 
   togglePast = () => {
@@ -134,8 +124,6 @@ export default class ConferencePage extends Component {
           <ConferenceFilter
             year={year}
             type={type}
-            onYearChange={this.handleYearChange}
-            onTypeChange={this.handleTypeChange}
           />
           {this.pastConferenceToggler()}
         </div>

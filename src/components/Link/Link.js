@@ -1,5 +1,6 @@
 import React, {PureComponent} from 'react';
 import classNames from 'classnames';
+import {Link as RoutedLink} from 'react-router-dom';
 
 import styles from './Link.scss';
 
@@ -8,15 +9,31 @@ export default class Link extends PureComponent {
     selected: false,
   };
 
+  routedLink() {
+    const {url, selected, className} = this.props;
+
+    return (
+      <RoutedLink
+        className={classNames(styles.Link, selected && styles.Selected, className)}
+        to={url}
+      >
+        {this.props.children}
+      </RoutedLink>
+    );
+  }
+
   render() {
-    const {url, external, onClick, selected, dataValue, className} = this.props;
+    const {url, external, onClick, selected, className, routed} = this.props;
+
+    if (routed) {
+      return this.routedLink();
+    }
 
     return (
       <a
         className={classNames(styles.Link, selected && styles.Selected, className)}
         onClick={onClick}
         target={external ? '_blank' : null}
-        data-value={dataValue}
         href={url}
       >
         {this.props.children}
