@@ -11,8 +11,10 @@
   align-items: center;
   margin-right: spacing(loose);
   margin-bottom: spacing(base);
+  flex-wrap: wrap;
 }
 
 .Filter {
   margin-right: spacing(base);
+  margin-bottom: spacing(tight);
 }

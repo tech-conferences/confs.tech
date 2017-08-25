@@ -10,6 +10,7 @@ export default function App() {
     <div className={styles.App}>
       <div>
         <Switch>
+          <Route path="/:year/:type/:country" component={ConferencePage} />
           <Route path="/:year/:type" component={ConferencePage} />
           <Route path="/:type" component={ConferencePage} />
           <Route exact path="/" component={ConferencePage} />

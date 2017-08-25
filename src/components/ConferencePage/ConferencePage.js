@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {format, isPast} from 'date-fns';
+import {uniq, sortBy} from 'lodash';
 import Favicon from 'react-favicon';
 import {Helmet} from 'react-helmet';
 
@@ -23,7 +24,9 @@ export default class ConferencePage extends Component {
     filters: {
       year: '2017',
       type: 'javascript',
+      country: null,
     },
+    lastLinkFetched: '',
     showPast: false,
     loading: true,
     conferences: [],
@@ -55,16 +58,20 @@ export default class ConferencePage extends Component {
   }
 
   loadConference = () => {
-    const {filters} = this.state;
-    this.setState({loading: true});
+    const {lastLinkFetched, conferences, filters} = this.state;
+    const link = getConferenceLink(filters);
 
-    fetch(getConferenceLink(filters))
+    if (lastLinkFetched === link) { return conferences; }
+
+    this.setState({loading: true, lastLinkFetched: link});
+
+    return fetch(link)
       .then((result) => result.json())
       // eslint-disable-next-line promise/always-return
-      .then((conferences) => {
+      .then((_conferences) => {
         this.setState({
           loading: false,
-          conferences,
+          conferences: _conferences,
         });
       })
       .catch((error) => {
@@ -94,23 +101,26 @@ export default class ConferencePage extends Component {
   };
 
   filterConferences = (conferences) => {
-    const {showPast} = this.state;
+    const {filters: {country}} = this.state;
 
-    if (showPast) {
-      return conferences;
+    if (country) {
+      return conferences.filter((conference) => {
+        return conference.country === country;
+      });
     }
 
-    return conferences.filter((conference) => {
-      return !isPast(format(conference.startDate));
-    });
+    return conferences;
   };
 
   render() {
     const {
       loading,
       conferences,
-      filters: {year, type},
+      showPast,
+      filters: {year, type, country},
     } = this.state;
+    const conferencesFilteredByDate = filterConferencesByDate(conferences, showPast);
+    const filteredConferences = this.filterConferences(conferencesFilteredByDate);
 
     return (
       <div>
@@ -125,6 +135,8 @@ export default class ConferencePage extends Component {
           <ConferenceFilter
             year={year}
             type={type}
+            country={country}
+            countries={getCountries(conferencesFilteredByDate)}
           />
           {this.pastConferenceToggler()}
         </div>
@@ -132,7 +144,7 @@ export default class ConferencePage extends Component {
           {loading
             ? Loader()
             : <ConferenceList
-              conferences={this.filterConferences(conferences)}
+              conferences={filteredConferences}
               />
           }
         </div>
@@ -152,4 +164,16 @@ function Loader() {
       <Icon source="loading" size={64} />
     </div>
   );
+}
+
+function getCountries(conferences) {
+  return sortBy(uniq(conferences.map((conference) => conference.country)));
+}
+
+function filterConferencesByDate(conferences, showPast) {
+  if (showPast) { return conferences; }
+
+  return conferences.filter((conference) => {
+    return !isPast(format(conference.startDate));
+  });
 }

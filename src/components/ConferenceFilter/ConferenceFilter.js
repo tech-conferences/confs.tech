@@ -13,11 +13,15 @@ export default class ConferenceFilter extends Component {
   getUrl = (filters) => {
     const {year, type} = this.props;
 
-    return `/${filters.year || year}/${filters.type || type}`;
+    if (filters.country) {
+      return `/${filters.year || year}/${filters.type || type}/${filters.country}`;
+    } else {
+      return `/${filters.year || year}/${filters.type || type}`;
+    }
   };
 
   render() {
-    const {year, type} = this.props;
+    const {year, type, country, countries} = this.props;
 
     return (
       <div>
@@ -27,6 +31,11 @@ export default class ConferenceFilter extends Component {
           </div>
           <div className={styles.ConferenceFilter}>
             {Types(type, this.getUrl)}
+          </div>
+        </div>
+        <div>
+          <div className={styles.ConferenceFilter}>
+            {Countries(countries, country, this.getUrl)}
           </div>
         </div>
       </div>
@@ -64,4 +73,34 @@ function Types(selectedType, getUrl) {
       </div>
     );
   });
+}
+
+function Countries(countries, selectedCountry, getUrl) {
+  const countriesNode = countries.map((country) => {
+    return (
+      <div key={country} className={styles.Filter}>
+        <Link
+          url={getUrl({country})}
+          selected={selectedCountry === country}
+          routed
+        >
+          {country}
+        </Link>
+      </div>
+    );
+  });
+
+  const allCountryLink = (
+    <div key="all-countries" className={styles.Filter}>
+      <Link
+        url={getUrl({country: null})}
+        selected={!selectedCountry}
+        routed
+      >
+        All countries
+      </Link>
+    </div>
+  );
+
+  return [allCountryLink, ...countriesNode];
 }
