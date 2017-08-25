@@ -30,28 +30,25 @@ export default class ConferencePage extends Component {
   };
 
   componentWillMount() {
-    const {match: {params: {year, type}}} = this.props;
-    if (!type) { return; }
-
-    this.setState({
-      filters: {
-        year: year || CURRENT_YEAR,
-        type,
-      },
-    });
+    this.updateStateWithNewFilters(this.props, this.loadConference);
   }
 
   componentWillReceiveProps(nextProps) {
-    const {match: {params: {year, type}}} = nextProps;
+    this.updateStateWithNewFilters(nextProps, this.loadConference);
+  }
+
+  updateStateWithNewFilters = (props, callback) => {
+    const {match: {params: {year, type, country}}} = props;
     if (!type) { return; }
 
     this.setState({
       filters: {
         year: year || CURRENT_YEAR,
         type,
+        country,
       },
-    }, this.loadConference);
-  }
+    }, callback);
+  };
 
   componentDidMount() {
     this.loadConference();
