@@ -1,2 +1,25 @@
 [
+  {
+    "name": "RenderConf",
+    "url": "https://2018.render-conf.com/",
+    "startDate": "2018/03/23",
+    "city": "Oxford",
+    "country": "U.K."
+  },
+  {
+    "name": "AssertJS",
+    "url": "https://www.assertjs.com/",
+    "startDate": "2018/02/22",
+    "city": "San Antonio",
+    "country": "U.S.A.",
+    "twitter": "@assertjs"
+  },
+  {
+    "name": "FullStack",
+    "url": "https://skillsmatter.com/conferences/9815-fullstack-2018-the-conference-on-javascript-node-and-internet-of-things",
+    "startDate": "2018/07/11",
+    "endDate": "2018/07/13",
+    "city": "London",
+    "country": "U.K."
+  }
 ]
