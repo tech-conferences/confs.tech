@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {format, isPast} from 'date-fns';
 import Favicon from 'react-favicon';
+import {Helmet} from 'react-helmet';
 
 import styles from './ConferencePage.scss';
 import Link from '../Link';
@@ -116,6 +117,9 @@ export default class ConferencePage extends Component {
 
     return (
       <div>
+        <Helmet>
+          <title>{TYPES[type]} conferences in {year} | Confs.tech</title>
+        </Helmet>
         <Favicon url={`${type}.png`} />
         <div>
           <Heading element="h1">Find your next {TYPES[type]} conference</Heading>
