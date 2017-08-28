@@ -10,7 +10,6 @@
   {
     "name": "So Ember",
     "url": "http://soember.com/",
-    "date": "January 27",
     "startDate": "2017/01/27",
     "city": "San Diego, CA",
     "country": "U.S.A."
@@ -18,7 +17,6 @@
   {
     "name": "Script",
     "url": "https://scriptconf.org/",
-    "date": "January 27",
     "startDate": "2017/01/27",
     "city": "Linz",
     "country": "Austria"
@@ -26,7 +24,6 @@
   {
     "name": "ngVikings",
     "url": "https://ngvikings.org/",
-    "date": "February 11",
     "startDate": "2017/02/11",
     "city": "Copenhagen",
     "country": "Denmark"
@@ -321,23 +318,30 @@
   {
     "name": "Full Stack Fest",
     "url": "https://2017.fullstackfest.com/",
-    "date": "September 4-8",
     "startDate": "2017/09/04",
+    "endtDate": "2017/09/08",
     "city": "Barcelona",
     "country": "Spain"
   },
   {
+    "name": "React Native EU",
+    "url": "https://react-native.eu",
+    "startDate": "2017/09/06",
+    "endtDate": "2017/09/07",
+    "city": "Wroclaw",
+    "country": "Poland"
+  },
+  {
     "name": "NordicJS",
     "url": "http://nordicjs.com/",
-    "date": "September 7-8",
     "startDate": "2017/09/07",
+    "endDate": "2017/09/08",
     "city": "Stockholm",
     "country": "Sweden"
   },
   {
     "name": "Refresh",
     "url": "http://refresh.rocks/",
-    "date": "September 8",
     "startDate": "2017/09/08",
     "city": "Tallinn",
     "country": "Estonia"
@@ -345,15 +349,14 @@
   {
     "name": "jsfoo",
     "url": "https://jsfoo.in/2017/",
-    "date": "September 8–9",
     "startDate": "2017/09/08",
+    "endDate": "2017/09/09",
     "city": "Bangalore",
     "country": "India"
   },
   {
     "name": "ReactNext",
     "url": "http://react-next.com/",
-    "date": "September 10",
     "startDate": "2017/09/10",
     "city": "Tel Aviv",
     "country": "Israel"
@@ -361,7 +364,6 @@
   {
     "name": "ReactFoo",
     "url": "https://reactfoo.in/2017/",
-    "date": "September 14",
     "startDate": "2017/09/14",
     "city": "Bangalore",
     "country": "India"
@@ -369,7 +371,6 @@
   {
     "name": "UtahJS",
     "url": "https://conf.utahjs.com/",
-    "date": "September 18",
     "startDate": "2017/09/18",
     "city": "Salt Lake City, UT",
     "country": "U.S.A."
@@ -377,175 +378,174 @@
   {
     "name": "CONNECT.TECH",
     "url": "http://connect.tech/",
-    "date": "September 20-24",
     "startDate": "2017/09/20",
+    "endDate": "2017/09/24",
     "city": "Atlanta, GA",
     "country": "U.S.A."
   },
   {
     "name": "React Boston",
     "url": "http://www.reactboston.com/",
-    "date": "September 23-24",
     "startDate": "2017/09/23",
+    "endDate": "2017/09/24",
     "city": "Boston, MA",
     "country": "U.S.A."
   },
   {
     "name": "React Alicante",
     "url": "http://reactalicante.es/",
-    "date": "September 28-30",
     "startDate": "2017/09/28",
+    "endDate": "2017/09/30",
     "city": "Alicante",
     "country": "Spain"
   },
   {
     "name": "Node Interactive",
     "url": "http://events.linuxfoundation.org/events/node-interactive",
-    "date": "October 4-6",
     "startDate": "2017/10/04",
+    "endDate": "2017/10/06",
     "city": "Vancouver",
     "country": "Canada"
   },
   {
     "name": "Paris Web",
     "url": "http://www.paris-web.fr/",
-    "date": "October 5-7",
     "startDate": "2017/10/05",
+    "endDate": "2017/10/07",
     "city": "Paris",
     "country": "France"
   },
   {
     "name": "NCDevCon",
     "url": "http://www.ncdevcon.com/",
-    "date": "October 7-8",
     "startDate": "2017/10/07",
+    "endDate": "2017/10/08",
     "city": "Raleigh, NC",
     "country": "U.S.A."
   },
   {
     "name": "Angular Mix",
     "url": "https://angularmix.com",
-    "date": "October 10-11",
     "startDate": "2017/10/10",
+    "endDate": "2017/10/11",
     "city": "Orlando, FL",
     "country": "U.S.A."
   },
   {
     "name": "EmberFest",
     "url": "https://emberfest.eu/",
-    "date": "October 12-13",
     "startDate": "2017/10/12",
+    "endDate": "2017/10/13",
     "city": "Berlin",
     "country": "Germany"
   },
   {
     "name": "Empire Conf",
     "url": "http://2017.empireconf.org/",
-    "date": "October 12-13",
     "startDate": "2017/10/12",
+    "endDate": "2017/10/13",
     "city": "New York, NY",
     "country": "U.S.A."
   },
   {
     "name": "RuhrJS",
     "url": "https://ruhrjs.de/",
-    "date": "October 14-15",
     "startDate": "2017/10/14",
+    "endDate": "2017/10/15",
     "city": "Bochum",
     "country": "Germany"
   },
   {
     "name": "Chrome Dev Summit 2017",
     "url": "https://developer.chrome.com/devsummit/",
-    "date": "October 23-24",
     "startDate": "2017/10/23",
+    "endDate": "2017/10/24",
     "city": "San Francisco",
     "country": "U.S.A."
   },
   {
     "name": "International JavaScript Conference",
     "url": "https://javascript-conference.com/en",
-    "date": "October 23-27",
     "startDate": "2017/10/23",
+    "endDate": "2017/10/27",
     "city": "Munich",
     "country": "Germany"
   },
   {
     "name": "ReactiveConf",
     "url": "https://reactiveconf.com/",
-    "date": "October 25-27",
     "startDate": "2017/10/25",
+    "endDate": "2017/10/27",
     "city": "Bratislava",
     "country": "Slovakia"
   },
   {
     "name": "JSConf Budapest",
     "url": "http://jsconfbp.com/",
-    "date": "October 26-27",
     "startDate": "2017/10/26",
+    "endDate": "2017/10/27",
     "city": "Budapest",
     "country": "Hungary"
   },
   {
     "name": "NodeConf Argentina",
     "url": "https://2017.nodeconf.com.ar/",
-    "date": "October 26-28",
     "startDate": "2017/10/26",
+    "endDate": "2017/10/28",
     "city": "Buenos Aires",
     "country": "Argentina"
   },
   {
     "name": "You Gotta Love Frontend",
     "url": "http://yougottalovefrontend.com/",
-    "date": "October 30-31",
     "startDate": "2017/10/30",
+    "endDate": "2017/10/31",
     "city": "Tel Aviv",
     "country": "Israel"
   },
   {
     "name": "JSConf Colombia",
     "url": "https://jsconf.co/",
-    "date": "November 3-4",
     "startDate": "2017/11/03",
+    "endDate": "2017/11/04",
     "city": "Medellin",
     "country": "Colombia"
   },
   {
     "name": "NodeConf EU",
     "url": "http://www.nodeconf.eu/",
-    "date": "November 5-8",
     "startDate": "2017/11/05",
+    "endDate": "2017/11/08",
     "city": "Kilkenny",
     "country": "Ireland"
   },
   {
     "name": "AngularConnect",
     "url": "http://angularconnect.com/",
-    "date": "November 7-8",
     "startDate": "2017/11/07",
+    "endDate": "2017/11/08",
     "city": "London",
     "country": "U.K."
   },
   {
     "name": "FFConf",
     "url": "https://2017.ffconf.org",
-    "date": "November 9-10",
     "startDate": "2017/11/09",
+    "endDate": "2017/11/10",
     "city": "Brighton",
     "country": "U.K."
   },
   {
     "name": "JS Kongress",
     "url": "http://js-kongress.de/",
-    "date": "November 13-14",
     "startDate": "2017/11/13",
+    "endDate": "2017/11/14",
     "city": "Munich",
     "country": "Germany"
   },
   {
     "name": "HalfStack",
     "url": "http://halfstackconf.com/",
-    "date": "November 17",
     "startDate": "2017/11/17",
     "city": "London",
     "country": "U.K."
@@ -553,7 +553,6 @@
   {
     "name": "ngPoland",
     "url": "http://ng-poland.pl/",
-    "date": "November 20",
     "startDate": "2017/11/20",
     "city": "Warsaw",
     "country": "Poland"
@@ -561,15 +560,14 @@
   {
     "name": "Nodevember",
     "url": "http://nodevember.org/",
-    "date": "November 27-28",
     "startDate": "2017/11/27",
+    "endDate": "2017/11/28",
     "city": "Nashville, TN",
     "country": "U.S.A."
   },
   {
     "name": "dotCSS",
     "url": "https://2017.dotcss.io/",
-    "date": "November 30",
     "startDate": "2017/11/30",
     "city": "Paris",
     "country": "France"
@@ -577,15 +575,14 @@
   {
     "name": "NationJS",
     "url": "http://nationjs.com/",
-    "date": "November 30 - December 1",
     "startDate": "2017/11/30",
+    "endDate": "2017/12/01",
     "city": "Washington, DC",
     "country": "U.S.A."
   },
   {
     "name": "dotJS",
     "url": "https://2017.dotjs.io",
-    "date": "December 1",
     "startDate": "2017/12/01",
     "city": "Paris",
     "country": "France"
