@@ -341,5 +341,21 @@
     "endDate": "2017/10/05",
     "city": "Toronto",
     "country": "Canada"
+  },
+  {
+    "name": "Fluxible - Canada's UX Festival",
+    "startDate": "2017/09/18",
+    "endDate": "2017/09/24",
+    "city": "Waterloo",
+    "country": "Canada",
+    "url": "http://www.fluxible.ca/"
+  },
+  {
+    "name": "Design Ops Summit",
+    "startDate": "2017/11/06",
+    "endDate": "2017/11/08",
+    "city": "New York",
+    "country": "U.S.A.",
+    "url": "https://designopssummit.com/"
   }
 ]
