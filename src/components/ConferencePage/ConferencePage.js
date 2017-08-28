@@ -127,7 +127,7 @@ export default class ConferencePage extends Component {
         <Helmet>
           <title>{TYPES[type]} conferences in {year} | Confs.tech</title>
         </Helmet>
-        <Favicon url={`${type}.png`} />
+        <Favicon url={`/${type}.png`} />
         <div>
           <Heading element="h1">Find your next {TYPES[type]} conference</Heading>
         </div>
