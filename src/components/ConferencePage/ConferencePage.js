@@ -15,7 +15,7 @@ const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/con
 const CURRENT_YEAR = (new Date()).getFullYear().toString();
 const TYPES = {
   javascript: 'JavaScript',
-  ux: 'UX',
+  ux: 'Design / UX',
   ruby: 'Ruby',
 };
 

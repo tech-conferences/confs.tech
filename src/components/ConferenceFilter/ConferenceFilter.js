@@ -5,7 +5,7 @@ import Link from '../Link';
 const YEARS = ['2017', '2018'];
 const TYPES = {
   javascript: 'JavaScript',
-  ux: 'UX',
+  ux: 'Design / UX',
   ruby: 'Ruby',
 };
 
