@@ -1299,17 +1299,17 @@
     "url": "https://therichwebexperience.com/"
   },
   {
-    "name": "NG-BE",
-    "startDate": "2017/12/07",
-    "city": "Ghent",
-    "country": "Belgium",
-    "url": "https://ng-be.org/"
-  },
-  {
     "name": "An Event Apart",
     "startDate": "2017/12/11",
     "city": "Denver",
     "country": "U.S.A.",
     "url": "https://aneventapart.com/event/denver-2017"
+  },
+  {
+    "name": "NG-BE",
+    "startDate": "2017/12/07",
+    "city": "Ghent",
+    "country": "Belgium",
+    "url": "https://ng-be.org/"
   }
 ]
