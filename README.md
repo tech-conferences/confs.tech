@@ -1,15 +1,13 @@
-# Yet another conference website
+# Confs.tech | Yet another conference website
 
-## Contribute
+List of conferences pulled out from [JSON files](https://github.com/nimzco/confs.tech/tree/master/conferences).
+- [See all JavaScript conferences in 2017](https://confs.tech/2017/javascript)
+- [See all Design / UX conferences in 2017](https://confs.tech/2017/ux)
+- [See all Ruby conferences in 2017](https://confs.tech/2017/ruby)
 
-`npm install`
-`npm run start`
-
-## Deploy
-
-`npm run deploy`
+Don't hesitate to add new conferences by [creating an issue](https://github.com/nimzco/confs.tech/issues/new) or creating a pull request. 🤓
 
 ## TODO
-- Find list of conferences and add new JSON files
+- Add other technos
   - Android: https://github.com/AndroidStudyGroup/conferences
 - Add other fields? CFP URL, CFP dates, description, tags, etc?
