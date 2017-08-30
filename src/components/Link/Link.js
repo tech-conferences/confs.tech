@@ -33,6 +33,7 @@ export default class Link extends PureComponent {
       <a
         className={classNames(styles.Link, selected && styles.Selected, className)}
         onClick={onClick}
+        onTouchStart={onClick}
         target={external ? '_blank' : null}
         href={url}
       >
