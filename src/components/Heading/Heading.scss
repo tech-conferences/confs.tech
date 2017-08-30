@@ -1,3 +1,4 @@
+@import '../style/foundation/spacing.scss';
 @import '../style/foundation/colors.scss';
 
 .Heading {
@@ -15,6 +16,8 @@
 
 .Heading-2 {
   font-size: 1.5em;
+  margin-top: spacing(extra-loose);
+  margin-bottom: spacing(loose);
 
   .Inner::after {
     content: '';
@@ -26,4 +29,9 @@
     height: 8px;
     background: color(accent-2);
   }
+}
+
+.Heading-3 {
+  margin-top: 0;
+  margin-bottom: spacing(extra-tight);
 }

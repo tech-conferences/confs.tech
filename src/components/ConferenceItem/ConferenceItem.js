@@ -25,7 +25,7 @@ export default class ConferenceItem extends PureComponent {
           styles.ConferenceItem
         )}
       >
-        <Heading element="h3" level={3} className={styles.ConferenceItemTitle}>
+        <Heading element="h3" level={3}>
           <Link url={url} external>
             {name}
           </Link>
