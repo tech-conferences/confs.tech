@@ -24,19 +24,15 @@ export default class ConferenceFilter extends Component {
     const {year, type, country, countries} = this.props;
 
     return (
-      <div>
-        <div className={styles.ConferenceFilterWrapper}>
-          <div className={styles.ConferenceFilter}>
-            {Years(year, this.getUrl)}
-          </div>
-          <div className={styles.ConferenceFilter}>
-            {Types(type, this.getUrl)}
-          </div>
+      <div className={styles.ConferenceFilterWrapper}>
+        <div className={styles.ConferenceFilter}>
+          {Years(year, this.getUrl)}
         </div>
-        <div>
-          <div className={styles.ConferenceFilter}>
-            {Countries(countries, country, this.getUrl)}
-          </div>
+        <div className={styles.ConferenceFilter}>
+          {Types(type, this.getUrl)}
+        </div>
+        <div className={styles.ConferenceFilter}>
+          {Countries(countries, country, this.getUrl)}
         </div>
       </div>
     );

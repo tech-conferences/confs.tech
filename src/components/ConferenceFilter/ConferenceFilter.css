@@ -1,9 +1,8 @@
+@import '../style/foundation/colors.scss';
 @import '../style/foundation/spacing.scss';
 
 .ConferenceFilterWrapper {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  border-bottom: 2px inset color(gray, lighter);
 }
 
 .ConferenceFilter {
