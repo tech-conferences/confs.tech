@@ -76,7 +76,7 @@ function Countries(countries, selectedCountry, getUrl) {
     return (
       <div key={country} className={styles.Filter}>
         <Link
-          url={getUrl({country})}
+          url={getUrl({country: country.trim()})}
           selected={selectedCountry === country}
           routed
         >
