@@ -5,7 +5,7 @@
     "startDate": "2018/01/26",
     "endDate": "2018/01/28",
     "city": "Tegernsee",
-    "country": " Germany",
+    "country": "Germany",
     "twitter": "@rubyoniceconf"
   },
   {
@@ -14,7 +14,7 @@
     "startDate": "2018/03/22",
     "endDate": "2018/03/23",
     "city": "Bath",
-    "country": " UK",
+    "country": "UK",
     "twitter": "@bathruby"
   },
   {
@@ -23,7 +23,7 @@
     "startDate": "2018/02/09",
     "endDate": "2018/02/10",
     "city": "Bengaluru",
-    "country": " India",
+    "country": "India",
     "twitter": "@rubyconfindia"
   }
 ]
