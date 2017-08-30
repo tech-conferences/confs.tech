@@ -31,8 +31,7 @@ export default class ConferenceItem extends PureComponent {
           </Link>
         </Heading>
         <div>
-          {city}, <strong>{country}</strong>
-          &nbsp;–&nbsp;
+          {`${city}, ${country} - `}
           <span className={styles.Date}>
             {format(parse(startDate), 'MMM, Do')}
             {endDate && endDate !== startDate ? format(parse(endDate), '-Do') : null}
