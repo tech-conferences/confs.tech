@@ -54,5 +54,13 @@
     "endDate": "2017/10/28",
     "city": "Seattle",
     "country": "U.S.A."
+  },
+  {
+    "name": "Mobile Era",
+    "url": "https://mobileera.rocks/",
+    "startDate": "2017/10/06",
+    "endDate": "2017/10/07",
+    "city": "Oslo",
+    "country": "Norway"
   }
 ]
