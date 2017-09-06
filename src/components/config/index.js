@@ -5,6 +5,7 @@ export const TYPES = {
   ux: 'Design / UX',
   ruby: 'Ruby',
   ios: 'iOS / Swift',
+  android: 'Android',
 };
 
 const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/conferences';
