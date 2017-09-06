@@ -1,0 +1,37 @@
+[
+  {
+    "name": "App Builders",
+    "url": "https://www.appbuilders.ch",
+    "city": "Lugano",
+    "country": "Switzerland",
+    "startDate": "2018/04/16",
+    "endDate": "2018/04/17"
+  },
+  {
+    "name": "CodeMobile",
+    "url": "http://www.codemobile.co.uk/",
+    "city": "Chester",
+    "country": "UK",
+    "startDate": "2018/04/02",
+    "endDate": "2018/04/05",
+    "cfpStart": "2017/06/01",
+    "cfpEnd": "2017/10/31",
+    "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers/"
+  },
+  {
+    "name": "Droidcon",
+    "url": "http://www.droidcon-boston.com",
+    "city": "Boston, MA",
+    "country": "U.S.A.",
+    "startDate": "2018/03/26",
+    "endDate": "2018/03/27"
+  },
+  {
+    "name": "DroidKaigi",
+    "url": "https://droidkaigi.github.io/2018/",
+    "city": "Tokyo",
+    "country": "Japan",
+    "startDate": "2018/02/08",
+    "endDate": "2018/02/09"
+  }
+]
