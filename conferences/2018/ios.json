@@ -6,5 +6,21 @@
     "endDate": "2017/03/01",
     "city": "Tokyo",
     "country": "Japan"
+  },
+  {
+    "name": "iOSCon 2018",
+    "url": "https://skillsmatter.com/conferences/9319-ioscon-2018-the-conference-for-ios-and-swift-developers",
+    "startDate": "2017/03/22",
+    "endDate": "2017/03/23",
+    "city": "Tokyo",
+    "country": "Japan"
+  },
+  {
+    "name": "RWDevCon",
+    "url": "https://www.rwdevcon.com/",
+    "startDate": "2017/04/05",
+    "endDate": "2017/04/07",
+    "city": "Alexandria, VA",
+    "country": "U.S.A."
   }
 ]

@@ -62,5 +62,13 @@
     "endDate": "2017/10/07",
     "city": "Oslo",
     "country": "Norway"
+  },
+  {
+    "name": "Release Notes 2017",
+    "url": "https://2017.releasenotes.tv/",
+    "startDate": "2017/10/16",
+    "endDate": "2017/10/18",
+    "city": "Chicago",
+    "country": "U.S.A."
   }
 ]
