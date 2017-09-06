@@ -6,6 +6,7 @@ import {Helmet} from 'react-helmet';
 
 import styles from './ConferencePage.scss';
 import Link from '../Link';
+import GithubStar from '../GithubStar';
 import Heading from '../Heading';
 import Icon from '../Icon';
 import ConferenceList from '../ConferenceList';
@@ -128,8 +129,9 @@ export default class ConferencePage extends Component {
           <title>{TYPES[type]} conferences in {year} | Confs.tech</title>
         </Helmet>
         <Favicon url={`/${type}.png`} />
-        <div>
+        <div className={styles.Header}>
           <Heading element="h1">Find your next {TYPES[type]} conference</Heading>
+          <GithubStar />
         </div>
         <div>
           <ConferenceFilter

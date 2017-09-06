@@ -1,0 +1,9 @@
+@import '../style/foundation/spacing.scss';
+
+.GithubStar {
+  margin: spacing(base) 0;
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 0;
+  }
+}
