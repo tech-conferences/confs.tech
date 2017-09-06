@@ -11,9 +11,8 @@ import Heading from '../Heading';
 import Icon from '../Icon';
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
-import {TYPES} from '../config';
+import {TYPES, getConferenceLink} from '../config';
 
-const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/conferences';
 const CURRENT_YEAR = (new Date()).getFullYear().toString();
 
 export default class ConferencePage extends Component {
@@ -149,11 +148,6 @@ export default class ConferencePage extends Component {
       </div>
     );
   }
-}
-
-function getConferenceLink(state) {
-  const {type, year} = state;
-  return `${BASE_URL}/${year}/${type.toLocaleLowerCase()}.json`;
 }
 
 function Loader() {
