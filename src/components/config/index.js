@@ -4,7 +4,7 @@ export const TYPES = {
   javascript: 'JavaScript',
   ux: 'Design / UX',
   ruby: 'Ruby',
-  ios: 'iOS',
+  ios: 'iOS / Swift',
 };
 
 const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/conferences';
