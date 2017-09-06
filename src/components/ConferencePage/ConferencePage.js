@@ -11,14 +11,10 @@ import Heading from '../Heading';
 import Icon from '../Icon';
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
+import {TYPES} from '../config';
 
 const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/conferences';
 const CURRENT_YEAR = (new Date()).getFullYear().toString();
-const TYPES = {
-  javascript: 'JavaScript',
-  ux: 'Design / UX',
-  ruby: 'Ruby',
-};
 
 export default class ConferencePage extends Component {
   state = {

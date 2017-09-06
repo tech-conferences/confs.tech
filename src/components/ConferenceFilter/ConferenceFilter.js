@@ -1,13 +1,7 @@
 import React, {Component} from 'react';
 import styles from './ConferenceFilter.css';
 import Link from '../Link';
-
-const YEARS = ['2017', '2018'];
-const TYPES = {
-  javascript: 'JavaScript',
-  ux: 'Design / UX',
-  ruby: 'Ruby',
-};
+import {YEARS, TYPES} from '../config';
 
 export default class ConferenceFilter extends Component {
   getUrl = (filters) => {
