@@ -5,10 +5,9 @@ List of conferences pulled out from [JSON files](https://github.com/nimzco/confs
 - [See all Design / UX conferences in 2017](https://confs.tech/2017/ux)
 - [See all Ruby conferences in 2017](https://confs.tech/2017/ruby)
 - [See all iOS conferences in 2017](https://confs.tech/2017/ios)
+- [See all Android conferences in 2017](https://confs.tech/2017/android)
 
 Don't hesitate to add new conferences by [creating an issue](https://github.com/nimzco/confs.tech/issues/new) or creating a pull request. 🤓
 
 ## TODO
-- Add other technos
-  - Android: https://github.com/AndroidStudyGroup/conferences
 - Add other fields? CFP URL, CFP dates, description, tags, etc?
