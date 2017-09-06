@@ -381,8 +381,8 @@
   {
     "name": "Droidcon",
     "url": "http://droidcon.com.bd/",
-    "city": "Dhaka, Bangladesh",
-    "country": "",
+    "city": "Dhaka",
+    "country": "Bangladesh",
     "startDate": "2017/01/27",
     "endDate": "2017/01/28"
   },
@@ -422,8 +422,8 @@
   {
     "name": "Droidcon",
     "url": "http://droidcon.nyc/",
-    "city": "New York City, NY, USA",
-    "country": "",
+    "city": "New York City",
+    "country": "U.S.A.",
     "startDate": "2017/09/25",
     "endDate": "2017/09/26",
     "cfpStart": "2017/05/24",
@@ -525,8 +525,8 @@
   {
     "name": "GDD Europe",
     "url": "https://developers.google.com/events/gdd-europe/",
-    "city": "Krakow, Poland",
-    "country": "",
+    "city": "Krakow",
+    "country": "Poland",
     "startDate": "2017/09/05",
     "endDate": "2017/09/06"
   },
@@ -535,7 +535,7 @@
     "url": "http://heraklion.googledevelopers.gr/",
     "city": "Heraklion, Crete",
     "country": "Greece",
-    "startEnd": "2017/07/25",
+    "startDate": "2017/07/25",
     "endDate": "2017/07/27"
   },
   {
