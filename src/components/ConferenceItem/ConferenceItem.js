@@ -1,7 +1,8 @@
 import React, {PureComponent} from 'react';
 import classNames from 'classnames';
-import {isPast, parse, format} from 'date-fns';
+import {isPast, parse} from 'date-fns';
 
+import {formatDate} from './utils';
 import Heading from '../Heading';
 import Link from '../Link';
 import styles from './ConferenceItem.scss';
@@ -33,8 +34,7 @@ export default class ConferenceItem extends PureComponent {
         <div>
           {`${city}, ${country} - `}
           <span className={styles.Date}>
-            {format(parse(startDate), 'MMM, Do')}
-            {endDate && endDate !== startDate ? format(parse(endDate), '-Do') : null}
+            {formatDate(startDate, endDate)}
           </span>
           {Twitter(twitter)}
         </div>
