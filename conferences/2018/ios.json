@@ -22,5 +22,13 @@
     "endDate": "2018/04/07",
     "city": "Alexandria, VA",
     "country": "U.S.A."
+  },
+  {
+    "name": "Forward Swift",
+    "url": "https://forwardswift.com/",
+    "startDate": "2018/02/01",
+    "endDate": "2018/02/31",
+    "city": "San Francisco",
+    "country": "U.S.A."
   }
 ]
