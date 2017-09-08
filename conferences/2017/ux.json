@@ -357,5 +357,15 @@
     "city": "New York",
     "country": "U.S.A.",
     "url": "https://designopssummit.com/"
+  },
+  {
+    "city": "Florianópolis",
+    "country": "Brazil",
+    "cspUrl": "http://isa.ixda.org/2017/",
+    "startDate": "2017/11/9",
+    "endDate": "2017/11/11",
+    "twitter": "@isa17floripa",
+    "name": "Interaction South America - 2017",
+    "url": "http://isa.ixda.org/2017/"
   }
 ]
