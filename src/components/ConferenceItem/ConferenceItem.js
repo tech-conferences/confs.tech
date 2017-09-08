@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import classNames from 'classnames';
 import {isPast, parse} from 'date-fns';
 
-import {formatDate} from './utils';
+import {formatDate, generateEventJSONLD} from './utils';
 import Heading from '../Heading';
 import Link from '../Link';
 import styles from './ConferenceItem.scss';
@@ -26,6 +26,10 @@ export default class ConferenceItem extends PureComponent {
           styles.ConferenceItem
         )}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{__html: generateEventJSONLD({name, url, city, country, startDate, endDate})}}
+        />
         <Heading element="h3" level={3}>
           <Link url={url} external>
             {name}
