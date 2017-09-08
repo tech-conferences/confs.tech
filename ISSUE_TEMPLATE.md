@@ -1,5 +1,11 @@
 Hey, here is a conference that is missing from the list.
 
+Where should it go?
+- [ ] JavaScript
+- [ ] UX / Design
+- [ ] iOS
+- [ ] Ruby
+
 ```json
   {
     "name": "",
@@ -9,6 +15,6 @@ Hey, here is a conference that is missing from the list.
     "city": "",
     "country": "",
     "cspUrl": "",
-    "twitter": "@handle",
+    "twitter": "@twitter_handle",
   }
 ```
