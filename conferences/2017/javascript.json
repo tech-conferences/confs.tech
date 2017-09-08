@@ -1308,5 +1308,12 @@
     "city": "Ghent",
     "country": "Belgium",
     "url": "https://ng-be.org/"
+  },
+  {
+    "name": "HamOnt JS 2017",
+    "url": "https://www.eventbrite.ca/e/hamont-js-2017-tickets-36962820792",
+    "startDate": "2017/09/30",
+    "city": "Hamilton, Ontario",
+    "country": "Canada"
   }
 ]
