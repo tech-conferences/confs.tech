@@ -9,5 +9,23 @@ List of conferences pulled out from [JSON files](https://github.com/nimzco/confs
 
 Don't hesitate to add new conferences by [creating an issue](https://github.com/nimzco/confs.tech/issues/new) or creating a pull request. 🤓
 
+## Adding a conference
+
+Conferences are JSON based files. They have the following structure:
+
+```json
+  {
+    "name": "",
+    "url": "",
+    "startDate": "2018-08-17",
+    "endtDate": "2018-08-19",
+    "city": "",
+    "country": "",
+    "cspUrl": "",
+    "twitter": "",
+  }
+```
+Dates are formatted like `YYYY-MM-DD`, and if the date has not been defined yet, you can use this format as well: `YYYY-MM`.
+
 ## TODO
 - Add other fields? CFP URL, CFP dates, description, tags, etc?
