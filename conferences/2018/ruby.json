@@ -2,8 +2,8 @@
   {
     "name": "Ruby on Ice",
     "url": "https://rubyonice.com/",
-    "startDate": "2018/01/26",
-    "endDate": "2018/01/28",
+    "startDate": "2018-01-26",
+    "endDate": "2018-01-28",
     "city": "Tegernsee",
     "country": "Germany",
     "twitter": "@rubyoniceconf"
@@ -11,8 +11,8 @@
   {
     "name": "Bath Ruby Conference",
     "url": "http://2018.bathruby.uk/",
-    "startDate": "2018/03/22",
-    "endDate": "2018/03/23",
+    "startDate": "2018-03-22",
+    "endDate": "2018-03-23",
     "city": "Bath",
     "country": "UK",
     "twitter": "@bathruby"
@@ -20,8 +20,8 @@
   {
     "name": "RubyConf",
     "url": "http://rubyconfindia.org/",
-    "startDate": "2018/02/09",
-    "endDate": "2018/02/10",
+    "startDate": "2018-02-09",
+    "endDate": "2018-02-10",
     "city": "Bengaluru",
     "country": "India",
     "twitter": "@rubyconfindia"

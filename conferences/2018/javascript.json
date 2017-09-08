@@ -2,14 +2,14 @@
   {
     "name": "RenderConf",
     "url": "https://2018.render-conf.com/",
-    "startDate": "2018/03/23",
+    "startDate": "2018-03-23",
     "city": "Oxford",
     "country": "U.K."
   },
   {
     "name": "AssertJS",
     "url": "https://www.assertjs.com/",
-    "startDate": "2018/02/22",
+    "startDate": "2018-02-22",
     "city": "San Antonio",
     "country": "U.S.A.",
     "twitter": "@assertjs"
@@ -17,24 +17,24 @@
   {
     "name": "FullStack",
     "url": "https://skillsmatter.com/conferences/9815-fullstack-2018-the-conference-on-javascript-node-and-internet-of-things",
-    "startDate": "2018/07/11",
-    "endDate": "2018/07/13",
+    "startDate": "2018-07-11",
+    "endDate": "2018-07-13",
     "city": "London",
     "country": "U.K."
   },
   {
     "name": "ForwardJS",
     "url": "https://forwardjs.com/ottawa",
-    "startDate": "2018/04",
-    "endDate": "2018/04",
+    "startDate": "2018-04",
+    "endDate": "2018-04",
     "city": "Ottawa",
     "country": "Canada"
   },
   {
     "name": "ForwardJS",
     "url": "https://forwardjs.com",
-    "startDate": "2018/02/11",
-    "endDate": "2018/02/16",
+    "startDate": "2018-02-11",
+    "endDate": "2018-02-16",
     "city": "San Fransisco",
     "country": "U.S.A."
   }

@@ -2,32 +2,32 @@
   {
     "name": "Try Swift",
     "url": "https://www.tryswift.co/events/2018/tokyo/en/",
-    "startDate": "2018/03/01",
-    "endDate": "2018/03/01",
+    "startDate": "2018-03",
+    "endDate": "2018-03",
     "city": "Tokyo",
     "country": "Japan"
   },
   {
     "name": "iOSCon 2018",
     "url": "https://skillsmatter.com/conferences/9319-ioscon-2018-the-conference-for-ios-and-swift-developers",
-    "startDate": "2018/03/22",
-    "endDate": "2018/03/23",
+    "startDate": "2018-03-22",
+    "endDate": "2018-03-23",
     "city": "Tokyo",
     "country": "Japan"
   },
   {
     "name": "RWDevCon",
     "url": "https://www.rwdevcon.com/",
-    "startDate": "2018/04/05",
-    "endDate": "2018/04/07",
+    "startDate": "2018-04-05",
+    "endDate": "2018-04-07",
     "city": "Alexandria, VA",
     "country": "U.S.A."
   },
   {
     "name": "Forward Swift",
     "url": "https://forwardswift.com/",
-    "startDate": "2018/02",
-    "endDate": "2018/02",
+    "startDate": "2018-02",
+    "endDate": "2018-02",
     "city": "San Francisco",
     "country": "U.S.A."
   }
