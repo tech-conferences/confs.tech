@@ -1,6 +1,6 @@
 [
   {
-    "name": "Budapest NodeConf 2017",
+    "name": "Budapest NodeConf",
     "url": "https://nodeconf.risingstack.com/",
     "date": "January 19-20",
     "startDate": "2017/01/19",
@@ -456,7 +456,7 @@
     "country": "Germany"
   },
   {
-    "name": "Chrome Dev Summit 2017",
+    "name": "Chrome Dev Summit",
     "url": "https://developer.chrome.com/devsummit/",
     "startDate": "2017/10/23",
     "endDate": "2017/10/24",
@@ -1240,7 +1240,7 @@
     "url": "http://2017.empirejs.org/"
   },
   {
-    "name": "#fstoco - Full Stack Toronto Conference 2017",
+    "name": "#fstoco - Full Stack Toronto Conference",
     "startDate": "2017/10/23",
     "city": "Toronto",
     "country": "Canada",
@@ -1282,7 +1282,7 @@
     "url": "https://www.clarityconf.com/"
   },
   {
-    "name": "WordCamp US 2017",
+    "name": "WordCamp US",
     "startDate": "2017/12/01",
     "city": "Nashville, TN",
     "country": "U.S.A.",
@@ -1310,10 +1310,20 @@
     "url": "https://ng-be.org/"
   },
   {
-    "name": "HamOnt JS 2017",
+    "name": "HamOnt JS",
     "url": "https://www.eventbrite.ca/e/hamont-js-2017-tickets-36962820792",
     "startDate": "2017/09/30",
     "city": "Hamilton, Ontario",
     "country": "Canada"
+  },
+  {
+    "name": "TechBash",
+    "url": "https://www.techbash.com/",
+    "startDate": "2017-10-04",
+    "endtDate": "2017-10-06",
+    "city": "Pocono Manor, PA",
+    "country": "U.S.A.",
+    "cspUrl": "",
+    "twitter": "@techbash"
   }
 ]
