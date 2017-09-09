@@ -27,5 +27,7 @@ Conferences are JSON based files. They have the following structure:
 ```
 Dates are formatted like `YYYY-MM-DD`, and if the date has not been defined yet, you can use this format as well: `YYYY-MM`.
 
-## TODO
-- Add other fields? CFP URL, CFP dates, description, tags, etc?
+## Active contributors
+- [Nima Izadi](https://nimz.co)
+
+Because together we are stronger, I'm looking for other contributors.
