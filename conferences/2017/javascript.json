@@ -1323,7 +1323,17 @@
     "endtDate": "2017-10-06",
     "city": "Pocono Manor, PA",
     "country": "U.S.A.",
-    "cspUrl": "",
+    "cfpUrl": "",
     "twitter": "@techbash"
+  },
+  {
+    "name": "Munich Frontend Conference",
+    "url": "https://frontconf.com/",
+    "startDate": "2017-12-08",
+    "city": "Munich",
+    "country": "Germany",
+    "cfpUrl": "https://www.papercall.io/frontconf",
+    "cfpEnd": "2017-10-15",
+    "twitter": "@FrontMuc"
   }
 ]

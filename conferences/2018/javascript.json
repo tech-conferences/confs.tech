@@ -27,6 +27,7 @@
     "url": "https://forwardjs.com/ottawa",
     "startDate": "2018-04",
     "endDate": "2018-04",
+    "cfpUrl": "https://goo.gl/forms/cCKHB08d20nA0AZr1",
     "city": "Ottawa",
     "country": "Canada"
   },
@@ -36,6 +37,71 @@
     "startDate": "2018-02-11",
     "endDate": "2018-02-16",
     "city": "San Fransisco",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Script",
+    "url": "https://scriptconf.org/",
+    "startDate": "2018-01-19",
+    "city": "Linz",
+    "country": "Austria"
+  },
+  {
+    "name": "Agent Conf",
+    "url": "https://scriptconf.org/",
+    "startDate": "2018-01-25",
+    "endDate": "2018-01-26",
+    "cfpEnd": "2017-10-20",
+    "city": "Dornbirn",
+    "country": "Austria"
+  },
+  {
+    "name": "ng-europe",
+    "url": "https://scriptconf.org/",
+    "startDate": "2018-01-25",
+    "endDate": "2018-01-26",
+    "cfpEnd": "2017-09-17",
+    "city": "Paris",
+    "country": "France"
+  },
+  {
+    "name": "ngVikings",
+    "url": "https://ngvikings.org/",
+    "startDate": "2018-03-01",
+    "endDate": "2018-03-02",
+    "cfpEnd": "2017-12-10",
+    "city": "Helsinki",
+    "country": "Finland"
+  },
+  {
+    "name": "JSConf AU",
+    "url": "https://2018.jsconfau.com/",
+    "startDate": "2018-03-21",
+    "endDate": "2018-03-22",
+    "city": "Melbourne",
+    "country": "Australia"
+  },
+  {
+    "name": "Render",
+    "url": "https://2018.jsconfau.com/",
+    "startDate": "2018-03-23",
+    "city": "Oxford",
+    "country": "U.K."
+  },
+  {
+    "name": "ng-conf",
+    "url": "https://www.ng-conf.org/",
+    "startDate": "2018-04-18",
+    "endDate": "2018-04-20",
+    "city": "Salt Lake City, UT",
+    "country": "U.S.A."
+  },
+  {
+    "name": "ConvergeSE",
+    "url": "http://convergese.com/",
+    "startDate": "2018-06-13",
+    "endDate": "2018-06-15",
+    "city": "Columbia, SC",
     "country": "U.S.A."
   }
 ]
