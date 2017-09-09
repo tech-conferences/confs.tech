@@ -1340,5 +1340,14 @@
     "country": "Germany",
     "cspUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeBJAtcdsiPNLicsfaT-_63HQq4Ql4qhTtb53U4aj32re_uMg/viewform",
     "twitter": ""
+  },
+  {
+    "name": "JSDC",
+    "url": "http://2017.jsdc.tw",
+    "startDate": "2017-11-04",
+    "endtDate": "2017-11-05",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "twitter": "@jsdc_tw"
   }
 ]
