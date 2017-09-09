@@ -31,3 +31,7 @@ Dates are formatted like `YYYY-MM-DD`, and if the date has not been defined yet,
 - [Nima Izadi](https://nimz.co)
 
 Because together we are stronger, I'm looking for other contributors.
+
+## License
+
+[MIT](LICENSE.md)
