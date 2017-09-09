@@ -36,7 +36,7 @@ export default class ConferenceItem extends PureComponent {
           </Link>
         </Heading>
         <div>
-          {`${city}, ${country} - `}
+          {`${Location(city, country)} - `}
           <span className={styles.Date}>
             {formatDate(startDate, endDate)}
           </span>
@@ -55,4 +55,12 @@ function Twitter(twitter) {
       {twitter}
     </Link>
   );
+}
+
+function Location(city, country) {
+  if (city && country) {
+    return `${city}, ${country}`;
+  }
+
+  return country || city;
 }
