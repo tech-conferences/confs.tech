@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {groupBy} from 'lodash';
+import {groupBy, sortBy} from 'lodash';
 import {parse, format} from 'date-fns';
 
 import Heading from '../Heading';
@@ -7,17 +7,6 @@ import ConferenceItem from '../ConferenceItem';
 import styles from './ConferenceList.css';
 
 export default class ConferenceList extends Component {
-  renderMonth = (month, conferences) => {
-    return [
-      <Heading key={month} element="h2" level={2}>
-        {getMonthName(month)}
-      </Heading>,
-      conferences.map((conf) => {
-        return <ConferenceItem key={`${conf.url} ${conf.date}`} {...conf} />;
-      }),
-    ];
-  };
-
   renderTable = () => {
     const {conferences} = this.props;
     const groupedConferences = groupBy(conferences, (conf) =>
@@ -30,7 +19,7 @@ export default class ConferenceList extends Component {
       return (
         <div className={styles.ConferenceList}>
           {Object.keys(groupedConferences).map((month) => {
-            return this.renderMonth(month, groupedConferences[month]);
+            return Months(month, groupedConferences[month]);
           })}
         </div>
       );
@@ -44,4 +33,17 @@ export default class ConferenceList extends Component {
 
 function getMonthName(month) {
   return format(parse(`2017/${month}/01`), 'MMMM');
+}
+
+function Months(month, conferences) {
+  const sortedConferences = sortBy(conferences, (conference) => conference.startDate);
+
+  return [
+    <Heading key={month} element="h2" level={2}>
+      {getMonthName(month)}
+    </Heading>,
+    sortedConferences.map((conf) => {
+      return <ConferenceItem key={`${conf.url} ${conf.date}`} {...conf} />;
+    }),
+  ];
 }
