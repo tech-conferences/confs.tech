@@ -382,7 +382,7 @@
     "url": "http://connect.tech/",
     "startDate": "2017-09-20",
     "endDate": "2017-09-24",
-    "city": "Atlanta, GA",
+    "city": "Atlanta",
     "country": "U.S.A."
   },
   {
@@ -1176,13 +1176,6 @@
     "city": "London",
     "country": "U.K.",
     "url": "https://www.generateconf.com/"
-  },
-  {
-    "name": "CONNECT.TECH",
-    "startDate": "2017-09-20",
-    "city": "Atlanta",
-    "country": "U.S.A.",
-    "url": "www.connect.tech"
   },
   {
     "name": "The Web Unleashed",
