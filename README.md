@@ -38,6 +38,7 @@ Most of the conferences are originally pulled from other repo:
 - Ruby: https://github.com/ruby-conferences/ruby-conferences.github.io
 - Android: https://github.com/AndroidStudyGroup/conferences
 - iOS: https://github.com/Lascorbe/CocoaConferences
+- UX: https://css-tricks.com/guide-2017-conferences/
 
 ## License
 
