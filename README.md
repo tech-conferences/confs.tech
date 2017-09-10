@@ -32,6 +32,13 @@ Dates are formatted like `YYYY-MM-DD`, and if the date has not been defined yet,
 
 Because together we are stronger, I'm looking for other contributors. So hit me up [@nimz_co](https://twitter.com/nimz_co) and let's contribute!
 
+## Credits
+Most of the conferences are originally pulled from other repo:
+- JavaScript: https://github.com/prigara/javascript-conferences
+- Ruby: https://github.com/ruby-conferences/ruby-conferences.github.io
+- Android: https://github.com/AndroidStudyGroup/conferences
+- iOS: https://github.com/Lascorbe/CocoaConferences
+
 ## License
 
 [MIT](LICENSE.md)
