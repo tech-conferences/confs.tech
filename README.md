@@ -34,11 +34,11 @@ Because together we are stronger, I'm looking for other contributors. So hit me 
 
 ## Credits
 Most of the conferences are originally pulled from other repo:
-- JavaScript: https://github.com/prigara/javascript-conferences
-- Ruby: https://github.com/ruby-conferences/ruby-conferences.github.io
-- Android: https://github.com/AndroidStudyGroup/conferences
-- iOS: https://github.com/Lascorbe/CocoaConferences
-- UX: https://css-tricks.com/guide-2017-conferences/
+- JavaScript: [prigara/javascript-conferences](https://github.com/prigara/javascript-conferences)
+- Ruby: [ruby-conferences/ruby-conferences.github.io](https://github.com/ruby-conferences/ruby-conferences.github.io)
+- Android: [AndroidStudyGroup/conferences](https://github.com/AndroidStudyGroup/conferences)
+- iOS: [Lascorbe/CocoaConferences](https://github.com/Lascorbe/CocoaConferences)
+- UX: [CSS Tricks conference guide](https://css-tricks.com/guide-2017-conferences)
 
 ## License
 
