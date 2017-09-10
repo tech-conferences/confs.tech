@@ -103,5 +103,15 @@
     "endDate": "2018-06-15",
     "city": "Columbia, SC",
     "country": "U.S.A."
+  },
+  {
+    "name": "#PerfMatters Conference",
+    "url": "https://perfMattersConf.com",
+    "startDate": "2018-03-27",
+    "endtDate": "2018-03-28",
+    "city": "Redwood City, CA",
+    "country": "USA",
+    "cspUrl": "https://perfmattersconf.com/speak/",
+    "twitter": "@perfmattersconf"
   }
 ]

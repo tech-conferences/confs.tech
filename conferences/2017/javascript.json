@@ -1342,5 +1342,24 @@
     "city": "Taipei",
     "country": "Taiwan",
     "twitter": "@jsdc_tw"
+  },
+  {
+    "name": "ColdFront 2017",
+    "url": "https://2017.coldfront.co",
+    "startDate": "2017-09-05",
+    "endtDate": "2017-09-06",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "cspUrl": "",
+    "twitter": "@coldfrontconf"
+  },
+  {
+    "name": "Microsoft Edge Web Summit",
+    "url": "https://summit.microsoftedge.com/",
+    "startDate": "2017-09-13",
+    "endtDate": "2017-09-13",
+    "city": "Seattle, WA",
+    "country": "U.S.A.",
+    "twitter": "@MSEdgeDev"
   }
 ]
