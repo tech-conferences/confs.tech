@@ -13,7 +13,7 @@ export default function Footer() {
       </p>
       <p>
         Maintained by&nbsp;
-        <Link url="https://github.com/nimzco" external>
+        <Link url="https://twitter.com/nimz_co" external>
           @nimzco
         </Link>
       </p>
