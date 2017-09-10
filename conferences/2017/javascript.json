@@ -646,13 +646,6 @@
     "url": "http://SVGSummit.com/"
   },
   {
-    "name": "SustainableUX Conference",
-    "startDate": "2017-02-16",
-    "city": "Online",
-    "country": "Online",
-    "url": "https://www.eventbrite.com/e/sustainableux-2017-tickets-27282085452"
-  },
-  {
     "name": "FrontFest",
     "startDate": "2017-02-18",
     "city": "Madrid",
@@ -933,25 +926,11 @@
     "url": "hhttp://devitconf.org/"
   },
   {
-    "name": "User Experience Lisbon",
-    "startDate": "2017-05-20",
-    "city": "Lisbon",
-    "country": "Portugal",
-    "url": "https://www.ux-lx.com/"
-  },
-  {
     "name": "Front-Trends",
     "startDate": "2017-05-23",
     "city": "Warsaw",
     "country": "Poland",
     "url": "https://2017.front-trends.com/"
-  },
-  {
-    "name": "UX London",
-    "startDate": "2017-05-24",
-    "city": "London",
-    "country": "U.K.",
-    "url": "http://2017.uxlondon.com/"
   },
   {
     "name": "Frontend United",
@@ -1001,13 +980,6 @@
     "city": "Faenza",
     "country": "Italy",
     "url": "http://2017.kerning.it"
-  },
-  {
-    "name": "UX Scotland",
-    "startDate": "2017-06-07",
-    "city": "Edinburgh",
-    "country": "Scotland",
-    "url": "http://uxscotland.net/2017/"
   },
   {
     "name": "JS Heroes",
@@ -1212,13 +1184,6 @@
     "city": "Braga",
     "country": "Portugal",
     "url": "http://www.mirrorconf.com/"
-  },
-  {
-    "name": "Midwest UX",
-    "startDate": "2017-10-12",
-    "city": "Cincinnati, OH",
-    "country": "U.S.A.",
-    "url": "http://2017.midwestuxconference.com/"
   },
   {
     "name": "Empire JS",
