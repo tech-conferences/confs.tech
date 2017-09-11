@@ -29,17 +29,17 @@
     "url": "http://2017.cssconf.eu/"
   },
   {
-    "name": "pitercss",
-    "startDate": "2017-06-15",
-    "city": "Saint Petersburg",
-    "country": "Russia",
-    "url": "https://pitercss.com/"
-  },
-  {
     "name": "CSS Dev Conf",
     "startDate": "2017-10-09",
     "city": "New Orleans",
     "country": "U.S.A.",
     "url": "http://2017.cssdevconf.com/"
+  },
+  {
+    "name": "pitercss",
+    "startDate": "2017-06-15",
+    "city": "Saint Petersburg",
+    "country": "Russia",
+    "url": "https://pitercss.com/"
   }
 ]
