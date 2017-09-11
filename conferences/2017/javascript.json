@@ -253,14 +253,6 @@
     "country": "Africa"
   },
   {
-    "name": "CSS Day",
-    "url": "https://cssday.nl/2017",
-    "date": "July 15-16",
-    "startDate": "2017-07-15",
-    "city": "Amsterdam",
-    "country": "Netherlands"
-  },
-  {
     "name": "Node Summit",
     "url": "http://nodesummit.com/",
     "date": "July 25-27",
@@ -561,13 +553,6 @@
     "country": "U.S.A."
   },
   {
-    "name": "dotCSS",
-    "url": "https://2017.dotcss.io/",
-    "startDate": "2017-11-30",
-    "city": "Paris",
-    "country": "France"
-  },
-  {
     "name": "NationJS",
     "url": "http://nationjs.com/",
     "startDate": "2017-11-30",
@@ -793,13 +778,6 @@
     "url": "https://events.google.com/io/"
   },
   {
-    "name": "KharkivCSS #2",
-    "startDate": "2017-04-22",
-    "city": "Kharkiv",
-    "country": "Ukraine",
-    "url": "http://kharkivcss.org/"
-  },
-  {
     "name": "WebCamp Ljubljana",
     "startDate": "2017-04-22",
     "city": "Ljubljana",
@@ -833,13 +811,6 @@
     "city": "Portland",
     "country": "U.S.A.",
     "url": "http://csvconf.com"
-  },
-  {
-    "name": "CSS Conf EU",
-    "startDate": "2017-05-05",
-    "city": "Berlin",
-    "country": "Germany",
-    "url": "http://2017.cssconf.eu/"
   },
   {
     "name": "JSDayES",
@@ -1031,13 +1002,6 @@
     "url": "https://www.contao-konferenz.de/"
   },
   {
-    "name": "pitercss",
-    "startDate": "2017-06-15",
-    "city": "Saint Petersburg",
-    "country": "Russia",
-    "url": "https://pitercss.com/"
-  },
-  {
     "name": "O'Reilly Fluent",
     "startDate": "2017-06-16",
     "city": "San Jose, CA",
@@ -1170,13 +1134,6 @@
     "city": "Hartford, CT",
     "country": "U.S.A.",
     "url": "https://2017.highedweb.org/"
-  },
-  {
-    "name": "CSS Dev Conf",
-    "startDate": "2017-10-09",
-    "city": "New Orleans",
-    "country": "U.S.A.",
-    "url": "http://2017.cssdevconf.com/"
   },
   {
     "name": "Mirror Conf",
