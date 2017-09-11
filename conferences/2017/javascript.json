@@ -1334,5 +1334,15 @@
     "city": "São Paulo",
     "country": "Brazil",
     "twitter": "@reactconfbr"
+  },
+  {
+    "name": "HolyJS",
+    "url": "https://holyjs-moscow.ru",
+    "startDate": "2017-12-10",
+    "endtDate": "2017-12-11",
+    "city": "Moscow",
+    "country": "Russia",
+    "cspUrl": "https://holyjs-moscow.ru/callforpapers/",
+    "twitter": "@HolyJSconf"
   }
 ]
