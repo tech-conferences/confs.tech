@@ -1311,5 +1311,22 @@
     "country": "USA",
     "cspUrl": "",
     "twitter": "@ThunderPlains"
+  },
+  {
+    "name": "KharkivJS",
+    "url": "http://kharkivjs.org/",
+    "startDate": "2017-10-28",
+    "endtDate": "2017-10-29",
+    "city": "Kharkiv",
+    "country": "Ukraine"
+  },
+  {
+    "name": "Frontend Dev Conf",
+    "url": "http://fdconf.by/en/",
+    "startDate": "2017-09-30",
+    "endtDate": "2017-09-30",
+    "city": "Minsk",
+    "country": "Belarus",
+    "twitter": "@fdconf"
   }
 ]

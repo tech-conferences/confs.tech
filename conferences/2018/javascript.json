@@ -123,5 +123,15 @@
     "country": "India",
     "cspUrl": "",
     "twitter": "@hasgeek"
+  },
+  {
+    "name": "UphillConf",
+    "url": "http://uphillconf.com/",
+    "startDate": "2018-04-26",
+    "endtDate": "2018-04-27",
+    "city": "Bern",
+    "country": "Switzerland",
+    "cspUrl": "",
+    "twitter": "@uphillconf"
   }
 ]
