@@ -113,5 +113,15 @@
     "country": "USA",
     "cspUrl": "https://perfmattersconf.com/speak/",
     "twitter": "@perfmattersconf"
+  },
+  {
+    "name": "JSFoo",
+    "url": "https://jsfoo.in",
+    "startDate": "2018-09-15",
+    "endtDate": "2018-09-16",
+    "city": "JSFoo",
+    "country": "India",
+    "cspUrl": "",
+    "twitter": "@hasgeek"
   }
 ]
