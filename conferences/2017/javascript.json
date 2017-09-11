@@ -1301,5 +1301,15 @@
     "country": "Russia",
     "cspUrl": "https://holyjs-moscow.ru/callforpapers/",
     "twitter": "@HolyJSconf"
+  },
+  {
+    "name": "ThunderPlains",
+    "url": "http://2017.thunderplainsconf.com/",
+    "startDate": "2017-11-03",
+    "endtDate": "2017-11-03",
+    "city": "Oklahoma City, OK",
+    "country": "USA",
+    "cspUrl": "",
+    "twitter": "@ThunderPlains"
   }
 ]
