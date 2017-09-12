@@ -3,6 +3,11 @@
   "plugins": ["jsx-a11y"],
   "rules": {
     "sort-class-members/sort-class-members": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "space-before-function-paren": ["error", {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "always"
+    }]
   }
 }
