@@ -5,13 +5,18 @@ import Favicon from 'react-favicon';
 import {Helmet} from 'react-helmet';
 
 import styles from './ConferencePage.scss';
+import Footer from '../Footer';
 import Link from '../Link';
 import GithubStar from '../GithubStar';
 import Heading from '../Heading';
 import Icon from '../Icon';
 import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
-import {TYPES, getConferenceLink} from '../config';
+import {
+  TYPES,
+  getConferenceUrl,
+  getAddConferenceUrl,
+} from '../config';
 
 const CURRENT_YEAR = (new Date()).getFullYear().toString();
 
@@ -55,7 +60,7 @@ export default class ConferencePage extends Component {
 
   loadConference = () => {
     const {lastLinkFetched, conferences, filters} = this.state;
-    const link = getConferenceLink(filters);
+    const link = getConferenceUrl(filters);
 
     if (lastLinkFetched === link) { return conferences; }
 
@@ -117,6 +122,7 @@ export default class ConferencePage extends Component {
     } = this.state;
     const conferencesFilteredByDate = filterConferencesByDate(conferences, showPast);
     const filteredConferences = this.filterConferences(conferencesFilteredByDate);
+    const addConferenceUrl = getAddConferenceUrl(type);
 
     return (
       <div>
@@ -145,6 +151,7 @@ export default class ConferencePage extends Component {
               />
           }
         </div>
+        <Footer addConferenceUrl={addConferenceUrl} />
       </div>
     );
   }

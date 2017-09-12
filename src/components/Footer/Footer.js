@@ -3,11 +3,11 @@ import React from 'react';
 import styles from './Footer.scss';
 import Link from '../Link';
 
-export default function Footer() {
+export default function Footer({addConferenceUrl}) {
   return (
     <footer className={styles.Footer}>
       <p>
-        <Link url="https://github.com/tech-conferences/confs.tech/issues/new" external>
+        <Link url={addConferenceUrl} external>
           Add a conference
         </Link>
       </p>

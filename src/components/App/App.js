@@ -3,7 +3,6 @@ import {Switch, Route} from 'react-router-dom';
 
 import styles from './App.scss';
 import Head from '../Head';
-import Footer from '../Footer';
 import ConferencePage from '../ConferencePage';
 
 export default function App() {
@@ -18,7 +17,6 @@ export default function App() {
           <Route exact path="/" component={ConferencePage} />
           <Route component={ConferencePage} />
         </Switch>
-        <Footer />
       </div>
     </div>
   );
