@@ -14,7 +14,8 @@ Where should it go?
     "endtDate": "2018-08-19",
     "city": "",
     "country": "",
-    "cspUrl": "",
+    "cfpUrl": "",
+    "cfpEndDate": "",
     "twitter": "@twitter_handle",
   }
 ```

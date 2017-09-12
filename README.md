@@ -22,7 +22,8 @@ Conferences are JSON based files. They have the following structure:
     "endtDate": "2018-08-19",
     "city": "",
     "country": "",
-    "cspUrl": "",
+    "cfpUrl": "",
+    "cfpEndDate": "",
     "twitter": "",
   }
 ```

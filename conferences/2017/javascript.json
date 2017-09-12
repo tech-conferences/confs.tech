@@ -1243,7 +1243,7 @@
     "city": "Munich",
     "country": "Germany",
     "cfpUrl": "https://www.papercall.io/frontconf",
-    "cfpEnd": "2017-10-15",
+    "cfpEndDate": "2017-10-15",
     "twitter": "@FrontMuc"
   },
   {
@@ -1253,7 +1253,7 @@
     "endtDate": "2017-12-02",
     "city": "Berlin",
     "country": "Germany",
-    "cspUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeBJAtcdsiPNLicsfaT-_63HQq4Ql4qhTtb53U4aj32re_uMg/viewform",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeBJAtcdsiPNLicsfaT-_63HQq4Ql4qhTtb53U4aj32re_uMg/viewform",
     "twitter": ""
   },
   {
@@ -1272,7 +1272,6 @@
     "endtDate": "2017-09-06",
     "city": "Copenhagen",
     "country": "Denmark",
-    "cspUrl": "",
     "twitter": "@coldfrontconf"
   },
   {
@@ -1299,7 +1298,7 @@
     "endtDate": "2017-12-11",
     "city": "Moscow",
     "country": "Russia",
-    "cspUrl": "https://holyjs-moscow.ru/callforpapers/",
+    "cfpUrl": "https://holyjs-moscow.ru/callforpapers/",
     "twitter": "@HolyJSconf"
   },
   {
@@ -1309,7 +1308,6 @@
     "endtDate": "2017-11-03",
     "city": "Oklahoma City, OK",
     "country": "USA",
-    "cspUrl": "",
     "twitter": "@ThunderPlains"
   },
   {
@@ -1336,7 +1334,6 @@
     "endtDate": "2017-10-06",
     "city": "Amsterdam",
     "country": "Netherlands",
-    "cspUrl": "",
     "twitter": "@FronteersConf"
   }
 ]
