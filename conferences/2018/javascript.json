@@ -133,5 +133,25 @@
     "country": "Switzerland",
     "cspUrl": "",
     "twitter": "@uphillconf"
+  },
+  {
+    "name": "EmberConf",
+    "url": "http://emberconf.com/",
+    "startDate": "2018-03-12",
+    "endtDate": "2018-03-14",
+    "city": "Portland, OR",
+    "country": "USA",
+    "cspUrl": "",
+    "twitter": "@EmberConf"
+  },
+  {
+    "name": "Frontend Dev Conf",
+    "url": "https://fdconf.by",
+    "startDate": "2018-09-30",
+    "endtDate": "2018-09-30",
+    "city": "Minsk",
+    "country": "Belarus",
+    "cspUrl": "",
+    "twitter": "@fdconf"
   }
 ]

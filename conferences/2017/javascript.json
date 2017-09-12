@@ -1328,5 +1328,15 @@
     "city": "Minsk",
     "country": "Belarus",
     "twitter": "@fdconf"
+  },
+  {
+    "name": "Fronteers Conference",
+    "url": "https://fronteers.nl/congres/2017",
+    "startDate": "2017-10-05",
+    "endtDate": "2017-10-06",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "cspUrl": "",
+    "twitter": "@FronteersConf"
   }
 ]
