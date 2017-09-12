@@ -1335,5 +1335,14 @@
     "city": "Amsterdam",
     "country": "Netherlands",
     "twitter": "@FronteersConf"
+  },
+  {
+    "name": "RVA.js",
+    "url": "https://www.rvajavascript.com/",
+    "startDate": "2017-11-03",
+    "endtDate": "2017-11-03",
+    "city": "Richmond, VA",
+    "country": "U.S.A.",
+    "twitter": "@RVAJavaScript"
   }
 ]
