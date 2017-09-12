@@ -1,7 +1,7 @@
 Hey, here is a conference that is missing from the list.
 
 Where should it go?
-- [ ] JavaScript
+- [ ] JavaScript => [Add it to the JavaScript Conference](https://github.com/tech-conferences/javascript-conferences/issues/new)
 - [ ] UX / Design
 - [ ] iOS
 - [ ] Ruby
