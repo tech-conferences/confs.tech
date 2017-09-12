@@ -9,7 +9,7 @@ export const TYPES = {
   android: 'Android',
 };
 
-const BASE_URL = 'https://raw.githubusercontent.com/nimzco/confs.tech/master/conferences';
+const BASE_URL = 'https://raw.githubusercontent.com/tech-conferences/confs.tech/master/conferences';
 
 export function getConferenceLink(state) {
   const {type, year} = state;

@@ -1,6 +1,6 @@
 # Confs.tech | Yet another conference website
 
-List of conferences pulled out from [JSON files](https://github.com/nimzco/confs.tech/tree/master/conferences).
+List of conferences pulled out from [JSON files](https://github.com/tech-conferences/confs.tech/tree/master/conferences).
 - [See all JavaScript conferences in 2017](https://confs.tech/2017/javascript)
 - [See all CSS conferences in 2017](https://confs.tech/2017/css)
 - [See all Design / UX conferences in 2017](https://confs.tech/2017/ux)
@@ -8,7 +8,7 @@ List of conferences pulled out from [JSON files](https://github.com/nimzco/confs
 - [See all iOS conferences in 2017](https://confs.tech/2017/ios)
 - [See all Android conferences in 2017](https://confs.tech/2017/android)
 
-Don't hesitate to add new conferences by [creating an issue](https://github.com/nimzco/confs.tech/issues/new) or creating a pull request. 🤓
+Don't hesitate to add new conferences by [creating an issue](https://github.com/tech-conferences/confs.tech/issues/new) or creating a pull request. 🤓
 
 ## Adding a conference
 

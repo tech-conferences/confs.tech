@@ -6,11 +6,11 @@ export default function GithubStar() {
     <div className={styles.GithubStar}>
       <a
         className="github-button"
-        href="https://github.com/nimzco/confs.tech"
+        href="https://github.com/tech-conferences/confs.tech"
         data-icon="octicon-star"
         data-size="large"
         data-show-count="true"
-        aria-label="Star nimzco/confs.tech on GitHub"
+        aria-label="Star tech-conferences/confs.tech on GitHub"
       >
         Star
       </a>
