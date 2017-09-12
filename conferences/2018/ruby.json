@@ -25,5 +25,14 @@
     "city": "Bengaluru",
     "country": "India",
     "twitter": "@rubyconfindia"
+  },
+  {
+    "name": "Brighton Ruby",
+    "url": "https://brightonruby.com/",
+    "startDate": "2018-07-06",
+    "endtDate": "2018-07-06",
+    "city": "Brighton",
+    "country": "UK",
+    "twitter": "@brightonruby"
   }
 ]
