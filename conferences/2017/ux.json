@@ -395,5 +395,104 @@
     "city": "Lisbon",
     "country": "Portugal",
     "url": "https://www.ux-lx.com/"
+  },
+  {
+    "name": "Kerning",
+    "startDate": "2017-06-03",
+    "city": "Faenza",
+    "country": "Italy",
+    "url": "http://2017.kerning.it"
+  },
+  {
+    "name": "UXDEV Summit",
+    "startDate": "2017-02-01",
+    "city": "Fort Lauderdale, FL",
+    "country": "U.S.A.",
+    "url": "http://www.uxdsummit.com"
+  },
+  {
+    "name": "SVG Summit",
+    "startDate": "2017-02-15",
+    "city": "Online",
+    "country": "Online",
+    "url": "http://SVGSummit.com/"
+  },
+  {
+    "name": "Design &amp; Content Conference",
+    "startDate": "2017-07-17",
+    "city": "Vancouver",
+    "country": "Canada",
+    "url": "http://www.designcontentconf.com/"
+  },
+  {
+    "name": "Webstock",
+    "startDate": "2017-02-13",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "url": "http://www.webstock.org.nz/17/"
+  },
+  {
+    "name": "Design it; Build it",
+    "startDate": "2017-03-30",
+    "city": "Edinburgh",
+    "country": "Scotland",
+    "url": "http://www.dibiconference.com"
+  },
+  {
+    "name": "Design Matters",
+    "startDate": "2017-09-27",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "url": "https://designmatters.io/"
+  },
+  {
+    "name": "FITC Toronto",
+    "startDate": "2017-04-23",
+    "city": "Toronto",
+    "country": "Canada",
+    "url": "http://fitc.ca/event/to17/"
+  },
+  {
+    "name": "Open Vis Conf",
+    "startDate": "2017-04-24",
+    "city": "Boston, MA",
+    "country": "U.S.A.",
+    "url": "https://openvisconf.com/"
+  },
+  {
+    "name": "Generate",
+    "startDate": "2017-04-27",
+    "city": "New York, NY",
+    "country": "U.S.A.",
+    "url": "https://www.generateconf.com/new-york-2017/"
+  },
+  {
+    "name": "Revolve Conference",
+    "startDate": "2017-10-26",
+    "endDate": "2017-10-27",
+    "city": "Charleston, SC",
+    "country": "U.S.A.",
+    "url": "https://2017.revolveconference.com/"
+  },
+  {
+    "name": "Clarity",
+    "startDate": "2017-11-28",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "url": "https://www.clarityconf.com/"
+  },
+  {
+    "name": "Generate",
+    "startDate": "2017-09-20",
+    "city": "London",
+    "country": "U.K.",
+    "url": "https://www.generateconf.com/"
+  },
+  {
+    "name": "Generate",
+    "startDate": "2017-06-08",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "url": "https://www.generateconf.com/"
   }
 ]
