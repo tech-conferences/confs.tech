@@ -12,11 +12,15 @@ export default function Footer({addConferenceUrl}) {
         </Link>
       </p>
       <p>
-        Maintained by&nbsp;
-        <Link url="https://twitter.com/nimz_co" external>
-          @nimzco
-        </Link>
+        Maintained by {Twitter('katyaprigara')} and {Twitter('nimzco')}
       </p>
     </footer>
+  );
+}
+function Twitter(handle) {
+  return (
+    <Link url={`https://twitter.com/@${handle}`} external>
+      @{handle}
+    </Link>
   );
 }
