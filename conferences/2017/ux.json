@@ -494,5 +494,23 @@
     "city": "San Francisco",
     "country": "U.S.A.",
     "url": "https://www.generateconf.com/"
+  },
+  {
+    "name": "WebExpo",
+    "url": "https://www.webexpo.net/",
+    "startDate": "2017-09-22",
+    "endtDate": "2017-09-23",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "twitter": "@webexpo"
+  },
+  {
+    "name": "Xperience By Design",
+    "url": "http://xperience.bydesignconf.com/",
+    "startDate": "2017-10-27",
+    "endtDate": "2017-10-27",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "twitter": "@bydesignconf"
   }
 ]
