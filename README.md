@@ -33,7 +33,7 @@ Dates are formatted like `YYYY-MM-DD`, and if the date has not been defined yet,
 - [Nima Izadi](https://nimz.co)
 - [Ekaterina Prigara](https://twitter.com/katyaprigara)
 
-Because together we are stronger, I'm looking for other contributors. So hit me up [@nimz_co](https://twitter.com/nimz_co) and let's contribute!
+Because together we are stronger, we are looking for other contributors. So hit us and let's contribute!
 
 ## Credits
 Most of the conferences are originally pulled from other repo:
