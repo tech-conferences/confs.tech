@@ -6,5 +6,14 @@
     "endDate": "2018-03-09",
     "city": "Montréal",
     "country": "Canada"
+  },
+  {
+    "name": "CSS Day + UX Special",
+    "url": "https://cssday.nl/2018",
+    "startDate": "2018-06-14",
+    "endtDate": "2018-06-15",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "twitter": "@cssdayconf"
   }
 ]
