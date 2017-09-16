@@ -27,7 +27,12 @@ Conferences are JSON based files. They have the following structure:
     "twitter": "",
   }
 ```
+
 Dates are formatted like `YYYY-MM-DD`, and if the date has not been defined yet, you can use this format as well: `YYYY-MM`.
+
+- To add JavaScript conferences, create a Pull Request on the [javascript-conferences repo](https://github.com/tech-conferences/javascript-conferences).
+- For all other conferences, create a Pull Request on this repo.
+
 
 ## Active contributors
 - [Nima Izadi](https://nimz.co)
@@ -37,7 +42,6 @@ Because together we are stronger, we are looking for other contributors. So hit 
 
 ## Credits
 Most of the conferences are originally pulled from other repo:
-- JavaScript: [prigara/javascript-conferences](https://github.com/prigara/javascript-conferences)
 - Ruby: [ruby-conferences/ruby-conferences.github.io](https://github.com/ruby-conferences/ruby-conferences.github.io)
 - Android: [AndroidStudyGroup/conferences](https://github.com/AndroidStudyGroup/conferences)
 - iOS: [Lascorbe/CocoaConferences](https://github.com/Lascorbe/CocoaConferences)
