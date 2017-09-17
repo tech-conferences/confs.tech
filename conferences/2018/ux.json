@@ -56,6 +56,16 @@
     "startDate": "2018-08-21",
     "endtDate": "2018-08-24",
     "city": "San Fransisco",
-    "country": "U.S.A."
+    "country": "U.S.A.",
+    "twitter": "@AdaptivePath"
+  },
+  {
+    "name": "UX Copenhagen",
+    "url": "https://uxcopenhagen.com/",
+    "startDate": "2018-02-27",
+    "endtDate": "2018-02-28",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "twitter": "@uxcopenhagen"
   }
 ]
