@@ -49,5 +49,13 @@
     "endtDate": "2018-02-08",
     "city": "Lyon",
     "country": "France"
+  },
+  {
+    "name": "UXWeek 2018",
+    "url": "http://uxweek.com/",
+    "startDate": "2018-08-21",
+    "endtDate": "2018-08-24",
+    "city": "San Fransisco",
+    "country": "U.S.A."
   }
 ]
