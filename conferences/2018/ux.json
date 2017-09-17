@@ -33,5 +33,21 @@
     "city": "Tokyo",
     "country": "Japan",
     "twitter": "@acmiui"
+  },
+  {
+    "name": "Convey UX",
+    "url": "http://conveyux.com/",
+    "startDate": "2018-02-27",
+    "endtDate": "2018-03-01",
+    "city": "Seattle",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Interaction 18",
+    "url": "http://interaction18.ixda.org/",
+    "startDate": "2018-02-03",
+    "endtDate": "2018-02-08",
+    "city": "Lyon",
+    "country": "France"
   }
 ]
