@@ -75,5 +75,14 @@
     "endtDate": "2018-03-09",
     "country": "Hong Kong",
     "twitter": "@uxhk"
+  },
+  {
+    "name": "99U",
+    "url": "http://conference.99u.com/",
+    "startDate": "2018-05-09",
+    "endtDate": "2018-05-11",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "twitter": "@uxhk"
   }
 ]
