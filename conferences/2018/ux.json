@@ -67,5 +67,13 @@
     "city": "Copenhagen",
     "country": "Denmark",
     "twitter": "@uxcopenhagen"
+  },
+  {
+    "name": "UX HK",
+    "url": "http://uxhongkong.com/",
+    "startDate": "2018-03-10",
+    "endtDate": "2018-03-09",
+    "country": "Hong Kong",
+    "twitter": "@uxhk"
   }
 ]
