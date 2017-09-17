@@ -120,5 +120,14 @@
     "city": "Salzburg",
     "country": "Austria",
     "twitter": "@conc_at"
+  },
+  {
+    "name": "UX In The City",
+    "url": "http://uxinthecity.net/2018/manchester/",
+    "startDate": "2018-03-15",
+    "endtDate": "2018-03-16",
+    "city": "Manchester",
+    "country": "U.K.",
+    "twitter": "@uxcitymcr"
   }
 ]
