@@ -83,6 +83,15 @@
     "endtDate": "2018-05-11",
     "city": "New York City",
     "country": "U.S.A.",
-    "twitter": "@uxhk"
+    "twitter": "@99u"
+  },
+  {
+    "name": "UX Istanbul",
+    "url": "https://uxistanbul.org/",
+    "startDate": "2018-02-20",
+    "endtDate": "2018-02-20",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "twitter": "@ux_istanbul"
   }
 ]
