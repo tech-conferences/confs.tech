@@ -15,5 +15,23 @@
     "city": "Amsterdam",
     "country": "Netherlands",
     "twitter": "@cssdayconf"
+  },
+  {
+    "name": "TEI 2018",
+    "url": "https://tei.acm.org/2018/",
+    "startDate": "2018-03-18",
+    "endtDate": "2018-03-21",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@tei_conf"
+  },
+  {
+    "name": "ACM IUI 2018",
+    "url": "http://iui.acm.org/2018/",
+    "startDate": "2018-03-07",
+    "endtDate": "2018-03-11",
+    "city": "Tokyo",
+    "country": "Japan",
+    "twitter": "@acmiui"
   }
 ]
