@@ -11,7 +11,7 @@ Where should it go?
     "name": "",
     "url": "",
     "startDate": "2018-08-17",
-    "endtDate": "2018-08-19",
+    "endDate": "2018-08-19",
     "city": "",
     "country": "",
     "cfpUrl": "",
