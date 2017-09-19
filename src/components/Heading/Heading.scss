@@ -22,11 +22,11 @@
   .Inner::after {
     content: '';
     position: absolute;
-    bottom: 3px;
+    bottom: -4px;
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 8px;
+    height: 4px;
     background: color(accent-2);
   }
 }
