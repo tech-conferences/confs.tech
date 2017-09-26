@@ -7,6 +7,7 @@ export const TYPES = {
   ruby: 'Ruby',
   ios: 'iOS / Swift',
   android: 'Android',
+  general: 'General',
 };
 
 const DEFAULT_URL = 'https://raw.githubusercontent.com/tech-conferences/confs.tech/master/conferences';
@@ -18,6 +19,7 @@ const REPO_URLS = {
   ruby: 'https://github.com/tech-conferences/confs.tech',
   ios: 'https://github.com/tech-conferences/confs.tech',
   android: 'https://github.com/tech-conferences/confs.tech',
+  general: 'https://github.com/tech-conferences/confs.tech',
 };
 
 const RAW_CONTENT_URLS = {
@@ -27,6 +29,7 @@ const RAW_CONTENT_URLS = {
   ruby: DEFAULT_URL,
   ios: DEFAULT_URL,
   android: DEFAULT_URL,
+  general: DEFAULT_URL,
 };
 
 export function getConferenceUrl(state) {
