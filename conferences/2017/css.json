@@ -41,5 +41,14 @@
     "city": "Saint Petersburg",
     "country": "Russia",
     "url": "https://pitercss.com/"
+  },
+  {
+    "name": "CSSConf Budapest",
+    "url": "http://cssconfbp.rocks/",
+    "startDate": "2017-10-25",
+    "endDate": "2017-10-25",
+    "city": "Budapest",
+    "country": "Hungary",
+    "twitter": "@cssconfbudapest"
   }
 ]
