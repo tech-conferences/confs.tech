@@ -1,12 +1,12 @@
 # Confs.tech | Yet another conference website
 
 List of conferences pulled out from [JSON files](https://github.com/tech-conferences/confs.tech/tree/master/conferences).
-- [See all JavaScript conferences in 2017](https://confs.tech/2017/javascript)
-- [See all CSS conferences in 2017](https://confs.tech/2017/css)
-- [See all Design / UX conferences in 2017](https://confs.tech/2017/ux)
-- [See all Ruby conferences in 2017](https://confs.tech/2017/ruby)
-- [See all iOS conferences in 2017](https://confs.tech/2017/ios)
-- [See all Android conferences in 2017](https://confs.tech/2017/android)
+- [See all JavaScript conferences](https://confs.tech/javascript)
+- [See all CSS conferences](https://confs.tech/css)
+- [See all Design / UX conferences](https://confs.tech/ux)
+- [See all Ruby conferences](https://confs.tech/ruby)
+- [See all iOS conferences](https://confs.tech/ios)
+- [See all Android conferences](https://confs.tech/android)
 
 Don't hesitate to add new conferences by [creating an issue](https://github.com/tech-conferences/confs.tech/issues/new) or creating a pull request. 🤓
 
