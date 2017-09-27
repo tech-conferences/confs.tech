@@ -6,7 +6,6 @@ import {Helmet} from 'react-helmet';
 
 import styles from './ConferencePage.scss';
 import Footer from '../Footer';
-import Link from '../Link';
 import GithubStar from '../GithubStar';
 import Heading from '../Heading';
 import Icon from '../Icon';
@@ -85,22 +84,6 @@ export default class ConferencePage extends Component {
     this.setState({showPast: !showPast});
   };
 
-  pastConferenceToggler = () => {
-    const {showPast, filters: {year}} = this.state;
-
-    if (CURRENT_YEAR !== year) {
-      return null;
-    }
-
-    return (
-      <p>
-        <Link onClick={this.togglePast}>
-          {showPast ? 'Hide past conferences' : 'Show past conferences'}
-        </Link>
-      </p>
-    );
-  };
-
   filterConferences = (conferences) => {
     const {filters: {country}} = this.state;
 
@@ -141,7 +124,6 @@ export default class ConferencePage extends Component {
             country={country}
             countries={getCountries(conferencesFilteredByDate)}
           />
-          {this.pastConferenceToggler()}
         </div>
         <div>
           {loading
