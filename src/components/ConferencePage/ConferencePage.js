@@ -69,7 +69,10 @@ export default class ConferencePage extends Component {
 
   fetchConfs = (conferenceURL) => {
     return fetch(conferenceURL)
-      .then((result) => result.json())
+      .then((result) => {
+        if (result.status === 404) { return []; }
+        return result.json();
+      })
       // eslint-disable-next-line promise/always-return
       .then((_conferences) => {
         const {conferences} = this.state;
