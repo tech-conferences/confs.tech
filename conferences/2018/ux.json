@@ -131,5 +131,14 @@
     "city": "Manchester",
     "country": "U.K.",
     "twitter": "@uxcitymcr"
+  },
+  {
+    "name": "Delight Summit",
+    "url": "http://delight.us/conference/",
+    "startDate": "2018-05-21",
+    "endtDate": "2018-05-22",
+    "city": "Portland",
+    "country": "U.S.A.",
+    "twitter": "@DelightConf"
   }
 ]
