@@ -1,27 +1,24 @@
 import React, {Component} from 'react';
 import styles from './ConferenceFilter.css';
 import Link from '../Link';
-import {YEARS, TYPES} from '../config';
+import {TYPES} from '../config';
 
 export default class ConferenceFilter extends Component {
   getUrl = (filters) => {
-    const {year, type} = this.props;
+    const {type} = this.props;
 
     if (filters.country) {
-      return `/${filters.year || year}/${filters.type || type}/${filters.country}`;
+      return `/${filters.type || type}/${filters.country}`;
     } else {
-      return `/${filters.year || year}/${filters.type || type}`;
+      return `/${filters.type || type}`;
     }
   };
 
   render() {
-    const {year, type, country, countries} = this.props;
+    const {type, country, countries} = this.props;
 
     return (
       <div className={styles.ConferenceFilterWrapper}>
-        <div className={styles.ConferenceFilter}>
-          {Years(year, this.getUrl)}
-        </div>
         <div className={styles.ConferenceFilter}>
           {Types(type, this.getUrl)}
         </div>
@@ -31,22 +28,6 @@ export default class ConferenceFilter extends Component {
       </div>
     );
   }
-}
-
-function Years(selectedYear, getUrl) {
-  return YEARS.map((year) => {
-    return (
-      <div key={year} className={styles.Filter}>
-        <Link
-          url={getUrl({year})}
-          selected={selectedYear === year}
-          routed
-        >
-          {year}
-        </Link>
-      </div>
-    );
-  });
 }
 
 function Types(selectedType, getUrl) {

@@ -13,16 +13,14 @@ import ConferenceList from '../ConferenceList';
 import ConferenceFilter from '../ConferenceFilter';
 import {
   TYPES,
+  CURRENT_YEAR,
   getConferenceUrl,
   getAddConferenceUrl,
 } from '../config';
 
-const CURRENT_YEAR = (new Date()).getFullYear().toString();
-
 export default class ConferencePage extends Component {
   state = {
     filters: {
-      year: '2017',
       type: 'javascript',
       country: null,
     },
@@ -41,12 +39,11 @@ export default class ConferencePage extends Component {
   }
 
   updateStateWithNewFilters = (props, callback) => {
-    const {match: {params: {year, type, country}}} = props;
+    const {match: {params: {type, country}}} = props;
     if (!type) { return; }
 
     this.setState({
       filters: {
-        year: year || CURRENT_YEAR,
         type,
         country,
       },
@@ -58,20 +55,27 @@ export default class ConferencePage extends Component {
   }
 
   loadConference = () => {
-    const {lastLinkFetched, conferences, filters} = this.state;
-    const link = getConferenceUrl(filters);
+    const {lastLinkFetched, filters} = this.state;
+    const conferenceURL = getConferenceUrl({...filters, year: CURRENT_YEAR});
+    const conferenceURLNextYear = getConferenceUrl({...filters, year: CURRENT_YEAR + 1});
 
-    if (lastLinkFetched === link) { return conferences; }
+    if (lastLinkFetched === conferenceURL) { return; }
 
-    this.setState({loading: true, lastLinkFetched: link});
+    this.setState({loading: true, conferences: [], lastLinkFetched: conferenceURL});
 
-    return fetch(link)
+    this.fetchConfs(conferenceURL);
+    this.fetchConfs(conferenceURLNextYear);
+  };
+
+  fetchConfs = (conferenceURL) => {
+    return fetch(conferenceURL)
       .then((result) => result.json())
       // eslint-disable-next-line promise/always-return
       .then((_conferences) => {
+        const {conferences} = this.state;
         this.setState({
           loading: false,
-          conferences: _conferences,
+          conferences: [...conferences, ..._conferences],
         });
       })
       .catch((error) => {
@@ -101,7 +105,7 @@ export default class ConferencePage extends Component {
       loading,
       conferences,
       showPast,
-      filters: {year, type, country},
+      filters: {type, country},
     } = this.state;
     const conferencesFilteredByDate = filterConferencesByDate(conferences, showPast);
     const filteredConferences = this.filterConferences(conferencesFilteredByDate);
@@ -110,7 +114,7 @@ export default class ConferencePage extends Component {
     return (
       <div>
         <Helmet>
-          <title>{TYPES[type]} conferences in {year} | Confs.tech</title>
+          <title>{TYPES[type]} conferences | Confs.tech</title>
         </Helmet>
         <Favicon url={`/${type}.png`} />
         <div className={styles.Header}>
@@ -119,7 +123,6 @@ export default class ConferencePage extends Component {
         </div>
         <div>
           <ConferenceFilter
-            year={year}
             type={type}
             country={country}
             countries={getCountries(conferencesFilteredByDate)}

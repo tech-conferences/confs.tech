@@ -10,7 +10,7 @@ export default class ConferenceList extends Component {
   renderTable = () => {
     const {conferences} = this.props;
     const groupedConferences = groupBy(conferences, (conf) =>
-      format(conf.startDate, 'M')
+      format(conf.startDate, 'YYYY-MM')
     );
 
     if (conferences.length === 0) {
@@ -18,8 +18,9 @@ export default class ConferenceList extends Component {
     } else {
       return (
         <div className={styles.ConferenceList}>
-          {Object.keys(groupedConferences).map((month) => {
-            return Months(month, groupedConferences[month]);
+          {getConfKeys(groupedConferences).map((groupKey) => {
+            const month = groupKey.split('-')[1];
+            return Months(month, groupedConferences[groupKey]);
           })}
         </div>
       );
@@ -46,4 +47,10 @@ function Months(month, conferences) {
       return <ConferenceItem key={`${conf.url} ${conf.date}`} {...conf} />;
     }),
   ];
+}
+
+function getConfKeys(conferences) {
+  return sortBy(Object.keys(conferences), (conference) => {
+    return parseInt(conference.replace('-', ''), 10);
+  });
 }
