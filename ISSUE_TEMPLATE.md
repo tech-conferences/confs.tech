@@ -16,6 +16,6 @@ Where should it go?
     "country": "",
     "cfpUrl": "",
     "cfpEndDate": "",
-    "twitter": "@twitter_handle",
+    "twitter": "@twitter_handle"
   }
 ```
