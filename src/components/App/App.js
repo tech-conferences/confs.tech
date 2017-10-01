@@ -44,5 +44,5 @@ function redirectOrRender(props) {
 }
 
 function isYear(year) {
-  return (year.length === 4 && typeof parseInt(year, 10) === 'number');
+  return (year.length === 4 && !isNaN(parseInt(year, 10)));
 }
