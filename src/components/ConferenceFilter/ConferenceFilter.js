@@ -5,13 +5,17 @@ import {TYPES} from '../config';
 
 export default class ConferenceFilter extends Component {
   getUrl = (filters) => {
-    const {type} = this.props;
+    const {type, country} = this.props;
 
     if (filters.country) {
       return `/${filters.type || type}/${filters.country}`;
-    } else {
+    }
+
+    if (filters.country === null || !country) {
       return `/${filters.type || type}`;
     }
+
+    return `/${filters.type || type}/${country}`;
   };
 
   render() {
