@@ -140,5 +140,32 @@
     "city": "Portland",
     "country": "U.S.A.",
     "twitter": "@DelightConf"
+  },
+  {
+    "name": "OFFFest",
+    "url": "http://offf.barcelona/",
+    "startDate": "2018-05-24",
+    "endDate": "2018-05-26",
+    "city": "Barcelona",
+    "country": "Spain",
+    "twitter": "@OFFFest"
+  },
+  {
+    "name": "How Design Live",
+    "url": "http://howdesignlive.com/",
+    "startDate": "2018-04-30",
+    "endDate": "2018-05-03",
+    "city": "Boston",
+    "country": "USA",
+    "twitter": "@HOWbrand"
+  },
+  {
+    "name": "Semi Permanent",
+    "url": "https://www.semipermanent.com/events",
+    "startDate": "2017-05",
+    "endDate": "2017-05",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "@semiglobal"
   }
 ]

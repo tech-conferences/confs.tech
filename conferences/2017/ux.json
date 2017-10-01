@@ -169,11 +169,12 @@
   },
   {
     "name": "The Conference",
-    "url": "http://2017.theconference.se/",
-    "date": "Sept 4-5",
+    "url": "https://2017.theconference.se/",
     "startDate": "2017-09-04",
+    "endDate": "2017-09-05",
     "city": "Malmo",
-    "country": "Sweden"
+    "country": "Sweden",
+    "twitter": "@TheConfMalmo",
   },
   {
     "name": "MobileHCI 2017",
@@ -512,5 +513,121 @@
     "city": "Prague",
     "country": "Czech Republic",
     "twitter": "@bydesignconf"
+  },
+  {
+    "name": "Eppicurance",
+    "url": "https://www.epicurrence.com/",
+    "startDate": "2017-10-23",
+    "endtDate": "2017-10-27",
+    "city": "Utah",
+    "country": "U.S.A.",
+    "twitter": "@Epicurrence"
+  },
+  {
+    "name": "Slush",
+    "url": "http://www.slush.org/",
+    "startDate": "2017-11-30",
+    "endDate": "2017-12-01",
+    "city": "HELSINKI",
+    "country": "Finland",
+    "twitter": "@SlushHQ"
+  },
+  {
+    "name": "Typo berlin",
+    "url": "https://www.typotalks.com/berlin/",
+    "startDate": "2017-05-25",
+    "endDate": "2017-05-27",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@TYPOBER"
+  },
+  {
+    "name": "Semi Permanent",
+    "url": "https://www.semipermanent.com/events/sydney-2017",
+    "startDate": "2017-05-25",
+    "endDate": "2017-05-27",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "@semiglobal"
+  },
+  {
+    "name": "Semi Permanent",
+    "url": "https://www.semipermanent.com/events/auckland-2017",
+    "startDate": "2017-08-10",
+    "endDate": "2017-08-12",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "twitter": "@semiglobal"
+  },
+  {
+    "name": "Typism",
+    "url": "http://www.typism.com.au/",
+    "startDate": "2017-09-28",
+    "endDate": "2017-09-30",
+    "city": "Queensland",
+    "country": "Australia",
+    "twitter": "@TypismCommunity"
+  },
+  {
+    "name": "The Design Conference Brisbane",
+    "url": "https://thedesignconference.com.au/",
+    "startDate": "2017-05-24",
+    "endDate": "2017-05-27",
+    "city": "Brisbane",
+    "country": "Australia",
+    "twitter": "@DesignConfBNE"
+  },
+  {
+    "name": "We love graphic design",
+    "url": "https://www.facebook.com/WLGDCPH/",
+    "startDate": "2017-10-07",
+    "endDate": "2017-10-07",
+    "city": "Copenhagen",
+    "country": "Denmark"
+  },
+  {
+    "name": "Brand New Conference",
+    "url": "http://underconsideration.com/brandnewconference/",
+    "startDate": "2017-09-14",
+    "endDate": "2017-09-15",
+    "city": "Chicago",
+    "country": "U.S.A.",
+    "twitter": "@bnconf"
+  },
+  {
+    "name": "Adobe Max",
+    "url": "https://max.adobe.com/",
+    "startDate": "2017-10-18",
+    "endDate": "2017-10-20",
+    "city": "Las Vegas",
+    "country": "U.S.A.",
+    "twitter": "@adobemax"
+  },
+  {
+    "name": "Aiga Conference",
+    "url": "http://designconference.aiga.org",
+    "startDate": "2017-10-12",
+    "endDate": "2017-10-14",
+    "city": "Minneapolis",
+    "country": "U.S.A.",
+    "twitter": "@AIGAdesign"
+  },
+  {
+    "name": "World Design Summit",
+    "url": "https://worlddesignsummit.com/",
+    "startDate": "2017-10-16",
+    "endDate": "2017-10-25",
+    "city": "Montreal",
+    "country": "Canada",
+    "twitter": "@DESIGNSUMMITMTL"
+  },
+  {
+    "name": "Kikk festival",
+    "url": "http://www.kikk.be/2017/en/home",
+    "startDate": "2017-11-02",
+    "endDate": "2017-11-04",
+    "city": "Namur",
+    "country": "Belgium",
+    "twitter": "@Kikk_Festival"
   }
 ]
