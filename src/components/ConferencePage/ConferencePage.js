@@ -68,13 +68,12 @@ export default class ConferencePage extends Component {
       this.fetchConfs(conferenceURLNextYear),
     // eslint-disable-next-line promise/always-return
     ]).then((results) => {
-      const _conferences = results.reduce((concat, current) => {
+      const conferences = results.reduce((concat, current) => {
         return [...concat, ...current];
       }, []);
-      const {conferences} = this.state;
       this.setState({
         loading: false,
-        conferences: [...conferences, ..._conferences],
+        conferences,
       });
     }).catch((error) => {
       console.warn(error); // eslint-disable-line no-console
