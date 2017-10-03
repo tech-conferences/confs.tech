@@ -629,5 +629,13 @@
     "city": "Namur",
     "country": "Belgium",
     "twitter": "@Kikk_Festival"
+  },
+  {
+    "name": "HamOnt UX",
+    "url": "https://www.eventbrite.ca/e/hamont-ux-tickets-36963796711",
+    "startDate": "2017-10-28",
+    "endDate": "2017-10-28",
+    "city": "Hamilton, Ontario",
+    "country": "Canada"
   }
 ]
