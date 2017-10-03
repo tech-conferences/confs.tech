@@ -8,6 +8,9 @@
       "anonymous": "never",
       "named": "never",
       "asyncArrow": "always"
-    }]
+    }],
+    "function-paren-newline": "off",
+    "react/no-typos": "off",
+    "react/no-unused-state": "off"
   }
 }
