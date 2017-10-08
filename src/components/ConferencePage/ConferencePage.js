@@ -63,8 +63,21 @@ export default class ConferencePage extends Component {
 
     this.setState({loading: true, conferences: [], lastLinkFetched: conferenceURL});
 
-    this.fetchConfs(conferenceURL);
-    this.fetchConfs(conferenceURLNextYear);
+    Promise.all([
+      this.fetchConfs(conferenceURL),
+      this.fetchConfs(conferenceURLNextYear),
+    // eslint-disable-next-line promise/always-return
+    ]).then((results) => {
+      const conferences = results.reduce((concat, current) => {
+        return [...concat, ...current];
+      }, []);
+      this.setState({
+        loading: false,
+        conferences,
+      });
+    }).catch((error) => {
+      console.warn(error); // eslint-disable-line no-console
+    });
   };
 
   fetchConfs = (conferenceURL) => {
@@ -72,14 +85,6 @@ export default class ConferencePage extends Component {
       .then((result) => {
         if (result.status === 404) { return []; }
         return result.json();
-      })
-      // eslint-disable-next-line promise/always-return
-      .then((_conferences) => {
-        const {conferences} = this.state;
-        this.setState({
-          loading: false,
-          conferences: [...conferences, ..._conferences],
-        });
       })
       .catch((error) => {
         console.warn(error); // eslint-disable-line no-console
@@ -113,6 +118,15 @@ export default class ConferencePage extends Component {
     const conferencesFilteredByDate = filterConferencesByDate(conferences, showPast);
     const filteredConferences = this.filterConferences(conferencesFilteredByDate);
     const addConferenceUrl = getAddConferenceUrl(type);
+
+    // Fallback is only defined for `/:type/:country` paths.
+    // Avoids displaying an error when looking for a country with no conf for `type` yet.
+    if (!loading && filteredConferences.length === 0) {
+      const {fallback} = this.props;
+      if (typeof fallback === 'function') {
+        return fallback(type);
+      }
+    }
 
     return (
       <div>
