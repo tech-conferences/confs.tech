@@ -93,7 +93,7 @@
   },
   {
     "name": "APPFORUM Americas",
-    "url": "https://www.zebra.com/appforum",
+    "url": "https://www.zebra.com/us/en/events/appforum/americas.html",
     "city": "Las Vegas, NV",
     "country": "U.S.A.",
     "startDate": "2017-05-09",
@@ -101,7 +101,7 @@
   },
   {
     "name": "APPFORUM Asia",
-    "url": "https://www.zebra.com/appforum",
+    "url": "https://www.zebra.com/us/en/events/appforum/asia-china.html",
     "city": "Shanghai",
     "country": "China",
     "startDate": "2017-07-27",
@@ -109,7 +109,7 @@
   },
   {
     "name": "APPFORUM Australia",
-    "url": "https://www.zebra.com/appforum",
+    "url": "https://www.zebra.com/us/en/events/appforum/asia-australia.html",
     "city": "Melbourne",
     "country": "Australia",
     "startDate": "2017-07-31",
@@ -117,7 +117,7 @@
   },
   {
     "name": "APPFORUM Europe",
-    "url": "https://www.zebra.com/appforum",
+    "url": "https://www.zebra.com/us/en/events/appforum/europe.html",
     "city": "Prague, Czec",
     "country": "Republic",
     "startDate": "2017-06-14",

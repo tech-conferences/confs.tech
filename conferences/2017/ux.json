@@ -114,8 +114,8 @@
   {
     "name": "UX Scotland",
     "url": "http://uxscotland.net/2017/",
-    "date": "June 7-9 ",
     "startDate": "2017-06-07",
+    "endDate": "2017-06-09",
     "city": "Scotland",
     "country": "U.K."
   },
@@ -227,8 +227,8 @@
   {
     "name": "Design Matters '17",
     "url": "https://designmatters.io/",
-    "date": "Sept 27-28",
     "startDate": "2017-09-27",
+    "endDate": "2017-09-28",
     "city": "Copenhagen, Denmark",
     "country": "Denmark"
   },
@@ -370,13 +370,6 @@
     "url": "http://2017.midwestuxconference.com/"
   },
   {
-    "name": "UX Scotland",
-    "startDate": "2017-06-07",
-    "city": "Edinburgh",
-    "country": "Scotland",
-    "url": "http://uxscotland.net/2017/"
-  },
-  {
     "name": "SustainableUX Conference",
     "startDate": "2017-02-16",
     "city": "Online",
@@ -440,13 +433,6 @@
     "url": "http://www.dibiconference.com"
   },
   {
-    "name": "Design Matters",
-    "startDate": "2017-09-27",
-    "city": "Copenhagen",
-    "country": "Denmark",
-    "url": "https://designmatters.io/"
-  },
-  {
     "name": "FITC Toronto",
     "startDate": "2017-04-23",
     "city": "Toronto",
@@ -485,16 +471,17 @@
   {
     "name": "Generate",
     "startDate": "2017-09-20",
+    "endDate": "2017-09-22",
     "city": "London",
     "country": "U.K.",
-    "url": "https://www.generateconf.com/"
+    "url": "https://www.generateconf.com/London"
   },
   {
     "name": "Generate",
-    "startDate": "2017-06-08",
+    "startDate": "2017-06-09",
     "city": "San Francisco",
     "country": "U.S.A.",
-    "url": "https://www.generateconf.com/"
+    "url": "https://www.generateconf.com/san-francisco"
   },
   {
     "name": "WebExpo",
@@ -629,5 +616,13 @@
     "city": "Namur",
     "country": "Belgium",
     "twitter": "@Kikk_Festival"
+  },
+  {
+    "name": "HamOnt UX",
+    "url": "https://www.eventbrite.ca/e/hamont-ux-tickets-36963796711",
+    "startDate": "2017-10-28",
+    "endDate": "2017-10-28",
+    "city": "Hamilton, Ontario",
+    "country": "Canada"
   }
 ]
