@@ -6,5 +6,16 @@
     "country": "U.S.A.",
     "startDate": "2018-05-04",
     "endDate": "2018-05-05"
+  },
+  {
+    "name": "NConf",
+    "url": "https://nconf.de",
+    "startDate": "2018-10-23",
+    "endDate": "2018-10-23",
+    "city": "Rostock",
+    "country": "Germany",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "facebook": "https://www.facebook.com/NConference/"
   }
 ]
