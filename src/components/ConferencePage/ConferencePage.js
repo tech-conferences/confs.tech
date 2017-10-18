@@ -93,7 +93,9 @@ export default class ConferencePage extends Component {
 
   togglePast = () => {
     const {showPast} = this.state;
-    this.setState({showPast: !showPast});
+    this.setState({showPast: !showPast}, () => {
+      window.scrollTo(0, 0);
+    });
   };
 
   filterConferences = (conferences) => {
@@ -153,7 +155,11 @@ export default class ConferencePage extends Component {
               />
           }
         </div>
-        <Footer addConferenceUrl={addConferenceUrl} />
+        <Footer
+          addConferenceUrl={addConferenceUrl}
+          togglePast={this.togglePast}
+          showPast={showPast}
+        />
       </div>
     );
   }
