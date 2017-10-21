@@ -30,18 +30,18 @@ export default class ConferenceItem extends PureComponent {
           type="application/ld+json"
           dangerouslySetInnerHTML={{__html: generateEventJSONLD({name, url, city, country, startDate, endDate})}}
         />
-        <Heading element="h3" level={4}>
+        <Heading element="p" level={4}>
           <Link url={url} external>
             {name}
           </Link>
         </Heading>
-        <div>
+        <p className={styles.p}>
           {`${Location(city, country)} - `}
           <span className={styles.Date}>
             {formatDate(startDate, endDate)}
           </span>
           {Twitter(twitter)}
-        </div>
+        </p>
       </div>
     );
   }
