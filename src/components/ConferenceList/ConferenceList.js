@@ -3,6 +3,7 @@ import {groupBy, sortBy} from 'lodash';
 import {parse, format} from 'date-fns';
 
 import Heading from '../Heading';
+import Divider from '../Divider';
 import ConferenceItem from '../ConferenceItem';
 import styles from './ConferenceList.css';
 
@@ -18,9 +19,13 @@ export default class ConferenceList extends Component {
     } else {
       return (
         <div className={styles.ConferenceList}>
-          {getConfKeys(groupedConferences).map((groupKey) => {
-            const month = groupKey.split('-')[1];
-            return Months(month, groupedConferences[groupKey]);
+          {getConfKeys(groupedConferences).map((groupKey, index) => {
+            const [year, month] = groupKey.split('-');
+            if (index === 0 || month === '01') {
+              return [<Divider key="hr" />, Year(year), Months(month, groupedConferences[groupKey])];
+            } else {
+              return Months(month, groupedConferences[groupKey]);
+            }
           })}
         </div>
       );
@@ -40,13 +45,21 @@ function Months(month, conferences) {
   const sortedConferences = sortBy(conferences, (conference) => conference.startDate);
 
   return [
-    <Heading key={month} element="h2" level={2}>
+    <Heading key={month} element="h2" level={3}>
       {getMonthName(month)}
     </Heading>,
     sortedConferences.map((conf) => {
       return <ConferenceItem key={`${conf.url} ${conf.date}`} {...conf} />;
     }),
   ];
+}
+
+function Year(year) {
+  return (
+    <Heading key={year} element="h2" level={2}>
+      {year}
+    </Heading>
+  );
 }
 
 function getConfKeys(conferences) {

@@ -1,10 +1,6 @@
 @import '../style/foundation/colors.scss';
 @import '../style/foundation/spacing.scss';
 
-.ConferenceFilterWrapper {
-  border-bottom: 2px inset color(gray, lighter);
-}
-
 .ConferenceFilter {
   display: flex;
   align-items: center;
