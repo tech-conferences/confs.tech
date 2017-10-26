@@ -14,5 +14,14 @@
     "country": "Canada",
     "startDate": "2017-12-02",
     "endDate": "2017-12-02"
+  },
+  {
+    "name": "ConFoo Vancouver",
+    "url": "https://confoo.ca/en/yvr2017",
+    "city": "Vancouver",
+    "country": "Canada",
+    "startDate": "2017-12-04",
+    "endDate": "2017-12-06",
+    "twitter": "@confooca"
   }
 ]
