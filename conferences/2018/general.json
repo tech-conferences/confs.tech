@@ -1,5 +1,13 @@
 [
   {
+    "name": "CodeMash",
+    "url": "https://www.codemash.org/",
+    "city": "Sandusky, OH",
+    "country": "U.S.A.",
+    "startDate": "2018-01-09",
+    "endDate": "2018-01-12"
+  },
+  {
     "name": "Codeland Conf",
     "url": "http://codelandconf.com/",
     "city": "New York City",
