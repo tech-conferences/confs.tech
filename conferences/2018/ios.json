@@ -30,5 +30,16 @@
     "endDate": "2018-02",
     "city": "San Francisco",
     "country": "U.S.A."
+  },
+  {
+    "name": "dotSwift",
+    "url": "https://www.dotswift.io",
+    "startDate": "2018-01-29",
+    "endDate": "2018-01-29",
+    "city": "Paris",
+    "country": "France",
+    "cfpUrl": "https://www.dotswift.io/LT",
+    "cfpEndDate": "",
+    "twitter": "@dotSwift"
   }
 ]
