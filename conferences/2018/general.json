@@ -25,5 +25,14 @@
     "cfpUrl": "",
     "cfpEndDate": "",
     "facebook": "https://www.facebook.com/NConference/"
+  },
+  {
+    "name": "ConFoo Montreal",
+    "url": "https://confoo.ca/en/yul2018",
+    "city": "Montreal",
+    "country": "Canada",
+    "startDate": "2018-03-07",
+    "endDate": "2018-03-09",
+    "twitter": "@confooca"
   }
 ]
