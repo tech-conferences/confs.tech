@@ -9,6 +9,17 @@
     "twitter": "@rubyoniceconf"
   },
   {
+    "name": "RubyConf Australia",
+    "url": "https://www.rubyconf.org.au/2018",
+    "startDate": "2018-03-08",
+    "endDate": "2018-03-09",
+    "city": "Sydney",
+    "country": "Australia",
+    "cfpUrl": "https://www.papercall.io/ruby-conf-au-2018",
+    "cfpEndDate": "2017-10-30",
+    "twitter": "@rubyconf_au"
+  },
+  {
     "name": "Bath Ruby Conference",
     "url": "http://2018.bathruby.uk/",
     "startDate": "2018-03-22",
