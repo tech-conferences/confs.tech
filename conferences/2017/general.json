@@ -8,6 +8,15 @@
     "endDate": "2017-10-06"
   },
   {
+    "name": "GDG DevFest 2017",
+    "url": "https://devfest.gdghyderabad.in/",
+    "city": "Hyderabad",
+    "country": "India",
+    "startDate": "2017-11-04",
+    "endDate": "2017-11-04",
+    "twitter": "@gdg_hyd"
+  },
+  {
     "name": "HamOnt ML",
     "url": "https://www.eventbrite.ca/e/hamont-ml-tickets-38294716528",
     "city": "Hamilton, Ontario",
