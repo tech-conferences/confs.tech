@@ -16,6 +16,15 @@
     "endDate": "2017-12-02"
   },
   {
+     "name": "GDG DevFest 2017",
+     "url": "https://devfest.gdghyderabad.in/",
+     "city": "Hyderabad",
+     "country": "India",
+     "startDate": "2017-11-04",
+     "endDate": "2017-11-04",
+     "twitter": "@gdg_hyd"
+   },
+   {
     "name": "ConFoo Vancouver",
     "url": "https://confoo.ca/en/yvr2017",
     "city": "Vancouver",
