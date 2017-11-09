@@ -36,6 +36,15 @@
     "twitter": "@WeRiseConf"
   },
   {
+    "name": "QCon NY",
+    "url": "https://qconnewyork.com/",
+    "startDate": "2018-06-27",
+    "endDate": "2018-06-29",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "twitter": "@qconnewyork"
+  },
+  {
     "name": "NConf",
     "url": "https://nconf.de",
     "startDate": "2018-10-23",
