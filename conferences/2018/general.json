@@ -16,6 +16,15 @@
     "endDate": "2018-05-05"
   },
   {
+    "name": "QCon AI",
+    "url": "https://qcon.ai/",
+    "startDate": "2018-04-10",
+    "endDate": "2018-04-11",
+    "city": "San Francisco, CA",
+    "country": "U.S.A",
+    "twitter": "@qconai"
+  },
+  {
     "name": "QCon SP",
     "url": "https://qconsp.com/",
     "startDate": "2018-05-09",
