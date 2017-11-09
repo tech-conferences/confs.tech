@@ -16,6 +16,15 @@
     "endDate": "2018-05-05"
   },
   {
+    "name": "QCon SP",
+    "url": "https://qconsp.com/",
+    "startDate": "2018-05-09",
+    "endDate": "2018-05-11",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "twitter": "@QConSP"
+  },
+  {
     "name": "We RISE",
     "url": "https://werise.tech/",
     "startDate": "2018-06-21",
