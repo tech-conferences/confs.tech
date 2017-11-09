@@ -25,12 +25,21 @@
      "twitter": "@gdg_hyd"
    },
    {
-    "name": "ConFoo Vancouver",
-    "url": "https://confoo.ca/en/yvr2017",
-    "city": "Vancouver",
-    "country": "Canada",
-    "startDate": "2017-12-04",
-    "endDate": "2017-12-06",
-    "twitter": "@confooca"
+      "name": "QCon SF",
+      "url": "https://qconsf.com/",
+      "city": "San Francisco",
+      "country": "U.S.A.",
+      "startDate": "2017-11-13",
+      "endDate": "2017-11-15",
+      "twitter": "@QConSF"
+   },
+   {
+      "name": "ConFoo Vancouver",
+      "url": "https://confoo.ca/en/yvr2017",
+      "city": "Vancouver",
+      "country": "Canada",
+      "startDate": "2017-12-04",
+      "endDate": "2017-12-06",
+      "twitter": "@confooca"
   }
 ]
