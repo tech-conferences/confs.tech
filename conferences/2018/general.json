@@ -8,6 +8,15 @@
     "endDate": "2018-01-12"
   },
   {
+    "name": "QCon London",
+    "url": "https://qconlondon.com/",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2018-03-05",
+    "endDate": "2018-03-07",
+    "twitter": "@qconlondon"
+  },
+  {
     "name": "Codeland Conf",
     "url": "http://codelandconf.com/",
     "city": "New York City",
