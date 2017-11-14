@@ -1,5 +1,23 @@
 [
   {
+    "name": "CSSConf AU",
+    "url": "http://2018.cssconf.com.au/",
+    "startDate": "2018-03-20",
+    "endtDate": "2018-03-20",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@cssconfau"
+  },
+  {
+    "name": "CSSConf EU",
+    "url": "https://2018.cssconf.eu/",
+    "startDate": "2018-06-01",
+    "endtDate": "2018-06-01",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@cssconfeu"
+  },
+  {
     "name": "CSS Day + UX Special",
     "url": "https://cssday.nl/2018",
     "startDate": "2018-06-14",
