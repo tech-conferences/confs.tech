@@ -8,32 +8,40 @@ import ConferenceItem from '../ConferenceItem';
 import styles from './ConferenceList.css';
 
 export default class ConferenceList extends Component {
-  renderTable = () => {
-    const {conferences} = this.props;
+  renderConferences = (conferences) => {
     const groupedConferences = groupBy(conferences, (conf) =>
       format(conf.startDate, 'YYYY-MM')
+    );
+
+    return (
+      <div className={styles.ConferenceList}>
+        {getConfKeys(groupedConferences).map((groupKey) => {
+          const month = groupKey.split('-')[1];
+          return Months(month, groupedConferences[groupKey]);
+        })}
+      </div>
+    );
+  };
+
+  render() {
+    const {conferences} = this.props;
+    const confByYear = groupBy(conferences, (conf) =>
+      format(conf.startDate, 'YYYY')
     );
 
     if (conferences.length === 0) {
       return (<p>{"Oh shoot! We don't have any conferences yet."}</p>);
     } else {
-      return (
-        <div className={styles.ConferenceList}>
-          {getConfKeys(groupedConferences).map((groupKey, index) => {
-            const [year, month] = groupKey.split('-');
-            if (index === 0 || month === '01') {
-              return [<Divider key="hr" />, Year(year), Months(month, groupedConferences[groupKey])];
-            } else {
-              return Months(month, groupedConferences[groupKey]);
-            }
-          })}
-        </div>
-      );
-    }
-  };
+      const confsTable = Object.keys(confByYear).map((year) => {
+        return [
+          <Divider key="hr" />,
+          Year(year),
+          this.renderConferences(confByYear[year]),
+        ];
+      });
 
-  render() {
-    return this.renderTable();
+      return (<div>{confsTable}</div>);
+    }
   }
 }
 
