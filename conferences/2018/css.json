@@ -18,6 +18,15 @@
     "twitter": "@cssconfeu"
   },
   {
+    "name": "pitercss_conf",
+    "url": "https://pitercss.com/",
+    "startDate": "2018-06-08",
+    "endtDate": "2018-06-09",
+    "city": "St. Petersburg",
+    "country": "Russia",
+    "twitter": "@pitercss_conf"
+  },
+  {
     "name": "CSS Day + UX Special",
     "url": "https://cssday.nl/2018",
     "startDate": "2018-06-14",
