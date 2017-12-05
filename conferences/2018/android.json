@@ -33,5 +33,38 @@
     "country": "Japan",
     "startDate": "2018-02-08",
     "endDate": "2018-02-09"
+  },
+
+  {
+    "name": "App Builders",
+    "url": "https://www.appbuilders.ch/",
+    "startDate": "2018-06-16",
+    "endDate": "2018-06-17",
+    "city": "Lugano",
+    "country": "Switzerland"
+  },
+  {
+    "name": "MobileTech",
+    "url": "https://mobiletechcon.de/en/",
+    "startDate": "2018-03-12",
+    "endDate": "2018-03-14",
+    "city": "Munich",
+    "country": "Germany"
+  },
+  {
+    "name": "Appdevcon",
+    "url": "http://appdevcon.nl/",
+    "startDate": "2018-03-15",
+    "endDate": "2018-03-16",
+    "city": "Amsterdam",
+    "country": "Netherlands"
+  },
+  {
+    "name": "MobOS",
+    "url": "http://romobos.com/",
+    "startDate": "2018-02-15",
+    "endDate": "2018-02-16",
+    "city": "Cluj-Napoca",
+    "country": "Romania"
   }
 ]
