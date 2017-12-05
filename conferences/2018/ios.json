@@ -41,5 +41,45 @@
     "cfpUrl": "https://www.dotswift.io/LT",
     "cfpEndDate": "",
     "twitter": "@dotSwift"
+  },
+  {
+    "name": "Swift by Northwest",
+    "url": "https://swiftbynorthwest.com",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-20",
+    "city": "Portland, OR",
+    "country": "U.S.A.",
+    "twitter": "@SwiftxNW"
+  },
+  {
+    "name": "iOSDevUK",
+    "url": "http://www.iosdevuk.com/",
+    "startDate": "2018-09-03",
+    "endDate": "2018-09-06",
+    "city": "Aberystwyth",
+    "country": "U.K.",
+    "twitter": "@IOSDEVUK"
+  },
+  {
+    "name": "360|iDev",
+    "url": "http://360idev.com/",
+    "startDate": "2018-08-26",
+    "endDate": "2018-08-29",
+    "city": "Denver CO",
+    "country": "U.S.A."
+  },
+  {
+    "name": "WWDC",
+    "url": "https://developer.apple.com/wwdc/",
+    "startDate": "2018-06",
+    "city": "San Jose, CA",
+    "country": "U.S.A."
+  },
+  {
+    "name": "WWDC",
+    "url": "https://developer.apple.com/wwdc/",
+    "startDate": "2018-06",
+    "city": "San Jose, CA",
+    "country": "U.S.A."
   }
 ]
