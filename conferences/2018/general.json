@@ -81,5 +81,14 @@
     "startDate": "2018-03-07",
     "endDate": "2018-03-09",
     "twitter": "@confooca"
+  },
+  {
+    "name": "Iterate Developer Conference",
+    "url": "https://www.iterateconf.io/",
+    "startDate": "2018-02-27",
+    "endDate": "2018-02-27",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "twitter": "@OktaDev"
   }
 ]
