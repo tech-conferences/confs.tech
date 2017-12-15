@@ -90,5 +90,16 @@
     "city": "San Francisco",
     "country": "U.S.A.",
     "twitter": "@OktaDev"
+  },
+  {
+    "name": "WAQ18",
+    "url": "https://webaquebec.org",
+    "startDate": "2018-04-10",
+    "endDate": "2018-04-12",
+    "city": "Québec",
+    "country": "Canada",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@webaquebec"
   }
 ]
