@@ -167,5 +167,14 @@
     "city": "Sydney",
     "country": "Australia",
     "twitter": "@semiglobal"
-  }
+  },
+  {
+    "name": "ReactFest",
+    "url": "https://reactfest.com/",
+    "startDate": "2018-03-09",
+    "endDate": "2018-03-09",
+    "twitter": "@reactfest",
+    "city": "London",
+    "country": "U.K."
+   },
 ]
