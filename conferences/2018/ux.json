@@ -176,5 +176,16 @@
     "twitter": "@reactfest",
     "city": "London",
     "country": "U.K."
-   }
+   },
+  {
+    "name": "Pixel Up!",
+    "url": "https://pixelup.co.za",
+    "startDate": "2018-03-12",
+    "endDate": "2018-03-14",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@letspixelup"
+  }
 ]
