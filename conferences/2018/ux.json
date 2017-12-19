@@ -176,7 +176,7 @@
     "twitter": "@reactfest",
     "city": "London",
     "country": "U.K."
-   },
+  },
   {
     "name": "Pixel Up!",
     "url": "https://pixelup.co.za",
@@ -187,5 +187,16 @@
     "cfpUrl": "",
     "cfpEndDate": "",
     "twitter": "@letspixelup"
+  },
+  {
+    "name": "Refresh",
+    "url": "http://refresh.rocks/",
+    "startDate": "2018-09-07",
+    "endDate": "2018-09-07",
+    "city": "Tallinn",
+    "country": "Estonia",
+    "cfpUrl": "http://refresh.rocks/call-for-papers",
+    "cfpEndDate": "2018-02-15",
+    "twitter": "@REFRESHRocks"
   }
 ]
