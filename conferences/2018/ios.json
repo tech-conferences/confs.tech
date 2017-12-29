@@ -100,6 +100,17 @@
     "country": "Netherlands"
   },
   {
+    "name": "ADDC - App Design & Development Conference",
+    "url": "https://addconf.com",
+    "startDate": "2018-07-04",
+    "endDate": "2018-07-06",
+    "city": "Barcelona",
+    "country": "Spain",
+    "cfpUrl": "https://addconf.com/2018/call-for-proposals/",
+    "cfpEndDate": "2017-02-15",
+    "twitter": "@addconf"
+  },
+  {
     "name": "MobOS",
     "url": "http://romobos.com/",
     "startDate": "2018-02-15",
