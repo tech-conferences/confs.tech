@@ -8,6 +8,17 @@
     "country": "Canada"
   },
   {
+    "name": "ADDC - App Design & Development Conference",
+    "url": "https://addconf.com",
+    "startDate": "2018-07-04",
+    "endDate": "2018-07-06",
+    "city": "Barcelona",
+    "country": "Spain",
+    "cfpUrl": "https://addconf.com/2018/call-for-proposals/",
+    "cfpEndDate": "2017-02-15",
+    "twitter": "@addconf"
+  },
+  {
     "name": "CSS Day + UX Special",
     "url": "https://cssday.nl/2018",
     "startDate": "2018-06-14",
@@ -167,5 +178,36 @@
     "city": "Sydney",
     "country": "Australia",
     "twitter": "@semiglobal"
+  },
+  {
+    "name": "ReactFest",
+    "url": "https://reactfest.com/",
+    "startDate": "2018-03-09",
+    "endDate": "2018-03-09",
+    "twitter": "@reactfest",
+    "city": "London",
+    "country": "U.K."
+  },
+  {
+    "name": "Pixel Up!",
+    "url": "https://pixelup.co.za",
+    "startDate": "2018-03-12",
+    "endDate": "2018-03-14",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@letspixelup"
+  },
+  {
+    "name": "Refresh",
+    "url": "http://refresh.rocks/",
+    "startDate": "2018-09-07",
+    "endDate": "2018-09-07",
+    "city": "Tallinn",
+    "country": "Estonia",
+    "cfpUrl": "http://refresh.rocks/call-for-papers",
+    "cfpEndDate": "2018-02-15",
+    "twitter": "@REFRESHRocks"
   }
 ]

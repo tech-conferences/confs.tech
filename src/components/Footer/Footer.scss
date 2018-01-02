@@ -6,4 +6,9 @@
   padding-top: spacing(extra-loose);
   color: color(gray);
   font-size: font-size(footer);
+  margin-bottom: spacing(base);
+}
+
+.FooterLinks a {
+  margin-right: spacing(base);
 }

@@ -1,11 +1,66 @@
 [
   {
+    "name": "CodeMash",
+    "url": "https://www.codemash.org/",
+    "city": "Sandusky, OH",
+    "country": "U.S.A.",
+    "startDate": "2018-01-09",
+    "endDate": "2018-01-12"
+  },
+  {
+    "name": "QCon London",
+    "url": "https://qconlondon.com/",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2018-03-05",
+    "endDate": "2018-03-07",
+    "twitter": "@qconlondon"
+  },
+  {
     "name": "Codeland Conf",
     "url": "http://codelandconf.com/",
     "city": "New York City",
     "country": "U.S.A.",
     "startDate": "2018-05-04",
     "endDate": "2018-05-05"
+  },
+  {
+    "name": "QCon AI",
+    "url": "https://qcon.ai/",
+    "startDate": "2018-04-10",
+    "endDate": "2018-04-11",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "twitter": "@qconai"
+  },
+  {
+    "name": "QCon SP",
+    "url": "https://qconsp.com/",
+    "startDate": "2018-05-09",
+    "endDate": "2018-05-11",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "twitter": "@QConSP"
+  },
+  {
+    "name": "We RISE",
+    "url": "https://werise.tech/",
+    "startDate": "2018-06-21",
+    "endDate": "2018-06-22",
+    "city": "Atlanta, GA",
+    "country": "U.S.A.",
+    "cfpUrl": "https://www.papercall.io/we-rise-tech",
+    "cfpEndDate": "2018-02-07",
+    "twitter": "@WeRiseConf"
+  },
+  {
+    "name": "QCon NY",
+    "url": "https://qconnewyork.com/",
+    "startDate": "2018-06-27",
+    "endDate": "2018-06-29",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "twitter": "@qconnewyork"
   },
   {
     "name": "NConf",
@@ -17,5 +72,45 @@
     "cfpUrl": "",
     "cfpEndDate": "",
     "facebook": "https://www.facebook.com/NConference/"
+  },
+  {
+    "name": "ConFoo Montreal",
+    "url": "https://confoo.ca/en/yul2018",
+    "city": "Montreal",
+    "country": "Canada",
+    "startDate": "2018-03-07",
+    "endDate": "2018-03-09",
+    "twitter": "@confooca"
+  },
+  {
+    "name": "Iterate Developer Conference",
+    "url": "https://www.iterateconf.io/",
+    "startDate": "2018-02-27",
+    "endDate": "2018-02-27",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "twitter": "@OktaDev"
+  },
+  {
+    "name": "WAQ18",
+    "url": "https://webaquebec.org",
+    "startDate": "2018-04-10",
+    "endDate": "2018-04-12",
+    "city": "Québec",
+    "country": "Canada",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@webaquebec"
+  },
+  {
+    "name": "Refresh",
+    "url": "http://refresh.rocks/",
+    "startDate": "2018-09-07",
+    "endDate": "2018-09-07",
+    "city": "Tallinn",
+    "country": "Estonia",
+    "cfpUrl": "http://refresh.rocks/call-for-papers",
+    "cfpEndDate": "2018-02-15",
+    "twitter": "@REFRESHRocks"
   }
 ]

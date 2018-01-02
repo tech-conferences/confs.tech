@@ -16,6 +16,8 @@ const js2017 = `${JS_BASE_URL}/2017/javascript.json`;
 const js2018 = `${JS_BASE_URL}/2018/javascript.json`;
 
 const REQUIRED_KEYS = ['name', 'url', 'startDate', 'country'];
+const BAD_COUNTRY_NAMES = ['USA', 'U.S.A', 'UK', 'U.K'];
+
 const conferencesJSON = {
   2017: {
     javascript: js2017,
@@ -48,7 +50,7 @@ Object.keys(conferencesJSON).forEach((year) => {
 
         if (duplicates.length > 0) {
           const dupConfs = duplicates.map((conf) => conf.name).join(', ');
-          console.log(`Duplicates for ${stack} - ${year}: ${dupConfs}`);
+          console.error(`Duplicates for ${year}/${stack}: ${dupConfs}`);
         }
 
         expect(duplicates.length).toBe(0);
@@ -58,6 +60,18 @@ Object.keys(conferencesJSON).forEach((year) => {
         conferences.forEach((conference) => {
           REQUIRED_KEYS.forEach((requiredKey) => {
             expect(conference.hasOwnProperty(requiredKey)).toBe(true);
+          });
+        });
+      });
+
+      describe('country names', () => {
+        it('is has a good country name', () => {
+          conferences.forEach((conference) => {
+            if (BAD_COUNTRY_NAMES.indexOf(conference.country) !== -1) {
+              console.error(`Bad country name for: ${year}/${stack}: ${conference.name} - ${conference.country}`);
+              expect(false).toBe(true);
+            }
+            expect(true).toBe(true);
           });
         });
       });

@@ -4,7 +4,9 @@ Where should it go?
 - [ ] JavaScript => [Add it to the JavaScript Conference](https://github.com/tech-conferences/javascript-conferences/issues/new)
 - [ ] UX / Design
 - [ ] iOS
+- [ ] Android
 - [ ] Ruby
+- [ ] General
 
 ```json
   {

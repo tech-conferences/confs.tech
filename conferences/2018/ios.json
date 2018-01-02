@@ -1,6 +1,6 @@
 [
   {
-    "name": "Try Swift",
+    "name": "try! Swift",
     "url": "https://www.tryswift.co/events/2018/tokyo/en/",
     "startDate": "2018-03",
     "endDate": "2018-03",
@@ -30,5 +30,92 @@
     "endDate": "2018-02",
     "city": "San Francisco",
     "country": "U.S.A."
+  },
+  {
+    "name": "dotSwift",
+    "url": "https://www.dotswift.io",
+    "startDate": "2018-01-29",
+    "endDate": "2018-01-29",
+    "city": "Paris",
+    "country": "France",
+    "cfpUrl": "https://www.dotswift.io/LT",
+    "cfpEndDate": "",
+    "twitter": "@dotSwift"
+  },
+  {
+    "name": "Swift by Northwest",
+    "url": "https://swiftbynorthwest.com",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-20",
+    "city": "Portland, OR",
+    "country": "U.S.A.",
+    "twitter": "@SwiftxNW"
+  },
+  {
+    "name": "iOSDevUK",
+    "url": "http://www.iosdevuk.com/",
+    "startDate": "2018-09-03",
+    "endDate": "2018-09-06",
+    "city": "Aberystwyth",
+    "country": "U.K.",
+    "twitter": "@IOSDEVUK"
+  },
+  {
+    "name": "360|iDev",
+    "url": "http://360idev.com/",
+    "startDate": "2018-08-26",
+    "endDate": "2018-08-29",
+    "city": "Denver CO",
+    "country": "U.S.A."
+  },
+  {
+    "name": "WWDC",
+    "url": "https://developer.apple.com/wwdc/",
+    "startDate": "2018-06",
+    "city": "San Jose, CA",
+    "country": "U.S.A."
+  },
+  {
+    "name": "App Builders",
+    "url": "https://www.appbuilders.ch/",
+    "startDate": "2018-06-16",
+    "endDate": "2018-06-17",
+    "city": "Lugano",
+    "country": "Switzerland"
+  },
+  {
+    "name": "MobileTech",
+    "url": "https://mobiletechcon.de/en/",
+    "startDate": "2018-03-12",
+    "endDate": "2018-03-14",
+    "city": "Munich",
+    "country": "Germany"
+  },
+  {
+    "name": "Appdevcon",
+    "url": "http://appdevcon.nl/",
+    "startDate": "2018-03-15",
+    "endDate": "2018-03-16",
+    "city": "Amsterdam",
+    "country": "Netherlands"
+  },
+  {
+    "name": "ADDC - App Design & Development Conference",
+    "url": "https://addconf.com",
+    "startDate": "2018-07-04",
+    "endDate": "2018-07-06",
+    "city": "Barcelona",
+    "country": "Spain",
+    "cfpUrl": "https://addconf.com/2018/call-for-proposals/",
+    "cfpEndDate": "2017-02-15",
+    "twitter": "@addconf"
+  },
+  {
+    "name": "MobOS",
+    "url": "http://romobos.com/",
+    "startDate": "2018-02-15",
+    "endDate": "2018-02-16",
+    "city": "Cluj-Napoca",
+    "country": "Romania"
   }
 ]

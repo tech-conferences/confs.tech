@@ -38,11 +38,14 @@ function redirectOrRender(props) {
   if (isYear(type)) {
     return <Redirect to={`/${country}`} state={{status: 301}} />;
   } else {
-    return <ConferencePage {...props} />;
+    return <ConferencePage {...props} fallback={redirectToType} />;
   }
-
 }
 
 function isYear(year) {
   return (year.length === 4 && !isNaN(parseInt(year, 10)));
+}
+
+function redirectToType(type) {
+  return <Redirect to={`/${type}`} state={{status: 301}} />;
 }
