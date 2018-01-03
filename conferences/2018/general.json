@@ -123,5 +123,16 @@
     "cfpUrl": "http://refresh.rocks/call-for-papers",
     "cfpEndDate": "2018-02-15",
     "twitter": "@REFRESHRocks"
+  },
+  {
+    "name": "Webconf.asia",
+    "url": "https://webconf.asia",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-09",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "webconf_asia",
   }
 ]
