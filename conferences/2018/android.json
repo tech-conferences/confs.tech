@@ -77,5 +77,16 @@
     "endDate": "2018-02-16",
     "city": "Cluj-Napoca",
     "country": "Romania"
+  },
+  {
+    "name": "360|AnDev",
+    "url": "https://360andev.com",
+    "startDate": "2018-07-19",
+    "endDate": "2018-07-20",
+    "city": "Denver, CO",
+    "country": "U.S.A.",
+    "cfpUrl": "https://360andev.com/call-for-papers/",
+    "cfpEndDate": "2018-04-06",
+    "twitter": "@360andev"
   }
 ]
