@@ -1,4 +1,4 @@
-export const CURRENT_YEAR = (new Date()).getFullYear();
+export const CURRENT_YEAR = (new Date()).getFullYear() - 1;
 
 export const TYPES = {
   javascript: 'JavaScript',
