@@ -1,5 +1,16 @@
 [
   {
+    "name": "Webconf.asia",
+    "url": "https://webconf.asia",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-09",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "webconf_asia"
+  },
+  {
     "name": "CodeMash",
     "url": "https://www.codemash.org/",
     "city": "Sandusky, OH",
