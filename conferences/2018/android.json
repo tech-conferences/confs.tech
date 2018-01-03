@@ -88,5 +88,16 @@
     "cfpUrl": "https://360andev.com/call-for-papers/",
     "cfpEndDate": "2018-04-06",
     "twitter": "@360andev"
+  },
+  {
+    "name": "Chicago Roboto",
+    "url": "http://chicagoroboto.com",
+    "startDate": "2018-04-12",
+    "endDate": "2018-04-13",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@chicagoroboto"
   }
 ]
