@@ -82,6 +82,15 @@
     "twitter": "@qconnewyork"
   },
   {
+    "name": "OSCON",
+    "url": "https://conferences.oreilly.com/oscon/oscon-or",
+    "startDate": "2018-07-18",
+    "endDate": "2018-07-19",
+    "city": "Portland, OR",
+    "country": "U.S.A.",
+    "twitter": "@oscon"
+  },
+  {
     "name": "NConf",
     "url": "https://nconf.de",
     "startDate": "2018-10-23",
