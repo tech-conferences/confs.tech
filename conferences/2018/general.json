@@ -36,6 +36,14 @@
     "endDate": "2018-05-05"
   },
   {
+    "name": "An Event Apart",
+    "url": "https://aneventapart.com/event/seattle-2018",
+    "startDate": "2018-04-02",
+    "endDate": "2018-04-04",
+    "city": "Seattle, WA",
+    "country": "U.S.A."
+  },
+  {
     "name": "QCon AI",
     "url": "https://qcon.ai/",
     "startDate": "2018-04-10",
