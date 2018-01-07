@@ -8,6 +8,15 @@
     "country": "Canada"
   },
   {
+    "name": "Nordic.design",
+    "url": "http://nordic.design/",
+    "startDate": "2018-09-05",
+    "endDate": "2018-09-05",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@nordicdesign"
+  },
+  {
     "name": "ADDC - App Design & Development Conference",
     "url": "https://addconf.com",
     "startDate": "2018-07-04",
