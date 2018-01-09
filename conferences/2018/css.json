@@ -9,6 +9,15 @@
     "twitter": "@cssconfau"
   },
   {
+    "name": "Frontend United",
+    "url": "https://www.frontendunited.org/",
+    "startDate": "2018-05-31",
+    "endtDate": "2018-06-02",
+    "city": "Utrecht",
+    "country": "The Netherlands",
+    "twitter": "@frontendunited"
+  },
+  {
     "name": "CSSConf EU",
     "url": "https://2018.cssconf.eu/",
     "startDate": "2018-06-01",
