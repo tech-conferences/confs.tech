@@ -3,7 +3,7 @@
     "name": "CSSConf AU",
     "url": "http://2018.cssconf.com.au/",
     "startDate": "2018-03-20",
-    "endtDate": "2018-03-20",
+    "endDate": "2018-03-20",
     "city": "Melbourne",
     "country": "Australia",
     "twitter": "@cssconfau"
@@ -12,16 +12,17 @@
     "name": "Frontend United",
     "url": "https://www.frontendunited.org/",
     "startDate": "2018-05-31",
-    "endtDate": "2018-06-02",
+    "endDate": "2018-06-02",
     "city": "Utrecht",
     "country": "The Netherlands",
+    "cfpUrl": "https://www.frontendunited.org/call-for-papers",
     "twitter": "@frontendunited"
   },
   {
     "name": "CSSConf EU",
     "url": "https://2018.cssconf.eu/",
     "startDate": "2018-06-01",
-    "endtDate": "2018-06-01",
+    "endDate": "2018-06-01",
     "city": "Berlin",
     "country": "Germany",
     "twitter": "@cssconfeu"
@@ -30,7 +31,7 @@
     "name": "pitercss_conf",
     "url": "https://pitercss.com/",
     "startDate": "2018-06-08",
-    "endtDate": "2018-06-09",
+    "endDate": "2018-06-09",
     "city": "St. Petersburg",
     "country": "Russia",
     "twitter": "@pitercss_conf"
@@ -39,7 +40,7 @@
     "name": "CSS Day + UX Special",
     "url": "https://cssday.nl/2018",
     "startDate": "2018-06-14",
-    "endtDate": "2018-06-15",
+    "endDate": "2018-06-15",
     "city": "Amsterdam",
     "country": "Netherlands",
     "twitter": "@cssdayconf"
