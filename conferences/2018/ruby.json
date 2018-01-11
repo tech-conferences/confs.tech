@@ -118,6 +118,15 @@
     "twitter": "@nairubyke"
   },
   {
+    "name": "Paris.rb Conf",
+    "url": "http://2018.rubyparis.org/",
+    "startDate": "2018-06-28",
+    "endDate": "2018-06-29",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@parisrb"
+  },
+  {
     "name": "Brighton Ruby",
     "url": "https://brightonruby.com/",
     "startDate": "2018-07-06",
