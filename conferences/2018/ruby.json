@@ -83,6 +83,15 @@
     "twitter": "@rubyconftw"
   },
   {
+    "name": "RubyHACK",
+    "url": "http://rubyhack.com",
+    "startDate": "2018-05-03",
+    "endDate": "2018-05-04",
+    "city": "Salt Lake City",
+    "country": "U.S.A.",
+    "twitter": "@utrubyhack"
+  },
+  {
     "name": "Brighton Ruby",
     "url": "https://brightonruby.com/",
     "startDate": "2018-07-06",
