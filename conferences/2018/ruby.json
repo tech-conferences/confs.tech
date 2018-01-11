@@ -9,6 +9,15 @@
     "twitter": "@rubyoniceconf"
   },
   {
+    "name": "Rubyfuza",
+    "url": "http://www.rubyfuza.org",
+    "startDate": "2018-02-01",
+    "endDate": "2018-02-03",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "twitter": "@rubyfuza"
+  },
+  {
     "name": "RubyConf Australia",
     "url": "https://www.rubyconf.org.au/2018",
     "startDate": "2018-03-08",
