@@ -38,6 +38,15 @@
     "twitter": "@bathruby"
   },
   {
+    "name": "Isle of Ruby",
+    "url": "http://isleofruby.org",
+    "startDate": "2018-04-13",
+    "endDate": "2018-04-15",
+    "city": "Exeter",
+    "country": "U.K.",
+    "twitter": "@isleofruby"
+  },
+  {
     "name": "RubyConf India",
     "url": "http://rubyconfindia.org/",
     "startDate": "2018-02-09",
