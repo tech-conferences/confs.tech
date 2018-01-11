@@ -29,6 +29,15 @@
     "twitter": "@rubyconf_au"
   },
   {
+    "name": "RailsConf",
+    "url": "https://railsconf.com/",
+    "startDate": "2018-04-17",
+    "endDate": "2018-04-19",
+    "city": "Pittsburgh",
+    "country": "U.S.A.",
+    "twitter": "@railsconf"
+  },
+  {
     "name": "Bath Ruby Conference",
     "url": "http://2018.bathruby.uk/",
     "startDate": "2018-03-22",
