@@ -101,6 +101,15 @@
     "twitter": "@utrubyhack"
   },
   {
+    "name": "RubyKaigi",
+    "url": "http://rubykaigi.org/2018",
+    "startDate": "2018-05-31",
+    "endDate": "2018-06-02",
+    "city": "Sendai",
+    "country": "Japan",
+    "twitter": "@rubykaigi"
+  },
+  {
     "name": "Brighton Ruby",
     "url": "https://brightonruby.com/",
     "startDate": "2018-07-06",
