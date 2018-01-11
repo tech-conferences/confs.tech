@@ -38,13 +38,22 @@
     "twitter": "@bathruby"
   },
   {
-    "name": "RubyConf",
+    "name": "RubyConf India",
     "url": "http://rubyconfindia.org/",
     "startDate": "2018-02-09",
     "endDate": "2018-02-10",
     "city": "Bengaluru",
     "country": "India",
     "twitter": "@rubyconfindia"
+  },
+  {
+    "name": "RubyConf Philippines",
+    "url": "http://rubyconf.ph",
+    "startDate": "2018-03-15",
+    "endDate": "2018-03-17",
+    "city": "Manila",
+    "country": "Philippines",
+    "twitter": "@rubyconfph"
   },
   {
     "name": "Brighton Ruby",
