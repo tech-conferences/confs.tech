@@ -110,6 +110,14 @@
     "twitter": "@rubykaigi"
   },
   {
+    "name": "Ruby Conf Kenya",
+    "url": "http://rubyconf.nairuby.org/2018",
+    "startDate": "2018-06-22",
+    "city": "Nairobi",
+    "country": "Kenya",
+    "twitter": "@nairubyke"
+  },
+  {
     "name": "Brighton Ruby",
     "url": "https://brightonruby.com/",
     "startDate": "2018-07-06",
