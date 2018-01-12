@@ -9,6 +9,15 @@
     "twitter": "@rubyoniceconf"
   },
   {
+    "name": "wroc_love.rb",
+    "url": "http://wrocloverb.com",
+    "startDate": "2018-03-16",
+    "endDate": "2018-03-18",
+    "city": "Wrocław",
+    "country": "Poland",
+    "twitter": "@wrocloverb"
+  },
+  {
     "name": "Rubyfuza",
     "url": "http://www.rubyfuza.org",
     "startDate": "2018-02-01",
