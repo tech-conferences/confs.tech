@@ -1,5 +1,12 @@
 [
   {
+    "name": "mDevCamp",
+    "url": "https://mdevcamp.eu/",
+    "city": "Prague",
+    "country": "Czechia",
+    "startDate": "2018-06-15"
+  },
+  {
     "name": "App Builders",
     "url": "https://www.appbuilders.ch",
     "city": "Lugano",
