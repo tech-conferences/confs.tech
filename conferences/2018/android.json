@@ -7,6 +7,14 @@
     "startDate": "2018-06-15"
   },
   {
+    "name": "Kotlin Conf",
+    "url": "https://kotlinconf.com",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "startDate": "2018-10-03",
+    "endDate": "2018-10-05"
+  },
+  {
     "name": "App Builders",
     "url": "https://www.appbuilders.ch",
     "city": "Lugano",
