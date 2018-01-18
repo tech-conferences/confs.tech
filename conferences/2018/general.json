@@ -36,6 +36,15 @@
     "endDate": "2018-05-05"
   },
   {
+    "name": "Reason Conf",
+    "url": "https://www.reason-conf.com/",
+    "city": "Vienna",
+    "country": "Austria",
+    "startDate": "2018-05-11",
+    "endDate": "2018-05-13",
+    "twitter": "@reasonconf"
+  },
+  {
     "name": "An Event Apart",
     "url": "https://aneventapart.com/event/seattle-2018",
     "startDate": "2018-04-02",
