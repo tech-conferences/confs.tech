@@ -1,11 +1,33 @@
 [
   {
+    "name": "mDevCamp",
+    "url": "https://mdevcamp.eu/",
+    "city": "Prague",
+    "country": "Czechia",
+    "startDate": "2018-06-15"
+  },
+  {
+    "name": "Kotlin Conf",
+    "url": "https://kotlinconf.com",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "startDate": "2018-10-03",
+    "endDate": "2018-10-05"
+  },
+  {
     "name": "App Builders",
     "url": "https://www.appbuilders.ch",
     "city": "Lugano",
     "country": "Switzerland",
     "startDate": "2018-04-16",
     "endDate": "2018-04-17"
+  },
+  {
+    "name": "Voxxed Days",
+    "url": "https://voxxeddays.com/minsk",
+    "city": "Minsk",
+    "country": "Belarus",
+    "startDate": "2018-05-26"
   },
   {
     "name": "ADDC - App Design & Development Conference",
@@ -77,5 +99,27 @@
     "endDate": "2018-02-16",
     "city": "Cluj-Napoca",
     "country": "Romania"
+  },
+  {
+    "name": "360|AnDev",
+    "url": "https://360andev.com",
+    "startDate": "2018-07-19",
+    "endDate": "2018-07-20",
+    "city": "Denver, CO",
+    "country": "U.S.A.",
+    "cfpUrl": "https://360andev.com/call-for-papers/",
+    "cfpEndDate": "2018-04-06",
+    "twitter": "@360andev"
+  },
+  {
+    "name": "Chicago Roboto",
+    "url": "http://chicagoroboto.com",
+    "startDate": "2018-04-12",
+    "endDate": "2018-04-13",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@chicagoroboto"
   }
 ]

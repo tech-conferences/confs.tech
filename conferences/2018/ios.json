@@ -117,5 +117,14 @@
     "endDate": "2018-02-16",
     "city": "Cluj-Napoca",
     "country": "Romania"
+  },
+  {
+    "name": "FrenchKit",
+    "url": "http://www.frenchkit.fr/",
+    "startDate": "2018-09-20",
+    "endDate": "2018-09-21",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@FrenchKitConf"
   }
 ]

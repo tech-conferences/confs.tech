@@ -8,6 +8,24 @@
     "country": "Canada"
   },
   {
+    "name": "Web Directions Design",
+    "url": "http://webdirections.org/design/",
+    "startDate": "2018-04-12",
+    "endDate": "2018-04-13",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
+    "name": "Nordic.design",
+    "url": "http://nordic.design/",
+    "startDate": "2018-09-05",
+    "endDate": "2018-09-05",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@nordicdesign"
+  },
+  {
     "name": "ADDC - App Design & Development Conference",
     "url": "https://addconf.com",
     "startDate": "2018-07-04",
@@ -22,7 +40,7 @@
     "name": "CSS Day + UX Special",
     "url": "https://cssday.nl/2018",
     "startDate": "2018-06-14",
-    "endtDate": "2018-06-15",
+    "endDate": "2018-06-15",
     "city": "Amsterdam",
     "country": "Netherlands",
     "twitter": "@cssdayconf"
@@ -31,7 +49,7 @@
     "name": "TEI 2018",
     "url": "https://tei.acm.org/2018/",
     "startDate": "2018-03-18",
-    "endtDate": "2018-03-21",
+    "endDate": "2018-03-21",
     "city": "Stockholm",
     "country": "Sweden",
     "twitter": "@tei_conf"
@@ -40,7 +58,7 @@
     "name": "ACM IUI 2018",
     "url": "http://iui.acm.org/2018/",
     "startDate": "2018-03-07",
-    "endtDate": "2018-03-11",
+    "endDate": "2018-03-11",
     "city": "Tokyo",
     "country": "Japan",
     "twitter": "@acmiui"
@@ -49,7 +67,7 @@
     "name": "Convey UX",
     "url": "http://conveyux.com/",
     "startDate": "2018-02-27",
-    "endtDate": "2018-03-01",
+    "endDate": "2018-03-01",
     "city": "Seattle",
     "country": "U.S.A."
   },
@@ -57,7 +75,7 @@
     "name": "Interaction 18",
     "url": "http://interaction18.ixda.org/",
     "startDate": "2018-02-03",
-    "endtDate": "2018-02-08",
+    "endDate": "2018-02-08",
     "city": "Lyon",
     "country": "France"
   },
@@ -65,7 +83,7 @@
     "name": "UXWeek 2018",
     "url": "http://uxweek.com/",
     "startDate": "2018-08-21",
-    "endtDate": "2018-08-24",
+    "endDate": "2018-08-24",
     "city": "San Fransisco",
     "country": "U.S.A.",
     "twitter": "@AdaptivePath"
@@ -74,7 +92,7 @@
     "name": "UX Copenhagen",
     "url": "https://uxcopenhagen.com/",
     "startDate": "2018-02-27",
-    "endtDate": "2018-02-28",
+    "endDate": "2018-02-28",
     "city": "Copenhagen",
     "country": "Denmark",
     "twitter": "@uxcopenhagen"
@@ -83,7 +101,7 @@
     "name": "UX HK",
     "url": "http://uxhongkong.com/",
     "startDate": "2018-03-10",
-    "endtDate": "2018-03-09",
+    "endDate": "2018-03-09",
     "country": "Hong Kong",
     "twitter": "@uxhk"
   },
@@ -91,7 +109,7 @@
     "name": "99U",
     "url": "http://conference.99u.com/",
     "startDate": "2018-05-09",
-    "endtDate": "2018-05-11",
+    "endDate": "2018-05-11",
     "city": "New York City",
     "country": "U.S.A.",
     "twitter": "@99u"
@@ -100,7 +118,7 @@
     "name": "UX Istanbul",
     "url": "https://uxistanbul.org/",
     "startDate": "2018-02-20",
-    "endtDate": "2018-02-20",
+    "endDate": "2018-02-20",
     "city": "Istanbul",
     "country": "Turkey",
     "twitter": "@ux_istanbul"
@@ -109,7 +127,7 @@
     "name": "Front Utah",
     "url": "https://www.frontutah.com/",
     "startDate": "2018-01-05",
-    "endtDate": "2018-01-06",
+    "endDate": "2018-01-06",
     "city": "Salt Lake City",
     "country": "U.S.A.",
     "twitter": "@front"
@@ -118,7 +136,7 @@
     "name": "Front Utah",
     "url": "https://theinnovationenterprise.com/summits/ux-ui-innovation-summit-london-2018",
     "startDate": "2018-06-12",
-    "endtDate": "2018-06-13",
+    "endDate": "2018-06-13",
     "city": "London",
     "country": "U.K.",
     "twitter": "@iegroup"
@@ -127,7 +145,7 @@
     "name": ".concat()",
     "url": "https://2018.conc.at/",
     "startDate": "2018-03-03",
-    "endtDate": "2018-03-03",
+    "endDate": "2018-03-03",
     "city": "Salzburg",
     "country": "Austria",
     "cfpUrl": "https://2018.conc.at/#cfp",
@@ -138,7 +156,7 @@
     "name": "UX In The City",
     "url": "http://uxinthecity.net/2018/manchester/",
     "startDate": "2018-03-15",
-    "endtDate": "2018-03-16",
+    "endDate": "2018-03-16",
     "city": "Manchester",
     "country": "U.K.",
     "twitter": "@uxcitymcr"
@@ -147,7 +165,7 @@
     "name": "Delight Summit",
     "url": "http://delight.us/conference/",
     "startDate": "2018-05-21",
-    "endtDate": "2018-05-22",
+    "endDate": "2018-05-22",
     "city": "Portland",
     "country": "U.S.A.",
     "twitter": "@DelightConf"

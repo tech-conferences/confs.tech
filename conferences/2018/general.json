@@ -1,5 +1,16 @@
 [
   {
+    "name": "Webconf.asia",
+    "url": "https://webconf.asia",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-09",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "webconf_asia"
+  },
+  {
     "name": "CodeMash",
     "url": "https://www.codemash.org/",
     "city": "Sandusky, OH",
@@ -23,6 +34,23 @@
     "country": "U.S.A.",
     "startDate": "2018-05-04",
     "endDate": "2018-05-05"
+  },
+  {
+    "name": "Reason Conf",
+    "url": "https://www.reason-conf.com/",
+    "city": "Vienna",
+    "country": "Austria",
+    "startDate": "2018-05-11",
+    "endDate": "2018-05-13",
+    "twitter": "@reasonconf"
+  },
+  {
+    "name": "An Event Apart",
+    "url": "https://aneventapart.com/event/seattle-2018",
+    "startDate": "2018-04-02",
+    "endDate": "2018-04-04",
+    "city": "Seattle, WA",
+    "country": "U.S.A."
   },
   {
     "name": "QCon AI",
@@ -61,6 +89,15 @@
     "city": "New York City",
     "country": "U.S.A.",
     "twitter": "@qconnewyork"
+  },
+  {
+    "name": "OSCON",
+    "url": "https://conferences.oreilly.com/oscon/oscon-or",
+    "startDate": "2018-07-18",
+    "endDate": "2018-07-19",
+    "city": "Portland, OR",
+    "country": "U.S.A.",
+    "twitter": "@oscon"
   },
   {
     "name": "NConf",
