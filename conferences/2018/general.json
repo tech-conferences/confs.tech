@@ -149,5 +149,14 @@
     "cfpUrl": "http://refresh.rocks/call-for-papers",
     "cfpEndDate": "2018-02-15",
     "twitter": "@REFRESHRocks"
+  },
+  {
+    "name": "SyntaxCon",
+    "url": "https://2018.syntaxcon.com/",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-08",
+    "city": "Charleston, SC",
+    "country": "U.S.A.",
+    "twitter": "@syntaxcon"
   }
 ]
