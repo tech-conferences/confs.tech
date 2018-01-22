@@ -11,6 +11,15 @@
     "twitter": "webconf_asia"
   },
   {
+    "name": "Sunny Tech",
+    "url": "https://sunny-tech.io/",
+    "startDate": "2018-06-28",
+    "endDate": "2018-06-29",
+    "city": "Montpellier",
+    "country": "France",
+    "twitter": "@SunnyTech_MTP"
+  },
+  {
     "name": "CodeMash",
     "url": "https://www.codemash.org/",
     "city": "Sandusky, OH",
