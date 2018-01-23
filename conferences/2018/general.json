@@ -167,5 +167,14 @@
     "city": "Charleston, SC",
     "country": "U.S.A.",
     "twitter": "@syntaxcon"
+  },
+  {
+    "name": "FOSSASIA",
+    "url": "https://fossasia.org",
+    "startDate": "2018-03-22",
+    "endDate": "2018-03-25",
+    "city": "Singapore",
+    "country": "Singapore",
+    "twitter": "@fossasia"
   }
 ]
