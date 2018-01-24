@@ -7,6 +7,14 @@
     "startDate": "2018-06-15"
   },
   {
+    "name": "Google I/O",
+    "url": "https://events.google.com/io/",
+    "city": "Mountain View",
+    "country": "U.S.A.",
+    "startDate": "2018-05-08",
+    "endDate": "2018-05-10"
+  },
+  {
     "name": "Kotlin Conf",
     "url": "https://kotlinconf.com",
     "city": "Amsterdam",
