@@ -8,6 +8,13 @@
     "country": "Canada"
   },
   {
+    "name": "The UX Conf",
+    "url": "http://theuxconf.com/",
+    "startDate": "2018-02-20",
+    "city": "London",
+    "country": "U.K."
+  },
+  {
     "name": "Awwwards Berlin",
     "url": "https://conference.awwwards.com/berlin",
     "startDate": "2018-02-07",
