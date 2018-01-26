@@ -1,5 +1,13 @@
 [
   {
+    "name": "The Legacy Conference",
+    "url": "http://www.legacycan.ca/",
+    "city": "Ottawa",
+    "country": "Canada",
+    "startDate": "2018-03-23",
+    "endDate": "2018-03-24"
+  },
+  {
     "name": "True North",
     "url": "http://truenorthwaterloo.com/",
     "city": "Waterloo",
