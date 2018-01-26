@@ -8,6 +8,22 @@
     "country": "Canada"
   },
   {
+    "name": "iA Summit",
+    "url": "http://www.iasummit.org/",
+    "startDate": "2018-03-21",
+    "endDate": "2018-03-25",
+    "city": "Chicago",
+    "country": "U.S.A."
+  },
+  {
+    "name": "World Information Architecture Day",
+    "url": "http://2018.wiadswitzerland.org/",
+    "startDate": "2018-02-23",
+    "endDate": "2018-02-24",
+    "city": "Zurich",
+    "country": "Switzerland"
+  },
+  {
     "name": "The UX Conf",
     "url": "http://theuxconf.com/",
     "startDate": "2018-02-20",
