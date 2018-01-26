@@ -8,6 +8,14 @@
     "country": "Canada"
   },
   {
+    "name": "An Event Apart",
+    "url": "https://confoo.ca/en/yul2018",
+    "startDate": "2018-04-02",
+    "endDate": "2018-04-04",
+    "city": "Seattle",
+    "country": "U.S.A."
+  },
+  {
     "name": "CHIuXiD 2018",
     "url": "http://2018.chiuxid.org/",
     "startDate": "2018-03-26",
