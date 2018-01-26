@@ -1,5 +1,21 @@
 [
   {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com/events/duesseldorf-2018/",
+    "city": "Düsseldorf",
+    "country": "Germany",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-09"
+  },
+  {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com/events/berlin-2018",
+    "city": "Berlin",
+    "country": "Germany",
+    "startDate": "2018-11-05",
+    "endDate": "2018-11-07"
+  },
+  {
     "name": "Traction",
     "url": "https://www.tractionconf.io/",
     "city": "Vancouver",
