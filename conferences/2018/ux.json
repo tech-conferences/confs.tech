@@ -1,5 +1,13 @@
 [
   {
+    "name": "Product Camp",
+    "url": "https://productcamp.pl/",
+    "startDate": "2018-06-07",
+    "endDate": "2018-06-09",
+    "city": "Gdynia",
+    "country": "Poland"
+  },
+  {
     "name": "Circles",
     "url": "http://circlesconference.com/",
     "startDate": "2018-09-19",
