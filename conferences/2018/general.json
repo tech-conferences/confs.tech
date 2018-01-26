@@ -1,5 +1,13 @@
 [
   {
+    "name": "Traction",
+    "url": "https://www.tractionconf.io/",
+    "city": "Vancouver",
+    "country": "Canada",
+    "startDate": "2018-08-08",
+    "endDate": "2018-08-09"
+  },
+  {
     "name": "The Legacy Conference",
     "url": "http://www.legacycan.ca/",
     "city": "Ottawa",
