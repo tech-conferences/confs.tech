@@ -1,5 +1,12 @@
 [
   {
+    "name": "Euro IA",
+    "url": "http://www.euroia.org/venue-2018",
+    "startDate": "2018-09",
+    "city": "Dublin",
+    "country": "U.K."
+  },
+  {
     "name": "UXDX",
     "url": "https://uxdxconf.com/",
     "startDate": "2018-10-04",
