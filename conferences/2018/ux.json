@@ -1,5 +1,13 @@
 [
   {
+    "name": "Circles",
+    "url": "http://circlesconference.com/",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-21",
+    "city": "Fort Worth, Texas",
+    "country": "U.S.A."
+  },
+  {
     "name": "Confoo",
     "url": "https://confoo.ca/en/yul2018",
     "startDate": "2018-03-07",
