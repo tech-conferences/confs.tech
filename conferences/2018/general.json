@@ -8,6 +8,28 @@
     "endDate": "2018-05-10"
   },
   {
+    "name": "#LeadDev Austin - The Lead Developer Conference",
+    "url": "https://austin2018.theleaddeveloper.com",
+    "city": "Austin",
+    "country": "U.S.A.",
+    "startDate": "2018-03-02"
+  },
+  {
+    "name": "#LeadDev New York - The Lead Developer Conference",
+    "url": "https://newyork2018.theleaddeveloper.com",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "startDate": "2018-04-24"
+  },
+  {
+    "name": "#LeadDev London - The Lead Developer Conference",
+    "url": "https://london2018.theleaddeveloper.com/",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2018-06-27",
+    "endDate": "2018-06-28",
+  },
+  {
     "name": "Webconf.asia",
     "url": "https://webconf.asia",
     "startDate": "2018-06-06",
