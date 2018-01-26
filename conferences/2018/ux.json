@@ -8,6 +8,22 @@
     "country": "Canada"
   },
   {
+    "name": "Awwwards Berlin",
+    "url": "https://conference.awwwards.com/berlin",
+    "startDate": "2018-02-07",
+    "endDate": "2018-02-09",
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  {
+    "name": "Awwwards San Fransisco",
+    "url": "https://conference.awwwards.com/san-francisco",
+    "startDate": "2018-05-10",
+    "endDate": "2018-05-11",
+    "city": "San Fransisco",
+    "country": "U.S.A."
+  },
+  {
     "name": "Web Directions Design",
     "url": "http://webdirections.org/design/",
     "startDate": "2018-04-12",
@@ -72,7 +88,7 @@
     "country": "U.S.A."
   },
   {
-    "name": "Interaction 18",
+    "name": "Interaction week 18",
     "url": "http://interaction18.ixda.org/",
     "startDate": "2018-02-03",
     "endDate": "2018-02-08",
