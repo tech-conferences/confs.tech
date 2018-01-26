@@ -175,12 +175,28 @@
     "country": "U.S.A."
   },
   {
-    "name": "Smashing Conf",
+    "name": "Smashing Conf - San Francisco",
     "url": "https://smashingconf.com/sf-2018/",
     "startDate": "2018-04-17",
     "endDate": "2018-04-18",
     "city": "San Francisco",
     "country": "U.S.A."
+  },
+  {
+    "name": "Smashing Conf - Toronto",
+    "url": "https://smashingconf.com/toronto-2018/",
+    "startDate": "2018-06-26",
+    "endDate": "2018-06-27",
+    "city": "Tonronto",
+    "country": "Canada"
+  },
+  {
+    "name": "Smashing Conf - London",
+    "url": "https://smashingconf.com/",
+    "startDate": "2018-02-07",
+    "endDate": "2018-02-08",
+    "city": "London",
+    "country": "U.K."
   },
   {
     "name": "CHIuXiD 2018",
