@@ -8,6 +8,14 @@
     "country": "Canada"
   },
   {
+    "name": "CHI 2018",
+    "url": "https://chi2018.acm.org/",
+    "startDate": "2018-04-21",
+    "endDate": "2018-04-26",
+    "city": "Montréal",
+    "country": "Canada"
+  },
+  {
     "name": "An Event Apart",
     "url": "https://confoo.ca/en/yul2018",
     "startDate": "2018-04-02",
