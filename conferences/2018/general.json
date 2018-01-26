@@ -1,5 +1,13 @@
 [
   {
+    "name": "True North",
+    "url": "http://truenorthwaterloo.com/",
+    "city": "Waterloo",
+    "country": "Canada",
+    "startDate": "2018-05-29",
+    "endDate": "2018-05-31"
+  },
+  {
     "name": "Google I/O",
     "url": "https://events.google.com/io/",
     "city": "Mountain View",
