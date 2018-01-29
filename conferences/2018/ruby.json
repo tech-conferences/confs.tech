@@ -1,5 +1,13 @@
 [
   {
+    "name": "MCE",
+    "url": "https://2018.mceconf.com",
+    "startDate": "2018-06-05",
+    "endDate": "2018-06-06",
+    "city": "Warsaw",
+    "country": "Poland",
+  },
+  {
     "name": "Ruby on Ice",
     "url": "https://rubyonice.com/",
     "startDate": "2018-01-26",
