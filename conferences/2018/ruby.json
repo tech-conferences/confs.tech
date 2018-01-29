@@ -5,7 +5,7 @@
     "startDate": "2018-05-16",
     "endDate": "2018-05-18",
     "city": "Vienna",
-    "country": "Austria",
+    "country": "Austria"
   },
   {
     "name": "MCE",
@@ -13,7 +13,7 @@
     "startDate": "2018-06-05",
     "endDate": "2018-06-06",
     "city": "Warsaw",
-    "country": "Poland",
+    "country": "Poland"
   },
   {
     "name": "Ruby on Ice",
