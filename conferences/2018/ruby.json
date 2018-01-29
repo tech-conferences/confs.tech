@@ -1,5 +1,13 @@
 [
   {
+    "name": "WeAreDevelopers",
+    "url": "https://www.wearedevelopers.com",
+    "startDate": "2018-05-16",
+    "endDate": "2018-05-18",
+    "city": "Vienna",
+    "country": "Austria",
+  },
+  {
     "name": "MCE",
     "url": "https://2018.mceconf.com",
     "startDate": "2018-06-05",
