@@ -1,5 +1,14 @@
 [
   {
+    "name": "Ruby Unconf Hamburg",
+    "url": "http://rubyunconf.eu",
+    "startDate": "2018-05-05",
+    "endDate": "2018-05-06",
+    "city": "Hamburg",
+    "country": "Germany",
+    "twitter": "RubyUnconfEU"
+  },
+  {
     "name": "WeAreDevelopers",
     "url": "https://www.wearedevelopers.com",
     "startDate": "2018-05-16",
