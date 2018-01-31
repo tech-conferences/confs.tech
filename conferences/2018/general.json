@@ -9,6 +9,15 @@
     "twitter": "@codemoamsterdam"
   },
   {
+    "name": "Index Developer Conference",
+    "url": "https://developer.ibm.com/indexconf/",
+    "startDate": "2018-02-20",
+    "endDate": "2018-02-22",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "twitter": "@indexconf"
+  },
+  {
     "name": "Codemotion Rome",
     "url": "https://rome2018.codemotionworld.com/",
     "startDate": "2018-04-13",
