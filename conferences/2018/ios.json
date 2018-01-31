@@ -1,5 +1,13 @@
 [
   {
+    "name": "SwiftAveiro",
+    "url": "http://swiftaveiro.xyz",
+    "startDate": "2018-06-21",
+    "endDate": "2018-06-22",
+    "city": "Aveiro",
+    "country": "Portugal"
+  },
+  {
     "name": "try! Swift",
     "url": "https://www.tryswift.co/events/2018/tokyo/en/",
     "startDate": "2018-03",
