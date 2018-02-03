@@ -9,6 +9,15 @@
     "twitter": "@codemoamsterdam"
   },
   {
+    "name": "!!Con",
+    "url": "http://bangbangcon.com/",
+    "startDate": "2018-05-12",
+    "endDate": "2018-05-13",
+    "city": "New York, NY",
+    "country": "U.S.A.",
+    "twitter": "@bangbangcon"
+  },
+  {
     "name": "Index Developer Conference",
     "url": "https://developer.ibm.com/indexconf/",
     "startDate": "2018-02-20",
