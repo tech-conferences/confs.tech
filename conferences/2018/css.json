@@ -1,5 +1,14 @@
 [
   {
+    "name": "CSSDay",
+    "url": "http://2018.cssday.it/",
+    "startDate": "2018-03-16",
+    "endDate": "2018-03-16",
+    "city": "Faenza",
+    "country": "Italy",
+    "twitter": "@cssdayit",
+  },
+  {
     "name": "CSSConf AU",
     "url": "http://2018.cssconf.com.au/",
     "startDate": "2018-03-20",
