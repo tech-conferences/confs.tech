@@ -5,7 +5,7 @@ import {getDuplicates} from './utils';
 
 const START_YEAR = 2017;
 const CURRENT_YEAR = (new Date()).getYear() + 1900;
-const LANGUAGES = ['css', 'ruby', 'android', 'ios', 'ux', 'javascript'];
+const LANGUAGES = ['css', 'ruby', 'android', 'ios', 'ux', 'javascript', 'general'];
 const BASE_DIR = '../../../../conferences';
 const conferencesJSON = {};
 const JS_BASE_URL = 'https://raw.githubusercontent.com/tech-conferences/javascript-conferences/master/conferences';
