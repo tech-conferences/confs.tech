@@ -24,7 +24,7 @@ Conferences are JSON based files. They have the following structure:
     "country": "",
     "cfpUrl": "",
     "cfpEndDate": "",
-    "twitter": "",
+    "twitter": ""
   }
 ```
 

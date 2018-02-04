@@ -1,11 +1,41 @@
 [
   {
+    "name": "mDevCamp",
+    "url": "https://mdevcamp.eu/",
+    "city": "Prague",
+    "country": "Czechia",
+    "startDate": "2018-06-15"
+  },
+  {
+    "name": "Google I/O",
+    "url": "https://events.google.com/io/",
+    "city": "Mountain View",
+    "country": "U.S.A.",
+    "startDate": "2018-05-08",
+    "endDate": "2018-05-10"
+  },
+  {
+    "name": "Kotlin Conf",
+    "url": "https://kotlinconf.com",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "startDate": "2018-10-03",
+    "endDate": "2018-10-05"
+  },
+  {
     "name": "App Builders",
     "url": "https://www.appbuilders.ch",
     "city": "Lugano",
     "country": "Switzerland",
     "startDate": "2018-04-16",
     "endDate": "2018-04-17"
+  },
+  {
+    "name": "Voxxed Days",
+    "url": "https://voxxeddays.com/minsk",
+    "city": "Minsk",
+    "country": "Belarus",
+    "startDate": "2018-05-26"
   },
   {
     "name": "ADDC - App Design & Development Conference",

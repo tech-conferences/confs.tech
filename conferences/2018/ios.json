@@ -1,5 +1,13 @@
 [
   {
+    "name": "SwiftAveiro",
+    "url": "http://swiftaveiro.xyz",
+    "startDate": "2018-06-21",
+    "endDate": "2018-06-22",
+    "city": "Aveiro",
+    "country": "Portugal"
+  },
+  {
     "name": "try! Swift",
     "url": "https://www.tryswift.co/events/2018/tokyo/en/",
     "startDate": "2018-03",
@@ -117,5 +125,14 @@
     "endDate": "2018-02-16",
     "city": "Cluj-Napoca",
     "country": "Romania"
+  },
+  {
+    "name": "FrenchKit",
+    "url": "http://www.frenchkit.fr/",
+    "startDate": "2018-09-20",
+    "endDate": "2018-09-21",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@FrenchKitConf"
   }
 ]

@@ -1,3 +1,7 @@
+:global(:root) {
+  overflow-y: scroll;
+}
+
 :global(body) {
   font-family: sans-serif;
   font-size: 16px;
