@@ -37,6 +37,7 @@ Dates are formatted like `YYYY-MM-DD`, and if the date has not been defined yet,
 ## Active contributors
 - [Nima Izadi](https://nimz.co)
 - [Ekaterina Prigara](https://twitter.com/katyaprigara)
+- [Trivikram Kamat](https://twitter.com/trivikram)
 
 Because together we are stronger, we are looking for other contributors. So hit us and let's contribute!
 
