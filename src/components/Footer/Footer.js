@@ -15,7 +15,7 @@ export default function Footer({addConferenceUrl, togglePast, showPast}) {
         </Link>
       </p>
       <p>
-        Maintained by {Twitter('katyaprigara')} and {Twitter('nimz_co')}
+        Maintained by {Twitter('katyaprigara')}, {Twitter('nimz_co')} and {Twitter('trivikram')}
       </p>
     </footer>
   );
