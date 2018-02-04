@@ -22,7 +22,7 @@ range(START_YEAR, CURRENT_YEAR).forEach((year) => {
 });
 
 const REQUIRED_KEYS = ['name', 'url', 'startDate', 'country'];
-const BAD_COUNTRY_NAMES = ['USA', 'U.S.A', 'UK', 'U.K'];
+const BAD_COUNTRY_NAMES = ['USA', 'U.S.A', 'UK', 'U.K', 'UAE'];
 
 Object.keys(conferencesJSON).forEach((year) => {
   Object.keys(conferencesJSON[year]).forEach((stack) => {
