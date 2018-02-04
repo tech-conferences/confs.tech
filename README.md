@@ -7,6 +7,7 @@ List of conferences pulled out from [JSON files](https://github.com/tech-confere
 - [See all Ruby conferences](https://confs.tech/ruby)
 - [See all iOS conferences](https://confs.tech/ios)
 - [See all Android conferences](https://confs.tech/android)
+- [See general conferences](https://confs.tech/general)
 
 Don't hesitate to add new conferences by [creating an issue](https://github.com/tech-conferences/confs.tech/issues/new) or creating a pull request. 🤓
 
