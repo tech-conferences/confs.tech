@@ -1,39 +1,28 @@
-/* global describe, it, expect, beforeAll */
+/* global describe, it, expect, beforeAll, require */
 /* eslint-disable no-console */
-
+import {range} from 'lodash';
 import {getDuplicates} from './utils';
-import ruby2017 from '../../../../conferences/2017/ruby.json';
-import ux2017 from '../../../../conferences/2017/ux.json';
-import android2017 from '../../../../conferences/2017/android.json';
-import ios2017 from '../../../../conferences/2017/ios.json';
-import ruby2018 from '../../../../conferences/2018/ruby.json';
-import ux2018 from '../../../../conferences/2018/ux.json';
-import android2018 from '../../../../conferences/2018/android.json';
-import ios2018 from '../../../../conferences/2018/ios.json';
 
+const START_YEAR = 2017;
+const CURRENT_YEAR = (new Date()).getYear() + 1900;
+const LANGUAGES = ['css', 'ruby', 'android', 'ios', 'ux', 'javascript'];
+const BASE_DIR = '../../../../conferences';
+const conferencesJSON = {};
 const JS_BASE_URL = 'https://raw.githubusercontent.com/tech-conferences/javascript-conferences/master/conferences';
-const js2017 = `${JS_BASE_URL}/2017/javascript.json`;
-const js2018 = `${JS_BASE_URL}/2018/javascript.json`;
+
+range(START_YEAR, CURRENT_YEAR).forEach((year) => {
+  conferencesJSON[year] = {};
+  LANGUAGES.forEach((lang) => {
+    if (lang === 'javascript') {
+      conferencesJSON[year][lang] = `${JS_BASE_URL}/${year}/${lang}.json`;
+    } else {
+      conferencesJSON[year][lang] = require(`${BASE_DIR}/${year}/${lang}.json`);
+    }
+  });
+});
 
 const REQUIRED_KEYS = ['name', 'url', 'startDate', 'country'];
 const BAD_COUNTRY_NAMES = ['USA', 'U.S.A', 'UK', 'U.K'];
-
-const conferencesJSON = {
-  2017: {
-    javascript: js2017,
-    ruby: ruby2017,
-    ux: ux2017,
-    android: android2017,
-    ios: ios2017,
-  },
-  2018: {
-    javascript: js2018,
-    ruby: ruby2018,
-    ux: ux2018,
-    android: android2018,
-    ios: ios2018,
-  },
-};
 
 Object.keys(conferencesJSON).forEach((year) => {
   Object.keys(conferencesJSON[year]).forEach((stack) => {
