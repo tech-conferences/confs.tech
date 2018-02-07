@@ -26,6 +26,15 @@
     "twitter": "@bangbangcon"
   },
   {
+    "name": "Deconstruct",
+    "url": "https://www.deconstructconf.com/",
+    "startDate": "2018-05-21",
+    "endDate": "2018-05-22",
+    "city": "Seattle, WA",
+    "country": "U.S.A.",
+    "twitter": "@deconstructconf"
+  },
+  {
     "name": "Index Developer Conference",
     "url": "https://developer.ibm.com/indexconf/",
     "startDate": "2018-02-20",
