@@ -1,5 +1,13 @@
 [
   {
+    "name": "Great Indian Developer Summit",
+    "url": "http://www.developermarch.com/developersummit/index.html",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-28",
+    "city": "Bangalore",
+    "country": "India"
+  },
+  {
     "name": "Codemotion Amsterdam",
     "url": "https://amsterdam2018.codemotionworld.com/",
     "startDate": "2018-05-08",
