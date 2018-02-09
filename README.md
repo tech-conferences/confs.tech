@@ -3,6 +3,7 @@
 List of conferences pulled out from [JSON files](https://github.com/tech-conferences/confs.tech/tree/master/conferences).
 - [See all JavaScript conferences](https://confs.tech/javascript)
 - [See all CSS conferences](https://confs.tech/css)
+- [See all PHP conferences](https://confs.tech/php)
 - [See all Design / UX conferences](https://confs.tech/ux)
 - [See all Ruby conferences](https://confs.tech/ruby)
 - [See all iOS conferences](https://confs.tech/ios)
