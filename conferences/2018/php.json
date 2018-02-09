@@ -1,0 +1,83 @@
+[
+  {
+    "name": "PHPBenelux Conference 2018",
+    "url": "https://conference.phpbenelux.eu/2018/",
+    "startDate": "2018-01-26",
+    "endDate": "2018-01-27",
+    "city": "Antwerp",
+    "country": "Belgium",
+    "twitter": "@phpbenelux",
+  },
+  {
+    "name": "SunshinePHP Developer Conference",
+    "url": "http://2018.sunshinephp.com/",
+    "startDate": "2018-02-09",
+    "endDate": "2018-02-10",
+    "city": "Miami, FL",
+    "country": "U.S.A.",
+    "twitter": "@sunshinephp",
+  },
+  {
+    "name": "Longhorn PHP Conference",
+    "url": "https://www.longhornphp.com/",
+    "startDate": "2018-04-19",
+    "endDate": "2018-04-21",
+    "city": "Austin, TX",
+    "country": "U.S.A.",
+    "twitter": "@longhornphp",
+  },
+  {
+    "name": "phpDay",
+    "url": "https://2018.phpday.it/",
+    "startDate": "2018-05-11",
+    "endDate": "2018-05-12",
+    "city": "Verona",
+    "country": "Italy",
+    "twitter": "@phpday"
+  },
+  {
+    "name": "PHPKonf",
+    "url": "https://phpkonf.org/",
+    "startDate": "2018-05-20",
+    "endDate": "2018-05-21",
+    "city": "İstanbul",
+    "country": "Turkey",
+    "twitter": "@istanbulphp"
+  },
+  {
+    "name": "PHP Serbia Conference 2018",
+    "url": "https://conf2018.phpsrbija.rs/",
+    "startDate": "2018-05-26",
+    "endDate": "2018-05-27",
+    "city": "Belgrade",
+    "country": "Serbia",
+    "twitter": "@PHPSrbija"
+  },
+  {
+    "name": "php[tek]",
+    "url": "https://tek.phparch.com/",
+    "startDate": "2018-05-31",
+    "endDate": "2018-06-01",
+    "city": "Atlanta, GA",
+    "country": "U.S.A.",
+    "twitter": "@phparch",
+  },
+  {
+    "name": "Dutch PHP Conference",
+    "url": "https://www.phpconference.nl/",
+    "startDate": "2018-06-08",
+    "endDate": "2018-06-09",
+    "city": "Amsterdam",
+    "country": "The Netherlands",
+    "twitter": "@dpcon",
+  },
+  {
+    "name": "LaravelDay",
+    "url": "http://2018.laravelday.it/",
+    "startDate": "2018-11-30",
+    "endDate": "2018-11-30",
+    "city": "Verona",
+    "country": "Italy",
+    "twitter": "@laraveldayit"
+  }
+]
