@@ -6,7 +6,7 @@
     "endDate": "2018-01-27",
     "city": "Antwerp",
     "country": "Belgium",
-    "twitter": "@phpbenelux",
+    "twitter": "@phpbenelux"
   },
   {
     "name": "SunshinePHP Developer Conference",
@@ -15,7 +15,7 @@
     "endDate": "2018-02-10",
     "city": "Miami, FL",
     "country": "U.S.A.",
-    "twitter": "@sunshinephp",
+    "twitter": "@sunshinephp"
   },
   {
     "name": "Longhorn PHP Conference",
@@ -24,7 +24,7 @@
     "endDate": "2018-04-21",
     "city": "Austin, TX",
     "country": "U.S.A.",
-    "twitter": "@longhornphp",
+    "twitter": "@longhornphp"
   },
   {
     "name": "phpDay",
@@ -60,7 +60,7 @@
     "endDate": "2018-06-01",
     "city": "Atlanta, GA",
     "country": "U.S.A.",
-    "twitter": "@phparch",
+    "twitter": "@phparch"
   },
   {
     "name": "Dutch PHP Conference",
@@ -69,7 +69,7 @@
     "endDate": "2018-06-09",
     "city": "Amsterdam",
     "country": "The Netherlands",
-    "twitter": "@dpcon",
+    "twitter": "@dpcon"
   },
   {
     "name": "LaravelDay",
