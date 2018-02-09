@@ -1,5 +1,13 @@
 [
   {
+    "name": "Droidcon",
+    "url": "https://droidcon.ae",
+    "city": "Dubai",
+    "country": "U.A.E.",
+    "startDate": "2018-04-13",
+    "endDate": "2018-04-14"
+  },
+  {
     "name": "360|AnDev",
     "url": "http://360andev.com/",
     "city": "Denver, Colorado",

@@ -1,5 +1,21 @@
 [
   {
+    "name": "Great Indian Developer Summit",
+    "url": "http://www.developermarch.com/developersummit/index.html",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-28",
+    "city": "Bangalore",
+    "country": "India"
+  },
+  {
+    "name": "Microsoft Build",
+    "url": "https://www.microsoft.com/en-us/build",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-09",
+    "city": "Seattle, WA",
+    "country": "U.S.A."
+  },
+  {
     "name": "Codemotion Amsterdam",
     "url": "https://amsterdam2018.codemotionworld.com/",
     "startDate": "2018-05-08",
@@ -7,6 +23,24 @@
     "city": "Amsterdam",
     "country": "Netherlands",
     "twitter": "@codemoamsterdam"
+  },
+  {
+    "name": "!!Con",
+    "url": "http://bangbangcon.com/",
+    "startDate": "2018-05-12",
+    "endDate": "2018-05-13",
+    "city": "New York, NY",
+    "country": "U.S.A.",
+    "twitter": "@bangbangcon"
+  },
+  {
+    "name": "Deconstruct",
+    "url": "https://www.deconstructconf.com/",
+    "startDate": "2018-05-21",
+    "endDate": "2018-05-22",
+    "city": "Seattle, WA",
+    "country": "U.S.A.",
+    "twitter": "@deconstructconf"
   },
   {
     "name": "Index Developer Conference",

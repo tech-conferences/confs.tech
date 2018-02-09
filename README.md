@@ -8,6 +8,7 @@ List of conferences pulled out from [JSON files](https://github.com/tech-confere
 - [See all Ruby conferences](https://confs.tech/ruby)
 - [See all iOS conferences](https://confs.tech/ios)
 - [See all Android conferences](https://confs.tech/android)
+- [See general conferences](https://confs.tech/general)
 
 Don't hesitate to add new conferences by [creating an issue](https://github.com/tech-conferences/confs.tech/issues/new) or creating a pull request. 🤓
 
@@ -25,7 +26,7 @@ Conferences are JSON based files. They have the following structure:
     "country": "",
     "cfpUrl": "",
     "cfpEndDate": "",
-    "twitter": "",
+    "twitter": ""
   }
 ```
 
@@ -38,6 +39,7 @@ Dates are formatted like `YYYY-MM-DD`, and if the date has not been defined yet,
 ## Active contributors
 - [Nima Izadi](https://nimz.co)
 - [Ekaterina Prigara](https://twitter.com/katyaprigara)
+- [Trivikram Kamat](https://twitter.com/trivikram)
 
 Because together we are stronger, we are looking for other contributors. So hit us and let's contribute!
 
