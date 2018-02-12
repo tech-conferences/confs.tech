@@ -1,5 +1,14 @@
 [
   {
+    "name": "RubyC",
+    "url": "http://rubyc.eu/",
+    "startDate": "2018-06-02",
+    "endDate": "2018-06-03",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "twitter": "rubyc_eu"
+  },
+  {
     "name": "Ruby Unconf Hamburg",
     "url": "http://rubyunconf.eu",
     "startDate": "2018-05-05",
