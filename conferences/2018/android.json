@@ -68,6 +68,14 @@
     "endDate": "2018-03-27"
   },
   {
+    "name": "Droidcon",
+    "url": "https://www.de.droidcon.com/",
+    "city": "Berlin",
+    "country": "Germany",
+    "startDate": "2018-06-25",
+    "endDate": "2018-06-27"
+  },
+  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018/",
     "city": "Tokyo",
