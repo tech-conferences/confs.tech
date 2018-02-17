@@ -1,5 +1,13 @@
 [
   {
+    "name": "SwiftConf",
+    "url": "https://swiftconf.com",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-20",
+    "city": "Cologne",
+    "country": "Germany"
+  },
+  {
     "name": "SwiftAveiro",
     "url": "http://swiftaveiro.xyz",
     "startDate": "2018-06-21",
