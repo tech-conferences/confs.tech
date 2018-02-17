@@ -5,19 +5,14 @@ import {getDuplicates} from './utils';
 
 const START_YEAR = 2017;
 const CURRENT_YEAR = (new Date()).getYear() + 1900;
-const LANGUAGES = ['css', 'php', 'ruby', 'android', 'ios', 'ux', 'javascript', 'general'];
+const LANGUAGES = ['css', 'php', 'ruby', 'android', 'ios', 'ux', 'general'];
 const BASE_DIR = '../../../../conferences';
 const conferencesJSON = {};
-const JS_BASE_URL = 'https://raw.githubusercontent.com/tech-conferences/javascript-conferences/master/conferences';
 
 range(START_YEAR, CURRENT_YEAR).forEach((year) => {
   conferencesJSON[year] = {};
   LANGUAGES.forEach((lang) => {
-    if (lang === 'javascript') {
-      conferencesJSON[year][lang] = `${JS_BASE_URL}/${year}/${lang}.json`;
-    } else {
-      conferencesJSON[year][lang] = require(`${BASE_DIR}/${year}/${lang}.json`);
-    }
+    conferencesJSON[year][lang] = require(`${BASE_DIR}/${year}/${lang}.json`);
   });
 });
 
@@ -29,9 +24,8 @@ Object.keys(conferencesJSON).forEach((year) => {
     describe(`${stack} conferences in ${year}`, () => {
       let conferences;
 
-      beforeAll(async (done) => {
-        conferences = await getConferences(conferencesJSON[year][stack]);
-        done();
+      beforeAll(() => {
+        conferences = conferencesJSON[year][stack];
       });
 
       it('does not have duplicates', () => {
@@ -67,14 +61,3 @@ Object.keys(conferencesJSON).forEach((year) => {
     });
   });
 });
-
-function getConferences(conferenceLink) {
-  if (typeof conferenceLink === 'string') {
-    return fetch(conferenceLink)
-      .then((response) => response.json());
-  } else {
-    return new Promise((resolve) => {
-      resolve(conferenceLink);
-    });
-  }
-}
