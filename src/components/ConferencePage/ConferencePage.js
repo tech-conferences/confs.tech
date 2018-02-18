@@ -150,9 +150,7 @@ export default class ConferencePage extends Component {
         <div>
           {loading
             ? Loader()
-            : <ConferenceList
-              conferences={filteredConferences}
-              />
+            : <ConferenceList conferences={filteredConferences} />
           }
         </div>
         <Footer
