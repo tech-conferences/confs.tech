@@ -102,7 +102,9 @@
     "startDate": "2018-08-28",
     "endDate": "2018-08-31",
     "city": "Melbourne",
-    "country": "Australia"
+    "country": "Australia",
+    "cfpUrl": "http://www.uxaustralia.com.au/conferences/uxaustralia-2018/call-for-proposals/",
+    "cfpEndDate": "2018-03-18"
   },
   {
     "name": "UXPA 2018",
