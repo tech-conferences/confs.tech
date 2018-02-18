@@ -1,5 +1,16 @@
 [
   {
+    "name": "AmpersandConf",
+    "url": "https://2018.ampersandconf.com",
+    "startDate": "2018-06-29",
+    "endDate": "2018-06-29",
+    "city": "Brighton",
+    "country": "U.K.",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@ampersandconf"
+  },
+  {
     "name": "Pixel Pioneers Belfast",
     "url": "https://pixelpioneers.co",
     "city": "Belfast",
