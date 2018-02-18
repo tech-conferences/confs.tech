@@ -1,5 +1,5 @@
-@import '../style/foundation/colors.scss';
-@import '../style/foundation/spacing.scss';
+@import '../style/foundation/colors';
+@import '../style/foundation/spacing';
 
 .ConferenceFilter {
   display: flex;
