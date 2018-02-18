@@ -5,7 +5,7 @@ import {Link as RoutedLink} from 'react-router-dom';
 import styles from './Link.scss';
 
 export default class Link extends PureComponent {
-  defaultProps = {
+  static defaultProps = {
     selected: false,
   };
 
