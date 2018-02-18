@@ -37,7 +37,7 @@ export default class ConferenceList extends Component {
     }
     const confs = groupAndSortConferences(filteredConferences, sortBy);
 
-    if (confs.length === 0) {
+    if (Object.keys(confs).length === 0) {
       return (<p>{"Oh shoot! We don't have any conferences yet."}</p>);
     }
 
