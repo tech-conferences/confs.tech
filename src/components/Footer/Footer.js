@@ -21,6 +21,11 @@ export default function Footer({showCFP, filters, addConferenceUrl, togglePast, 
         </Link>
       </p>
       <p>
+        <Link url="https://github.com/tech-conferences/confs.tech/" external>
+          See on Github / contribute
+        </Link>
+      </p>
+      <p>
         Maintained by {Twitter('katyaprigara')}, {Twitter('nimz_co')} and {Twitter('trivikram')}
       </p>
     </footer>
