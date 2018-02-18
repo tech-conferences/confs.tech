@@ -4,6 +4,7 @@
   "rules": {
     "sort-class-members/sort-class-members": "off",
     "react/prop-types": "off",
+    "array-callback-return": "off",
     "space-before-function-paren": ["error", {
       "anonymous": "never",
       "named": "never",
