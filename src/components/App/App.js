@@ -11,6 +11,7 @@ export default function App() {
       <Head />
       <div>
         <Switch>
+          <Route path="/cfp/:type/" render={renderCFP} />
           <Route path="/:year/:type/:country" render={redirect} />
           <Route path="/:type/:country" render={redirectOrRender} />
           <Route path="/:type" component={ConferencePage} />
@@ -21,6 +22,10 @@ export default function App() {
     </div>
   );
 }
+function renderCFP({match}) {
+  return <ConferencePage match={match} showCFP />;
+}
+
 function redirect(props) {
   const {type, country} = props.match.params;
 
