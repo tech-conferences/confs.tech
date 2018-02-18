@@ -43,7 +43,9 @@
     "startDate": "2018-09-18",
     "endDate": "2018-09-20",
     "city": "Boulder",
-    "country": "U.S.A."
+    "country": "U.S.A.",
+    "cfpUrl": "https://uxstrat.com/callForPresentations/USA/",
+    "cfpEndDate": "2018-04-20"
   },
   {
     "name": "Euro IA",
