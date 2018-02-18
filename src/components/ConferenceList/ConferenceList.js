@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {groupBy, sortBy} from 'lodash';
-import {parse, format} from 'date-fns';
+import {filter, groupBy, sortBy as _sortBy} from 'lodash';
+import {isPast, parse, format} from 'date-fns';
 
 import Heading from '../Heading';
 import Divider from '../Divider';
@@ -9,21 +9,35 @@ import styles from './ConferenceList.css';
 
 export default class ConferenceList extends Component {
   renderConferences = (conferences) => {
+    const {showCFP} = this.props;
     return (
       <div key={'list'} className={styles.ConferenceList}>
         {getConfsMonthsSorted(conferences).map((monthKey) => {
           const month = monthKey.split('-')[1];
-          return (<Months key={monthKey} month={month} conferences={conferences[monthKey]} />);
+          return (
+            <Months
+              key={monthKey}
+              month={month}
+              showCFP={showCFP}
+              conferences={conferences[monthKey]}
+            />
+          );
         })}
       </div>
     );
   };
 
   render() {
-    const {conferences} = this.props;
-    const confs = groupAndSortConferences(conferences);
+    const {conferences, showCFP, sortBy} = this.props;
+    let filteredConferences = conferences;
+    if (showCFP) {
+      filteredConferences = filter(conferences, (conf) => {
+        return conf.cfpEndDate && !isPast(parse(conf.cfpEndDate));
+      });
+    }
+    const confs = groupAndSortConferences(filteredConferences, sortBy);
 
-    if (conferences.length === 0) {
+    if (confs.length === 0) {
       return (<p>{"Oh shoot! We don't have any conferences yet."}</p>);
     }
 
@@ -39,20 +53,20 @@ export default class ConferenceList extends Component {
   }
 }
 
-function groupAndSortConferences(conferences) {
+function groupAndSortConferences(conferences, sortBy = 'startDate') {
   // Group conferences by year
   const confs = groupBy(conferences, (conf) =>
-    format(conf.startDate, 'YYYY')
+    format(conf[sortBy], 'YYYY')
   );
 
   // Group conferences by month within the year
   Object.keys(confs).map((year) => {
     confs[year] = groupBy(confs[year], (conf) =>
-      format(conf.startDate, 'YYYY-MM')
+      format(conf[sortBy], 'YYYY-MM')
     );
     Object.keys(confs[year]).map((month) => {
-      confs[year][month] = sortBy(confs[year][month], (conference) =>
-        conference.startDate
+      confs[year][month] = _sortBy(confs[year][month], (conference) =>
+        conference[sortBy]
       );
     });
   });
@@ -64,7 +78,7 @@ function getMonthName(month) {
   return format(parse(`2017/${month}/01`), 'MMMM');
 }
 
-function Months({month, conferences}) {
+function Months({month, conferences, showCFP}) {
   return [
     <Heading key={month} element="h2" level={3}>
       {getMonthName(month)}
@@ -74,6 +88,7 @@ function Months({month, conferences}) {
         <ConferenceItem
           {...conf}
           key={`${conf.url} ${conf.date}`}
+          showCFP={showCFP}
         />
       );
     }),
@@ -89,7 +104,7 @@ function Year({year}) {
 }
 
 function getConfsMonthsSorted(conferences) {
-  return sortBy(Object.keys(conferences), (conference) => {
+  return _sortBy(Object.keys(conferences), (conference) => {
     return parseInt(conference.replace('-', ''), 10);
   });
 }

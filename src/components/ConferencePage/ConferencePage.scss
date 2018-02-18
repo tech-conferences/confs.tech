@@ -1,10 +1,13 @@
+@import '../style/foundation/typography.scss';
+@import '../style/foundation/colors.scss';
 @import '../style/foundation/spacing.scss';
 
 .Loader {
   text-align: center;
 }
 
-.Header {
+.Header,
+.CfpHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;

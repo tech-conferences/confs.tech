@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import {format, isPast} from 'date-fns';
-import {uniq, sortBy} from 'lodash';
+import {uniq, sortBy as _sortBy} from 'lodash';
 import Favicon from 'react-favicon';
 import {Helmet} from 'react-helmet';
 
 import styles from './ConferencePage.scss';
 import Footer from '../Footer';
+import Link from '../Link';
 import GithubStar from '../GithubStar';
 import Heading from '../Heading';
 import Icon from '../Icon';
@@ -24,6 +25,7 @@ export default class ConferencePage extends Component {
       type: 'javascript',
       country: null,
     },
+    sortBy: 'startDate',
     lastLinkFetched: '',
     showPast: false,
     loading: true,
@@ -40,6 +42,7 @@ export default class ConferencePage extends Component {
 
   updateStateWithNewFilters = (props, callback) => {
     const {match: {params: {type, country}}} = props;
+
     if (!type) { return; }
 
     this.setState({
@@ -110,13 +113,22 @@ export default class ConferencePage extends Component {
     return conferences;
   };
 
+  sortByCfpEndDate = () => {
+    this.setState({
+      sortBy: this.state.sortBy === 'cfpEndDate' ? 'startDate' : 'cfpEndDate',
+    });
+  };
+
   render() {
     const {
       loading,
       conferences,
       showPast,
+      sortBy,
+      filters,
       filters: {type, country},
     } = this.state;
+    const {showCFP} = this.props;
     const conferencesFilteredByDate = filterConferencesByDate(conferences, showPast);
     const filteredConferences = this.filterConferences(conferencesFilteredByDate);
     const addConferenceUrl = getAddConferenceUrl(type);
@@ -148,14 +160,22 @@ export default class ConferencePage extends Component {
           />
         </div>
         <div>
+          {showCFP
+            ? <CfpHeader sortByCfpEndDate={this.sortByCfpEndDate} sortBy={sortBy} />
+            : null
+          }
           {loading
             ? Loader()
             : <ConferenceList
+              sortBy={sortBy}
+              showCFP={showCFP}
               conferences={filteredConferences}
               />
           }
         </div>
         <Footer
+          showCFP={showCFP}
+          filters={filters}
           addConferenceUrl={addConferenceUrl}
           togglePast={this.togglePast}
           showPast={showPast}
@@ -174,7 +194,7 @@ function Loader() {
 }
 
 function getCountries(conferences) {
-  return sortBy(uniq(conferences.map((conference) => conference.country)));
+  return _sortBy(uniq(conferences.map((conference) => conference.country)));
 }
 
 function filterConferencesByDate(conferences, showPast) {
@@ -183,4 +203,21 @@ function filterConferencesByDate(conferences, showPast) {
   return conferences.filter((conference) => {
     return !isPast(format(conference.startDate));
   });
+}
+
+function CfpHeader({sortByCfpEndDate, sortBy}) {
+  return (
+    <div className={styles.CfpHeader}>
+      <Heading element="h2" level={2}>Call For Papers</Heading>
+      <Link
+        button
+        onClick={sortByCfpEndDate}
+      >
+        {sortBy === 'startDate'
+          ? 'Start date ⬇'
+          : 'CFP end date ⬇'
+        }
+      </Link>
+    </div>
+  );
 }

@@ -22,11 +22,28 @@ export default class Link extends PureComponent {
     );
   }
 
+  btnLink() {
+    const {onClick} = this.props;
+
+    return (
+      <button
+        className={classNames(styles.Link)}
+        onClick={onClick}
+      >
+        {this.props.children}
+      </button>
+    );
+  }
+
   render() {
-    const {url, external, onClick, selected, className, routed} = this.props;
+    const {url, external, onClick, selected, className, routed, button} = this.props;
 
     if (routed) {
       return this.routedLink();
+    }
+
+    if (button) {
+      return this.btnLink();
     }
 
     return (
