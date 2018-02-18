@@ -3,14 +3,14 @@ import React from 'react';
 import styles from './Footer.scss';
 import Link from '../Link';
 
-export default function Footer({showCFP, filters, addConferenceUrl, showPast}) {
+export default function Footer({showCFP, filters, addConferenceUrl, togglePast, showPast}) {
   return (
     <footer className={styles.Footer}>
       <p className={styles.FooterLinks}>
         <Link url={addConferenceUrl} external>
           Add a conference
         </Link>
-        <Link routed url={addConferenceUrl} external>
+        <Link selected={showPast} onClick={togglePast}>
           {showPast ? 'Hide past conferences' : 'See past conferences'}
         </Link>
         <Link selected={showCFP} url={showCFP ? `/${filters.type}` : `/cfp/${filters.type}`}>
