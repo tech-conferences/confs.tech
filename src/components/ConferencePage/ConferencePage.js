@@ -155,6 +155,7 @@ export default class ConferencePage extends Component {
         <div>
           <ConferenceFilter
             type={type}
+            showCFP={showCFP}
             country={country}
             countries={getCountries(conferencesFilteredByDate)}
           />

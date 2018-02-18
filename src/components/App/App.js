@@ -11,6 +11,7 @@ export default function App() {
       <Head />
       <div>
         <Switch>
+          <Route path="/cfp/:type/:country" render={renderCFP} />
           <Route path="/cfp/:type/" render={renderCFP} />
           <Route path="/:year/:type/:country" render={redirect} />
           <Route path="/:type/:country" render={redirectOrRender} />

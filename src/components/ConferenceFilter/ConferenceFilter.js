@@ -5,17 +5,16 @@ import {TYPES} from '../config';
 
 export default class ConferenceFilter extends Component {
   getUrl = (filters) => {
-    const {type, country} = this.props;
-
+    const {type, country, showCFP} = this.props;
+    let url = '';
     if (filters.country) {
-      return `/${filters.type || type}/${filters.country}`;
+      url = `${filters.type || type}/${filters.country}`;
+    } else if (filters.country === null || !country) {
+      url = `${filters.type || type}`;
+    } else {
+      url = `${filters.type || type}/${country}`;
     }
-
-    if (filters.country === null || !country) {
-      return `/${filters.type || type}`;
-    }
-
-    return `/${filters.type || type}/${country}`;
+    return `${showCFP ? '/cfp' : ''}/${url}`;
   };
 
   render() {
@@ -24,42 +23,42 @@ export default class ConferenceFilter extends Component {
     return (
       <div className={styles.ConferenceFilterWrapper}>
         <div className={styles.ConferenceFilter}>
-          {Types(type, this.getUrl)}
+          <Types type={type} getUrl={this.getUrl} />
         </div>
         <div className={styles.ConferenceFilter}>
-          {Countries(countries, country, this.getUrl)}
+          <Countries countries={countries} country={country} getUrl={this.getUrl} />
         </div>
       </div>
     );
   }
 }
 
-function Types(selectedType, getUrl) {
-  return Object.keys(TYPES).map((type) => {
+function Types({type, getUrl}) {
+  return Object.keys(TYPES).map((_type) => {
     return (
-      <div key={type} className={styles.Filter}>
+      <div key={_type} className={styles.Filter}>
         <Link
           url={getUrl({type})}
-          selected={selectedType === type}
+          selected={type === _type}
           routed
         >
-          {TYPES[type]}
+          {TYPES[_type]}
         </Link>
       </div>
     );
   });
 }
 
-function Countries(countries, selectedCountry, getUrl) {
-  const countriesNode = countries.map((country) => {
+function Countries({countries, country, getUrl}) {
+  const countriesNode = countries.map((_country) => {
     return (
-      <div key={country} className={styles.Filter}>
+      <div key={_country} className={styles.Filter}>
         <Link
-          url={getUrl({country: country.trim()})}
-          selected={selectedCountry === country}
+          url={getUrl({country: _country.trim()})}
+          selected={country === _country}
           routed
         >
-          {country}
+          {_country}
         </Link>
       </div>
     );
@@ -69,7 +68,7 @@ function Countries(countries, selectedCountry, getUrl) {
     <div key="all-countries" className={styles.Filter}>
       <Link
         url={getUrl({country: null})}
-        selected={!selectedCountry}
+        selected={!country}
         routed
       >
         All countries
