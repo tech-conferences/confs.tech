@@ -1,3 +1,25 @@
+@import '../style/foundation/spacing';
+@import '../style/foundation/media-queries';
+
 .ConferenceList {
   width: 100%;
+}
+
+.Year {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: spacing(loose) 0 spacing(base) 0;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.AddConfLink{
+  display: none;
+  @include media($media-query--tablet-up) {
+    display: block;
+  }
 }

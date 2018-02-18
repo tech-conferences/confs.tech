@@ -1,9 +1,10 @@
 @import '../style/foundation/spacing';
+@import '../style/foundation/media-queries';
 
 .GithubStar {
-  margin: spacing(base) 0;
+  margin: 0 0 spacing(base) 0;
 
-  @media only screen and (max-width: 800px) {
-    margin-top: 0;
+  @include media($media-query--tablet-up) {
+    margin: spacing(base) 0;
   }
 }

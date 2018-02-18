@@ -1,12 +1,16 @@
-@import '../style/foundation/spacing.scss';
-@import '../style/foundation/typography.scss';
-@import '../style/foundation/colors.scss';
+@import '../style/foundation/spacing';
+@import '../style/foundation/typography';
+@import '../style/foundation/colors';
 
 .Footer {
   padding-top: spacing(extra-loose);
   color: color(gray);
-  font-size: font-size(footer);
   margin-bottom: spacing(base);
+  line-height: line-height(footer);
+
+  &, a {
+    font-size: font-size(footer);
+  }
 }
 
 .FooterLinks a {

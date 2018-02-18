@@ -170,6 +170,7 @@ export default class ConferencePage extends Component {
             : <ConferenceList
               sortBy={sortBy}
               showCFP={showCFP}
+              addConferenceUrl={addConferenceUrl}
               conferences={filteredConferences}
               />
           }

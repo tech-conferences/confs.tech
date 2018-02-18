@@ -3,6 +3,7 @@ import {filter, groupBy, sortBy as _sortBy} from 'lodash';
 import {isPast, parse, format} from 'date-fns';
 
 import Heading from '../Heading';
+import Link from '../Link';
 import Divider from '../Divider';
 import ConferenceItem from '../ConferenceItem';
 import styles from './ConferenceList.css';
@@ -28,7 +29,7 @@ export default class ConferenceList extends Component {
   };
 
   render() {
-    const {conferences, showCFP, sortBy} = this.props;
+    const {conferences, showCFP, sortBy, addConferenceUrl} = this.props;
     let filteredConferences = conferences;
     if (showCFP) {
       filteredConferences = filter(conferences, (conf) => {
@@ -44,7 +45,7 @@ export default class ConferenceList extends Component {
     const confsTable = Object.keys(confs).map((year) => {
       return [
         <Divider key="hr" />,
-        <Year key={year} year={year} />,
+        <Year key={year} year={year} addConferenceUrl={addConferenceUrl} />,
         this.renderConferences(confs[year]),
       ];
     });
@@ -95,11 +96,16 @@ function Months({month, conferences, showCFP}) {
   ];
 }
 
-function Year({year}) {
+function Year({year, addConferenceUrl}) {
   return (
-    <Heading key={year} element="h2" level={2}>
-      {year}
-    </Heading>
+    <div className={styles.Year}>
+      <Heading key={year} element="h2" level={2}>
+        {year}
+      </Heading>
+      <Link url={addConferenceUrl} external className={styles.AddConfLink}>
+        Add a conference
+      </Link>
+    </div>
   );
 }
 
