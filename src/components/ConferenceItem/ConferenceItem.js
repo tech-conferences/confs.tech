@@ -17,6 +17,8 @@ export default class ConferenceItem extends PureComponent {
       startDate,
       endDate,
       twitter,
+      cfpEndDate,
+      cfpUrl,
     } = this.props;
 
     return (
@@ -34,6 +36,7 @@ export default class ConferenceItem extends PureComponent {
           <Link url={url} external>
             {name}
           </Link>
+          <Cfp url={cfpUrl || url} date={cfpEndDate} />
         </Heading>
         <p className={styles.p}>
           {`${Location(city, country)} - `}
@@ -63,4 +66,23 @@ function Location(city, country) {
   }
 
   return country || city;
+}
+
+function Cfp({date, url}) {
+  if (!date || isPast(parse(date))) {
+    return null;
+  }
+
+  return (
+    <span className={styles.cfp}>
+      <Link
+        url={url}
+        external
+        className={styles.cfpTag}
+      >
+        CFP open
+      </Link>
+      {formatDate(parse(date))}
+    </span>
+  );
 }
