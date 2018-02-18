@@ -1,0 +1,15 @@
+// MEDIA QUERIES
+// -----------------------------------------------------------------------------
+
+$breakpoint--small: 500px;
+$breakpoint--medium: 750px;
+
+$media-query--mobile--vertical: '(min-height: #{$breakpoint--small - 1})';
+$media-query--tablet-up: '(min-width: #{$breakpoint--medium})';
+$media-query--mobile-up: '(min-width: #{$breakpoint--small})';
+
+@mixin media($query) {
+  @media #{$query} {
+    @content;
+  }
+}
