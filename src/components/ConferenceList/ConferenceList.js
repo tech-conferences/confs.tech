@@ -102,9 +102,7 @@ function Year({year, addConferenceUrl}) {
       <Heading key={year} element="h2" level={2}>
         {year}
       </Heading>
-      <Link url={addConferenceUrl} external className={styles.AddConfLink}>
-        Add a conference
-      </Link>
+      <AddConferenceLink url={addConferenceUrl} />
     </div>
   );
 }
@@ -113,4 +111,28 @@ function getConfsMonthsSorted(conferences) {
   return _sortBy(Object.keys(conferences), (conference) => {
     return parseInt(conference.replace('-', ''), 10);
   });
+}
+
+function AddConferenceLink({url}) {
+  return (
+    <div className={styles.AddConfPanelWrapper}>
+      <Link url={url} external>
+        Add a conference
+      </Link>
+      <div className={styles.AddConfPanel}>
+        <ul>
+          <li>
+            <Link url={url} external>
+              Create a github issue
+            </Link>
+          </li>
+          <li>
+            <Link url="mailto:nim.izadi+confs.tech@gmail.com?subject=Here's a cool conference!" external>
+              Send us an email
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
 }
