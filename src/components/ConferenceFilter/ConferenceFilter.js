@@ -38,7 +38,7 @@ function Types({type, getUrl}) {
     return (
       <div key={_type} className={styles.Filter}>
         <Link
-          url={getUrl({type})}
+          url={getUrl({type: _type})}
           selected={type === _type}
           routed
         >
