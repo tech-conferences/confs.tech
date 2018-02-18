@@ -1,5 +1,23 @@
 [
   {
+    "name": "Web Directions AI",
+    "url": "http://webdirections.org/ai/",
+    "startDate": "2018-10-31",
+    "cfpEndDate": "2018-05-01",
+    "cfpUrl": "https://www.webdirections.org/speaking/",
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  {
+    "name": "Web Directions Culture",
+    "url": "http://webdirections.org/culture/",
+    "startDate": "2018-10-31",
+    "cfpEndDate": "2018-05-01",
+    "cfpUrl": "https://www.webdirections.org/speaking/",
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  {
     "name": "ImageCon",
     "url": "http://www.imagecon.com/events/imagecon-2018/event-summary-1a9b0d3d0cbf4d979d663a202586ed1e.aspx",
     "startDate": "2018-04-12",
