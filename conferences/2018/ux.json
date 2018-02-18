@@ -118,7 +118,9 @@
     "startDate": "2018-07-08",
     "endDate": "2018-07-11",
     "city": "Singapore",
-    "country": "Singapore"
+    "country": "Singapore",
+    "cfpUrl": "http://www.um.org/umap2018/cfp/",
+    "cfpEndDate": "2018-03-04"
   },
   {
     "name": "Design / Content",
