@@ -60,7 +60,7 @@
     "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers/"
   },
   {
-    "name": "Droidcon",
+    "name": "Droidcon Boston",
     "url": "http://www.droidcon-boston.com",
     "city": "Boston, MA",
     "country": "U.S.A.",
@@ -68,12 +68,14 @@
     "endDate": "2018-03-27"
   },
   {
-    "name": "Droidcon",
+    "name": "Droidcon Berlin",
     "url": "https://www.de.droidcon.com/",
     "city": "Berlin",
     "country": "Germany",
     "startDate": "2018-06-25",
-    "endDate": "2018-06-27"
+    "endDate": "2018-06-27",
+    "cfpUrl": "https://cfp.droidcon.de/en/berlin/18/call-papers",
+    "cfpEndDate": "2018-04-01"
   },
   {
     "name": "DroidKaigi",
