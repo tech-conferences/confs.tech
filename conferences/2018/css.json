@@ -53,5 +53,13 @@
     "city": "Amsterdam",
     "country": "Netherlands",
     "twitter": "@cssdayconf"
+  },
+  {
+    "name": "dotCSS",
+    "url": "https://2018.dotcss.io",
+    "startDate": "2018-11-08",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@dotCSS"
   }
 ]
