@@ -1,5 +1,12 @@
 [
   {
+    "name": "mDevCamp",
+    "url": "https://mdevcamp.eu/",
+    "city": "Prague",
+    "country": "Czechia",
+    "startDate": "2018-06-15"
+  },
+  {
     "name": "SwiftConf",
     "url": "https://swiftconf.com",
     "startDate": "2018-09-19",
