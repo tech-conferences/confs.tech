@@ -1,5 +1,16 @@
 [
   {
+    "name": "CONFAB",
+    "url": "https://www.confabevents.com/",
+    "startDate": "2018-05-21",
+    "endDate": "2018-05-23",
+    "city": "Minneapolis",
+    "country": "U.S.A.",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@ConfabEvents"
+  },
+  {
     "name": "AmpersandConf",
     "url": "https://2018.ampersandconf.com",
     "startDate": "2018-06-29",
