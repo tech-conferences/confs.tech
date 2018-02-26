@@ -72,6 +72,17 @@
     "twitter": "@dpcon"
   },
   {
+    "name": "Northeast PHP Conference",
+    "url": "http://www.northeastphp.org/",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-21",
+    "city": "Boston, MA",
+    "country": "U.S.A.",
+    "cfpUrl": "http://cfp.northeastphp.org/",
+    "cfpEndDate": "2018-04-11",
+    "twitter": "@nephp"
+  },
+  {
     "name": "LaravelDay",
     "url": "http://2018.laravelday.it/",
     "startDate": "2018-11-30",
