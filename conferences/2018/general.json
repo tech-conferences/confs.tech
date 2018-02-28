@@ -340,6 +340,17 @@
     "twitter": "@REFRESHRocks"
   },
   {
+    "name": "Web Audio Conf",
+    "url": "http://webaudioconf.com",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-21",
+    "city": "Berlin",
+    "country": "Germany",
+    "cfpUrl": "http://webaudioconf.com/call-for-submissions",
+    "cfpEndDate": "2018-04-23",
+    "twitter": "@webaudioconf"
+  },
+  {
     "name": "SyntaxCon",
     "url": "https://2018.syntaxcon.com/",
     "startDate": "2018-06-06",
