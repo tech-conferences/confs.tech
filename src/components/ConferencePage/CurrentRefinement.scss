@@ -1,0 +1,40 @@
+@import '../style/foundation/typography';
+@import '../style/foundation/colors';
+@import '../style/foundation/spacing';
+
+:global(.ais-CurrentRefinements__root) {
+  margin-bottom: spacing(base);
+}
+
+:global(.ais-CurrentRefinements__itemParent .ais-CurrentRefinements__item) {
+  display: inline-block;
+  margin-right: spacing(base);
+  background-color: color(gray, lighter);
+  color: color(gray, dark);
+  padding: 0.2em 0.5em;
+  border-radius: 3px;
+}
+
+:global(.ais-CurrentRefinements__itemParent) {
+  background-color: transparent;
+  display: inline-block;
+}
+
+:global(.ais-CurrentRefinements__itemParent > .ais-CurrentRefinements__itemLabel) {
+  display: none;
+}
+
+:global(.ais-CurrentRefinements__itemLabel) {
+  vertical-align: middle;
+}
+
+:global(.ais-CurrentRefinements__itemClear) {
+  cursor: pointer;
+  vertical-align: middle;
+  appearance: none;
+  background: none;
+  border: none;
+  color: color(gray, dark);
+  display: inline-block;
+  position: relative;
+}

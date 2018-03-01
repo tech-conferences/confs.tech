@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {filter, groupBy, sortBy as _sortBy} from 'lodash';
 import {isPast, parse, format} from 'date-fns';
+import {connectHits} from 'react-instantsearch/connectors';
 
 import Heading from '../Heading';
 import Link from '../Link';
@@ -8,7 +9,7 @@ import Divider from '../Divider';
 import ConferenceItem from '../ConferenceItem';
 import styles from './ConferenceList.css';
 
-export default class ConferenceList extends Component {
+class ConferenceList extends Component {
   renderConferences = (conferences) => {
     const {showCFP} = this.props;
     return (
@@ -29,10 +30,10 @@ export default class ConferenceList extends Component {
   };
 
   render() {
-    const {conferences, showCFP, sortBy, addConferenceUrl} = this.props;
-    let filteredConferences = conferences;
+    const {hits, showCFP, sortBy, addConferenceUrl} = this.props;
+    let filteredConferences = hits;
     if (showCFP) {
-      filteredConferences = filter(conferences, (conf) => {
+      filteredConferences = filter(hits, (conf) => {
         return conf.cfpEndDate && !isPast(parse(conf.cfpEndDate));
       });
     }
@@ -136,3 +137,5 @@ function AddConferenceLink({url}) {
     </div>
   );
 }
+
+export default connectHits(ConferenceList);
