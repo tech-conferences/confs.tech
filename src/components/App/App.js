@@ -4,6 +4,7 @@ import {Switch, Route, Redirect} from 'react-router-dom';
 import styles from './App.scss';
 import Head from '../Head';
 import ConferencePage from '../ConferencePage';
+import ConferenceNewPage from '../ConferenceNewPage';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Head />
       <div>
         <Switch>
+          <Route path="/conferences/new" component={ConferenceNewPage} />
           <Route path="/cfp/:topic/:country" render={renderCFP} />
           <Route path="/cfp/:topic/" render={renderCFP} />
           <Route path="/cfp" render={renderCFP} />
