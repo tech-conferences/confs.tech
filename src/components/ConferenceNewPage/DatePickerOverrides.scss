@@ -1,0 +1,20 @@
+:global(.react-datepicker) {
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+:global(.react-datepicker__current-month) {
+  font-size: 1.1em;
+  padding: 0.3em 0;
+}
+
+:global(.react-datepicker__navigation) {
+  top: 17px;
+}
+
+:global(.react-datepicker__day) {
+  margin: 0;
+  padding: 0.166rem;
+  width: 2rem;
+  line-height: 2rem;
+}
