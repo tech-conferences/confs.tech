@@ -1,9 +1,10 @@
+/* eslint-disable */
 import React from 'react';
 
 import styles from './Footer.scss';
 import Link from '../Link';
 
-export default function Footer({showCFP, filters, addConferenceUrl, togglePast, showPast}) {
+export default function Footer({showCFP, addConferenceUrl, togglePast, showPast}) {
   return (
     <footer className={styles.Footer}>
       <p className={styles.FooterLinks}>
@@ -13,12 +14,12 @@ export default function Footer({showCFP, filters, addConferenceUrl, togglePast, 
         <Link selected={showPast} onClick={togglePast}>
           {showPast ? 'Hide past conferences' : 'See past conferences'}
         </Link>
-        <Link url={getURL(filters, showCFP)}>
+        {/*<Link url={getURL(filters, showCFP)}>
           {showCFP
             ? 'Hide Call For Papers'
             : 'See Call For Papers'
           }
-        </Link>
+        </Link>*/}
       </p>
       <p>
         <Link url="https://github.com/tech-conferences/confs.tech/" external>

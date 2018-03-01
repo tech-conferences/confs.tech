@@ -11,6 +11,7 @@ export default class ConferenceItem extends PureComponent {
   render() {
     const {
       name,
+      topics,
       url,
       city,
       country,
@@ -21,6 +22,7 @@ export default class ConferenceItem extends PureComponent {
       cfpUrl,
       showCFP,
     } = this.props;
+
     return (
       <div
         className={classNames(
@@ -33,6 +35,9 @@ export default class ConferenceItem extends PureComponent {
           dangerouslySetInnerHTML={{__html: generateEventJSONLD({name, url, city, country, startDate, endDate})}}
         />
         <Heading element="p" level={4}>
+          {topics.map((topic) =>
+            <img key={topic} alt={topic} className={styles.topic} src={`${topic}.png`} height="20" />
+          )}
           <Link url={url} external>
             {name}
           </Link>
