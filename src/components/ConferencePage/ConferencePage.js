@@ -1,3 +1,4 @@
+/* global process */
 import React, {Component} from 'react';
 import Favicon from 'react-favicon';
 import {Helmet} from 'react-helmet';
@@ -18,13 +19,10 @@ import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
 import {
   TYPES,
-  APPLICATION_ID,
-  API_KEY,
-  ALGOLIA_INDEX_NAME,
-  getAddConferenceUrl,
 } from '../config';
 
 const TODAY = Math.round(new Date().getTime() / 1000);
+const ONE_YEAR = 365 * 24 * 60 * 60;
 
 export default class ConferencePage extends Component {
   state = {
@@ -51,8 +49,6 @@ export default class ConferencePage extends Component {
       sortBy,
     } = this.state;
     const {showCFP, match: {params: {type, country}}} = this.props;
-    const addConferenceUrl = getAddConferenceUrl(type);
-
     return (
       <div>
         <Helmet>
@@ -65,13 +61,13 @@ export default class ConferencePage extends Component {
         </div>
 
         <InstantSearch
-          appId={APPLICATION_ID}
-          apiKey={API_KEY}
-          indexName={ALGOLIA_INDEX_NAME}
+          appId={process.env.ALGOLIA_APPLICATION_ID}
+          apiKey={process.env.ALGOLIA_API_KEY}
+          indexName={'conferences'}
         >
           <Configure
             hitsPerPage={150}
-            filters={`date>${TODAY}`}
+            filters={showPast ? `date>${TODAY - ONE_YEAR}` : `date>${TODAY}`}
           />
           <br />
           <RefinementList
@@ -80,7 +76,9 @@ export default class ConferencePage extends Component {
             transformItems={transformTopicRefinements}
           />
           <RefinementList
-            limitMin={100}
+            limitMin={9}
+            limitMax={100}
+            showMore
             attributeName="country"
             defaultRefinement={country ? [country] : []}
           />
@@ -97,7 +95,6 @@ export default class ConferencePage extends Component {
         </div>
         <Footer
           showCFP={showCFP}
-          addConferenceUrl={addConferenceUrl}
           togglePast={this.togglePast}
           showPast={showPast}
         />
