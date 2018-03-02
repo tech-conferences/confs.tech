@@ -17,9 +17,7 @@ import Link from '../Link';
 import GithubStar from '../GithubStar';
 import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
-import {
-  TYPES,
-} from '../config';
+import {TOPICS} from '../config';
 
 const TODAY = Math.round(new Date().getTime() / 1000);
 const ONE_YEAR = 365 * 24 * 60 * 60;
@@ -43,12 +41,28 @@ export default class ConferencePage extends Component {
     });
   };
 
+  onSearchStateChange = (searchState) => {
+    this.setState({
+      refinementList: searchState.refinementList,
+    }, () => {
+      const {refinementList: {country, topics}} = this.state;
+      if (topics && country) {
+        this.props.history.push(`/${topics[0]}/${country[0]}`);
+      } else if (topics) {
+        this.props.history.push(`/${topics[0]}`);
+      } else {
+        this.props.history.push('/');
+      }
+    });
+  };
+
   render() {
     const {
       showPast,
       sortBy,
     } = this.state;
     const {showCFP, match: {params: {type, country}}} = this.props;
+
     return (
       <div>
         <Helmet>
@@ -63,6 +77,7 @@ export default class ConferencePage extends Component {
         <InstantSearch
           appId={process.env.ALGOLIA_APPLICATION_ID}
           apiKey={process.env.ALGOLIA_API_KEY}
+          onSearchStateChange={this.onSearchStateChange}
           indexName={'conferences'}
         >
           <Configure
@@ -122,7 +137,7 @@ function CfpHeader({sortByCfpEndDate, sortBy}) {
 
 function transformTopicRefinements(items) {
   return items.map((item) => {
-    item.label = TYPES[item.label];
+    item.label = TOPICS[item.label];
     return item;
   });
 }
