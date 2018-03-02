@@ -2,6 +2,7 @@
 import React, {Component} from 'react';
 import Favicon from 'react-favicon';
 import {Helmet} from 'react-helmet';
+import {orderBy} from 'lodash';
 import {
   Configure,
   InstantSearch,
@@ -146,10 +147,11 @@ function CfpHeader({sortByCfpEndDate, sortBy}) {
 }
 
 function transformTopicRefinements(items) {
-  return items.map((item) => {
+  const newItems = items.map((item) => {
     item.label = TOPICS[item.label];
     return item;
   });
+  return orderBy(newItems, ['count'], ['desc']);
 }
 
 export default withRouter(ConferencePage);
