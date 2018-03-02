@@ -9,6 +9,7 @@ import {
   CurrentRefinements,
 } from 'react-instantsearch/dom';
 
+import {withRouter} from 'react-router';
 import styles from './ConferencePage.scss';
 import './RefinementList.scss';
 import './CurrentRefinement.scss';
@@ -22,7 +23,7 @@ import {TOPICS} from '../config';
 const TODAY = Math.round(new Date().getTime() / 1000);
 const ONE_YEAR = 365 * 24 * 60 * 60;
 
-export default class ConferencePage extends Component {
+class ConferencePage extends Component {
   state = {
     sortBy: 'startDate',
     showPast: false,
@@ -46,12 +47,14 @@ export default class ConferencePage extends Component {
       refinementList: searchState.refinementList,
     }, () => {
       const {refinementList: {country, topics}} = this.state;
+      const {history, showCFP} = this.props;
+      const startURL = showCFP ? '/cfp' : '';
       if (topics && country) {
-        this.props.history.push(`/${topics[0]}/${country[0]}`);
+        history.push(`${startURL}/${topics[0]}/${country[0]}`);
       } else if (topics) {
-        this.props.history.push(`/${topics[0]}`);
+        history.push(`${startURL}/${topics[0]}`);
       } else {
-        this.props.history.push('/');
+        history.push(`${startURL}/`);
       }
     });
   };
@@ -149,3 +152,5 @@ function transformTopicRefinements(items) {
     return item;
   });
 }
+
+export default withRouter(ConferencePage);
