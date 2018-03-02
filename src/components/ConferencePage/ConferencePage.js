@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* global process */
 import React, {Component} from 'react';
 import Favicon from 'react-favicon';
@@ -109,7 +110,9 @@ class ConferencePage extends Component {
             defaultRefinement={country ? [country] : []}
           />
 
-          <CurrentRefinements />
+          <CurrentRefinements
+            transformItems={transformCurrentRefinements}
+          />
 
           {showCFP && <CfpHeader sortByCfpEndDate={this.sortByCfpEndDate} sortBy={sortBy} />}
 
@@ -152,6 +155,17 @@ function transformTopicRefinements(items) {
     return item;
   });
   return orderBy(newItems, ['count'], ['desc']);
+}
+
+function transformCurrentRefinements(items) {
+  if (items.length && items[0].attributeName === 'topics') {
+    items[0].items.map((item) => {
+      item.label = TOPICS[item.label] || item.label;
+      return item;
+    });
+  }
+  return items;
+
 }
 
 export default withRouter(ConferencePage);
