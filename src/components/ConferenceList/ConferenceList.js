@@ -38,10 +38,6 @@ class ConferenceList extends Component {
     }
     const confs = groupAndSortConferences(filteredConferences, sortBy);
 
-    if (Object.keys(confs).length === 0) {
-      return (<p>{"Oh shoot! We don't have any conferences yet."}</p>);
-    }
-
     const confsTable = Object.keys(confs).map((year) => {
       return [
         <Divider key="hr" />,
