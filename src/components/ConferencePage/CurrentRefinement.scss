@@ -12,8 +12,15 @@
   margin-bottom: spacing(tight);
   background-color: color(gray, lighter);
   color: color(gray, dark);
-  padding: 0.2em 0.5em;
-  border-radius: 3px;
+  padding: 0.3em 0.7em;
+  border-radius: 20px;
+  font-size: 0.8em;
+  transition: all 100ms linear;
+}
+
+:global(.ais-CurrentRefinements__itemParent .ais-CurrentRefinements__item:hover) {
+  background-color: color(gray);
+  color: white;
 }
 
 :global(.ais-CurrentRefinements__itemParent) {
@@ -30,12 +37,24 @@
 }
 
 :global(.ais-CurrentRefinements__itemClear) {
-  cursor: pointer;
   vertical-align: middle;
   appearance: none;
-  background: none;
+  margin-left: spacing(tight);
+  background-color: lighten(color(gray), 20);
+  border-radius: 30px;
   border: none;
-  color: color(gray, dark);
   display: inline-block;
   position: relative;
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  font-size: 9px;
+  color: color(gray, lighter);
+  transition: all 100ms linear;
+}
+
+:global(.ais-CurrentRefinements__itemParent .ais-CurrentRefinements__item:hover .ais-CurrentRefinements__itemClear) {
+  // background-color: color(gray);
+  color: color(gray);
+  background-color: white;
 }
