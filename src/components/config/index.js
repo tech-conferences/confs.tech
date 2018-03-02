@@ -1,6 +1,6 @@
 export const CURRENT_YEAR = (new Date()).getFullYear() - 1;
 
-export const TYPES = {
+export const TOPICS = {
   javascript: 'JavaScript',
   css: 'CSS',
   ux: 'Design / UX',

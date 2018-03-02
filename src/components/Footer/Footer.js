@@ -1,12 +1,14 @@
 /* eslint-disable */
 import React from 'react';
 
+import {TOPICS} from '../config';
 import styles from './Footer.scss';
 import Link from '../Link';
 
 export default function Footer({showCFP, togglePast, showPast}) {
   return (
     <footer className={styles.Footer}>
+      <HiddenLinks />
       <p className={styles.FooterLinks}>
         <Link selected={showPast} onClick={togglePast}>
           {showPast ? 'Hide past conferences' : 'See past conferences'}
@@ -49,4 +51,20 @@ function getURL(filters, showCFP) {
     url = `${filters.type}`;
   }
   return `${showCFP ? '' : '/cfp'}/${url}`;
+}
+
+function HiddenLinks() {
+  return (
+    <div className={styles.visuallyHidden}>
+      {Object.keys(TOPICS).map((topic) => {
+        return (
+          <p>
+            <Link routed url={`/${topic}`}>
+              {topic} conferences in {new Date().getYear() + 1900}
+            </Link>
+          </p>
+        )
+      })}
+    </div>
+  );
 }
