@@ -56,11 +56,19 @@ export default class ConferencePage extends Component {
     });
   };
 
+  algoliaFilter = () => {
+    const {showPast} = this.state;
+    const {showCFP} = this.props;
+    let filters = showPast ? `date>${TODAY - ONE_YEAR}` : `date>${TODAY}`;
+    if (showCFP) {
+      filters += String(` AND cfpDate>${TODAY}`);
+    }
+
+    return filters;
+  };
+
   render() {
-    const {
-      showPast,
-      sortBy,
-    } = this.state;
+    const {showPast, sortBy} = this.state;
     const {showCFP, match: {params: {type, country}}} = this.props;
 
     return (
@@ -82,7 +90,7 @@ export default class ConferencePage extends Component {
         >
           <Configure
             hitsPerPage={150}
-            filters={showPast ? `date>${TODAY - ONE_YEAR}` : `date>${TODAY}`}
+            filters={this.algoliaFilter()}
           />
           <br />
           <RefinementList
@@ -99,15 +107,15 @@ export default class ConferencePage extends Component {
           />
 
           <CurrentRefinements />
-          <ConferenceList />
+
+          {showCFP && <CfpHeader sortByCfpEndDate={this.sortByCfpEndDate} sortBy={sortBy} />}
+
+          <ConferenceList
+            sortBy={sortBy}
+            showCFP={showCFP}
+          />
         </InstantSearch>
 
-        <div>
-          {showCFP
-            ? <CfpHeader sortByCfpEndDate={this.sortByCfpEndDate} sortBy={sortBy} />
-            : null
-          }
-        </div>
         <Footer
           showCFP={showCFP}
           togglePast={this.togglePast}

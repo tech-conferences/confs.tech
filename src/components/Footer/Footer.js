@@ -13,12 +13,12 @@ export default function Footer({showCFP, togglePast, showPast}) {
         <Link selected={showPast} onClick={togglePast}>
           {showPast ? 'Hide past conferences' : 'See past conferences'}
         </Link>
-        {/*<Link url={getURL(filters, showCFP)}>
+        <Link url={getURL(showCFP)}>
           {showCFP
             ? 'Hide Call For Papers'
             : 'See Call For Papers'
           }
-        </Link>*/}
+        </Link>
       </p>
       <p>
         <Link url="https://github.com/tech-conferences/confs.tech/" external>
@@ -43,14 +43,12 @@ function Twitter(handle) {
   );
 }
 
-function getURL(filters, showCFP) {
-  let url = '';
-  if (filters.country) {
-    url = `${filters.type}/${filters.country}`;
+function getURL(showCFP) {
+  if (showCFP) {
+    return `${location.pathname}`.replace('/cfp', '')
   } else {
-    url = `${filters.type}`;
+    return `/cfp${location.pathname}`
   }
-  return `${showCFP ? '' : '/cfp'}/${url}`;
 }
 
 function HiddenLinks() {
@@ -58,7 +56,7 @@ function HiddenLinks() {
     <div className={styles.visuallyHidden}>
       {Object.keys(TOPICS).map((topic) => {
         return (
-          <p>
+          <p key={topic}>
             <Link routed url={`/${topic}`}>
               {topic} conferences in {new Date().getYear() + 1900}
             </Link>
