@@ -29,6 +29,9 @@ export default function Footer({showCFP, addConferenceUrl, togglePast, showPast}
       <p>
         Maintained by {Twitter('katyaprigara')}, {Twitter('nimz_co')} and {Twitter('trivikram')}
       </p>
+      <p>
+        <img alt="Sponsor: Search by Algolia" src="./search-by-algolia.svg" height="20" />
+      </p>
     </footer>
   );
 }
