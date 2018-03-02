@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import classNames from 'classnames';
-import {isPast, parse} from 'date-fns';
+import {parse} from 'date-fns';
 
 import {formatDate, generateEventJSONLD} from './utils';
 import Heading from '../Heading';
@@ -11,6 +11,7 @@ export default class ConferenceItem extends PureComponent {
   render() {
     const {
       name,
+      topics,
       url,
       city,
       country,
@@ -21,10 +22,10 @@ export default class ConferenceItem extends PureComponent {
       cfpUrl,
       showCFP,
     } = this.props;
+
     return (
       <div
         className={classNames(
-          isPast(parse(startDate)) ? styles.past : '',
           styles.ConferenceItem
         )}
       >
@@ -43,6 +44,7 @@ export default class ConferenceItem extends PureComponent {
           <span className={styles.Date}>
             {formatDate(startDate, endDate)}
           </span>
+          <Topics topics={topics} />
           {Twitter(twitter)}
         </p>
       </div>
@@ -81,4 +83,12 @@ function Cfp({date, url}) {
       {formatDate(parse(date))}
     </span>
   );
+}
+
+
+function Topics({topics}) {
+  return topics.map((topic) => {
+    if (topic === 'general') { return null; }
+    return <img key={topic} alt={topic} className={styles.topic} src={`${topic}.png`} height="20" />;
+  });
 }

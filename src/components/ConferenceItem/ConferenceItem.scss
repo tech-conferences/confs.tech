@@ -5,10 +5,6 @@
   margin-bottom: spacing(base);
 }
 
-.past {
-  opacity: 0.7;
-}
-
 .Date {
   margin-right: spacing(tight);
 }
@@ -38,4 +34,9 @@
       display: none;
     }
   }
+}
+
+.topic {
+  margin-right: spacing(extra-tight);
+  vertical-align: middle;
 }

@@ -13,6 +13,7 @@ export default function App() {
         <Switch>
           <Route path="/cfp/:type/:country" render={renderCFP} />
           <Route path="/cfp/:type/" render={renderCFP} />
+          <Route path="/cfp" render={renderCFP} />
           <Route path="/:year/:type/:country" render={redirect} />
           <Route path="/:type/:country" render={redirectOrRender} />
           <Route path="/:type" component={ConferencePage} />

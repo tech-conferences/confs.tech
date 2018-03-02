@@ -1,19 +1,19 @@
+/* eslint-disable */
 import React from 'react';
 
+import {TOPICS} from '../config';
 import styles from './Footer.scss';
 import Link from '../Link';
 
-export default function Footer({showCFP, filters, addConferenceUrl, togglePast, showPast}) {
+export default function Footer({showCFP, togglePast, showPast}) {
   return (
     <footer className={styles.Footer}>
+      <HiddenLinks />
       <p className={styles.FooterLinks}>
-        <Link url={addConferenceUrl} external>
-          Add a conference
-        </Link>
         <Link selected={showPast} onClick={togglePast}>
           {showPast ? 'Hide past conferences' : 'See past conferences'}
         </Link>
-        <Link url={getURL(filters, showCFP)}>
+        <Link url={getURL(showCFP)}>
           {showCFP
             ? 'Hide Call For Papers'
             : 'See Call For Papers'
@@ -28,6 +28,9 @@ export default function Footer({showCFP, filters, addConferenceUrl, togglePast, 
       <p>
         Maintained by {Twitter('katyaprigara')}, {Twitter('nimz_co')} and {Twitter('trivikram')}
       </p>
+      <p>
+        <img alt="Sponsor: Search by Algolia" src="./search-by-algolia.svg" height="20" />
+      </p>
     </footer>
   );
 }
@@ -40,12 +43,26 @@ function Twitter(handle) {
   );
 }
 
-function getURL(filters, showCFP) {
-  let url = '';
-  if (filters.country) {
-    url = `${filters.type}/${filters.country}`;
+function getURL(showCFP) {
+  if (showCFP) {
+    return `${location.pathname}`.replace('/cfp', '')
   } else {
-    url = `${filters.type}`;
+    return `/cfp${location.pathname}`
   }
-  return `${showCFP ? '' : '/cfp'}/${url}`;
+}
+
+function HiddenLinks() {
+  return (
+    <div className={styles.visuallyHidden}>
+      {Object.keys(TOPICS).map((topic) => {
+        return (
+          <p key={topic}>
+            <Link routed url={`/${topic}`}>
+              {topic} conferences in {new Date().getYear() + 1900}
+            </Link>
+          </p>
+        )
+      })}
+    </div>
+  );
 }
