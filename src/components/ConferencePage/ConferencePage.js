@@ -107,6 +107,7 @@ class ConferencePage extends Component {
             limitMax={100}
             showMore
             attributeName="country"
+            transformItems={transformCountryRefinements}
             defaultRefinement={country ? [country] : []}
           />
 
@@ -150,11 +151,15 @@ function CfpHeader({sortByCfpEndDate, sortBy}) {
 }
 
 function transformTopicRefinements(items) {
-  const newItems = items.map((item) => {
+  items.map((item) => {
     item.label = TOPICS[item.label];
     return item;
   });
-  return orderBy(newItems, ['count'], ['desc']);
+  return orderBy(items, ['count', 'name'], ['desc', 'desc']);
+}
+
+function transformCountryRefinements(items) {
+  return orderBy(items, ['count', 'name'], ['desc', 'desc']);
 }
 
 function transformCurrentRefinements(items) {
