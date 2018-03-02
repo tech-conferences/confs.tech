@@ -45,14 +45,14 @@ export default class ConferenceItem extends PureComponent {
             {formatDate(startDate, endDate)}
           </span>
           <Topics topics={topics} />
-          {Twitter(twitter)}
+          <Twitter twitter={twitter} />
         </p>
       </div>
     );
   }
 }
 
-function Twitter(twitter) {
+function Twitter({twitter}) {
   if (!twitter) { return null; }
 
   return (
