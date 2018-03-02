@@ -4,13 +4,10 @@ import React from 'react';
 import styles from './Footer.scss';
 import Link from '../Link';
 
-export default function Footer({showCFP, addConferenceUrl, togglePast, showPast}) {
+export default function Footer({showCFP, togglePast, showPast}) {
   return (
     <footer className={styles.Footer}>
       <p className={styles.FooterLinks}>
-        <Link url={addConferenceUrl} external>
-          Add a conference
-        </Link>
         <Link selected={showPast} onClick={togglePast}>
           {showPast ? 'Hide past conferences' : 'See past conferences'}
         </Link>
