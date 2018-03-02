@@ -95,7 +95,6 @@ class ConferencePage extends Component {
             hitsPerPage={150}
             filters={this.algoliaFilter()}
           />
-          <br />
           <RefinementList
             attributeName="topics"
             defaultRefinement={type ? [type] : []}
