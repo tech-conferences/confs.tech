@@ -1,8 +1,10 @@
 @import '../style/foundation/spacing';
+@import '../style/foundation/typography';
 @import '../style/foundation/colors';
 
 .Heading {
-  font-weight: 500;
+  font-weight: bold;
+  font-family: font-family(heading);
 }
 
 .Inner {
