@@ -1,3 +1,4 @@
+@import '../style/foundation/mixins';
 @import '../style/foundation/typography';
 @import '../style/foundation/colors';
 @import '../style/foundation/spacing';
@@ -22,43 +23,16 @@
   display: none;
 }
 
-@mixin link() {
-  color: color(accent);
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  text-decoration: none;
-  appearance: none;
-  border: none;
-  padding: 0;
-  font-size: font-size(body);
-  font-weight: 500;
-  font-family: font-family(base);
-}
-
-@mixin selected-link() {
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: color(accent-2);
-  }
-}
-
 :global(.ais-RefinementList__itemLabel) {
   @include link();
 
-  &:hover,
-  &.Selected {
-    @include selected-link();
+  &:hover {
+    @include link--hover();
   }
 }
 
 :global(.ais-RefinementList__itemLabelSelected) {
-  @include selected-link();
+  @include link--hover();
 }
 
 :global(.ais-RefinementList__itemCount) {
@@ -72,4 +46,7 @@
 :global(.ais-RefinementList__showMore) {
   @include link();
   font-size: 0.9em;
+  &:hover {
+    @include link--hover();
+  }
 }
