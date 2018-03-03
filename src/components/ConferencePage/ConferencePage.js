@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* global process */
 import React, {Component} from 'react';
 import Favicon from 'react-favicon';
