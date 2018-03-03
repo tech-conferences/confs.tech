@@ -3,7 +3,7 @@
 @import '../style/foundation/spacing';
 
 :global(.ais-RefinementList__root) {
-  margin-bottom: spacing(base);
+  margin-bottom: spacing(tight);
 }
 
 :global(.ais-RefinementList__items) {
