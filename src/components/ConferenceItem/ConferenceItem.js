@@ -44,7 +44,6 @@ export default class ConferenceItem extends PureComponent {
           <span className={styles.Date}>
             {formatDate(startDate, endDate)}
           </span>
-          <br />
         </p>
         <p className={classNames(styles.p, styles.Footer)}>
           <Topics topics={topics} />
