@@ -20,29 +20,6 @@
   color: color(gray);
 }
 
-.cfp {
-  font-size: 12px;
-  display: inline-block;
-  color: color(gray);
-}
-
-.cfpTag {
-  border-radius: 2px;
-  padding: 2px 5px;
-  display: inline-block;
-  background-color: color(green);
-  color: white;
-  margin-left: spacing(tight);
-  margin-right: spacing(extra-tight);
-
-  &:hover {
-    background-color: lighten(color(green), 4);
-    &::after {
-      display: none;
-    }
-  }
-}
-
 .topic {
   margin-right: spacing(extra-tight);
   vertical-align: middle;
