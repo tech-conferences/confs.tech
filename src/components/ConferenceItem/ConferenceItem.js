@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {PureComponent} from 'react';
 import classNames from 'classnames';
 import {parse} from 'date-fns';
@@ -40,11 +41,15 @@ export default class ConferenceItem extends PureComponent {
           {showCFP ? <Cfp url={cfpUrl || url} date={cfpEndDate} /> : null}
         </Heading>
         <p className={styles.p}>
-          {`${Location(city, country)} - `}
+          {`${Location(city, country)}・`}
           <span className={styles.Date}>
             {formatDate(startDate, endDate)}
           </span>
+          <br />
+        </p>
+        <p className={classNames(styles.p, styles.Footer)}>
           <Topics topics={topics} />
+          {twitter && ' – '}
           <Twitter twitter={twitter} />
         </p>
       </div>
@@ -87,8 +92,5 @@ function Cfp({date, url}) {
 
 
 function Topics({topics}) {
-  return topics.map((topic) => {
-    if (topic === 'general') { return null; }
-    return <img key={topic} alt={topic} className={styles.topic} src={`${topic}.png`} height="20" />;
-  });
+  return topics.map((topic) => `#${topic}`).join(' ');
 }
