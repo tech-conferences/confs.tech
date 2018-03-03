@@ -21,6 +21,7 @@ import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
 import {TOPICS} from '../config';
 
+const CURRENT_YEAR = (new Date()).getYear() + 1900;
 const TODAY = Math.round(new Date().getTime() / 1000);
 const ONE_YEAR = 365 * 24 * 60 * 60;
 
@@ -81,10 +82,14 @@ class ConferencePage extends Component {
           <title>Tech conferences | Confs.tech</title>
         </Helmet>
         <Favicon url={`/${type}.png`} />
-        <div className={styles.Header}>
-          <Heading element="h1">Find your next tech conference</Heading>
+        <header className={styles.Header}>
+          <h1 className="visuallyHidden">
+            List of all {type ? TOPICS[type] : 'tech'} conferences of {CURRENT_YEAR}
+            {country ? ` in ${country}` : null}
+          </h1>
+          <Heading element="p">Find your next tech conference</Heading>
           <GithubStar />
-        </div>
+        </header>
 
         <InstantSearch
           appId={process.env.ALGOLIA_APPLICATION_ID}
