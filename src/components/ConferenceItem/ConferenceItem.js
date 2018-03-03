@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, {PureComponent} from 'react';
 import classNames from 'classnames';
 import {parse} from 'date-fns';
