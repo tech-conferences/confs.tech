@@ -1,10 +1,10 @@
 /* eslint-disable */
 import React from 'react';
-
 import {TOPICS} from '../config';
 import styles from './Footer.scss';
 import Link from '../Link';
 
+const CURRENT_YEAR = (new Date()).getYear() + 1900;
 export default function Footer({showCFP, togglePast, showPast}) {
   return (
     <footer className={styles.Footer}>
@@ -53,12 +53,12 @@ function getURL(showCFP) {
 
 function HiddenLinks() {
   return (
-    <div className={styles.visuallyHidden}>
+    <div className="visuallyHidden">
       {Object.keys(TOPICS).map((topic) => {
         return (
           <p key={topic}>
             <Link routed url={`/${topic}`}>
-              {topic} conferences in {new Date().getYear() + 1900}
+              {topic} conferences in {CURRENT_YEAR}
             </Link>
           </p>
         )
