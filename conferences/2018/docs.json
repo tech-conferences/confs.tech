@@ -19,39 +19,12 @@
     },
     {
         "name": "FOSDEM",
-        "url": "https://fosdem.org/2018/",
+        "url": "https://fosdem.org/2018/schedule/track/tool_the_docs/",
         "startDate": "2018-02-03",
         "endDate": "2018-02-04",
         "city": "Brussels",
         "country": "Belgium",
         "twitter": "@fosdem"
-      },
-      {
-        "name": "Content Strategy Innovation Summit",
-        "url": "https://theinnovationenterprise.com/summits/content-strategy-innovation-summit-2018-san-francisco",
-        "startDate": "2018-09-13",
-        "endDate": "2018-09-14",
-        "city": "San Fransisco, CA",
-        "country": "U.S.A.",
-        "twitter": "@ContentStratSF"
-      },
-      {
-        "name": "Design Content",
-        "url": "https://content.design/",
-        "startDate": "2018-07-25",
-        "endDate": "2018-07-27",
-        "city": "Vancouver, BC",
-        "country": "Canada",
-        "twitter": "@dcontentconf"
-      },
-      {
-        "name": "Content Strategy Summit",
-        "url": "http://vonlanthengroup.com/en/events/2nd-annual-content-strategy-summit.html",
-        "startDate": "2018-02-15",
-        "endDate": "2018-02-16",
-        "city": "Vienna",
-        "country": "Austria",
-        "twitter": "@"
       },
       {
         "name": "LavaCon Content Strategy Conference",
@@ -61,15 +34,6 @@
         "city": "New Orleans, LA",
         "country": "U.S.A.",
         "twitter": "@LavaCon"
-      },
-      {
-        "name": "ConveyUX",
-        "url": "https://conveyux.com/",
-        "startDate": "2018-02-27",
-        "endDate": "2018-03-01",
-        "city": "Seattle, WA",
-        "country": "U.S.A.",
-        "twitter": "@ConveyUX"
       },
       {
         "name": "Content Management Strategies/DITA",
@@ -151,24 +115,6 @@
         "city": "Tacoma, WA",
         "country": "U.S.A.",
         "twitter": "@"
-      },
-      {
-        "name": "The Content Strategy Conference",
-        "url": "https://www.confabevents.com/",
-        "startDate": "2018-05-21",
-        "endDate": "2018-05-23",
-        "city": "Minneapolis, MN",
-        "country": "U.S.A.",
-        "twitter": "@ConfabEvents"
-      },
-      {
-        "name": "Elevate Support Summit",
-        "url": "http://elevatesummit.co/",
-        "startDate": "2018-03-30",
-        "endDate": "2018-03-31",
-        "city": "Philadelphia, PA",
-        "country": "U.S.A.",
-        "twitter": "@ConfabEvents"
       },
       {
         "name": "STC Technical Communication Summit",
