@@ -1,6 +1,6 @@
 {
-  "name": "the-conference-list",
-  "version": "0.1.0",
+  "name": "confs.tech",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@shopify/images": "^1.1.3",
