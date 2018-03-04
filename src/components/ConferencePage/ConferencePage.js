@@ -95,7 +95,7 @@ class ConferencePage extends Component {
           appId={process.env.ALGOLIA_APPLICATION_ID}
           apiKey={process.env.ALGOLIA_API_KEY}
           onSearchStateChange={this.onSearchStateChange}
-          indexName={'conferences'}
+          indexName={'prod_conferences'}
         >
           <Configure
             hitsPerPage={150}
