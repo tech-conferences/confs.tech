@@ -22,6 +22,6 @@ const REPO_URLS = {
   general: 'https://github.com/tech-conferences/confs.tech',
 };
 
-export function getAddConferenceUrl(type = 'JavaScript') {
-  return `${REPO_URLS[type.toLocaleLowerCase()]}/issues/new`;
+export function getAddConferenceUrl(topic = 'JavaScript') {
+  return `${REPO_URLS[topic.toLocaleLowerCase()]}/issues/new`;
 }

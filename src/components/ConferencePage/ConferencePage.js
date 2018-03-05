@@ -73,18 +73,18 @@ class ConferencePage extends Component {
 
   render() {
     const {showPast, sortBy} = this.state;
-    const {showCFP, match: {params: {type, country}}} = this.props;
-    const addConferenceUrl = getAddConferenceUrl(type);
+    const {showCFP, match: {params: {topic, country}}} = this.props;
+    const addConferenceUrl = getAddConferenceUrl(topic);
 
     return (
       <div>
         <Helmet>
           <title>Tech conferences | Confs.tech</title>
         </Helmet>
-        <Favicon url={`/${type}.png`} />
+        <Favicon url={`/${topic}.png`} />
         <header className={styles.Header}>
           <h1 className="visuallyHidden">
-            List of all {type ? TOPICS[type] : 'tech'} conferences of {CURRENT_YEAR}
+            List of all {topic ? TOPICS[topic] : 'tech'} conferences of {CURRENT_YEAR}
             {country ? ` in ${country}` : null}
           </h1>
           <Heading element="p">Find your next tech conference</Heading>
@@ -103,7 +103,7 @@ class ConferencePage extends Component {
           />
           <RefinementList
             attributeName="topics"
-            defaultRefinement={type ? [type] : []}
+            defaultRefinement={topic ? [topic] : []}
             transformItems={transformTopicRefinements}
           />
           <RefinementList
