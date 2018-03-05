@@ -1,5 +1,16 @@
 [
   {
+    "name": "Experience Conference",
+    "url": "http://www.exconf.com",
+    "startDate": "2018-03-26",
+    "endDate": "2018-03-27",
+    "city": "Bratislava",
+    "country": "Slovakia",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@exconfba"
+  },
+  {
     "name": "CONFAB",
     "url": "https://www.confabevents.com/",
     "startDate": "2018-05-21",

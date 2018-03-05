@@ -6,14 +6,14 @@ describe('#formatDate', () => {
   describe('with same startDate and endDate', () => {
     it('should return only with the start date', () => {
       const date = formatDate('2018/01/01', '2018/01/01');
-      expect(date).toBe('Jan, 1st');
+      expect(date).toBe('January, 1st');
     });
   });
 
   describe('with different startDate and endDate', () => {
     it('should return start and end date', () => {
       const date = formatDate('2018/01/01', '2018/01/02');
-      expect(date).toBe('Jan, 1st-2nd');
+      expect(date).toBe('January, 1-2nd');
     });
   });
 

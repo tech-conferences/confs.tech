@@ -1,29 +1,12 @@
+@import '../style/foundation/mixins';
 @import '../style/foundation/typography';
 @import '../style/foundation/colors';
 
 .Link {
-  color: color(accent);
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  text-decoration: none;
-  appearance: none;
-  border: none;
-  padding: 0;
-  font-size: font-size(body);
-  font-weight: 500;
-  font-family: font-family(base);
+  @include link();
 
   &:hover,
   &.Selected {
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: color(accent-2);
-    }
+    @include link--hover();
   }
 }

@@ -11,11 +11,12 @@ export default function App() {
       <Head />
       <div>
         <Switch>
-          <Route path="/cfp/:type/:country" render={renderCFP} />
-          <Route path="/cfp/:type/" render={renderCFP} />
-          <Route path="/:year/:type/:country" render={redirect} />
-          <Route path="/:type/:country" render={redirectOrRender} />
-          <Route path="/:type" component={ConferencePage} />
+          <Route path="/cfp/:topic/:country" render={renderCFP} />
+          <Route path="/cfp/:topic/" render={renderCFP} />
+          <Route path="/cfp" render={renderCFP} />
+          <Route path="/:year/:topic/:country" render={redirect} />
+          <Route path="/:topic/:country" render={redirectOrRender} />
+          <Route path="/:topic" component={ConferencePage} />
           <Route exact path="/" component={ConferencePage} />
           <Route component={ConferencePage} />
         </Switch>
@@ -28,23 +29,23 @@ function renderCFP({match}) {
 }
 
 function redirect(props) {
-  const {type, country} = props.match.params;
+  const {topic, country} = props.match.params;
 
-  return <Redirect to={`/${type}/${country}`} state={{status: 301}} />;
+  return <Redirect to={`/${topic}/${country}`} state={{status: 301}} />;
 }
 
 /*
-  Old routes were /:year/:type and now is /:type/:country
-  If we detect that :type is a year, the user actually wanted to reach
-  the new route /:type
+  Old routes were /:year/:topic and now is /:topic/:country
+  If we detect that :topic is a year, the user actually wanted to reach
+  the new route /:topic
 */
 function redirectOrRender(props) {
-  const {type, country} = props.match.params;
+  const {topic, country} = props.match.params;
 
-  if (isYear(type)) {
+  if (isYear(topic)) {
     return <Redirect to={`/${country}`} state={{status: 301}} />;
   } else {
-    return <ConferencePage {...props} fallback={redirectToType} />;
+    return <ConferencePage {...props} fallback={redirectToTopic} />;
   }
 }
 
@@ -52,6 +53,6 @@ function isYear(year) {
   return (year.length === 4 && !isNaN(parseInt(year, 10)));
 }
 
-function redirectToType(type) {
-  return <Redirect to={`/${type}`} state={{status: 301}} />;
+function redirectToTopic(topic) {
+  return <Redirect to={`/${topic}`} state={{status: 301}} />;
 }

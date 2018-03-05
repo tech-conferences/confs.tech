@@ -5,13 +5,13 @@ export function formatDate(startDate, endDate) {
   if (startDate.length === 7) { return format(parse(`${startDate}-01`), 'MMMM'); }
 
   const parsedStartDate = parse(startDate);
-  let date = format(parsedStartDate, 'MMM, Do');
 
   if (endDate && startDate !== endDate) {
-    date += format(parse(endDate), '-Do');
+    const parsedEndDate = parse(endDate);
+    return `${format(parsedStartDate, 'MMMM, D')}${format(parsedEndDate, '-Do')}`;
+  } else {
+    return format(parsedStartDate, 'MMMM, Do');
   }
-
-  return date;
 }
 
 export function generateEventJSONLD({name, url, city, country, startDate, endDate}) {

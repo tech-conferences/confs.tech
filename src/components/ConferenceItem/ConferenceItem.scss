@@ -5,37 +5,22 @@
   margin-bottom: spacing(base);
 }
 
-.past {
-  opacity: 0.7;
-}
-
 .Date {
   margin-right: spacing(tight);
 }
 
 .p {
   margin: 0;
+  line-height: 1.5em;
 }
 
-.cfp {
-  font-size: 12px;
-  display: inline-block;
+.Footer,
+.Footer a {
+  font-weight: 200;
   color: color(gray);
 }
 
-.cfpTag {
-  border-radius: 2px;
-  padding: 2px 5px;
-  display: inline-block;
-  background-color: color(green);
-  color: white;
-  margin-left: spacing(tight);
+.topic {
   margin-right: spacing(extra-tight);
-
-  &:hover {
-    background-color: lighten(color(green), 4);
-    &::after {
-      display: none;
-    }
-  }
+  vertical-align: middle;
 }

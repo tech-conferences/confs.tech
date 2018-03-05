@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import classNames from 'classnames';
-import {isPast, parse} from 'date-fns';
+import {parse} from 'date-fns';
 
 import {formatDate, generateEventJSONLD} from './utils';
 import Heading from '../Heading';
@@ -11,6 +11,7 @@ export default class ConferenceItem extends PureComponent {
   render() {
     const {
       name,
+      topics,
       url,
       city,
       country,
@@ -21,10 +22,10 @@ export default class ConferenceItem extends PureComponent {
       cfpUrl,
       showCFP,
     } = this.props;
+
     return (
       <div
         className={classNames(
-          isPast(parse(startDate)) ? styles.past : '',
           styles.ConferenceItem
         )}
       >
@@ -36,21 +37,26 @@ export default class ConferenceItem extends PureComponent {
           <Link url={url} external>
             {name}
           </Link>
-          {showCFP ? <Cfp url={cfpUrl || url} date={cfpEndDate} /> : null}
         </Heading>
         <p className={styles.p}>
-          {`${Location(city, country)} - `}
+          {`${Location(city, country)}・`}
           <span className={styles.Date}>
             {formatDate(startDate, endDate)}
           </span>
-          {Twitter(twitter)}
+        </p>
+        <p className={classNames(styles.p, styles.Footer)}>
+          {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
+          {showCFP && <br />}
+          <Topics topics={topics} />
+          {twitter && ' – '}
+          <Twitter twitter={twitter} />
         </p>
       </div>
     );
   }
 }
 
-function Twitter(twitter) {
+function Twitter({twitter}) {
   if (!twitter) { return null; }
 
   return (
@@ -68,17 +74,15 @@ function Location(city, country) {
   return country || city;
 }
 
-function Cfp({date, url}) {
+function Cfp({url, date}) {
   return (
-    <span className={styles.cfp}>
-      <Link
-        url={url}
-        external
-        className={styles.cfpTag}
-      >
-        CFP open
-      </Link>
-      {formatDate(parse(date))}
-    </span>
+    <Link url={url} external className={styles.cfp}>
+      CFP closes {formatDate(parse(date))}
+    </Link>
   );
+}
+
+
+function Topics({topics}) {
+  return topics.map((topic) => `#${topic}`).join(' ');
 }

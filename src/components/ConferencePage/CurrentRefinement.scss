@@ -1,0 +1,60 @@
+@import '../style/foundation/typography';
+@import '../style/foundation/colors';
+@import '../style/foundation/spacing';
+
+:global(.ais-CurrentRefinements__root) {
+  margin-bottom: spacing(base);
+}
+
+:global(.ais-CurrentRefinements__itemParent .ais-CurrentRefinements__item) {
+  display: inline-block;
+  margin-right: spacing(base);
+  margin-bottom: spacing(tight);
+  background-color: color(gray, lighter);
+  color: color(gray, dark);
+  padding: 0.3em 0.7em;
+  border-radius: 20px;
+  font-size: 0.8em;
+  transition: all 100ms linear;
+}
+
+:global(.ais-CurrentRefinements__itemParent .ais-CurrentRefinements__item:hover) {
+  background-color: color(gray);
+  color: white;
+}
+
+:global(.ais-CurrentRefinements__itemParent) {
+  background-color: transparent;
+  display: inline-block;
+}
+
+:global(.ais-CurrentRefinements__itemParent > .ais-CurrentRefinements__itemLabel) {
+  display: none;
+}
+
+:global(.ais-CurrentRefinements__itemLabel) {
+  vertical-align: middle;
+}
+
+:global(.ais-CurrentRefinements__itemClear) {
+  vertical-align: middle;
+  appearance: none;
+  margin-left: spacing(tight);
+  background-color: lighten(color(gray), 20);
+  border-radius: 30px;
+  border: none;
+  display: inline-block;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  font-size: 9px;
+  color: color(gray, lighter);
+  transition: all 100ms linear;
+}
+
+:global(.ais-CurrentRefinements__itemParent .ais-CurrentRefinements__item:hover .ais-CurrentRefinements__itemClear) {
+  // background-color: color(gray);
+  color: color(gray);
+  background-color: white;
+}
