@@ -367,5 +367,13 @@
     "city": "Singapore",
     "country": "Singapore",
     "twitter": "@fossasia"
+  },
+  {
+    "name": "NightlyBuild",
+    "url": "https://www.nightlybuild.io/",
+    "startDate": "2018-08-31",
+    "city": "Cologne",
+    "country": "Germany",
+    "twitter": "@nightlybuildio"
   }
 ]
