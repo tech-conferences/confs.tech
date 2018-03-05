@@ -19,7 +19,7 @@ import Link from '../Link';
 import GithubStar from '../GithubStar';
 import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
-import {TOPICS} from '../config';
+import {TOPICS, getAddConferenceUrl} from '../config';
 
 const CURRENT_YEAR = (new Date()).getYear() + 1900;
 const TODAY = Math.round(new Date().getTime() / 1000);
@@ -74,6 +74,7 @@ class ConferencePage extends Component {
   render() {
     const {showPast, sortBy} = this.state;
     const {showCFP, match: {params: {type, country}}} = this.props;
+    const addConferenceUrl = getAddConferenceUrl(type);
 
     return (
       <div>
@@ -121,6 +122,7 @@ class ConferencePage extends Component {
           {showCFP && <CfpHeader sortByCfpEndDate={this.sortByCfpEndDate} sortBy={sortBy} />}
 
           <ConferenceList
+            addConferenceUrl={addConferenceUrl}
             sortBy={sortBy}
             showCFP={showCFP}
           />
@@ -129,6 +131,7 @@ class ConferencePage extends Component {
         <Footer
           showCFP={showCFP}
           togglePast={this.togglePast}
+          addConferenceUrl={addConferenceUrl}
           showPast={showPast}
         />
       </div>
