@@ -8,18 +8,22 @@ export const TOPICS = {
   ios: 'iOS / Swift',
   android: 'Android',
   php: 'PHP',
+  'tech-comm': 'Technical communication',
   general: 'General',
 };
 
+const DEFAULT_REPO_URL = 'https://github.com/tech-conferences/confs.tech';
+
 const REPO_URLS = {
   javascript: 'https://github.com/tech-conferences/javascript-conferences',
-  css: 'https://github.com/tech-conferences/confs.tech',
-  php: 'https://github.com/tech-conferences/confs.tech',
-  ux: 'https://github.com/tech-conferences/confs.tech',
-  ruby: 'https://github.com/tech-conferences/confs.tech',
-  ios: 'https://github.com/tech-conferences/confs.tech',
-  android: 'https://github.com/tech-conferences/confs.tech',
-  general: 'https://github.com/tech-conferences/confs.tech',
+  css: DEFAULT_REPO_URL,
+  php: DEFAULT_REPO_URL,
+  ux: DEFAULT_REPO_URL,
+  ruby: DEFAULT_REPO_URL,
+  ios: DEFAULT_REPO_URL,
+  android: DEFAULT_REPO_URL,
+  'tech-comm': DEFAULT_REPO_URL,
+  general: DEFAULT_REPO_URL,
 };
 
 export function getAddConferenceUrl(topic = 'JavaScript') {

@@ -5,7 +5,7 @@ import {getDuplicates} from './utils';
 
 const START_YEAR = 2017;
 const CURRENT_YEAR = (new Date()).getYear() + 1900;
-const LANGUAGES = ['css', 'php', 'ruby', 'android', 'ios', 'ux', 'general'];
+const LANGUAGES = ['css', 'php', 'ruby', 'android', 'ios', 'ux', 'tech-comm', 'general'];
 const BASE_DIR = '../../../../conferences';
 const conferencesJSON = {};
 
