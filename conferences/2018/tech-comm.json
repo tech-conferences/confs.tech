@@ -41,8 +41,7 @@
     "startDate": "2018-04-23",
     "endDate": "2018-04-25",
     "city": "Denver, CO",
-    "country": "U.S.A.",
-    "twitter": "@"
+    "country": "U.S.A."
   },
   {
     "name": "Technical Communication UK Conference",
@@ -50,8 +49,7 @@
     "startDate": "2018-09-25",
     "endDate": "2018-09-27",
     "city": "Daventry, Northamptonshire",
-    "country": "U.K.",
-    "twitter": "@"
+    "country": "U.K."
   },
   {
     "name": "tcworld conference",
@@ -59,8 +57,7 @@
     "startDate": "2018-11-13",
     "endDate": "2018-11-15",
     "city": "Stuttgart",
-    "country": "Germany",
-    "twitter": "@"
+    "country": "Germany"
   },
   {
     "name": "tcworld India",
@@ -68,8 +65,7 @@
     "startDate": "2018-03-07",
     "endDate": "2018-03-08",
     "city": "Bengaluru",
-    "country": "India",
-    "twitter": "@"
+    "country": "India"
   },
   {
     "name": "tcworld China",
@@ -77,8 +73,7 @@
     "startDate": "2018-05-15",
     "endDate": "2018-05-16",
     "city": "Shanghai",
-    "country": "China",
-    "twitter": "@"
+    "country": "China"
   },
   {
     "name": "Evolution of TC",
@@ -86,8 +81,7 @@
     "startDate": "2018-05-31",
     "endDate": "2018-06-01",
     "city": "Sofia",
-    "country": "Bulgaria",
-    "twitter": "@"
+    "country": "Bulgaria"
   },
   {
     "name": "UA Reloaded",
@@ -95,8 +89,7 @@
     "startDate": "2018-06-13",
     "endDate": "2018-06-14",
     "city": "St. Leon-Rot",
-    "country": "Germany",
-    "twitter": "@"
+    "country": "Germany"
   },
   {
     "name": "NORDIC TechKomm",
@@ -104,8 +97,7 @@
     "startDate": "2018-09-26",
     "endDate": "2018-09-27",
     "city": "Copenhagen",
-    "country": "Denmark",
-    "twitter": "@"
+    "country": "Denmark"
   },
   {
     "name": "Northwest Tech Comm",
@@ -113,8 +105,7 @@
     "startDate": "2018-09-06",
     "endDate": "2018-09-07",
     "city": "Tacoma, WA",
-    "country": "U.S.A.",
-    "twitter": "@"
+    "country": "U.S.A."
   },
   {
     "name": "STC Technical Communication Summit",
