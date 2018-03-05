@@ -64,11 +64,10 @@ class ConferencePage extends Component {
   algoliaFilter = () => {
     const {showPast} = this.state;
     const {showCFP} = this.props;
-    let filters = showPast ? `date>${TODAY - ONE_YEAR}` : `date>${TODAY}`;
+    let filters = showPast ? `startDateUnix>${TODAY - ONE_YEAR}` : `startDateUnix>${TODAY}`;
     if (showCFP) {
-      filters += String(` AND cfpDate>${TODAY}`);
+      filters += String(` AND cfpEndDateUnix>${TODAY}`);
     }
-
     return filters;
   };
 
