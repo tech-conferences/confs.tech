@@ -1,5 +1,15 @@
 [
   {
+    "name": "EuRuKo",
+    "url": "https://euruko2018.org",
+    "startDate": "2018-06-02",
+    "endDate": "2018-06-03",
+    "city": "Vienna",
+    "country": "Austria",
+    "cfpEndDate": "2018-04-15",
+    "twitter": "@euruko"
+  },
+  {
     "name": "RubyC",
     "url": "http://rubyc.eu/",
     "startDate": "2018-06-02",
