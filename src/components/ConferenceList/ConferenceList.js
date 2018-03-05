@@ -5,6 +5,7 @@ import {connectHits} from 'react-instantsearch/connectors';
 
 import Heading from '../Heading';
 import Divider from '../Divider';
+import Link from '../Link';
 import ConferenceItem from '../ConferenceItem';
 import styles from './ConferenceList.css';
 
@@ -29,7 +30,7 @@ class ConferenceList extends Component {
   };
 
   render() {
-    const {hits, showCFP, sortBy} = this.props;
+    const {hits, showCFP, sortBy, addConferenceUrl} = this.props;
     let filteredConferences = hits;
     if (showCFP) {
       filteredConferences = filter(hits, (conf) => {
@@ -41,7 +42,7 @@ class ConferenceList extends Component {
     const confsTable = Object.keys(confs).map((year) => {
       return [
         <Divider key="hr" />,
-        <Year key={year} year={year} />,
+        <Year key={year} year={year} addConferenceUrl={addConferenceUrl} />,
         this.renderConferences(confs[year]),
       ];
     });
@@ -92,12 +93,15 @@ function Months({month, conferences, showCFP}) {
   ];
 }
 
-function Year({year}) {
+function Year({year, addConferenceUrl}) {
   return (
     <div className={styles.Year}>
       <Heading key={year} element="h2" level={2}>
         {year}
       </Heading>
+      <Link url={addConferenceUrl} external>
+        Add a conference
+      </Link>
     </div>
   );
 }
