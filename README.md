@@ -7,6 +7,7 @@ List of conferences pulled out from [JSON files](https://github.com/tech-confere
 - [See all Design / UX conferences](https://confs.tech/ux)
 - [See all Ruby conferences](https://confs.tech/ruby)
 - [See all iOS conferences](https://confs.tech/ios)
+- [See all Technical communication conferences](https://confs.tech/tech-comm)
 - [See all Android conferences](https://confs.tech/android)
 - [See general conferences](https://confs.tech/general)
 
