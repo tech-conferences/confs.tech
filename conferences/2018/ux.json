@@ -37,7 +37,9 @@
     "url": "https://pixelpioneers.co",
     "city": "Belfast",
     "country": "U.K.",
-    "startDate": "2018-11"
+    "startDate": "2018-11",
+    "cfpUrl": "https://pixelpioneers.co/call-for-speakers",
+    "cfpEndDate": "2018-07-31"
   },
   {
     "name": "Pixel Pioneers Bristol",
