@@ -375,5 +375,15 @@
     "city": "Cologne",
     "country": "Germany",
     "twitter": "@nightlybuildio"
+  },
+  {
+    "name": "TakeOff Conference",
+    "url": "https://www.takeoffconf.io/",
+    "startDate": "2018-06-7",
+    "endDate": "2018-06-8",
+    "city": "Lille",
+    "country": "France",
+    "cfpUrl": "https://www.takeoffconf.io/identity/registrations/new",
+    "cfpEndDate": ""
   }
 ]
