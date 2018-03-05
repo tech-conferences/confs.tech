@@ -1,5 +1,16 @@
 [
   {
+    "name": "J on the Beach",
+    "url": "https://jonthebeach.com/",
+    "startDate": "2018-05-23",
+    "endDate": "2018-05-25",
+    "city": "Málaga",
+    "country": "Spain",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@JOTB2018"
+  },
+  {
     "name": "Web Directions AI",
     "url": "http://webdirections.org/ai/",
     "startDate": "2018-10-31",
