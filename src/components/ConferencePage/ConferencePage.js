@@ -46,7 +46,7 @@ class ConferencePage extends Component {
 
   onSearchStateChange = (searchState) => {
     this.setState({
-      refinementList: searchState.refinementList,
+      refinementList: searchState.refinementList || {},
     }, () => {
       const {refinementList: {country, topics}} = this.state;
       const {history, showCFP} = this.props;
