@@ -1,5 +1,13 @@
 [
   {
+    "name": "Appdevcon",
+    "url": "http://appdevcon.nl/",
+    "startDate": "2018-03-15",
+    "endDate": "2018-03-16",
+    "city": "Amsterdam",
+    "country": "Netherlands"
+  },
+  {
     "name": "mDevCamp",
     "url": "https://mdevcamp.eu/",
     "city": "Prague",
