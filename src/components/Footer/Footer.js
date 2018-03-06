@@ -61,10 +61,11 @@ function HiddenLinks() {
         return (
           <p key={topic}>
             <Link routed url={`/${topic}`}>
-              {topic} conferences in {CURRENT_YEAR}
+              {`${topic} conferences in ${CURRENT_YEAR}`}
             </Link>
+            {' '}
             <Link routed url={`/cfp/${topic}`}>
-              Open call for papers for {topic} conferences in {CURRENT_YEAR}
+              {`Open call for papers for ${topic} conferences in ${CURRENT_YEAR}`}
             </Link>
           </p>
         )
