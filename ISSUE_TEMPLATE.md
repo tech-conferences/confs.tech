@@ -8,6 +8,8 @@ Where should it go?
 - [ ] iOS / Swift
 - [ ] Android
 - [ ] PHP
+- [ ] Data
+- [ ] Tech-comm
 - [ ] General
 
 ```json

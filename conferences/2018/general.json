@@ -22,15 +22,6 @@
     "twitter": "@JOTB2018"
   },
   {
-    "name": "Web Directions AI",
-    "url": "http://webdirections.org/ai/",
-    "startDate": "2018-10-31",
-    "cfpEndDate": "2018-05-01",
-    "cfpUrl": "https://www.webdirections.org/speaking/",
-    "city": "Sydney",
-    "country": "Australia"
-  },
-  {
     "name": "Web Directions Culture",
     "url": "http://webdirections.org/culture/",
     "startDate": "2018-10-31",
@@ -88,13 +79,6 @@
     "city": "Seattle, WA",
     "country": "U.S.A.",
     "twitter": "@deconstructconf"
-  },
-  {
-    "name": "dotAI",
-    "url": "https://www.dotai.io/",
-    "startDate": "2018-05-31",
-    "city": "Paris",
-    "country": "France"
   },
   {
     "name": "dotScale",
@@ -262,15 +246,6 @@
     "endDate": "2018-04-04",
     "city": "Seattle, WA",
     "country": "U.S.A."
-  },
-  {
-    "name": "QCon AI",
-    "url": "https://qcon.ai/",
-    "startDate": "2018-04-10",
-    "endDate": "2018-04-11",
-    "city": "San Francisco, CA",
-    "country": "U.S.A.",
-    "twitter": "@qconai"
   },
   {
     "name": "QCon SP",
