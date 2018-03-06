@@ -1,5 +1,16 @@
 [
   {
+    "name": "Agile Portugal 2018",
+    "url": "https://2018.agilept.org/",
+    "startDate": "2018-05-25",
+    "endDate": "2018-05-25",
+    "city": "Porto",
+    "country": "Portugal",
+    "cfpUrl": "https://2018.agilept.org/call_for_speakers.html",
+    "cfpEndDate": "2018-03-26",
+    "twitter": "@agilept"
+  },
+  {
     "name": "J on the Beach",
     "url": "https://jonthebeach.com/",
     "startDate": "2018-05-23",
