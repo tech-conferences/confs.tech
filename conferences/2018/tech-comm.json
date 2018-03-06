@@ -1,5 +1,16 @@
 [
   {
+    "name": "API the Docs Paris 2018",
+    "url": "https://www.eventbrite.com/e/api-the-docs-paris-2018-tickets-42858996412?aff=es2",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-24",
+    "city": "Paris",
+    "country": "France",
+    "cfpUrl": "https://www.papercall.io/apithedocsparis2018",
+    "cfpEndDate": "2018-03-18",
+    "twitter": "@APItheDocs"
+  },
+  {
     "name": "Write the Docs Portland",
     "url": "http://www.writethedocs.org/conf/portland/2018/",
     "startDate": "2018-05-06",
