@@ -72,6 +72,17 @@
     "twitter": "@dpcon"
   },
   {
+    "name": "Detroit PHP",
+    "url": "https://phpdetroit.io/",
+    "startDate": "2018-07-26",
+    "endDate": "2018-07-29",
+    "city": "Detroit",
+    "country": "U.S.A.",
+    "twitter": "@phpdet",
+    "cfpEndDate": "2018-03-22",
+    "cfpUrl": "https://cfp.phpdetroit.io/"  
+  },
+  {
     "name": "Northeast PHP Conference",
     "url": "http://www.northeastphp.org/",
     "startDate": "2018-09-19",
