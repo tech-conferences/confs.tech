@@ -1,5 +1,22 @@
 [
   {
+    "name": "MCE",
+    "url": "https://2018.mceconf.com/",
+    "startDate": "2018-06-05",
+    "endDate": "2018-06-06",
+    "city": "Warsaw",
+    "country": "Poland",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLScCS83nXfBFKyieKKWCCKL_YJTleXmCTuMsdQ802DE-x_TsjA/viewform"
+  },
+  {
+    "name": "Appdevcon",
+    "url": "http://appdevcon.nl/",
+    "startDate": "2018-03-15",
+    "endDate": "2018-03-16",
+    "city": "Amsterdam",
+    "country": "Netherlands"
+  },
+  {
     "name": "mDevCamp",
     "url": "https://mdevcamp.eu/",
     "city": "Prague",

@@ -1,12 +1,25 @@
 [
   {
-    "name": "Web Directions AI",
-    "url": "http://webdirections.org/ai/",
-    "startDate": "2018-10-31",
-    "cfpEndDate": "2018-05-01",
-    "cfpUrl": "https://www.webdirections.org/speaking/",
-    "city": "Sydney",
-    "country": "Australia"
+    "name": "Agile Portugal 2018",
+    "url": "https://2018.agilept.org/",
+    "startDate": "2018-05-25",
+    "endDate": "2018-05-25",
+    "city": "Porto",
+    "country": "Portugal",
+    "cfpUrl": "https://2018.agilept.org/call_for_speakers.html",
+    "cfpEndDate": "2018-03-26",
+    "twitter": "@agilept"
+  },
+  {
+    "name": "J on the Beach",
+    "url": "https://jonthebeach.com/",
+    "startDate": "2018-05-23",
+    "endDate": "2018-05-25",
+    "city": "Málaga",
+    "country": "Spain",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@JOTB2018"
   },
   {
     "name": "Web Directions Culture",
@@ -66,13 +79,6 @@
     "city": "Seattle, WA",
     "country": "U.S.A.",
     "twitter": "@deconstructconf"
-  },
-  {
-    "name": "dotAI",
-    "url": "https://www.dotai.io/",
-    "startDate": "2018-05-31",
-    "city": "Paris",
-    "country": "France"
   },
   {
     "name": "dotScale",
@@ -242,15 +248,6 @@
     "country": "U.S.A."
   },
   {
-    "name": "QCon AI",
-    "url": "https://qcon.ai/",
-    "startDate": "2018-04-10",
-    "endDate": "2018-04-11",
-    "city": "San Francisco, CA",
-    "country": "U.S.A.",
-    "twitter": "@qconai"
-  },
-  {
     "name": "QCon SP",
     "url": "https://qconsp.com/",
     "startDate": "2018-05-09",
@@ -384,6 +381,6 @@
     "city": "Lille",
     "country": "France",
     "cfpUrl": "https://www.takeoffconf.io/identity/registrations/new",
-    "cfpEndDate": ""
+    "cfpEndDate": "2018-04-15"
   }
 ]

@@ -7,6 +7,7 @@ export const TOPICS = {
   ruby: 'Ruby',
   ios: 'iOS / Swift',
   android: 'Android',
+  data: 'Data / AI',
   php: 'PHP',
   'tech-comm': 'Technical communication',
   general: 'General',
@@ -22,6 +23,7 @@ const REPO_URLS = {
   ruby: DEFAULT_REPO_URL,
   ios: DEFAULT_REPO_URL,
   android: DEFAULT_REPO_URL,
+  data: DEFAULT_REPO_URL,
   'tech-comm': DEFAULT_REPO_URL,
   general: DEFAULT_REPO_URL,
 };
