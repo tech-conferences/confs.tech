@@ -1,5 +1,15 @@
 [
   {
+    "name": "ROSS conf Amsterdam",
+    "url": "https://rossconfams.eventbrite.co.uk",
+    "startDate": "2018-05-11",
+    "endDate": "2018-05-12",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "cfpEndDate": "2018-05-08",
+    "twitter": "@rossconf"
+  },
+  {
     "name": "EuRuKo",
     "url": "https://euruko2018.org",
     "startDate": "2018-06-02",
