@@ -51,7 +51,7 @@ class ConferenceList extends Component {
       <div>
         {confsTable}
         {hasMore &&
-          <Link onClick={onLoadMore}>
+          <Link button onClick={onLoadMore}>
             Load more
           </Link>
         }
