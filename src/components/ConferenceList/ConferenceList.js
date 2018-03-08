@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {filter, groupBy, sortBy as _sortBy} from 'lodash';
 import {isPast, parse, format} from 'date-fns';
-import {connectHits} from 'react-instantsearch/connectors';
+import {connectInfiniteHits} from 'react-instantsearch/connectors';
 
 import Heading from '../Heading';
 import Divider from '../Divider';
@@ -30,7 +30,7 @@ class ConferenceList extends Component {
   };
 
   render() {
-    const {hits, showCFP, sortBy, addConferenceUrl} = this.props;
+    const {hits, showCFP, sortBy, addConferenceUrl, hasMore, onLoadMore} = this.props;
     let filteredConferences = hits;
     if (showCFP) {
       filteredConferences = filter(hits, (conf) => {
@@ -47,7 +47,16 @@ class ConferenceList extends Component {
       ];
     });
 
-    return (<div>{confsTable}</div>);
+    return (
+      <div>
+        {confsTable}
+        {hasMore &&
+          <Link onClick={onLoadMore}>
+            Load more
+          </Link>
+        }
+      </div>
+    );
   }
 }
 
@@ -112,4 +121,4 @@ function getConfsMonthsSorted(conferences) {
   });
 }
 
-export default connectHits(ConferenceList);
+export default connectInfiniteHits(ConferenceList);

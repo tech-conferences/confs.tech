@@ -27,6 +27,7 @@ const ONE_YEAR = 365 * 24 * 60 * 60;
 
 class ConferencePage extends Component {
   state = {
+    hitsPerPage: 150,
     sortBy: 'startDate',
     showPast: false,
   };
@@ -71,8 +72,14 @@ class ConferencePage extends Component {
     return filters;
   };
 
+  loadMore = () => {
+    this.setState({
+      hitsPerPage: (this.state.hitsPerPage + 50),
+    });
+  };
+
   render() {
-    const {showPast, sortBy} = this.state;
+    const {showPast, sortBy, hitsPerPage} = this.state;
     const {showCFP, match: {params: {topic, country}}} = this.props;
     const addConferenceUrl = getAddConferenceUrl(topic);
 
@@ -98,7 +105,7 @@ class ConferencePage extends Component {
           indexName={'prod_conferences'}
         >
           <Configure
-            hitsPerPage={150}
+            hitsPerPage={hitsPerPage}
             filters={this.algoliaFilter()}
           />
           <RefinementList
@@ -122,6 +129,7 @@ class ConferencePage extends Component {
           {showCFP && <CfpHeader sortByCfpEndDate={this.sortByCfpEndDate} sortBy={sortBy} />}
 
           <ConferenceList
+            onLoadMore={this.loadMore}
             addConferenceUrl={addConferenceUrl}
             sortBy={sortBy}
             showCFP={showCFP}
