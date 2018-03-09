@@ -235,16 +235,17 @@
   {
     "name": "Interact",
     "url": "https://www.interact2017.org/",
-    "date": "Sept 25-29",
     "startDate": "2017-09-25",
+    "endDate": "2017-09-29",
     "city": "Mumbai, India",
     "country": "India"
   },
   {
-    "name": "SmashingConf",
+    "name": "Smashing Conference",
     "url": "https://smashingconf.com/barcelona-2017/",
     "date": "Oct 17-18",
     "startDate": "2017-10-17",
+    "endDate": "2017-10-18",
     "city": "Barcelona",
     "country": "Spain"
   },

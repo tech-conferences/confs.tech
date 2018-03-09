@@ -109,10 +109,11 @@
   {
     "name": "Beyond Tellerrand",
     "url": "https://beyondtellerrand.com/events/duesseldorf-2018/",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-09",
     "city": "Düsseldorf",
     "country": "Germany",
-    "startDate": "2018-05-07",
-    "endDate": "2018-05-09"
+    "twitter": "@btconf"
   },
   {
     "name": "Beyond Tellerrand",
@@ -192,9 +193,7 @@
     "endDate": "2018-06-09",
     "city": "Hong Kong",
     "country": "Hong Kong",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": "webconf_asia"
+    "twitter": "@webconf_asia"
   },
   {
     "name": "Sunny Tech",
@@ -333,7 +332,7 @@
     "city": "Tallinn",
     "country": "Estonia",
     "cfpUrl": "http://refresh.rocks/call-for-papers",
-    "cfpEndDate": "2018-02-15",
+    "cfpEndDate": "2018-02-18",
     "twitter": "@REFRESHRocks"
   },
   {
