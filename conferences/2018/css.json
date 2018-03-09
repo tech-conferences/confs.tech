@@ -1,7 +1,7 @@
 [
   {
     "name": "CSSDay",
-    "url": "http://2018.cssday.it/",
+    "url": "http://2018.cssday.it",
     "startDate": "2018-03-16",
     "endDate": "2018-03-16",
     "city": "Faenza",
@@ -10,7 +10,7 @@
   },
   {
     "name": "CSSConf AU",
-    "url": "http://2018.cssconf.com.au/",
+    "url": "http://2018.cssconf.com.au",
     "startDate": "2018-03-20",
     "endDate": "2018-03-20",
     "city": "Melbourne",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Frontend United",
-    "url": "https://www.frontendunited.org/",
+    "url": "https://www.frontendunited.org",
     "startDate": "2018-05-31",
     "endDate": "2018-06-02",
     "city": "Utrecht",
@@ -29,7 +29,7 @@
   },
   {
     "name": "CSSConf EU",
-    "url": "https://2018.cssconf.eu/",
+    "url": "https://2018.cssconf.eu",
     "startDate": "2018-06-01",
     "endDate": "2018-06-01",
     "city": "Berlin",
@@ -38,7 +38,7 @@
   },
   {
     "name": "pitercss_conf",
-    "url": "https://pitercss.com/",
+    "url": "https://pitercss.com",
     "startDate": "2018-06-08",
     "endDate": "2018-06-09",
     "city": "St. Petersburg",

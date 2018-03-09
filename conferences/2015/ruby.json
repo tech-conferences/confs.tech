@@ -9,7 +9,7 @@
   },
   {
     "name": "RailsIsrael",
-    "url": "http://railsisrael2015.events.co.il/",
+    "url": "http://railsisrael2015.events.co.il",
     "date": "November 24, 2015",
     "city": "Tel Aviv",
     "country": "Israel",
@@ -17,7 +17,7 @@
   },
   {
     "name": "RubyConf",
-    "url": "http://rubyconf.org/",
+    "url": "http://rubyconf.org",
     "date": "November 15-17, 2015",
     "city": "San Antonio",
     "country": "TX",
@@ -25,7 +25,7 @@
   },
   {
     "name": "RubyDay",
-    "url": "http://www.rubyday.it/",
+    "url": "http://www.rubyday.it",
     "date": "November 13, 2015",
     "city": "Turin",
     "country": "Italy",
@@ -33,7 +33,7 @@
   },
   {
     "name": "RubyWorld Conference",
-    "url": "http://www.rubyworld-conf.org/",
+    "url": "http://www.rubyworld-conf.org",
     "date": "November 11-12, 2015",
     "city": "Matsue",
     "country": "Japan",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Keep Ruby Weird",
-    "url": "http://keeprubyweird.com/",
+    "url": "http://keeprubyweird.com",
     "date": "October 23, 2015",
     "city": "Austin",
     "country": "Texas",
@@ -49,7 +49,7 @@
   },
   {
     "name": "EuRuKo",
-    "url": "http://www.euruko2015.org/",
+    "url": "http://www.euruko2015.org",
     "date": "October 17-18, 2015",
     "city": "Salzburg",
     "country": "Austria",
@@ -57,7 +57,7 @@
   },
   {
     "name": "RubyConf Colombia",
-    "url": "http://www.rubyconf.co/",
+    "url": "http://www.rubyconf.co",
     "date": "October 15-16, 2015",
     "city": "Medellin",
     "country": "Colombia",
@@ -73,7 +73,7 @@
   },
   {
     "name": "ArrrrCamp",
-    "url": "http://2015.arrrrcamp.be/",
+    "url": "http://2015.arrrrcamp.be",
     "date": "October 1-2, 2015",
     "city": "Ghent",
     "country": "Belgium",
@@ -81,7 +81,7 @@
   },
   {
     "name": "ROSSConf Berlin",
-    "url": "http://www.rossconf.io/",
+    "url": "http://www.rossconf.io",
     "date": "September 26, 2015",
     "city": "Berlin",
     "country": "Germany",
@@ -89,7 +89,7 @@
   },
   {
     "name": "Rocky Mountain Ruby Conference",
-    "url": "http://www.rockymtnruby.com/",
+    "url": "http://www.rockymtnruby.com",
     "date": "September 23-25, 2015",
     "city": "Boulder",
     "country": "CO",
@@ -97,7 +97,7 @@
   },
   {
     "name": "RubyConf Brazil",
-    "url": "http://www.rubyconf.com.br/",
+    "url": "http://www.rubyconf.com.br",
     "date": "September 18-19, 2015",
     "city": "São Paulo",
     "country": "Brazil",
@@ -105,7 +105,7 @@
   },
   {
     "name": "WindyCityRails",
-    "url": "http://www.windycityrails.org/",
+    "url": "http://www.windycityrails.org",
     "date": "September 17-18, 2015",
     "city": "Chicago",
     "country": "IL",
@@ -113,7 +113,7 @@
   },
   {
     "name": "RubyConf Portugal",
-    "url": "http://rubyconf.pt/",
+    "url": "http://rubyconf.pt",
     "date": "September 14-15, 2015",
     "city": "Braga",
     "country": "Portugal",
@@ -121,7 +121,7 @@
   },
   {
     "name": "RubyConf Taiwan",
-    "url": "http://rubyconf.tw/",
+    "url": "http://rubyconf.tw",
     "date": "September 11-12, 2015",
     "city": "Taipei",
     "country": "Taiwan",
@@ -129,7 +129,7 @@
   },
   {
     "name": "Barcelona Ruby Conf",
-    "url": "http://www.baruco.org/",
+    "url": "http://www.baruco.org",
     "date": "September 1-2, 2015",
     "city": "Barcelona",
     "country": "Spain",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Madison+ Ruby",
-    "url": "http://madisonpl.us/ruby/",
+    "url": "http://madisonpl.us/ruby",
     "date": "August 20-22, 2015",
     "city": "Madison",
     "country": "WI",
@@ -153,7 +153,7 @@
   },
   {
     "name": "DeccanRubyConf",
-    "url": "http://www.deccanrubyconf.org/",
+    "url": "http://www.deccanrubyconf.org",
     "date": "August 8, 2015",
     "city": "Pune",
     "country": "India",
@@ -161,7 +161,7 @@
   },
   {
     "name": "eurucamp",
-    "url": "http://eurucamp.org/",
+    "url": "http://eurucamp.org",
     "date": "July 31-August 2, 2015",
     "city": "Potsdam",
     "country": "Germany",
@@ -169,7 +169,7 @@
   },
   {
     "name": "Burlington Ruby Conference",
-    "url": "http://burlingtonruby.github.io/conference/",
+    "url": "http://burlingtonruby.github.io/conference",
     "date": "July 31-August 2, 2015",
     "city": "Burlington",
     "country": "VT",
@@ -177,7 +177,7 @@
   },
   {
     "name": "JRubyConf EU",
-    "url": "http://jrubyconf.eu/",
+    "url": "http://jrubyconf.eu",
     "date": "July 31, 2015",
     "city": "Potsdam",
     "country": "Germany",
@@ -185,7 +185,7 @@
   },
   {
     "name": "Brighton Ruby",
-    "url": "http://www.brightonruby.com/",
+    "url": "http://www.brightonruby.com",
     "date": "July 20, 2015",
     "city": "Brighton",
     "country": "U.K.",
@@ -193,7 +193,7 @@
   },
   {
     "name": "Gotham Ruby Conference",
-    "url": "http://goruco.com/",
+    "url": "http://goruco.com",
     "date": "June 20, 2015",
     "city": "New York",
     "country": "NY",
@@ -201,7 +201,7 @@
   },
   {
     "name": "RubyNation",
-    "url": "http://www.rubynation.org/",
+    "url": "http://www.rubynation.org",
     "date": "June 12-13, 2015",
     "city": "Washington",
     "country": "DC",
@@ -209,7 +209,7 @@
   },
   {
     "name": "RedDotRubyConf",
-    "url": "http://www.reddotrubyconf.com/",
+    "url": "http://www.reddotrubyconf.com",
     "date": "June 4-5, 2015",
     "city": "",
     "country": "Singapore",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Ruby Conference Kiev",
-    "url": "http://rubyc.eu/",
+    "url": "http://rubyc.eu",
     "date": "May 30-31, 2015",
     "city": "Kiev",
     "country": "Ukraine",
@@ -233,7 +233,7 @@
   },
   {
     "name": "ROSSConf Vienna",
-    "url": "http://www.rossconf.io/",
+    "url": "http://www.rossconf.io",
     "date": "April 25, 2015",
     "city": "Vienna",
     "country": "Austria",
@@ -241,7 +241,7 @@
   },
   {
     "name": "RailsConf",
-    "url": "http://www.railsconf.com/",
+    "url": "http://www.railsconf.com",
     "date": "April 21-23, 2015",
     "city": "Atlanta",
     "country": "GA",
@@ -249,7 +249,7 @@
   },
   {
     "name": "Ruby Conf India",
-    "url": "http://rubyconfindia.org/",
+    "url": "http://rubyconfindia.org",
     "date": "April 3-5, 2015",
     "city": "Goa",
     "country": "India",
@@ -257,7 +257,7 @@
   },
   {
     "name": "RubyConf Philippines",
-    "url": "http://rubyconf.ph/",
+    "url": "http://rubyconf.ph",
     "date": "March 27-28, 2015",
     "city": "Boracay Island",
     "country": "Philippines",
@@ -265,7 +265,7 @@
   },
   {
     "name": "Ancient City Ruby",
-    "url": "http://www.ancientcityruby.com/",
+    "url": "http://www.ancientcityruby.com",
     "date": "March 26-27, 2015",
     "city": "St. Augustine",
     "country": "FL",
@@ -273,7 +273,7 @@
   },
   {
     "name": "RubyConfLT",
-    "url": "http://www.rubyconf.lt/",
+    "url": "http://www.rubyconf.lt",
     "date": "March 21, 2015",
     "city": "Vilnius",
     "country": "Lithuania",
@@ -281,7 +281,7 @@
   },
   {
     "name": "wroc_love.rb",
-    "url": "http://wrocloverb.com/",
+    "url": "http://wrocloverb.com",
     "date": "March 13-15, 2015",
     "city": "Wrocław",
     "country": "Poland",
@@ -289,7 +289,7 @@
   },
   {
     "name": "Bath Ruby Conference",
-    "url": "http://2015.bathruby.org/",
+    "url": "http://2015.bathruby.org",
     "date": "March 13, 2015",
     "city": "Bath",
     "country": "U.K.",
@@ -297,7 +297,7 @@
   },
   {
     "name": "MountainWest RubyConf",
-    "url": "http://mtnwestrubyconf.org/",
+    "url": "http://mtnwestrubyconf.org",
     "date": "March 9-10, 2015",
     "city": "Salt Lake City",
     "country": "UT",
@@ -305,7 +305,7 @@
   },
   {
     "name": "Tropical Ruby",
-    "url": "http://tropicalrb.com/",
+    "url": "http://tropicalrb.com",
     "date": "March 5-8, 2015",
     "city": "Porto de Galinhas",
     "country": "Brazil",
@@ -321,7 +321,7 @@
   },
   {
     "name": "Rubyfuza",
-    "url": "http://rubyfuza.org/",
+    "url": "http://rubyfuza.org",
     "date": "February 5-6, 2015",
     "city": "Cape Town",
     "country": "South Africa",
@@ -329,7 +329,7 @@
   },
   {
     "name": "Ruby Conf Australia",
-    "url": "http://www.rubyconf.org.au/",
+    "url": "http://www.rubyconf.org.au",
     "date": "February 4-7, 2015",
     "city": "Melbourne",
     "country": "Australia",
@@ -337,7 +337,7 @@
   },
   {
     "name": "Ruby devroom at FOSDEM",
-    "url": "http://fosdem-ruby.github.io/",
+    "url": "http://fosdem-ruby.github.io",
     "date": "January 31 & February 1, 2015",
     "city": "Brussels",
     "country": "Belgium",
@@ -345,7 +345,7 @@
   },
   {
     "name": "Garden City RubyConf",
-    "url": "http://www.gardencityruby.org/",
+    "url": "http://www.gardencityruby.org",
     "date": "January 10, 2015",
     "city": "Bangalore",
     "country": "India",

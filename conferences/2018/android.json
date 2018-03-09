@@ -1,7 +1,7 @@
 [
   {
     "name": "MCE",
-    "url": "https://2018.mceconf.com/",
+    "url": "https://2018.mceconf.com",
     "startDate": "2018-06-05",
     "endDate": "2018-06-06",
     "city": "Warsaw",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Appdevcon",
-    "url": "http://appdevcon.nl/",
+    "url": "http://appdevcon.nl",
     "startDate": "2018-03-15",
     "endDate": "2018-03-16",
     "city": "Amsterdam",
@@ -18,14 +18,14 @@
   },
   {
     "name": "mDevCamp",
-    "url": "https://mdevcamp.eu/",
+    "url": "https://mdevcamp.eu",
     "city": "Prague",
     "country": "Czechia",
     "startDate": "2018-06-15"
   },
   {
     "name": "Google I/O",
-    "url": "https://events.google.com/io/",
+    "url": "https://events.google.com/io",
     "city": "Mountain View",
     "country": "U.S.A.",
     "startDate": "2018-05-08",
@@ -61,13 +61,13 @@
     "endDate": "2018-07-06",
     "city": "Barcelona",
     "country": "Spain",
-    "cfpUrl": "https://addconf.com/2018/call-for-proposals/",
+    "cfpUrl": "https://addconf.com/2018/call-for-proposals",
     "cfpEndDate": "2017-02-15",
     "twitter": "@addconf"
   },
   {
     "name": "CodeMobile",
-    "url": "http://www.codemobile.co.uk/",
+    "url": "http://www.codemobile.co.uk",
     "city": "Chester",
     "country": "U.K.",
     "startDate": "2018-04-02",
@@ -86,7 +86,7 @@
   },
   {
     "name": "Droidcon Berlin",
-    "url": "https://www.de.droidcon.com/",
+    "url": "https://www.de.droidcon.com",
     "city": "Berlin",
     "country": "Germany",
     "startDate": "2018-06-25",
@@ -96,7 +96,7 @@
   },
   {
     "name": "DroidKaigi",
-    "url": "https://droidkaigi.github.io/2018/",
+    "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
     "country": "Japan",
     "startDate": "2018-02-08",
@@ -105,7 +105,7 @@
 
   {
     "name": "App Builders",
-    "url": "https://www.appbuilders.ch/",
+    "url": "https://www.appbuilders.ch",
     "startDate": "2018-06-16",
     "endDate": "2018-06-17",
     "city": "Lugano",
@@ -113,7 +113,7 @@
   },
   {
     "name": "MobileTech",
-    "url": "https://mobiletechcon.de/en/",
+    "url": "https://mobiletechcon.de/en",
     "startDate": "2018-03-12",
     "endDate": "2018-03-14",
     "city": "Munich",
@@ -121,7 +121,7 @@
   },
   {
     "name": "Appdevcon",
-    "url": "http://appdevcon.nl/",
+    "url": "http://appdevcon.nl",
     "startDate": "2018-03-15",
     "endDate": "2018-03-16",
     "city": "Amsterdam",
@@ -129,7 +129,7 @@
   },
   {
     "name": "MobOS",
-    "url": "http://romobos.com/",
+    "url": "http://romobos.com",
     "startDate": "2018-02-15",
     "endDate": "2018-02-16",
     "city": "Cluj-Napoca",
@@ -142,7 +142,7 @@
     "endDate": "2018-07-20",
     "city": "Denver, CO",
     "country": "U.S.A.",
-    "cfpUrl": "https://360andev.com/call-for-papers/",
+    "cfpUrl": "https://360andev.com/call-for-papers",
     "cfpEndDate": "2018-04-06",
     "twitter": "@360andev"
   },

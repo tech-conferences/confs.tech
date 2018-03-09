@@ -1,7 +1,7 @@
 [
   {
     "name": "Deccan RubyConf",
-    "url": "http://www.deccanrubyconf.org/",
+    "url": "http://www.deccanrubyconf.org",
     "startDate": "2017-08-12",
     "endDate": "2017-08-12",
     "city": "Pune",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Brighton Ruby Conf",
-    "url": "http://brightonruby.com/",
+    "url": "http://brightonruby.com",
     "startDate": "2017-07-07",
     "endDate": "2017-07-07",
     "city": "Brighton",
@@ -19,7 +19,7 @@
   },
   {
     "name": "GrillRB",
-    "url": "http://grillrb.com/",
+    "url": "http://grillrb.com",
     "startDate": "2017-07-1",
     "endDate": "2017-07-2",
     "city": "Wrocław",
@@ -28,7 +28,7 @@
   },
   {
     "name": "GORUCO",
-    "url": "http://goruco.com/",
+    "url": "http://goruco.com",
     "startDate": "2017-06-24",
     "endDate": "2017-06-24",
     "city": "New York",
@@ -37,7 +37,7 @@
   },
   {
     "name": "RedDotRubyConf",
-    "url": "http://www.reddotrubyconf.com/",
+    "url": "http://www.reddotrubyconf.com",
     "startDate": "2017-06-22",
     "endDate": "2017-06-23",
     "country": "Singapore",
@@ -45,7 +45,7 @@
   },
   {
     "name": "RubyNation",
-    "url": "http://www.rubynation.org/",
+    "url": "http://www.rubynation.org",
     "startDate": "2017-06-16",
     "endDate": "2017-06-16",
     "city": "Arlington",
@@ -54,7 +54,7 @@
   },
   {
     "name": "RubyConf EA",
-    "url": "http://rubyconf.nairuby.org/",
+    "url": "http://rubyconf.nairuby.org",
     "startDate": "2017-06-08",
     "endDate": "2017-06-10",
     "city": "Nairobi",
@@ -63,7 +63,7 @@
   },
   {
     "name": "RubyC",
-    "url": "http://rubyc.eu/",
+    "url": "http://rubyc.eu",
     "startDate": "2017-06-3",
     "endDate": "2017-06-04",
     "city": "Kyiv",
@@ -72,7 +72,7 @@
   },
   {
     "name": "RailsConf",
-    "url": "http://www.railsconf.com/",
+    "url": "http://www.railsconf.com",
     "startDate": "2017-04-25",
     "endDate": "2017-04-27",
     "city": "Phoenix",
@@ -81,7 +81,7 @@
   },
   {
     "name": "RubyHACK",
-    "url": "http://rubyhack.com/",
+    "url": "http://rubyhack.com",
     "startDate": "2017-04-20",
     "endDate": "2017-04-21",
     "city": "Salt Lake City",
@@ -90,7 +90,7 @@
   },
   {
     "name": "RubyConfBY",
-    "url": "http://rubyconference.by/en/",
+    "url": "http://rubyconference.by/en",
     "startDate": "2017-04-2",
     "endDate": "2017-04-2",
     "city": "Minsk",
@@ -99,7 +99,7 @@
   },
   {
     "name": "RubyConfLT",
-    "url": "https://rubyconf.lt/",
+    "url": "https://rubyconf.lt",
     "startDate": "2017-04-1",
     "endDate": "2017-04-1",
     "city": "Vilnius",
@@ -108,7 +108,7 @@
   },
   {
     "name": "wroc_love.rb",
-    "url": "http://www.wrocloverb.com/",
+    "url": "http://www.wrocloverb.com",
     "startDate": "2017-03-17",
     "endDate": "2017-03-19",
     "city": "Wrocław",
@@ -117,7 +117,7 @@
   },
   {
     "name": "RubyConf Philippines",
-    "url": "http://rubyconf.ph/",
+    "url": "http://rubyconf.ph",
     "startDate": "2017-03-16",
     "endDate": "2017-03-18",
     "city": "Bohol",
@@ -135,7 +135,7 @@
   },
   {
     "name": "Ruby devroom at FOSDEM",
-    "url": "http://fosdem.rubybelgium.be/",
+    "url": "http://fosdem.rubybelgium.be",
     "startDate": "2017-02-3",
     "endDate": "2017-02-04",
     "city": "Brussels",
@@ -144,7 +144,7 @@
   },
   {
     "name": "Rubyfuza",
-    "url": "http://www.rubyfuza.org/",
+    "url": "http://www.rubyfuza.org",
     "startDate": "2017-02-2",
     "endDate": "2017-02-04",
     "city": "Cape Town",
@@ -153,7 +153,7 @@
   },
   {
     "name": "Ruby Conf India",
-    "url": "http://rubyconfindia.org/",
+    "url": "http://rubyconfindia.org",
     "startDate": "2017-01-27",
     "endDate": "2017-01-29",
     "city": "Kochi",
@@ -162,7 +162,7 @@
   },
   {
     "name": "RubyConf Colombia",
-    "url": "http://www.rubyconf.co/",
+    "url": "http://www.rubyconf.co",
     "startDate": "2017-09-08",
     "endDate": "2017-09-09",
     "city": "Medellin",
@@ -171,7 +171,7 @@
   },
   {
     "name": "RubyConf China",
-    "url": "http://rubyconfchina.org/",
+    "url": "http://rubyconfchina.org",
     "startDate": "2017-09-16",
     "endDate": "2017-09-17",
     "city": "Hangzhou",
@@ -198,7 +198,7 @@
   },
   {
     "name": "EuRuKo",
-    "url": "http://www.euruko2017.org/",
+    "url": "http://www.euruko2017.org",
     "startDate": "2017-09-29",
     "endDate": "2017-09-30",
     "city": "Budapest",
@@ -207,7 +207,7 @@
   },
   {
     "name": "Southeast Ruby",
-    "url": "https://southeastruby.com/",
+    "url": "https://southeastruby.com",
     "startDate": "2017-10-05",
     "endDate": "2017-10-06",
     "city": "Nashville",
@@ -216,7 +216,7 @@
   },
   {
     "name": "RubyConf Jakarta",
-    "url": "http://ruby.id/conf/2017/",
+    "url": "http://ruby.id/conf/2017",
     "startDate": "2017-10-06",
     "endDate": "2017-10-07",
     "city": "Jakarta",
@@ -234,7 +234,7 @@
   },
   {
     "name": "RubyConf MY",
-    "url": "http://rubyconf.my/",
+    "url": "http://rubyconf.my",
     "startDate": "2017-10-12",
     "endDate": "2017-10-13",
     "city": "Cyberjaya",
@@ -243,7 +243,7 @@
   },
   {
     "name": "Keep Ruby Weird",
-    "url": "https://keeprubyweird.com/",
+    "url": "https://keeprubyweird.com",
     "startDate": "2017-10-27",
     "endDate": "2017-10-27",
     "city": "Austin",
@@ -252,7 +252,7 @@
   },
   {
     "name": "RubyWorld Conference",
-    "url": "http://2016.rubyworld-conf.org/en/news/2017/01/rwc2017/",
+    "url": "http://2016.rubyworld-conf.org/en/news/2017/01/rwc2017",
     "startDate": "2017-11-1",
     "endDate": "2017-11-2",
     "city": "Matsue",
@@ -261,7 +261,7 @@
   },
   {
     "name": "Kiwi Ruby",
-    "url": "http://kiwi.ruby.nz/",
+    "url": "http://kiwi.ruby.nz",
     "startDate": "2017-11-2",
     "endDate": "2017-11-3",
     "city": "Wellington",
@@ -270,7 +270,7 @@
   },
   {
     "name": "RubyConf",
-    "url": "http://rubyconf.org/",
+    "url": "http://rubyconf.org",
     "startDate": "2017-11-15",
     "endDate": "2017-11-17",
     "city": "New Orleans",
@@ -279,7 +279,7 @@
   },
   {
     "name": "Functional Conf",
-    "url": "https://functionalconf.com/",
+    "url": "https://functionalconf.com",
     "startDate": "2017-11-16",
     "endDate": "2017-11-19",
     "city": "Bangalore",

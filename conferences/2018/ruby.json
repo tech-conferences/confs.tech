@@ -21,7 +21,7 @@
   },
   {
     "name": "RubyC",
-    "url": "http://rubyc.eu/",
+    "url": "http://rubyc.eu",
     "startDate": "2018-06-02",
     "endDate": "2018-06-03",
     "city": "Kyiv",
@@ -67,7 +67,7 @@
   },
   {
     "name": "Ruby on Ice",
-    "url": "https://rubyonice.com/",
+    "url": "https://rubyonice.com",
     "startDate": "2018-01-26",
     "endDate": "2018-01-28",
     "city": "Tegernsee",
@@ -105,7 +105,7 @@
   },
   {
     "name": "RailsConf",
-    "url": "https://railsconf.com/",
+    "url": "https://railsconf.com",
     "startDate": "2018-04-17",
     "endDate": "2018-04-19",
     "city": "Pittsburgh",
@@ -114,7 +114,7 @@
   },
   {
     "name": "Bath Ruby Conference",
-    "url": "http://2018.bathruby.uk/",
+    "url": "http://2018.bathruby.uk",
     "startDate": "2018-03-22",
     "endDate": "2018-03-23",
     "city": "Bath",
@@ -132,7 +132,7 @@
   },
   {
     "name": "RubyConf India",
-    "url": "http://rubyconfindia.org/",
+    "url": "http://rubyconfindia.org",
     "startDate": "2018-02-09",
     "endDate": "2018-02-10",
     "city": "Bengaluru",
@@ -194,7 +194,7 @@
   },
   {
     "name": "Paris.rb Conf",
-    "url": "http://2018.rubyparis.org/",
+    "url": "http://2018.rubyparis.org",
     "startDate": "2018-06-28",
     "endDate": "2018-06-29",
     "city": "Paris",
@@ -203,7 +203,7 @@
   },
   {
     "name": "Brighton Ruby",
-    "url": "https://brightonruby.com/",
+    "url": "https://brightonruby.com",
     "startDate": "2018-07-06",
     "endDate": "2018-07-06",
     "city": "Brighton",

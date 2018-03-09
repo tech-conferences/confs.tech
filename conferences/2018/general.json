@@ -1,7 +1,7 @@
 [
   {
     "name": "Agile Portugal 2018",
-    "url": "https://2018.agilept.org/",
+    "url": "https://2018.agilept.org",
     "startDate": "2018-05-25",
     "endDate": "2018-05-25",
     "city": "Porto",
@@ -12,7 +12,7 @@
   },
   {
     "name": "J on the Beach",
-    "url": "https://jonthebeach.com/",
+    "url": "https://jonthebeach.com",
     "startDate": "2018-05-23",
     "endDate": "2018-05-25",
     "city": "Málaga",
@@ -23,10 +23,10 @@
   },
   {
     "name": "Web Directions Culture",
-    "url": "http://webdirections.org/culture/",
+    "url": "http://webdirections.org/culture",
     "startDate": "2018-10-31",
     "cfpEndDate": "2018-05-01",
-    "cfpUrl": "https://www.webdirections.org/speaking/",
+    "cfpUrl": "https://www.webdirections.org/speaking",
     "city": "Sydney",
     "country": "Australia"
   },
@@ -55,7 +55,7 @@
   },
   {
     "name": "Codemotion Amsterdam",
-    "url": "https://amsterdam2018.codemotionworld.com/",
+    "url": "https://amsterdam2018.codemotionworld.com",
     "startDate": "2018-05-08",
     "endDate": "2018-05-09",
     "city": "Amsterdam",
@@ -64,7 +64,7 @@
   },
   {
     "name": "!!Con",
-    "url": "http://bangbangcon.com/",
+    "url": "http://bangbangcon.com",
     "startDate": "2018-05-12",
     "endDate": "2018-05-13",
     "city": "New York, NY",
@@ -73,7 +73,7 @@
   },
   {
     "name": "Deconstruct",
-    "url": "https://www.deconstructconf.com/",
+    "url": "https://www.deconstructconf.com",
     "startDate": "2018-05-21",
     "endDate": "2018-05-22",
     "city": "Seattle, WA",
@@ -90,7 +90,7 @@
   },
   {
     "name": "Index Developer Conference",
-    "url": "https://developer.ibm.com/indexconf/",
+    "url": "https://developer.ibm.com/indexconf",
     "startDate": "2018-02-20",
     "endDate": "2018-02-22",
     "city": "San Francisco, CA",
@@ -99,7 +99,7 @@
   },
   {
     "name": "Codemotion Rome",
-    "url": "https://rome2018.codemotionworld.com/",
+    "url": "https://rome2018.codemotionworld.com",
     "startDate": "2018-04-13",
     "endDate": "2018-04-14",
     "city": "Rome",
@@ -108,7 +108,7 @@
   },
   {
     "name": "Beyond Tellerrand",
-    "url": "https://beyondtellerrand.com/events/duesseldorf-2018/",
+    "url": "https://beyondtellerrand.com/events/duesseldorf-2018",
     "startDate": "2018-05-07",
     "endDate": "2018-05-09",
     "city": "Düsseldorf",
@@ -125,7 +125,7 @@
   },
   {
     "name": "Traction",
-    "url": "https://www.tractionconf.io/",
+    "url": "https://www.tractionconf.io",
     "city": "Vancouver",
     "country": "Canada",
     "startDate": "2018-08-08",
@@ -133,7 +133,7 @@
   },
   {
     "name": "The Legacy Conference",
-    "url": "http://www.legacycan.ca/",
+    "url": "http://www.legacycan.ca",
     "city": "Ottawa",
     "country": "Canada",
     "startDate": "2018-03-23",
@@ -141,7 +141,7 @@
   },
   {
     "name": "True North",
-    "url": "http://truenorthwaterloo.com/",
+    "url": "http://truenorthwaterloo.com",
     "city": "Waterloo",
     "country": "Canada",
     "startDate": "2018-05-29",
@@ -149,7 +149,7 @@
   },
   {
     "name": "Google I/O",
-    "url": "https://events.google.com/io/",
+    "url": "https://events.google.com/io",
     "city": "Mountain View",
     "country": "U.S.A.",
     "startDate": "2018-05-08",
@@ -171,7 +171,7 @@
   },
   {
     "name": "ScaleConf Colombia",
-    "url": "https://scaleconfco.com/",
+    "url": "https://scaleconfco.com",
     "city": "Medellín",
     "country": "Colombia",
     "startDate": "2018-04-27",
@@ -180,7 +180,7 @@
   },
   {
     "name": "#LeadDev London - The Lead Developer Conference",
-    "url": "https://london2018.theleaddeveloper.com/",
+    "url": "https://london2018.theleaddeveloper.com",
     "city": "London",
     "country": "U.K.",
     "startDate": "2018-06-27",
@@ -197,7 +197,7 @@
   },
   {
     "name": "Sunny Tech",
-    "url": "https://sunny-tech.io/",
+    "url": "https://sunny-tech.io",
     "startDate": "2018-06-28",
     "endDate": "2018-06-29",
     "city": "Montpellier",
@@ -206,7 +206,7 @@
   },
   {
     "name": "CodeMash",
-    "url": "https://www.codemash.org/",
+    "url": "https://www.codemash.org",
     "city": "Sandusky, OH",
     "country": "U.S.A.",
     "startDate": "2018-01-09",
@@ -214,7 +214,7 @@
   },
   {
     "name": "QCon London",
-    "url": "https://qconlondon.com/",
+    "url": "https://qconlondon.com",
     "city": "London",
     "country": "U.K.",
     "startDate": "2018-03-05",
@@ -223,7 +223,7 @@
   },
   {
     "name": "Codeland Conf",
-    "url": "http://codelandconf.com/",
+    "url": "http://codelandconf.com",
     "city": "New York City",
     "country": "U.S.A.",
     "startDate": "2018-05-04",
@@ -231,7 +231,7 @@
   },
   {
     "name": "Reason Conf",
-    "url": "https://www.reason-conf.com/",
+    "url": "https://www.reason-conf.com",
     "city": "Vienna",
     "country": "Austria",
     "startDate": "2018-05-11",
@@ -248,7 +248,7 @@
   },
   {
     "name": "QCon SP",
-    "url": "https://qconsp.com/",
+    "url": "https://qconsp.com",
     "startDate": "2018-05-09",
     "endDate": "2018-05-11",
     "city": "São Paulo",
@@ -257,7 +257,7 @@
   },
   {
     "name": "We RISE",
-    "url": "https://werise.tech/",
+    "url": "https://werise.tech",
     "startDate": "2018-06-21",
     "endDate": "2018-06-22",
     "city": "Atlanta, GA",
@@ -268,7 +268,7 @@
   },
   {
     "name": "QCon NY",
-    "url": "https://qconnewyork.com/",
+    "url": "https://qconnewyork.com",
     "startDate": "2018-06-27",
     "endDate": "2018-06-29",
     "city": "New York City",
@@ -306,7 +306,7 @@
   },
   {
     "name": "Iterate Developer Conference",
-    "url": "https://www.iterateconf.io/",
+    "url": "https://www.iterateconf.io",
     "startDate": "2018-02-27",
     "endDate": "2018-02-27",
     "city": "San Francisco",
@@ -326,7 +326,7 @@
   },
   {
     "name": "Refresh",
-    "url": "http://refresh.rocks/",
+    "url": "http://refresh.rocks",
     "startDate": "2018-09-07",
     "endDate": "2018-09-07",
     "city": "Tallinn",
@@ -348,7 +348,7 @@
   },
   {
     "name": "SyntaxCon",
-    "url": "https://2018.syntaxcon.com/",
+    "url": "https://2018.syntaxcon.com",
     "startDate": "2018-06-06",
     "endDate": "2018-06-08",
     "city": "Charleston, SC",
@@ -366,7 +366,7 @@
   },
   {
     "name": "NightlyBuild",
-    "url": "https://www.nightlybuild.io/",
+    "url": "https://www.nightlybuild.io",
     "startDate": "2018-08-31",
     "city": "Cologne",
     "country": "Germany",
@@ -374,7 +374,7 @@
   },
   {
     "name": "TakeOff Conference",
-    "url": "https://www.takeoffconf.io/",
+    "url": "https://www.takeoffconf.io",
     "startDate": "2018-06-7",
     "endDate": "2018-06-8",
     "city": "Lille",

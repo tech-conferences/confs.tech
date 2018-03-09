@@ -39,6 +39,20 @@ Object.keys(conferencesJSON).forEach((year) => {
         expect(duplicates.length).toBe(0);
       });
 
+      it('url does not finishes with a slash', () => {
+        conferences.forEach((conference) => {
+          if ((conference.url).endsWith('/')) {
+            console.error(`${conference.url} finishes with a slash`);
+          }
+          expect((conference.url).endsWith('/')).toBe(false);
+
+          if ((conference.cfpUrl || '').endsWith('/')) {
+            console.error(`${conference.cfpUrl} finishes with a slash`);
+          }
+          expect((conference.cfpUrl || '').endsWith('/')).toBe(false);
+        });
+      });
+
       it('is not missing mandatory key', () => {
         conferences.forEach((conference) => {
           REQUIRED_KEYS.forEach((requiredKey) => {

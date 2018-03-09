@@ -9,18 +9,18 @@
   },
   {
     "name": "360|AnDev",
-    "url": "http://360andev.com/",
+    "url": "http://360andev.com",
     "city": "Denver, Colorado",
     "country": "U.S.A.",
     "startDate": "2017-07-13",
     "endDate": "2017-07-14",
     "cfpStart": "2017-03-01",
     "cfpEnd": "2017-04-07",
-    "cfpUrl": "https://360andev.com/call-for-papers/"
+    "cfpUrl": "https://360andev.com/call-for-papers"
   },
   {
     "name": "App Builders",
-    "url": "https://appbuilders.ch/",
+    "url": "https://appbuilders.ch",
     "city": "Lausanne",
     "country": "Switzerland",
     "startDate": "2017-04-24",
@@ -28,7 +28,7 @@
   },
   {
     "name": "AppDevCon",
-    "url": "http://www.appdevcon.nl/",
+    "url": "http://www.appdevcon.nl",
     "city": "Amsterdam",
     "country": "NL",
     "startDate": "2017-03-16",
@@ -46,11 +46,11 @@
     "endDate": "2017-06-23",
     "cfpStart": "2017-02-10",
     "cfpEnd": "2017-03-15",
-    "cfpUrl": "https://addconf.com/call_for_papers/"
+    "cfpUrl": "https://addconf.com/call_for_papers"
   },
   {
     "name": "AnDevCon",
-    "url": "http://www.andevcon.com/",
+    "url": "http://www.andevcon.com",
     "city": "Washington D.C.",
     "country": "U.S.A.",
     "startDate": "2017-07-17",
@@ -60,7 +60,7 @@
   },
   {
     "name": "Android DevConference",
-    "url": "http://androidconference2017.imasters.com.br/",
+    "url": "http://androidconference2017.imasters.com.br",
     "city": "São Paulo",
     "country": "Brazil",
     "startDate": "2017-08-24",
@@ -71,7 +71,7 @@
   },
   {
     "name": "Android Summit",
-    "url": "http://androidsummit.org/",
+    "url": "http://androidsummit.org",
     "city": "McLean",
     "country": "VA",
     "startDate": "2017-08-24",
@@ -82,18 +82,18 @@
   },
   {
     "name": "Android Makers",
-    "url": "http://androidmakers.fr/",
+    "url": "http://androidmakers.fr",
     "city": "Paris",
     "country": "France",
     "startDate": "2017-04-10",
     "endDate": "2017-04-11",
     "cfpStart": "2016-12-01",
     "cfpEnd": "2017-02-16",
-    "cfpUrl": " http://cfp.androidmakers.fr/"
+    "cfpUrl": " http://cfp.androidmakers.fr"
   },
   {
     "name": "AndroidTO",
-    "url": "http://androidto.com/",
+    "url": "http://androidto.com",
     "city": "Toronto",
     "country": "Canada",
     "startDate": "2017-09-20",
@@ -133,7 +133,7 @@
   },
   {
     "name": "Apps World Evolution",
-    "url": "https://tmt.knect365.com/apps-world/",
+    "url": "https://tmt.knect365.com/apps-world",
     "city": "London",
     "country": "U.K.",
     "startDate": "2017-06-13",
@@ -148,22 +148,22 @@
     "endDate": "2017-04-21",
     "cfpStart": "2016-11-08",
     "cfpEnd": "2017-01-18",
-    "cfpUrl": "http://chicagoroboto.com/call-for-papers/"
+    "cfpUrl": "http://chicagoroboto.com/call-for-papers"
   },
   {
     "name": "CodeMobile",
-    "url": "http://www.codemobile.co.uk/",
+    "url": "http://www.codemobile.co.uk",
     "city": "Chester",
     "country": "U.K.",
     "startDate": "2017-04-17",
     "endDate": "2017-04-20",
     "cfpStart": "2016-09-01",
     "cfpEnd": "2016-10-31",
-    "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers/"
+    "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers"
   },
   {
     "name": "GDG DevFest",
-    "url": "https://devfest.gdg.lv/",
+    "url": "https://devfest.gdg.lv",
     "startDate": "2017-11-17",
     "endDate": "2017-11-17",
     "city": "Riga",
@@ -185,7 +185,7 @@
   },
   {
     "name": "GDG DevFest",
-    "url": "http://www.devfestbh.com.br/",
+    "url": "http://www.devfestbh.com.br",
     "city": "Belo Horizonte, MG",
     "country": "Brazil",
     "startDate": "2017-11-18",
@@ -193,7 +193,7 @@
   },
   {
     "name": "GDG DevFest",
-    "url": "https://devfestcerrado.com.br/",
+    "url": "https://devfestcerrado.com.br",
     "city": "Goiânia, GO",
     "country": "Brazil",
     "startDate": "2017-09-30",
@@ -204,7 +204,7 @@
   },
   {
     "name": "DevFestDC",
-    "url": "http://www.devfestdc.org/",
+    "url": "http://www.devfestdc.org",
     "city": "Washington DC",
     "country": "U.S.A.",
     "startDate": "2017-05-05",
@@ -226,7 +226,7 @@
   },
   {
     "name": "GDG DevFest",
-    "url": "https://devfestflorida.org/",
+    "url": "https://devfestflorida.org",
     "city": "Orlando, FL",
     "country": "U.S.A.",
     "startDate": "2017-11-11",
@@ -237,7 +237,7 @@
   },
   {
     "name": "GDG Devfest",
-    "url": "https://hamburg.devfest.de/",
+    "url": "https://hamburg.devfest.de",
     "city": "Hamburg",
     "country": "Germany",
     "startDate": "2017-11-25",
@@ -248,7 +248,7 @@
   },
   {
     "name": "DevFest KC",
-    "url": "https://devfestkc.com/",
+    "url": "https://devfestkc.com",
     "city": "Kansas City, MO",
     "country": "U.S.A.",
     "startDate": "2017-02-18",
@@ -256,7 +256,7 @@
   },
   {
     "name": "GDG DevFest",
-    "url": "https://devfestlima.com/",
+    "url": "https://devfestlima.com",
     "city": "Lima",
     "country": "Peru",
     "startDate": "2017-09-23",
@@ -264,7 +264,7 @@
   },
   {
     "name": "GDG DevFest",
-    "url": "https://devfest.gdg.org.ua/",
+    "url": "https://devfest.gdg.org.ua",
     "city": "Lviv",
     "country": "Ukraine",
     "startDate": "2017-10-13",
@@ -272,7 +272,7 @@
   },
   {
     "name": "GDG DevFest",
-    "url": "https://devfest.pl/",
+    "url": "https://devfest.pl",
     "city": "Rzeszów",
     "country": "Poland",
     "startDate": "2017-09-07",
@@ -280,7 +280,7 @@
   },
   {
     "name": "GDG DevFest",
-    "url": "https://gdg-siberia.com/",
+    "url": "https://gdg-siberia.com",
     "city": "Novosibirsk",
     "country": "Russia",
     "startDate": "2017-09-23",
@@ -299,7 +299,7 @@
   },
   {
     "name": "DevFest MN",
-    "url": "https://devfest.mn/",
+    "url": "https://devfest.mn",
     "city": "Minneapolis, MN",
     "country": "U.S.A.",
     "startDate": "2017-02-04",
@@ -310,18 +310,18 @@
   },
   {
     "name": "Devoxx",
-    "url": "http://devoxx.be/",
+    "url": "http://devoxx.be",
     "city": "Antwerp",
     "country": "Belgium",
     "startDate": "2017-11-06",
     "endDate": "2017-11-10",
     "cfpStart": "2017-05-22",
     "cfpEnd": "2017-07-07",
-    "cfpUrl": "https://cfp.devoxx.be/"
+    "cfpUrl": "https://cfp.devoxx.be"
   },
   {
     "name": "Devoxx",
-    "url": "http://devoxx.fr/",
+    "url": "http://devoxx.fr",
     "city": "Paris",
     "country": "France",
     "startDate": "2017-04-05",
@@ -329,18 +329,18 @@
   },
   {
     "name": "Devoxx",
-    "url": "http://www.devoxx.co.uk/",
+    "url": "http://www.devoxx.co.uk",
     "city": "London",
     "country": "U.K.",
     "startDate": "2017-05-11",
     "endDate": "2017-05-12",
     "cfpStart": "2016-12-28",
     "cfpEnd": "2017-01-16",
-    "cfpUrl": " http://cfp.devoxx.co.uk/"
+    "cfpUrl": " http://cfp.devoxx.co.uk"
   },
   {
     "name": "Devoxx",
-    "url": "http://devoxx.us/",
+    "url": "http://devoxx.us",
     "city": "San Jose, CA",
     "country": "U.S.A.",
     "startDate": "2017-03-21",
@@ -348,7 +348,7 @@
   },
   {
     "name": "Droid Knights",
-    "url": "https://droidknights.github.io/2017/",
+    "url": "https://droidknights.github.io/2017",
     "city": "Seoul, Sout",
     "country": "Korea",
     "startDate": "2017-03-25",
@@ -388,7 +388,7 @@
   },
   {
     "name": "Droidcon",
-    "url": "http://droidcon.com.bd/",
+    "url": "http://droidcon.com.bd",
     "city": "Dhaka",
     "country": "Bangladesh",
     "startDate": "2017-01-27",
@@ -396,29 +396,29 @@
   },
   {
     "name": "Droidcon",
-    "url": "http://droidcongr17.moonshot.gr/",
+    "url": "http://droidcongr17.moonshot.gr",
     "city": "Athens",
     "country": "Greece",
     "startDate": "2017-06-13",
     "endDate": "2017-06-15",
     "cfpStart": "2017-03-07",
     "cfpEnd": "2017-05-14",
-    "cfpUrl": " http://droidcongr17.moonshot.gr/call-for-papers/"
+    "cfpUrl": " http://droidcongr17.moonshot.gr/call-for-papers"
   },
   {
     "name": "Droidcon",
-    "url": "http://it.droidcon.com/2017/",
+    "url": "http://it.droidcon.com/2017",
     "city": "Turin",
     "country": "IT",
     "startDate": "2017-04-06",
     "endDate": "2017-04-07",
     "cfpStart": "2016-10-14",
     "cfpEnd": "2017-01-31",
-    "cfpUrl": "http://it.droidcon.com/2017/call-for-papers-droidon-italy/"
+    "cfpUrl": "http://it.droidcon.com/2017/call-for-papers-droidon-italy"
   },
   {
     "name": "Droidcon",
-    "url": "http://droidcon.pl/",
+    "url": "http://droidcon.pl",
     "city": "Krakow",
     "country": "Poland",
     "startDate": "2017-12-01",
@@ -429,18 +429,18 @@
   },
   {
     "name": "Droidcon",
-    "url": "http://droidcon.nyc/",
+    "url": "http://droidcon.nyc",
     "city": "New York City",
     "country": "U.S.A.",
     "startDate": "2017-09-25",
     "endDate": "2017-09-26",
     "cfpStart": "2017-05-24",
     "cfpEnd": "2017-07-09",
-    "cfpUrl": " https://droidcon-server.herokuapp.com/"
+    "cfpUrl": " https://droidcon-server.herokuapp.com"
   },
   {
     "name": "Droidcon",
-    "url": "http://droidcon.do/",
+    "url": "http://droidcon.do",
     "city": "Santo Domingo, Repúblic",
     "country": "Dominicana",
     "startDate": "2017-03-03",
@@ -480,7 +480,7 @@
   },
   {
     "name": "DroidKaigi",
-    "url": "https://droidkaigi.github.io/2017/en/",
+    "url": "https://droidkaigi.github.io/2017/en",
     "city": "Tokyo",
     "country": "Japan",
     "startDate": "2017-03-09",
@@ -491,7 +491,7 @@
   },
   {
     "name": "Droids 4 Droids",
-    "url": "http://gt.droids4droids.com/",
+    "url": "http://gt.droids4droids.com",
     "city": "Guatemala City",
     "country": "Guatemala",
     "startDate": "2017-10-18",
@@ -502,7 +502,7 @@
   },
   {
     "name": "Droids 4 Droids",
-    "url": "http://lima.droids4droids.com/",
+    "url": "http://lima.droids4droids.com",
     "city": "Lima",
     "country": "Peru",
     "startDate": "2017-09-22",
@@ -513,7 +513,7 @@
   },
   {
     "name": "Facebook F8",
-    "url": "https://www.fbf8.com/",
+    "url": "https://www.fbf8.com",
     "city": "San Jose, CA",
     "country": "U.S.A.",
     "startDate": "2017-04-18",
@@ -521,18 +521,18 @@
   },
   {
     "name": "Fragments",
-    "url": "https://fragments.talkfunnel.com/2017/",
+    "url": "https://fragments.talkfunnel.com/2017",
     "city": "Bangalore",
     "country": "India",
     "startDate": "2017-09-12",
     "endDate": "2017-09-13",
     "cfpStart": "2017-05-17",
     "cfpEnd": "2017-07-02",
-    "cfpUrl": "https://fragments.talkfunnel.com/2017/"
+    "cfpUrl": "https://fragments.talkfunnel.com/2017"
   },
   {
     "name": "GDD Europe",
-    "url": "https://developers.google.com/events/gdd-europe/",
+    "url": "https://developers.google.com/events/gdd-europe",
     "city": "Krakow",
     "country": "Poland",
     "startDate": "2017-09-05",
@@ -540,7 +540,7 @@
   },
   {
     "name": "GDG/Heraklion",
-    "url": "http://heraklion.googledevelopers.gr/",
+    "url": "http://heraklion.googledevelopers.gr",
     "city": "Heraklion, Crete",
     "country": "Greece",
     "startDate": "2017-07-25",
@@ -548,7 +548,7 @@
   },
   {
     "name": "Google Cloud Next",
-    "url": "https://cloudnext.withgoogle.com/",
+    "url": "https://cloudnext.withgoogle.com",
     "city": "San Francisco, CA",
     "country": "U.S.A.",
     "startDate": "2017-03-08",
@@ -556,7 +556,7 @@
   },
   {
     "name": "Google I/O",
-    "url": "https://events.google.com/io/",
+    "url": "https://events.google.com/io",
     "city": "Mountain View, CA",
     "country": "U.S.A.",
     "startDate": "2017-05-17",
@@ -572,7 +572,7 @@
   },
   {
     "name": "GOTO",
-    "url": "http://gotober.com/",
+    "url": "http://gotober.com",
     "city": "Berlin",
     "country": "Germany",
     "startDate": "2017-11-15",
@@ -596,7 +596,7 @@
   },
   {
     "name": "Gradle Summit",
-    "url": "https://summit.gradle.com/",
+    "url": "https://summit.gradle.com",
     "city": "Palo Alto, CA",
     "country": "U.S.A.",
     "startDate": "2017-06-22",
@@ -604,7 +604,7 @@
   },
   {
     "name": "IoT DevFest",
-    "url": "http://www.iotdevfest.com/",
+    "url": "http://www.iotdevfest.com",
     "city": "Mesa, AZ",
     "country": "U.S.A.",
     "startDate": "2016-01-09",
@@ -615,18 +615,18 @@
   },
   {
     "name": "Kotlin Conf",
-    "url": "https://kotlinconf.com/",
+    "url": "https://kotlinconf.com",
     "city": "San Francisco, CA",
     "country": "U.S.A.",
     "startDate": "2017-11-02",
     "endDate": "2017-11-03",
     "cfpStart": "2017-03-14",
     "cfpEnd": "2017-05-01",
-    "cfpUrl": "https://sessionize.com/kotlinconf/"
+    "cfpUrl": "https://sessionize.com/kotlinconf"
   },
   {
     "name": "MCE^4",
-    "url": "http://2017.mceconf.com/",
+    "url": "http://2017.mceconf.com",
     "city": "Warsaw",
     "country": "Poland",
     "startDate": "2017-05-08",
@@ -634,7 +634,7 @@
   },
   {
     "name": "Mobcon Europe",
-    "url": "http://mobcon.com/mobcon-europe/",
+    "url": "http://mobcon.com/mobcon-europe",
     "city": "Sofia",
     "country": "Bulgaria",
     "startDate": "2017-03-25",
@@ -642,7 +642,7 @@
   },
   {
     "name": "Mobiconf",
-    "url": "https://2017.mobiconf.org/",
+    "url": "https://2017.mobiconf.org",
     "city": "Krakow",
     "country": "Poland",
     "startDate": "2017-10-05",
@@ -650,7 +650,7 @@
   },
   {
     "name": "MobileCamp",
-    "url": "https://mobilecamp.de/",
+    "url": "https://mobilecamp.de",
     "city": "Dresden",
     "country": "Germany",
     "startDate": "2017-04-29",
@@ -658,25 +658,25 @@
   },
   {
     "name": "Mobile Era",
-    "url": "https://mobileera.rocks/",
+    "url": "https://mobileera.rocks",
     "city": "Oslo",
     "country": "Norway",
     "startDate": "2017-10-05",
     "endDate": "2017-10-06",
     "cfpStart": " 2017-03-21",
     "cfpEnd": "2017-05-15",
-    "cfpUrl": "https://mobileera.rocks/news/posts/c4p-time/"
+    "cfpUrl": "https://mobileera.rocks/news/posts/c4p-time"
   },
   {
     "name": "Mobile+Web DevCon",
-    "url": "http://mobilewebdevconference.com/san-francisco-2017/",
+    "url": "http://mobilewebdevconference.com/san-francisco-2017",
     "city": "San Francisco",
     "country": "CA",
     "startDate": "2017-03-01",
     "endDate": "2017-03-03",
     "cfpStart": "2016-11-02",
     "cfpEnd": "2017-03-01",
-    "cfpUrl": "http://mobilewebdevconference.com/san-francisco-2017/contact/speak-at-mwdcon/"
+    "cfpUrl": "http://mobilewebdevconference.com/san-francisco-2017/contact/speak-at-mwdcon"
   },
   {
     "name": "Mobilization",
@@ -691,7 +691,7 @@
   },
   {
     "name": "Mobius",
-    "url": "http://mobiusconf.com/en/",
+    "url": "http://mobiusconf.com/en",
     "city": "Saint Petersburg",
     "country": "RU",
     "startDate": "2017-04-21",
@@ -699,11 +699,11 @@
     "cfpStart": " 2016-08-01",
     "cfpEnd": "2017-02-22",
 
-    "cfpUrl": "http://mobiusconf.com/en/callforpapers/"
+    "cfpUrl": "http://mobiusconf.com/en/callforpapers"
   },
   {
     "name": "Mobius",
-    "url": "https://mobiusconf.com/en/",
+    "url": "https://mobiusconf.com/en",
     "city": "Moscow",
     "country": "Russia",
     "startDate": "2017-11-11",
@@ -721,7 +721,7 @@
   },
   {
     "name": "Emerging Tech Conference",
-    "url": "https://2017.phillyemergingtech.com/",
+    "url": "https://2017.phillyemergingtech.com",
     "city": "Philadelphia, PA",
     "country": "U.S.A.",
     "startDate": "2017-04-18",
@@ -729,7 +729,7 @@
   },
   {
     "name": "Prairie Dev Con",
-    "url": "http://prairiedevcon.com/",
+    "url": "http://prairiedevcon.com",
     "city": "Winnipeg, MB",
     "country": "Canada",
     "startDate": "2017-06-06",
@@ -740,7 +740,7 @@
   },
   {
     "name": "RigaDevDays",
-    "url": "http://rigadevdays.lv/",
+    "url": "http://rigadevdays.lv",
     "city": "Riga",
     "country": "Latvia",
     "startDate": "2017-05-15",
@@ -773,7 +773,7 @@
   },
   {
     "name": "United Dev Conf",
-    "url": "http://unitedconf.com/",
+    "url": "http://unitedconf.com",
     "city": "Minsk",
     "country": "Belarus",
     "startDate": "2017-04-06",
@@ -781,7 +781,7 @@
   },
   {
     "name": "YOW! Connected",
-    "url": "http://connected.yowconference.com.au/",
+    "url": "http://connected.yowconference.com.au",
     "city": "Melbourne",
     "country": "Australia",
     "startDate": "2017-09-21",
@@ -789,7 +789,7 @@
   },
   {
     "name": "Mobius",
-    "url": "https://mobiusconf.com/",
+    "url": "https://mobiusconf.com",
     "startDate": "2017-11-11",
     "endDate": "2017-11-11",
     "city": "Moscow",

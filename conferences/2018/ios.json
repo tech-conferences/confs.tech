@@ -1,7 +1,7 @@
 [
   {
     "name": "mDevCamp",
-    "url": "https://mdevcamp.eu/",
+    "url": "https://mdevcamp.eu",
     "city": "Prague",
     "country": "Czechia",
     "startDate": "2018-06-15"
@@ -24,7 +24,7 @@
   },
   {
     "name": "try! Swift",
-    "url": "https://www.tryswift.co/events/2018/tokyo/en/",
+    "url": "https://www.tryswift.co/events/2018/tokyo/en",
     "startDate": "2018-03",
     "endDate": "2018-03",
     "city": "Tokyo",
@@ -40,7 +40,7 @@
   },
   {
     "name": "RWDevCon",
-    "url": "https://www.rwdevcon.com/",
+    "url": "https://www.rwdevcon.com",
     "startDate": "2018-04-05",
     "endDate": "2018-04-07",
     "city": "Alexandria, VA",
@@ -48,7 +48,7 @@
   },
   {
     "name": "Forward Swift",
-    "url": "https://forwardswift.com/",
+    "url": "https://forwardswift.com",
     "startDate": "2018-02",
     "endDate": "2018-02",
     "city": "San Francisco",
@@ -76,7 +76,7 @@
   },
   {
     "name": "iOSDevUK",
-    "url": "http://www.iosdevuk.com/",
+    "url": "http://www.iosdevuk.com",
     "startDate": "2018-09-03",
     "endDate": "2018-09-06",
     "city": "Aberystwyth",
@@ -85,7 +85,7 @@
   },
   {
     "name": "360|iDev",
-    "url": "http://360idev.com/",
+    "url": "http://360idev.com",
     "startDate": "2018-08-26",
     "endDate": "2018-08-29",
     "city": "Denver CO",
@@ -93,14 +93,14 @@
   },
   {
     "name": "WWDC",
-    "url": "https://developer.apple.com/wwdc/",
+    "url": "https://developer.apple.com/wwdc",
     "startDate": "2018-06",
     "city": "San Jose, CA",
     "country": "U.S.A."
   },
   {
     "name": "App Builders",
-    "url": "https://www.appbuilders.ch/",
+    "url": "https://www.appbuilders.ch",
     "startDate": "2018-06-16",
     "endDate": "2018-06-17",
     "city": "Lugano",
@@ -108,7 +108,7 @@
   },
   {
     "name": "MobileTech",
-    "url": "https://mobiletechcon.de/en/",
+    "url": "https://mobiletechcon.de/en",
     "startDate": "2018-03-12",
     "endDate": "2018-03-14",
     "city": "Munich",
@@ -116,7 +116,7 @@
   },
   {
     "name": "Appdevcon",
-    "url": "http://appdevcon.nl/",
+    "url": "http://appdevcon.nl",
     "startDate": "2018-03-15",
     "endDate": "2018-03-16",
     "city": "Amsterdam",
@@ -129,13 +129,13 @@
     "endDate": "2018-07-06",
     "city": "Barcelona",
     "country": "Spain",
-    "cfpUrl": "https://addconf.com/2018/call-for-proposals/",
+    "cfpUrl": "https://addconf.com/2018/call-for-proposals",
     "cfpEndDate": "2017-02-15",
     "twitter": "@addconf"
   },
   {
     "name": "MobOS",
-    "url": "http://romobos.com/",
+    "url": "http://romobos.com",
     "startDate": "2018-02-15",
     "endDate": "2018-02-16",
     "city": "Cluj-Napoca",
@@ -143,7 +143,7 @@
   },
   {
     "name": "FrenchKit",
-    "url": "http://www.frenchkit.fr/",
+    "url": "http://www.frenchkit.fr",
     "startDate": "2018-09-20",
     "endDate": "2018-09-21",
     "city": "Paris",

@@ -1,7 +1,7 @@
 [
   {
     "name": "Techbash 2017",
-    "url": "https://techbash.com/",
+    "url": "https://techbash.com",
     "city": "Pennsylvania",
     "country": "U.S.A.",
     "startDate": "2017-10-04",
@@ -9,7 +9,7 @@
   },
   {
     "name": "Clarity",
-    "url": "https://www.clarityconf.com/",
+    "url": "https://www.clarityconf.com",
     "city": "San Francisco, CA",
     "country": "U.S.A.",
     "startDate": "2017-11-28",
@@ -25,7 +25,7 @@
   },
   {
      "name": "GDG DevFest 2017",
-     "url": "https://devfest.gdghyderabad.in/",
+     "url": "https://devfest.gdghyderabad.in",
      "city": "Hyderabad",
      "country": "India",
      "startDate": "2017-11-04",
@@ -34,7 +34,7 @@
    },
    {
       "name": "QCon SF",
-      "url": "https://qconsf.com/",
+      "url": "https://qconsf.com",
       "city": "San Francisco",
       "country": "U.S.A.",
       "startDate": "2017-11-13",
@@ -52,7 +52,7 @@
   },
   {
       "name": "DevRelCon London",
-      "url": "https://london-2017.devrel.net/",
+      "url": "https://london-2017.devrel.net",
       "city": "London",
       "country": "U.K.",
       "startDate": "2017-12-06",

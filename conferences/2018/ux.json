@@ -12,7 +12,7 @@
   },
   {
     "name": "CONFAB",
-    "url": "https://www.confabevents.com/",
+    "url": "https://www.confabevents.com",
     "startDate": "2018-05-21",
     "endDate": "2018-05-23",
     "city": "Minneapolis",
@@ -43,14 +43,14 @@
   },
   {
     "name": "Pixel Pioneers Bristol",
-    "url": "https://pixelpioneers.co/",
+    "url": "https://pixelpioneers.co",
     "city": "Bristol",
     "country": "U.K.",
     "startDate": "2018-06-08"
   },
   {
     "name": "Beyond Tellerrand",
-    "url": "https://beyondtellerrand.com/events/duesseldorf-2018/",
+    "url": "https://beyondtellerrand.com/events/duesseldorf-2018",
     "startDate": "2018-05-07",
     "endDate": "2018-05-09",
     "city": "Düsseldorf",
@@ -67,7 +67,7 @@
   },
   {
     "name": "UX Strat EU",
-    "url": "https://uxstrat.com/europe/",
+    "url": "https://uxstrat.com/europe",
     "startDate": "2018-06-10",
     "endDate": "2018-06-12",
     "city": "Amsterdam",
@@ -75,12 +75,12 @@
   },
   {
     "name": "UX Strat USA",
-    "url": "https://uxstrat.com/usa/",
+    "url": "https://uxstrat.com/usa",
     "startDate": "2018-09-18",
     "endDate": "2018-09-20",
     "city": "Boulder",
     "country": "U.S.A.",
-    "cfpUrl": "https://uxstrat.com/callForPresentations/USA/",
+    "cfpUrl": "https://uxstrat.com/callForPresentations/USA",
     "cfpEndDate": "2018-04-20"
   },
   {
@@ -89,12 +89,12 @@
     "startDate": "2018-09",
     "city": "Dublin",
     "country": "U.K.",
-    "cfpUrl": "http://euroia.org/submissions/",
+    "cfpUrl": "http://euroia.org/submissions",
     "cfpEndDate": "2018-03-03"
   },
   {
     "name": "UXDX",
-    "url": "https://uxdxconf.com/",
+    "url": "https://uxdxconf.com",
     "startDate": "2018-10-04",
     "endDate": "2018-10-07",
     "city": "Dublin",
@@ -102,7 +102,7 @@
   },
   {
     "name": "Product Camp",
-    "url": "https://productcamp.pl/",
+    "url": "https://productcamp.pl",
     "startDate": "2018-06-07",
     "endDate": "2018-06-09",
     "city": "Gdynia",
@@ -110,7 +110,7 @@
   },
   {
     "name": "Circles",
-    "url": "http://circlesconference.com/",
+    "url": "http://circlesconference.com",
     "startDate": "2018-09-19",
     "endDate": "2018-09-21",
     "city": "Fort Worth, Texas",
@@ -126,7 +126,7 @@
   },
   {
     "name": "World Usability Congress",
-    "url": "https://worldusabilitycongress.com/",
+    "url": "https://worldusabilitycongress.com",
     "startDate": "2018-10-16",
     "endDate": "2018-10-18",
     "city": "Graz",
@@ -139,12 +139,12 @@
     "endDate": "2018-08-31",
     "city": "Melbourne",
     "country": "Australia",
-    "cfpUrl": "http://www.uxaustralia.com.au/conferences/uxaustralia-2018/call-for-proposals/",
+    "cfpUrl": "http://www.uxaustralia.com.au/conferences/uxaustralia-2018/call-for-proposals",
     "cfpEndDate": "2018-03-18"
   },
   {
     "name": "UXPA 2018",
-    "url": "http://uxpa2018.org/",
+    "url": "http://uxpa2018.org",
     "startDate": "2018-06-26",
     "endDate": "2018-06-28",
     "city": "Rio Mar",
@@ -152,17 +152,17 @@
   },
   {
     "name": "ACM UMAP 2018",
-    "url": "http://www.um.org/umap2018/",
+    "url": "http://www.um.org/umap2018",
     "startDate": "2018-07-08",
     "endDate": "2018-07-11",
     "city": "Singapore",
     "country": "Singapore",
-    "cfpUrl": "http://www.um.org/umap2018/cfp/",
+    "cfpUrl": "http://www.um.org/umap2018/cfp",
     "cfpEndDate": "2018-03-04"
   },
   {
     "name": "Design / Content",
-    "url": "https://content.design/",
+    "url": "https://content.design",
     "startDate": "2018-06-25",
     "endDate": "2018-06-27",
     "city": "Vancouver",
@@ -170,7 +170,7 @@
   },
   {
     "name": "UX Scotland",
-    "url": "http://uxscotland.net/2018/",
+    "url": "http://uxscotland.net/2018",
     "startDate": "2018-06-13",
     "endDate": "2018-06-15",
     "city": "Edimburgh",
@@ -178,7 +178,7 @@
   },
   {
     "name": "POLISHOPA Design Thinking Conference",
-    "url": "http://polishopa.pl/en/",
+    "url": "http://polishopa.pl/en",
     "startDate": "2018-06-04",
     "endDate": "2018-06-07",
     "city": "Bydgoszcz",
@@ -194,7 +194,7 @@
   },
   {
     "name": "UX London",
-    "url": "https://2018.uxlondon.com/",
+    "url": "https://2018.uxlondon.com",
     "startDate": "2018-05-23",
     "endDate": "2018-05-25",
     "city": "London",
@@ -202,7 +202,7 @@
   },
   {
     "name": "UX-LX",
-    "url": "http://ux-lx.com/",
+    "url": "http://ux-lx.com",
     "startDate": "2018-05-22",
     "endDate": "2018-05-25",
     "city": "Lisbon",
@@ -210,7 +210,7 @@
   },
   {
     "name": "Design Thinking 2018",
-    "url": "https://designthinkingusa.iqpc.com/",
+    "url": "https://designthinkingusa.iqpc.com",
     "startDate": "2018-04-23",
     "endDate": "2018-04-25",
     "city": "Austin",
@@ -218,7 +218,7 @@
   },
   {
     "name": "The Design Conference",
-    "url": "http://www.designconference.org/",
+    "url": "http://www.designconference.org",
     "startDate": "2018-05-21",
     "endDate": "2018-05-24",
     "city": "Dubrovnik",
@@ -234,7 +234,7 @@
   },
   {
     "name": "CHI 2018",
-    "url": "https://chi2018.acm.org/",
+    "url": "https://chi2018.acm.org",
     "startDate": "2018-04-21",
     "endDate": "2018-04-26",
     "city": "Montréal",
@@ -250,7 +250,7 @@
   },
   {
     "name": "Smashing Conference",
-    "url": "https://smashingconf.com/sf-2018/",
+    "url": "https://smashingconf.com/sf-2018",
     "startDate": "2018-04-17",
     "endDate": "2018-04-18",
     "city": "San Francisco",
@@ -258,7 +258,7 @@
   },
   {
     "name": "Smashing Conference",
-    "url": "https://smashingconf.com/toronto-2018/",
+    "url": "https://smashingconf.com/toronto-2018",
     "startDate": "2018-06-26",
     "endDate": "2018-06-27",
     "city": "Tonronto",
@@ -266,7 +266,7 @@
   },
   {
     "name": "Smashing Conference",
-    "url": "https://smashingconf.com/london-2018/",
+    "url": "https://smashingconf.com/london-2018",
     "startDate": "2018-02-07",
     "endDate": "2018-02-08",
     "city": "London",
@@ -274,7 +274,7 @@
   },
   {
     "name": "CHIuXiD 2018",
-    "url": "http://2018.chiuxid.org/",
+    "url": "http://2018.chiuxid.org",
     "startDate": "2018-03-26",
     "endDate": "2018-03-29",
     "city": "Jakarta / Yogyakarta",
@@ -282,7 +282,7 @@
   },
   {
     "name": "iA Summit",
-    "url": "http://www.iasummit.org/",
+    "url": "http://www.iasummit.org",
     "startDate": "2018-03-21",
     "endDate": "2018-03-25",
     "city": "Chicago",
@@ -290,7 +290,7 @@
   },
   {
     "name": "World Information Architecture Day",
-    "url": "http://2018.wiadswitzerland.org/",
+    "url": "http://2018.wiadswitzerland.org",
     "startDate": "2018-02-23",
     "endDate": "2018-02-24",
     "city": "Zurich",
@@ -298,7 +298,7 @@
   },
   {
     "name": "The UX Conf",
-    "url": "http://theuxconf.com/",
+    "url": "http://theuxconf.com",
     "startDate": "2018-02-20",
     "city": "London",
     "country": "U.K."
@@ -329,7 +329,7 @@
   },
   {
     "name": "Web Directions Design",
-    "url": "http://webdirections.org/design/",
+    "url": "http://webdirections.org/design",
     "startDate": "2018-04-12",
     "endDate": "2018-04-13",
     "city": "Melbourne",
@@ -338,7 +338,7 @@
   },
   {
     "name": "Nordic.design",
-    "url": "http://nordic.design/",
+    "url": "http://nordic.design",
     "startDate": "2018-09-05",
     "endDate": "2018-09-05",
     "city": "Stockholm",
@@ -352,7 +352,7 @@
     "endDate": "2018-07-06",
     "city": "Barcelona",
     "country": "Spain",
-    "cfpUrl": "https://addconf.com/2018/call-for-proposals/",
+    "cfpUrl": "https://addconf.com/2018/call-for-proposals",
     "cfpEndDate": "2017-02-15",
     "twitter": "@addconf"
   },
@@ -367,7 +367,7 @@
   },
   {
     "name": "TEI 2018",
-    "url": "https://tei.acm.org/2018/",
+    "url": "https://tei.acm.org/2018",
     "startDate": "2018-03-18",
     "endDate": "2018-03-21",
     "city": "Stockholm",
@@ -376,7 +376,7 @@
   },
   {
     "name": "ACM IUI 2018",
-    "url": "http://iui.acm.org/2018/",
+    "url": "http://iui.acm.org/2018",
     "startDate": "2018-03-07",
     "endDate": "2018-03-11",
     "city": "Tokyo",
@@ -385,7 +385,7 @@
   },
   {
     "name": "Convey UX",
-    "url": "http://conveyux.com/",
+    "url": "http://conveyux.com",
     "startDate": "2018-02-27",
     "endDate": "2018-03-01",
     "city": "Seattle",
@@ -393,7 +393,7 @@
   },
   {
     "name": "Interaction week 18",
-    "url": "http://interaction18.ixda.org/",
+    "url": "http://interaction18.ixda.org",
     "startDate": "2018-02-03",
     "endDate": "2018-02-08",
     "city": "Lyon",
@@ -401,7 +401,7 @@
   },
   {
     "name": "UXWeek 2018",
-    "url": "http://uxweek.com/",
+    "url": "http://uxweek.com",
     "startDate": "2018-08-21",
     "endDate": "2018-08-24",
     "city": "San Fransisco",
@@ -410,7 +410,7 @@
   },
   {
     "name": "UX Copenhagen",
-    "url": "https://uxcopenhagen.com/",
+    "url": "https://uxcopenhagen.com",
     "startDate": "2018-02-27",
     "endDate": "2018-02-28",
     "city": "Copenhagen",
@@ -419,7 +419,7 @@
   },
   {
     "name": "UX HK",
-    "url": "http://uxhongkong.com/",
+    "url": "http://uxhongkong.com",
     "startDate": "2018-03-10",
     "endDate": "2018-03-09",
     "country": "Hong Kong",
@@ -427,7 +427,7 @@
   },
   {
     "name": "99U",
-    "url": "http://conference.99u.com/",
+    "url": "http://conference.99u.com",
     "startDate": "2018-05-09",
     "endDate": "2018-05-11",
     "city": "New York City",
@@ -436,7 +436,7 @@
   },
   {
     "name": "UX Istanbul",
-    "url": "https://uxistanbul.org/",
+    "url": "https://uxistanbul.org",
     "startDate": "2018-02-20",
     "endDate": "2018-02-20",
     "city": "Istanbul",
@@ -445,7 +445,7 @@
   },
   {
     "name": "Front Utah",
-    "url": "https://www.frontutah.com/",
+    "url": "https://www.frontutah.com",
     "startDate": "2018-01-05",
     "endDate": "2018-01-06",
     "city": "Salt Lake City",
@@ -463,7 +463,7 @@
   },
   {
     "name": ".concat()",
-    "url": "https://2018.conc.at/",
+    "url": "https://2018.conc.at",
     "startDate": "2018-03-03",
     "endDate": "2018-03-03",
     "city": "Salzburg",
@@ -474,7 +474,7 @@
   },
   {
     "name": "UX In The City",
-    "url": "http://uxinthecity.net/2018/manchester/",
+    "url": "http://uxinthecity.net/2018/manchester",
     "startDate": "2018-03-15",
     "endDate": "2018-03-16",
     "city": "Manchester",
@@ -483,7 +483,7 @@
   },
   {
     "name": "Delight Summit",
-    "url": "http://delight.us/conference/",
+    "url": "http://delight.us/conference",
     "startDate": "2018-05-21",
     "endDate": "2018-05-22",
     "city": "Portland",
@@ -492,7 +492,7 @@
   },
   {
     "name": "OFFFest",
-    "url": "http://offf.barcelona/",
+    "url": "http://offf.barcelona",
     "startDate": "2018-05-24",
     "endDate": "2018-05-26",
     "city": "Barcelona",
@@ -501,7 +501,7 @@
   },
   {
     "name": "How Design Live",
-    "url": "http://howdesignlive.com/",
+    "url": "http://howdesignlive.com",
     "startDate": "2018-04-30",
     "endDate": "2018-05-03",
     "city": "Boston",
@@ -519,7 +519,7 @@
   },
   {
     "name": "ReactFest",
-    "url": "https://reactfest.com/",
+    "url": "https://reactfest.com",
     "startDate": "2018-03-09",
     "endDate": "2018-03-09",
     "city": "London",
@@ -541,7 +541,7 @@
   },
   {
     "name": "Refresh",
-    "url": "http://refresh.rocks/",
+    "url": "http://refresh.rocks",
     "startDate": "2018-09-07",
     "endDate": "2018-09-07",
     "city": "Tallinn",
