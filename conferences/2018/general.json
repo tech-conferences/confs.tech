@@ -1,5 +1,22 @@
 [
   {
+    "name": "Web Directions Leaders",
+    "url": "http://webdirections.org/leaders",
+    "startDate": "2018-08-01",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
+    "name": "Web Directions Summit",
+    "url": "http://webdirections.org/wds",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-02",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
     "name": "Agile Portugal 2018",
     "url": "https://2018.agilept.org",
     "startDate": "2018-05-25",

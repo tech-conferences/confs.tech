@@ -1,5 +1,13 @@
 [
   {
+    "name": "Web Directions Design Leaders",
+    "url": "http://webdirections.org/designleaders",
+    "startDate": "2018-04-11",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
     "name": "Experience Conference",
     "url": "http://www.exconf.com",
     "startDate": "2018-03-26",
@@ -333,6 +341,15 @@
     "startDate": "2018-04-12",
     "endDate": "2018-04-13",
     "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
+    "name": "Web Directions Summit",
+    "url": "http://webdirections.org/wds",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-02",
+    "city": "Sydney",
     "country": "Australia",
     "twitter": "@webdirections"
   },
