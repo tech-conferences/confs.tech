@@ -1,5 +1,16 @@
 [
   {
+    "name": "DevSecCon Tel Aviv",
+    "url": "http://www.devseccon.com/tel-aviv-2018/",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-07",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "cfpUrl": "https://www.devseccon.com/call-for-proposals/",
+    "cfpEndDate": "2018-01-07",
+    "twitter": "@devseccon"
+  },
+  {
     "name": "Web Directions Leaders",
     "url": "http://webdirections.org/leaders",
     "startDate": "2018-08-01",
