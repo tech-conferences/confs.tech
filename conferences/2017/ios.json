@@ -73,11 +73,12 @@
   },
   {
     "name": "Mobius",
-    "url": "https://mobiusconf.com",
-    "startDate": "2017-11-11",
-    "endDate": "2017-11-11",
+    "url": "https://mobiusconf.com/en",
     "city": "Moscow",
     "country": "Russia",
-    "twitter": "@MobiusConf"
+    "startDate": "2017-11-11",
+    "endDate": "2017-11-11",
+    "cfpStart": "2017-06-22",
+    "cfpEnd": "cfp_site- https-//mobiusconf.com/en/cfp"
   }
 ]
