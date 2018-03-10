@@ -1,5 +1,15 @@
 [
   {
+    "name": "Droidcon",
+    "url": "https://www.droidcon.sg",
+    "startDate": "2018-04-05",
+    "endDate": "2018-04-05",
+    "city": "Singapore",
+    "country": "Singapore",
+    "cfpEndDate": "2018-03-11",
+    "cfpUrl": "https://www.droidcon.sg/call-for-papers"
+  },
+  {
     "name": "MCE",
     "url": "https://2018.mceconf.com",
     "startDate": "2018-06-05",
