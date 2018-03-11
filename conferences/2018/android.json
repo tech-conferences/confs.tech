@@ -1,5 +1,15 @@
 [
   {
+    "name": "UIKonf",
+    "url": "http://www.uikonf.com/",
+    "startDate": "2018-05-13",
+    "endDate": "2018-05-16",
+    "city": "Berlin",
+    "country": "Germany",
+    "cfpEndDate": "2018-03-08",
+    "cfpUrl": "http://cfp.uikonf.com/about"
+  },
+  {
     "name": "Droidcon",
     "url": "https://www.droidcon.sg",
     "startDate": "2018-04-05",
