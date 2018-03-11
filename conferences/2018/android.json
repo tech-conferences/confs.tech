@@ -1,7 +1,7 @@
 [
   {
     "name": "UIKonf",
-    "url": "http://www.uikonf.com/",
+    "url": "http://www.uikonf.com",
     "startDate": "2018-05-13",
     "endDate": "2018-05-16",
     "city": "Berlin",
@@ -94,7 +94,7 @@
     "endDate": "2018-04-05",
     "cfpStart": "2017-06-01",
     "cfpEndDate": "2017-10-31",
-    "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers/"
+    "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers"
   },
   {
     "name": "Droidcon Boston",
