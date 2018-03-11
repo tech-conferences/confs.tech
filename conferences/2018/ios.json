@@ -1,5 +1,13 @@
 [
   {
+    "name": "Mobius",
+    "url": "https://mobiusconf.com",
+    "city": "St. Petersburg",
+    "country": "Russia",
+    "startDate": "2018-04-20",
+    "endDate": "2018-04-21"
+  },
+  {
     "name": "mDevCamp",
     "url": "https://mdevcamp.eu",
     "city": "Prague",
