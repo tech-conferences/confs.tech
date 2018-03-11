@@ -20,8 +20,8 @@
   {
     "name": "GrillRB",
     "url": "http://grillrb.com",
-    "startDate": "2017-07-1",
-    "endDate": "2017-07-2",
+    "startDate": "2017-07-01",
+    "endDate": "2017-07-02",
     "city": "Wrocław",
     "country": "PL",
     "twitter": "@grill_rb"
@@ -64,7 +64,7 @@
   {
     "name": "RubyC",
     "url": "http://rubyc.eu",
-    "startDate": "2017-06-3",
+    "startDate": "2017-06-03",
     "endDate": "2017-06-04",
     "city": "Kyiv",
     "country": "Ukraine",
@@ -91,8 +91,8 @@
   {
     "name": "RubyConfBY",
     "url": "http://rubyconference.by/en",
-    "startDate": "2017-04-2",
-    "endDate": "2017-04-2",
+    "startDate": "2017-04-02",
+    "endDate": "2017-04-02",
     "city": "Minsk",
     "country": "Belarus",
     "twitter": "@rubyconfby"
@@ -100,8 +100,8 @@
   {
     "name": "RubyConfLT",
     "url": "https://rubyconf.lt",
-    "startDate": "2017-04-1",
-    "endDate": "2017-04-1",
+    "startDate": "2017-04-01",
+    "endDate": "2017-04-01",
     "city": "Vilnius",
     "country": "Lithuania",
     "twitter": "@rubyconflt"
@@ -136,7 +136,7 @@
   {
     "name": "Ruby devroom at FOSDEM",
     "url": "http://fosdem.rubybelgium.be",
-    "startDate": "2017-02-3",
+    "startDate": "2017-02-03",
     "endDate": "2017-02-04",
     "city": "Brussels",
     "country": "Belgium",
@@ -145,7 +145,7 @@
   {
     "name": "Rubyfuza",
     "url": "http://www.rubyfuza.org",
-    "startDate": "2017-02-2",
+    "startDate": "2017-02-02",
     "endDate": "2017-02-04",
     "city": "Cape Town",
     "country": "South Africa",
@@ -253,8 +253,8 @@
   {
     "name": "RubyWorld Conference",
     "url": "http://2016.rubyworld-conf.org/en/news/2017/01/rwc2017",
-    "startDate": "2017-11-1",
-    "endDate": "2017-11-2",
+    "startDate": "2017-11-01",
+    "endDate": "2017-11-02",
     "city": "Matsue",
     "country": "Shimane",
     "twitter": "@rubyworldconf"
@@ -262,8 +262,8 @@
   {
     "name": "Kiwi Ruby",
     "url": "http://kiwi.ruby.nz",
-    "startDate": "2017-11-2",
-    "endDate": "2017-11-3",
+    "startDate": "2017-11-02",
+    "endDate": "2017-11-03",
     "city": "Wellington",
     "country": "New Zealand",
     "twitter": "@kiwirubyconf"

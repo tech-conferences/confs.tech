@@ -17,6 +17,7 @@ range(START_YEAR, CURRENT_YEAR).forEach((year) => {
 });
 
 const REQUIRED_KEYS = ['name', 'url', 'startDate', 'country'];
+const DATES_KEYS = ['startDate', 'endDate', 'cfpEndDate'];
 const BAD_COUNTRY_NAMES = ['USA', 'U.S.A', 'UK', 'U.K', 'UAE'];
 
 Object.keys(conferencesJSON).forEach((year) => {
@@ -57,6 +58,19 @@ Object.keys(conferencesJSON).forEach((year) => {
         conferences.forEach((conference) => {
           REQUIRED_KEYS.forEach((requiredKey) => {
             expect(conference.hasOwnProperty(requiredKey)).toBe(true);
+          });
+        });
+      });
+
+      it('dates are correctly formatted', () => {
+        conferences.forEach((conference) => {
+          DATES_KEYS.forEach((dateKey) => {
+            // cfpEndDate could be undefined or null
+            if (!conference[dateKey]) { return; }
+            if ([7, 10].indexOf(conference[dateKey].length) === -1) {
+              console.error(`${conference.name} has malformatted ${dateKey}: ${conference[dateKey]}`);
+            }
+            expect([7, 10]).toContain(conference[dateKey].length);
           });
         });
       });
