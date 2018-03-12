@@ -94,7 +94,7 @@ function Months({month, conferences, showCFP}) {
       return (
         <ConferenceItem
           {...conf}
-          key={`${conf.url} ${conf.date}`}
+          key={conf.objectID}
           showCFP={showCFP}
         />
       );
