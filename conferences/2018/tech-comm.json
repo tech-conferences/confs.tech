@@ -135,5 +135,13 @@
     "city": "San Diego, CA",
     "country": "U.S.A.",
     "twitter": "@MadCapSoftware"
+  },
+  {
+    "name": "COMTecnica",
+    "url": "https://comtecnica.it",
+    "startDate": "2018-04-11",
+    "endDate": "2018-04-12",
+    "city": "Bologna",
+    "country": "Italy"
   }
 ]
