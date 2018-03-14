@@ -17,7 +17,7 @@ export default class ConferenceNewPage extends Component {
     recaptchaLoaded: false,
     captchaResponse: null,
     submitting: false,
-    submitted: true,
+    submitted: false,
     errors: {},
     conference: {
       name: '',
