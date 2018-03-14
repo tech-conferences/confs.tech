@@ -409,5 +409,15 @@
     "country": "France",
     "cfpUrl": "https://www.takeoffconf.io/identity/registrations/new",
     "cfpEndDate": "2018-04-15"
+  },
+  {
+    "name": "PolarConf 2018",
+    "url": "https://www.papercall.io/polcarconf-2018",
+    "startDate": "2018-10-10",
+    "endDate": "2018-10-11",
+    "city": "Helsinki",
+    "country": "Finland",
+    "cfpUrl": "https://www.papercall.io/polcarconf-2018",
+    "cfpEndDate": "2018-04-29"
   }
 ]
