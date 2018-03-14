@@ -46,7 +46,8 @@ input {
   background: none;
   display: block;
   border-radius: 3px;
-  margin-top: spacing(extra-loose);
+  margin-top: spacing(loose);
+  margin-bottom: spacing(extra-loose);
   transition: all 150ms ease-out;
   cursor: pointer;
 

@@ -9,6 +9,7 @@ import Recaptcha from 'react-recaptcha';
 
 import styles from './ConferenceNewPage.scss';
 import Heading from '../Heading';
+import Divider from '../Divider';
 import Link from '../Link';
 import {TOPICS} from '../config';
 import './DatePickerOverrides.scss';
@@ -198,161 +199,175 @@ export default class ConferenceNewPage extends Component {
       },
     } = this.state;
     return (
-      <form onSubmit={this.handleFormSubmit} autoComplete="off">
-        <InputGroup>
-          <label htmlFor="type">Topic</label>
-          <select
-            name="topic"
-            value={topic}
-            onChange={this.handleFieldChange}
-          >
-            {SORTED_TOPICS_KEYS.map((value) => (
-              <option key={value} value={value}>
-                {TOPICS[value]}
-              </option>
-            ))}
-          </select>
-        </InputGroup>
-        <InputGroup>
-          <div>
-            <label htmlFor="name">Name</label>
-            <input
-              className={classNames(
-                this.hasError('name') && styles.error
-              )}
-              type="text"
-              name="name"
-              required
-              value={name}
+      <div>
+        <form onSubmit={this.handleFormSubmit} autoComplete="off">
+          <InputGroup>
+            <label htmlFor="type">Topic</label>
+            <select
+              name="topic"
+              value={topic}
               onChange={this.handleFieldChange}
-            />
-            {this.errorFor('name', 'Name is required.')}
-          </div>
-        </InputGroup>
-        <InputGroup>
-          <div>
-            <label htmlFor="url">URL</label>
-            <input
-              className={classNames(
-                this.hasError('url') && styles.error
-              )}
-              type="text"
-              required
-              value={url}
-              name="url"
-              onChange={this.handleFieldChange}
-            />
-            {this.errorFor('url', 'Url is required.')}
-          </div>
-        </InputGroup>
-        <InputGroup inline>
-          <div>
-            <label htmlFor="startDate">Start date</label>
+            >
+              {SORTED_TOPICS_KEYS.map((value) => (
+                <option key={value} value={value}>
+                  {TOPICS[value]}
+                </option>
+              ))}
+            </select>
+          </InputGroup>
+          <InputGroup>
             <div>
-              <DatePicker
-                dateFormat="YYYY-MM-DD"
-                name="startDate"
-                selected={startDate}
-                onSelect={this.handleStartDateSelect}
+              <label htmlFor="name">Name</label>
+              <input
+                className={classNames(
+                  this.hasError('name') && styles.error
+                )}
+                type="text"
+                name="name"
+                required
+                value={name}
+                onChange={this.handleFieldChange}
               />
+              {this.errorFor('name', 'Name is required.')}
             </div>
-          </div>
-          <div>
-            <label htmlFor="endDate">End date</label>
+          </InputGroup>
+          <InputGroup>
             <div>
-              <DatePicker
-                dateFormat="YYYY-MM-DD"
-                name="endDate"
-                selected={endDate}
-                onChange={this.handleDateChange.endDate}
+              <label htmlFor="url">URL</label>
+              <input
+                className={classNames(
+                  this.hasError('url') && styles.error
+                )}
+                type="text"
+                required
+                value={url}
+                name="url"
+                onChange={this.handleFieldChange}
               />
+              {this.errorFor('url', 'Url is required.')}
             </div>
-          </div>
-        </InputGroup>
-        <InputGroup inline>
-          <div>
-            <label htmlFor="city">City</label>
-            <input
-              className={classNames(
-                this.hasError('city') && styles.error
-              )}
-              required
-              type="text"
-              name="city"
-              value={city}
-              onChange={this.handleFieldChange}
-            />
-            {this.errorFor('city', 'City is required.')}
-          </div>
-          <div>
-            <label htmlFor="country">Country</label>
-            <input
-              className={classNames(
-                this.hasError('country') && styles.error
-              )}
-              required
-              type="text"
-              name="country"
-              value={country}
-              onChange={this.handleFieldChange}
-            />
-            {this.errorFor('country', 'Country is required.')}
-          </div>
-        </InputGroup>
-        <InputGroup inline>
-          <div>
-            <label htmlFor="cfpUrl">CFP URL</label>
-            <input
-              className={classNames(
-                this.hasError('cfpUrl') && styles.error
-              )}
-              type="text"
-              name="cfpUrl"
-              value={cfpUrl}
-              onChange={this.handleFieldChange}
-            />
-            {this.errorFor('cfpUrl', 'CFP URL is required.')}
-          </div>
-          <div>
-            <label htmlFor="cfpEndDate">CFP end date</label>
+          </InputGroup>
+          <InputGroup inline>
             <div>
-              <DatePicker
-                dateFormat="YYYY-MM-DD"
-                name="cfpEndDate"
-                selected={this.state.cfpEndDate}
-                onChange={this.handleDateChange.cfpEndDate}
-              />
+              <label htmlFor="startDate">Start date</label>
+              <div>
+                <DatePicker
+                  dateFormat="YYYY-MM-DD"
+                  name="startDate"
+                  selected={startDate}
+                  onSelect={this.handleStartDateSelect}
+                />
+              </div>
             </div>
-          </div>
-        </InputGroup>
-        <InputGroup>
-          <label htmlFor="twitter">@TwitterHandle</label>
-          <input
-            className={classNames(
-              this.hasError('twitter') && styles.error
-            )}
-            type="text"
-            name="twitter"
-            value={twitter}
-            onChange={this.handleFieldChange}
+            <div>
+              <label htmlFor="endDate">End date</label>
+              <div>
+                <DatePicker
+                  dateFormat="YYYY-MM-DD"
+                  name="endDate"
+                  selected={endDate}
+                  onChange={this.handleDateChange.endDate}
+                />
+              </div>
+            </div>
+          </InputGroup>
+          <InputGroup inline>
+            <div>
+              <label htmlFor="city">City</label>
+              <input
+                className={classNames(
+                  this.hasError('city') && styles.error
+                )}
+                required
+                type="text"
+                name="city"
+                value={city}
+                onChange={this.handleFieldChange}
+              />
+              {this.errorFor('city', 'City is required.')}
+            </div>
+            <div>
+              <label htmlFor="country">Country</label>
+              <input
+                className={classNames(
+                  this.hasError('country') && styles.error
+                )}
+                required
+                type="text"
+                name="country"
+                value={country}
+                onChange={this.handleFieldChange}
+              />
+              {this.errorFor('country', 'Country is required.')}
+            </div>
+          </InputGroup>
+          <InputGroup inline>
+            <div>
+              <label htmlFor="cfpUrl">CFP URL</label>
+              <input
+                className={classNames(
+                  this.hasError('cfpUrl') && styles.error
+                )}
+                type="text"
+                name="cfpUrl"
+                value={cfpUrl}
+                onChange={this.handleFieldChange}
+              />
+              {this.errorFor('cfpUrl', 'CFP URL is required.')}
+            </div>
+            <div>
+              <label htmlFor="cfpEndDate">CFP end date</label>
+              <div>
+                <DatePicker
+                  dateFormat="YYYY-MM-DD"
+                  name="cfpEndDate"
+                  selected={this.state.cfpEndDate}
+                  onChange={this.handleDateChange.cfpEndDate}
+                />
+              </div>
+            </div>
+          </InputGroup>
+          <InputGroup>
+            <label htmlFor="twitter">@TwitterHandle</label>
+            <input
+              className={classNames(
+                this.hasError('twitter') && styles.error
+              )}
+              type="text"
+              name="twitter"
+              value={twitter}
+              onChange={this.handleFieldChange}
+            />
+            {this.errorFor('twitter', 'Twitter handle is required.')}
+          </InputGroup>
+          <Recaptcha
+            sitekey="6Lf5FEoUAAAAAJtf3_sCGAAzV221KqRS4lAX9AAs"
+            render="explicit"
+            verifyCallback={this.handleVerifyRecaptcha}
+            onloadCallback={this.handleRecaptchaLoad}
           />
-          {this.errorFor('twitter', 'Twitter handle is required.')}
-        </InputGroup>
-        <Recaptcha
-          sitekey="6Lf5FEoUAAAAAJtf3_sCGAAzV221KqRS4lAX9AAs"
-          render="explicit"
-          verifyCallback={this.handleVerifyRecaptcha}
-          onloadCallback={this.handleRecaptchaLoad}
-        />
-        <button
-          className={styles.Button}
-          disabled={submitting || !recaptchaLoaded}
-          type="submit"
-          value="Submit"
-        >
-          {submitting ? 'Submitting...' : 'Submit'}
-        </button>
-      </form>
+          <button
+            className={styles.Button}
+            disabled={submitting || !recaptchaLoaded}
+            type="submit"
+            value="Submit"
+          >
+            {submitting ? 'Submitting...' : 'Submit'}
+          </button>
+        </form>
+        <Divider />
+        <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
+          Pull requests
+        </Link>
+        {' – '}
+        <Link external url="https://github.com/tech-conferences/confs.tech/issues">
+          Create an issue
+        </Link>
+        {' – '}
+        <Link external url="https://github.com/tech-conferences/confs.tech/">
+          Github repository
+        </Link>
+      </div>
     );
   };
 
