@@ -55,6 +55,14 @@
     "twitter": "@cssdayconf"
   },
   {
+    "name": "CSS Conf Argentina",
+    "url": "http://www.cssconfar.com/",
+    "startDate": "2018-08-18",
+    "endDate": "2018-08-18",
+    "city": "Buenos Aires",
+    "country": "Argentina"
+  },
+  {
     "name": "dotCSS",
     "url": "https://2018.dotcss.io",
     "startDate": "2018-11-08",
