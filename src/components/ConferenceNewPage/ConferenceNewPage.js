@@ -74,7 +74,7 @@ export default class ConferenceNewPage extends Component {
   };
 
   handleStartDateSelect = (startDate) => {
-    const {endDate, conference} = this.state.conference;
+    const {conference, conference: {endDate}} = this.state;
     this.setState({
       conference: {
         ...conference,
@@ -255,7 +255,7 @@ export default class ConferenceNewPage extends Component {
                   dateFormat="YYYY-MM-DD"
                   name="startDate"
                   selected={startDate}
-                  onSelect={this.handleStartDateSelect}
+                  onChange={this.handleStartDateSelect}
                 />
               </div>
             </div>
