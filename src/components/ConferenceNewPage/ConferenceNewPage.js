@@ -1,6 +1,7 @@
 /* global process */
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import React, {Component} from 'react';
+import {sortBy} from 'lodash';
 import classNames from 'classnames';
 import {Helmet} from 'react-helmet';
 import DatePicker from 'react-datepicker';
@@ -11,6 +12,8 @@ import Heading from '../Heading';
 import Link from '../Link';
 import {TOPICS} from '../config';
 import './DatePickerOverrides.scss';
+
+const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) => TOPICS[x].toLocaleLowerCase());
 
 export default class ConferenceNewPage extends Component {
   state = {
@@ -27,7 +30,7 @@ export default class ConferenceNewPage extends Component {
       endDate: null,
       url: '',
       startDate: null,
-      topic: 'javascript',
+      topic: '',
       twitter: '@',
     },
   };
@@ -168,7 +171,6 @@ export default class ConferenceNewPage extends Component {
         endDate,
       },
     } = this.state;
-
     return (
       <form onSubmit={this.handleFormSubmit} autoComplete="off">
         <InputGroup>
@@ -178,7 +180,7 @@ export default class ConferenceNewPage extends Component {
             value={topic}
             onChange={this.handleFieldChange}
           >
-            {Object.keys(TOPICS).map((value) => (
+            {SORTED_TOPICS_KEYS.map((value) => (
               <option key={value} value={value}>
                 {TOPICS[value]}
               </option>
