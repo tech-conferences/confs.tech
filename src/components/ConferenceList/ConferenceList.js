@@ -30,7 +30,7 @@ class ConferenceList extends Component {
   };
 
   render() {
-    const {hits, showCFP, sortBy, hasMore, onLoadMore} = this.props;
+    const {hits, showCFP, sortBy, addConferenceUrl, hasMore, onLoadMore} = this.props;
     let filteredConferences = hits;
     if (showCFP) {
       filteredConferences = filter(hits, (conf) => {
@@ -42,7 +42,7 @@ class ConferenceList extends Component {
     const confsTable = Object.keys(confs).map((year) => {
       return [
         <Divider key="hr" />,
-        <Year key={year} year={year} />,
+        <Year key={year} year={year} addConferenceUrl={addConferenceUrl} />,
         this.renderConferences(confs[year]),
       ];
     });
@@ -102,13 +102,15 @@ function Months({month, conferences, showCFP}) {
   ];
 }
 
-function Year({year}) {
+function Year({year, addConferenceUrl}) {
   return (
     <div className={styles.Year}>
       <Heading key={year} element="h2" level={2}>
         {year}
       </Heading>
-      <AddConferenceLink />
+      <Link url={addConferenceUrl} external>
+        Add a conference
+      </Link>
     </div>
   );
 }
@@ -117,16 +119,6 @@ function getConfsMonthsSorted(conferences) {
   return _sortBy(Object.keys(conferences), (conference) => {
     return parseInt(conference.replace('-', ''), 10);
   });
-}
-
-function AddConferenceLink() {
-  return (
-    <div className={styles.AddConfPanelWrapper}>
-      <Link url="/conferences/new" routed>
-        Add a conference
-      </Link>
-    </div>
-  );
 }
 
 export default connectInfiniteHits(ConferenceList);
