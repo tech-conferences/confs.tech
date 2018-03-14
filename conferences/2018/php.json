@@ -83,6 +83,17 @@
     "cfpUrl": "https://cfp.phpdetroit.io/"
   },
   {
+    "name": "SouthEast PHP",
+    "url": "https://southeastphp.com/",
+    "startDate": "2018-08-16",
+    "endDate": "2018-08-17",
+    "city": "Nashville, TN",
+    "country": "U.S.A.",
+    "twitter": "@southeastphp",
+    "cfpEndDate": "2018-04-15",
+    "cfpUrl": "https://cfp.southeastphp.com/"
+  },
+  {
     "name": "Northeast PHP Conference",
     "url": "http://www.northeastphp.org",
     "startDate": "2018-09-19",
