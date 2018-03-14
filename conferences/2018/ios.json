@@ -1,76 +1,5 @@
 [
   {
-    "name": "SwiftFest",
-    "url": "http://swiftfest.io",
-    "startDate": "2018-06-18",
-    "endDate": "2018-06-19",
-    "city": "Boston",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Mobius",
-    "url": "https://mobiusconf.com",
-    "city": "St. Petersburg",
-    "country": "Russia",
-    "startDate": "2018-04-20",
-    "endDate": "2018-04-21"
-  },
-  {
-    "name": "mDevCamp",
-    "url": "https://mdevcamp.eu",
-    "city": "Prague",
-    "country": "Czechia",
-    "startDate": "2018-06-15"
-  },
-  {
-    "name": "SwiftConf",
-    "url": "https://swiftconf.com",
-    "startDate": "2018-09-19",
-    "endDate": "2018-09-20",
-    "city": "Cologne",
-    "country": "Germany"
-  },
-  {
-    "name": "SwiftAveiro",
-    "url": "http://swiftaveiro.xyz",
-    "startDate": "2018-06-21",
-    "endDate": "2018-06-22",
-    "city": "Aveiro",
-    "country": "Portugal"
-  },
-  {
-    "name": "try! Swift",
-    "url": "https://www.tryswift.co/events/2018/tokyo/en",
-    "startDate": "2018-03",
-    "endDate": "2018-03",
-    "city": "Tokyo",
-    "country": "Japan"
-  },
-  {
-    "name": "iOSCon",
-    "url": "https://skillsmatter.com/conferences/9319-ioscon-2018-the-conference-for-ios-and-swift-developers",
-    "startDate": "2018-03-22",
-    "endDate": "2018-03-23",
-    "city": "London",
-    "country": "U.K."
-  },
-  {
-    "name": "RWDevCon",
-    "url": "https://www.rwdevcon.com",
-    "startDate": "2018-04-05",
-    "endDate": "2018-04-07",
-    "city": "Alexandria, VA",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Forward Swift",
-    "url": "https://forwardswift.com",
-    "startDate": "2018-02",
-    "endDate": "2018-02",
-    "city": "San Francisco",
-    "country": "U.S.A."
-  },
-  {
     "name": "dotSwift",
     "url": "https://www.dotswift.io",
     "startDate": "2018-01-29",
@@ -82,46 +11,28 @@
     "twitter": "@dotSwift"
   },
   {
-    "name": "Swift by Northwest",
-    "url": "https://swiftbynorthwest.com",
-    "startDate": "2018-10-18",
-    "endDate": "2018-10-20",
-    "city": "Portland, OR",
-    "country": "U.S.A.",
-    "twitter": "@SwiftxNW"
-  },
-  {
-    "name": "iOSDevUK",
-    "url": "http://www.iosdevuk.com",
-    "startDate": "2018-09-03",
-    "endDate": "2018-09-06",
-    "city": "Aberystwyth",
-    "country": "U.K.",
-    "twitter": "@IOSDEVUK"
-  },
-  {
-    "name": "360|iDev",
-    "url": "http://360idev.com",
-    "startDate": "2018-08-26",
-    "endDate": "2018-08-29",
-    "city": "Denver CO",
+    "name": "Forward Swift",
+    "url": "https://forwardswift.com",
+    "startDate": "2018-02",
+    "endDate": "2018-02",
+    "city": "San Francisco",
     "country": "U.S.A."
   },
   {
-    "name": "WWDC",
-    "url": "https://developer.apple.com/wwdc",
-    "startDate": "2018-06-04",
-    "endDate": "2018-06-08",
-    "city": "San Jose, CA",
-    "country": "U.S.A."
+    "name": "MobOS",
+    "url": "http://romobos.com",
+    "startDate": "2018-02-15",
+    "endDate": "2018-02-16",
+    "city": "Cluj-Napoca",
+    "country": "Romania"
   },
   {
-    "name": "App Builders",
-    "url": "https://www.appbuilders.ch",
-    "startDate": "2018-06-16",
-    "endDate": "2018-06-17",
-    "city": "Lugano",
-    "country": "Switzerland"
+    "name": "try! Swift",
+    "url": "https://www.tryswift.co/events/2018/tokyo/en",
+    "startDate": "2018-03",
+    "endDate": "2018-03",
+    "city": "Tokyo",
+    "country": "Japan"
   },
   {
     "name": "MobileTech",
@@ -140,6 +51,69 @@
     "country": "Netherlands"
   },
   {
+    "name": "iOSCon",
+    "url": "https://skillsmatter.com/conferences/9319-ioscon-2018-the-conference-for-ios-and-swift-developers",
+    "startDate": "2018-03-22",
+    "endDate": "2018-03-23",
+    "city": "London",
+    "country": "U.K."
+  },
+  {
+    "name": "RWDevCon",
+    "url": "https://www.rwdevcon.com",
+    "startDate": "2018-04-05",
+    "endDate": "2018-04-07",
+    "city": "Alexandria, VA",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Mobius",
+    "url": "https://mobiusconf.com",
+    "city": "St. Petersburg",
+    "country": "Russia",
+    "startDate": "2018-04-20",
+    "endDate": "2018-04-21"
+  },
+  {
+    "name": "WWDC",
+    "url": "https://developer.apple.com/wwdc",
+    "startDate": "2018-06-04",
+    "endDate": "2018-06-08",
+    "city": "San Jose, CA",
+    "country": "U.S.A."
+  },
+  {
+    "name": "mDevCamp",
+    "url": "https://mdevcamp.eu",
+    "city": "Prague",
+    "country": "Czechia",
+    "startDate": "2018-06-15"
+  },
+  {
+    "name": "App Builders",
+    "url": "https://www.appbuilders.ch",
+    "startDate": "2018-06-16",
+    "endDate": "2018-06-17",
+    "city": "Lugano",
+    "country": "Switzerland"
+  },
+  {
+    "name": "SwiftFest",
+    "url": "http://swiftfest.io",
+    "startDate": "2018-06-18",
+    "endDate": "2018-06-19",
+    "city": "Boston",
+    "country": "U.S.A."
+  },
+  {
+    "name": "SwiftAveiro",
+    "url": "http://swiftaveiro.xyz",
+    "startDate": "2018-06-21",
+    "endDate": "2018-06-22",
+    "city": "Aveiro",
+    "country": "Portugal"
+  },
+  {
     "name": "ADDC - App Design & Development Conference",
     "url": "https://addconf.com",
     "startDate": "2018-07-04",
@@ -151,12 +125,29 @@
     "twitter": "@addconf"
   },
   {
-    "name": "MobOS",
-    "url": "http://romobos.com",
-    "startDate": "2018-02-15",
-    "endDate": "2018-02-16",
-    "city": "Cluj-Napoca",
-    "country": "Romania"
+    "name": "360|iDev",
+    "url": "http://360idev.com",
+    "startDate": "2018-08-26",
+    "endDate": "2018-08-29",
+    "city": "Denver CO",
+    "country": "U.S.A."
+  },
+  {
+    "name": "iOSDevUK",
+    "url": "http://www.iosdevuk.com",
+    "startDate": "2018-09-03",
+    "endDate": "2018-09-06",
+    "city": "Aberystwyth",
+    "country": "U.K.",
+    "twitter": "@IOSDEVUK"
+  },
+  {
+    "name": "SwiftConf",
+    "url": "https://swiftconf.com",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-20",
+    "city": "Cologne",
+    "country": "Germany"
   },
   {
     "name": "FrenchKit",
@@ -166,5 +157,14 @@
     "city": "Paris",
     "country": "France",
     "twitter": "@FrenchKitConf"
+  },
+  {
+    "name": "Swift by Northwest",
+    "url": "https://swiftbynorthwest.com",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-20",
+    "city": "Portland, OR",
+    "country": "U.S.A.",
+    "twitter": "@SwiftxNW"
   }
 ]

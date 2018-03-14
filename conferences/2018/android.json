@@ -1,120 +1,5 @@
 [
   {
-    "name": "UIKonf",
-    "url": "http://www.uikonf.com",
-    "startDate": "2018-05-13",
-    "endDate": "2018-05-16",
-    "city": "Berlin",
-    "country": "Germany",
-    "cfpEndDate": "2018-03-08",
-    "cfpUrl": "http://cfp.uikonf.com/about"
-  },
-  {
-    "name": "Droidcon",
-    "url": "https://www.droidcon.sg",
-    "startDate": "2018-04-05",
-    "endDate": "2018-04-05",
-    "city": "Singapore",
-    "country": "Singapore",
-    "cfpEndDate": "2018-03-11",
-    "cfpUrl": "https://www.droidcon.sg/call-for-papers"
-  },
-  {
-    "name": "MCE",
-    "url": "https://2018.mceconf.com",
-    "startDate": "2018-06-05",
-    "endDate": "2018-06-06",
-    "city": "Warsaw",
-    "country": "Poland",
-    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLScCS83nXfBFKyieKKWCCKL_YJTleXmCTuMsdQ802DE-x_TsjA/viewform"
-  },
-  {
-    "name": "Appdevcon",
-    "url": "http://appdevcon.nl",
-    "startDate": "2018-03-15",
-    "endDate": "2018-03-16",
-    "city": "Amsterdam",
-    "country": "Netherlands"
-  },
-  {
-    "name": "mDevCamp",
-    "url": "https://mdevcamp.eu",
-    "city": "Prague",
-    "country": "Czechia",
-    "startDate": "2018-06-15"
-  },
-  {
-    "name": "Google I/O",
-    "url": "https://events.google.com/io",
-    "city": "Mountain View",
-    "country": "U.S.A.",
-    "startDate": "2018-05-08",
-    "endDate": "2018-05-10"
-  },
-  {
-    "name": "Kotlin Conf",
-    "url": "https://kotlinconf.com",
-    "city": "Amsterdam",
-    "country": "Netherlands",
-    "startDate": "2018-10-03",
-    "endDate": "2018-10-05"
-  },
-  {
-    "name": "App Builders",
-    "url": "https://www.appbuilders.ch",
-    "city": "Lugano",
-    "country": "Switzerland",
-    "startDate": "2018-04-16",
-    "endDate": "2018-04-17"
-  },
-  {
-    "name": "Voxxed Days",
-    "url": "https://voxxeddays.com/minsk",
-    "city": "Minsk",
-    "country": "Belarus",
-    "startDate": "2018-05-26"
-  },
-  {
-    "name": "ADDC - App Design & Development Conference",
-    "url": "https://addconf.com",
-    "startDate": "2018-07-04",
-    "endDate": "2018-07-06",
-    "city": "Barcelona",
-    "country": "Spain",
-    "cfpUrl": "https://addconf.com/2018/call-for-proposals",
-    "cfpEndDate": "2017-02-15",
-    "twitter": "@addconf"
-  },
-  {
-    "name": "CodeMobile",
-    "url": "http://www.codemobile.co.uk",
-    "city": "Chester",
-    "country": "U.K.",
-    "startDate": "2018-04-02",
-    "endDate": "2018-04-05",
-    "cfpStart": "2017-06-01",
-    "cfpEndDate": "2017-10-31",
-    "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers"
-  },
-  {
-    "name": "Droidcon Boston",
-    "url": "http://www.droidcon-boston.com",
-    "city": "Boston, MA",
-    "country": "U.S.A.",
-    "startDate": "2018-03-26",
-    "endDate": "2018-03-27"
-  },
-  {
-    "name": "Droidcon Berlin",
-    "url": "https://www.de.droidcon.com",
-    "city": "Berlin",
-    "country": "Germany",
-    "startDate": "2018-06-25",
-    "endDate": "2018-06-27",
-    "cfpUrl": "https://cfp.droidcon.de/en/berlin/18/call-papers",
-    "cfpEndDate": "2018-04-01"
-  },
-  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
@@ -122,14 +7,13 @@
     "startDate": "2018-02-08",
     "endDate": "2018-02-09"
   },
-
   {
-    "name": "App Builders",
-    "url": "https://www.appbuilders.ch",
-    "startDate": "2018-06-16",
-    "endDate": "2018-06-17",
-    "city": "Lugano",
-    "country": "Switzerland"
+    "name": "MobOS",
+    "url": "http://romobos.com",
+    "startDate": "2018-02-15",
+    "endDate": "2018-02-16",
+    "city": "Cluj-Napoca",
+    "country": "Romania"
   },
   {
     "name": "MobileTech",
@@ -148,12 +32,130 @@
     "country": "Netherlands"
   },
   {
-    "name": "MobOS",
-    "url": "http://romobos.com",
-    "startDate": "2018-02-15",
-    "endDate": "2018-02-16",
-    "city": "Cluj-Napoca",
-    "country": "Romania"
+    "name": "Appdevcon",
+    "url": "http://appdevcon.nl",
+    "startDate": "2018-03-15",
+    "endDate": "2018-03-16",
+    "city": "Amsterdam",
+    "country": "Netherlands"
+  },
+  {
+    "name": "Droidcon Boston",
+    "url": "http://www.droidcon-boston.com",
+    "city": "Boston, MA",
+    "country": "U.S.A.",
+    "startDate": "2018-03-26",
+    "endDate": "2018-03-27"
+  },
+  {
+    "name": "CodeMobile",
+    "url": "http://www.codemobile.co.uk",
+    "city": "Chester",
+    "country": "U.K.",
+    "startDate": "2018-04-02",
+    "endDate": "2018-04-05",
+    "cfpStart": "2017-06-01",
+    "cfpEndDate": "2017-10-31",
+    "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers"
+  },
+  {
+    "name": "Droidcon",
+    "url": "https://www.droidcon.sg",
+    "startDate": "2018-04-05",
+    "endDate": "2018-04-05",
+    "city": "Singapore",
+    "country": "Singapore",
+    "cfpEndDate": "2018-03-11",
+    "cfpUrl": "https://www.droidcon.sg/call-for-papers"
+  },
+  {
+    "name": "Chicago Roboto",
+    "url": "http://chicagoroboto.com",
+    "startDate": "2018-04-12",
+    "endDate": "2018-04-13",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@chicagoroboto"
+  },
+  {
+    "name": "App Builders",
+    "url": "https://www.appbuilders.ch",
+    "city": "Lugano",
+    "country": "Switzerland",
+    "startDate": "2018-04-16",
+    "endDate": "2018-04-17"
+  },
+  {
+    "name": "Google I/O",
+    "url": "https://events.google.com/io",
+    "city": "Mountain View",
+    "country": "U.S.A.",
+    "startDate": "2018-05-08",
+    "endDate": "2018-05-10"
+  },
+  {
+    "name": "UIKonf",
+    "url": "http://www.uikonf.com",
+    "startDate": "2018-05-13",
+    "endDate": "2018-05-16",
+    "city": "Berlin",
+    "country": "Germany",
+    "cfpEndDate": "2018-03-08",
+    "cfpUrl": "http://cfp.uikonf.com/about"
+  },
+  {
+    "name": "Voxxed Days",
+    "url": "https://voxxeddays.com/minsk",
+    "city": "Minsk",
+    "country": "Belarus",
+    "startDate": "2018-05-26"
+  },
+  {
+    "name": "MCE",
+    "url": "https://2018.mceconf.com",
+    "startDate": "2018-06-05",
+    "endDate": "2018-06-06",
+    "city": "Warsaw",
+    "country": "Poland",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLScCS83nXfBFKyieKKWCCKL_YJTleXmCTuMsdQ802DE-x_TsjA/viewform"
+  },
+  {
+    "name": "mDevCamp",
+    "url": "https://mdevcamp.eu",
+    "city": "Prague",
+    "country": "Czechia",
+    "startDate": "2018-06-15"
+  },
+  {
+    "name": "App Builders",
+    "url": "https://www.appbuilders.ch",
+    "startDate": "2018-06-16",
+    "endDate": "2018-06-17",
+    "city": "Lugano",
+    "country": "Switzerland"
+  },
+  {
+    "name": "Droidcon Berlin",
+    "url": "https://www.de.droidcon.com",
+    "city": "Berlin",
+    "country": "Germany",
+    "startDate": "2018-06-25",
+    "endDate": "2018-06-27",
+    "cfpUrl": "https://cfp.droidcon.de/en/berlin/18/call-papers",
+    "cfpEndDate": "2018-04-01"
+  },
+  {
+    "name": "ADDC - App Design & Development Conference",
+    "url": "https://addconf.com",
+    "startDate": "2018-07-04",
+    "endDate": "2018-07-06",
+    "city": "Barcelona",
+    "country": "Spain",
+    "cfpUrl": "https://addconf.com/2018/call-for-proposals",
+    "cfpEndDate": "2017-02-15",
+    "twitter": "@addconf"
   },
   {
     "name": "360|AnDev",
@@ -167,14 +169,11 @@
     "twitter": "@360andev"
   },
   {
-    "name": "Chicago Roboto",
-    "url": "http://chicagoroboto.com",
-    "startDate": "2018-04-12",
-    "endDate": "2018-04-13",
-    "city": "Chicago, IL",
-    "country": "U.S.A.",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": "@chicagoroboto"
+    "name": "Kotlin Conf",
+    "url": "https://kotlinconf.com",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "startDate": "2018-10-03",
+    "endDate": "2018-10-05"
   }
 ]

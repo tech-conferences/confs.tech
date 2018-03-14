@@ -1,71 +1,5 @@
 [
   {
-    "name": "AI World Conference & Expo",
-    "url": "https://aiworld.com",
-    "startDate": "2018-12-03",
-    "endDate": "2018-12-05",
-    "city": "Boston",
-    "country": "U.S.A.",
-    "cfpEndDate": "2018-05-31",
-    "cfpUrl": "https://aiworld.com/call-for-speakers/"
-  },
-  {
-    "name": "Chief Data Officer Summit",
-    "url": "https://theinnovationenterprise.com/summits/chief-data-officer-summit-new-york-2018",
-    "startDate": "2018-12-06",
-    "endDate": "2018-12-07",
-    "city": "New York",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Web Directions AI",
-    "url": "http://webdirections.org/ai",
-    "startDate": "2018-10-31",
-    "cfpEndDate": "2018-05-01",
-    "cfpUrl": "https://www.webdirections.org/speaking",
-    "city": "Sydney",
-    "country": "Australia"
-  },
-  {
-    "name": "dotAI",
-    "url": "https://www.dotai.io",
-    "startDate": "2018-05-31",
-    "city": "Paris",
-    "country": "France",
-    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfJjXZDjdvJKTKUz_HedK9oJt_sh9MN57GIm_7H0MfDnd4wOA/viewform?c=0&w=1",
-    "cfpEndDate": "2018-04-01"
-  },
-  {
-    "name": "QCon AI",
-    "url": "https://qcon.ai",
-    "startDate": "2018-04-10",
-    "endDate": "2018-04-11",
-    "city": "San Francisco, CA",
-    "country": "U.S.A.",
-    "twitter": "@qconai"
-  },
-  {
-    "name": "JuliaCon",
-    "url": "http://juliacon.org/2018",
-    "startDate": "2018-08-07",
-    "endDate": "2018-08-11",
-    "city": "London",
-    "country": "U.K.",
-    "cfpEndDate": "2018-04-30",
-    "cfpUrl": "http://juliacon.org/2018/cfp"
-  },
-  {
-    "name": "JuPyter Con",
-    "url": "https://conferences.oreilly.com/jupyter/jup-ny",
-    "startDate": "2018-07-22",
-    "endDate": "2018-07-24",
-    "city": "New York",
-    "country": "U.S.A.",
-    "cfpEndDate": "2018-03-06",
-    "cfpUrl": "https://conferences.oreilly.com/jupyter/jup-ny/public/cfp/621",
-    "twitter": "@JupyterCon"
-  },
-  {
     "name": "Big Data Paris 2018",
     "url": "https://www.bigdataparis.com",
     "startDate": "2018-03-12",
@@ -82,6 +16,15 @@
     "city": "Oxford",
     "country": "U.K.",
     "twitter": "@fenicsproject"
+  },
+  {
+    "name": "QCon AI",
+    "url": "https://qcon.ai",
+    "startDate": "2018-04-10",
+    "endDate": "2018-04-11",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "twitter": "@qconai"
   },
   {
     "name": "PyData London",
@@ -110,6 +53,15 @@
     "twitter": "@ropensci"
   },
   {
+    "name": "dotAI",
+    "url": "https://www.dotai.io",
+    "startDate": "2018-05-31",
+    "city": "Paris",
+    "country": "France",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfJjXZDjdvJKTKUz_HedK9oJt_sh9MN57GIm_7H0MfDnd4wOA/viewform?c=0&w=1",
+    "cfpEndDate": "2018-04-01"
+  },
+  {
     "name": "PyData Berlin",
     "url": "https://pydata.org/berlin2018",
     "startDate": "2018-07-06",
@@ -121,6 +73,17 @@
     "cfpEndDate": "2018-05-31"
   },
   {
+    "name": "JuPyter Con",
+    "url": "https://conferences.oreilly.com/jupyter/jup-ny",
+    "startDate": "2018-07-22",
+    "endDate": "2018-07-24",
+    "city": "New York",
+    "country": "U.S.A.",
+    "cfpEndDate": "2018-03-06",
+    "cfpUrl": "https://conferences.oreilly.com/jupyter/jup-ny/public/cfp/621",
+    "twitter": "@JupyterCon"
+  },
+  {
     "name": "EuroPython Society",
     "url": "https://ep2018.europython.eu",
     "startDate": "2018-07-23",
@@ -128,5 +91,42 @@
     "city": "Edinburgh",
     "country": "U.K.",
     "twitter": "@PyData"
+  },
+  {
+    "name": "JuliaCon",
+    "url": "http://juliacon.org/2018",
+    "startDate": "2018-08-07",
+    "endDate": "2018-08-11",
+    "city": "London",
+    "country": "U.K.",
+    "cfpEndDate": "2018-04-30",
+    "cfpUrl": "http://juliacon.org/2018/cfp"
+  },
+  {
+    "name": "Web Directions AI",
+    "url": "http://webdirections.org/ai",
+    "startDate": "2018-10-31",
+    "cfpEndDate": "2018-05-01",
+    "cfpUrl": "https://www.webdirections.org/speaking",
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  {
+    "name": "AI World Conference & Expo",
+    "url": "https://aiworld.com",
+    "startDate": "2018-12-03",
+    "endDate": "2018-12-05",
+    "city": "Boston",
+    "country": "U.S.A.",
+    "cfpEndDate": "2018-05-31",
+    "cfpUrl": "https://aiworld.com/call-for-speakers/"
+  },
+  {
+    "name": "Chief Data Officer Summit",
+    "url": "https://theinnovationenterprise.com/summits/chief-data-officer-summit-new-york-2018",
+    "startDate": "2018-12-06",
+    "endDate": "2018-12-07",
+    "city": "New York",
+    "country": "U.S.A."
   }
 ]

@@ -1,5 +1,126 @@
 [
   {
+    "name": "Ruby on Ice",
+    "url": "https://rubyonice.com",
+    "startDate": "2018-01-26",
+    "endDate": "2018-01-28",
+    "city": "Tegernsee",
+    "country": "Germany",
+    "twitter": "@rubyoniceconf"
+  },
+  {
+    "name": "Rubyfuza",
+    "url": "http://www.rubyfuza.org",
+    "startDate": "2018-02-01",
+    "endDate": "2018-02-03",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "twitter": "@rubyfuza"
+  },
+  {
+    "name": "RubyConf India",
+    "url": "http://rubyconfindia.org",
+    "startDate": "2018-02-09",
+    "endDate": "2018-02-10",
+    "city": "Bengaluru",
+    "country": "India",
+    "twitter": "@rubyconfindia"
+  },
+  {
+    "name": "RubyConf Australia",
+    "url": "https://www.rubyconf.org.au/2018",
+    "startDate": "2018-03-08",
+    "endDate": "2018-03-09",
+    "city": "Sydney",
+    "country": "Australia",
+    "cfpUrl": "https://www.papercall.io/ruby-conf-au-2018",
+    "cfpEndDate": "2017-10-30",
+    "twitter": "@rubyconf_au"
+  },
+  {
+    "name": "RubyConf Philippines",
+    "url": "http://rubyconf.ph",
+    "startDate": "2018-03-15",
+    "endDate": "2018-03-17",
+    "city": "Manila",
+    "country": "Philippines",
+    "twitter": "@rubyconfph"
+  },
+  {
+    "name": "wroc_love.rb",
+    "url": "http://wrocloverb.com",
+    "startDate": "2018-03-16",
+    "endDate": "2018-03-18",
+    "city": "Wrocław",
+    "country": "Poland",
+    "twitter": "@wrocloverb"
+  },
+  {
+    "name": "Bath Ruby Conference",
+    "url": "http://2018.bathruby.uk",
+    "startDate": "2018-03-22",
+    "endDate": "2018-03-23",
+    "city": "Bath",
+    "country": "U.K.",
+    "twitter": "@bathruby"
+  },
+  {
+    "name": "Isle of Ruby",
+    "url": "http://isleofruby.org",
+    "startDate": "2018-04-13",
+    "endDate": "2018-04-15",
+    "city": "Exeter",
+    "country": "U.K.",
+    "twitter": "@isleofruby"
+  },
+  {
+    "name": "RailsConf",
+    "url": "https://railsconf.com",
+    "startDate": "2018-04-17",
+    "endDate": "2018-04-19",
+    "city": "Pittsburgh",
+    "country": "U.S.A.",
+    "twitter": "@railsconf"
+  },
+  {
+    "name": "Ruby X Elixir Conf Taiwan",
+    "url": "https://2018.rubyconf.tw",
+    "startDate": "2018-04-27",
+    "endDate": "2018-04-28",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "twitter": "@rubyconftw"
+  },
+  {
+    "name": "RubyHACK",
+    "url": "http://rubyhack.com",
+    "startDate": "2018-05-03",
+    "endDate": "2018-05-04",
+    "city": "Salt Lake City",
+    "country": "U.S.A.",
+    "twitter": "@utrubyhack"
+  },
+  {
+    "name": "Ruby Unconf Hamburg",
+    "url": "http://rubyunconf.eu",
+    "startDate": "2018-05-05",
+    "endDate": "2018-05-06",
+    "city": "Hamburg",
+    "country": "Germany",
+    "twitter": "@RubyUnconfEU"
+  },
+  {
+    "name": "Madison + Ruby: Chicago",
+    "url": "https://ti.to/adorable/madison-ruby-chicago",
+    "startDate": "2018-05-10",
+    "endDate": "2018-05-11",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "cfpUrl": "https://www.papercall.io/madison-ruby-chicago",
+    "cfpEndDate": "2018-03-16",
+    "twitter": "@tMadisonRuby"
+  },
+  {
     "name": "ROSS conf Amsterdam",
     "url": "https://rossconfams.eventbrite.co.uk",
     "startDate": "2018-05-11",
@@ -8,6 +129,32 @@
     "country": "Netherlands",
     "cfpEndDate": "2018-05-08",
     "twitter": "@rossconf"
+  },
+  {
+    "name": "WeAreDevelopers",
+    "url": "https://www.wearedevelopers.com",
+    "startDate": "2018-05-16",
+    "endDate": "2018-05-18",
+    "city": "Vienna",
+    "country": "Austria"
+  },
+  {
+    "name": "Balkan Ruby",
+    "url": "http://balkanruby.com",
+    "startDate": "2018-05-25",
+    "endDate": "2018-05-26",
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "twitter": "@utrubyhack"
+  },
+  {
+    "name": "RubyKaigi",
+    "url": "http://rubykaigi.org/2018",
+    "startDate": "2018-05-31",
+    "endDate": "2018-06-02",
+    "city": "Sendai",
+    "country": "Japan",
+    "twitter": "@rubykaigi"
   },
   {
     "name": "EuRuKo",
@@ -30,159 +177,12 @@
     "twitter": "@rubyc_eu"
   },
   {
-    "name": "Ruby Unconf Hamburg",
-    "url": "http://rubyunconf.eu",
-    "startDate": "2018-05-05",
-    "endDate": "2018-05-06",
-    "city": "Hamburg",
-    "country": "Germany",
-    "twitter": "@RubyUnconfEU"
-  },
-  {
-    "name": "WeAreDevelopers",
-    "url": "https://www.wearedevelopers.com",
-    "startDate": "2018-05-16",
-    "endDate": "2018-05-18",
-    "city": "Vienna",
-    "country": "Austria"
-  },
-  {
-    "name": "Madison + Ruby: Chicago",
-    "url": "https://ti.to/adorable/madison-ruby-chicago",
-    "startDate": "2018-05-10",
-    "endDate": "2018-05-11",
-    "city": "Chicago, IL",
-    "country": "U.S.A.",
-    "cfpUrl": "https://www.papercall.io/madison-ruby-chicago",
-    "cfpEndDate": "2018-03-16",
-    "twitter": "@tMadisonRuby"
-  },
-  {
     "name": "MCE",
     "url": "https://2018.mceconf.com",
     "startDate": "2018-06-05",
     "endDate": "2018-06-06",
     "city": "Warsaw",
     "country": "Poland"
-  },
-  {
-    "name": "Ruby on Ice",
-    "url": "https://rubyonice.com",
-    "startDate": "2018-01-26",
-    "endDate": "2018-01-28",
-    "city": "Tegernsee",
-    "country": "Germany",
-    "twitter": "@rubyoniceconf"
-  },
-  {
-    "name": "wroc_love.rb",
-    "url": "http://wrocloverb.com",
-    "startDate": "2018-03-16",
-    "endDate": "2018-03-18",
-    "city": "Wrocław",
-    "country": "Poland",
-    "twitter": "@wrocloverb"
-  },
-  {
-    "name": "Rubyfuza",
-    "url": "http://www.rubyfuza.org",
-    "startDate": "2018-02-01",
-    "endDate": "2018-02-03",
-    "city": "Cape Town",
-    "country": "South Africa",
-    "twitter": "@rubyfuza"
-  },
-  {
-    "name": "RubyConf Australia",
-    "url": "https://www.rubyconf.org.au/2018",
-    "startDate": "2018-03-08",
-    "endDate": "2018-03-09",
-    "city": "Sydney",
-    "country": "Australia",
-    "cfpUrl": "https://www.papercall.io/ruby-conf-au-2018",
-    "cfpEndDate": "2017-10-30",
-    "twitter": "@rubyconf_au"
-  },
-  {
-    "name": "RailsConf",
-    "url": "https://railsconf.com",
-    "startDate": "2018-04-17",
-    "endDate": "2018-04-19",
-    "city": "Pittsburgh",
-    "country": "U.S.A.",
-    "twitter": "@railsconf"
-  },
-  {
-    "name": "Bath Ruby Conference",
-    "url": "http://2018.bathruby.uk",
-    "startDate": "2018-03-22",
-    "endDate": "2018-03-23",
-    "city": "Bath",
-    "country": "U.K.",
-    "twitter": "@bathruby"
-  },
-  {
-    "name": "Isle of Ruby",
-    "url": "http://isleofruby.org",
-    "startDate": "2018-04-13",
-    "endDate": "2018-04-15",
-    "city": "Exeter",
-    "country": "U.K.",
-    "twitter": "@isleofruby"
-  },
-  {
-    "name": "RubyConf India",
-    "url": "http://rubyconfindia.org",
-    "startDate": "2018-02-09",
-    "endDate": "2018-02-10",
-    "city": "Bengaluru",
-    "country": "India",
-    "twitter": "@rubyconfindia"
-  },
-  {
-    "name": "RubyConf Philippines",
-    "url": "http://rubyconf.ph",
-    "startDate": "2018-03-15",
-    "endDate": "2018-03-17",
-    "city": "Manila",
-    "country": "Philippines",
-    "twitter": "@rubyconfph"
-  },
-  {
-    "name": "Ruby X Elixir Conf Taiwan",
-    "url": "https://2018.rubyconf.tw",
-    "startDate": "2018-04-27",
-    "endDate": "2018-04-28",
-    "city": "Taipei",
-    "country": "Taiwan",
-    "twitter": "@rubyconftw"
-  },
-  {
-    "name": "RubyHACK",
-    "url": "http://rubyhack.com",
-    "startDate": "2018-05-03",
-    "endDate": "2018-05-04",
-    "city": "Salt Lake City",
-    "country": "U.S.A.",
-    "twitter": "@utrubyhack"
-  },
-  {
-    "name": "Balkan Ruby",
-    "url": "http://balkanruby.com",
-    "startDate": "2018-05-25",
-    "endDate": "2018-05-26",
-    "city": "Sofia",
-    "country": "Bulgaria",
-    "twitter": "@utrubyhack"
-  },
-  {
-    "name": "RubyKaigi",
-    "url": "http://rubykaigi.org/2018",
-    "startDate": "2018-05-31",
-    "endDate": "2018-06-02",
-    "city": "Sendai",
-    "country": "Japan",
-    "twitter": "@rubykaigi"
   },
   {
     "name": "Ruby Conf Kenya",

@@ -1,465 +1,12 @@
 [
   {
-    "name": "Web Directions Design Leaders",
-    "url": "http://webdirections.org/designleaders",
-    "startDate": "2018-04-11",
-    "city": "Melbourne",
-    "country": "Australia",
-    "twitter": "@webdirections"
-  },
-  {
-    "name": "Experience Conference",
-    "url": "http://www.exconf.com",
-    "startDate": "2018-03-26",
-    "endDate": "2018-03-27",
-    "city": "Bratislava",
-    "country": "Slovakia",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": "@exconfba"
-  },
-  {
-    "name": "CONFAB",
-    "url": "https://www.confabevents.com",
-    "startDate": "2018-05-21",
-    "endDate": "2018-05-23",
-    "city": "Minneapolis",
-    "country": "U.S.A.",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": "@ConfabEvents"
-  },
-  {
-    "name": "AmpersandConf",
-    "url": "https://2018.ampersandconf.com",
-    "startDate": "2018-06-29",
-    "endDate": "2018-06-29",
-    "city": "Brighton",
-    "country": "U.K.",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": "@ampersandconf"
-  },
-  {
-    "name": "Pixel Pioneers Belfast",
-    "url": "https://pixelpioneers.co",
-    "city": "Belfast",
-    "country": "U.K.",
-    "startDate": "2018-11",
-    "cfpUrl": "https://pixelpioneers.co/call-for-speakers",
-    "cfpEndDate": "2018-07-31"
-  },
-  {
-    "name": "Pixel Pioneers Bristol",
-    "url": "https://pixelpioneers.co",
-    "city": "Bristol",
-    "country": "U.K.",
-    "startDate": "2018-06-08"
-  },
-  {
-    "name": "Beyond Tellerrand",
-    "url": "https://beyondtellerrand.com/events/duesseldorf-2018",
-    "startDate": "2018-05-07",
-    "endDate": "2018-05-09",
-    "city": "Düsseldorf",
-    "country": "Germany",
-    "twitter": "@btconf"
-  },
-  {
-    "name": "Beyond Tellerrand",
-    "url": "https://beyondtellerrand.com/events/berlin-2018",
-    "city": "Berlin",
-    "country": "Germany",
-    "startDate": "2018-11-05",
-    "endDate": "2018-11-07"
-  },
-  {
-    "name": "UX Strat EU",
-    "url": "https://uxstrat.com/europe",
-    "startDate": "2018-06-10",
-    "endDate": "2018-06-12",
-    "city": "Amsterdam",
-    "country": "Netherlands"
-  },
-  {
-    "name": "UX Strat USA",
-    "url": "https://uxstrat.com/usa",
-    "startDate": "2018-09-18",
-    "endDate": "2018-09-20",
-    "city": "Boulder",
-    "country": "U.S.A.",
-    "cfpUrl": "https://uxstrat.com/callForPresentations/USA",
-    "cfpEndDate": "2018-04-20"
-  },
-  {
-    "name": "Euro IA",
-    "url": "http://www.euroia.org/venue-2018",
-    "startDate": "2018-09",
-    "city": "Dublin",
-    "country": "U.K.",
-    "cfpUrl": "http://euroia.org/submissions",
-    "cfpEndDate": "2018-03-03"
-  },
-  {
-    "name": "UXDX",
-    "url": "https://uxdxconf.com",
-    "startDate": "2018-10-04",
-    "endDate": "2018-10-07",
-    "city": "Dublin",
-    "country": "U.K."
-  },
-  {
-    "name": "Product Camp",
-    "url": "https://productcamp.pl",
-    "startDate": "2018-06-07",
-    "endDate": "2018-06-09",
-    "city": "Gdynia",
-    "country": "Poland"
-  },
-  {
-    "name": "Circles",
-    "url": "http://circlesconference.com",
-    "startDate": "2018-09-19",
-    "endDate": "2018-09-21",
-    "city": "Fort Worth, Texas",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Confoo",
-    "url": "https://confoo.ca/en/yul2018",
-    "startDate": "2018-03-07",
-    "endDate": "2018-03-09",
-    "city": "Montréal",
-    "country": "Canada"
-  },
-  {
-    "name": "World Usability Congress",
-    "url": "https://worldusabilitycongress.com",
-    "startDate": "2018-10-16",
-    "endDate": "2018-10-18",
-    "city": "Graz",
-    "country": "Austria"
-  },
-  {
-    "name": "UX Australia",
-    "url": "http://www.uxaustralia.com.au/conferences/uxaustralia-2018",
-    "startDate": "2018-08-28",
-    "endDate": "2018-08-31",
-    "city": "Melbourne",
-    "country": "Australia",
-    "cfpUrl": "http://www.uxaustralia.com.au/conferences/uxaustralia-2018/call-for-proposals",
-    "cfpEndDate": "2018-03-18"
-  },
-  {
-    "name": "UXPA 2018",
-    "url": "http://uxpa2018.org",
-    "startDate": "2018-06-26",
-    "endDate": "2018-06-28",
-    "city": "Rio Mar",
-    "country": "Puerto Rico"
-  },
-  {
-    "name": "ACM UMAP 2018",
-    "url": "http://www.um.org/umap2018",
-    "startDate": "2018-07-08",
-    "endDate": "2018-07-11",
-    "city": "Singapore",
-    "country": "Singapore",
-    "cfpUrl": "http://www.um.org/umap2018/cfp",
-    "cfpEndDate": "2018-03-04"
-  },
-  {
-    "name": "Design / Content",
-    "url": "https://content.design",
-    "startDate": "2018-06-25",
-    "endDate": "2018-06-27",
-    "city": "Vancouver",
-    "country": "Canada"
-  },
-  {
-    "name": "UX Scotland",
-    "url": "http://uxscotland.net/2018",
-    "startDate": "2018-06-13",
-    "endDate": "2018-06-15",
-    "city": "Edimburgh",
-    "country": "U.K."
-  },
-  {
-    "name": "POLISHOPA Design Thinking Conference",
-    "url": "http://polishopa.pl/en",
-    "startDate": "2018-06-04",
-    "endDate": "2018-06-07",
-    "city": "Bydgoszcz",
-    "country": "Poland"
-  },
-  {
-    "name": "DesignThinkersVan",
-    "url": "https://www.designthinkers.com/Vancouver",
-    "startDate": "2018-05-29",
-    "endDate": "2018-05-30",
-    "city": "Vancouver",
-    "country": "Canada"
-  },
-  {
-    "name": "UX London",
-    "url": "https://2018.uxlondon.com",
-    "startDate": "2018-05-23",
-    "endDate": "2018-05-25",
-    "city": "London",
-    "country": "U.K."
-  },
-  {
-    "name": "UX-LX",
-    "url": "http://ux-lx.com",
-    "startDate": "2018-05-22",
-    "endDate": "2018-05-25",
-    "city": "Lisbon",
-    "country": "Portugal"
-  },
-  {
-    "name": "Design Thinking 2018",
-    "url": "https://designthinkingusa.iqpc.com",
-    "startDate": "2018-04-23",
-    "endDate": "2018-04-25",
-    "city": "Austin",
-    "country": "U.S.A."
-  },
-  {
-    "name": "The Design Conference",
-    "url": "http://www.designconference.org",
-    "startDate": "2018-05-21",
-    "endDate": "2018-05-24",
-    "city": "Dubrovnik",
-    "country": "Croatia"
-  },
-  {
-    "name": "Design Thinking",
-    "url": "https://10times.com/design-thinkingsydney",
-    "startDate": "2018-05-15",
-    "endDate": "2018-05-17",
-    "city": "Sydney",
-    "country": "Australia"
-  },
-  {
-    "name": "CHI 2018",
-    "url": "https://chi2018.acm.org",
-    "startDate": "2018-04-21",
-    "endDate": "2018-04-26",
-    "city": "Montréal",
-    "country": "Canada"
-  },
-  {
-    "name": "An Event Apart",
-    "url": "https://aneventapart.com/event/seattle-2018",
-    "startDate": "2018-04-02",
-    "endDate": "2018-04-04",
-    "city": "Seattle",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Smashing Conference",
-    "url": "https://smashingconf.com/sf-2018",
-    "startDate": "2018-04-17",
-    "endDate": "2018-04-18",
-    "city": "San Francisco, CA",
-    "country": "U.S.A.",
-    "twitter": "@smashingconf"
-  },
-  {
-    "name": "Smashing Conference",
-    "url": "https://smashingconf.com/toronto-2018",
-    "startDate": "2018-06-26",
-    "endDate": "2018-06-27",
-    "city": "Tonronto",
-    "country": "Canada"
-  },
-  {
-    "name": "Smashing Conference",
-    "url": "https://smashingconf.com/london-2018",
-    "startDate": "2018-02-07",
-    "endDate": "2018-02-08",
-    "city": "London",
-    "country": "U.K."
-  },
-  {
-    "name": "CHIuXiD 2018",
-    "url": "http://2018.chiuxid.org",
-    "startDate": "2018-03-26",
-    "endDate": "2018-03-29",
-    "city": "Jakarta / Yogyakarta",
-    "country": "Indonesia"
-  },
-  {
-    "name": "iA Summit",
-    "url": "http://www.iasummit.org",
-    "startDate": "2018-03-21",
-    "endDate": "2018-03-25",
-    "city": "Chicago",
-    "country": "U.S.A."
-  },
-  {
-    "name": "World Information Architecture Day",
-    "url": "http://2018.wiadswitzerland.org",
-    "startDate": "2018-02-23",
-    "endDate": "2018-02-24",
-    "city": "Zurich",
-    "country": "Switzerland"
-  },
-  {
-    "name": "The UX Conf",
-    "url": "http://theuxconf.com",
-    "startDate": "2018-02-20",
-    "city": "London",
-    "country": "U.K."
-  },
-  {
-    "name": "Design Indaba",
-    "url": "http://www.designindaba.com/events/design-indaba-conference-2018",
-    "startDate": "2018-02-21",
-    "endDate": "2018-02-23",
-    "city": "Cape Town",
-    "country": "South Africa"
-  },
-  {
-    "name": "Awwwards Berlin",
-    "url": "https://conference.awwwards.com/berlin",
-    "startDate": "2018-02-07",
-    "endDate": "2018-02-09",
-    "city": "Berlin",
-    "country": "Germany"
-  },
-  {
-    "name": "Awwwards San Fransisco",
-    "url": "https://conference.awwwards.com/san-francisco",
-    "startDate": "2018-05-10",
-    "endDate": "2018-05-11",
-    "city": "San Fransisco",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Web Directions Design",
-    "url": "http://webdirections.org/design",
-    "startDate": "2018-04-12",
-    "endDate": "2018-04-13",
-    "city": "Melbourne",
-    "country": "Australia",
-    "twitter": "@webdirections"
-  },
-  {
-    "name": "Web Directions Summit",
-    "url": "http://webdirections.org/wds",
-    "startDate": "2018-11-01",
-    "endDate": "2018-11-02",
+    "name": "Semi Permanent",
+    "url": "https://www.semipermanent.com/events",
+    "startDate": "2017-05",
+    "endDate": "2017-05",
     "city": "Sydney",
     "country": "Australia",
-    "twitter": "@webdirections"
-  },
-  {
-    "name": "Nordic.design",
-    "url": "http://nordic.design",
-    "startDate": "2018-09-05",
-    "endDate": "2018-09-05",
-    "city": "Stockholm",
-    "country": "Sweden",
-    "twitter": "@nordicdesign"
-  },
-  {
-    "name": "ADDC - App Design & Development Conference",
-    "url": "https://addconf.com",
-    "startDate": "2018-07-04",
-    "endDate": "2018-07-06",
-    "city": "Barcelona",
-    "country": "Spain",
-    "cfpUrl": "https://addconf.com/2018/call-for-proposals",
-    "cfpEndDate": "2017-02-15",
-    "twitter": "@addconf"
-  },
-  {
-    "name": "CSS Day + UX Special",
-    "url": "https://cssday.nl/2018",
-    "startDate": "2018-06-14",
-    "endDate": "2018-06-15",
-    "city": "Amsterdam",
-    "country": "Netherlands",
-    "twitter": "@cssdayconf"
-  },
-  {
-    "name": "TEI 2018",
-    "url": "https://tei.acm.org/2018",
-    "startDate": "2018-03-18",
-    "endDate": "2018-03-21",
-    "city": "Stockholm",
-    "country": "Sweden",
-    "twitter": "@tei_conf"
-  },
-  {
-    "name": "ACM IUI 2018",
-    "url": "http://iui.acm.org/2018",
-    "startDate": "2018-03-07",
-    "endDate": "2018-03-11",
-    "city": "Tokyo",
-    "country": "Japan",
-    "twitter": "@acmiui"
-  },
-  {
-    "name": "Convey UX",
-    "url": "http://conveyux.com",
-    "startDate": "2018-02-27",
-    "endDate": "2018-03-01",
-    "city": "Seattle",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Interaction week 18",
-    "url": "http://interaction18.ixda.org",
-    "startDate": "2018-02-03",
-    "endDate": "2018-02-08",
-    "city": "Lyon",
-    "country": "France"
-  },
-  {
-    "name": "UXWeek 2018",
-    "url": "http://uxweek.com",
-    "startDate": "2018-08-21",
-    "endDate": "2018-08-24",
-    "city": "San Fransisco",
-    "country": "U.S.A.",
-    "twitter": "@AdaptivePath"
-  },
-  {
-    "name": "UX Copenhagen",
-    "url": "https://uxcopenhagen.com",
-    "startDate": "2018-02-27",
-    "endDate": "2018-02-28",
-    "city": "Copenhagen",
-    "country": "Denmark",
-    "twitter": "@uxcopenhagen"
-  },
-  {
-    "name": "UX HK",
-    "url": "http://uxhongkong.com",
-    "startDate": "2018-03-10",
-    "endDate": "2018-03-09",
-    "country": "Hong Kong",
-    "twitter": "@uxhk"
-  },
-  {
-    "name": "99U",
-    "url": "http://conference.99u.com",
-    "startDate": "2018-05-09",
-    "endDate": "2018-05-11",
-    "city": "New York City",
-    "country": "U.S.A.",
-    "twitter": "@99u"
-  },
-  {
-    "name": "UX Istanbul",
-    "url": "https://uxistanbul.org",
-    "startDate": "2018-02-20",
-    "endDate": "2018-02-20",
-    "city": "Istanbul",
-    "country": "Turkey",
-    "twitter": "@ux_istanbul"
+    "twitter": "@semiglobal"
   },
   {
     "name": "Front Utah",
@@ -471,13 +18,77 @@
     "twitter": "@front"
   },
   {
-    "name": "Front Utah",
-    "url": "https://theinnovationenterprise.com/summits/ux-ui-innovation-summit-london-2018",
-    "startDate": "2018-06-12",
-    "endDate": "2018-06-13",
+    "name": "Interaction week 18",
+    "url": "http://interaction18.ixda.org",
+    "startDate": "2018-02-03",
+    "endDate": "2018-02-08",
+    "city": "Lyon",
+    "country": "France"
+  },
+  {
+    "name": "Smashing Conference",
+    "url": "https://smashingconf.com/london-2018",
+    "startDate": "2018-02-07",
+    "endDate": "2018-02-08",
     "city": "London",
-    "country": "U.K.",
-    "twitter": "@iegroup"
+    "country": "U.K."
+  },
+  {
+    "name": "Awwwards Berlin",
+    "url": "https://conference.awwwards.com/berlin",
+    "startDate": "2018-02-07",
+    "endDate": "2018-02-09",
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  {
+    "name": "The UX Conf",
+    "url": "http://theuxconf.com",
+    "startDate": "2018-02-20",
+    "city": "London",
+    "country": "U.K."
+  },
+  {
+    "name": "UX Istanbul",
+    "url": "https://uxistanbul.org",
+    "startDate": "2018-02-20",
+    "endDate": "2018-02-20",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "twitter": "@ux_istanbul"
+  },
+  {
+    "name": "Design Indaba",
+    "url": "http://www.designindaba.com/events/design-indaba-conference-2018",
+    "startDate": "2018-02-21",
+    "endDate": "2018-02-23",
+    "city": "Cape Town",
+    "country": "South Africa"
+  },
+  {
+    "name": "World Information Architecture Day",
+    "url": "http://2018.wiadswitzerland.org",
+    "startDate": "2018-02-23",
+    "endDate": "2018-02-24",
+    "city": "Zurich",
+    "country": "Switzerland"
+  },
+  {
+    "name": "UX Copenhagen",
+    "url": "https://uxcopenhagen.com",
+    "startDate": "2018-02-27",
+    "endDate": "2018-02-28",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "twitter": "@uxcopenhagen"
+  },
+  {
+    "name": "Convey UX",
+    "url": "http://conveyux.com",
+    "startDate": "2018-02-27",
+    "endDate": "2018-03-01",
+    "city": "Seattle",
+    "country": "U.S.A."
   },
   {
     "name": ".concat()",
@@ -491,49 +102,21 @@
     "twitter": "@conc_at"
   },
   {
-    "name": "UX In The City",
-    "url": "http://uxinthecity.net/2018/manchester",
-    "startDate": "2018-03-15",
-    "endDate": "2018-03-16",
-    "city": "Manchester",
-    "country": "U.K.",
-    "twitter": "@uxcitymcr"
+    "name": "Confoo",
+    "url": "https://confoo.ca/en/yul2018",
+    "startDate": "2018-03-07",
+    "endDate": "2018-03-09",
+    "city": "Montréal",
+    "country": "Canada"
   },
   {
-    "name": "Delight Summit",
-    "url": "http://delight.us/conference",
-    "startDate": "2018-05-21",
-    "endDate": "2018-05-22",
-    "city": "Portland",
-    "country": "U.S.A.",
-    "twitter": "@DelightConf"
-  },
-  {
-    "name": "OFFFest",
-    "url": "http://offf.barcelona",
-    "startDate": "2018-05-24",
-    "endDate": "2018-05-26",
-    "city": "Barcelona",
-    "country": "Spain",
-    "twitter": "@OFFFest"
-  },
-  {
-    "name": "How Design Live",
-    "url": "http://howdesignlive.com",
-    "startDate": "2018-04-30",
-    "endDate": "2018-05-03",
-    "city": "Boston",
-    "country": "U.S.A.",
-    "twitter": "@HOWbrand"
-  },
-  {
-    "name": "Semi Permanent",
-    "url": "https://www.semipermanent.com/events",
-    "startDate": "2017-05",
-    "endDate": "2017-05",
-    "city": "Sydney",
-    "country": "Australia",
-    "twitter": "@semiglobal"
+    "name": "ACM IUI 2018",
+    "url": "http://iui.acm.org/2018",
+    "startDate": "2018-03-07",
+    "endDate": "2018-03-11",
+    "city": "Tokyo",
+    "country": "Japan",
+    "twitter": "@acmiui"
   },
   {
     "name": "ReactFest",
@@ -547,6 +130,14 @@
     "twitter": "@ReactFest"
   },
   {
+    "name": "UX HK",
+    "url": "http://uxhongkong.com",
+    "startDate": "2018-03-10",
+    "endDate": "2018-03-09",
+    "country": "Hong Kong",
+    "twitter": "@uxhk"
+  },
+  {
     "name": "Pixel Up!",
     "url": "https://pixelup.co.za",
     "startDate": "2018-03-12",
@@ -558,6 +149,355 @@
     "twitter": "@letspixelup"
   },
   {
+    "name": "UX In The City",
+    "url": "http://uxinthecity.net/2018/manchester",
+    "startDate": "2018-03-15",
+    "endDate": "2018-03-16",
+    "city": "Manchester",
+    "country": "U.K.",
+    "twitter": "@uxcitymcr"
+  },
+  {
+    "name": "TEI 2018",
+    "url": "https://tei.acm.org/2018",
+    "startDate": "2018-03-18",
+    "endDate": "2018-03-21",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@tei_conf"
+  },
+  {
+    "name": "iA Summit",
+    "url": "http://www.iasummit.org",
+    "startDate": "2018-03-21",
+    "endDate": "2018-03-25",
+    "city": "Chicago",
+    "country": "U.S.A."
+  },
+  {
+    "name": "CHIuXiD 2018",
+    "url": "http://2018.chiuxid.org",
+    "startDate": "2018-03-26",
+    "endDate": "2018-03-29",
+    "city": "Jakarta / Yogyakarta",
+    "country": "Indonesia"
+  },
+  {
+    "name": "Experience Conference",
+    "url": "http://www.exconf.com",
+    "startDate": "2018-03-26",
+    "endDate": "2018-03-27",
+    "city": "Bratislava",
+    "country": "Slovakia",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@exconfba"
+  },
+  {
+    "name": "An Event Apart",
+    "url": "https://aneventapart.com/event/seattle-2018",
+    "startDate": "2018-04-02",
+    "endDate": "2018-04-04",
+    "city": "Seattle",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Web Directions Design Leaders",
+    "url": "http://webdirections.org/designleaders",
+    "startDate": "2018-04-11",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
+    "name": "Web Directions Design",
+    "url": "http://webdirections.org/design",
+    "startDate": "2018-04-12",
+    "endDate": "2018-04-13",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
+    "name": "Smashing Conference",
+    "url": "https://smashingconf.com/sf-2018",
+    "startDate": "2018-04-17",
+    "endDate": "2018-04-18",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "twitter": "@smashingconf"
+  },
+  {
+    "name": "CHI 2018",
+    "url": "https://chi2018.acm.org",
+    "startDate": "2018-04-21",
+    "endDate": "2018-04-26",
+    "city": "Montréal",
+    "country": "Canada"
+  },
+  {
+    "name": "Design Thinking 2018",
+    "url": "https://designthinkingusa.iqpc.com",
+    "startDate": "2018-04-23",
+    "endDate": "2018-04-25",
+    "city": "Austin",
+    "country": "U.S.A."
+  },
+  {
+    "name": "How Design Live",
+    "url": "http://howdesignlive.com",
+    "startDate": "2018-04-30",
+    "endDate": "2018-05-03",
+    "city": "Boston",
+    "country": "U.S.A.",
+    "twitter": "@HOWbrand"
+  },
+  {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com/events/duesseldorf-2018",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-09",
+    "city": "Düsseldorf",
+    "country": "Germany",
+    "twitter": "@btconf"
+  },
+  {
+    "name": "99U",
+    "url": "http://conference.99u.com",
+    "startDate": "2018-05-09",
+    "endDate": "2018-05-11",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "twitter": "@99u"
+  },
+  {
+    "name": "Awwwards San Fransisco",
+    "url": "https://conference.awwwards.com/san-francisco",
+    "startDate": "2018-05-10",
+    "endDate": "2018-05-11",
+    "city": "San Fransisco",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Design Thinking",
+    "url": "https://10times.com/design-thinkingsydney",
+    "startDate": "2018-05-15",
+    "endDate": "2018-05-17",
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  {
+    "name": "CONFAB",
+    "url": "https://www.confabevents.com",
+    "startDate": "2018-05-21",
+    "endDate": "2018-05-23",
+    "city": "Minneapolis",
+    "country": "U.S.A.",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@ConfabEvents"
+  },
+  {
+    "name": "The Design Conference",
+    "url": "http://www.designconference.org",
+    "startDate": "2018-05-21",
+    "endDate": "2018-05-24",
+    "city": "Dubrovnik",
+    "country": "Croatia"
+  },
+  {
+    "name": "Delight Summit",
+    "url": "http://delight.us/conference",
+    "startDate": "2018-05-21",
+    "endDate": "2018-05-22",
+    "city": "Portland",
+    "country": "U.S.A.",
+    "twitter": "@DelightConf"
+  },
+  {
+    "name": "UX-LX",
+    "url": "http://ux-lx.com",
+    "startDate": "2018-05-22",
+    "endDate": "2018-05-25",
+    "city": "Lisbon",
+    "country": "Portugal"
+  },
+  {
+    "name": "UX London",
+    "url": "https://2018.uxlondon.com",
+    "startDate": "2018-05-23",
+    "endDate": "2018-05-25",
+    "city": "London",
+    "country": "U.K."
+  },
+  {
+    "name": "OFFFest",
+    "url": "http://offf.barcelona",
+    "startDate": "2018-05-24",
+    "endDate": "2018-05-26",
+    "city": "Barcelona",
+    "country": "Spain",
+    "twitter": "@OFFFest"
+  },
+  {
+    "name": "DesignThinkersVan",
+    "url": "https://www.designthinkers.com/Vancouver",
+    "startDate": "2018-05-29",
+    "endDate": "2018-05-30",
+    "city": "Vancouver",
+    "country": "Canada"
+  },
+  {
+    "name": "POLISHOPA Design Thinking Conference",
+    "url": "http://polishopa.pl/en",
+    "startDate": "2018-06-04",
+    "endDate": "2018-06-07",
+    "city": "Bydgoszcz",
+    "country": "Poland"
+  },
+  {
+    "name": "Product Camp",
+    "url": "https://productcamp.pl",
+    "startDate": "2018-06-07",
+    "endDate": "2018-06-09",
+    "city": "Gdynia",
+    "country": "Poland"
+  },
+  {
+    "name": "Pixel Pioneers Bristol",
+    "url": "https://pixelpioneers.co",
+    "city": "Bristol",
+    "country": "U.K.",
+    "startDate": "2018-06-08"
+  },
+  {
+    "name": "UX Strat EU",
+    "url": "https://uxstrat.com/europe",
+    "startDate": "2018-06-10",
+    "endDate": "2018-06-12",
+    "city": "Amsterdam",
+    "country": "Netherlands"
+  },
+  {
+    "name": "Front Utah",
+    "url": "https://theinnovationenterprise.com/summits/ux-ui-innovation-summit-london-2018",
+    "startDate": "2018-06-12",
+    "endDate": "2018-06-13",
+    "city": "London",
+    "country": "U.K.",
+    "twitter": "@iegroup"
+  },
+  {
+    "name": "UX Scotland",
+    "url": "http://uxscotland.net/2018",
+    "startDate": "2018-06-13",
+    "endDate": "2018-06-15",
+    "city": "Edimburgh",
+    "country": "U.K."
+  },
+  {
+    "name": "CSS Day + UX Special",
+    "url": "https://cssday.nl/2018",
+    "startDate": "2018-06-14",
+    "endDate": "2018-06-15",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "twitter": "@cssdayconf"
+  },
+  {
+    "name": "Design / Content",
+    "url": "https://content.design",
+    "startDate": "2018-06-25",
+    "endDate": "2018-06-27",
+    "city": "Vancouver",
+    "country": "Canada"
+  },
+  {
+    "name": "UXPA 2018",
+    "url": "http://uxpa2018.org",
+    "startDate": "2018-06-26",
+    "endDate": "2018-06-28",
+    "city": "Rio Mar",
+    "country": "Puerto Rico"
+  },
+  {
+    "name": "Smashing Conference",
+    "url": "https://smashingconf.com/toronto-2018",
+    "startDate": "2018-06-26",
+    "endDate": "2018-06-27",
+    "city": "Tonronto",
+    "country": "Canada"
+  },
+  {
+    "name": "AmpersandConf",
+    "url": "https://2018.ampersandconf.com",
+    "startDate": "2018-06-29",
+    "endDate": "2018-06-29",
+    "city": "Brighton",
+    "country": "U.K.",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@ampersandconf"
+  },
+  {
+    "name": "ADDC - App Design & Development Conference",
+    "url": "https://addconf.com",
+    "startDate": "2018-07-04",
+    "endDate": "2018-07-06",
+    "city": "Barcelona",
+    "country": "Spain",
+    "cfpUrl": "https://addconf.com/2018/call-for-proposals",
+    "cfpEndDate": "2017-02-15",
+    "twitter": "@addconf"
+  },
+  {
+    "name": "ACM UMAP 2018",
+    "url": "http://www.um.org/umap2018",
+    "startDate": "2018-07-08",
+    "endDate": "2018-07-11",
+    "city": "Singapore",
+    "country": "Singapore",
+    "cfpUrl": "http://www.um.org/umap2018/cfp",
+    "cfpEndDate": "2018-03-04"
+  },
+  {
+    "name": "UXWeek 2018",
+    "url": "http://uxweek.com",
+    "startDate": "2018-08-21",
+    "endDate": "2018-08-24",
+    "city": "San Fransisco",
+    "country": "U.S.A.",
+    "twitter": "@AdaptivePath"
+  },
+  {
+    "name": "UX Australia",
+    "url": "http://www.uxaustralia.com.au/conferences/uxaustralia-2018",
+    "startDate": "2018-08-28",
+    "endDate": "2018-08-31",
+    "city": "Melbourne",
+    "country": "Australia",
+    "cfpUrl": "http://www.uxaustralia.com.au/conferences/uxaustralia-2018/call-for-proposals",
+    "cfpEndDate": "2018-03-18"
+  },
+  {
+    "name": "Euro IA",
+    "url": "http://www.euroia.org/venue-2018",
+    "startDate": "2018-09",
+    "city": "Dublin",
+    "country": "U.K.",
+    "cfpUrl": "http://euroia.org/submissions",
+    "cfpEndDate": "2018-03-03"
+  },
+  {
+    "name": "Nordic.design",
+    "url": "http://nordic.design",
+    "startDate": "2018-09-05",
+    "endDate": "2018-09-05",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@nordicdesign"
+  },
+  {
     "name": "Refresh",
     "url": "http://refresh.rocks",
     "startDate": "2018-09-07",
@@ -567,5 +507,65 @@
     "cfpUrl": "http://refresh.rocks/call-for-papers",
     "cfpEndDate": "2018-02-18",
     "twitter": "@REFRESHRocks"
+  },
+  {
+    "name": "UX Strat USA",
+    "url": "https://uxstrat.com/usa",
+    "startDate": "2018-09-18",
+    "endDate": "2018-09-20",
+    "city": "Boulder",
+    "country": "U.S.A.",
+    "cfpUrl": "https://uxstrat.com/callForPresentations/USA",
+    "cfpEndDate": "2018-04-20"
+  },
+  {
+    "name": "Circles",
+    "url": "http://circlesconference.com",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-21",
+    "city": "Fort Worth, Texas",
+    "country": "U.S.A."
+  },
+  {
+    "name": "UXDX",
+    "url": "https://uxdxconf.com",
+    "startDate": "2018-10-04",
+    "endDate": "2018-10-07",
+    "city": "Dublin",
+    "country": "U.K."
+  },
+  {
+    "name": "World Usability Congress",
+    "url": "https://worldusabilitycongress.com",
+    "startDate": "2018-10-16",
+    "endDate": "2018-10-18",
+    "city": "Graz",
+    "country": "Austria"
+  },
+  {
+    "name": "Pixel Pioneers Belfast",
+    "url": "https://pixelpioneers.co",
+    "city": "Belfast",
+    "country": "U.K.",
+    "startDate": "2018-11",
+    "cfpUrl": "https://pixelpioneers.co/call-for-speakers",
+    "cfpEndDate": "2018-07-31"
+  },
+  {
+    "name": "Web Directions Summit",
+    "url": "http://webdirections.org/wds",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-02",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com/events/berlin-2018",
+    "city": "Berlin",
+    "country": "Germany",
+    "startDate": "2018-11-05",
+    "endDate": "2018-11-07"
   }
 ]
