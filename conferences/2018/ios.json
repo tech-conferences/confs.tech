@@ -47,12 +47,12 @@
     "country": "Japan"
   },
   {
-    "name": "iOSCon 2018",
+    "name": "iOSCon",
     "url": "https://skillsmatter.com/conferences/9319-ioscon-2018-the-conference-for-ios-and-swift-developers",
     "startDate": "2018-03-22",
     "endDate": "2018-03-23",
-    "city": "Tokyo",
-    "country": "Japan"
+    "city": "London",
+    "country": "U.K."
   },
   {
     "name": "RWDevCon",
@@ -111,7 +111,7 @@
     "name": "WWDC",
     "url": "https://developer.apple.com/wwdc",
     "startDate": "2018-06-04",
-    "startDate": "2018-06-08",
+    "endDate": "2018-06-08",
     "city": "San Jose, CA",
     "country": "U.S.A."
   },
