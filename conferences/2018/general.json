@@ -1,5 +1,149 @@
 [
   {
+    "name": "CodeMash",
+    "url": "https://www.codemash.org",
+    "city": "Sandusky, OH",
+    "country": "U.S.A.",
+    "startDate": "2018-01-09",
+    "endDate": "2018-01-12"
+  },
+  {
+    "name": "Index Developer Conference",
+    "url": "https://developer.ibm.com/indexconf",
+    "startDate": "2018-02-20",
+    "endDate": "2018-02-22",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "twitter": "@indexconf"
+  },
+  {
+    "name": "Iterate Developer Conference",
+    "url": "https://www.iterateconf.io",
+    "startDate": "2018-02-27",
+    "endDate": "2018-02-27",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "twitter": "@OktaDev"
+  },
+  {
+    "name": "#LeadDev Austin - The Lead Developer Conference",
+    "url": "https://austin2018.theleaddeveloper.com",
+    "city": "Austin",
+    "country": "U.S.A.",
+    "startDate": "2018-03-02"
+  },
+  {
+    "name": "QCon London",
+    "url": "https://qconlondon.com",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2018-03-05",
+    "endDate": "2018-03-07",
+    "twitter": "@qconlondon"
+  },
+  {
+    "name": "ConFoo Montreal",
+    "url": "https://confoo.ca/en/yul2018",
+    "city": "Montreal",
+    "country": "Canada",
+    "startDate": "2018-03-07",
+    "endDate": "2018-03-09",
+    "twitter": "@confooca"
+  },
+  {
+    "name": "FOSSASIA",
+    "url": "https://fossasia.org",
+    "startDate": "2018-03-22",
+    "endDate": "2018-03-25",
+    "city": "Singapore",
+    "country": "Singapore",
+    "twitter": "@fossasia"
+  },
+  {
+    "name": "The Legacy Conference",
+    "url": "http://www.legacycan.ca",
+    "city": "Ottawa",
+    "country": "Canada",
+    "startDate": "2018-03-23",
+    "endDate": "2018-03-24"
+  },
+  {
+    "name": "An Event Apart",
+    "url": "https://aneventapart.com/event/seattle-2018",
+    "startDate": "2018-04-02",
+    "endDate": "2018-04-04",
+    "city": "Seattle",
+    "country": "U.S.A."
+  },
+  {
+    "name": "WAQ18",
+    "url": "https://webaquebec.org",
+    "startDate": "2018-04-10",
+    "endDate": "2018-04-12",
+    "city": "Québec",
+    "country": "Canada",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@webaquebec"
+  },
+  {
+    "name": "ImageCon",
+    "url": "http://www.imagecon.com/events/imagecon-2018/event-summary-1a9b0d3d0cbf4d979d663a202586ed1e.aspx",
+    "startDate": "2018-04-12",
+    "city": "San Francisco, CA",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Codemotion Rome",
+    "url": "https://rome2018.codemotionworld.com",
+    "startDate": "2018-04-13",
+    "endDate": "2018-04-14",
+    "city": "Rome",
+    "country": "Italy",
+    "twitter": "@codemotionIT"
+  },
+  {
+    "name": "#LeadDev New York - The Lead Developer Conference",
+    "url": "https://newyork2018.theleaddeveloper.com",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "startDate": "2018-04-24"
+  },
+  {
+    "name": "Great Indian Developer Summit",
+    "url": "http://www.developermarch.com/developersummit/index.html",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-28",
+    "city": "Bangalore",
+    "country": "India"
+  },
+  {
+    "name": "ScaleConf Colombia",
+    "url": "https://scaleconfco.com",
+    "city": "Medellín",
+    "country": "Colombia",
+    "startDate": "2018-04-27",
+    "endDate": "2018-04-28",
+    "twitter": "@scaleconfco"
+  },
+  {
+    "name": "Codeland Conf",
+    "url": "http://codelandconf.com",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "startDate": "2018-05-04",
+    "endDate": "2018-05-05"
+  },
+  {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com/events/duesseldorf-2018",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-09",
+    "city": "Düsseldorf",
+    "country": "Germany",
+    "twitter": "@btconf"
+  },
+  {
     "name": "DevSecCon Tel Aviv",
     "url": "http://www.devseccon.com/tel-aviv-2018/",
     "startDate": "2018-05-07",
@@ -11,75 +155,20 @@
     "twitter": "@devseccon"
   },
   {
-    "name": "Web Directions Leaders",
-    "url": "http://webdirections.org/leaders",
-    "startDate": "2018-08-01",
-    "city": "Melbourne",
-    "country": "Australia",
-    "twitter": "@webdirections"
-  },
-  {
-    "name": "Web Directions Summit",
-    "url": "http://webdirections.org/wds",
-    "startDate": "2018-11-01",
-    "endDate": "2018-11-02",
-    "city": "Sydney",
-    "country": "Australia",
-    "twitter": "@webdirections"
-  },
-  {
-    "name": "Agile Portugal 2018",
-    "url": "https://2018.agilept.org",
-    "startDate": "2018-05-25",
-    "endDate": "2018-05-25",
-    "city": "Porto",
-    "country": "Portugal",
-    "cfpUrl": "https://2018.agilept.org/call_for_speakers.html",
-    "cfpEndDate": "2018-03-26",
-    "twitter": "@agilept"
-  },
-  {
-    "name": "J on the Beach",
-    "url": "https://jonthebeach.com",
-    "startDate": "2018-05-23",
-    "endDate": "2018-05-25",
-    "city": "Málaga",
-    "country": "Spain",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": "@JOTB2018"
-  },
-  {
-    "name": "Web Directions Culture",
-    "url": "http://webdirections.org/culture",
-    "startDate": "2018-10-31",
-    "cfpEndDate": "2018-05-01",
-    "cfpUrl": "https://www.webdirections.org/speaking",
-    "city": "Sydney",
-    "country": "Australia"
-  },
-  {
-    "name": "ImageCon",
-    "url": "http://www.imagecon.com/events/imagecon-2018/event-summary-1a9b0d3d0cbf4d979d663a202586ed1e.aspx",
-    "startDate": "2018-04-12",
-    "city": "San Francisco, CA",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Great Indian Developer Summit",
-    "url": "http://www.developermarch.com/developersummit/index.html",
-    "startDate": "2018-04-24",
-    "endDate": "2018-04-28",
-    "city": "Bangalore",
-    "country": "India"
-  },
-  {
     "name": "Microsoft Build",
     "url": "https://www.microsoft.com/en-us/build",
     "startDate": "2018-05-07",
     "endDate": "2018-05-09",
     "city": "Seattle, WA",
     "country": "U.S.A."
+  },
+  {
+    "name": "Google I/O",
+    "url": "https://events.google.com/io",
+    "city": "Mountain View",
+    "country": "U.S.A.",
+    "startDate": "2018-05-08",
+    "endDate": "2018-05-10"
   },
   {
     "name": "Codemotion Amsterdam",
@@ -89,6 +178,24 @@
     "city": "Amsterdam",
     "country": "Netherlands",
     "twitter": "@codemoamsterdam"
+  },
+  {
+    "name": "QCon SP",
+    "url": "https://qconsp.com",
+    "startDate": "2018-05-09",
+    "endDate": "2018-05-11",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "twitter": "@QConSP"
+  },
+  {
+    "name": "Reason Conf",
+    "url": "https://www.reason-conf.com",
+    "city": "Vienna",
+    "country": "Austria",
+    "startDate": "2018-05-11",
+    "endDate": "2018-05-13",
+    "twitter": "@reasonconf"
   },
   {
     "name": "!!Con",
@@ -109,63 +216,26 @@
     "twitter": "@deconstructconf"
   },
   {
-    "name": "dotScale",
-    "url": "https://2018.dotscale.io",
-    "startDate": "2018-06-01",
-    "city": "Paris",
-    "country": "France",
-    "twitter": "@dotScale"
+    "name": "J on the Beach",
+    "url": "https://jonthebeach.com",
+    "startDate": "2018-05-23",
+    "endDate": "2018-05-25",
+    "city": "Málaga",
+    "country": "Spain",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@JOTB2018"
   },
   {
-    "name": "Index Developer Conference",
-    "url": "https://developer.ibm.com/indexconf",
-    "startDate": "2018-02-20",
-    "endDate": "2018-02-22",
-    "city": "San Francisco, CA",
-    "country": "U.S.A.",
-    "twitter": "@indexconf"
-  },
-  {
-    "name": "Codemotion Rome",
-    "url": "https://rome2018.codemotionworld.com",
-    "startDate": "2018-04-13",
-    "endDate": "2018-04-14",
-    "city": "Rome",
-    "country": "Italy",
-    "twitter": "@codemotionIT"
-  },
-  {
-    "name": "Beyond Tellerrand",
-    "url": "https://beyondtellerrand.com/events/duesseldorf-2018",
-    "startDate": "2018-05-07",
-    "endDate": "2018-05-09",
-    "city": "Düsseldorf",
-    "country": "Germany",
-    "twitter": "@btconf"
-  },
-  {
-    "name": "Beyond Tellerrand",
-    "url": "https://beyondtellerrand.com/events/berlin-2018",
-    "city": "Berlin",
-    "country": "Germany",
-    "startDate": "2018-11-05",
-    "endDate": "2018-11-07"
-  },
-  {
-    "name": "Traction",
-    "url": "https://www.tractionconf.io",
-    "city": "Vancouver",
-    "country": "Canada",
-    "startDate": "2018-08-08",
-    "endDate": "2018-08-09"
-  },
-  {
-    "name": "The Legacy Conference",
-    "url": "http://www.legacycan.ca",
-    "city": "Ottawa",
-    "country": "Canada",
-    "startDate": "2018-03-23",
-    "endDate": "2018-03-24"
+    "name": "Agile Portugal 2018",
+    "url": "https://2018.agilept.org",
+    "startDate": "2018-05-25",
+    "endDate": "2018-05-25",
+    "city": "Porto",
+    "country": "Portugal",
+    "cfpUrl": "https://2018.agilept.org/call_for_speakers.html",
+    "cfpEndDate": "2018-03-26",
+    "twitter": "@agilept"
   },
   {
     "name": "True North",
@@ -174,231 +244,6 @@
     "country": "Canada",
     "startDate": "2018-05-29",
     "endDate": "2018-05-31"
-  },
-  {
-    "name": "Google I/O",
-    "url": "https://events.google.com/io",
-    "city": "Mountain View",
-    "country": "U.S.A.",
-    "startDate": "2018-05-08",
-    "endDate": "2018-05-10"
-  },
-  {
-    "name": "#LeadDev Austin - The Lead Developer Conference",
-    "url": "https://austin2018.theleaddeveloper.com",
-    "city": "Austin",
-    "country": "U.S.A.",
-    "startDate": "2018-03-02"
-  },
-  {
-    "name": "#LeadDev New York - The Lead Developer Conference",
-    "url": "https://newyork2018.theleaddeveloper.com",
-    "city": "New York City",
-    "country": "U.S.A.",
-    "startDate": "2018-04-24"
-  },
-  {
-    "name": "ScaleConf Colombia",
-    "url": "https://scaleconfco.com",
-    "city": "Medellín",
-    "country": "Colombia",
-    "startDate": "2018-04-27",
-    "endDate": "2018-04-28",
-    "twitter": "@scaleconfco"
-  },
-  {
-    "name": "#LeadDev London - The Lead Developer Conference",
-    "url": "https://london2018.theleaddeveloper.com",
-    "city": "London",
-    "country": "U.K.",
-    "startDate": "2018-06-27",
-    "endDate": "2018-06-28"
-  },
-  {
-    "name": "Webconf.asia",
-    "url": "https://webconf.asia",
-    "startDate": "2018-06-06",
-    "endDate": "2018-06-09",
-    "city": "Hong Kong",
-    "country": "Hong Kong",
-    "twitter": "@webconf_asia"
-  },
-  {
-    "name": "Sunny Tech",
-    "url": "https://sunny-tech.io",
-    "startDate": "2018-06-28",
-    "endDate": "2018-06-29",
-    "city": "Montpellier",
-    "country": "France",
-    "twitter": "@SunnyTech_MTP"
-  },
-  {
-    "name": "CodeMash",
-    "url": "https://www.codemash.org",
-    "city": "Sandusky, OH",
-    "country": "U.S.A.",
-    "startDate": "2018-01-09",
-    "endDate": "2018-01-12"
-  },
-  {
-    "name": "QCon London",
-    "url": "https://qconlondon.com",
-    "city": "London",
-    "country": "U.K.",
-    "startDate": "2018-03-05",
-    "endDate": "2018-03-07",
-    "twitter": "@qconlondon"
-  },
-  {
-    "name": "Codeland Conf",
-    "url": "http://codelandconf.com",
-    "city": "New York City",
-    "country": "U.S.A.",
-    "startDate": "2018-05-04",
-    "endDate": "2018-05-05"
-  },
-  {
-    "name": "Reason Conf",
-    "url": "https://www.reason-conf.com",
-    "city": "Vienna",
-    "country": "Austria",
-    "startDate": "2018-05-11",
-    "endDate": "2018-05-13",
-    "twitter": "@reasonconf"
-  },
-  {
-    "name": "An Event Apart",
-    "url": "https://aneventapart.com/event/seattle-2018",
-    "startDate": "2018-04-02",
-    "endDate": "2018-04-04",
-    "city": "Seattle",
-    "country": "U.S.A."
-  },
-  {
-    "name": "QCon SP",
-    "url": "https://qconsp.com",
-    "startDate": "2018-05-09",
-    "endDate": "2018-05-11",
-    "city": "São Paulo",
-    "country": "Brazil",
-    "twitter": "@QConSP"
-  },
-  {
-    "name": "We RISE",
-    "url": "https://werise.tech",
-    "startDate": "2018-06-21",
-    "endDate": "2018-06-22",
-    "city": "Atlanta, GA",
-    "country": "U.S.A.",
-    "cfpUrl": "https://www.papercall.io/we-rise-tech",
-    "cfpEndDate": "2018-02-07",
-    "twitter": "@WeRiseConf"
-  },
-  {
-    "name": "QCon NY",
-    "url": "https://qconnewyork.com",
-    "startDate": "2018-06-27",
-    "endDate": "2018-06-29",
-    "city": "New York City",
-    "country": "U.S.A.",
-    "twitter": "@qconnewyork"
-  },
-  {
-    "name": "OSCON",
-    "url": "https://conferences.oreilly.com/oscon/oscon-or",
-    "startDate": "2018-07-18",
-    "endDate": "2018-07-19",
-    "city": "Portland, OR",
-    "country": "U.S.A.",
-    "twitter": "@oscon"
-  },
-  {
-    "name": "NConf",
-    "url": "https://nconf.de",
-    "startDate": "2018-10-23",
-    "endDate": "2018-10-23",
-    "city": "Rostock",
-    "country": "Germany",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "facebook": "https://www.facebook.com/NConference/"
-  },
-  {
-    "name": "ConFoo Montreal",
-    "url": "https://confoo.ca/en/yul2018",
-    "city": "Montreal",
-    "country": "Canada",
-    "startDate": "2018-03-07",
-    "endDate": "2018-03-09",
-    "twitter": "@confooca"
-  },
-  {
-    "name": "Iterate Developer Conference",
-    "url": "https://www.iterateconf.io",
-    "startDate": "2018-02-27",
-    "endDate": "2018-02-27",
-    "city": "San Francisco",
-    "country": "U.S.A.",
-    "twitter": "@OktaDev"
-  },
-  {
-    "name": "WAQ18",
-    "url": "https://webaquebec.org",
-    "startDate": "2018-04-10",
-    "endDate": "2018-04-12",
-    "city": "Québec",
-    "country": "Canada",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": "@webaquebec"
-  },
-  {
-    "name": "Refresh",
-    "url": "http://refresh.rocks",
-    "startDate": "2018-09-07",
-    "endDate": "2018-09-07",
-    "city": "Tallinn",
-    "country": "Estonia",
-    "cfpUrl": "http://refresh.rocks/call-for-papers",
-    "cfpEndDate": "2018-02-18",
-    "twitter": "@REFRESHRocks"
-  },
-  {
-    "name": "Web Audio Conf",
-    "url": "http://webaudioconf.com",
-    "startDate": "2018-09-19",
-    "endDate": "2018-09-21",
-    "city": "Berlin",
-    "country": "Germany",
-    "cfpUrl": "http://webaudioconf.com/call-for-submissions",
-    "cfpEndDate": "2018-04-23",
-    "twitter": "@webaudioconf"
-  },
-  {
-    "name": "SyntaxCon",
-    "url": "https://2018.syntaxcon.com",
-    "startDate": "2018-06-06",
-    "endDate": "2018-06-08",
-    "city": "Charleston, SC",
-    "country": "U.S.A.",
-    "twitter": "@syntaxcon"
-  },
-  {
-    "name": "FOSSASIA",
-    "url": "https://fossasia.org",
-    "startDate": "2018-03-22",
-    "endDate": "2018-03-25",
-    "city": "Singapore",
-    "country": "Singapore",
-    "twitter": "@fossasia"
-  },
-  {
-    "name": "NightlyBuild",
-    "url": "https://www.nightlybuild.io",
-    "startDate": "2018-08-31",
-    "city": "Cologne",
-    "country": "Germany",
-    "twitter": "@nightlybuildio"
   },
   {
     "name": "Shift Conf",
@@ -412,6 +257,32 @@
     "twitter": "@shiftsplit"
   },
   {
+    "name": "dotScale",
+    "url": "https://2018.dotscale.io",
+    "startDate": "2018-06-01",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@dotScale"
+  },
+  {
+    "name": "SyntaxCon",
+    "url": "https://2018.syntaxcon.com",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-08",
+    "city": "Charleston, SC",
+    "country": "U.S.A.",
+    "twitter": "@syntaxcon"
+  },
+  {
+    "name": "Webconf.asia",
+    "url": "https://webconf.asia",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-09",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "twitter": "@webconf_asia"
+  },
+  {
     "name": "TakeOff Conference",
     "url": "https://www.takeoffconf.io",
     "startDate": "2018-06-7",
@@ -420,6 +291,43 @@
     "country": "France",
     "cfpUrl": "https://www.takeoffconf.io/identity/registrations/new",
     "cfpEndDate": "2018-04-15"
+  },
+  {
+    "name": "We RISE",
+    "url": "https://werise.tech",
+    "startDate": "2018-06-21",
+    "endDate": "2018-06-22",
+    "city": "Atlanta, GA",
+    "country": "U.S.A.",
+    "cfpUrl": "https://www.papercall.io/we-rise-tech",
+    "cfpEndDate": "2018-02-07",
+    "twitter": "@WeRiseConf"
+  },
+  {
+    "name": "#LeadDev London - The Lead Developer Conference",
+    "url": "https://london2018.theleaddeveloper.com",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2018-06-27",
+    "endDate": "2018-06-28"
+  },
+  {
+    "name": "QCon NY",
+    "url": "https://qconnewyork.com",
+    "startDate": "2018-06-27",
+    "endDate": "2018-06-29",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "twitter": "@qconnewyork"
+  },
+  {
+    "name": "Sunny Tech",
+    "url": "https://sunny-tech.io",
+    "startDate": "2018-06-28",
+    "endDate": "2018-06-29",
+    "city": "Montpellier",
+    "country": "France",
+    "twitter": "@SunnyTech_MTP"
   },
   {
     "name": "Mid-Atlantic Dev Conference",
@@ -433,6 +341,50 @@
     "cfpUrl": "https://www.middevcon.com/call-for-speakers/"
   },
   {
+    "name": "OSCON",
+    "url": "https://conferences.oreilly.com/oscon/oscon-or",
+    "startDate": "2018-07-18",
+    "endDate": "2018-07-19",
+    "city": "Portland, OR",
+    "country": "U.S.A.",
+    "twitter": "@oscon"
+  },
+  {
+    "name": "Web Directions Leaders",
+    "url": "http://webdirections.org/leaders",
+    "startDate": "2018-08-01",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
+    "name": "Traction",
+    "url": "https://www.tractionconf.io",
+    "city": "Vancouver",
+    "country": "Canada",
+    "startDate": "2018-08-08",
+    "endDate": "2018-08-09"
+  },
+  {
+    "name": "NightlyBuild",
+    "url": "https://www.nightlybuild.io",
+    "startDate": "2018-08-31",
+    "city": "Cologne",
+    "country": "Germany",
+    "twitter": "@nightlybuildio"
+  },
+  {
+    "name": "Refresh",
+    "url": "http://refresh.rocks",
+    "startDate": "2018-09-07",
+    "endDate": "2018-09-07",
+    "city": "Tallinn",
+    "country": "Estonia",
+    "cfpUrl": "http://refresh.rocks/call-for-papers",
+    "cfpEndDate": "2018-02-18",
+    "twitter": "@REFRESHRocks"
+  },
+  {
     "name": "CodeDaze Vol.2",
     "url": "https://www.papercall.io/codedazevol2",
     "startDate": "2018-09-14",
@@ -443,6 +395,17 @@
     "cfpEndDate": "2018-04-30"
   },
   {
+    "name": "Web Audio Conf",
+    "url": "http://webaudioconf.com",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-21",
+    "city": "Berlin",
+    "country": "Germany",
+    "cfpUrl": "http://webaudioconf.com/call-for-submissions",
+    "cfpEndDate": "2018-04-23",
+    "twitter": "@webaudioconf"
+  },
+  {
     "name": "PolarConf 2018",
     "url": "https://www.papercall.io/polcarconf-2018",
     "startDate": "2018-10-10",
@@ -451,5 +414,42 @@
     "country": "Finland",
     "cfpUrl": "https://www.papercall.io/polcarconf-2018",
     "cfpEndDate": "2018-04-29"
+  },
+  {
+    "name": "NConf",
+    "url": "https://nconf.de",
+    "startDate": "2018-10-23",
+    "endDate": "2018-10-23",
+    "city": "Rostock",
+    "country": "Germany",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "facebook": "https://www.facebook.com/NConference/"
+  },
+  {
+    "name": "Web Directions Culture",
+    "url": "http://webdirections.org/culture",
+    "startDate": "2018-10-31",
+    "cfpEndDate": "2018-05-01",
+    "cfpUrl": "https://www.webdirections.org/speaking",
+    "city": "Sydney",
+    "country": "Australia"
+  },
+  {
+    "name": "Web Directions Summit",
+    "url": "http://webdirections.org/wds",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-02",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "@webdirections"
+  },
+  {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com/events/berlin-2018",
+    "city": "Berlin",
+    "country": "Germany",
+    "startDate": "2018-11-05",
+    "endDate": "2018-11-07"
   }
 ]
