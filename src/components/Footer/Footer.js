@@ -5,12 +5,12 @@ import styles from './Footer.scss';
 import Link from '../Link';
 
 const CURRENT_YEAR = (new Date()).getYear() + 1900;
-export default function Footer({showCFP, togglePast, showPast, addConferenceUrl}) {
+export default function Footer({showCFP, togglePast, showPast}) {
   return (
     <footer className={styles.Footer}>
       <HiddenLinks />
       <p className={styles.FooterLinks}>
-        <Link url={addConferenceUrl} external>
+        <Link url="/conferences/new" routed>
           Add a conference
         </Link>
         <Link selected={showPast} onClick={togglePast}>
