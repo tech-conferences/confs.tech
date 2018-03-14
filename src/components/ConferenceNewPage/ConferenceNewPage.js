@@ -367,6 +367,10 @@ export default class ConferenceNewPage extends Component {
         <Link external url="https://github.com/tech-conferences/confs.tech/">
           Github repository
         </Link>
+        {' – '}
+        <Link external url="https://confs.tech/">
+          Go back to Confs.tech
+        </Link>
       </div>
     );
   };
