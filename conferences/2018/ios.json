@@ -1,5 +1,13 @@
 [
   {
+    "name": "SwiftFest",
+    "url": "http://swiftfest.io",
+    "startDate": "2018-06-18",
+    "endDate": "2018-06-19",
+    "city": "Boston",
+    "country": "U.S.A."
+  },
+  {
     "name": "Mobius",
     "url": "https://mobiusconf.com",
     "city": "St. Petersburg",
