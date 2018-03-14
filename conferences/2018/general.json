@@ -451,5 +451,17 @@
     "country": "Germany",
     "startDate": "2018-11-05",
     "endDate": "2018-11-07"
+  },
+  {
+    "name": "DeveloperWeek",
+    "url": "http://www.developerweek.com/NYC/",
+    "startDate": "2018-06-18",
+    "endDate": "2018-06-20",
+    "city": "New York",
+    "country": "U.S.A.",
+    "twitter": null,
+    "topic": "general",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
