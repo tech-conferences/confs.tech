@@ -15,24 +15,28 @@ import './DatePickerOverrides.scss';
 
 const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) => TOPICS[x].toLocaleLowerCase());
 
+const defaultConference = {
+  name: '',
+  url: '',
+  city: '',
+  country: '',
+  startDate: null,
+  endDate: null,
+  topic: 'javascript',
+  cfpUrl: '',
+  cfpEndDate: '',
+  twitter: '@',
+};
+
 export default class ConferenceNewPage extends Component {
+
   state = {
     recaptchaLoaded: false,
     captchaResponse: null,
     submitting: false,
     submitted: false,
     errors: {},
-    conference: {
-      name: '',
-      cfpUrl: '',
-      city: '',
-      country: '',
-      endDate: null,
-      url: '',
-      startDate: null,
-      topic: '',
-      twitter: '@',
-    },
+    conference: defaultConference,
   };
 
   constructor(props) {
@@ -44,6 +48,13 @@ export default class ConferenceNewPage extends Component {
       cfpEndDate: this.handleDateChangeBuilder('cfpEndDate'),
     };
   }
+
+  resetForm = () => {
+    this.setState({
+      submitted: false,
+      conference: defaultConference,
+    });
+  };
 
   validateForm = (conference) => {
     const {startDate, endDate, city, country, name, url} = conference;
@@ -59,6 +70,17 @@ export default class ConferenceNewPage extends Component {
 
     this.setState({errors});
     return errors;
+  };
+
+  handleStartDateSelect = (startDate) => {
+    const {endDate, conference} = this.state.conference;
+    this.setState({
+      conference: {
+        ...conference,
+        startDate,
+        endDate: endDate || startDate,
+      },
+    });
   };
 
   handleFieldChange = (event) => {
@@ -150,6 +172,10 @@ export default class ConferenceNewPage extends Component {
           <Link url="https://confs.tech/">
             Go back to confs.tech
           </Link>
+          {' – '}
+          <Link onClick={this.resetForm}>
+            Add a new conference
+          </Link>
         </p>
       </div>
     );
@@ -187,7 +213,7 @@ export default class ConferenceNewPage extends Component {
             ))}
           </select>
         </InputGroup>
-        <InputGroup inline>
+        <InputGroup>
           <div>
             <label htmlFor="name">Name</label>
             <input
@@ -202,6 +228,8 @@ export default class ConferenceNewPage extends Component {
             />
             {this.errorFor('name', 'Name is required.')}
           </div>
+        </InputGroup>
+        <InputGroup>
           <div>
             <label htmlFor="url">URL</label>
             <input
@@ -222,9 +250,10 @@ export default class ConferenceNewPage extends Component {
             <label htmlFor="startDate">Start date</label>
             <div>
               <DatePicker
+                dateFormat="YYYY-MM-DD"
                 name="startDate"
                 selected={startDate}
-                onChange={this.handleDateChange.startDate}
+                onSelect={this.handleStartDateSelect}
               />
             </div>
           </div>
@@ -232,6 +261,7 @@ export default class ConferenceNewPage extends Component {
             <label htmlFor="endDate">End date</label>
             <div>
               <DatePicker
+                dateFormat="YYYY-MM-DD"
                 name="endDate"
                 selected={endDate}
                 onChange={this.handleDateChange.endDate}
@@ -287,6 +317,7 @@ export default class ConferenceNewPage extends Component {
             <label htmlFor="cfpEndDate">CFP end date</label>
             <div>
               <DatePicker
+                dateFormat="YYYY-MM-DD"
                 name="cfpEndDate"
                 selected={this.state.cfpEndDate}
                 onChange={this.handleDateChange.cfpEndDate}

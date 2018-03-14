@@ -12,10 +12,14 @@ input {
   background-color: #ffffff;
   border: 1px solid color(gray, light);
   border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .InputGroup {
   margin-bottom: spacing(base);
+  max-width: 500px;
+
   label {
     margin-bottom: spacing(tight);
     display: block;
@@ -24,8 +28,14 @@ input {
 
 .InputGroupInline {
   display: flex;
+  max-width: 500px;
+
   > div {
     margin-right: spacing(base);
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
