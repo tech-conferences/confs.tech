@@ -94,6 +94,15 @@
     "twitter": "@nephp"
   },
   {
+    "name": "php[world]",
+    "url": "https://world.phparch.com/",
+    "startDate": "2018-11-15",
+    "endDate": "2018-11-16",
+    "city": "Washington, DC",
+    "country": "U.S.A.",
+    "twitter": "@phparch"
+  },
+  {
     "name": "LaravelDay",
     "url": "http://2018.laravelday.it",
     "startDate": "2018-11-30",
