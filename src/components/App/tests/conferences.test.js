@@ -18,7 +18,7 @@ range(START_YEAR, CURRENT_YEAR).forEach((year) => {
 
 const REQUIRED_KEYS = ['name', 'url', 'startDate', 'country'];
 const DATES_KEYS = ['startDate', 'endDate', 'cfpEndDate'];
-const BAD_COUNTRY_NAMES = ['USA', 'U.S.A', 'UK', 'U.K', 'UAE'];
+const BAD_COUNTRY_NAMES = ['US', 'U.S.', 'U.S', 'USA', 'U.S.A', 'UK', 'U.K', 'UAE'];
 
 Object.keys(conferencesJSON).forEach((year) => {
   Object.keys(conferencesJSON[year]).forEach((stack) => {
