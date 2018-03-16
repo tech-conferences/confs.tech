@@ -1,5 +1,14 @@
 [
   {
+    "name": "Southeast Ruby",
+    "url": "https://southeastruby.com",
+    "startDate": "2018-08-02",
+    "endDate": "2018-08-03",
+    "city": "Nashville",
+    "country": "U.S.A.",
+    "twitter": "@southeastruby"
+  },
+  {
     "name": "Ruby on Ice",
     "url": "https://rubyonice.com",
     "startDate": "2018-01-26",
