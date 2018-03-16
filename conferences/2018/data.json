@@ -44,6 +44,15 @@
     "country": "U.S.A."
   },
   {
+    "name": "TiE Inflect 2018",
+    "url": "https://www.tieinflect.org",
+    "startDate": "2018-05-04",
+    "endDate": "2018-05-04",
+    "city": "Santa Clara ",
+    "country": "U.S.A.",
+    "twitter": "@TiEInflect"
+  },
+  {
     "name": "rOpenSci Unconf",
     "url": "http://unconf17.ropensci.org",
     "startDate": "2018-05-25",
