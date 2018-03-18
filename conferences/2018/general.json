@@ -454,14 +454,18 @@
   },
   {
     "name": "DeveloperWeek",
-    "url": "http://www.developerweek.com/NYC/",
+    "url": "http://www.developerweek.com/NYC",
     "startDate": "2018-06-18",
     "endDate": "2018-06-20",
     "city": "New York",
-    "country": "U.S.A.",
-    "twitter": null,
-    "topic": "general",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "country": "U.S.A."
+  },
+  {
+    "name": "DeveloperWeek",
+    "url": "http://www.developerweek.com/Austin",
+    "startDate": "2018-11-06",
+    "endDate": "2018-11-08",
+    "city": "Austin",
+    "country": "U.S.A."
   }
 ]
