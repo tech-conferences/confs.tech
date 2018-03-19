@@ -513,5 +513,16 @@
     "twitter": "@devoxxfr",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "World AR VR Expo",
+    "url": "http://www.wavexc.com",
+    "startDate": "2018-06-22",
+    "endDate": "2018-06-24",
+    "city": "Hyderabad",
+    "country": "India",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
