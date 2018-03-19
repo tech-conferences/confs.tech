@@ -143,5 +143,16 @@
     "endDate": "2018-11-15",
     "city": "Stuttgart",
     "country": "Germany"
+  },
+  {
+    "name": "9th Infocom World Albania - Embrace the Digital Transformation!",
+    "url": "http://www.infocom.al",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-24",
+    "city": "Tirana",
+    "country": "Albania",
+    "twitter": "@InfoComAlbania",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
