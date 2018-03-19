@@ -207,6 +207,15 @@
     "twitter": "@bangbangcon"
   },
   {
+    "name": "WeAreDevelopers World Congress",
+    "url": "https://www.wearedevelopers.com/congress",
+    "startDate": "2018-05-16",
+    "endDate": "2018-05-18",
+    "city": "Vienna",
+    "country": "Austria",
+    "twitter": "@wearedevs"
+  },
+  {
     "name": "Deconstruct",
     "url": "https://www.deconstructconf.com",
     "startDate": "2018-05-21",
