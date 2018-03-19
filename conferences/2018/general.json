@@ -360,6 +360,17 @@
     "twitter": "@webdirections"
   },
   {
+    "name": "ScaleConf New Zealand",
+    "url": "https://cfp.scaleconf.co.nz",
+    "startDate": "2018-08-06",
+    "endDate": "2018-08-07",
+    "city": "Te Papa - Wellington",
+    "country": "New Zealand",
+    "cfpEndDate": "2018-04-07",
+    "cfpUrl": "https://cfp.scaleconf.co.nz",
+    "twitter": "@sconfnz"
+  },
+  {
     "name": "Traction",
     "url": "https://www.tractionconf.io",
     "city": "Vancouver",
