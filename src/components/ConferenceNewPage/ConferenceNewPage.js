@@ -328,7 +328,7 @@ export default class ConferenceNewPage extends Component {
             </div>
           </InputGroup>
           <InputGroup>
-            <label htmlFor="twitter">@TwitterHandle</label>
+            <label htmlFor="twitter">Conference @TwitterHandle</label>
             <input
               className={classNames(
                 this.hasError('twitter') && styles.error
