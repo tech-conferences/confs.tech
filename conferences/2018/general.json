@@ -599,5 +599,16 @@
     "twitter": "@AllThingsOpen",
     "cfpUrl": "https://allthingsopen.org/call-for-papers/",
     "cfpEndDate": "2018-05-24"
+  },
+  {
+    "name": "Mulher Tech Sim Senhor",
+    "url": "mulhertechsim.sr",
+    "startDate": "2018-03-24",
+    "endDate": "2018-03-24",
+    "city": "João Pessoa",
+    "country": "Brazil",
+    "twitter": "@mulhertechsimsr",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
