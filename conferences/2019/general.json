@@ -6,5 +6,16 @@
     "endDate": "2019-02-24",
     "city": "San Francisco",
     "country": "U.S.A."
+  },
+  {
+    "name": "Techchill",
+    "url": "https://techchill.co",
+    "startDate": "2019-02-21",
+    "endDate": "2019-02-22",
+    "city": "Riga",
+    "country": "Latvia",
+    "twitter": "@TechChill",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
