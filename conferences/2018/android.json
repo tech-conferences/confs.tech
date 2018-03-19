@@ -165,5 +165,16 @@
     "country": "Netherlands",
     "startDate": "2018-10-03",
     "endDate": "2018-10-05"
+  },
+  {
+    "name": "Android Makers",
+    "url": "https://androidmakers.fr",
+    "startDate": "2018-04-23",
+    "endDate": "2018-04-24",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@AndroidMakersFR",
+    "cfpUrl": "",
+    "cfpEndDate": "2018-02-18"
   }
 ]
