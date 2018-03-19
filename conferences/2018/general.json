@@ -429,6 +429,17 @@
     "cfpEndDate": "2018-04-29"
   },
   {
+    "name": "DevSecCon London",
+    "url": "http://www.devseccon.com/london-2018/",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-19",
+    "city": "London",
+    "country": "U.K.",
+    "cfpUrl": "https://www.devseccon.com/call-for-proposals/",
+    "cfpEndDate": "2018-06-18",
+    "twitter": "@devseccon"
+  },
+  {
     "name": "NConf",
     "url": "https://nconf.de",
     "startDate": "2018-10-23",
