@@ -502,5 +502,16 @@
     "twitter": "@froscon",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Devoxx France",
+    "url": "https://www.devoxx.fr",
+    "startDate": "2018-04-18",
+    "endDate": "2018-04-20",
+    "city": "Paris",
+    "country": "France",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
