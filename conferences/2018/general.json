@@ -262,7 +262,9 @@
     "startDate": "2018-06-01",
     "city": "Paris",
     "country": "France",
-    "twitter": "@dotScale"
+    "twitter": "@dotScale",
+    "cfpUrl": "https://www.dotscale.io/LT",
+    "cfpEndDate": "2018-05-11"
   },
   {
     "name": "SyntaxCon",
