@@ -577,5 +577,16 @@
     "twitter": "@DevSum_swe",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Sud Web",
+    "url": "https://sudweb.fr/2018",
+    "startDate": "2018-05-25",
+    "endDate": "2018-05-26",
+    "city": "Anduze",
+    "country": "France",
+    "twitter": "@sudweb",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
