@@ -478,5 +478,16 @@
     "twitter": "@devternity",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "RigaDevDays",
+    "url": "https://rigadevdays.lv",
+    "startDate": "2018-05-29",
+    "endDate": "2018-05-31",
+    "city": "Riga",
+    "country": "Latvia",
+    "twitter": "@rigadevdays",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
