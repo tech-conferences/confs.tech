@@ -376,6 +376,17 @@
     "twitter": "@nightlybuildio"
   },
   {
+    "name": "DevSecCon Boston",
+    "url": "http://www.devseccon.com/boston-2018/",
+    "startDate": "2018-09-01",
+    "endDate": "2018-09-01",
+    "city": "Boston",
+    "country": "U.S.A.",
+    "cfpUrl": "https://www.devseccon.com/call-for-proposals/",
+    "cfpEndDate": "2018-06-01",
+    "twitter": "@devseccon"
+  },
+  {
     "name": "Refresh",
     "url": "http://refresh.rocks",
     "startDate": "2018-09-07",
