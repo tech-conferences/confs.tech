@@ -588,5 +588,16 @@
     "twitter": "@sudweb",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "All Things Open",
+    "url": "https://allthingsopen.org",
+    "startDate": "2018-10-21",
+    "endDate": "2018-10-23",
+    "city": "Raleigh",
+    "country": "U.S.A.",
+    "twitter": "@AllThingsOpen",
+    "cfpUrl": "https://allthingsopen.org/call-for-papers/",
+    "cfpEndDate": "2018-05-24"
   }
 ]
