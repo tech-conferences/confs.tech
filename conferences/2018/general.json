@@ -467,5 +467,16 @@
     "endDate": "2018-11-08",
     "city": "Austin",
     "country": "U.S.A."
+  },
+  {
+    "name": "Devternity",
+    "url": "https://devternity.com",
+    "startDate": "2018-11-30",
+    "endDate": "2018-12-01",
+    "city": "Riga",
+    "country": "Latvia",
+    "twitter": "@devternity",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
