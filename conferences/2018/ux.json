@@ -576,5 +576,16 @@
     "country": "Germany",
     "startDate": "2018-11-05",
     "endDate": "2018-11-07"
+  },
+  {
+    "name": "Generate ",
+    "url": "https://www.generateconf.com/new-york",
+    "startDate": "2018-04-25",
+    "endDate": "2018-04-27",
+    "city": "New York",
+    "country": "U.S.A.",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
