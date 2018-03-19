@@ -137,5 +137,16 @@
     "endDate": "2018-12-07",
     "city": "New York",
     "country": "U.S.A."
+  },
+  {
+    "name": "dotScale",
+    "url": "https://www.dotscale.io",
+    "startDate": "2018-06-01",
+    "endDate": "2018-06-01",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@dotScale",
+    "cfpUrl": "https://www.dotscale.io/LT",
+    "cfpEndDate": "2018-05-11"
   }
 ]
