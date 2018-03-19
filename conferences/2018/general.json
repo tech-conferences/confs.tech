@@ -489,5 +489,16 @@
     "twitter": "@rigadevdays",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "FrOSCon",
+    "url": "https://www.froscon.de",
+    "startDate": "2018-08-25",
+    "endDate": "2018-08-26",
+    "city": "Sankt Augustin",
+    "country": "Germany",
+    "twitter": "@froscon",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
