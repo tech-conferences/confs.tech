@@ -524,5 +524,16 @@
     "twitter": "@worldarvrexpo",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "DevSum",
+    "url: "https://www.devsum.se",
+    "startDate": "2018-05-31",
+    "endDate": "2018-06-01",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@DevSum_swe",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
