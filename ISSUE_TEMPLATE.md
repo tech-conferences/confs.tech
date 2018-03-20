@@ -8,6 +8,7 @@ Where should it go?
 - [ ] iOS / Swift
 - [ ] Android
 - [ ] PHP
+- [ ] Dev Ops
 - [ ] Data
 - [ ] Tech-comm
 - [ ] General
