@@ -599,5 +599,16 @@
     "twitter": "@AllThingsOpen",
     "cfpUrl": "https://allthingsopen.org/call-for-papers/",
     "cfpEndDate": "2018-05-24"
+  },
+  {
+    "name": "Haxe Summit",
+    "url": "HTTPS://summit.haxe.org",
+    "startDate": "2018-05-03",
+    "endDate": "2018-05-05",
+    "city": "Seattle",
+    "country": "USA",
+    "twitter": "@haxesummit",
+    "cfpUrl": "",
+    "cfpEndDate": "2018-03-20"
   }
 ]
