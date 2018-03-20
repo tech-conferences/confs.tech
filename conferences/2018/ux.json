@@ -587,5 +587,16 @@
     "twitter": null,
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "DesignUp",
+    "url": "designup.io",
+    "startDate": "2018-10-26",
+    "endDate": "2018-10-28",
+    "city": "Bangalore",
+    "country": "India",
+    "twitter": "@DesignUpConf",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
