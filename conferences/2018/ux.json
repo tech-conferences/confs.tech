@@ -587,5 +587,16 @@
     "twitter": null,
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Design Matters",
+    "url": "https://designmatters.io",
+    "startDate": "2018-09-26",
+    "endDate": "2018-09-27",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "twitter": "@designmattersdk",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
