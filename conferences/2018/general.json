@@ -610,5 +610,16 @@
     "twitter": "@haxesummit",
     "cfpUrl": "",
     "cfpEndDate": "2018-03-20"
+  },
+  {
+    "name": "Nextcloud Conference",
+    "url": "https://nextcloud.com/conf",
+    "startDate": "2018-08-23",
+    "endDate": "2018-08-30",
+    "city": "Stuttgart",
+    "country": "Germany",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
