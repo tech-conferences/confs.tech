@@ -9,6 +9,7 @@ List of conferences pulled out from [JSON files](https://github.com/tech-confere
 - [See all iOS conferences](https://confs.tech/ios)
 - [See all Technical communication conferences](https://confs.tech/tech-comm)
 - [See all Data conferences](https://confs.tech/data)
+- [See all Dev Ops conferences](https://confs.tech/devops)
 - [See all Android conferences](https://confs.tech/android)
 - [See general conferences](https://confs.tech/general)
 

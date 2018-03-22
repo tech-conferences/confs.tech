@@ -9,6 +9,7 @@ export const TOPICS = {
   android: 'Android',
   data: 'Data / AI',
   php: 'PHP',
+  devops: 'Dev Ops',
   'tech-comm': 'Technical communication',
   general: 'General',
 };

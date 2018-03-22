@@ -108,6 +108,7 @@ class ConferencePage extends Component {
             filters={this.algoliaFilter()}
           />
           <RefinementList
+            limitMin={20}
             attributeName="topics"
             defaultRefinement={topic ? [topic] : []}
             transformItems={transformTopicRefinements}

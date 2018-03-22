@@ -218,5 +218,16 @@
     "city": "Brighton",
     "country": "U.K.",
     "twitter": "@brightonruby"
+  },
+  {
+    "name": "Deccan Ruby Conf 2018",
+    "url": "http://www.deccanrubyconf.org",
+    "startDate": "2018-08-04",
+    "endDate": "2018-08-04",
+    "city": "Pune",
+    "country": "India",
+    "twitter": "@deccanrubyconf",
+    "cfpUrl": "https://www.papercall.io/drc18",
+    "cfpEndDate": "2018-07-01"
   }
 ]

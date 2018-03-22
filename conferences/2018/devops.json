@@ -1,0 +1,13 @@
+[
+  {
+    "name": "DevOpsDays Stockholm",
+    "url": "https://www.devopsdays.org/events/2018-stockholm/welcome/",
+    "startDate": "2018-05-24",
+    "endDate": "2018-05-25",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@devopsdayssthlm",
+    "cfpUrl": "https://www.devopsdays.org/events/2018-stockholm/propose/",
+    "cfpEndDate": "2018-04-02"
+  }
+]

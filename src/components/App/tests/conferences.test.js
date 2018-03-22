@@ -2,13 +2,16 @@
 /* eslint-disable no-console */
 import {range} from 'lodash';
 import {getDuplicates} from './utils';
+import {TOPICS} from '../../config';
 
+const BASE_DIR = '../../../../conferences';
 const START_YEAR = 2017;
 const CURRENT_YEAR = (new Date()).getYear() + 1900;
-const LANGUAGES = ['css', 'php', 'ruby', 'android', 'ios', 'ux', 'tech-comm', 'data', 'general'];
-const BASE_DIR = '../../../../conferences';
 const conferencesJSON = {};
 
+// Remove JavaScript key
+const LANGUAGES = Object.keys(TOPICS);
+LANGUAGES.splice(LANGUAGES.indexOf('javascript'), 1);
 range(START_YEAR, CURRENT_YEAR).forEach((year) => {
   conferencesJSON[year] = {};
   LANGUAGES.forEach((lang) => {
