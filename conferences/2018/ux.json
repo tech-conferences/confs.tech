@@ -590,13 +590,13 @@
   },
   {
     "name": "DesignUp",
-    "url": "designup.io",
+    "url": "https://designup.io",
     "startDate": "2018-10-26",
     "endDate": "2018-10-28",
     "city": "Bangalore",
     "country": "India",
     "twitter": "@DesignUpConf",
-    "cfpUrl": "",
+    "cfpUrl": "https://docs.google.com/forms/d/10TETca7YKDzFYadoL6QsEKR5H_Wb2sfDMzuiT-g12do/edit",
     "cfpEndDate": null
   }
 ]
