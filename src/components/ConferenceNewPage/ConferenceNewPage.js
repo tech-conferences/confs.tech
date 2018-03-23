@@ -36,6 +36,7 @@ export default class ConferenceNewPage extends Component {
     captchaResponse: null,
     submitting: false,
     submitted: false,
+    serverError: false,
     errors: {},
     conference: defaultConference,
   };
@@ -61,8 +62,10 @@ export default class ConferenceNewPage extends Component {
     const {startDate, endDate, city, country, name, url} = conference;
 
     const errors = {
-      startDate: Boolean(startDate),
-      endDate: Boolean(endDate),
+      // eslint-disable-next-line no-extra-boolean-cast
+      startDate: !Boolean(startDate),
+      // eslint-disable-next-line no-extra-boolean-cast
+      endDate: !Boolean(endDate),
       city: city.length === 0,
       country: country.length === 0,
       name: name.length === 0,
@@ -134,7 +137,10 @@ export default class ConferenceNewPage extends Component {
         return this.setState({submitting: false});
       }
     }).catch(() => {
-      return this.setState({submitting: false});
+      return this.setState({
+        submitting: false,
+        serverError: true,
+      });
     });
   };
 
@@ -149,11 +155,11 @@ export default class ConferenceNewPage extends Component {
     return errors[field];
   };
 
-  errorFor = (field) => {
+  errorFor = (field, errorMessage) => {
     const {errors} = this.state;
     if (!errors[field]) { return null; }
 
-    return <div className={styles.errorText}>{field} required</div>;
+    return <div className={styles.errorText}>{errorMessage}</div>;
   };
 
   submitted = () => {
@@ -185,7 +191,9 @@ export default class ConferenceNewPage extends Component {
   form = () => {
     const {
       recaptchaLoaded,
+      captchaResponse,
       submitting,
+      serverError,
       conference: {
         name,
         url,
@@ -257,6 +265,7 @@ export default class ConferenceNewPage extends Component {
                   selected={startDate}
                   onChange={this.handleStartDateSelect}
                 />
+                {this.errorFor('startDate', 'Start date is required.')}
               </div>
             </div>
             <div>
@@ -346,15 +355,26 @@ export default class ConferenceNewPage extends Component {
             verifyCallback={this.handleVerifyRecaptcha}
             onloadCallback={this.handleRecaptchaLoad}
           />
+          {serverError &&
+            <p className={styles.errorText}>
+              An error happened from the server.
+              <br />
+              If it still happens, you can&nbsp;
+              <Link external url="https://github.com/tech-conferences/confs.tech/issues">
+                create an issue on our Github repo.
+              </Link>
+            </p>
+          }
           <button
             className={styles.Button}
-            disabled={submitting || !recaptchaLoaded}
+            disabled={submitting || !recaptchaLoaded || captchaResponse === null}
             type="submit"
             value="Submit"
           >
             {submitting ? 'Submitting...' : 'Submit'}
           </button>
         </form>
+
         <Divider />
         <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
           Pull requests
