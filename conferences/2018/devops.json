@@ -1,5 +1,13 @@
 [
   {
+    "name": "Microsoft Ignite",
+    "url": "https://www.microsoft.com/en-us/ignite/default.aspx",
+    "startDate": "2018-09-24",
+    "endDate": "2018-09-28",
+    "city": "Orlando",
+    "country": "U.S.A."
+  },
+  {
     "name": "PuppetConf",
     "url": "https://puppet.com/puppetconf",
     "startDate": "2018-10-09",
