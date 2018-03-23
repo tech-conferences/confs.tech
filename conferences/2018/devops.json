@@ -1,13 +1,349 @@
 [
   {
+    "name": "DevOpsDay - Baltimore",
+    "url": "http://www.devopsdays.org/events/2018-baltimore",
+    "startDate": "2018-03-22",
+    "endDate": "2018-03-23",
+    "city": "Baltimore",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Maringá",
+    "url": "https://www.devopsdays.org/events/2018-maringa",
+    "startDate": "2018-03-23",
+    "endDate": "2018-03-24",
+    "city": "Maringá",
+    "country": "Brazil"
+  },
+  {
+    "name": "DevOpsDay - Moines",
+    "url": "https://www.devopsdays.org/events/2018-des-moines",
+    "startDate": "2018-04-12",
+    "endDate": "2018-04-13",
+    "city": "Des Moines",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Atlanta",
+    "url": "https://www.devopsdays.org/events/2018-atlanta",
+    "startDate": "2018-04-17",
+    "endDate": "2018-04-18",
+    "city": "Atlanta",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Denver",
+    "url": "https://www.devopsdays.org/events/2018-denver",
+    "startDate": "2018-04-17",
+    "endDate": "2018-04-18",
+    "city": "Denver",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Vancouver",
+    "url": "https://www.devopsdays.org/events/2018-vancouver",
+    "startDate": "2018-04-20",
+    "endDate": "2018-04-21",
+    "city": "Vancouver",
+    "country": "Canada"
+  },
+  {
+    "name": "DevOpsDay - Copenhagen",
+    "url": "https://www.devopsdays.org/events/2018-copenhagen",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-25",
+    "city": "Copenhagen",
+    "country": "Denmark"
+  },
+  {
+    "name": "DevOpsDay - Seattle",
+    "url": "https://www.devopsdays.org/events/2018-seattle",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-25",
+    "city": "Seattle",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Tokyo",
+    "url": "https://www.devopsdays.org/events/2018-tokyo",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-25",
+    "city": "Tokyo",
+    "country": "Japan"
+  },
+  {
+    "name": "DevOpsDay - Jakarta",
+    "url": "https://www.devopsdays.org/events/2018-jakarta",
+    "startDate": "2018-04-26",
+    "endDate": "2018-04-27",
+    "city": "Jakarta",
+    "country": "Indonesia"
+  },
+  {
+    "name": "DevOpsDay - Zürich",
+    "url": "https://www.devopsdays.org/events/2018-zurich",
+    "startDate": "2018-05-02",
+    "endDate": "2018-05-03",
+    "city": "Zürich",
+    "country": "Switzerland"
+  },
+  {
+    "name": "DevOpsDay - Austin",
+    "url": "https://www.devopsdays.org/events/2018-austin",
+    "startDate": "2018-05-03",
+    "endDate": "2018-05-04",
+    "city": "Austin",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Beijing",
+    "url": "https://www.devopsdays.org/events/2018-beijing",
+    "startDate": "2018-05-04",
+    "endDate": "2018-05-05",
+    "city": "Beijing",
+    "country": "China"
+  },
+  {
+    "name": "DevOpsDay - Kiev",
+    "url": "https://www.devopsdays.org/events/2018-kiev",
+    "startDate": "2018-05-05",
+    "endDate": "2018-05-05",
+    "city": "Kiev",
+    "country": "Ukraine"
+  },
+  {
+    "name": "DevOpsDay - City",
+    "url": "https://www.devopsdays.org/events/2018-salt-lake-city",
+    "startDate": "2018-05-15",
+    "endDate": "2018-05-16",
+    "city": "Salt Lake City",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Kiel",
+    "url": "https://www.devopsdays.org/events/2018-kiel",
+    "startDate": "2018-05-16",
+    "endDate": "2018-05-17",
+    "city": "Kiel",
+    "country": "Germany"
+  },
+  {
+    "name": "DevOpsDay - View",
+    "url": "https://www.devopsdays.org/events/2018-silicon-valley",
+    "startDate": "2018-05-17",
+    "endDate": "2018-05-18",
+    "city": "Mountain View",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Stockholm",
+    "url": "https://www.devopsdays.org/events/2018-stockholm",
+    "startDate": "2018-05-24",
+    "endDate": "2018-05-25",
+    "city": "Stockholm",
+    "country": "Sweden"
+  },
+  {
+    "name": "DevOpsDay - Victoria",
+    "url": "https://www.devopsdays.org/events/2018-victoria",
+    "startDate": "2018-05-25",
+    "endDate": "2018-05-25",
+    "city": "Victoria",
+    "country": "Canada"
+  },
+  {
+    "name": "DevOpsDay - Toronto",
+    "url": "https://www.devopsdays.org/events/2018-toronto",
+    "startDate": "2018-05-30",
+    "endDate": "2018-05-31",
+    "city": "Toronto",
+    "country": "Canada"
+  },
+  {
+    "name": "DevOpsDay - Paulo",
+    "url": "https://www.devopsdays.org/events/2018-sao-paulo",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-07",
+    "city": "São Paulo",
+    "country": "Brazil"
+  },
+  {
+    "name": "DevOpsDay - Boise",
+    "url": "https://www.devopsdays.org/events/2018-boise",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-06",
+    "city": "Boise",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - DC",
+    "url": "https://www.devopsdays.org/events/2018-washington-dc",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-07",
+    "city": "Washington, DC",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Amsterdam",
+    "url": "https://www.devopsdays.org/events/2018-amsterdam",
+    "startDate": "2018-06-27",
+    "endDate": "2018-06-29",
+    "city": "Amsterdam",
+    "country": "Netherlands"
+  },
+  {
+    "name": "DevOpsDay - Minneapolis",
+    "url": "https://www.devopsdays.org/events/2018-minneapolis",
+    "startDate": "2018-07-12",
+    "endDate": "2018-07-13",
+    "city": "Minneapolis",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Indianapolis",
+    "url": "https://www.devopsdays.org/events/2018-indianapolis",
+    "startDate": "2018-07-23",
+    "endDate": "2018-07-24",
+    "city": "Indianapolis",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Shanghai",
+    "url": "https://www.devopsdays.org/events/2018-shanghai",
+    "startDate": "2018-08-17",
+    "endDate": "2018-08-18",
+    "city": "Shanghai",
+    "country": "China"
+  },
+  {
+    "name": "DevOpsDay - Chicago",
+    "url": "https://www.devopsdays.org/events/2018-chicago",
+    "startDate": "2018-08-28",
+    "endDate": "2018-08-29",
+    "city": "Chicago",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Taipei",
+    "url": "https://www.devopsdays.org/events/2018-taipei",
+    "startDate": "2018-09-04",
+    "endDate": "2018-09-06",
+    "city": "Taipei",
+    "country": "Taiwan"
+  },
+  {
+    "name": "DevOpsDay - Raleigh",
+    "url": "https://www.devopsdays.org/events/2018-raleigh",
+    "startDate": "2018-09-10",
+    "endDate": "2018-09-11",
+    "city": "Raleigh",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Portland",
+    "url": "https://www.devopsdays.org/events/2018-portland",
+    "startDate": "2018-09-11",
+    "endDate": "2018-09-13",
+    "city": "Portland",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Berlin",
+    "url": "https://www.devopsdays.org/events/2018-berlin",
+    "startDate": "2018-09-12",
+    "endDate": "2018-09-13",
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  {
+    "name": "DevOpsDay - Columbus",
+    "url": "https://www.devopsdays.org/events/2018-columbus",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-20",
+    "city": "Columbus",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Town",
+    "url": "https://www.devopsdays.org/events/2018-cape-town",
+    "startDate": "2018-09-20",
+    "endDate": "2018-09-21",
+    "city": "Cape Town",
+    "country": "South Africa"
+  },
+  {
+    "name": "DevOpsDay - Istanbul",
+    "url": "https://www.devopsdays.org/events/2018-istanbul",
+    "startDate": "2018-09-20",
+    "endDate": "2018-09-20",
+    "city": "Istanbul",
+    "country": "Turkey"
+  },
+  {
+    "name": "DevOpsDay - Riga",
+    "url": "https://www.devopsdays.org/events/2018-riga",
+    "startDate": "2018-09-27",
+    "endDate": "2018-09-28",
+    "city": "Riga",
+    "country": "Latvia"
+  },
+  {
+    "name": "DevOpsDay - Detroit",
+    "url": "https://www.devopsdays.org/events/2018-detroit",
+    "startDate": "2018-10-03",
+    "endDate": "2018-10-04",
+    "city": "Detroit",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Paris",
+    "url": "https://www.devopsdays.org/events/2018-paris",
+    "startDate": "2018-10-16",
+    "endDate": "2018-10-16",
+    "city": "Paris",
+    "country": "France"
+  },
+  {
+    "name": "DevOpsDay - City",
+    "url": "https://www.devopsdays.org/events/2018-kansas-city",
+    "startDate": "2018-10-17",
+    "endDate": "2018-10-18",
+    "city": "Kansas City",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Philadelphia",
+    "url": "https://www.devopsdays.org/events/2018-philadelphia",
+    "startDate": "2018-10-23",
+    "endDate": "2018-10-24",
+    "city": "Philadelphia",
+    "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Edinburgh",
+    "url": "https://www.devopsdays.org/events/2018-edinburgh",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-02",
+    "city": "Edinburgh",
+    "country": "Scotland"
+  },
+  {
+    "name": "DevOpsDay - Shenzhen",
+    "url": "https://www.devopsdays.org/events/2018-shenzhen",
+    "startDate": "2018-11-16",
+    "endDate": "2018-11-17",
+    "city": "Shenzhen",
+    "country": "China"
+  },
+  {
     "name": "DevOpsDays Stockholm",
-    "url": "https://www.devopsdays.org/events/2018-stockholm/welcome/",
+    "url": "https://www.devopsdays.org/events/2018-stockholm/welcome",
     "startDate": "2018-05-24",
     "endDate": "2018-05-25",
     "city": "Stockholm",
     "country": "Sweden",
     "twitter": "@devopsdayssthlm",
-    "cfpUrl": "https://www.devopsdays.org/events/2018-stockholm/propose/",
+    "cfpUrl": "https://www.devopsdays.org/events/2018-stockholm/propose",
     "cfpEndDate": "2018-04-02"
   }
 ]
