@@ -377,5 +377,14 @@
     "twitter": "@devopsdayssthlm",
     "cfpUrl": "https://www.devopsdays.org/events/2018-stockholm/propose",
     "cfpEndDate": "2018-04-02"
+  },
+  {
+    "name": "DockerCon",
+    "url": "https://2018.dockercon.com",
+    "startDate": "2018-06-12",
+    "endDate": "2018-06-15",
+    "city": "San Fransisco",
+    "country": "U.S.A.",
+    "twitter": "@DockerCon"
   }
 ]
