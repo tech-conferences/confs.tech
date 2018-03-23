@@ -1,5 +1,13 @@
 [
   {
+    "name": "PuppetConf",
+    "url": "https://puppet.com/puppetconf",
+    "startDate": "2018-10-09",
+    "endDate": "2018-10-11",
+    "city": "San Francisco",
+    "country": "U.S.A."
+  },
+  {
     "name": "DevOpsDay - Baltimore",
     "url": "http://www.devopsdays.org/events/2018-baltimore",
     "startDate": "2018-03-22",
