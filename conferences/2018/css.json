@@ -72,7 +72,11 @@
   },
   {
     "name": "scotlandCSS",
+<<<<<<< HEAD
     "url": "http://scotlandcss.com",
+=======
+    "url": "http://scotlandcss.com/",
+>>>>>>> 52be2f4... Add scotlandCSS conf
     "startDate": "2018-07-18",
     "city": "Edinburgh",
     "country": "Scotland",
