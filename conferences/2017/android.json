@@ -55,7 +55,7 @@
     "country": "U.S.A.",
     "startDate": "2017-07-17",
     "endDate": "2017-07-19",
-    "cfpStart": " 2016-12-06",
+    "cfpStart": "2016-12-06",
     "cfpEnd": "2017-02-13"
   },
   {
@@ -89,7 +89,7 @@
     "endDate": "2017-04-11",
     "cfpStart": "2016-12-01",
     "cfpEnd": "2017-02-16",
-    "cfpUrl": " http://cfp.androidmakers.fr"
+    "cfpUrl": "http://cfp.androidmakers.fr"
   },
   {
     "name": "AndroidTO",
@@ -285,7 +285,7 @@
     "country": "Russia",
     "startDate": "2017-09-23",
     "endDate": "2017-09-24",
-    "cfpStart": " 2017-03-21",
+    "cfpStart": "2017-03-21",
     "cfpEnd": "2017-07-01",
     "cfpUrl": "http://bit.ly/dfSiberia17-c4p"
   },
@@ -336,7 +336,7 @@
     "endDate": "2017-05-12",
     "cfpStart": "2016-12-28",
     "cfpEnd": "2017-01-16",
-    "cfpUrl": " http://cfp.devoxx.co.uk"
+    "cfpUrl": "http://cfp.devoxx.co.uk"
   },
   {
     "name": "Devoxx",
@@ -363,7 +363,7 @@
     "endDate": "2017-09-05",
     "cfpStart": "2017-04-06",
     "cfpEnd": "2017-06-06",
-    "cfpUrl": " https://droidcon.de/en/berlin/17/call-papers"
+    "cfpUrl": "https://droidcon.de/en/berlin/17/call-papers"
   },
   {
     "name": "Droidcon",
@@ -403,7 +403,7 @@
     "endDate": "2017-06-15",
     "cfpStart": "2017-03-07",
     "cfpEnd": "2017-05-14",
-    "cfpUrl": " http://droidcongr17.moonshot.gr/call-for-papers"
+    "cfpUrl": "http://droidcongr17.moonshot.gr/call-for-papers"
   },
   {
     "name": "Droidcon",
@@ -436,7 +436,7 @@
     "endDate": "2017-09-26",
     "cfpStart": "2017-05-24",
     "cfpEnd": "2017-07-09",
-    "cfpUrl": " https://droidcon-server.herokuapp.com"
+    "cfpUrl": "https://droidcon-server.herokuapp.com"
   },
   {
     "name": "Droidcon",
@@ -446,7 +446,7 @@
     "startDate": "2017-03-03",
     "endDate": "2017-03-04",
     "cfpStart": "2017-01-30",
-    "cfpUrl": " https://docs.google.com/forms/d/e/1FAIpQLSdUY9z2OeNNaVZ2XES_L6LvG33kAIHAnVCZhKwQCJl775_F1w/viewform"
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdUY9z2OeNNaVZ2XES_L6LvG33kAIHAnVCZhKwQCJl775_F1w/viewform"
   },
   {
     "name": "Droidcon",
@@ -457,7 +457,7 @@
     "endDate": "2017-11-07",
     "cfpStart": "2017-07-21",
     "cfpEnd": "2017-08-31",
-    "cfpUrl": " https://droidcon-server.herokuapp.com"
+    "cfpUrl": "https://droidcon-server.herokuapp.com"
   },
   {
     "name": "Droidcon",
@@ -611,7 +611,7 @@
     "endDate": "2016-01-09",
     "cfpStart": "2015-10-31",
     "cfpEnd": "2015-12-01",
-    "cfpUrl": " https://docs.google.com/forms/d/1BpiGZRCscF-UIzmAY6IuvGDJS_M5Lk_RCeJnjG9IC1Q/viewform"
+    "cfpUrl": "https://docs.google.com/forms/d/1BpiGZRCscF-UIzmAY6IuvGDJS_M5Lk_RCeJnjG9IC1Q/viewform"
   },
   {
     "name": "Kotlin Conf",
@@ -663,7 +663,7 @@
     "country": "Norway",
     "startDate": "2017-10-05",
     "endDate": "2017-10-06",
-    "cfpStart": " 2017-03-21",
+    "cfpStart": "2017-03-21",
     "cfpEnd": "2017-05-15",
     "cfpUrl": "https://mobileera.rocks/news/posts/c4p-time"
   },
@@ -687,7 +687,7 @@
     "endDate": "2017-10-21",
     "cfpStart": "2017-06-19",
     "cfpEnd": "2017-08-31",
-    "cfpUrl": " https://bit.ly/mobilization7-c4p"
+    "cfpUrl": "https://bit.ly/mobilization7-c4p"
   },
   {
     "name": "Mobius",
@@ -696,7 +696,7 @@
     "country": "RU",
     "startDate": "2017-04-21",
     "endDate": "2017-04-22",
-    "cfpStart": " 2016-08-01",
+    "cfpStart": "2016-08-01",
     "cfpEnd": "2017-02-22",
 
     "cfpUrl": "http://mobiusconf.com/en/callforpapers"
@@ -758,7 +758,7 @@
     "endDate": "2017-05-06",
     "cfpStart": "2017-01-17",
     "cfpEnd": "2017-02-20",
-    "cfpUrl": " http://www.thedevelopersconference.com.br/tdc/2017/florianopolis/call4papers"
+    "cfpUrl": "http://www.thedevelopersconference.com.br/tdc/2017/florianopolis/call4papers"
   },
   {
     "name": "The Developer's Conference",
@@ -769,7 +769,7 @@
     "endDate": "2017-07-22",
     "cfpStart": "2017-05-16",
     "cfpEnd": "2017-05-30",
-    "cfpUrl": " http://www.thedevelopersconference.com.br/tdc/2017/saopaulo/call4papers"
+    "cfpUrl": "http://www.thedevelopersconference.com.br/tdc/2017/saopaulo/call4papers"
   },
   {
     "name": "United Dev Conf",
