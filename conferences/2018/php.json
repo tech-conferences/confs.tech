@@ -73,14 +73,14 @@
   },
   {
     "name": "Mid-Atlantic Dev Conference",
-    "url": "https://www.middevcon.com/",
+    "url": "https://www.middevcon.com",
     "startDate": "2018-07-13",
     "endDate": "2018-07-14",
     "city": "Baltimore, MD",
     "country": "U.S.A.",
     "twitter": "@MidDevCon",
     "cfpEndDate": "2018-03-31",
-    "cfpUrl": "https://www.middevcon.com/call-for-speakers/"
+    "cfpUrl": "https://www.middevcon.com/call-for-speakers"
   },
   {
     "name": "PHPDetroit",
@@ -91,18 +91,18 @@
     "country": "U.S.A.",
     "twitter": "@phpdet",
     "cfpEndDate": "2018-03-22",
-    "cfpUrl": "https://cfp.phpdetroit.io/"
+    "cfpUrl": "https://cfp.phpdetroit.io"
   },
   {
     "name": "SouthEast PHP",
-    "url": "https://southeastphp.com/",
+    "url": "https://southeastphp.com",
     "startDate": "2018-08-16",
     "endDate": "2018-08-17",
     "city": "Nashville, TN",
     "country": "U.S.A.",
     "twitter": "@southeastphp",
     "cfpEndDate": "2018-04-15",
-    "cfpUrl": "https://cfp.southeastphp.com/"
+    "cfpUrl": "https://cfp.southeastphp.com"
   },
   {
     "name": "Northeast PHP Conference",
@@ -117,18 +117,18 @@
   },
   {
     "name": "Wave PHP",
-    "url": "https://www.wavephp.com/",
+    "url": "https://www.wavephp.com",
     "startDate": "2018-09-19",
     "endDate": "2018-09-21",
     "city": "San Diego, CA",
     "country": "U.S.A.",
-    "cfpUrl": "https://cfp.wavephp.com/",
+    "cfpUrl": "https://cfp.wavephp.com",
     "cfpEndDate": "2018-03-16",
     "twitter": "@wavephp"
   },
   {
     "name": "php[world]",
-    "url": "https://world.phparch.com/",
+    "url": "https://world.phparch.com",
     "startDate": "2018-11-15",
     "endDate": "2018-11-16",
     "city": "Washington, DC",

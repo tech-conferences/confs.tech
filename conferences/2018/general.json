@@ -145,12 +145,12 @@
   },
   {
     "name": "DevSecCon Tel Aviv",
-    "url": "http://www.devseccon.com/tel-aviv-2018/",
+    "url": "http://www.devseccon.com/tel-aviv-2018",
     "startDate": "2018-05-07",
     "endDate": "2018-05-07",
     "city": "Tel Aviv",
     "country": "Israel",
-    "cfpUrl": "https://www.devseccon.com/call-for-proposals/",
+    "cfpUrl": "https://www.devseccon.com/call-for-proposals",
     "cfpEndDate": "2018-01-07",
     "twitter": "@devseccon"
   },
@@ -256,12 +256,12 @@
   },
   {
     "name": "Shift Conf",
-    "url": "https://shiftconf.co/",
+    "url": "https://shiftconf.co",
     "startDate": "2018-05-31",
-    "endDate": "2018-06-1",
+    "endDate": "2018-06-01",
     "city": "Split",
     "country": "Croatia",
-    "cfpUrl": "https://sessionize.com/shift/",
+    "cfpUrl": "https://sessionize.com/shift",
     "cfpEndDate": "2018-04-16",
     "twitter": "@shiftsplit"
   },
@@ -296,8 +296,8 @@
   {
     "name": "TakeOff Conference",
     "url": "https://www.takeoffconf.io",
-    "startDate": "2018-06-7",
-    "endDate": "2018-06-8",
+    "startDate": "2018-06-07",
+    "endDate": "2018-06-08",
     "city": "Lille",
     "country": "France",
     "cfpUrl": "https://www.takeoffconf.io/identity/registrations/new",
@@ -342,14 +342,14 @@
   },
   {
     "name": "Mid-Atlantic Dev Conference",
-    "url": "https://www.middevcon.com/",
+    "url": "https://www.middevcon.com",
     "startDate": "2018-07-13",
     "endDate": "2018-07-14",
     "city": "Baltimore, MD",
     "country": "U.S.A.",
     "twitter": "@MidDevCon",
     "cfpEndDate": "2018-03-31",
-    "cfpUrl": "https://www.middevcon.com/call-for-speakers/"
+    "cfpUrl": "https://www.middevcon.com/call-for-speakers"
   },
   {
     "name": "OSCON",
@@ -397,12 +397,12 @@
   },
   {
     "name": "DevSecCon Boston",
-    "url": "http://www.devseccon.com/boston-2018/",
+    "url": "http://www.devseccon.com/boston-2018",
     "startDate": "2018-09-01",
     "endDate": "2018-09-01",
     "city": "Boston",
     "country": "U.S.A.",
-    "cfpUrl": "https://www.devseccon.com/call-for-proposals/",
+    "cfpUrl": "https://www.devseccon.com/call-for-proposals",
     "cfpEndDate": "2018-06-01",
     "twitter": "@devseccon"
   },
@@ -450,12 +450,12 @@
   },
   {
     "name": "DevSecCon London",
-    "url": "http://www.devseccon.com/london-2018/",
+    "url": "http://www.devseccon.com/london-2018",
     "startDate": "2018-10-18",
     "endDate": "2018-10-19",
     "city": "London",
     "country": "U.K.",
-    "cfpUrl": "https://www.devseccon.com/call-for-proposals/",
+    "cfpUrl": "https://www.devseccon.com/call-for-proposals",
     "cfpEndDate": "2018-06-18",
     "twitter": "@devseccon"
   },
@@ -468,7 +468,7 @@
     "country": "Germany",
     "cfpUrl": "",
     "cfpEndDate": "",
-    "facebook": "https://www.facebook.com/NConference/"
+    "facebook": "https://www.facebook.com/NConference"
   },
   {
     "name": "Web Directions Culture",
@@ -597,16 +597,16 @@
     "city": "Raleigh",
     "country": "U.S.A.",
     "twitter": "@AllThingsOpen",
-    "cfpUrl": "https://allthingsopen.org/call-for-papers/",
+    "cfpUrl": "https://allthingsopen.org/call-for-papers",
     "cfpEndDate": "2018-05-24"
   },
   {
     "name": "Haxe Summit",
-    "url": "HTTPS://summit.haxe.org",
+    "url": "https://summit.haxe.org",
     "startDate": "2018-05-03",
     "endDate": "2018-05-05",
     "city": "Seattle",
-    "country": "USA",
+    "country": "U.S.A.",
     "twitter": "@haxesummit",
     "cfpUrl": "",
     "cfpEndDate": "2018-03-20"
