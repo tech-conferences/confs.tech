@@ -120,7 +120,7 @@ export default class ConferenceNewPage extends Component {
     const cannotBeSubmitted = Object.keys(errors).some((x) => errors[x]);
 
     if (!recaptchaLoaded || captchaResponse === null) { return; }
-    if (!cannotBeSubmitted) { return; }
+    if (cannotBeSubmitted) { return; }
     this.setState({submitting: true});
 
     fetch(`${process.env.API_END_POINT_DOMAIN}/conferences`, {
