@@ -1,5 +1,21 @@
 [
   {
+    "name": "Jenkins World",
+    "url": "https://www.cloudbees.com/jenkinsworld",
+    "startDate": "2018-10-22",
+    "endDate": "2018-10-25",
+    "city": "Nice",
+    "country": "France"
+  },
+  {
+    "name": "Jenkins World",
+    "url": "https://www.cloudbees.com/jenkinsworld",
+    "startDate": "2018-09-16",
+    "endDate": "2018-09-19",
+    "city": "San Francisco",
+    "country": "U.S.A."
+  },
+  {
     "name": "Microsoft Ignite",
     "url": "https://www.microsoft.com/en-us/ignite/default.aspx",
     "startDate": "2018-09-24",
