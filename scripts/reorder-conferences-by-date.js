@@ -1,7 +1,7 @@
 // Reorder a file by running (from the scripts folder)
 
 import fs from 'fs';
-import {range} from 'lodash';
+import {range, sortBy} from 'lodash';
 import {parse} from 'date-fns';
 import {TOPICS} from '../src/components/config/index';
 
@@ -27,23 +27,17 @@ Object.keys(conferencesJSON).forEach((year) => {
 
     fs.readFile(fileName, (err, data) => {
       data = JSON.parse(data);
-      data.sort((a,b) => {
-        let startA = parse(a.startDate).getTime();
-        let startB = parse(b.startDate).getTime();
+      const newData = sortBy(data,[
+        (conf) => parse(conf.startDate).getTime(),
+        (conf) => parse(conf.endDate || conf.startDate).getTime(),
+        'name'
+      ]);
 
-        if (startA > startB) {
-          return 1;
-        }
-        if (startA < startB) {
-          return -1;
-        }
-
-        return 0;
-      });
-
-      fs.writeFile(fileName, JSON.stringify(data, null, 2), () => {
+      fs.writeFile(fileName, JSON.stringify(newData, null, 2), () => {
         console.log(`File ${fileName} was successfully reordered`);
       });
     });
   });
 });
+
+;
