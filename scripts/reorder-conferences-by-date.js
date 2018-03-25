@@ -26,18 +26,15 @@ Object.keys(conferencesJSON).forEach((year) => {
     const fileName = `./conferences/${year}/${topic}.json`;
 
     fs.readFile(fileName, (err, data) => {
-      data = JSON.parse(data);
-      const newData = sortBy(data,[
+      const sortedConfs = sortBy(JSON.parse(data),[
         (conf) => parse(conf.startDate).getTime(),
         (conf) => parse(conf.endDate || conf.startDate).getTime(),
         'name'
       ]);
 
-      fs.writeFile(fileName, JSON.stringify(newData, null, 2), () => {
+      fs.writeFile(fileName, JSON.stringify(sortedConfs, null, 2), () => {
         console.log(`File ${fileName} was successfully reordered`);
       });
     });
   });
 });
-
-;
