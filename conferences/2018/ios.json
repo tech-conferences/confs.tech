@@ -135,6 +135,14 @@
     "twitter": "@addconf"
   },
   {
+    "name": "Swift Island",
+    "url": "http://www.swiftisland.nl",
+    "startDate": "2018-07-04",
+    "endDate": "2018-07-05",
+    "city": "Texel",
+    "country": "Netherlands"
+  },
+  {
     "name": "360|iDev",
     "url": "http://360idev.com",
     "startDate": "2018-08-26",
@@ -176,13 +184,5 @@
     "city": "Portland, OR",
     "country": "U.S.A.",
     "twitter": "@SwiftxNW"
-  },
-  {
-    "name": "Swift Island",
-    "url": "http://www.swiftisland.nl",
-    "startDate": "2018-07-04",
-    "endDate": "2018-07-05",
-    "city": "Texel",
-    "country": "Netherlands"
   }
 ]

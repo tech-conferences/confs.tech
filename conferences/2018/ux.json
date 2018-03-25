@@ -26,14 +26,6 @@
     "country": "France"
   },
   {
-    "name": "Smashing Conference",
-    "url": "https://smashingconf.com/london-2018",
-    "startDate": "2018-02-07",
-    "endDate": "2018-02-08",
-    "city": "London",
-    "country": "U.K."
-  },
-  {
     "name": "Awwwards Berlin",
     "url": "https://conference.awwwards.com/berlin",
     "startDate": "2018-02-07",
@@ -42,9 +34,10 @@
     "country": "Germany"
   },
   {
-    "name": "The UX Conf",
-    "url": "http://theuxconf.com",
-    "startDate": "2018-02-20",
+    "name": "Smashing Conference",
+    "url": "https://smashingconf.com/london-2018",
+    "startDate": "2018-02-07",
+    "endDate": "2018-02-08",
     "city": "London",
     "country": "U.K."
   },
@@ -56,6 +49,13 @@
     "city": "Istanbul",
     "country": "Turkey",
     "twitter": "@ux_istanbul"
+  },
+  {
+    "name": "The UX Conf",
+    "url": "http://theuxconf.com",
+    "startDate": "2018-02-20",
+    "city": "London",
+    "country": "U.K."
   },
   {
     "name": "Design Indaba",
@@ -102,14 +102,6 @@
     "twitter": "@conc_at"
   },
   {
-    "name": "Confoo",
-    "url": "https://confoo.ca/en/yul2018",
-    "startDate": "2018-03-07",
-    "endDate": "2018-03-09",
-    "city": "Montréal",
-    "country": "Canada"
-  },
-  {
     "name": "ACM IUI 2018",
     "url": "http://iui.acm.org/2018",
     "startDate": "2018-03-07",
@@ -117,6 +109,14 @@
     "city": "Tokyo",
     "country": "Japan",
     "twitter": "@acmiui"
+  },
+  {
+    "name": "Confoo",
+    "url": "https://confoo.ca/en/yul2018",
+    "startDate": "2018-03-07",
+    "endDate": "2018-03-09",
+    "city": "Montréal",
+    "country": "Canada"
   },
   {
     "name": "ReactFest",
@@ -244,6 +244,17 @@
     "country": "U.S.A."
   },
   {
+    "name": "Generate ",
+    "url": "https://www.generateconf.com/new-york",
+    "startDate": "2018-04-25",
+    "endDate": "2018-04-27",
+    "city": "New York",
+    "country": "U.S.A.",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "How Design Live",
     "url": "http://howdesignlive.com",
     "startDate": "2018-04-30",
@@ -251,6 +262,15 @@
     "city": "Boston",
     "country": "U.S.A.",
     "twitter": "@HOWbrand"
+  },
+  {
+    "name": "UX+DEV Summit",
+    "url": "https://uxdsummit.com",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-11",
+    "city": "Fort Lauderdale",
+    "country": "U.S.A.",
+    "twitter": "@uxdevsummit"
   },
   {
     "name": "Beyond Tellerrand",
@@ -271,15 +291,6 @@
     "twitter": "@99u"
   },
   {
-    "name": "UX+DEV Summit",
-    "url": "https://uxdsummit.com",
-    "startDate": "2018-05-07",
-    "endDate": "2018-05-11",
-    "city": "Fort Lauderdale",
-    "country": "U.S.A.",
-    "twitter": "@uxdevsummit"
-  },
-  {
     "name": "Awwwards San Fransisco",
     "url": "https://conference.awwwards.com/san-francisco",
     "startDate": "2018-05-10",
@@ -294,17 +305,6 @@
     "endDate": "2018-05-17",
     "city": "Sydney",
     "country": "Australia"
-  },
-  {
-    "name": "CONFAB",
-    "url": "https://www.confabevents.com",
-    "startDate": "2018-05-21",
-    "endDate": "2018-05-23",
-    "city": "Minneapolis",
-    "country": "U.S.A.",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": "@ConfabEvents"
   },
   {
     "name": "The Design Conference",
@@ -322,6 +322,17 @@
     "city": "Portland",
     "country": "U.S.A.",
     "twitter": "@DelightConf"
+  },
+  {
+    "name": "CONFAB",
+    "url": "https://www.confabevents.com",
+    "startDate": "2018-05-21",
+    "endDate": "2018-05-23",
+    "city": "Minneapolis",
+    "country": "U.S.A.",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@ConfabEvents"
   },
   {
     "name": "UX-LX",
@@ -422,20 +433,20 @@
     "country": "Canada"
   },
   {
-    "name": "UXPA 2018",
-    "url": "http://uxpa2018.org",
-    "startDate": "2018-06-26",
-    "endDate": "2018-06-28",
-    "city": "Rio Mar",
-    "country": "Puerto Rico"
-  },
-  {
     "name": "Smashing Conference",
     "url": "https://smashingconf.com/toronto-2018",
     "startDate": "2018-06-26",
     "endDate": "2018-06-27",
     "city": "Tonronto",
     "country": "Canada"
+  },
+  {
+    "name": "UXPA 2018",
+    "url": "http://uxpa2018.org",
+    "startDate": "2018-06-26",
+    "endDate": "2018-06-28",
+    "city": "Rio Mar",
+    "country": "Puerto Rico"
   },
   {
     "name": "AmpersandConf",
@@ -536,6 +547,17 @@
     "country": "U.S.A."
   },
   {
+    "name": "Design Matters",
+    "url": "https://designmatters.io",
+    "startDate": "2018-09-26",
+    "endDate": "2018-09-27",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "twitter": "@designmattersdk",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "UXDX",
     "url": "https://uxdxconf.com",
     "startDate": "2018-10-04",
@@ -550,6 +572,17 @@
     "endDate": "2018-10-18",
     "city": "Graz",
     "country": "Austria"
+  },
+  {
+    "name": "DesignUp",
+    "url": "https://designup.io",
+    "startDate": "2018-10-26",
+    "endDate": "2018-10-28",
+    "city": "Bangalore",
+    "country": "India",
+    "twitter": "@DesignUpConf",
+    "cfpUrl": "https://docs.google.com/forms/d/10TETca7YKDzFYadoL6QsEKR5H_Wb2sfDMzuiT-g12do/edit",
+    "cfpEndDate": null
   },
   {
     "name": "Pixel Pioneers Belfast",
@@ -576,38 +609,5 @@
     "country": "Germany",
     "startDate": "2018-11-05",
     "endDate": "2018-11-07"
-  },
-  {
-    "name": "Generate ",
-    "url": "https://www.generateconf.com/new-york",
-    "startDate": "2018-04-25",
-    "endDate": "2018-04-27",
-    "city": "New York",
-    "country": "U.S.A.",
-    "twitter": null,
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "DesignUp",
-    "url": "https://designup.io",
-    "startDate": "2018-10-26",
-    "endDate": "2018-10-28",
-    "city": "Bangalore",
-    "country": "India",
-    "twitter": "@DesignUpConf",
-    "cfpUrl": "https://docs.google.com/forms/d/10TETca7YKDzFYadoL6QsEKR5H_Wb2sfDMzuiT-g12do/edit",
-    "cfpEndDate": null
-  },
-  {
-    "name": "Design Matters",
-    "url": "https://designmatters.io",
-    "startDate": "2018-09-26",
-    "endDate": "2018-09-27",
-    "city": "Copenhagen",
-    "country": "Denmark",
-    "twitter": "@designmattersdk",
-    "cfpUrl": "",
-    "cfpEndDate": null
   }
 ]

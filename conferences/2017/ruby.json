@@ -1,146 +1,12 @@
 [
   {
-    "name": "Deccan RubyConf",
-    "url": "http://www.deccanrubyconf.org",
-    "startDate": "2017-08-12",
-    "endDate": "2017-08-12",
-    "city": "Pune",
+    "name": "Ruby Conf India",
+    "url": "http://rubyconfindia.org",
+    "startDate": "2017-01-27",
+    "endDate": "2017-01-29",
+    "city": "Kochi",
     "country": "India",
-    "twitter": "@deccanrubyconf"
-  },
-  {
-    "name": "Brighton Ruby Conf",
-    "url": "http://brightonruby.com",
-    "startDate": "2017-07-07",
-    "endDate": "2017-07-07",
-    "city": "Brighton",
-    "country": "U.K.",
-    "twitter": "@brightonruby"
-  },
-  {
-    "name": "GrillRB",
-    "url": "http://grillrb.com",
-    "startDate": "2017-07-01",
-    "endDate": "2017-07-02",
-    "city": "Wrocław",
-    "country": "PL",
-    "twitter": "@grill_rb"
-  },
-  {
-    "name": "GORUCO",
-    "url": "http://goruco.com",
-    "startDate": "2017-06-24",
-    "endDate": "2017-06-24",
-    "city": "New York",
-    "country": "NY",
-    "twitter": "@goruco"
-  },
-  {
-    "name": "RedDotRubyConf",
-    "url": "http://www.reddotrubyconf.com",
-    "startDate": "2017-06-22",
-    "endDate": "2017-06-23",
-    "country": "Singapore",
-    "twitter": "@reddotrubyconf"
-  },
-  {
-    "name": "RubyNation",
-    "url": "http://www.rubynation.org",
-    "startDate": "2017-06-16",
-    "endDate": "2017-06-16",
-    "city": "Arlington",
-    "country": "Virginia",
-    "twitter": "@rubynation"
-  },
-  {
-    "name": "RubyConf EA",
-    "url": "http://rubyconf.nairuby.org",
-    "startDate": "2017-06-08",
-    "endDate": "2017-06-10",
-    "city": "Nairobi",
-    "country": "Kenya",
-    "twitter": "@nairubyke"
-  },
-  {
-    "name": "RubyC",
-    "url": "http://rubyc.eu",
-    "startDate": "2017-06-03",
-    "endDate": "2017-06-04",
-    "city": "Kyiv",
-    "country": "Ukraine",
-    "twitter": "@rubyc_eu"
-  },
-  {
-    "name": "RailsConf",
-    "url": "http://www.railsconf.com",
-    "startDate": "2017-04-25",
-    "endDate": "2017-04-27",
-    "city": "Phoenix",
-    "country": "AZ",
-    "twitter": "@railsconf"
-  },
-  {
-    "name": "RubyHACK",
-    "url": "http://rubyhack.com",
-    "startDate": "2017-04-20",
-    "endDate": "2017-04-21",
-    "city": "Salt Lake City",
-    "country": "Utah",
-    "twitter": "@utrubyhack"
-  },
-  {
-    "name": "RubyConfBY",
-    "url": "http://rubyconference.by/en",
-    "startDate": "2017-04-02",
-    "endDate": "2017-04-02",
-    "city": "Minsk",
-    "country": "Belarus",
-    "twitter": "@rubyconfby"
-  },
-  {
-    "name": "RubyConfLT",
-    "url": "https://rubyconf.lt",
-    "startDate": "2017-04-01",
-    "endDate": "2017-04-01",
-    "city": "Vilnius",
-    "country": "Lithuania",
-    "twitter": "@rubyconflt"
-  },
-  {
-    "name": "wroc_love.rb",
-    "url": "http://www.wrocloverb.com",
-    "startDate": "2017-03-17",
-    "endDate": "2017-03-19",
-    "city": "Wrocław",
-    "country": "Poland",
-    "twitter": "@wrocloverb"
-  },
-  {
-    "name": "RubyConf Philippines",
-    "url": "http://rubyconf.ph",
-    "startDate": "2017-03-16",
-    "endDate": "2017-03-18",
-    "city": "Bohol",
-    "country": "Philippines",
-    "twitter": "@rubyconfph"
-  },
-  {
-    "name": "Ruby Conf AU",
-    "url": "http://www.rubyconf.org.au/2017",
-    "startDate": "2017-02-09",
-    "endDate": "2017-02-10",
-    "city": "Melbourne",
-    "country": "Australia",
-    "twitter": "@rubyconf_au"
-  },
-  {
-    "name": "Ruby devroom at FOSDEM",
-    "url": "http://fosdem.rubybelgium.be",
-    "startDate": "2017-02-03",
-    "endDate": "2017-02-04",
-    "city": "Brussels",
-    "country": "Belgium",
-    "twitter": "@ruby_fosdem"
+    "twitter": "@rubyconfindia"
   },
   {
     "name": "Rubyfuza",
@@ -152,13 +18,147 @@
     "twitter": "@rubyfuza"
   },
   {
-    "name": "Ruby Conf India",
-    "url": "http://rubyconfindia.org",
-    "startDate": "2017-01-27",
-    "endDate": "2017-01-29",
-    "city": "Kochi",
+    "name": "Ruby devroom at FOSDEM",
+    "url": "http://fosdem.rubybelgium.be",
+    "startDate": "2017-02-03",
+    "endDate": "2017-02-04",
+    "city": "Brussels",
+    "country": "Belgium",
+    "twitter": "@ruby_fosdem"
+  },
+  {
+    "name": "Ruby Conf AU",
+    "url": "http://www.rubyconf.org.au/2017",
+    "startDate": "2017-02-09",
+    "endDate": "2017-02-10",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@rubyconf_au"
+  },
+  {
+    "name": "RubyConf Philippines",
+    "url": "http://rubyconf.ph",
+    "startDate": "2017-03-16",
+    "endDate": "2017-03-18",
+    "city": "Bohol",
+    "country": "Philippines",
+    "twitter": "@rubyconfph"
+  },
+  {
+    "name": "wroc_love.rb",
+    "url": "http://www.wrocloverb.com",
+    "startDate": "2017-03-17",
+    "endDate": "2017-03-19",
+    "city": "Wrocław",
+    "country": "Poland",
+    "twitter": "@wrocloverb"
+  },
+  {
+    "name": "RubyConfLT",
+    "url": "https://rubyconf.lt",
+    "startDate": "2017-04-01",
+    "endDate": "2017-04-01",
+    "city": "Vilnius",
+    "country": "Lithuania",
+    "twitter": "@rubyconflt"
+  },
+  {
+    "name": "RubyConfBY",
+    "url": "http://rubyconference.by/en",
+    "startDate": "2017-04-02",
+    "endDate": "2017-04-02",
+    "city": "Minsk",
+    "country": "Belarus",
+    "twitter": "@rubyconfby"
+  },
+  {
+    "name": "RubyHACK",
+    "url": "http://rubyhack.com",
+    "startDate": "2017-04-20",
+    "endDate": "2017-04-21",
+    "city": "Salt Lake City",
+    "country": "Utah",
+    "twitter": "@utrubyhack"
+  },
+  {
+    "name": "RailsConf",
+    "url": "http://www.railsconf.com",
+    "startDate": "2017-04-25",
+    "endDate": "2017-04-27",
+    "city": "Phoenix",
+    "country": "AZ",
+    "twitter": "@railsconf"
+  },
+  {
+    "name": "RubyC",
+    "url": "http://rubyc.eu",
+    "startDate": "2017-06-03",
+    "endDate": "2017-06-04",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "twitter": "@rubyc_eu"
+  },
+  {
+    "name": "RubyConf EA",
+    "url": "http://rubyconf.nairuby.org",
+    "startDate": "2017-06-08",
+    "endDate": "2017-06-10",
+    "city": "Nairobi",
+    "country": "Kenya",
+    "twitter": "@nairubyke"
+  },
+  {
+    "name": "RubyNation",
+    "url": "http://www.rubynation.org",
+    "startDate": "2017-06-16",
+    "endDate": "2017-06-16",
+    "city": "Arlington",
+    "country": "Virginia",
+    "twitter": "@rubynation"
+  },
+  {
+    "name": "RedDotRubyConf",
+    "url": "http://www.reddotrubyconf.com",
+    "startDate": "2017-06-22",
+    "endDate": "2017-06-23",
+    "country": "Singapore",
+    "twitter": "@reddotrubyconf"
+  },
+  {
+    "name": "GORUCO",
+    "url": "http://goruco.com",
+    "startDate": "2017-06-24",
+    "endDate": "2017-06-24",
+    "city": "New York",
+    "country": "NY",
+    "twitter": "@goruco"
+  },
+  {
+    "name": "GrillRB",
+    "url": "http://grillrb.com",
+    "startDate": "2017-07-01",
+    "endDate": "2017-07-02",
+    "city": "Wrocław",
+    "country": "PL",
+    "twitter": "@grill_rb"
+  },
+  {
+    "name": "Brighton Ruby Conf",
+    "url": "http://brightonruby.com",
+    "startDate": "2017-07-07",
+    "endDate": "2017-07-07",
+    "city": "Brighton",
+    "country": "U.K.",
+    "twitter": "@brightonruby"
+  },
+  {
+    "name": "Deccan RubyConf",
+    "url": "http://www.deccanrubyconf.org",
+    "startDate": "2017-08-12",
+    "endDate": "2017-08-12",
+    "city": "Pune",
     "country": "India",
-    "twitter": "@rubyconfindia"
+    "twitter": "@deccanrubyconf"
   },
   {
     "name": "RubyConf Colombia",

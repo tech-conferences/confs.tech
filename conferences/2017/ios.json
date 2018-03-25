@@ -8,20 +8,12 @@
     "country": "U.S.A."
   },
   {
-    "name": "Try Swift",
-    "url": "https://www.tryswift.co/events/2017/bangalore",
-    "startDate": "2017-11-18",
-    "endDate": "2017-11-19",
-    "city": "Bangalore",
-    "country": "India"
-  },
-  {
-    "name": "FrenchKit",
-    "url": "http://frenchkit.fr",
-    "startDate": "2017-09-22",
-    "endDate": "2017-09-23",
-    "city": "Paris",
-    "country": "France"
+    "name": "NSSpain",
+    "url": "https://2017.nsspain.com",
+    "startDate": "2017-09-13",
+    "endDate": "2017-09-15",
+    "city": "Logroño",
+    "country": "Spain"
   },
   {
     "name": "iOSDC Japan",
@@ -32,28 +24,12 @@
     "country": "Japan"
   },
   {
-    "name": "Mobilization",
-    "url": "http://2017.mobilization.pl",
-    "startDate": "2017-10-21",
-    "endDate": "2017-10-21",
-    "city": "Łódź",
-    "country": "Poland"
-  },
-  {
-    "name": "NSSpain",
-    "url": "https://2017.nsspain.com",
-    "startDate": "2017-09-13",
-    "endDate": "2017-09-15",
-    "city": "Logroño",
-    "country": "Spain"
-  },
-  {
-    "name": "Swift by Northwest",
-    "url": "https://swiftbynorthwest.com",
-    "startDate": "2017-10-27",
-    "endDate": "2017-10-28",
-    "city": "Seattle",
-    "country": "U.S.A."
+    "name": "FrenchKit",
+    "url": "http://frenchkit.fr",
+    "startDate": "2017-09-22",
+    "endDate": "2017-09-23",
+    "city": "Paris",
+    "country": "France"
   },
   {
     "name": "Mobile Era",
@@ -72,6 +48,22 @@
     "country": "U.S.A."
   },
   {
+    "name": "Mobilization",
+    "url": "http://2017.mobilization.pl",
+    "startDate": "2017-10-21",
+    "endDate": "2017-10-21",
+    "city": "Łódź",
+    "country": "Poland"
+  },
+  {
+    "name": "Swift by Northwest",
+    "url": "https://swiftbynorthwest.com",
+    "startDate": "2017-10-27",
+    "endDate": "2017-10-28",
+    "city": "Seattle",
+    "country": "U.S.A."
+  },
+  {
     "name": "Mobius",
     "url": "https://mobiusconf.com/en",
     "city": "Moscow",
@@ -80,5 +72,13 @@
     "endDate": "2017-11-11",
     "cfpStart": "2017-06-22",
     "cfpEnd": "cfp_site- https-//mobiusconf.com/en/cfp"
+  },
+  {
+    "name": "Try Swift",
+    "url": "https://www.tryswift.co/events/2017/bangalore",
+    "startDate": "2017-11-18",
+    "endDate": "2017-11-19",
+    "city": "Bangalore",
+    "country": "India"
   }
 ]

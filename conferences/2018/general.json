@@ -1,16 +1,5 @@
 [
   {
-    "name": "DEVit",
-    "url": "http://devitconf.org",
-    "startDate": "2018-06-10",
-    "endDate": "2018-06-11",
-    "city": "Thessaloniki",
-    "country": "Greece",
-    "twitter": "@devitconf",
-    "cfpUrl": "https://goo.gl/forms/5yz1wbXuSw9MiBU13",
-    "cfpEndDate": "2018-02-26"
-  },
-  {
     "name": "CodeMash",
     "url": "https://www.codemash.org",
     "city": "Sandusky, OH",
@@ -114,11 +103,15 @@
     "twitter": "@codemotionIT"
   },
   {
-    "name": "#LeadDev New York - The Lead Developer Conference",
-    "url": "https://newyork2018.theleaddeveloper.com",
-    "city": "New York City",
-    "country": "U.S.A.",
-    "startDate": "2018-04-24"
+    "name": "Devoxx France",
+    "url": "https://www.devoxx.fr",
+    "startDate": "2018-04-18",
+    "endDate": "2018-04-20",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@devoxxfr",
+    "cfpUrl": "",
+    "cfpEndDate": null
   },
   {
     "name": "Great Indian Developer Summit",
@@ -129,6 +122,13 @@
     "country": "India"
   },
   {
+    "name": "#LeadDev New York - The Lead Developer Conference",
+    "url": "https://newyork2018.theleaddeveloper.com",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "startDate": "2018-04-24"
+  },
+  {
     "name": "ScaleConf Colombia",
     "url": "https://scaleconfco.com",
     "city": "Medellín",
@@ -136,6 +136,17 @@
     "startDate": "2018-04-27",
     "endDate": "2018-04-28",
     "twitter": "@scaleconfco"
+  },
+  {
+    "name": "Haxe Summit",
+    "url": "https://summit.haxe.org",
+    "startDate": "2018-05-03",
+    "endDate": "2018-05-05",
+    "city": "Seattle",
+    "country": "U.S.A.",
+    "twitter": "@haxesummit",
+    "cfpUrl": "",
+    "cfpEndDate": "2018-03-20"
   },
   {
     "name": "Codeland Conf",
@@ -155,6 +166,14 @@
     "twitter": "@btconf"
   },
   {
+    "name": "Microsoft Build",
+    "url": "https://www.microsoft.com/en-us/build",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-09",
+    "city": "Seattle, WA",
+    "country": "U.S.A."
+  },
+  {
     "name": "DevSecCon Tel Aviv",
     "url": "http://www.devseccon.com/tel-aviv-2018",
     "startDate": "2018-05-07",
@@ -166,12 +185,13 @@
     "twitter": "@devseccon"
   },
   {
-    "name": "Microsoft Build",
-    "url": "https://www.microsoft.com/en-us/build",
-    "startDate": "2018-05-07",
+    "name": "Codemotion Amsterdam",
+    "url": "https://amsterdam2018.codemotionworld.com",
+    "startDate": "2018-05-08",
     "endDate": "2018-05-09",
-    "city": "Seattle, WA",
-    "country": "U.S.A."
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "twitter": "@codemoamsterdam"
   },
   {
     "name": "Google I/O",
@@ -180,15 +200,6 @@
     "country": "U.S.A.",
     "startDate": "2018-05-08",
     "endDate": "2018-05-10"
-  },
-  {
-    "name": "Codemotion Amsterdam",
-    "url": "https://amsterdam2018.codemotionworld.com",
-    "startDate": "2018-05-08",
-    "endDate": "2018-05-09",
-    "city": "Amsterdam",
-    "country": "Netherlands",
-    "twitter": "@codemoamsterdam"
   },
   {
     "name": "QCon SP",
@@ -258,12 +269,45 @@
     "twitter": "@agilept"
   },
   {
+    "name": "Sud Web",
+    "url": "https://sudweb.fr/2018",
+    "startDate": "2018-05-25",
+    "endDate": "2018-05-26",
+    "city": "Anduze",
+    "country": "France",
+    "twitter": "@sudweb",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
+    "name": "RigaDevDays",
+    "url": "https://rigadevdays.lv",
+    "startDate": "2018-05-29",
+    "endDate": "2018-05-31",
+    "city": "Riga",
+    "country": "Latvia",
+    "twitter": "@rigadevdays",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "True North",
     "url": "http://truenorthwaterloo.com",
     "city": "Waterloo",
     "country": "Canada",
     "startDate": "2018-05-29",
     "endDate": "2018-05-31"
+  },
+  {
+    "name": "DevSum",
+    "url": "https://www.devsum.se",
+    "startDate": "2018-05-31",
+    "endDate": "2018-06-01",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@DevSum_swe",
+    "cfpUrl": "",
+    "cfpEndDate": null
   },
   {
     "name": "Shift Conf",
@@ -315,6 +359,25 @@
     "cfpEndDate": "2018-04-15"
   },
   {
+    "name": "DEVit",
+    "url": "http://devitconf.org",
+    "startDate": "2018-06-10",
+    "endDate": "2018-06-11",
+    "city": "Thessaloniki",
+    "country": "Greece",
+    "twitter": "@devitconf",
+    "cfpUrl": "https://goo.gl/forms/5yz1wbXuSw9MiBU13",
+    "cfpEndDate": "2018-02-26"
+  },
+  {
+    "name": "DeveloperWeek",
+    "url": "http://www.developerweek.com/NYC",
+    "startDate": "2018-06-18",
+    "endDate": "2018-06-20",
+    "city": "New York",
+    "country": "U.S.A."
+  },
+  {
     "name": "We RISE",
     "url": "https://werise.tech",
     "startDate": "2018-06-21",
@@ -326,12 +389,15 @@
     "twitter": "@WeRiseConf"
   },
   {
-    "name": "#LeadDev London - The Lead Developer Conference",
-    "url": "https://london2018.theleaddeveloper.com",
-    "city": "London",
-    "country": "U.K.",
-    "startDate": "2018-06-27",
-    "endDate": "2018-06-28"
+    "name": "World AR VR Expo",
+    "url": "http://www.wavexc.com",
+    "startDate": "2018-06-22",
+    "endDate": "2018-06-24",
+    "city": "Hyderabad",
+    "country": "India",
+    "twitter": "@worldarvrexpo",
+    "cfpUrl": "",
+    "cfpEndDate": null
   },
   {
     "name": "QCon NY",
@@ -341,6 +407,14 @@
     "city": "New York City",
     "country": "U.S.A.",
     "twitter": "@qconnewyork"
+  },
+  {
+    "name": "#LeadDev London - The Lead Developer Conference",
+    "url": "https://london2018.theleaddeveloper.com",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2018-06-27",
+    "endDate": "2018-06-28"
   },
   {
     "name": "Sunny Tech",
@@ -397,6 +471,17 @@
     "country": "Canada",
     "startDate": "2018-08-08",
     "endDate": "2018-08-09"
+  },
+  {
+    "name": "FrOSCon",
+    "url": "https://www.froscon.de",
+    "startDate": "2018-08-25",
+    "endDate": "2018-08-26",
+    "city": "Sankt Augustin",
+    "country": "Germany",
+    "twitter": "@froscon",
+    "cfpUrl": "",
+    "cfpEndDate": null
   },
   {
     "name": "NightlyBuild",
@@ -471,6 +556,17 @@
     "twitter": "@devseccon"
   },
   {
+    "name": "All Things Open",
+    "url": "https://allthingsopen.org",
+    "startDate": "2018-10-21",
+    "endDate": "2018-10-23",
+    "city": "Raleigh",
+    "country": "U.S.A.",
+    "twitter": "@AllThingsOpen",
+    "cfpUrl": "https://allthingsopen.org/call-for-papers",
+    "cfpEndDate": "2018-05-24"
+  },
+  {
     "name": "NConf",
     "url": "https://nconf.de",
     "startDate": "2018-10-23",
@@ -509,14 +605,6 @@
   },
   {
     "name": "DeveloperWeek",
-    "url": "http://www.developerweek.com/NYC",
-    "startDate": "2018-06-18",
-    "endDate": "2018-06-20",
-    "city": "New York",
-    "country": "U.S.A."
-  },
-  {
-    "name": "DeveloperWeek",
     "url": "http://www.developerweek.com/Austin",
     "startDate": "2018-11-06",
     "endDate": "2018-11-08",
@@ -533,93 +621,5 @@
     "twitter": "@devternity",
     "cfpUrl": "",
     "cfpEndDate": null
-  },
-  {
-    "name": "RigaDevDays",
-    "url": "https://rigadevdays.lv",
-    "startDate": "2018-05-29",
-    "endDate": "2018-05-31",
-    "city": "Riga",
-    "country": "Latvia",
-    "twitter": "@rigadevdays",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "FrOSCon",
-    "url": "https://www.froscon.de",
-    "startDate": "2018-08-25",
-    "endDate": "2018-08-26",
-    "city": "Sankt Augustin",
-    "country": "Germany",
-    "twitter": "@froscon",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "Devoxx France",
-    "url": "https://www.devoxx.fr",
-    "startDate": "2018-04-18",
-    "endDate": "2018-04-20",
-    "city": "Paris",
-    "country": "France",
-    "twitter": "@devoxxfr",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "World AR VR Expo",
-    "url": "http://www.wavexc.com",
-    "startDate": "2018-06-22",
-    "endDate": "2018-06-24",
-    "city": "Hyderabad",
-    "country": "India",
-    "twitter": "@worldarvrexpo",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "DevSum",
-    "url": "https://www.devsum.se",
-    "startDate": "2018-05-31",
-    "endDate": "2018-06-01",
-    "city": "Stockholm",
-    "country": "Sweden",
-    "twitter": "@DevSum_swe",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "Sud Web",
-    "url": "https://sudweb.fr/2018",
-    "startDate": "2018-05-25",
-    "endDate": "2018-05-26",
-    "city": "Anduze",
-    "country": "France",
-    "twitter": "@sudweb",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "All Things Open",
-    "url": "https://allthingsopen.org",
-    "startDate": "2018-10-21",
-    "endDate": "2018-10-23",
-    "city": "Raleigh",
-    "country": "U.S.A.",
-    "twitter": "@AllThingsOpen",
-    "cfpUrl": "https://allthingsopen.org/call-for-papers",
-    "cfpEndDate": "2018-05-24"
-  },
-  {
-    "name": "Haxe Summit",
-    "url": "https://summit.haxe.org",
-    "startDate": "2018-05-03",
-    "endDate": "2018-05-05",
-    "city": "Seattle",
-    "country": "U.S.A.",
-    "twitter": "@haxesummit",
-    "cfpUrl": "",
-    "cfpEndDate": "2018-03-20"
   }
 ]

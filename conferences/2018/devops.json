@@ -1,37 +1,5 @@
 [
   {
-    "name": "Jenkins World",
-    "url": "https://www.cloudbees.com/jenkinsworld",
-    "startDate": "2018-10-22",
-    "endDate": "2018-10-25",
-    "city": "Nice",
-    "country": "France"
-  },
-  {
-    "name": "Jenkins World",
-    "url": "https://www.cloudbees.com/jenkinsworld",
-    "startDate": "2018-09-16",
-    "endDate": "2018-09-19",
-    "city": "San Francisco",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Microsoft Ignite",
-    "url": "https://www.microsoft.com/en-us/ignite/default.aspx",
-    "startDate": "2018-09-24",
-    "endDate": "2018-09-28",
-    "city": "Orlando",
-    "country": "U.S.A."
-  },
-  {
-    "name": "PuppetConf",
-    "url": "https://puppet.com/puppetconf",
-    "startDate": "2018-10-09",
-    "endDate": "2018-10-11",
-    "city": "San Francisco",
-    "country": "U.S.A."
-  },
-  {
     "name": "DevOpsDay - Baltimore",
     "url": "http://www.devopsdays.org/events/2018-baltimore",
     "startDate": "2018-03-22",
@@ -80,14 +48,6 @@
     "country": "Canada"
   },
   {
-    "name": "DevOpsDay - Copenhagen",
-    "url": "https://www.devopsdays.org/events/2018-copenhagen",
-    "startDate": "2018-04-24",
-    "endDate": "2018-04-25",
-    "city": "Copenhagen",
-    "country": "Denmark"
-  },
-  {
     "name": "DevOpsDay - Seattle",
     "url": "https://www.devopsdays.org/events/2018-seattle",
     "startDate": "2018-04-24",
@@ -102,6 +62,14 @@
     "endDate": "2018-04-25",
     "city": "Tokyo",
     "country": "Japan"
+  },
+  {
+    "name": "DevOpsDay - Copenhagen",
+    "url": "https://www.devopsdays.org/events/2018-copenhagen",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-25",
+    "city": "Copenhagen",
+    "country": "Denmark"
   },
   {
     "name": "DevOpsDay - Jakarta",
@@ -168,6 +136,17 @@
     "country": "U.S.A."
   },
   {
+    "name": "DevOpsDays Stockholm",
+    "url": "https://www.devopsdays.org/events/2018-stockholm/welcome",
+    "startDate": "2018-05-24",
+    "endDate": "2018-05-25",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@devopsdayssthlm",
+    "cfpUrl": "https://www.devopsdays.org/events/2018-stockholm/propose",
+    "cfpEndDate": "2018-04-02"
+  },
+  {
     "name": "DevOpsDay - Stockholm",
     "url": "https://www.devopsdays.org/events/2018-stockholm",
     "startDate": "2018-05-24",
@@ -200,6 +179,14 @@
     "country": "Brazil"
   },
   {
+    "name": "DevOpsDay - DC",
+    "url": "https://www.devopsdays.org/events/2018-washington-dc",
+    "startDate": "2018-06-06",
+    "endDate": "2018-06-07",
+    "city": "Washington, DC",
+    "country": "U.S.A."
+  },
+  {
     "name": "DevOpsDay - Boise",
     "url": "https://www.devopsdays.org/events/2018-boise",
     "startDate": "2018-06-06",
@@ -208,12 +195,13 @@
     "country": "U.S.A."
   },
   {
-    "name": "DevOpsDay - DC",
-    "url": "https://www.devopsdays.org/events/2018-washington-dc",
-    "startDate": "2018-06-06",
-    "endDate": "2018-06-07",
-    "city": "Washington, DC",
-    "country": "U.S.A."
+    "name": "DockerCon",
+    "url": "https://2018.dockercon.com",
+    "startDate": "2018-06-12",
+    "endDate": "2018-06-15",
+    "city": "San Fransisco",
+    "country": "U.S.A.",
+    "twitter": "@DockerCon"
   },
   {
     "name": "DevOpsDay - Amsterdam",
@@ -288,12 +276,28 @@
     "country": "Germany"
   },
   {
+    "name": "Jenkins World",
+    "url": "https://www.cloudbees.com/jenkinsworld",
+    "startDate": "2018-09-16",
+    "endDate": "2018-09-19",
+    "city": "San Francisco",
+    "country": "U.S.A."
+  },
+  {
     "name": "DevOpsDay - Columbus",
     "url": "https://www.devopsdays.org/events/2018-columbus",
     "startDate": "2018-09-19",
     "endDate": "2018-09-20",
     "city": "Columbus",
     "country": "U.S.A."
+  },
+  {
+    "name": "DevOpsDay - Istanbul",
+    "url": "https://www.devopsdays.org/events/2018-istanbul",
+    "startDate": "2018-09-20",
+    "endDate": "2018-09-20",
+    "city": "Istanbul",
+    "country": "Turkey"
   },
   {
     "name": "DevOpsDay - Town",
@@ -304,12 +308,12 @@
     "country": "South Africa"
   },
   {
-    "name": "DevOpsDay - Istanbul",
-    "url": "https://www.devopsdays.org/events/2018-istanbul",
-    "startDate": "2018-09-20",
-    "endDate": "2018-09-20",
-    "city": "Istanbul",
-    "country": "Turkey"
+    "name": "Microsoft Ignite",
+    "url": "https://www.microsoft.com/en-us/ignite/default.aspx",
+    "startDate": "2018-09-24",
+    "endDate": "2018-09-28",
+    "city": "Orlando",
+    "country": "U.S.A."
   },
   {
     "name": "DevOpsDay - Riga",
@@ -328,6 +332,14 @@
     "country": "U.S.A."
   },
   {
+    "name": "PuppetConf",
+    "url": "https://puppet.com/puppetconf",
+    "startDate": "2018-10-09",
+    "endDate": "2018-10-11",
+    "city": "San Francisco",
+    "country": "U.S.A."
+  },
+  {
     "name": "DevOpsDay - Paris",
     "url": "https://www.devopsdays.org/events/2018-paris",
     "startDate": "2018-10-16",
@@ -342,6 +354,14 @@
     "endDate": "2018-10-18",
     "city": "Kansas City",
     "country": "U.S.A."
+  },
+  {
+    "name": "Jenkins World",
+    "url": "https://www.cloudbees.com/jenkinsworld",
+    "startDate": "2018-10-22",
+    "endDate": "2018-10-25",
+    "city": "Nice",
+    "country": "France"
   },
   {
     "name": "DevOpsDay - Philadelphia",
@@ -366,25 +386,5 @@
     "endDate": "2018-11-17",
     "city": "Shenzhen",
     "country": "China"
-  },
-  {
-    "name": "DevOpsDays Stockholm",
-    "url": "https://www.devopsdays.org/events/2018-stockholm/welcome",
-    "startDate": "2018-05-24",
-    "endDate": "2018-05-25",
-    "city": "Stockholm",
-    "country": "Sweden",
-    "twitter": "@devopsdayssthlm",
-    "cfpUrl": "https://www.devopsdays.org/events/2018-stockholm/propose",
-    "cfpEndDate": "2018-04-02"
-  },
-  {
-    "name": "DockerCon",
-    "url": "https://2018.dockercon.com",
-    "startDate": "2018-06-12",
-    "endDate": "2018-06-15",
-    "city": "San Fransisco",
-    "country": "U.S.A.",
-    "twitter": "@DockerCon"
   }
 ]

@@ -88,6 +88,17 @@
     "endDate": "2018-04-17"
   },
   {
+    "name": "Android Makers",
+    "url": "https://androidmakers.fr",
+    "startDate": "2018-04-23",
+    "endDate": "2018-04-24",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@AndroidMakersFR",
+    "cfpUrl": "https://cfp.androidmakers.fr",
+    "cfpEndDate": "2018-02-18"
+  },
+  {
     "name": "Google I/O",
     "url": "https://events.google.com/io",
     "city": "Mountain View",
@@ -165,16 +176,5 @@
     "country": "Netherlands",
     "startDate": "2018-10-03",
     "endDate": "2018-10-05"
-  },
-  {
-    "name": "Android Makers",
-    "url": "https://androidmakers.fr",
-    "startDate": "2018-04-23",
-    "endDate": "2018-04-24",
-    "city": "Paris",
-    "country": "France",
-    "twitter": "@AndroidMakersFR",
-    "cfpUrl": "https://cfp.androidmakers.fr",
-    "cfpEndDate": "2018-02-18"
   }
 ]

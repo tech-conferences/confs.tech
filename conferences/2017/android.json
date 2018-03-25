@@ -1,30 +1,81 @@
 [
   {
-    "name": "Droidcon",
-    "url": "https://droidcon.ae",
-    "city": "Dubai",
-    "country": "U.A.E.",
-    "startDate": "2018-04-13",
-    "endDate": "2018-04-14"
-  },
-  {
-    "name": "360|AnDev",
-    "url": "http://360andev.com",
-    "city": "Denver, Colorado",
+    "name": "IoT DevFest",
+    "url": "http://www.iotdevfest.com",
+    "city": "Mesa, AZ",
     "country": "U.S.A.",
-    "startDate": "2017-07-13",
-    "endDate": "2017-07-14",
-    "cfpStart": "2017-03-01",
-    "cfpEnd": "2017-04-07",
-    "cfpUrl": "https://360andev.com/call-for-papers"
+    "startDate": "2016-01-09",
+    "endDate": "2016-01-09",
+    "cfpStart": "2015-10-31",
+    "cfpEnd": "2015-12-01",
+    "cfpUrl": "https://docs.google.com/forms/d/1BpiGZRCscF-UIzmAY6IuvGDJS_M5Lk_RCeJnjG9IC1Q/viewform"
   },
   {
-    "name": "App Builders",
-    "url": "https://appbuilders.ch",
-    "city": "Lausanne",
-    "country": "Switzerland",
-    "startDate": "2017-04-24",
-    "endDate": "2017-04-25"
+    "name": "Droidcon",
+    "url": "http://droidcon.com.bd",
+    "city": "Dhaka",
+    "country": "Bangladesh",
+    "startDate": "2017-01-27",
+    "endDate": "2017-01-28"
+  },
+  {
+    "name": "DevFest MN",
+    "url": "https://devfest.mn",
+    "city": "Minneapolis, MN",
+    "country": "U.S.A.",
+    "startDate": "2017-02-04",
+    "endDate": "2017-02-04",
+    "cfpStart": "2016-10-15",
+    "cfpEnd": "2016-12-31",
+    "cfpUrl": "http://gdgtc.us10.list-manage1.com/track/click?u=6b1a454c86f7f8cc9693b328e&id=bc6af830ef&e=40d6c297e6"
+  },
+  {
+    "name": "DevFest KC",
+    "url": "https://devfestkc.com",
+    "city": "Kansas City, MO",
+    "country": "U.S.A.",
+    "startDate": "2017-02-18",
+    "endDate": "2017-02-18"
+  },
+  {
+    "name": "Mobile+Web DevCon",
+    "url": "http://mobilewebdevconference.com/san-francisco-2017",
+    "city": "San Francisco",
+    "country": "CA",
+    "startDate": "2017-03-01",
+    "endDate": "2017-03-03",
+    "cfpStart": "2016-11-02",
+    "cfpEnd": "2017-03-01",
+    "cfpUrl": "http://mobilewebdevconference.com/san-francisco-2017/contact/speak-at-mwdcon"
+  },
+  {
+    "name": "Droidcon",
+    "url": "http://droidcon.do",
+    "city": "Santo Domingo, Repúblic",
+    "country": "Dominicana",
+    "startDate": "2017-03-03",
+    "endDate": "2017-03-04",
+    "cfpStart": "2017-01-30",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdUY9z2OeNNaVZ2XES_L6LvG33kAIHAnVCZhKwQCJl775_F1w/viewform"
+  },
+  {
+    "name": "Google Cloud Next",
+    "url": "https://cloudnext.withgoogle.com",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "startDate": "2017-03-08",
+    "endDate": "2017-03-10"
+  },
+  {
+    "name": "DroidKaigi",
+    "url": "https://droidkaigi.github.io/2017/en",
+    "city": "Tokyo",
+    "country": "Japan",
+    "startDate": "2017-03-09",
+    "endDate": "2017-03-10",
+    "cfpStart": "2016-10-01",
+    "cfpEnd": "2016-11-01",
+    "cfpUrl": "https://droidkaigi.github.io/2017/en/requirements.html"
   },
   {
     "name": "AppDevCon",
@@ -38,47 +89,55 @@
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc_Jks4rXUhtY1FZG6dOdMXamVwSosgHgqgMxKVg7l8kIYdNQ/viewform"
   },
   {
-    "name": "App Design & Development Conference",
-    "url": "https://addconf.com",
-    "city": "Barcelona",
-    "country": "Spain",
-    "startDate": "2017-06-22",
-    "endDate": "2017-06-23",
-    "cfpStart": "2017-02-10",
-    "cfpEnd": "2017-03-15",
-    "cfpUrl": "https://addconf.com/call_for_papers"
-  },
-  {
-    "name": "AnDevCon",
-    "url": "http://www.andevcon.com",
-    "city": "Washington D.C.",
+    "name": "Devoxx",
+    "url": "http://devoxx.us",
+    "city": "San Jose, CA",
     "country": "U.S.A.",
-    "startDate": "2017-07-17",
-    "endDate": "2017-07-19",
-    "cfpStart": "2016-12-06",
-    "cfpEnd": "2017-02-13"
+    "startDate": "2017-03-21",
+    "endDate": "2017-03-23"
   },
   {
-    "name": "Android DevConference",
-    "url": "http://androidconference2017.imasters.com.br",
-    "city": "São Paulo",
-    "country": "Brazil",
-    "startDate": "2017-08-24",
-    "endDate": "2017-08-25",
-    "cfpStart": "2017-04-19",
-    "cfpEnd": "2017-05-19",
-    "cfpUrl": "https://goo.gl/forms/yERFwr67gwUajaVA3"
+    "name": "Mobcon Europe",
+    "url": "http://mobcon.com/mobcon-europe",
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "startDate": "2017-03-25",
+    "endDate": "2017-03-26"
   },
   {
-    "name": "Android Summit",
-    "url": "http://androidsummit.org",
-    "city": "McLean",
-    "country": "VA",
-    "startDate": "2017-08-24",
-    "endDate": "2017-08-25",
-    "cfpStart": "2017-03-21",
-    "cfpEnd": "2017-07-14",
-    "cfpUrl": "https://goo.gl/forms/N0vPmkWLKijfsHOy2"
+    "name": "Droid Knights",
+    "url": "https://droidknights.github.io/2017",
+    "city": "Seoul, Sout",
+    "country": "Korea",
+    "startDate": "2017-03-25",
+    "endDate": "2017-03-25"
+  },
+  {
+    "name": "Devoxx",
+    "url": "http://devoxx.fr",
+    "city": "Paris",
+    "country": "France",
+    "startDate": "2017-04-05",
+    "endDate": "2017-04-07"
+  },
+  {
+    "name": "United Dev Conf",
+    "url": "http://unitedconf.com",
+    "city": "Minsk",
+    "country": "Belarus",
+    "startDate": "2017-04-06",
+    "endDate": "2017-04-07"
+  },
+  {
+    "name": "Droidcon",
+    "url": "http://it.droidcon.com/2017",
+    "city": "Turin",
+    "country": "IT",
+    "startDate": "2017-04-06",
+    "endDate": "2017-04-07",
+    "cfpStart": "2016-10-14",
+    "cfpEnd": "2017-01-31",
+    "cfpUrl": "http://it.droidcon.com/2017/call-for-papers-droidon-italy"
   },
   {
     "name": "Android Makers",
@@ -92,12 +151,133 @@
     "cfpUrl": "http://cfp.androidmakers.fr"
   },
   {
-    "name": "AndroidTO",
-    "url": "http://androidto.com",
-    "city": "Toronto",
-    "country": "Canada",
-    "startDate": "2017-09-20",
-    "endDate": "2017-09-20"
+    "name": "Droidcon",
+    "url": "http://www.droidcon-boston.com",
+    "city": "Boston, MA",
+    "country": "U.S.A.",
+    "startDate": "2017-04-10",
+    "endDate": "2017-04-11",
+    "cfpStart": "2016-12-05",
+    "cfpEnd": "2017-01-12"
+  },
+  {
+    "name": "Droidcon",
+    "url": "https://ticketbox.vn/event/droidcon-vietnam-64153",
+    "city": "Ho Chi Minh City",
+    "country": "VN",
+    "startDate": "2017-04-15",
+    "endDate": "2017-04-16"
+  },
+  {
+    "name": "CodeMobile",
+    "url": "http://www.codemobile.co.uk",
+    "city": "Chester",
+    "country": "U.K.",
+    "startDate": "2017-04-17",
+    "endDate": "2017-04-20",
+    "cfpStart": "2016-09-01",
+    "cfpEnd": "2016-10-31",
+    "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers"
+  },
+  {
+    "name": "Emerging Tech Conference",
+    "url": "https://2017.phillyemergingtech.com",
+    "city": "Philadelphia, PA",
+    "country": "U.S.A.",
+    "startDate": "2017-04-18",
+    "endDate": "2017-04-19"
+  },
+  {
+    "name": "Facebook F8",
+    "url": "https://www.fbf8.com",
+    "city": "San Jose, CA",
+    "country": "U.S.A.",
+    "startDate": "2017-04-18",
+    "endDate": "2017-04-19"
+  },
+  {
+    "name": "Chicago Roboto",
+    "url": "http://chicagoroboto.com",
+    "city": "Chicago",
+    "country": "IL",
+    "startDate": "2017-04-20",
+    "endDate": "2017-04-21",
+    "cfpStart": "2016-11-08",
+    "cfpEnd": "2017-01-18",
+    "cfpUrl": "http://chicagoroboto.com/call-for-papers"
+  },
+  {
+    "name": "Mobius",
+    "url": "http://mobiusconf.com/en",
+    "city": "Saint Petersburg",
+    "country": "RU",
+    "startDate": "2017-04-21",
+    "endDate": "2017-04-22",
+    "cfpStart": "2016-08-01",
+    "cfpEnd": "2017-02-22",
+    "cfpUrl": "http://mobiusconf.com/en/callforpapers"
+  },
+  {
+    "name": "App Builders",
+    "url": "https://appbuilders.ch",
+    "city": "Lausanne",
+    "country": "Switzerland",
+    "startDate": "2017-04-24",
+    "endDate": "2017-04-25"
+  },
+  {
+    "name": "MobileCamp",
+    "url": "https://mobilecamp.de",
+    "city": "Dresden",
+    "country": "Germany",
+    "startDate": "2017-04-29",
+    "endDate": "2017-04-30"
+  },
+  {
+    "name": "GOTO",
+    "url": "http://gotochgo.com",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "startDate": "2017-05-01",
+    "endDate": "2017-05-04"
+  },
+  {
+    "name": "The Developer's Conference",
+    "url": "http://www.thedevelopersconference.com.br/tdc/2017/florianopolis",
+    "city": "Florianópolis, SC",
+    "country": "Brazil",
+    "startDate": "2017-05-03",
+    "endDate": "2017-05-06",
+    "cfpStart": "2017-01-17",
+    "cfpEnd": "2017-02-20",
+    "cfpUrl": "http://www.thedevelopersconference.com.br/tdc/2017/florianopolis/call4papers"
+  },
+  {
+    "name": "DevFestDC",
+    "url": "http://www.devfestdc.org",
+    "city": "Washington DC",
+    "country": "U.S.A.",
+    "startDate": "2017-05-05",
+    "endDate": "2017-05-06",
+    "cfpStart": "2017-02-08",
+    "cfpEnd": "2017-02-28",
+    "cfpUrl": "https://goo.gl/forms/jKoMs7GEsTSBECf03"
+  },
+  {
+    "name": "OSCON",
+    "url": "http://conferences.oreilly.com/oscon/oscon-tx",
+    "city": "Austin, TX",
+    "country": "U.S.A.",
+    "startDate": "2017-05-08",
+    "endDate": "2017-05-11"
+  },
+  {
+    "name": "MCE^4",
+    "url": "http://2017.mceconf.com",
+    "city": "Warsaw",
+    "country": "Poland",
+    "startDate": "2017-05-08",
+    "endDate": "2017-05-09"
   },
   {
     "name": "APPFORUM Americas",
@@ -106,6 +286,141 @@
     "country": "U.S.A.",
     "startDate": "2017-05-09",
     "endDate": "2017-05-11"
+  },
+  {
+    "name": "Devoxx",
+    "url": "http://www.devoxx.co.uk",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2017-05-11",
+    "endDate": "2017-05-12",
+    "cfpStart": "2016-12-28",
+    "cfpEnd": "2017-01-16",
+    "cfpUrl": "http://cfp.devoxx.co.uk"
+  },
+  {
+    "name": "RigaDevDays",
+    "url": "http://rigadevdays.lv",
+    "city": "Riga",
+    "country": "Latvia",
+    "startDate": "2017-05-15",
+    "endDate": "2017-05-17",
+    "cfpStart": "2016-11-01",
+    "cfpEnd": "2017-01-24",
+    "cpfUrl": "https://goo.gl/forms/Sy4J6mViU8RF9rCo1"
+  },
+  {
+    "name": "Google I/O",
+    "url": "https://events.google.com/io",
+    "city": "Mountain View, CA",
+    "country": "U.S.A.",
+    "startDate": "2017-05-17",
+    "endDate": "2017-05-19"
+  },
+  {
+    "name": "Prairie Dev Con",
+    "url": "http://prairiedevcon.com",
+    "city": "Winnipeg, MB",
+    "country": "Canada",
+    "startDate": "2017-06-06",
+    "endDate": "2017-06-07",
+    "cfpStart": "2017-02-14",
+    "cfpEnd": "2017-02-24",
+    "cfpUrl": "http://prairiedevcon.com/CallForSpeakers"
+  },
+  {
+    "name": "GOTO",
+    "url": "http://gotoams.nl",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "startDate": "2017-06-12",
+    "endDate": "2017-06-14"
+  },
+  {
+    "name": "Apps World Evolution",
+    "url": "https://tmt.knect365.com/apps-world",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2017-06-13",
+    "endDate": "2017-06-15"
+  },
+  {
+    "name": "Droidcon",
+    "url": "http://droidcongr17.moonshot.gr",
+    "city": "Athens",
+    "country": "Greece",
+    "startDate": "2017-06-13",
+    "endDate": "2017-06-15",
+    "cfpStart": "2017-03-07",
+    "cfpEnd": "2017-05-14",
+    "cfpUrl": "http://droidcongr17.moonshot.gr/call-for-papers"
+  },
+  {
+    "name": "APPFORUM Europe",
+    "url": "https://www.zebra.com/us/en/events/appforum/europe.html",
+    "city": "Prague, Czec",
+    "country": "Republic",
+    "startDate": "2017-06-14",
+    "endDate": "2017-06-16"
+  },
+  {
+    "name": "App Design & Development Conference",
+    "url": "https://addconf.com",
+    "city": "Barcelona",
+    "country": "Spain",
+    "startDate": "2017-06-22",
+    "endDate": "2017-06-23",
+    "cfpStart": "2017-02-10",
+    "cfpEnd": "2017-03-15",
+    "cfpUrl": "https://addconf.com/call_for_papers"
+  },
+  {
+    "name": "Gradle Summit",
+    "url": "https://summit.gradle.com",
+    "city": "Palo Alto, CA",
+    "country": "U.S.A.",
+    "startDate": "2017-06-22",
+    "endDate": "2017-06-23"
+  },
+  {
+    "name": "360|AnDev",
+    "url": "http://360andev.com",
+    "city": "Denver, Colorado",
+    "country": "U.S.A.",
+    "startDate": "2017-07-13",
+    "endDate": "2017-07-14",
+    "cfpStart": "2017-03-01",
+    "cfpEnd": "2017-04-07",
+    "cfpUrl": "https://360andev.com/call-for-papers"
+  },
+  {
+    "name": "AnDevCon",
+    "url": "http://www.andevcon.com",
+    "city": "Washington D.C.",
+    "country": "U.S.A.",
+    "startDate": "2017-07-17",
+    "endDate": "2017-07-19",
+    "cfpStart": "2016-12-06",
+    "cfpEnd": "2017-02-13"
+  },
+  {
+    "name": "The Developer's Conference",
+    "url": "http://www.thedevelopersconference.com.br/tdc/2017/saopaulo",
+    "city": "São Paulo, SP",
+    "country": "Brazil",
+    "startDate": "2017-07-18",
+    "endDate": "2017-07-22",
+    "cfpStart": "2017-05-16",
+    "cfpEnd": "2017-05-30",
+    "cfpUrl": "http://www.thedevelopersconference.com.br/tdc/2017/saopaulo/call4papers"
+  },
+  {
+    "name": "GDG/Heraklion",
+    "url": "http://heraklion.googledevelopers.gr",
+    "city": "Heraklion, Crete",
+    "country": "Greece",
+    "startDate": "2017-07-25",
+    "endDate": "2017-07-27"
   },
   {
     "name": "APPFORUM Asia",
@@ -124,235 +439,26 @@
     "endDate": "2017-08-01"
   },
   {
-    "name": "APPFORUM Europe",
-    "url": "https://www.zebra.com/us/en/events/appforum/europe.html",
-    "city": "Prague, Czec",
-    "country": "Republic",
-    "startDate": "2017-06-14",
-    "endDate": "2017-06-16"
-  },
-  {
-    "name": "Apps World Evolution",
-    "url": "https://tmt.knect365.com/apps-world",
-    "city": "London",
-    "country": "U.K.",
-    "startDate": "2017-06-13",
-    "endDate": "2017-06-15"
-  },
-  {
-    "name": "Chicago Roboto",
-    "url": "http://chicagoroboto.com",
-    "city": "Chicago",
-    "country": "IL",
-    "startDate": "2017-04-20",
-    "endDate": "2017-04-21",
-    "cfpStart": "2016-11-08",
-    "cfpEnd": "2017-01-18",
-    "cfpUrl": "http://chicagoroboto.com/call-for-papers"
-  },
-  {
-    "name": "CodeMobile",
-    "url": "http://www.codemobile.co.uk",
-    "city": "Chester",
-    "country": "U.K.",
-    "startDate": "2017-04-17",
-    "endDate": "2017-04-20",
-    "cfpStart": "2016-09-01",
-    "cfpEnd": "2016-10-31",
-    "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers"
-  },
-  {
-    "name": "GDG DevFest",
-    "url": "https://devfest.gdg.lv",
-    "startDate": "2017-11-17",
-    "endDate": "2017-11-17",
-    "city": "Riga",
-    "country": "Latvia",
-    "cfpStart": "2017-08-07",
-    "cfpEnd": "2017-09-30",
-    "cfpUrl": "https://www.papercall.io/devfest-baltics"
-  },
-  {
-    "name": "GDG DevFest Bayern",
-    "url": "https://bayern.devfest.de",
-    "startDate": "2017-11-25",
-    "endDate": "2017-11-25",
-    "city": "Munich",
-    "country": "Germany",
-    "cfpStart": "2017-07-25",
-    "cfpEnd": "2017-08-27",
-    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfYY7zy7jRCxcv5peMJL-O6KYvujJQIyL_xg4cIipYc3e4H1w/viewform"
-  },
-  {
-    "name": "GDG DevFest",
-    "url": "http://www.devfestbh.com.br",
-    "city": "Belo Horizonte, MG",
-    "country": "Brazil",
-    "startDate": "2017-11-18",
-    "endDate": "2017-11-18"
-  },
-  {
-    "name": "GDG DevFest",
-    "url": "https://devfestcerrado.com.br",
-    "city": "Goiânia, GO",
-    "country": "Brazil",
-    "startDate": "2017-09-30",
-    "endDate": "2017-09-30",
-    "cfpStart": "2017-07-02",
-    "cfpEnd": "2017-07-31",
-    "cfpUrl": "https://docs.google.com/forms/d/1uFRfd34CyjAHJ9A6-U3RHK3JudKB6ZYHqQKrb5r4xJw"
-  },
-  {
-    "name": "DevFestDC",
-    "url": "http://www.devfestdc.org",
-    "city": "Washington DC",
-    "country": "U.S.A.",
-    "startDate": "2017-05-05",
-    "endDate": "2017-05-06",
-    "cfpStart": "2017-02-08",
-    "cfpEnd": "2017-02-28",
-    "cfpUrl": "https://goo.gl/forms/jKoMs7GEsTSBECf03"
-  },
-  {
-    "name": "GDG DevFest",
-    "url": "https://duesseldorf.devfest.de",
-    "startDate": "2017-09-09",
-    "endDate": "2017-09-10",
-    "city": "Düsseldorf",
-    "country": "Germany",
-    "cfpStart": "2017-07-17",
-    "cfpEnd": "2017-08-06",
-    "cfpUrl": "https://www.papercall.io/devfest2017"
-  },
-  {
-    "name": "GDG DevFest",
-    "url": "https://devfestflorida.org",
-    "city": "Orlando, FL",
-    "country": "U.S.A.",
-    "startDate": "2017-11-11",
-    "endDate": "2017-11-11",
-    "cfpStart": "2017-04-15",
-    "cfpEnd": "2017-07-17",
-    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfcchhhaKETrOEVY-h5EngpTby7QMJl_G2LEl8XjYP5nXIS4g/viewform"
-  },
-  {
-    "name": "GDG Devfest",
-    "url": "https://hamburg.devfest.de",
-    "city": "Hamburg",
-    "country": "Germany",
-    "startDate": "2017-11-25",
-    "endDate": "2017-11-26",
-    "cfpStart": "2017-07-26",
-    "cfpEnd": "2017-10-01",
-    "cfpUrl": "https://goo.gl/c7BK25"
-  },
-  {
-    "name": "DevFest KC",
-    "url": "https://devfestkc.com",
-    "city": "Kansas City, MO",
-    "country": "U.S.A.",
-    "startDate": "2017-02-18",
-    "endDate": "2017-02-18"
-  },
-  {
-    "name": "GDG DevFest",
-    "url": "https://devfestlima.com",
-    "city": "Lima",
-    "country": "Peru",
-    "startDate": "2017-09-23",
-    "endDate": "2017-09-24"
-  },
-  {
-    "name": "GDG DevFest",
-    "url": "https://devfest.gdg.org.ua",
-    "city": "Lviv",
-    "country": "Ukraine",
-    "startDate": "2017-10-13",
-    "endDate": "2017-10-14"
-  },
-  {
-    "name": "GDG DevFest",
-    "url": "https://devfest.pl",
-    "city": "Rzeszów",
-    "country": "Poland",
-    "startDate": "2017-09-07",
-    "endDate": "2017-09-08"
-  },
-  {
-    "name": "GDG DevFest",
-    "url": "https://gdg-siberia.com",
-    "city": "Novosibirsk",
-    "country": "Russia",
-    "startDate": "2017-09-23",
-    "endDate": "2017-09-24",
+    "name": "Android Summit",
+    "url": "http://androidsummit.org",
+    "city": "McLean",
+    "country": "VA",
+    "startDate": "2017-08-24",
+    "endDate": "2017-08-25",
     "cfpStart": "2017-03-21",
-    "cfpEnd": "2017-07-01",
-    "cfpUrl": "http://bit.ly/dfSiberia17-c4p"
+    "cfpEnd": "2017-07-14",
+    "cfpUrl": "https://goo.gl/forms/N0vPmkWLKijfsHOy2"
   },
   {
-    "name": "GDG DevFest",
-    "url": "http://devfest.ch",
-    "startDate": "2017-10-28",
-    "endDate": "2017-10-29",
-    "city": "Fribourg",
-    "country": "Switzerland"
-  },
-  {
-    "name": "DevFest MN",
-    "url": "https://devfest.mn",
-    "city": "Minneapolis, MN",
-    "country": "U.S.A.",
-    "startDate": "2017-02-04",
-    "endDate": "2017-02-04",
-    "cfpStart": "2016-10-15",
-    "cfpEnd": "2016-12-31",
-    "cfpUrl": "http://gdgtc.us10.list-manage1.com/track/click?u=6b1a454c86f7f8cc9693b328e&id=bc6af830ef&e=40d6c297e6"
-  },
-  {
-    "name": "Devoxx",
-    "url": "http://devoxx.be",
-    "city": "Antwerp",
-    "country": "Belgium",
-    "startDate": "2017-11-06",
-    "endDate": "2017-11-10",
-    "cfpStart": "2017-05-22",
-    "cfpEnd": "2017-07-07",
-    "cfpUrl": "https://cfp.devoxx.be"
-  },
-  {
-    "name": "Devoxx",
-    "url": "http://devoxx.fr",
-    "city": "Paris",
-    "country": "France",
-    "startDate": "2017-04-05",
-    "endDate": "2017-04-07"
-  },
-  {
-    "name": "Devoxx",
-    "url": "http://www.devoxx.co.uk",
-    "city": "London",
-    "country": "U.K.",
-    "startDate": "2017-05-11",
-    "endDate": "2017-05-12",
-    "cfpStart": "2016-12-28",
-    "cfpEnd": "2017-01-16",
-    "cfpUrl": "http://cfp.devoxx.co.uk"
-  },
-  {
-    "name": "Devoxx",
-    "url": "http://devoxx.us",
-    "city": "San Jose, CA",
-    "country": "U.S.A.",
-    "startDate": "2017-03-21",
-    "endDate": "2017-03-23"
-  },
-  {
-    "name": "Droid Knights",
-    "url": "https://droidknights.github.io/2017",
-    "city": "Seoul, Sout",
-    "country": "Korea",
-    "startDate": "2017-03-25",
-    "endDate": "2017-03-25"
+    "name": "Android DevConference",
+    "url": "http://androidconference2017.imasters.com.br",
+    "city": "São Paulo",
+    "country": "Brazil",
+    "startDate": "2017-08-24",
+    "endDate": "2017-08-25",
+    "cfpStart": "2017-04-19",
+    "cfpEnd": "2017-05-19",
+    "cfpUrl": "https://goo.gl/forms/yERFwr67gwUajaVA3"
   },
   {
     "name": "Droidcon",
@@ -366,14 +472,197 @@
     "cfpUrl": "https://droidcon.de/en/berlin/17/call-papers"
   },
   {
+    "name": "GDD Europe",
+    "url": "https://developers.google.com/events/gdd-europe",
+    "city": "Krakow",
+    "country": "Poland",
+    "startDate": "2017-09-05",
+    "endDate": "2017-09-06"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://devfest.pl",
+    "city": "Rzeszów",
+    "country": "Poland",
+    "startDate": "2017-09-07",
+    "endDate": "2017-09-08"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://duesseldorf.devfest.de",
+    "startDate": "2017-09-09",
+    "endDate": "2017-09-10",
+    "city": "Düsseldorf",
+    "country": "Germany",
+    "cfpStart": "2017-07-17",
+    "cfpEnd": "2017-08-06",
+    "cfpUrl": "https://www.papercall.io/devfest2017"
+  },
+  {
+    "name": "Fragments",
+    "url": "https://fragments.talkfunnel.com/2017",
+    "city": "Bangalore",
+    "country": "India",
+    "startDate": "2017-09-12",
+    "endDate": "2017-09-13",
+    "cfpStart": "2017-05-17",
+    "cfpEnd": "2017-07-02",
+    "cfpUrl": "https://fragments.talkfunnel.com/2017"
+  },
+  {
+    "name": "AndroidTO",
+    "url": "http://androidto.com",
+    "city": "Toronto",
+    "country": "Canada",
+    "startDate": "2017-09-20",
+    "endDate": "2017-09-20"
+  },
+  {
+    "name": "YOW! Connected",
+    "url": "http://connected.yowconference.com.au",
+    "city": "Melbourne",
+    "country": "Australia",
+    "startDate": "2017-09-21",
+    "endDate": "2017-09-22"
+  },
+  {
+    "name": "Droids 4 Droids",
+    "url": "http://lima.droids4droids.com",
+    "city": "Lima",
+    "country": "Peru",
+    "startDate": "2017-09-22",
+    "endDate": "2017-09-22",
+    "cfpStart": "2017-08-01",
+    "cfpEnd": "2017-08-31",
+    "cfpUrl": "https://goo.gl/forms/wsE42YMhpvh7k1us1"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://devfestlima.com",
+    "city": "Lima",
+    "country": "Peru",
+    "startDate": "2017-09-23",
+    "endDate": "2017-09-24"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://gdg-siberia.com",
+    "city": "Novosibirsk",
+    "country": "Russia",
+    "startDate": "2017-09-23",
+    "endDate": "2017-09-24",
+    "cfpStart": "2017-03-21",
+    "cfpEnd": "2017-07-01",
+    "cfpUrl": "http://bit.ly/dfSiberia17-c4p"
+  },
+  {
     "name": "Droidcon",
-    "url": "http://www.droidcon-boston.com",
-    "city": "Boston, MA",
+    "url": "http://droidcon.nyc",
+    "city": "New York City",
     "country": "U.S.A.",
-    "startDate": "2017-04-10",
-    "endDate": "2017-04-11",
-    "cfpStart": "2016-12-05",
-    "cfpEnd": "2017-01-12"
+    "startDate": "2017-09-25",
+    "endDate": "2017-09-26",
+    "cfpStart": "2017-05-24",
+    "cfpEnd": "2017-07-09",
+    "cfpUrl": "https://droidcon-server.herokuapp.com"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://devfestcerrado.com.br",
+    "city": "Goiânia, GO",
+    "country": "Brazil",
+    "startDate": "2017-09-30",
+    "endDate": "2017-09-30",
+    "cfpStart": "2017-07-02",
+    "cfpEnd": "2017-07-31",
+    "cfpUrl": "https://docs.google.com/forms/d/1uFRfd34CyjAHJ9A6-U3RHK3JudKB6ZYHqQKrb5r4xJw"
+  },
+  {
+    "name": "GOTO",
+    "url": "http://gotocph.com",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "startDate": "2017-10-01",
+    "endDate": "2017-10-05"
+  },
+  {
+    "name": "Mobile Era",
+    "url": "https://mobileera.rocks",
+    "city": "Oslo",
+    "country": "Norway",
+    "startDate": "2017-10-05",
+    "endDate": "2017-10-06",
+    "cfpStart": "2017-03-21",
+    "cfpEnd": "2017-05-15",
+    "cfpUrl": "https://mobileera.rocks/news/posts/c4p-time"
+  },
+  {
+    "name": "Mobiconf",
+    "url": "https://2017.mobiconf.org",
+    "city": "Krakow",
+    "country": "Poland",
+    "startDate": "2017-10-05",
+    "endDate": "2017-10-06"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://devfest.gdg.org.ua",
+    "city": "Lviv",
+    "country": "Ukraine",
+    "startDate": "2017-10-13",
+    "endDate": "2017-10-14"
+  },
+  {
+    "name": "Droids 4 Droids",
+    "url": "http://gt.droids4droids.com",
+    "city": "Guatemala City",
+    "country": "Guatemala",
+    "startDate": "2017-10-18",
+    "endDate": "2017-10-18",
+    "cfpStart": "2017-08-01",
+    "cfpEnd": "2017-09-01",
+    "cfpUrl": "https://goo.gl/forms/4uWoC1e29P5Jorbp2"
+  },
+  {
+    "name": "Mobilization",
+    "url": "http://mobilization.pl",
+    "city": "Łódź",
+    "country": "Poland",
+    "startDate": "2017-10-21",
+    "endDate": "2017-10-21",
+    "cfpStart": "2017-06-19",
+    "cfpEnd": "2017-08-31",
+    "cfpUrl": "https://bit.ly/mobilization7-c4p"
+  },
+  {
+    "name": "Droidcon",
+    "url": "https://skillsmatter.com/conferences/8265-droidcon-london-2017",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2017-10-26",
+    "endDate": "2017-10-27",
+    "cfpStart": "2017-03-23",
+    "cfpEnd": "2017-05-14",
+    "cfpUrl": "https://skillsmatter.com/conferences/8265-droidcon-london-2017#get_involved"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "http://devfest.ch",
+    "startDate": "2017-10-28",
+    "endDate": "2017-10-29",
+    "city": "Fribourg",
+    "country": "Switzerland"
+  },
+  {
+    "name": "Kotlin Conf",
+    "url": "https://kotlinconf.com",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "startDate": "2017-11-02",
+    "endDate": "2017-11-03",
+    "cfpStart": "2017-03-14",
+    "cfpEnd": "2017-05-01",
+    "cfpUrl": "https://sessionize.com/kotlinconf"
   },
   {
     "name": "Droidcon",
@@ -387,34 +676,96 @@
     "cfpUrl": "https://ro.droidcon.com/en/bucharest/16/call-papers"
   },
   {
-    "name": "Droidcon",
-    "url": "http://droidcon.com.bd",
-    "city": "Dhaka",
-    "country": "Bangladesh",
-    "startDate": "2017-01-27",
-    "endDate": "2017-01-28"
+    "name": "Devoxx",
+    "url": "http://devoxx.be",
+    "city": "Antwerp",
+    "country": "Belgium",
+    "startDate": "2017-11-06",
+    "endDate": "2017-11-10",
+    "cfpStart": "2017-05-22",
+    "cfpEnd": "2017-07-07",
+    "cfpUrl": "https://cfp.devoxx.be"
   },
   {
     "name": "Droidcon",
-    "url": "http://droidcongr17.moonshot.gr",
-    "city": "Athens",
-    "country": "Greece",
-    "startDate": "2017-06-13",
-    "endDate": "2017-06-15",
-    "cfpStart": "2017-03-07",
-    "cfpEnd": "2017-05-14",
-    "cfpUrl": "http://droidcongr17.moonshot.gr/call-for-papers"
+    "url": "http://sf.droidcon.com",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "startDate": "2017-11-06",
+    "endDate": "2017-11-07",
+    "cfpStart": "2017-07-21",
+    "cfpEnd": "2017-08-31",
+    "cfpUrl": "https://droidcon-server.herokuapp.com"
   },
   {
-    "name": "Droidcon",
-    "url": "http://it.droidcon.com/2017",
-    "city": "Turin",
-    "country": "IT",
-    "startDate": "2017-04-06",
-    "endDate": "2017-04-07",
-    "cfpStart": "2016-10-14",
-    "cfpEnd": "2017-01-31",
-    "cfpUrl": "http://it.droidcon.com/2017/call-for-papers-droidon-italy"
+    "name": "Mobius",
+    "url": "https://mobiusconf.com/en",
+    "city": "Moscow",
+    "country": "Russia",
+    "startDate": "2017-11-11",
+    "endDate": "2017-11-11",
+    "cfpStart": "2017-06-22",
+    "cfpEnd": "cfp_site- https-//mobiusconf.com/en/cfp"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://devfestflorida.org",
+    "city": "Orlando, FL",
+    "country": "U.S.A.",
+    "startDate": "2017-11-11",
+    "endDate": "2017-11-11",
+    "cfpStart": "2017-04-15",
+    "cfpEnd": "2017-07-17",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfcchhhaKETrOEVY-h5EngpTby7QMJl_G2LEl8XjYP5nXIS4g/viewform"
+  },
+  {
+    "name": "GOTO",
+    "url": "http://gotober.com",
+    "city": "Berlin",
+    "country": "Germany",
+    "startDate": "2017-11-15",
+    "endDate": "2017-11-17"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://devfest.gdg.lv",
+    "startDate": "2017-11-17",
+    "endDate": "2017-11-17",
+    "city": "Riga",
+    "country": "Latvia",
+    "cfpStart": "2017-08-07",
+    "cfpEnd": "2017-09-30",
+    "cfpUrl": "https://www.papercall.io/devfest-baltics"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "http://www.devfestbh.com.br",
+    "city": "Belo Horizonte, MG",
+    "country": "Brazil",
+    "startDate": "2017-11-18",
+    "endDate": "2017-11-18"
+  },
+  {
+    "name": "GDG Devfest",
+    "url": "https://hamburg.devfest.de",
+    "city": "Hamburg",
+    "country": "Germany",
+    "startDate": "2017-11-25",
+    "endDate": "2017-11-26",
+    "cfpStart": "2017-07-26",
+    "cfpEnd": "2017-10-01",
+    "cfpUrl": "https://goo.gl/c7BK25"
+  },
+  {
+    "name": "GDG DevFest Bayern",
+    "url": "https://bayern.devfest.de",
+    "startDate": "2017-11-25",
+    "endDate": "2017-11-25",
+    "city": "Munich",
+    "country": "Germany",
+    "cfpStart": "2017-07-25",
+    "cfpEnd": "2017-08-27",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfYY7zy7jRCxcv5peMJL-O6KYvujJQIyL_xg4cIipYc3e4H1w/viewform"
   },
   {
     "name": "Droidcon",
@@ -429,362 +780,10 @@
   },
   {
     "name": "Droidcon",
-    "url": "http://droidcon.nyc",
-    "city": "New York City",
-    "country": "U.S.A.",
-    "startDate": "2017-09-25",
-    "endDate": "2017-09-26",
-    "cfpStart": "2017-05-24",
-    "cfpEnd": "2017-07-09",
-    "cfpUrl": "https://droidcon-server.herokuapp.com"
-  },
-  {
-    "name": "Droidcon",
-    "url": "http://droidcon.do",
-    "city": "Santo Domingo, Repúblic",
-    "country": "Dominicana",
-    "startDate": "2017-03-03",
-    "endDate": "2017-03-04",
-    "cfpStart": "2017-01-30",
-    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdUY9z2OeNNaVZ2XES_L6LvG33kAIHAnVCZhKwQCJl775_F1w/viewform"
-  },
-  {
-    "name": "Droidcon",
-    "url": "http://sf.droidcon.com",
-    "city": "San Francisco",
-    "country": "U.S.A.",
-    "startDate": "2017-11-06",
-    "endDate": "2017-11-07",
-    "cfpStart": "2017-07-21",
-    "cfpEnd": "2017-08-31",
-    "cfpUrl": "https://droidcon-server.herokuapp.com"
-  },
-  {
-    "name": "Droidcon",
-    "url": "https://skillsmatter.com/conferences/8265-droidcon-london-2017",
-    "city": "London",
-    "country": "U.K.",
-    "startDate": "2017-10-26",
-    "endDate": "2017-10-27",
-    "cfpStart": "2017-03-23",
-    "cfpEnd": "2017-05-14",
-    "cfpUrl": "https://skillsmatter.com/conferences/8265-droidcon-london-2017#get_involved"
-  },
-  {
-    "name": "Droidcon",
-    "url": "https://ticketbox.vn/event/droidcon-vietnam-64153",
-    "city": "Ho Chi Minh City",
-    "country": "VN",
-    "startDate": "2017-04-15",
-    "endDate": "2017-04-16"
-  },
-  {
-    "name": "DroidKaigi",
-    "url": "https://droidkaigi.github.io/2017/en",
-    "city": "Tokyo",
-    "country": "Japan",
-    "startDate": "2017-03-09",
-    "endDate": "2017-03-10",
-    "cfpStart": "2016-10-01",
-    "cfpEnd": "2016-11-01",
-    "cfpUrl": "https://droidkaigi.github.io/2017/en/requirements.html"
-  },
-  {
-    "name": "Droids 4 Droids",
-    "url": "http://gt.droids4droids.com",
-    "city": "Guatemala City",
-    "country": "Guatemala",
-    "startDate": "2017-10-18",
-    "endDate": "2017-10-18",
-    "cfpStart": "2017-08-01",
-    "cfpEnd": "2017-09-01",
-    "cfpUrl": "https://goo.gl/forms/4uWoC1e29P5Jorbp2"
-  },
-  {
-    "name": "Droids 4 Droids",
-    "url": "http://lima.droids4droids.com",
-    "city": "Lima",
-    "country": "Peru",
-    "startDate": "2017-09-22",
-    "endDate": "2017-09-22",
-    "cfpStart": "2017-08-01",
-    "cfpEnd": "2017-08-31",
-    "cfpUrl": "https://goo.gl/forms/wsE42YMhpvh7k1us1"
-  },
-  {
-    "name": "Facebook F8",
-    "url": "https://www.fbf8.com",
-    "city": "San Jose, CA",
-    "country": "U.S.A.",
-    "startDate": "2017-04-18",
-    "endDate": "2017-04-19"
-  },
-  {
-    "name": "Fragments",
-    "url": "https://fragments.talkfunnel.com/2017",
-    "city": "Bangalore",
-    "country": "India",
-    "startDate": "2017-09-12",
-    "endDate": "2017-09-13",
-    "cfpStart": "2017-05-17",
-    "cfpEnd": "2017-07-02",
-    "cfpUrl": "https://fragments.talkfunnel.com/2017"
-  },
-  {
-    "name": "GDD Europe",
-    "url": "https://developers.google.com/events/gdd-europe",
-    "city": "Krakow",
-    "country": "Poland",
-    "startDate": "2017-09-05",
-    "endDate": "2017-09-06"
-  },
-  {
-    "name": "GDG/Heraklion",
-    "url": "http://heraklion.googledevelopers.gr",
-    "city": "Heraklion, Crete",
-    "country": "Greece",
-    "startDate": "2017-07-25",
-    "endDate": "2017-07-27"
-  },
-  {
-    "name": "Google Cloud Next",
-    "url": "https://cloudnext.withgoogle.com",
-    "city": "San Francisco, CA",
-    "country": "U.S.A.",
-    "startDate": "2017-03-08",
-    "endDate": "2017-03-10"
-  },
-  {
-    "name": "Google I/O",
-    "url": "https://events.google.com/io",
-    "city": "Mountain View, CA",
-    "country": "U.S.A.",
-    "startDate": "2017-05-17",
-    "endDate": "2017-05-19"
-  },
-  {
-    "name": "GOTO",
-    "url": "http://gotoams.nl",
-    "city": "Amsterdam",
-    "country": "Netherlands",
-    "startDate": "2017-06-12",
-    "endDate": "2017-06-14"
-  },
-  {
-    "name": "GOTO",
-    "url": "http://gotober.com",
-    "city": "Berlin",
-    "country": "Germany",
-    "startDate": "2017-11-15",
-    "endDate": "2017-11-17"
-  },
-  {
-    "name": "GOTO",
-    "url": "http://gotochgo.com",
-    "city": "Chicago, IL",
-    "country": "U.S.A.",
-    "startDate": "2017-05-01",
-    "endDate": "2017-05-04"
-  },
-  {
-    "name": "GOTO",
-    "url": "http://gotocph.com",
-    "city": "Copenhagen",
-    "country": "Denmark",
-    "startDate": "2017-10-01",
-    "endDate": "2017-10-05"
-  },
-  {
-    "name": "Gradle Summit",
-    "url": "https://summit.gradle.com",
-    "city": "Palo Alto, CA",
-    "country": "U.S.A.",
-    "startDate": "2017-06-22",
-    "endDate": "2017-06-23"
-  },
-  {
-    "name": "IoT DevFest",
-    "url": "http://www.iotdevfest.com",
-    "city": "Mesa, AZ",
-    "country": "U.S.A.",
-    "startDate": "2016-01-09",
-    "endDate": "2016-01-09",
-    "cfpStart": "2015-10-31",
-    "cfpEnd": "2015-12-01",
-    "cfpUrl": "https://docs.google.com/forms/d/1BpiGZRCscF-UIzmAY6IuvGDJS_M5Lk_RCeJnjG9IC1Q/viewform"
-  },
-  {
-    "name": "Kotlin Conf",
-    "url": "https://kotlinconf.com",
-    "city": "San Francisco, CA",
-    "country": "U.S.A.",
-    "startDate": "2017-11-02",
-    "endDate": "2017-11-03",
-    "cfpStart": "2017-03-14",
-    "cfpEnd": "2017-05-01",
-    "cfpUrl": "https://sessionize.com/kotlinconf"
-  },
-  {
-    "name": "MCE^4",
-    "url": "http://2017.mceconf.com",
-    "city": "Warsaw",
-    "country": "Poland",
-    "startDate": "2017-05-08",
-    "endDate": "2017-05-09"
-  },
-  {
-    "name": "Mobcon Europe",
-    "url": "http://mobcon.com/mobcon-europe",
-    "city": "Sofia",
-    "country": "Bulgaria",
-    "startDate": "2017-03-25",
-    "endDate": "2017-03-26"
-  },
-  {
-    "name": "Mobiconf",
-    "url": "https://2017.mobiconf.org",
-    "city": "Krakow",
-    "country": "Poland",
-    "startDate": "2017-10-05",
-    "endDate": "2017-10-06"
-  },
-  {
-    "name": "MobileCamp",
-    "url": "https://mobilecamp.de",
-    "city": "Dresden",
-    "country": "Germany",
-    "startDate": "2017-04-29",
-    "endDate": "2017-04-30"
-  },
-  {
-    "name": "Mobile Era",
-    "url": "https://mobileera.rocks",
-    "city": "Oslo",
-    "country": "Norway",
-    "startDate": "2017-10-05",
-    "endDate": "2017-10-06",
-    "cfpStart": "2017-03-21",
-    "cfpEnd": "2017-05-15",
-    "cfpUrl": "https://mobileera.rocks/news/posts/c4p-time"
-  },
-  {
-    "name": "Mobile+Web DevCon",
-    "url": "http://mobilewebdevconference.com/san-francisco-2017",
-    "city": "San Francisco",
-    "country": "CA",
-    "startDate": "2017-03-01",
-    "endDate": "2017-03-03",
-    "cfpStart": "2016-11-02",
-    "cfpEnd": "2017-03-01",
-    "cfpUrl": "http://mobilewebdevconference.com/san-francisco-2017/contact/speak-at-mwdcon"
-  },
-  {
-    "name": "Mobilization",
-    "url": "http://mobilization.pl",
-    "city": "Łódź",
-    "country": "Poland",
-    "startDate": "2017-10-21",
-    "endDate": "2017-10-21",
-    "cfpStart": "2017-06-19",
-    "cfpEnd": "2017-08-31",
-    "cfpUrl": "https://bit.ly/mobilization7-c4p"
-  },
-  {
-    "name": "Mobius",
-    "url": "http://mobiusconf.com/en",
-    "city": "Saint Petersburg",
-    "country": "RU",
-    "startDate": "2017-04-21",
-    "endDate": "2017-04-22",
-    "cfpStart": "2016-08-01",
-    "cfpEnd": "2017-02-22",
-
-    "cfpUrl": "http://mobiusconf.com/en/callforpapers"
-  },
-  {
-    "name": "Mobius",
-    "url": "https://mobiusconf.com/en",
-    "city": "Moscow",
-    "country": "Russia",
-    "startDate": "2017-11-11",
-    "endDate": "2017-11-11",
-    "cfpStart": "2017-06-22",
-    "cfpEnd": "cfp_site- https-//mobiusconf.com/en/cfp"
-  },
-  {
-    "name": "OSCON",
-    "url": "http://conferences.oreilly.com/oscon/oscon-tx",
-    "city": "Austin, TX",
-    "country": "U.S.A.",
-    "startDate": "2017-05-08",
-    "endDate": "2017-05-11"
-  },
-  {
-    "name": "Emerging Tech Conference",
-    "url": "https://2017.phillyemergingtech.com",
-    "city": "Philadelphia, PA",
-    "country": "U.S.A.",
-    "startDate": "2017-04-18",
-    "endDate": "2017-04-19"
-  },
-  {
-    "name": "Prairie Dev Con",
-    "url": "http://prairiedevcon.com",
-    "city": "Winnipeg, MB",
-    "country": "Canada",
-    "startDate": "2017-06-06",
-    "endDate": "2017-06-07",
-    "cfpStart": "2017-02-14",
-    "cfpEnd": "2017-02-24",
-    "cfpUrl": "http://prairiedevcon.com/CallForSpeakers"
-  },
-  {
-    "name": "RigaDevDays",
-    "url": "http://rigadevdays.lv",
-    "city": "Riga",
-    "country": "Latvia",
-    "startDate": "2017-05-15",
-    "endDate": "2017-05-17",
-    "cfpStart": "2016-11-01",
-    "cfpEnd": "2017-01-24",
-    "cpfUrl": "https://goo.gl/forms/Sy4J6mViU8RF9rCo1"
-  },
-{
-    "name": "The Developer's Conference",
-    "url": "http://www.thedevelopersconference.com.br/tdc/2017/florianopolis",
-    "city": "Florianópolis, SC",
-    "country": "Brazil",
-    "startDate": "2017-05-03",
-    "endDate": "2017-05-06",
-    "cfpStart": "2017-01-17",
-    "cfpEnd": "2017-02-20",
-    "cfpUrl": "http://www.thedevelopersconference.com.br/tdc/2017/florianopolis/call4papers"
-  },
-  {
-    "name": "The Developer's Conference",
-    "url": "http://www.thedevelopersconference.com.br/tdc/2017/saopaulo",
-    "city": "São Paulo, SP",
-    "country": "Brazil",
-    "startDate": "2017-07-18",
-    "endDate": "2017-07-22",
-    "cfpStart": "2017-05-16",
-    "cfpEnd": "2017-05-30",
-    "cfpUrl": "http://www.thedevelopersconference.com.br/tdc/2017/saopaulo/call4papers"
-  },
-  {
-    "name": "United Dev Conf",
-    "url": "http://unitedconf.com",
-    "city": "Minsk",
-    "country": "Belarus",
-    "startDate": "2017-04-06",
-    "endDate": "2017-04-07"
-  },
-  {
-    "name": "YOW! Connected",
-    "url": "http://connected.yowconference.com.au",
-    "city": "Melbourne",
-    "country": "Australia",
-    "startDate": "2017-09-21",
-    "endDate": "2017-09-22"
+    "url": "https://droidcon.ae",
+    "city": "Dubai",
+    "country": "U.A.E.",
+    "startDate": "2018-04-13",
+    "endDate": "2018-04-14"
   }
 ]
