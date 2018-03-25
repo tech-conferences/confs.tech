@@ -55,6 +55,14 @@
     "twitter": "@cssdayconf"
   },
   {
+    "name": "scotlandCSS",
+    "url": "http://scotlandcss.com",
+    "startDate": "2018-07-18",
+    "city": "Edinburgh",
+    "country": "Scotland",
+    "twitter": "@scotlandCSS"
+  },
+  {
     "name": "CSS Conf Argentina",
     "url": "http://www.cssconfar.com",
     "startDate": "2018-08-18",
@@ -69,13 +77,5 @@
     "city": "Paris",
     "country": "France",
     "twitter": "@dotCSS"
-  },
-  {
-    "name": "scotlandCSS",
-    "url": "http://scotlandcss.com",
-    "startDate": "2018-07-18",
-    "city": "Edinburgh",
-    "country": "Scotland",
-    "twitter": "@scotlandCSS"
   }
 ]

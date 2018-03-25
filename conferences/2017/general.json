@@ -8,6 +8,24 @@
     "endDate": "2017-10-06"
   },
   {
+    "name": "GDG DevFest 2017",
+    "url": "https://devfest.gdghyderabad.in",
+    "city": "Hyderabad",
+    "country": "India",
+    "startDate": "2017-11-04",
+    "endDate": "2017-11-04",
+    "twitter": "@gdg_hyd"
+  },
+  {
+    "name": "QCon SF",
+    "url": "https://qconsf.com",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "startDate": "2017-11-13",
+    "endDate": "2017-11-15",
+    "twitter": "@QConSF"
+  },
+  {
     "name": "Clarity",
     "url": "https://www.clarityconf.com",
     "city": "San Francisco, CA",
@@ -24,38 +42,20 @@
     "endDate": "2017-12-02"
   },
   {
-     "name": "GDG DevFest 2017",
-     "url": "https://devfest.gdghyderabad.in",
-     "city": "Hyderabad",
-     "country": "India",
-     "startDate": "2017-11-04",
-     "endDate": "2017-11-04",
-     "twitter": "@gdg_hyd"
-   },
-   {
-      "name": "QCon SF",
-      "url": "https://qconsf.com",
-      "city": "San Francisco",
-      "country": "U.S.A.",
-      "startDate": "2017-11-13",
-      "endDate": "2017-11-15",
-      "twitter": "@QConSF"
-   },
-   {
-      "name": "ConFoo Vancouver",
-      "url": "https://confoo.ca/en/yvr2017",
-      "city": "Vancouver",
-      "country": "Canada",
-      "startDate": "2017-12-04",
-      "endDate": "2017-12-06",
-      "twitter": "@confooca"
+    "name": "ConFoo Vancouver",
+    "url": "https://confoo.ca/en/yvr2017",
+    "city": "Vancouver",
+    "country": "Canada",
+    "startDate": "2017-12-04",
+    "endDate": "2017-12-06",
+    "twitter": "@confooca"
   },
   {
-      "name": "DevRelCon London",
-      "url": "https://london-2017.devrel.net",
-      "city": "London",
-      "country": "U.K.",
-      "startDate": "2017-12-06",
-      "endDate": "2017-12-06"
+    "name": "DevRelCon London",
+    "url": "https://london-2017.devrel.net",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2017-12-06",
+    "endDate": "2017-12-06"
   }
 ]

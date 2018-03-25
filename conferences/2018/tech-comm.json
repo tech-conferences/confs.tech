@@ -95,6 +95,17 @@
     "country": "Germany"
   },
   {
+    "name": "AgileCrete Meets SoCraTes",
+    "url": "https://agilecrete.org",
+    "startDate": "2018-07-30",
+    "endDate": "2018-07-31",
+    "city": "Heraklion",
+    "country": "Greece",
+    "twitter": "@agilecrete",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "Northwest Tech Comm",
     "url": "http://conference.writersua.com/techcomm",
     "startDate": "2018-09-06",
@@ -143,16 +154,5 @@
     "endDate": "2018-11-15",
     "city": "Stuttgart",
     "country": "Germany"
-  },
-  {
-    "name": "AgileCrete Meets SoCraTes",
-    "url": "https://agilecrete.org",
-    "startDate": "2018-07-30",
-    "endDate": "2018-07-31",
-    "city": "Heraklion",
-    "country": "Greece",
-    "twitter": "@agilecrete",
-    "cfpUrl": "",
-    "cfpEndDate": null
   }
 ]

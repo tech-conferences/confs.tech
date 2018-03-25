@@ -1,10 +1,54 @@
 [
   {
+    "name": "UXDEV Summit",
+    "startDate": "2017-02-01",
+    "city": "Fort Lauderdale, FL",
+    "country": "U.S.A.",
+    "url": "http://www.uxdsummit.com"
+  },
+  {
     "name": "Interaction 17",
     "url": "http://interaction17.ixda.org",
     "date": "Feb 4-8",
     "startDate": "2017-02-04",
     "city": "New York City",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Webstock",
+    "startDate": "2017-02-13",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "url": "http://www.webstock.org.nz/17"
+  },
+  {
+    "name": "SVG Summit",
+    "startDate": "2017-02-15",
+    "city": "Online",
+    "country": "Online",
+    "url": "http://SVGSummit.com"
+  },
+  {
+    "name": "SustainableUX Conference",
+    "startDate": "2017-02-16",
+    "city": "Online",
+    "country": "Online",
+    "url": "https://www.eventbrite.com/e/sustainableux-2017-tickets-27282085452"
+  },
+  {
+    "name": "IA Summit ",
+    "url": "http://www.iasummit.org",
+    "date": "March 22-26",
+    "startDate": "2017-03-22",
+    "city": "Vancouver",
+    "country": "Canada"
+  },
+  {
+    "name": "Intelligent Content",
+    "url": "http://www.intelligentcontentconference.com",
+    "date": "Mar 28-30",
+    "startDate": "2017-03-23",
+    "city": "Las Vegas",
     "country": "U.S.A."
   },
   {
@@ -16,14 +60,6 @@
     "country": "U.S.A."
   },
   {
-    "name": "Intelligent Content",
-    "url": "http://www.intelligentcontentconference.com",
-    "date": "Mar 28-30",
-    "startDate": "2017-03-23",
-    "city": "Las Vegas",
-    "country": "U.S.A."
-  },
-  {
     "name": "Customer Experience Conf",
     "url": "https://www.conference-board.org/conferences/conferencedetail.cfm?conferenceid=2774",
     "date": "March 23–24",
@@ -32,28 +68,11 @@
     "country": "U.S.A."
   },
   {
-    "name": "IA Summit ",
-    "url": "http://www.iasummit.org",
-    "date": "March 22-26",
-    "startDate": "2017-03-22",
-    "city": "Vancouver",
-    "country": "Canada"
-  },
-  {
-    "name": "DIBIConference",
-    "url": "http://www.dibiconference.com",
-    "date": "November 10",
-    "startDate": "2017-11-10",
-    "city": "Newcastle",
-    "country": "U.K."
-  },
-  {
-    "name": "Clarity - design systems conf",
-    "url": "http://clarityconf.com",
-    "date": "November 28, 30",
-    "startDate": "2017-11-28",
-    "city": "San Francisco",
-    "country": "U.S.A."
+    "name": "Design it; Build it",
+    "startDate": "2017-03-30",
+    "city": "Edinburgh",
+    "country": "Scotland",
+    "url": "http://www.dibiconference.com"
   },
   {
     "name": "WAQ",
@@ -80,12 +99,81 @@
     "country": "U.S.A."
   },
   {
+    "name": "FITC Toronto",
+    "startDate": "2017-04-23",
+    "city": "Toronto",
+    "country": "Canada",
+    "url": "http://fitc.ca/event/to17"
+  },
+  {
+    "name": "Open Vis Conf",
+    "startDate": "2017-04-24",
+    "city": "Boston, MA",
+    "country": "U.S.A.",
+    "url": "https://openvisconf.com"
+  },
+  {
+    "name": "Generate",
+    "startDate": "2017-04-27",
+    "city": "New York, NY",
+    "country": "U.S.A.",
+    "url": "https://www.generateconf.com/new-york-2017"
+  },
+  {
     "name": "Write the Docs",
     "url": "http://www.writethedocs.org",
     "date": "May 14-16",
     "startDate": "2017-05-14",
     "city": "San Fransisco",
     "country": "U.S.A."
+  },
+  {
+    "name": "User Experience Lisbon",
+    "startDate": "2017-05-20",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "url": "https://www.ux-lx.com"
+  },
+  {
+    "name": "UX London",
+    "startDate": "2017-05-24",
+    "city": "London",
+    "country": "U.K.",
+    "url": "http://2017.uxlondon.com"
+  },
+  {
+    "name": "The Design Conference Brisbane",
+    "url": "https://thedesignconference.com.au",
+    "startDate": "2017-05-24",
+    "endDate": "2017-05-27",
+    "city": "Brisbane",
+    "country": "Australia",
+    "twitter": "@DesignConfBNE"
+  },
+  {
+    "name": "Semi Permanent",
+    "url": "https://www.semipermanent.com/events/sydney-2017",
+    "startDate": "2017-05-25",
+    "endDate": "2017-05-27",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "@semiglobal"
+  },
+  {
+    "name": "Typo berlin",
+    "url": "https://www.typotalks.com/berlin",
+    "startDate": "2017-05-25",
+    "endDate": "2017-05-27",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@TYPOBER"
+  },
+  {
+    "name": "Kerning",
+    "startDate": "2017-06-03",
+    "city": "Faenza",
+    "country": "Italy",
+    "url": "http://2017.kerning.it"
   },
   {
     "name": "UXPA 2017",
@@ -104,14 +192,6 @@
     "country": "U.S.A."
   },
   {
-    "name": "Confab Central",
-    "url": "http://confabevents.com",
-    "date": "June 7-9 ",
-    "startDate": "2017-06-07",
-    "city": "Minneapolis",
-    "country": "Minneapolis"
-  },
-  {
     "name": "UX Scotland",
     "url": "http://uxscotland.net/2017",
     "startDate": "2017-06-07",
@@ -120,12 +200,27 @@
     "country": "U.K."
   },
   {
+    "name": "Confab Central",
+    "url": "http://confabevents.com",
+    "date": "June 7-9 ",
+    "startDate": "2017-06-07",
+    "city": "Minneapolis",
+    "country": "Minneapolis"
+  },
+  {
     "name": "Collective",
     "url": "http://collectiveconf.com",
     "date": "June 8–10",
     "startDate": "2017-06-08",
     "city": "Atlanta",
     "country": "U.S.A."
+  },
+  {
+    "name": "Generate",
+    "startDate": "2017-06-09",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "url": "https://www.generateconf.com/san-francisco"
   },
   {
     "name": "UX Strat 2017",
@@ -160,12 +255,28 @@
     "country": "Vancouver"
   },
   {
-    "name": "UX Week",
-    "url": "http://uxweek.com",
-    "date": "Aug29-Sept1",
-    "startDate": "2017-09-29",
-    "city": "San Fransisco",
-    "country": "U.S.A."
+    "name": "Design &amp; Content Conference",
+    "startDate": "2017-07-17",
+    "city": "Vancouver",
+    "country": "Canada",
+    "url": "http://www.designcontentconf.com"
+  },
+  {
+    "name": "Semi Permanent",
+    "url": "https://www.semipermanent.com/events/auckland-2017",
+    "startDate": "2017-08-10",
+    "endDate": "2017-08-12",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "twitter": "@semiglobal"
+  },
+  {
+    "name": "MobileHCI 2017",
+    "url": "http://mobilehci.acm.org/2017",
+    "date": "Sept 4-7",
+    "startDate": "2017-09-04",
+    "city": "Vienna",
+    "country": "Austria"
   },
   {
     "name": "The Conference",
@@ -177,12 +288,12 @@
     "twitter": "@TheConfMalmo"
   },
   {
-    "name": "MobileHCI 2017",
-    "url": "http://mobilehci.acm.org/2017",
-    "date": "Sept 4-7",
+    "name": "Game UX Summit '17",
+    "url": "http://toronto.ubisoft.com/gameuxsummit",
     "startDate": "2017-09-04",
-    "city": "Vienna",
-    "country": "Austria"
+    "endDate": "2017-10-05",
+    "city": "Toronto",
+    "country": "Canada"
   },
   {
     "name": "MOBX (Mobile UX)",
@@ -191,6 +302,22 @@
     "startDate": "2017-09-07",
     "city": "Berlin",
     "country": "Germany"
+  },
+  {
+    "name": "One & All",
+    "url": "http://oneandall.io",
+    "startDate": "2017-09-07",
+    "city": "Montréal",
+    "country": "Canada"
+  },
+  {
+    "name": "Brand New Conference",
+    "url": "http://underconsideration.com/brandnewconference",
+    "startDate": "2017-09-14",
+    "endDate": "2017-09-15",
+    "city": "Chicago",
+    "country": "U.S.A.",
+    "twitter": "@bnconf"
   },
   {
     "name": "Brand New Conference",
@@ -209,134 +336,6 @@
     "country": "U.S.A."
   },
   {
-    "name": "EuroIA",
-    "url": "http://www.euroia.org",
-    "date": "Sept 28-30",
-    "startDate": "2017-09-28",
-    "city": "Stockholm",
-    "country": "Sweden"
-  },
-  {
-    "name": "Design Leadership Conference",
-    "url": "http://www.dmi.org/?page=Conferences",
-    "date": "Sept 24-26",
-    "startDate": "2017-09-24",
-    "city": "Minneapolis",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Design Matters '17",
-    "url": "https://designmatters.io",
-    "startDate": "2017-09-27",
-    "endDate": "2017-09-28",
-    "city": "Copenhagen, Denmark",
-    "country": "Denmark"
-  },
-  {
-    "name": "Interact",
-    "url": "https://www.interact2017.org",
-    "startDate": "2017-09-25",
-    "endDate": "2017-09-29",
-    "city": "Mumbai, India",
-    "country": "India"
-  },
-  {
-    "name": "Smashing Conference",
-    "url": "https://smashingconf.com/barcelona-2017",
-    "date": "Oct 17-18",
-    "startDate": "2017-10-17",
-    "endDate": "2017-10-18",
-    "city": "Barcelona",
-    "country": "Spain"
-  },
-  {
-    "name": "EPIC Conf",
-    "url": "https://www.epicpeople.org",
-    "date": "Oct 22-25",
-    "startDate": "2017-10-22",
-    "city": "Montreal",
-    "country": "Canada"
-  },
-  {
-    "name": "Design Thinkers",
-    "url": "https://www.designthinkers.com/News/2017/DesignThinkers-Montreal-2017.aspx",
-    "date": "Oct 19-20",
-    "startDate": "2017-10-19",
-    "city": "Montreal",
-    "country": "Canada"
-  },
-  {
-    "name": "LavaCon",
-    "url": "https://lavacon.org/2017/portland",
-    "date": "Nov 5-8",
-    "startDate": "2017-11-05",
-    "city": "Portland, Oregon",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Productized",
-    "url": "http://www.productized.co",
-    "date": "October?",
-    "startDate": "2017-10-01",
-    "city": "Lisbon",
-    "country": "Portugal"
-  },
-  {
-    "name": "Pop Tech",
-    "url": "http://poptech.org/conferences",
-    "date": "October 19-21",
-    "startDate": "2017-10-19",
-    "city": "Camden, Maine",
-    "country": "U.S.A."
-  },
-  {
-    "name": "Beyond Tellerrand",
-    "url": "https://beyondtellerrand.com",
-    "date": "Nov 6-8",
-    "startDate": "2017-11-06",
-    "city": "Berlin",
-    "country": "Germany"
-  },
-  {
-    "name": "CanUX",
-    "url": "http://canux.io",
-    "date": "Nov 3-5",
-    "startDate": "2017-11-03",
-    "city": "Ottawa",
-    "country": "Canada"
-  },
-  {
-    "name": "Gather North",
-    "url": "https://gathernorth.com",
-    "date": "Nov 17-19",
-    "startDate": "2017-11-17",
-    "city": "Montebello, Quebec",
-    "country": "Canada"
-  },
-  {
-    "name": "Taxonomy boot camp",
-    "url": "http://www.taxonomybootcamp.com/2017/default.aspx",
-    "date": "Nov 6-7",
-    "startDate": "2017-11-06",
-    "city": "Washington, DC",
-    "country": "U.S.A."
-  },
-  {
-    "name": "One & All",
-    "url": "http://oneandall.io",
-    "startDate": "2017-09-07",
-    "city": "Montréal",
-    "country": "Canada"
-  },
-  {
-    "name": "Game UX Summit '17",
-    "url": "http://toronto.ubisoft.com/gameuxsummit",
-    "startDate": "2017-09-04",
-    "endDate": "2017-10-05",
-    "city": "Toronto",
-    "country": "Canada"
-  },
-  {
     "name": "Fluxible - Canada's UX Festival",
     "startDate": "2017-09-18",
     "endDate": "2017-09-24",
@@ -345,144 +344,12 @@
     "url": "http://www.fluxible.ca"
   },
   {
-    "name": "Design Ops Summit",
-    "startDate": "2017-11-06",
-    "endDate": "2017-11-08",
-    "city": "New York",
-    "country": "U.S.A.",
-    "url": "https://designopssummit.com"
-  },
-  {
-    "city": "Florianópolis",
-    "country": "Brazil",
-    "cfpUrl": "http://isa.ixda.org/2017",
-    "startDate": "2017-11-09",
-    "endDate": "2017-11-11",
-    "twitter": "@isa17floripa",
-    "name": "Interaction South America - 2017",
-    "url": "http://isa.ixda.org/2017"
-  },
-  {
-    "name": "Midwest UX",
-    "startDate": "2017-10-12",
-    "endDate": "2017-10-14",
-    "city": "Cincinnati, OH",
-    "country": "U.S.A.",
-    "url": "http://2017.midwestuxconference.com"
-  },
-  {
-    "name": "SustainableUX Conference",
-    "startDate": "2017-02-16",
-    "city": "Online",
-    "country": "Online",
-    "url": "https://www.eventbrite.com/e/sustainableux-2017-tickets-27282085452"
-  },
-  {
-    "name": "UX London",
-    "startDate": "2017-05-24",
-    "city": "London",
-    "country": "U.K.",
-    "url": "http://2017.uxlondon.com"
-  },
-  {
-    "name": "User Experience Lisbon",
-    "startDate": "2017-05-20",
-    "city": "Lisbon",
-    "country": "Portugal",
-    "url": "https://www.ux-lx.com"
-  },
-  {
-    "name": "Kerning",
-    "startDate": "2017-06-03",
-    "city": "Faenza",
-    "country": "Italy",
-    "url": "http://2017.kerning.it"
-  },
-  {
-    "name": "UXDEV Summit",
-    "startDate": "2017-02-01",
-    "city": "Fort Lauderdale, FL",
-    "country": "U.S.A.",
-    "url": "http://www.uxdsummit.com"
-  },
-  {
-    "name": "SVG Summit",
-    "startDate": "2017-02-15",
-    "city": "Online",
-    "country": "Online",
-    "url": "http://SVGSummit.com"
-  },
-  {
-    "name": "Design &amp; Content Conference",
-    "startDate": "2017-07-17",
-    "city": "Vancouver",
-    "country": "Canada",
-    "url": "http://www.designcontentconf.com"
-  },
-  {
-    "name": "Webstock",
-    "startDate": "2017-02-13",
-    "city": "Wellington",
-    "country": "New Zealand",
-    "url": "http://www.webstock.org.nz/17"
-  },
-  {
-    "name": "Design it; Build it",
-    "startDate": "2017-03-30",
-    "city": "Edinburgh",
-    "country": "Scotland",
-    "url": "http://www.dibiconference.com"
-  },
-  {
-    "name": "FITC Toronto",
-    "startDate": "2017-04-23",
-    "city": "Toronto",
-    "country": "Canada",
-    "url": "http://fitc.ca/event/to17"
-  },
-  {
-    "name": "Open Vis Conf",
-    "startDate": "2017-04-24",
-    "city": "Boston, MA",
-    "country": "U.S.A.",
-    "url": "https://openvisconf.com"
-  },
-  {
-    "name": "Generate",
-    "startDate": "2017-04-27",
-    "city": "New York, NY",
-    "country": "U.S.A.",
-    "url": "https://www.generateconf.com/new-york-2017"
-  },
-  {
-    "name": "Revolve Conference",
-    "startDate": "2017-10-26",
-    "endDate": "2017-10-27",
-    "city": "Charleston, SC",
-    "country": "U.S.A.",
-    "url": "https://2017.revolveconference.com"
-  },
-  {
-    "name": "Clarity",
-    "startDate": "2017-11-28",
-    "city": "San Francisco",
-    "country": "U.S.A.",
-    "url": "https://www.clarityconf.com"
-  },
-  {
     "name": "Generate",
     "startDate": "2017-09-20",
     "endDate": "2017-09-22",
     "city": "London",
     "country": "U.K.",
     "url": "https://www.generateconf.com/London"
-  },
-  {
-    "name": "Generate",
-    "startDate": "2017-06-09",
-    "city": "San Francisco",
-    "country": "U.S.A.",
-    "url": "https://www.generateconf.com/san-francisco"
   },
   {
     "name": "WebExpo",
@@ -494,58 +361,36 @@
     "twitter": "@webexpo"
   },
   {
-    "name": "Xperience By Design",
-    "url": "http://xperience.bydesignconf.com",
-    "startDate": "2017-10-27",
-    "endDate": "2017-10-27",
-    "city": "Prague",
-    "country": "Czech Republic",
-    "twitter": "@bydesignconf"
+    "name": "Design Leadership Conference",
+    "url": "http://www.dmi.org/?page=Conferences",
+    "date": "Sept 24-26",
+    "startDate": "2017-09-24",
+    "city": "Minneapolis",
+    "country": "U.S.A."
   },
   {
-    "name": "Eppicurance",
-    "url": "https://www.epicurrence.com",
-    "startDate": "2017-10-23",
-    "endDate": "2017-10-27",
-    "city": "Utah",
-    "country": "U.S.A.",
-    "twitter": "@Epicurrence"
+    "name": "Interact",
+    "url": "https://www.interact2017.org",
+    "startDate": "2017-09-25",
+    "endDate": "2017-09-29",
+    "city": "Mumbai, India",
+    "country": "India"
   },
   {
-    "name": "Slush",
-    "url": "http://www.slush.org",
-    "startDate": "2017-11-30",
-    "endDate": "2017-12-01",
-    "city": "HELSINKI",
-    "country": "Finland",
-    "twitter": "@SlushHQ"
+    "name": "Design Matters '17",
+    "url": "https://designmatters.io",
+    "startDate": "2017-09-27",
+    "endDate": "2017-09-28",
+    "city": "Copenhagen, Denmark",
+    "country": "Denmark"
   },
   {
-    "name": "Typo berlin",
-    "url": "https://www.typotalks.com/berlin",
-    "startDate": "2017-05-25",
-    "endDate": "2017-05-27",
-    "city": "Berlin",
-    "country": "Germany",
-    "twitter": "@TYPOBER"
-  },
-  {
-    "name": "Semi Permanent",
-    "url": "https://www.semipermanent.com/events/sydney-2017",
-    "startDate": "2017-05-25",
-    "endDate": "2017-05-27",
-    "city": "Sydney",
-    "country": "Australia",
-    "twitter": "@semiglobal"
-  },
-  {
-    "name": "Semi Permanent",
-    "url": "https://www.semipermanent.com/events/auckland-2017",
-    "startDate": "2017-08-10",
-    "endDate": "2017-08-12",
-    "city": "Auckland",
-    "country": "New Zealand",
-    "twitter": "@semiglobal"
+    "name": "EuroIA",
+    "url": "http://www.euroia.org",
+    "date": "Sept 28-30",
+    "startDate": "2017-09-28",
+    "city": "Stockholm",
+    "country": "Sweden"
   },
   {
     "name": "Typism",
@@ -557,13 +402,20 @@
     "twitter": "@TypismCommunity"
   },
   {
-    "name": "The Design Conference Brisbane",
-    "url": "https://thedesignconference.com.au",
-    "startDate": "2017-05-24",
-    "endDate": "2017-05-27",
-    "city": "Brisbane",
-    "country": "Australia",
-    "twitter": "@DesignConfBNE"
+    "name": "UX Week",
+    "url": "http://uxweek.com",
+    "date": "Aug29-Sept1",
+    "startDate": "2017-09-29",
+    "city": "San Fransisco",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Productized",
+    "url": "http://www.productized.co",
+    "date": "October?",
+    "startDate": "2017-10-01",
+    "city": "Lisbon",
+    "country": "Portugal"
   },
   {
     "name": "We love graphic design",
@@ -574,22 +426,12 @@
     "country": "Denmark"
   },
   {
-    "name": "Brand New Conference",
-    "url": "http://underconsideration.com/brandnewconference",
-    "startDate": "2017-09-14",
-    "endDate": "2017-09-15",
-    "city": "Chicago",
+    "name": "Midwest UX",
+    "startDate": "2017-10-12",
+    "endDate": "2017-10-14",
+    "city": "Cincinnati, OH",
     "country": "U.S.A.",
-    "twitter": "@bnconf"
-  },
-  {
-    "name": "Adobe Max",
-    "url": "https://max.adobe.com",
-    "startDate": "2017-10-18",
-    "endDate": "2017-10-20",
-    "city": "Las Vegas",
-    "country": "U.S.A.",
-    "twitter": "@adobemax"
+    "url": "http://2017.midwestuxconference.com"
   },
   {
     "name": "Aiga Conference",
@@ -610,6 +452,82 @@
     "twitter": "@DESIGNSUMMITMTL"
   },
   {
+    "name": "Smashing Conference",
+    "url": "https://smashingconf.com/barcelona-2017",
+    "date": "Oct 17-18",
+    "startDate": "2017-10-17",
+    "endDate": "2017-10-18",
+    "city": "Barcelona",
+    "country": "Spain"
+  },
+  {
+    "name": "Adobe Max",
+    "url": "https://max.adobe.com",
+    "startDate": "2017-10-18",
+    "endDate": "2017-10-20",
+    "city": "Las Vegas",
+    "country": "U.S.A.",
+    "twitter": "@adobemax"
+  },
+  {
+    "name": "Pop Tech",
+    "url": "http://poptech.org/conferences",
+    "date": "October 19-21",
+    "startDate": "2017-10-19",
+    "city": "Camden, Maine",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Design Thinkers",
+    "url": "https://www.designthinkers.com/News/2017/DesignThinkers-Montreal-2017.aspx",
+    "date": "Oct 19-20",
+    "startDate": "2017-10-19",
+    "city": "Montreal",
+    "country": "Canada"
+  },
+  {
+    "name": "EPIC Conf",
+    "url": "https://www.epicpeople.org",
+    "date": "Oct 22-25",
+    "startDate": "2017-10-22",
+    "city": "Montreal",
+    "country": "Canada"
+  },
+  {
+    "name": "Eppicurance",
+    "url": "https://www.epicurrence.com",
+    "startDate": "2017-10-23",
+    "endDate": "2017-10-27",
+    "city": "Utah",
+    "country": "U.S.A.",
+    "twitter": "@Epicurrence"
+  },
+  {
+    "name": "Revolve Conference",
+    "startDate": "2017-10-26",
+    "endDate": "2017-10-27",
+    "city": "Charleston, SC",
+    "country": "U.S.A.",
+    "url": "https://2017.revolveconference.com"
+  },
+  {
+    "name": "Xperience By Design",
+    "url": "http://xperience.bydesignconf.com",
+    "startDate": "2017-10-27",
+    "endDate": "2017-10-27",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "twitter": "@bydesignconf"
+  },
+  {
+    "name": "HamOnt UX",
+    "url": "https://www.eventbrite.ca/e/hamont-ux-tickets-36963796711",
+    "startDate": "2017-10-28",
+    "endDate": "2017-10-28",
+    "city": "Hamilton, Ontario",
+    "country": "Canada"
+  },
+  {
     "name": "Kikk festival",
     "url": "http://www.kikk.be/2017/en/home",
     "startDate": "2017-11-02",
@@ -619,11 +537,93 @@
     "twitter": "@Kikk_Festival"
   },
   {
-    "name": "HamOnt UX",
-    "url": "https://www.eventbrite.ca/e/hamont-ux-tickets-36963796711",
-    "startDate": "2017-10-28",
-    "endDate": "2017-10-28",
-    "city": "Hamilton, Ontario",
+    "name": "CanUX",
+    "url": "http://canux.io",
+    "date": "Nov 3-5",
+    "startDate": "2017-11-03",
+    "city": "Ottawa",
     "country": "Canada"
+  },
+  {
+    "name": "LavaCon",
+    "url": "https://lavacon.org/2017/portland",
+    "date": "Nov 5-8",
+    "startDate": "2017-11-05",
+    "city": "Portland, Oregon",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com",
+    "date": "Nov 6-8",
+    "startDate": "2017-11-06",
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  {
+    "name": "Taxonomy boot camp",
+    "url": "http://www.taxonomybootcamp.com/2017/default.aspx",
+    "date": "Nov 6-7",
+    "startDate": "2017-11-06",
+    "city": "Washington, DC",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Design Ops Summit",
+    "startDate": "2017-11-06",
+    "endDate": "2017-11-08",
+    "city": "New York",
+    "country": "U.S.A.",
+    "url": "https://designopssummit.com"
+  },
+  {
+    "city": "Florianópolis",
+    "country": "Brazil",
+    "cfpUrl": "http://isa.ixda.org/2017",
+    "startDate": "2017-11-09",
+    "endDate": "2017-11-11",
+    "twitter": "@isa17floripa",
+    "name": "Interaction South America - 2017",
+    "url": "http://isa.ixda.org/2017"
+  },
+  {
+    "name": "DIBIConference",
+    "url": "http://www.dibiconference.com",
+    "date": "November 10",
+    "startDate": "2017-11-10",
+    "city": "Newcastle",
+    "country": "U.K."
+  },
+  {
+    "name": "Gather North",
+    "url": "https://gathernorth.com",
+    "date": "Nov 17-19",
+    "startDate": "2017-11-17",
+    "city": "Montebello, Quebec",
+    "country": "Canada"
+  },
+  {
+    "name": "Clarity",
+    "startDate": "2017-11-28",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "url": "https://www.clarityconf.com"
+  },
+  {
+    "name": "Clarity - design systems conf",
+    "url": "http://clarityconf.com",
+    "date": "November 28, 30",
+    "startDate": "2017-11-28",
+    "city": "San Francisco",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Slush",
+    "url": "http://www.slush.org",
+    "startDate": "2017-11-30",
+    "endDate": "2017-12-01",
+    "city": "HELSINKI",
+    "country": "Finland",
+    "twitter": "@SlushHQ"
   }
 ]
