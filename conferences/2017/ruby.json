@@ -86,7 +86,7 @@
     "startDate": "2017-04-25",
     "endDate": "2017-04-27",
     "city": "Phoenix",
-    "country": "AZ",
+    "country": "U.S.A.",
     "twitter": "@railsconf"
   },
   {
@@ -113,7 +113,7 @@
     "startDate": "2017-06-16",
     "endDate": "2017-06-16",
     "city": "Arlington",
-    "country": "Virginia",
+    "country": "U.S.A.",
     "twitter": "@rubynation"
   },
   {
@@ -130,7 +130,7 @@
     "startDate": "2017-06-24",
     "endDate": "2017-06-24",
     "city": "New York",
-    "country": "NY",
+    "country": "U.S.A.",
     "twitter": "@goruco"
   },
   {
@@ -139,7 +139,7 @@
     "startDate": "2017-07-01",
     "endDate": "2017-07-02",
     "city": "Wrocław",
-    "country": "PL",
+    "country": "Poland",
     "twitter": "@grill_rb"
   },
   {
@@ -211,7 +211,7 @@
     "startDate": "2017-10-05",
     "endDate": "2017-10-06",
     "city": "Nashville",
-    "country": "TN",
+    "country": "U.S.A.",
     "twitter": "@southeastruby"
   },
   {
@@ -247,7 +247,7 @@
     "startDate": "2017-10-27",
     "endDate": "2017-10-27",
     "city": "Austin",
-    "country": "Texas",
+    "country": "U.S.A.",
     "twitter": "@keeprubyweird"
   },
   {
@@ -274,7 +274,7 @@
     "startDate": "2017-11-15",
     "endDate": "2017-11-17",
     "city": "New Orleans",
-    "country": "LA",
+    "country": "U.S.A.",
     "twitter": "@rubyconf"
   },
   {
