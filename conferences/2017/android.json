@@ -97,14 +97,6 @@
     "endDate": "2017-03-23"
   },
   {
-    "name": "Mobcon Europe",
-    "url": "http://mobcon.com/mobcon-europe",
-    "city": "Sofia",
-    "country": "Bulgaria",
-    "startDate": "2017-03-25",
-    "endDate": "2017-03-26"
-  },
-  {
     "name": "Droid Knights",
     "url": "https://droidknights.github.io/2017",
     "city": "Seoul, Sout",
@@ -113,19 +105,19 @@
     "endDate": "2017-03-25"
   },
   {
+    "name": "Mobcon Europe",
+    "url": "http://mobcon.com/mobcon-europe",
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "startDate": "2017-03-25",
+    "endDate": "2017-03-26"
+  },
+  {
     "name": "Devoxx",
     "url": "http://devoxx.fr",
     "city": "Paris",
     "country": "France",
     "startDate": "2017-04-05",
-    "endDate": "2017-04-07"
-  },
-  {
-    "name": "United Dev Conf",
-    "url": "http://unitedconf.com",
-    "city": "Minsk",
-    "country": "Belarus",
-    "startDate": "2017-04-06",
     "endDate": "2017-04-07"
   },
   {
@@ -138,6 +130,14 @@
     "cfpStart": "2016-10-14",
     "cfpEnd": "2017-01-31",
     "cfpUrl": "http://it.droidcon.com/2017/call-for-papers-droidon-italy"
+  },
+  {
+    "name": "United Dev Conf",
+    "url": "http://unitedconf.com",
+    "city": "Minsk",
+    "country": "Belarus",
+    "startDate": "2017-04-06",
+    "endDate": "2017-04-07"
   },
   {
     "name": "Android Makers",
@@ -264,20 +264,20 @@
     "cfpUrl": "https://goo.gl/forms/jKoMs7GEsTSBECf03"
   },
   {
-    "name": "OSCON",
-    "url": "http://conferences.oreilly.com/oscon/oscon-tx",
-    "city": "Austin, TX",
-    "country": "U.S.A.",
-    "startDate": "2017-05-08",
-    "endDate": "2017-05-11"
-  },
-  {
     "name": "MCE^4",
     "url": "http://2017.mceconf.com",
     "city": "Warsaw",
     "country": "Poland",
     "startDate": "2017-05-08",
     "endDate": "2017-05-09"
+  },
+  {
+    "name": "OSCON",
+    "url": "http://conferences.oreilly.com/oscon/oscon-tx",
+    "city": "Austin, TX",
+    "country": "U.S.A.",
+    "startDate": "2017-05-08",
+    "endDate": "2017-05-11"
   },
   {
     "name": "APPFORUM Americas",
@@ -439,17 +439,6 @@
     "endDate": "2017-08-01"
   },
   {
-    "name": "Android Summit",
-    "url": "http://androidsummit.org",
-    "city": "McLean",
-    "country": "VA",
-    "startDate": "2017-08-24",
-    "endDate": "2017-08-25",
-    "cfpStart": "2017-03-21",
-    "cfpEnd": "2017-07-14",
-    "cfpUrl": "https://goo.gl/forms/N0vPmkWLKijfsHOy2"
-  },
-  {
     "name": "Android DevConference",
     "url": "http://androidconference2017.imasters.com.br",
     "city": "São Paulo",
@@ -459,6 +448,17 @@
     "cfpStart": "2017-04-19",
     "cfpEnd": "2017-05-19",
     "cfpUrl": "https://goo.gl/forms/yERFwr67gwUajaVA3"
+  },
+  {
+    "name": "Android Summit",
+    "url": "http://androidsummit.org",
+    "city": "McLean",
+    "country": "VA",
+    "startDate": "2017-08-24",
+    "endDate": "2017-08-25",
+    "cfpStart": "2017-03-21",
+    "cfpEnd": "2017-07-14",
+    "cfpUrl": "https://goo.gl/forms/N0vPmkWLKijfsHOy2"
   },
   {
     "name": "Droidcon",
@@ -586,6 +586,14 @@
     "endDate": "2017-10-05"
   },
   {
+    "name": "Mobiconf",
+    "url": "https://2017.mobiconf.org",
+    "city": "Krakow",
+    "country": "Poland",
+    "startDate": "2017-10-05",
+    "endDate": "2017-10-06"
+  },
+  {
     "name": "Mobile Era",
     "url": "https://mobileera.rocks",
     "city": "Oslo",
@@ -595,14 +603,6 @@
     "cfpStart": "2017-03-21",
     "cfpEnd": "2017-05-15",
     "cfpUrl": "https://mobileera.rocks/news/posts/c4p-time"
-  },
-  {
-    "name": "Mobiconf",
-    "url": "https://2017.mobiconf.org",
-    "city": "Krakow",
-    "country": "Poland",
-    "startDate": "2017-10-05",
-    "endDate": "2017-10-06"
   },
   {
     "name": "GDG DevFest",
@@ -676,17 +676,6 @@
     "cfpUrl": "https://ro.droidcon.com/en/bucharest/16/call-papers"
   },
   {
-    "name": "Devoxx",
-    "url": "http://devoxx.be",
-    "city": "Antwerp",
-    "country": "Belgium",
-    "startDate": "2017-11-06",
-    "endDate": "2017-11-10",
-    "cfpStart": "2017-05-22",
-    "cfpEnd": "2017-07-07",
-    "cfpUrl": "https://cfp.devoxx.be"
-  },
-  {
     "name": "Droidcon",
     "url": "http://sf.droidcon.com",
     "city": "San Francisco",
@@ -698,14 +687,15 @@
     "cfpUrl": "https://droidcon-server.herokuapp.com"
   },
   {
-    "name": "Mobius",
-    "url": "https://mobiusconf.com/en",
-    "city": "Moscow",
-    "country": "Russia",
-    "startDate": "2017-11-11",
-    "endDate": "2017-11-11",
-    "cfpStart": "2017-06-22",
-    "cfpEnd": "cfp_site- https-//mobiusconf.com/en/cfp"
+    "name": "Devoxx",
+    "url": "http://devoxx.be",
+    "city": "Antwerp",
+    "country": "Belgium",
+    "startDate": "2017-11-06",
+    "endDate": "2017-11-10",
+    "cfpStart": "2017-05-22",
+    "cfpEnd": "2017-07-07",
+    "cfpUrl": "https://cfp.devoxx.be"
   },
   {
     "name": "GDG DevFest",
@@ -717,6 +707,16 @@
     "cfpStart": "2017-04-15",
     "cfpEnd": "2017-07-17",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfcchhhaKETrOEVY-h5EngpTby7QMJl_G2LEl8XjYP5nXIS4g/viewform"
+  },
+  {
+    "name": "Mobius",
+    "url": "https://mobiusconf.com/en",
+    "city": "Moscow",
+    "country": "Russia",
+    "startDate": "2017-11-11",
+    "endDate": "2017-11-11",
+    "cfpStart": "2017-06-22",
+    "cfpEnd": "cfp_site- https-//mobiusconf.com/en/cfp"
   },
   {
     "name": "GOTO",
@@ -746,17 +746,6 @@
     "endDate": "2017-11-18"
   },
   {
-    "name": "GDG Devfest",
-    "url": "https://hamburg.devfest.de",
-    "city": "Hamburg",
-    "country": "Germany",
-    "startDate": "2017-11-25",
-    "endDate": "2017-11-26",
-    "cfpStart": "2017-07-26",
-    "cfpEnd": "2017-10-01",
-    "cfpUrl": "https://goo.gl/c7BK25"
-  },
-  {
     "name": "GDG DevFest Bayern",
     "url": "https://bayern.devfest.de",
     "startDate": "2017-11-25",
@@ -766,6 +755,17 @@
     "cfpStart": "2017-07-25",
     "cfpEnd": "2017-08-27",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfYY7zy7jRCxcv5peMJL-O6KYvujJQIyL_xg4cIipYc3e4H1w/viewform"
+  },
+  {
+    "name": "GDG Devfest",
+    "url": "https://hamburg.devfest.de",
+    "city": "Hamburg",
+    "country": "Germany",
+    "startDate": "2017-11-25",
+    "endDate": "2017-11-26",
+    "cfpStart": "2017-07-26",
+    "cfpEnd": "2017-10-01",
+    "cfpUrl": "https://goo.gl/c7BK25"
   },
   {
     "name": "Droidcon",

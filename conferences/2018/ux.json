@@ -26,6 +26,14 @@
     "country": "France"
   },
   {
+    "name": "Smashing Conference",
+    "url": "https://smashingconf.com/london-2018",
+    "startDate": "2018-02-07",
+    "endDate": "2018-02-08",
+    "city": "London",
+    "country": "U.K."
+  },
+  {
     "name": "Awwwards Berlin",
     "url": "https://conference.awwwards.com/berlin",
     "startDate": "2018-02-07",
@@ -34,10 +42,9 @@
     "country": "Germany"
   },
   {
-    "name": "Smashing Conference",
-    "url": "https://smashingconf.com/london-2018",
-    "startDate": "2018-02-07",
-    "endDate": "2018-02-08",
+    "name": "The UX Conf",
+    "url": "http://theuxconf.com",
+    "startDate": "2018-02-20",
     "city": "London",
     "country": "U.K."
   },
@@ -49,13 +56,6 @@
     "city": "Istanbul",
     "country": "Turkey",
     "twitter": "@ux_istanbul"
-  },
-  {
-    "name": "The UX Conf",
-    "url": "http://theuxconf.com",
-    "startDate": "2018-02-20",
-    "city": "London",
-    "country": "U.K."
   },
   {
     "name": "Design Indaba",
@@ -102,6 +102,14 @@
     "twitter": "@conc_at"
   },
   {
+    "name": "Confoo",
+    "url": "https://confoo.ca/en/yul2018",
+    "startDate": "2018-03-07",
+    "endDate": "2018-03-09",
+    "city": "Montréal",
+    "country": "Canada"
+  },
+  {
     "name": "ACM IUI 2018",
     "url": "http://iui.acm.org/2018",
     "startDate": "2018-03-07",
@@ -109,14 +117,6 @@
     "city": "Tokyo",
     "country": "Japan",
     "twitter": "@acmiui"
-  },
-  {
-    "name": "Confoo",
-    "url": "https://confoo.ca/en/yul2018",
-    "startDate": "2018-03-07",
-    "endDate": "2018-03-09",
-    "city": "Montréal",
-    "country": "Canada"
   },
   {
     "name": "ReactFest",
@@ -175,14 +175,6 @@
     "country": "U.S.A."
   },
   {
-    "name": "CHIuXiD 2018",
-    "url": "http://2018.chiuxid.org",
-    "startDate": "2018-03-26",
-    "endDate": "2018-03-29",
-    "city": "Jakarta / Yogyakarta",
-    "country": "Indonesia"
-  },
-  {
     "name": "Experience Conference",
     "url": "http://www.exconf.com",
     "startDate": "2018-03-26",
@@ -192,6 +184,14 @@
     "cfpUrl": "",
     "cfpEndDate": "",
     "twitter": "@exconfba"
+  },
+  {
+    "name": "CHIuXiD 2018",
+    "url": "http://2018.chiuxid.org",
+    "startDate": "2018-03-26",
+    "endDate": "2018-03-29",
+    "city": "Jakarta / Yogyakarta",
+    "country": "Indonesia"
   },
   {
     "name": "An Event Apart",
@@ -264,15 +264,6 @@
     "twitter": "@HOWbrand"
   },
   {
-    "name": "UX+DEV Summit",
-    "url": "https://uxdsummit.com",
-    "startDate": "2018-05-07",
-    "endDate": "2018-05-11",
-    "city": "Fort Lauderdale",
-    "country": "U.S.A.",
-    "twitter": "@uxdevsummit"
-  },
-  {
     "name": "Beyond Tellerrand",
     "url": "https://beyondtellerrand.com/events/duesseldorf-2018",
     "startDate": "2018-05-07",
@@ -280,6 +271,15 @@
     "city": "Düsseldorf",
     "country": "Germany",
     "twitter": "@btconf"
+  },
+  {
+    "name": "UX+DEV Summit",
+    "url": "https://uxdsummit.com",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-11",
+    "city": "Fort Lauderdale",
+    "country": "U.S.A.",
+    "twitter": "@uxdevsummit"
   },
   {
     "name": "99U",
@@ -307,14 +307,6 @@
     "country": "Australia"
   },
   {
-    "name": "The Design Conference",
-    "url": "http://www.designconference.org",
-    "startDate": "2018-05-21",
-    "endDate": "2018-05-24",
-    "city": "Dubrovnik",
-    "country": "Croatia"
-  },
-  {
     "name": "Delight Summit",
     "url": "http://delight.us/conference",
     "startDate": "2018-05-21",
@@ -333,6 +325,14 @@
     "cfpUrl": "",
     "cfpEndDate": "",
     "twitter": "@ConfabEvents"
+  },
+  {
+    "name": "The Design Conference",
+    "url": "http://www.designconference.org",
+    "startDate": "2018-05-21",
+    "endDate": "2018-05-24",
+    "city": "Dubrovnik",
+    "country": "Croatia"
   },
   {
     "name": "UX-LX",

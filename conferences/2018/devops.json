@@ -48,6 +48,14 @@
     "country": "Canada"
   },
   {
+    "name": "DevOpsDay - Copenhagen",
+    "url": "https://www.devopsdays.org/events/2018-copenhagen",
+    "startDate": "2018-04-24",
+    "endDate": "2018-04-25",
+    "city": "Copenhagen",
+    "country": "Denmark"
+  },
+  {
     "name": "DevOpsDay - Seattle",
     "url": "https://www.devopsdays.org/events/2018-seattle",
     "startDate": "2018-04-24",
@@ -62,14 +70,6 @@
     "endDate": "2018-04-25",
     "city": "Tokyo",
     "country": "Japan"
-  },
-  {
-    "name": "DevOpsDay - Copenhagen",
-    "url": "https://www.devopsdays.org/events/2018-copenhagen",
-    "startDate": "2018-04-24",
-    "endDate": "2018-04-25",
-    "city": "Copenhagen",
-    "country": "Denmark"
   },
   {
     "name": "DevOpsDay - Jakarta",
@@ -136,6 +136,14 @@
     "country": "U.S.A."
   },
   {
+    "name": "DevOpsDay - Stockholm",
+    "url": "https://www.devopsdays.org/events/2018-stockholm",
+    "startDate": "2018-05-24",
+    "endDate": "2018-05-25",
+    "city": "Stockholm",
+    "country": "Sweden"
+  },
+  {
     "name": "DevOpsDays Stockholm",
     "url": "https://www.devopsdays.org/events/2018-stockholm/welcome",
     "startDate": "2018-05-24",
@@ -145,14 +153,6 @@
     "twitter": "@devopsdayssthlm",
     "cfpUrl": "https://www.devopsdays.org/events/2018-stockholm/propose",
     "cfpEndDate": "2018-04-02"
-  },
-  {
-    "name": "DevOpsDay - Stockholm",
-    "url": "https://www.devopsdays.org/events/2018-stockholm",
-    "startDate": "2018-05-24",
-    "endDate": "2018-05-25",
-    "city": "Stockholm",
-    "country": "Sweden"
   },
   {
     "name": "DevOpsDay - Victoria",
@@ -171,12 +171,12 @@
     "country": "Canada"
   },
   {
-    "name": "DevOpsDay - Paulo",
-    "url": "https://www.devopsdays.org/events/2018-sao-paulo",
+    "name": "DevOpsDay - Boise",
+    "url": "https://www.devopsdays.org/events/2018-boise",
     "startDate": "2018-06-06",
-    "endDate": "2018-06-07",
-    "city": "São Paulo",
-    "country": "Brazil"
+    "endDate": "2018-06-06",
+    "city": "Boise",
+    "country": "U.S.A."
   },
   {
     "name": "DevOpsDay - DC",
@@ -187,12 +187,12 @@
     "country": "U.S.A."
   },
   {
-    "name": "DevOpsDay - Boise",
-    "url": "https://www.devopsdays.org/events/2018-boise",
+    "name": "DevOpsDay - Paulo",
+    "url": "https://www.devopsdays.org/events/2018-sao-paulo",
     "startDate": "2018-06-06",
-    "endDate": "2018-06-06",
-    "city": "Boise",
-    "country": "U.S.A."
+    "endDate": "2018-06-07",
+    "city": "São Paulo",
+    "country": "Brazil"
   },
   {
     "name": "DockerCon",

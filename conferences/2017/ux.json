@@ -184,6 +184,14 @@
     "country": "Canada"
   },
   {
+    "name": "Confab Central",
+    "url": "http://confabevents.com",
+    "date": "June 7-9 ",
+    "startDate": "2017-06-07",
+    "city": "Minneapolis",
+    "country": "Minneapolis"
+  },
+  {
     "name": "Enterprise UX",
     "url": "http://promo.rosenfeldmedia.com/euxsignup2017",
     "date": "June 7-9 ",
@@ -198,14 +206,6 @@
     "endDate": "2017-06-09",
     "city": "Scotland",
     "country": "U.K."
-  },
-  {
-    "name": "Confab Central",
-    "url": "http://confabevents.com",
-    "date": "June 7-9 ",
-    "startDate": "2017-06-07",
-    "city": "Minneapolis",
-    "country": "Minneapolis"
   },
   {
     "name": "Collective",
@@ -247,19 +247,19 @@
     "country": "U.S.A."
   },
   {
+    "name": "Design &amp; Content Conference",
+    "startDate": "2017-07-17",
+    "city": "Vancouver",
+    "country": "Canada",
+    "url": "http://www.designcontentconf.com"
+  },
+  {
     "name": "Design and Content Conf",
     "url": "https://designcontentconf.com",
     "date": "July 17-19",
     "startDate": "2017-07-17",
     "city": "Vancouver",
     "country": "Vancouver"
-  },
-  {
-    "name": "Design &amp; Content Conference",
-    "startDate": "2017-07-17",
-    "city": "Vancouver",
-    "country": "Canada",
-    "url": "http://www.designcontentconf.com"
   },
   {
     "name": "Semi Permanent",
@@ -312,20 +312,20 @@
   },
   {
     "name": "Brand New Conference",
+    "url": "http://www.underconsideration.com/brandnewconference",
+    "date": "Sept 14-15",
+    "startDate": "2017-09-14",
+    "city": "Chicago",
+    "country": "U.S.A."
+  },
+  {
+    "name": "Brand New Conference",
     "url": "http://underconsideration.com/brandnewconference",
     "startDate": "2017-09-14",
     "endDate": "2017-09-15",
     "city": "Chicago",
     "country": "U.S.A.",
     "twitter": "@bnconf"
-  },
-  {
-    "name": "Brand New Conference",
-    "url": "http://www.underconsideration.com/brandnewconference",
-    "date": "Sept 14-15",
-    "startDate": "2017-09-14",
-    "city": "Chicago",
-    "country": "U.S.A."
   },
   {
     "name": "UX Strat USA",
@@ -426,14 +426,6 @@
     "country": "Denmark"
   },
   {
-    "name": "Midwest UX",
-    "startDate": "2017-10-12",
-    "endDate": "2017-10-14",
-    "city": "Cincinnati, OH",
-    "country": "U.S.A.",
-    "url": "http://2017.midwestuxconference.com"
-  },
-  {
     "name": "Aiga Conference",
     "url": "http://designconference.aiga.org",
     "startDate": "2017-10-12",
@@ -441,6 +433,14 @@
     "city": "Minneapolis",
     "country": "U.S.A.",
     "twitter": "@AIGAdesign"
+  },
+  {
+    "name": "Midwest UX",
+    "startDate": "2017-10-12",
+    "endDate": "2017-10-14",
+    "city": "Cincinnati, OH",
+    "country": "U.S.A.",
+    "url": "http://2017.midwestuxconference.com"
   },
   {
     "name": "World Design Summit",
@@ -470,20 +470,20 @@
     "twitter": "@adobemax"
   },
   {
-    "name": "Pop Tech",
-    "url": "http://poptech.org/conferences",
-    "date": "October 19-21",
-    "startDate": "2017-10-19",
-    "city": "Camden, Maine",
-    "country": "U.S.A."
-  },
-  {
     "name": "Design Thinkers",
     "url": "https://www.designthinkers.com/News/2017/DesignThinkers-Montreal-2017.aspx",
     "date": "Oct 19-20",
     "startDate": "2017-10-19",
     "city": "Montreal",
     "country": "Canada"
+  },
+  {
+    "name": "Pop Tech",
+    "url": "http://poptech.org/conferences",
+    "date": "October 19-21",
+    "startDate": "2017-10-19",
+    "city": "Camden, Maine",
+    "country": "U.S.A."
   },
   {
     "name": "EPIC Conf",

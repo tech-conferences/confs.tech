@@ -114,19 +114,19 @@
     "cfpEndDate": null
   },
   {
+    "name": "#LeadDev New York - The Lead Developer Conference",
+    "url": "https://newyork2018.theleaddeveloper.com",
+    "city": "New York City",
+    "country": "U.S.A.",
+    "startDate": "2018-04-24"
+  },
+  {
     "name": "Great Indian Developer Summit",
     "url": "http://www.developermarch.com/developersummit/index.html",
     "startDate": "2018-04-24",
     "endDate": "2018-04-28",
     "city": "Bangalore",
     "country": "India"
-  },
-  {
-    "name": "#LeadDev New York - The Lead Developer Conference",
-    "url": "https://newyork2018.theleaddeveloper.com",
-    "city": "New York City",
-    "country": "U.S.A.",
-    "startDate": "2018-04-24"
   },
   {
     "name": "ScaleConf Colombia",
@@ -157,6 +157,17 @@
     "endDate": "2018-05-05"
   },
   {
+    "name": "DevSecCon Tel Aviv",
+    "url": "http://www.devseccon.com/tel-aviv-2018",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-07",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "cfpUrl": "https://www.devseccon.com/call-for-proposals",
+    "cfpEndDate": "2018-01-07",
+    "twitter": "@devseccon"
+  },
+  {
     "name": "Beyond Tellerrand",
     "url": "https://beyondtellerrand.com/events/duesseldorf-2018",
     "startDate": "2018-05-07",
@@ -172,17 +183,6 @@
     "endDate": "2018-05-09",
     "city": "Seattle, WA",
     "country": "U.S.A."
-  },
-  {
-    "name": "DevSecCon Tel Aviv",
-    "url": "http://www.devseccon.com/tel-aviv-2018",
-    "startDate": "2018-05-07",
-    "endDate": "2018-05-07",
-    "city": "Tel Aviv",
-    "country": "Israel",
-    "cfpUrl": "https://www.devseccon.com/call-for-proposals",
-    "cfpEndDate": "2018-01-07",
-    "twitter": "@devseccon"
   },
   {
     "name": "Codemotion Amsterdam",
@@ -400,6 +400,14 @@
     "cfpEndDate": null
   },
   {
+    "name": "#LeadDev London - The Lead Developer Conference",
+    "url": "https://london2018.theleaddeveloper.com",
+    "city": "London",
+    "country": "U.K.",
+    "startDate": "2018-06-27",
+    "endDate": "2018-06-28"
+  },
+  {
     "name": "QCon NY",
     "url": "https://qconnewyork.com",
     "startDate": "2018-06-27",
@@ -407,14 +415,6 @@
     "city": "New York City",
     "country": "U.S.A.",
     "twitter": "@qconnewyork"
-  },
-  {
-    "name": "#LeadDev London - The Lead Developer Conference",
-    "url": "https://london2018.theleaddeveloper.com",
-    "city": "London",
-    "country": "U.K.",
-    "startDate": "2018-06-27",
-    "endDate": "2018-06-28"
   },
   {
     "name": "Sunny Tech",
