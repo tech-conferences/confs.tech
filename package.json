@@ -7,7 +7,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "eslint src",
-    "reorder-confs": "babel-node ./scripts/reorder-by-date.js",
+    "reorder-confs": "babel-node ./scripts/reorder-conferences-by-date.js",
     "precommit": "npm run lint",
     "predeploy": "npm run build",
     "deploy": "echo 'confs.tech' > ./build/CNAME && gh-pages -d build"
