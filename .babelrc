@@ -7,6 +7,9 @@
     "development": {
       "presets": ["react-app"]
     },
+    "production": {
+      "presets": ["react-app"]
+    },
     "test": {
       "presets": ["react-app"]
     }
