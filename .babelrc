@@ -6,6 +6,9 @@
     },
     "development": {
       "presets": ["react-app"]
+    },
+    "test": {
+      "presets": ["react-app"]
     }
   }
 }
