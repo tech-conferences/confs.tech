@@ -143,5 +143,16 @@
     "city": "Verona",
     "country": "Italy",
     "twitter": "@laraveldayit"
+  },
+  {
+    "name": "Drupal Europe",
+    "url": "https://www.drupaleurope.org",
+    "startDate": "2018-09-10",
+    "endDate": "2018-09-14",
+    "city": "Darmstadt",
+    "country": "Germany",
+    "twitter": "@DrupalEurope",
+    "cfpUrl": "",
+    "cfpEndDate": "2018-06-14"
   }
 ]
