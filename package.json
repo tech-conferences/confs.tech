@@ -7,10 +7,9 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "lint": "eslint src",
-    "reorder-confs": "babel-node ./scripts/reorder-conferences-by-date.js",
+    "reorder-confs": "BABEL_ENV=node babel-node ./scripts/reorder-conferences-by-date.js",
     "precommit": "npm run lint",
-    "predeploy": "npm run build",
-    "deploy": "echo 'confs.tech' > ./build/CNAME && gh-pages -d build"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@shopify/images": "^1.1.3",
@@ -110,11 +109,6 @@
       "web.jsx",
       "jsx",
       "node"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "react-app"
     ]
   },
   "eslintConfig": {
