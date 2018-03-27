@@ -621,5 +621,16 @@
     "twitter": "@devternity",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "adaptTo()",
+    "url": "https://adapt.to/2018/en.html",
+    "startDate": "2018-09-10",
+    "endDate": "2018-09-12",
+    "city": "Potsdam",
+    "country": "Germany",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
