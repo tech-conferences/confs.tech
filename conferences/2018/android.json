@@ -1,5 +1,15 @@
 [
   {
+    "name": "Droidcon",
+    "url": "https://droidcon.at/",
+    "city": "Vienna",
+    "country": "Austria",
+    "startDate": "2018-06-08",
+    "endDate": "2018-06-09",
+    "cfpUrl": "https://droidcon.at/call-for-papers",
+    "cfpEndDate": "2018-04-15"
+  },
+  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
