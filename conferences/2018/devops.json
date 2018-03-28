@@ -386,5 +386,16 @@
     "endDate": "2018-11-17",
     "city": "Shenzhen",
     "country": "China"
+  },
+  {
+    "name": "Devops 2018",
+    "url": "www.devops2018.com",
+    "startDate": "2018-12-13",
+    "endDate": "2018-12-14",
+    "city": "Helsinki",
+    "country": "Finland",
+    "twitter": "@eficode",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
