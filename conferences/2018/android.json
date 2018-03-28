@@ -1,15 +1,5 @@
 [
   {
-    "name": "Droidcon",
-    "url": "https://droidcon.at/",
-    "city": "Vienna",
-    "country": "Austria",
-    "startDate": "2018-06-08",
-    "endDate": "2018-06-09",
-    "cfpUrl": "https://droidcon.at/call-for-papers",
-    "cfpEndDate": "2018-04-15"
-  },
-  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
@@ -131,6 +121,16 @@
     "city": "Warsaw",
     "country": "Poland",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLScCS83nXfBFKyieKKWCCKL_YJTleXmCTuMsdQ802DE-x_TsjA/viewform"
+  },
+  {
+    "name": "Droidcon",
+    "url": "https://droidcon.at/",
+    "city": "Vienna",
+    "country": "Austria",
+    "startDate": "2018-06-08",
+    "endDate": "2018-06-09",
+    "cfpUrl": "https://droidcon.at/call-for-papers",
+    "cfpEndDate": "2018-04-15"
   },
   {
     "name": "mDevCamp",
