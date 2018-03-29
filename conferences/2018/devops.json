@@ -395,5 +395,16 @@
     "city": "Helsinki",
     "country": "Finland",
     "twitter": "@eficode"
+  },
+  {
+    "name": "Container Camp AU",
+    "url": "https://2018.container.camp/au",
+    "startDate": "2018-05-23",
+    "endDate": "2018-05-25",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@containercamp",
+    "cfpUrl": "https://2018.container.camp/au/",
+    "cfpEndDate": "2018-03-01"
   }
 ]
