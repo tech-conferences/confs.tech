@@ -89,11 +89,14 @@ class ConferencePage extends Component {
         </Helmet>
         <Favicon url={`/${topic}.png`} />
         <header className={styles.Header}>
-          <h1 className="visuallyHidden">
-            List of all {topic ? TOPICS[topic] : 'tech'} conferences of {CURRENT_YEAR}
-            {country ? ` in ${country}` : null}
-          </h1>
-          <Heading element="p">Find your next tech conference</Heading>
+          <div>
+            <h1 className="visuallyHidden">
+              List of all {topic ? TOPICS[topic] : 'tech'} conferences of {CURRENT_YEAR}
+              {country ? ` in ${country}` : null}
+            </h1>
+            <Heading element="p">Find your next tech conference</Heading>
+            <Heading element="h2" level="sub">Open-source and crowd sourced conference website</Heading>
+          </div>
           <GithubStar />
         </header>
 

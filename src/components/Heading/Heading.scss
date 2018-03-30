@@ -15,6 +15,15 @@
 .Heading-1 {
   font-size: 2.5em;
   font-weight: normal;
+  margin: spacing(extra-loose) 0 0 0;
+}
+
+.Heading-sub {
+  font-size: 1em;
+  font-family: font-family(base);
+  margin: 0 0 spacing(extra-loose) 0;
+  font-weight: normal;
+  color: color(gray);
 }
 
 .Heading-2 {
