@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Elixir Conf EU",
+    "url": "http://www.elixirconf.eu",
+    "startDate": "2018-04-16",
+    "endDate": "2018-04-18",
+    "city": "Warsaw",
+    "country": "Poland",
+    "twitter": "@ElixirConfEU"
+  },
+  {
+    "name": "EmpEx NYC",
+    "url": "http://empex.co/nyc.html",
+    "startDate": "2018-05-19",
+    "endDate": "2018-05-19",
+    "city": "New York",
+    "country": "U.S.A.",
+    "twitter": "@empexco"
+  },
+  {
+    "name": "Code Elixir",
+    "url": "http://www.elixir.london",
+    "startDate": "2018-08-16",
+    "endDate": "2018-08-16",
+    "city": "London",
+    "country": "U.K."
+  },
+  {
+    "name": "ElixirConf US",
+    "url": "https://elixirconf.com",
+    "startDate": "2018-09-04",
+    "endDate": "2018-09-07",
+    "city": "Bellevue",
+    "country": "U.S.A.",
+    "twitter": "@ElixirConf"
+  },
+  {
+    "name": "Big Elixir",
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfRgC-654H30l4hJvnqug75AW0l3YFeCc-upTMhADHZmQbzXQ/viewform",
+    "startDate": "2018-11",
+    "endDate": "2018-11",
+    "city": "New Orleans",
+    "country": "U.S.A."
+  }
+]
