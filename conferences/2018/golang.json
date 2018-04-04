@@ -26,13 +26,14 @@
   {
     "name":"GothamGo 2018",
     "city":"New York",
-    "country":"U.S.A",
+    "country":"U.S.A.",
     "url":"http://gothamgo.com/",
     "startDate":"2018-04-27",
     "endDate":"2018-04-27"
   },
   {
     "name":"GopherCon SG 2018",
+    "country":"Singapore",
     "city":"Singapore",
     "url":"https://2018.gophercon.sg/",
     "startDate":"2018-05-04",
@@ -49,7 +50,7 @@
   {
     "name":"GopherCon UK 2018",
     "city":"London",
-    "country":"UK",
+    "country":"U.K.",
     "url":"https://www.gophercon.co.uk/",
     "startDate":"2018-08-01",
     "endDate":"2018-08-03"
@@ -57,7 +58,7 @@
   {
     "name":"GopherCon Denver 2018",
     "city":"Denver",
-    "country":"U.S.A",
+    "country":"U.S.A.",
     "url":"http://gophercon.com",
     "startDate":"2018-08-27",
     "endDate":"2018-08-30"
