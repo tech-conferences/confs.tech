@@ -11,7 +11,7 @@ export const TOPICS = {
   php: 'PHP',
   elixir: 'Elixir',
   rust: 'Rust',
-  golang: 'Go',
+  golang: 'Golang',
   devops: 'Dev Ops',
   'tech-comm': 'Technical communication',
   general: 'General',
