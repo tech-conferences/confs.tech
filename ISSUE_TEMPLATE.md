@@ -11,6 +11,9 @@ Where should it go?
 - [ ] Dev Ops
 - [ ] Data
 - [ ] Tech-comm
+- [ ] Rust
+- [ ] Golang
+- [ ] Elixir
 - [ ] General
 
 ```json

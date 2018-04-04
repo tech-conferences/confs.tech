@@ -15,7 +15,11 @@ LANGUAGES.splice(LANGUAGES.indexOf('javascript'), 1);
 range(START_YEAR, CURRENT_YEAR + 1).forEach((year) => {
   conferencesJSON[year] = {};
   LANGUAGES.forEach((lang) => {
-    conferencesJSON[year][lang] = require(`${BASE_DIR}/${year}/${lang}.json`);
+    try {
+      conferencesJSON[year][lang] = require(`${BASE_DIR}/${year}/${lang}.json`);
+    // In case some years have no files
+    // eslint-disable-next-line no-empty
+    } catch (exception) {}
   });
 });
 
