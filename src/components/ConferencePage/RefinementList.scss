@@ -4,7 +4,7 @@
 @import '../style/foundation/spacing';
 
 :global(.ais-RefinementList__root) {
-  margin-bottom: spacing(tight);
+  margin-bottom: spacing(base);
 }
 
 :global(.ais-RefinementList__items) {
@@ -15,7 +15,7 @@
 }
 
 :global(.ais-RefinementList__item) {
-  margin-right: spacing(base);
+  margin-right: spacing(loose);
   margin-bottom: spacing(tight);
 }
 
@@ -36,11 +36,11 @@
 }
 
 :global(.ais-RefinementList__itemCount) {
-  border-radius: 31px;
+  border-radius: 30px;
   background-color: color(gray, lighter);
   color: color(accent);
   font-size: font-size(filter, itemCount);
-  padding: 2px 10px;
+  padding: 0 6px;
 }
 
 :global(.ais-RefinementList__showMore) {
