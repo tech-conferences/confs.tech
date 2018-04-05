@@ -196,5 +196,16 @@
     "country": "Netherlands",
     "startDate": "2018-10-03",
     "endDate": "2018-10-05"
+  },
+  {
+    "name": "Droidcon Italy 2018 - Conference ",
+    "url": "http://it.droidcon.com/2018",
+    "startDate": "2018-04-19",
+    "endDate": "2018-04-20",
+    "city": "Turin",
+    "country": "Italy",
+    "twitter": "@Droidconit",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
