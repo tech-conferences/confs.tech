@@ -618,5 +618,16 @@
     "country": "Germany",
     "startDate": "2018-11-05",
     "endDate": "2018-11-07"
+  },
+  {
+    "name": "UX South Africa",
+    "url": "https://uxsouthafrica.com/jhb2018",
+    "startDate": "2018-05-09",
+    "endDate": "2018-05-11",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
