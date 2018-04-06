@@ -1,82 +1,82 @@
 [
   {
-    "name":"GopherCon India 2018",
-    "city":"Pune",
-    "country":"India",
-    "url":"http://www.gophercon.in/",
-    "startDate":"2018-03-09",
-    "endDate":"2018-03-10"
+    "name": "GopherCon India 2018",
+    "city": "Pune",
+    "country": "India",
+    "url": "http://www.gophercon.in/",
+    "startDate": "2018-03-09",
+    "endDate": "2018-03-10"
   },
   {
-    "name":"GopherCon Russia 2018",
-    "city":"Moscow",
-    "country":"Russia",
-    "url":"http://gophercon-russia.ru/en",
-    "startDate":"2018-03-17",
-    "endDate":"2018-03-17"
+    "name": "GopherCon Russia 2018",
+    "city": "Moscow",
+    "country": "Russia",
+    "url": "http://gophercon-russia.ru/en",
+    "startDate": "2018-03-17",
+    "endDate": "2018-03-17"
   },
   {
-    "name":"GopherCon China 2018",
-    "city":"Shanghai",
-    "country":"China",
-    "url":"http://www.gopherchina.org/",
-    "startDate":"2018-04-14",
-    "endDate":"2018-04-15"
+    "name": "GopherCon China 2018",
+    "city": "Shanghai",
+    "country": "China",
+    "url": "http://www.gopherchina.org/",
+    "startDate": "2018-04-14",
+    "endDate": "2018-04-15"
   },
   {
-    "name":"GothamGo 2018",
-    "city":"New York",
-    "country":"U.S.A.",
-    "url":"http://gothamgo.com/",
-    "startDate":"2018-04-27",
-    "endDate":"2018-04-27"
+    "name": "GothamGo 2018",
+    "city": "New York",
+    "country": "U.S.A.",
+    "url": "http://gothamgo.com/",
+    "startDate": "2018-04-27",
+    "endDate": "2018-04-27"
   },
   {
-    "name":"GopherCon SG 2018",
-    "country":"Singapore",
-    "city":"Singapore",
-    "url":"https://2018.gophercon.sg/",
-    "startDate":"2018-05-04",
-    "endDate":"2018-05-04"
+    "name": "GopherCon SG 2018",
+    "country": "Singapore",
+    "city": "Singapore",
+    "url": "https://2018.gophercon.sg/",
+    "startDate": "2018-05-04",
+    "endDate": "2018-05-04"
   },
   {
-    "name":"GopherCon Europe - Iceland",
-    "city":"Reykjavik",
-    "country":"Iceland",
-    "url":"https://gophercon.is",
-    "startDate":"2018-06-01",
-    "endDate":"2018-06-02"
+    "name": "GopherCon Europe - Iceland",
+    "city": "Reykjavik",
+    "country": "Iceland",
+    "url": "https://gophercon.is",
+    "startDate": "2018-06-01",
+    "endDate": "2018-06-02"
   },
   {
-    "name":"GopherCon UK 2018",
-    "city":"London",
-    "country":"U.K.",
-    "url":"https://www.gophercon.co.uk/",
-    "startDate":"2018-08-01",
-    "endDate":"2018-08-03"
+    "name": "GopherCon UK 2018",
+    "city": "London",
+    "country": "U.K.",
+    "url": "https://www.gophercon.co.uk/",
+    "startDate": "2018-08-01",
+    "endDate": "2018-08-03"
   },
   {
-    "name":"GopherCon Denver 2018",
-    "city":"Denver",
-    "country":"U.S.A.",
-    "url":"http://gophercon.com",
-    "startDate":"2018-08-27",
-    "endDate":"2018-08-30"
+    "name": "GopherCon Denver 2018",
+    "city": "Denver",
+    "country": "U.S.A.",
+    "url": "http://gophercon.com",
+    "startDate": "2018-08-27",
+    "endDate": "2018-08-30"
   },
   {
-    "name":"GopherCon Brasil 2018",
-    "city":"Florianópolis",
-    "country":"Brazil",
-    "url":"https://2018.gopherconbr.org/en",
-    "startDate":"2018-09-27",
-    "endDate":"2018-09-29"
+    "name": "GopherCon Brasil 2018",
+    "city": "Florianópolis",
+    "country": "Brazil",
+    "url": "https://2018.gopherconbr.org/en",
+    "startDate": "2018-09-27",
+    "endDate": "2018-09-29"
   },
   {
-    "name":"GoLab 2018",
-    "city":"Florence",
-    "country":"Italy",
-    "url":"http://golab.io",
-    "startDate":"2018-10-22",
-    "endDate":"2018-10-23"
+    "name": "GoLab 2018",
+    "city": "Florence",
+    "country": "Italy",
+    "url": "http://golab.io",
+    "startDate": "2018-10-22",
+    "endDate": "2018-10-23"
   }
 ]

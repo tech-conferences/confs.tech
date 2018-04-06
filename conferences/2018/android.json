@@ -1,25 +1,5 @@
 [
   {
-    "name": "droidconNYC",
-    "url": "http://droidcon.nyc",
-    "city": "New York",
-    "country": "U.S.A.",
-    "startDate": "2018-08-27",
-    "endDate": "2018-08-28",
-    "cfpUrl": "https://sessionize.com/droidcon-nyc-2018",
-    "cfpEndDate": "2018-06-10"
-  },
-  {
-    "name": "DroidJam",
-    "url": "https://www.droidjam.in/",
-    "city": "Bangalore",
-    "country": "India",
-    "startDate": "2018-07-13",
-    "endDate": "2018-07-14",
-    "cfpUrl": "https://www.droidjam.in/#call-for-papers",
-    "cfpEndDate": "2018-06-15"
-  },
-  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
@@ -108,6 +88,17 @@
     "endDate": "2018-04-17"
   },
   {
+    "name": "Droidcon Italy 2018 - Conference ",
+    "url": "http://it.droidcon.com/2018",
+    "startDate": "2018-04-19",
+    "endDate": "2018-04-20",
+    "city": "Turin",
+    "country": "Italy",
+    "twitter": "@Droidconit",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "Android Makers",
     "url": "https://androidmakers.fr",
     "startDate": "2018-04-23",
@@ -189,6 +180,16 @@
     "twitter": "@addconf"
   },
   {
+    "name": "DroidJam",
+    "url": "https://www.droidjam.in/",
+    "city": "Bangalore",
+    "country": "India",
+    "startDate": "2018-07-13",
+    "endDate": "2018-07-14",
+    "cfpUrl": "https://www.droidjam.in/#call-for-papers",
+    "cfpEndDate": "2018-06-15"
+  },
+  {
     "name": "360|AnDev",
     "url": "https://360andev.com",
     "startDate": "2018-07-19",
@@ -200,22 +201,21 @@
     "twitter": "@360andev"
   },
   {
+    "name": "droidconNYC",
+    "url": "http://droidcon.nyc",
+    "city": "New York",
+    "country": "U.S.A.",
+    "startDate": "2018-08-27",
+    "endDate": "2018-08-28",
+    "cfpUrl": "https://sessionize.com/droidcon-nyc-2018",
+    "cfpEndDate": "2018-06-10"
+  },
+  {
     "name": "Kotlin Conf",
     "url": "https://kotlinconf.com",
     "city": "Amsterdam",
     "country": "Netherlands",
     "startDate": "2018-10-03",
     "endDate": "2018-10-05"
-  },
-  {
-    "name": "Droidcon Italy 2018 - Conference ",
-    "url": "http://it.droidcon.com/2018",
-    "startDate": "2018-04-19",
-    "endDate": "2018-04-20",
-    "city": "Turin",
-    "country": "Italy",
-    "twitter": "@Droidconit",
-    "cfpUrl": "",
-    "cfpEndDate": null
   }
 ]

@@ -26,6 +26,8 @@ Object.keys(conferencesJSON).forEach((year) => {
     const fileName = `./conferences/${year}/${topic}.json`;
 
     fs.readFile(fileName, (err, data) => {
+      if (!data) { return; }
+
       const sortedConfs = sortBy(JSON.parse(data),[
         (conf) => parse(conf.startDate).getTime(),
         (conf) => parse(conf.endDate || conf.startDate).getTime(),

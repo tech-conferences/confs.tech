@@ -136,6 +136,17 @@
     "country": "U.S.A."
   },
   {
+    "name": "Container Camp AU",
+    "url": "https://2018.container.camp/au",
+    "startDate": "2018-05-23",
+    "endDate": "2018-05-25",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@containercamp",
+    "cfpUrl": "https://2018.container.camp/au/",
+    "cfpEndDate": "2018-03-01"
+  },
+  {
     "name": "DevOpsDay - Stockholm",
     "url": "https://www.devopsdays.org/events/2018-stockholm",
     "startDate": "2018-05-24",
@@ -250,6 +261,17 @@
     "endDate": "2018-09-06",
     "city": "Taipei",
     "country": "Taiwan"
+  },
+  {
+    "name": "Container Camp UK",
+    "url": "https://2018.container.camp/uk",
+    "startDate": "2018-09-06",
+    "endDate": "2018-09-07",
+    "city": "London",
+    "country": "U.K.",
+    "twitter": "@containercamp",
+    "cfpUrl": "https://2018.container.camp/uk/",
+    "cfpEndDate": "2018-06-29"
   },
   {
     "name": "DevOpsDay - Raleigh",
@@ -395,27 +417,5 @@
     "city": "Helsinki",
     "country": "Finland",
     "twitter": "@eficode"
-  },
-  {
-    "name": "Container Camp AU",
-    "url": "https://2018.container.camp/au",
-    "startDate": "2018-05-23",
-    "endDate": "2018-05-25",
-    "city": "Melbourne",
-    "country": "Australia",
-    "twitter": "@containercamp",
-    "cfpUrl": "https://2018.container.camp/au/",
-    "cfpEndDate": "2018-03-01"
-  },
-  {
-    "name": "Container Camp UK",
-    "url": "https://2018.container.camp/uk",
-    "startDate": "2018-09-06",
-    "endDate": "2018-09-07",
-    "city": "London",
-    "country": "U.K.",
-    "twitter": "@containercamp",
-    "cfpUrl": "https://2018.container.camp/uk/",
-    "cfpEndDate": "2018-06-29"
   }
 ]
