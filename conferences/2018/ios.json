@@ -184,5 +184,16 @@
     "city": "Portland, OR",
     "country": "U.S.A.",
     "twitter": "@SwiftxNW"
+  },
+  {
+    "name": "ServerSide.swift",
+    "url": "https://www.serversideswift.info",
+    "startDate": "2018-09-12",
+    "endDate": "2018-09-14",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@SwiftServerConf",
+    "cfpUrl": "https://goo.gl/forms/tQ7X5RSwf3f7CNKN2",
+    "cfpEndDate": "2018-06-15"
   }
 ]
