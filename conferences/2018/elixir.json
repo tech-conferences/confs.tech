@@ -35,20 +35,12 @@
     "twitter": "@ElixirConf"
   },
   {
-    "name": "Big Elixir",
-    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfRgC-654H30l4hJvnqug75AW0l3YFeCc-upTMhADHZmQbzXQ/viewform",
-    "startDate": "2018-11",
-    "endDate": "2018-11",
-    "city": "New Orleans",
-    "country": "U.S.A."
-  },
-  {
     "name": "The Big Elixir",
     "url": "https://www.thebigelixir.com",
     "startDate": "2018-11-08",
     "endDate": "2018-11-09",
     "city": "New Orleans",
-    "country": "USA",
+    "country": "U.S.A.",
     "twitter": "@thebigelixir",
     "cfpUrl": "https://www.papercall.io/the-big-elixir-2018",
     "cfpEndDate": "2018-07-02"
