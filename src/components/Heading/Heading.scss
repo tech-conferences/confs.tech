@@ -18,9 +18,12 @@
   font-weight: normal;
   margin: spacing(extra-loose) 0 0 0;
   position: relative;
-  @include underlined();
-  &::after {
-    bottom: 6px;
+
+  .Inner {
+    @include underlined();
+    &::after {
+      bottom: 6px;
+    }
   }
 }
 
