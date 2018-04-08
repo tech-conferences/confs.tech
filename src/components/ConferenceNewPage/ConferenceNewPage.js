@@ -124,7 +124,7 @@ export default class ConferenceNewPage extends Component {
     if (cannotBeSubmitted) { return; }
     this.setState({submitting: true});
 
-    fetch(`${process.env.API_END_POINT_DOMAIN}/conferences`, {
+    fetch(`${process.env.API_END_POINT_DOMAIN}/api/conferences`, {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
