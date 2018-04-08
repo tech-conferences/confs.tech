@@ -170,7 +170,12 @@ export default class ConferenceNewPage extends Component {
           Thank you for submitting a conference!
         </p>
         <p>
-          We`ll revise soon and add it to the list.
+          {"We'll revise soon and add it to the list."}
+          <br />
+          You can also{' '}
+          <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
+            view the request on Guthub
+          </Link>
         </p>
         <p>
           <Link external url="https://github.com/tech-conferences/confs.tech/">
