@@ -27,6 +27,7 @@ const defaultConference = {
   cfpUrl: '',
   cfpEndDate: '',
   twitter: '@',
+  comment: '',
 };
 
 export default class ConferenceNewPage extends Component {
@@ -202,6 +203,7 @@ export default class ConferenceNewPage extends Component {
         country,
         cfpUrl,
         twitter,
+        comment,
         startDate,
         endDate,
       },
@@ -349,6 +351,15 @@ export default class ConferenceNewPage extends Component {
             />
             {this.errorFor('twitter', 'Twitter handle is required.')}
           </InputGroup>
+          <InputGroup>
+            <label htmlFor="comment">Additional comments / infos – <i>will only appear on github</i></label>
+            <textarea
+              type="text"
+              name="comment"
+              value={comment}
+              onChange={this.handleFieldChange}
+            />
+          </InputGroup>
           <Recaptcha
             sitekey="6Lf5FEoUAAAAAJtf3_sCGAAzV221KqRS4lAX9AAs"
             render="explicit"
@@ -406,6 +417,14 @@ export default class ConferenceNewPage extends Component {
           <script src="https://www.google.com/recaptcha/api.js" async defer />
         </Helmet>
         <Heading element="h1">Add a new conference</Heading>
+        {!submitted &&
+          <p>
+            Submitting a conference will create a{' '}
+            <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
+              pull requests  on github
+            </Link> that will be reviewed by our team in the shorthest delayed!
+          </p>
+        }
         {submitted ? this.submitted() : this.form()}
       </div>
     );

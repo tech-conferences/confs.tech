@@ -6,7 +6,7 @@ select {
   font-size: 1.2em;
 }
 
-input {
+input, textarea {
   padding: spacing(tight);
   font-size: font-size(body);
   background-color: #ffffff;
