@@ -1,5 +1,16 @@
 [
   {
+    "name": "GORUCO",
+    "url": "http://goruco.com",
+    "startDate": "2018-06-16",
+    "endDate": "2018-06-16",
+    "city": "New York",
+    "country": "U.S.A.",
+    "cfpUrl": "https://cfp.goruco.com/events/goruco2018",
+    "cfpEndDate": "2018-04-15",
+    "twitter": "@goruco"
+  },
+  {
     "name": "Elixir Conf EU",
     "url": "http://www.elixirconf.eu",
     "startDate": "2018-04-16",
