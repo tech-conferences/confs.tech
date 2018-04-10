@@ -1,5 +1,15 @@
 [
   {
+    "name": "Android Enterprise Summit @ Droidcon",
+    "url": "https://www.de.droidcon.com/enterprise-summit",
+    "city": "Berlin",
+    "country": "Germany",
+    "startDate": "2018-06-25",
+    "endDate": "2018-06-27",
+    "cfpEndDate": "2018-04-30",
+    "cfpUrl": "https://sessionize.com/android-enterprise-summit"
+  },
+  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
