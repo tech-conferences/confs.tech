@@ -643,5 +643,16 @@
     "twitter": "@amegala",
     "cfpUrl": "https://www.amegala.com/#/cfp/",
     "cfpEndDate": "2018-04-02"
+  },
+  {
+    "name": "WebCraftConf",
+    "url": "https://www.webcraft.com.jm",
+    "startDate": "2018-07-18",
+    "endDate": "2018-07-20",
+    "city": "Kingston",
+    "country": "Jamaica",
+    "twitter": null,
+    "cfpUrl": "https://www.papercall.io/webcraftconf",
+    "cfpEndDate": "2018-04-30"
   }
 ]
