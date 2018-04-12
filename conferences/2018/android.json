@@ -1,5 +1,15 @@
 [
   {
+    "name": "Mobile Fest",
+    "url": "http://mobilefest.com.ua/indexe.html",
+    "city": "Kiev",
+    "country": "Ukraine",
+    "startDate": "2018-06-02",
+    "endDate": "2018-06-02",
+    "cfpEndDate": "2018-04-29",
+    "cfpUrl": "http://mobilefest.com.ua/speakers_eng.html"
+  },
+  {
     "name": "Android Enterprise Summit @ Droidcon",
     "url": "https://www.de.droidcon.com/enterprise-summit",
     "city": "Berlin",
