@@ -1,5 +1,16 @@
 [
   {
+    "name": "Conference for Kotliners",
+    "url": "https://www.conferenceforkotliners.com",
+    "city": "Budapest",
+    "country": "Hungary",
+    "startDate": "2018-06-15",
+    "endDate": "2018-06-15",
+    "cfpEndDate": "2018-05-13",
+    "cfpUrl": "https://www.papercall.io/conference-for-kotliners",
+    "twitter": "@kotliners"
+  },
+  {
     "name": "Mobile Fest",
     "url": "http://mobilefest.com.ua/indexe.html",
     "city": "Kiev",
