@@ -662,5 +662,16 @@
     "twitter": null,
     "cfpUrl": "https://www.papercall.io/webcraftconf",
     "cfpEndDate": "2018-04-30"
+  },
+  {
+    "name": "Samantha Scalamogna",
+    "url": "https://www.gartner.com/events/na/catalyst",
+    "startDate": "2018-08-20",
+    "endDate": "2018-08-23",
+    "city": "San Diego",
+    "country": "USA",
+    "twitter": "@gartnerevents",
+    "cfpUrl": "https://www.gartner.com/events/na/catalyst",
+    "cfpEndDate": "2018-08-23"
   }
 ]
