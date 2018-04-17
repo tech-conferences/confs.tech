@@ -492,6 +492,17 @@
     "cfpEndDate": null
   },
   {
+    "name": "Open Source Summit North America",
+    "url": "https://events.linuxfoundation.org/events/open-source-summit-north-america-2018/",
+    "startDate": "2018-08-29",
+    "endDate": "2018-08-31",
+    "city": "Vancouver, BC",
+    "country": "Canada",
+    "twitter": null,
+    "cfpUrl": "https://events.linuxfoundation.org/events/open-source-summit-north-america-2018/program/cfp/",
+    "cfpEndDate": "2018-04-29"
+  },
+  {
     "name": "NightlyBuild",
     "url": "https://www.nightlybuild.io",
     "startDate": "2018-08-31",
