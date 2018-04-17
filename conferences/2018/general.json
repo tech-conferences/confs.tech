@@ -597,6 +597,17 @@
     "cfpEndDate": "2018-05-24"
   },
   {
+    "name": "Open Source Summit Europe",
+    "url": "https://events.linuxfoundation.org/events/open-source-summit-europe-2018/",
+    "startDate": "2018-10-22",
+    "endDate": "2018-10-28",
+    "city": "Edinburgh",
+    "country": "U.K.",
+    "twitter": null,
+    "cfpUrl": "https://events.linuxfoundation.org/events/open-source-summit-europe-2018/program/cfp/",
+    "cfpEndDate": "2018-07-01"
+  },
+  {
     "name": "NConf",
     "url": "https://nconf.de",
     "startDate": "2018-10-23",
