@@ -695,5 +695,16 @@
     "twitter": null,
     "cfpUrl": "",
     "cfpEndDate": ""
+  },
+  {
+    "name": "Collision",
+    "url": "https://collisionconf.com",
+    "startDate": "2018-04-30",
+    "endDate": "2018-05-03",
+    "city": "New Orleans, LA",
+    "country": "U.S.A.",
+    "twitter": "@collisionHQ",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
