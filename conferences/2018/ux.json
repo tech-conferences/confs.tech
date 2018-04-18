@@ -520,11 +520,11 @@
     "cfpEndDate": "2018-03-18"
   },
   {
-    "name": "Euro IA",
-    "url": "http://www.euroia.org/venue-2018",
+    "name": "EuroIA",
+    "url": "http://www.euroia.org/",
     "startDate": "2018-09",
     "city": "Dublin",
-    "country": "U.K.",
+    "country": "Ireland",
     "cfpUrl": "http://euroia.org/submissions",
     "cfpEndDate": "2018-03-03"
   },
