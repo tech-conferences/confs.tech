@@ -706,5 +706,16 @@
     "twitter": "@collisionHQ",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "RISE",
+    "url": "https://riseconf.com",
+    "startDate": "2018-07-09",
+    "endDate": "2018-07-12",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "twitter": "@RISEConfHQ",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
