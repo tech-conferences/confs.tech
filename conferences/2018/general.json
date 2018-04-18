@@ -706,5 +706,16 @@
     "twitter": "@collisionHQ",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "KubeCon + CloudNativeCon",
+    "url": "https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018",
+    "startDate": "2018-05-02",
+    "endDate": "2018-05-04",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
