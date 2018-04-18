@@ -708,6 +708,17 @@
     "cfpEndDate": null
   },
   {
+    "name": "RISE",
+    "url": "https://riseconf.com",
+    "startDate": "2018-07-09",
+    "endDate": "2018-07-12",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "twitter": "@RISEConfHQ",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "KubeCon + CloudNativeCon",
     "url": "https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018",
     "startDate": "2018-05-02",
