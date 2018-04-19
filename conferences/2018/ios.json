@@ -195,5 +195,16 @@
     "twitter": "@SwiftServerConf",
     "cfpUrl": "https://goo.gl/forms/tQ7X5RSwf3f7CNKN2",
     "cfpEndDate": "2018-06-15"
+  },
+  {
+    "name": "/dev/world/2018",
+    "url": "devworld.com.au",
+    "startDate": "2018-08-26",
+    "endDate": "2018-08-28",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@AUC_ANZ",
+    "cfpUrl": "devworld.com.au",
+    "cfpEndDate": "2018-05-15"
   }
 ]
