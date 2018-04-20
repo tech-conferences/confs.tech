@@ -631,6 +631,17 @@
     "endDate": "2018-11-07"
   },
   {
+    "name": "MidwestUX",
+    "url": "https://www.2018.midwestuxconference.com/",
+    "startDate": "2018-10-11",
+    "endDate": "2018-10-13",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "twitter": "@midwestux",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "The UX Conference",
     "url": "http://theuxconf.com",
     "startDate": "2018-09-07",
