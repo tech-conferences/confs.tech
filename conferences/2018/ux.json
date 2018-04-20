@@ -629,5 +629,16 @@
     "country": "Germany",
     "startDate": "2018-11-05",
     "endDate": "2018-11-07"
+  },
+  {
+    "name": "MidwestUX",
+    "url": "midwestux.com",
+    "startDate": "2018-10-11",
+    "endDate": "2018-10-13",
+    "city": "Chicago",
+    "country": "U.S.A",
+    "twitter": "@midwestux",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
