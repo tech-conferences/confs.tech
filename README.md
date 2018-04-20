@@ -66,6 +66,7 @@ Some of the conferences have been pulled from other projects:
 - [See all Data conferences](https://confs.tech/data)
 - [See all Dev Ops conferences](https://confs.tech/devops)
 - [See all Android conferences](https://confs.tech/android)
+- [See all Python conferences](https://confs.tech/python)
 - [See all Golang conferences](https://confs.tech/golang)
 - [See all Rust conferences](https://confs.tech/rust)
 - [See all Elixir conferences](https://confs.tech/elixir)

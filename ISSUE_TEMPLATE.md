@@ -13,6 +13,7 @@ Where should it go?
 - [ ] Tech-comm
 - [ ] Rust
 - [ ] Golang
+- [ ] Python
 - [ ] Elixir
 - [ ] General
 
