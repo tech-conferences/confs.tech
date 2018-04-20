@@ -640,5 +640,16 @@
     "twitter": "@midwestux",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "The UX Conference",
+    "url": "http://theuxconf.com",
+    "startDate": "2018-09-07",
+    "endDate": "2018-09-07",
+    "city": "London",
+    "country": "U.K.",
+    "twitter": "@theuxconf",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
