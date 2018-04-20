@@ -632,11 +632,11 @@
   },
   {
     "name": "MidwestUX",
-    "url": "midwestux.com",
+    "url": "https://www.2018.midwestuxconference.com/",
     "startDate": "2018-10-11",
     "endDate": "2018-10-13",
-    "city": "Chicago",
-    "country": "U.S.A",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
     "twitter": "@midwestux",
     "cfpUrl": "",
     "cfpEndDate": null
