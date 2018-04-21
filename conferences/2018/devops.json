@@ -417,5 +417,14 @@
     "city": "Helsinki",
     "country": "Finland",
     "twitter": "@eficode"
+  },
+  {
+    "name": "Jazoon Techdays",
+    "url": "http://jazoon.com",
+    "startDate": "2018-09-06",
+    "endDate": "2018-09-07",
+    "city": "Bern",
+    "country": "Switzerland",
+    "twitter": "@jazoon"
   }
 ]
