@@ -154,5 +154,16 @@
     "city": "Verona",
     "country": "Italy",
     "twitter": "@laraveldayit"
+  },
+  {
+    "name": "PHP fwdays",
+    "url": "https://fwdays.com/en/event/php-fwdays-2018",
+    "startDate": "2018-06-10",
+    "endDate": "2018-06-10",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "twitter": "@fwdays",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
