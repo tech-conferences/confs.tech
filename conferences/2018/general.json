@@ -728,5 +728,16 @@
     "twitter": null,
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Highload fwdays",
+    "url": "https://fwdays.com/en/event/highload-fwdays-2018",
+    "startDate": "2018-09-15",
+    "endDate": "2018-09-15",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "twitter": "@fwdays",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf0C74VjvnzgF_-y3fbRjxCfHR0EGETzNF5iBuf4JoWwUoElA/viewform",
+    "cfpEndDate": "2018-06-01"
   }
 ]
