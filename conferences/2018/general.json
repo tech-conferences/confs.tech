@@ -739,5 +739,60 @@
     "twitter": "@fwdays",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf0C74VjvnzgF_-y3fbRjxCfHR0EGETzNF5iBuf4JoWwUoElA/viewform",
     "cfpEndDate": "2018-06-01"
+  },
+  {
+    "name": "An Event Apart: Boston",
+    "url": "https://aneventapart.com/event/boston-2018",
+    "startDate": "2018-06-25",
+    "endDate": "2018-06-27",
+    "city": "Boston, MA",
+    "country": "U.S.A.",
+    "twitter": "@aneventapart",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  }
+  {
+    "name": "An Event Apart: Washington DC",
+    "url": "https://aneventapart.com/event/washington-dc-2018",
+    "startDate": "2018-07-30",
+    "endDate": "2018-08-01",
+    "city": "Washington DC",
+    "country": "U.S.A.",
+    "twitter": "@aneventapart",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  }
+  {
+    "name": "An Event Apart: Orlando",
+    "url": "https://aneventapart.com/event/orlando-2018",
+    "startDate": "2018-10-08",
+    "endDate": "2018-10-10",
+    "city": "Orlando, FL",
+    "country": "U.S.A.",
+    "twitter": "@aneventapart",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  }
+  {
+    "name": "An Event Apart: San Francisco",
+    "url": "https://aneventapart.com/event/san-francisco-2018",
+    "startDate": "2018-12-10",
+    "endDate": "2018-12-12",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "twitter": "@aneventapart",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  }
+  {
+    "name": "An Event Apart: Chicago",
+    "url": "https://aneventapart.com/event/chicago-2018",
+    "startDate": "2018-08-27",
+    "endDate": "2018-08-29",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "twitter": "@aneventapart",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
