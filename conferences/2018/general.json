@@ -794,5 +794,32 @@
     "twitter": "@aneventapart",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com/events/munich-2018",
+    "startDate": "2018-01-15",
+    "endDate": "2018-01-17",
+    "city": "Munich",
+    "country": "Germany",
+    "twitter": "@btconf"
+  },
+  {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com/events/duesseldorf-2018",
+    "startDate": "2018-05-07",
+    "endDate": "2018-05-09",
+    "city": "Düsseldorf",
+    "country": "Germany",
+    "twitter": "@btconf"
+  },
+  {
+    "name": "Beyond Tellerrand",
+    "url": "https://beyondtellerrand.com/events/berlin-2018",
+    "startDate": "2018-11-07",
+    "endDate": "2018-11-09",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@btconf"
   }
 ]
