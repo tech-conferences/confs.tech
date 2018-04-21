@@ -9,7 +9,7 @@
     "twitter": "@front"
   },
   {
-    "name": "Interaction week 18",
+    "name": "Interaction week",
     "url": "http://interaction18.ixda.org",
     "startDate": "2018-02-03",
     "endDate": "2018-02-08",
@@ -101,7 +101,7 @@
     "country": "Canada"
   },
   {
-    "name": "ACM IUI 2018",
+    "name": "ACM IUI",
     "url": "http://iui.acm.org/2018",
     "startDate": "2018-03-07",
     "endDate": "2018-03-11",
@@ -149,7 +149,7 @@
     "twitter": "@uxcitymcr"
   },
   {
-    "name": "TEI 2018",
+    "name": "TEI",
     "url": "https://tei.acm.org/2018",
     "startDate": "2018-03-18",
     "endDate": "2018-03-21",
@@ -177,7 +177,7 @@
     "twitter": "@exconfba"
   },
   {
-    "name": "CHIuXiD 2018",
+    "name": "CHIuXiD",
     "url": "http://2018.chiuxid.org",
     "startDate": "2018-03-26",
     "endDate": "2018-03-29",
@@ -219,7 +219,7 @@
     "twitter": "@smashingconf"
   },
   {
-    "name": "CHI 2018",
+    "name": "CHI",
     "url": "https://chi2018.acm.org",
     "startDate": "2018-04-21",
     "endDate": "2018-04-26",
@@ -227,7 +227,7 @@
     "country": "Canada"
   },
   {
-    "name": "Design Thinking 2018",
+    "name": "Design Thinking",
     "url": "https://designthinkingusa.iqpc.com",
     "startDate": "2018-04-23",
     "endDate": "2018-04-25",
@@ -235,7 +235,7 @@
     "country": "U.S.A."
   },
   {
-    "name": "Generate ",
+    "name": "Generate",
     "url": "https://www.generateconf.com/new-york",
     "startDate": "2018-04-25",
     "endDate": "2018-04-27",
@@ -461,7 +461,7 @@
     "country": "Canada"
   },
   {
-    "name": "UXPA 2018",
+    "name": "UXPA",
     "url": "http://uxpa2018.org",
     "startDate": "2018-06-26",
     "endDate": "2018-06-28",
@@ -491,7 +491,7 @@
     "twitter": "@addconf"
   },
   {
-    "name": "ACM UMAP 2018",
+    "name": "ACM UMAP",
     "url": "http://www.um.org/umap2018",
     "startDate": "2018-07-08",
     "endDate": "2018-07-11",
@@ -501,7 +501,7 @@
     "cfpEndDate": "2018-03-04"
   },
   {
-    "name": "UXWeek 2018",
+    "name": "UXWeek",
     "url": "http://uxweek.com",
     "startDate": "2018-08-21",
     "endDate": "2018-08-24",

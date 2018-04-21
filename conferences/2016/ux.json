@@ -96,7 +96,7 @@
     "city": ""
   },
   {
-    "name": "UXPA 2017",
+    "name": "UXPA",
     "url": "http://uxpa.github.io",
     "date": "June 5 - 8",
     "city": "Toronto",
@@ -193,7 +193,7 @@
     "city": "Malmo, Sweden"
   },
   {
-    "name": "MobileHCI 2017",
+    "name": "MobileHCI",
     "url": "http://mobilehci.acm.org/2017",
     "date": "Sept 4-7",
     "city": "Vienna, Austria"
@@ -337,7 +337,7 @@
     "city": "Washington, DC"
   },
   {
-    "name": "Delight 2018",
+    "name": "Delight",
     "url": "http://delight.us/conference",
     "date": "May 2018",
     "city": ""

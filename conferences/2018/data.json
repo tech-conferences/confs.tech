@@ -1,6 +1,6 @@
 [
   {
-    "name": "Big Data Paris 2018",
+    "name": "Big Data Paris",
     "url": "https://www.bigdataparis.com",
     "startDate": "2018-03-12",
     "endDate": "2018-03-13",
@@ -9,7 +9,7 @@
     "twitter": "@bigdataparis"
   },
   {
-    "name": "FEniCS‘18",
+    "name": "FEniCS",
     "url": "https://fenicsproject.org/fenics18",
     "startDate": "2018-03-21",
     "endDate": "2018-03-23",
@@ -44,7 +44,7 @@
     "country": "U.S.A."
   },
   {
-    "name": "TiE Inflect 2018",
+    "name": "TiE Inflect",
     "url": "https://www.tieinflect.org",
     "startDate": "2018-05-04",
     "endDate": "2018-05-04",
