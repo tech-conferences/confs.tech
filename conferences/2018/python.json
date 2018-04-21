@@ -1,5 +1,13 @@
 [
   {
+    "name": "PyTennessee",
+    "url": "https://www.pytennessee.org/",
+    "startDate": "2018-02-10",
+    "endDate": "2018-02-11",
+    "city": "Nashville, US",
+    "country": "U.S.A."
+  },
+  {
     "name": "PyData Belarus",
     "url": "https://by.pycon.org/",
     "startDate": "2018-02-24",
