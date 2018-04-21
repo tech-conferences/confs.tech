@@ -1,6 +1,6 @@
 [
   {
-    "name": "PHPBenelux Conference 2018",
+    "name": "PHPBenelux Conference",
     "url": "https://conference.phpbenelux.eu/2018",
     "startDate": "2018-01-26",
     "endDate": "2018-01-27",
@@ -18,6 +18,24 @@
     "twitter": "@sunshinephp"
   },
   {
+    "name": "PHP UK Conference",
+    "url": "https://www.phpconference.co.uk/",
+    "startDate": "2018-02-14",
+    "endDate": "2018-02-16",
+    "city": "London",
+    "country": "U.K.",
+    "twitter": "@phpukconference"
+  },
+  {
+    "name": "DrupalCon Nashville",
+    "url": "https://events.drupal.org/nashville2018",
+    "startDate": "2018-04-09",
+    "endDate": "2018-04-13",
+    "city": "Nashville, TN",
+    "country": "U.S.A.",
+    "twitter": "@drupalconNA"
+  },
+  {
     "name": "Longhorn PHP Conference",
     "url": "https://www.longhornphp.com",
     "startDate": "2018-04-19",
@@ -25,6 +43,15 @@
     "city": "Austin, TX",
     "country": "U.S.A.",
     "twitter": "@longhornphp"
+  },
+  {
+    "name": "JandBeyond",
+    "url": "https://jandbeyond.org/",
+    "startDate": "2018-05-11",
+    "endDate": "2018-05-13",
+    "city": "Cologne",
+    "country": "Germany",
+    "twitter": "@jandbeyond"
   },
   {
     "name": "phpDay",
@@ -36,6 +63,14 @@
     "twitter": "@phpday"
   },
   {
+    "name": "PHPCon China",
+    "url": "http://www.phpconchina.com/",
+    "startDate": "2018-05-19",
+    "endDate": "2018-05-20",
+    "city": "Shanghai",
+    "country": "China"
+  },
+  {
     "name": "PHPKonf",
     "url": "https://phpkonf.org",
     "startDate": "2018-05-20",
@@ -45,7 +80,7 @@
     "twitter": "@istanbulphp"
   },
   {
-    "name": "PHP Serbia Conference 2018",
+    "name": "PHP Serbia Conference",
     "url": "https://conf2018.phpsrbija.rs",
     "startDate": "2018-05-26",
     "endDate": "2018-05-27",
@@ -65,7 +100,7 @@
   {
     "name": "Dutch PHP Conference",
     "url": "https://www.phpconference.nl",
-    "startDate": "2018-06-08",
+    "startDate": "2018-06-07",
     "endDate": "2018-06-09",
     "city": "Amsterdam",
     "country": "The Netherlands",
@@ -105,15 +140,24 @@
     "cfpUrl": "https://cfp.southeastphp.com"
   },
   {
+    "name": "Laracon EU",
+    "url": "https://laracon.eu/2018/",
+    "startDate": "2018-08-29",
+    "endDate": "2018-08-31",
+    "city": "Amsterdam",
+    "country": "The Netherlands",
+    "twitter": "@laraconeu",
+    "cfpEndDate": "2018-04-30",
+    "cfpUrl": "https://laracon.eu/2018/cfp/"
+  },
+  {
     "name": "Drupal Europe",
     "url": "https://www.drupaleurope.org",
     "startDate": "2018-09-10",
     "endDate": "2018-09-14",
     "city": "Darmstadt",
     "country": "Germany",
-    "twitter": "@DrupalEurope",
-    "cfpUrl": "",
-    "cfpEndDate": ""
+    "twitter": "@DrupalEurope"
   },
   {
     "name": "Northeast PHP Conference",
@@ -127,7 +171,7 @@
     "twitter": "@nephp"
   },
   {
-    "name": "Wave PHP",
+    "name": "WavePHP",
     "url": "https://www.wavephp.com",
     "startDate": "2018-09-19",
     "endDate": "2018-09-21",
