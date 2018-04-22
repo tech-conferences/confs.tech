@@ -821,5 +821,16 @@
     "city": "Berlin",
     "country": "Germany",
     "twitter": "@btconf"
+  },
+  {
+    "name": "Black Atlanta Tech Week",
+    "url": "https://atlantablacktechweek.org/",
+    "startDate": "2018-08-29",
+    "endDate": "2018-09-01",
+    "city": "Atlanta, GA",
+    "country": "U.S.A.",
+    "twitter": "@BlackTechPlanet",
+    "cfpUrl": "https://atlantablacktechweek.org/speaker-application/",
+    "cfpEndDate": null
   }
 ]
