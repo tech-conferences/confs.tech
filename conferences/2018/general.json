@@ -832,5 +832,16 @@
     "twitter": "@BlackTechPlanet",
     "cfpUrl": "https://atlantablacktechweek.org/speaker-application/",
     "cfpEndDate": null
+  },
+  {
+    "name": "Software-QS-Tag",
+    "url": "http://www.qs-tag.de/en",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-19",
+    "city": "Frankfurt",
+    "country": "Germany",
+    "twitter": "@SoftwareQSTag",
+    "cfpUrl": "http://www.qs-tag.de/en/call-for-papers/",
+    "cfpEndDate": "2018-04-25"
   }
 ]
