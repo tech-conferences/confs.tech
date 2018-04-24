@@ -11,7 +11,14 @@
     "predeploy": "npm run build"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "jsonlint",
+      "git add"
+    ]
   },
   "dependencies": {
     "@shopify/images": "^1.1.3",
@@ -75,6 +82,7 @@
     "eslint-plugin-shopify": "^17.0.0",
     "husky": "^0.14.3",
     "jest-cli": "^22.1.4",
+    "jsonlint": "^1.6.3",
     "lint-staged": "^7.0.4",
     "node-sass": "^4.5.3",
     "prettier": "^1.5.3",
