@@ -248,5 +248,16 @@
     "country": "Netherlands",
     "startDate": "2018-10-03",
     "endDate": "2018-10-05"
+  },
+  {
+    "name": "Mobile Era",
+    "url": "https://mobileera.rocks",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-02",
+    "city": "Oslo",
+    "country": "Norway",
+    "twitter": "@mobileeraconf",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeaoGqR9lG0nJeKGdms9FhkdL8zz4aQ6hNRL1mzp3vZU1fb9Q/viewform",
+    "cfpEndDate": "2018-05-17"
   }
 ]
