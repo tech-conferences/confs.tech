@@ -863,5 +863,16 @@
     "city": "Ft. Lauderdale, FL",
     "country": "U.S.A.",
     "twitter": "@middevcon"
+  },
+  {
+    "name": "Locate",
+    "url": "https://www.mapbox.com/locate",
+    "startDate": "2018-05-30",
+    "endDate": "2018-05-31",
+    "city": "San Francisco",
+    "country": "United States",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
