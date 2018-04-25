@@ -843,5 +843,16 @@
     "twitter": "@SoftwareQSTag",
     "cfpUrl": "http://www.qs-tag.de/en/call-for-papers/",
     "cfpEndDate": "2018-08-01"
+  },
+  {
+    "name": "Webkongress Erlangen",
+    "url": "https://webkongress.fau.de",
+    "startDate": "2018-09-11",
+    "endDate": "2018-09-13",
+    "city": "Erlangen",
+    "country": "Germany",
+    "twitter": "@wke",
+    "cfpUrl": "https://www.webkongress.fau.de/call-for-paper/vortrag-einreichen/",
+    "cfpEndDate": "2018-06-01"
   }
 ]
