@@ -239,7 +239,8 @@
     "startDate": "2018-08-27",
     "endDate": "2018-08-28",
     "cfpUrl": "https://sessionize.com/droidcon-nyc-2018",
-    "cfpEndDate": "2018-06-10"
+    "cfpEndDate": "2018-06-10",
+    "twitter": "@DroidconNYC"
   },
   {
     "name": "KotlinConf",
