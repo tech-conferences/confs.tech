@@ -217,5 +217,16 @@
     "twitter": "@mobileeraconf",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeaoGqR9lG0nJeKGdms9FhkdL8zz4aQ6hNRL1mzp3vZU1fb9Q/viewform",
     "cfpEndDate": "2018-05-17"
+  },
+  {
+    "name": "AppsConf",
+    "url": "http://appsconf.ru/2018",
+    "startDate": "2018-10-08",
+    "endDate": "2018-10-09",
+    "city": "Moscow",
+    "country": "Russia",
+    "twitter": "",
+    "cfpUrl": "https://onticoconferences.typeform.com/to/Rb1GCj",
+    "cfpEndDate": "2018-08-03"
   }
 ]
