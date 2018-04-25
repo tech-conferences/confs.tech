@@ -221,5 +221,16 @@
     "twitter": "@deccanrubyconf",
     "cfpUrl": "https://www.papercall.io/drc18",
     "cfpEndDate": "2018-07-01"
+  },
+  {
+    "name": "RubyConf MY",
+    "url": "http://rubyconf.my",
+    "startDate": "2018-10-25",
+    "endDate": "2018-10-26",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "twitter": null,
+    "cfpUrl": "http://rubyconf.my/call-for-proposals/",
+    "cfpEndDate": "2018-07-15"
   }
 ]
