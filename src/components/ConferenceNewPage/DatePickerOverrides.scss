@@ -18,3 +18,7 @@
   width: 2rem;
   line-height: 2rem;
 }
+
+:global(.react-datepicker__day--outside-month) {
+  color: #AAA;
+}

@@ -25,7 +25,7 @@ const defaultConference = {
   endDate: null,
   topic: 'javascript',
   cfpUrl: '',
-  cfpEndDate: '',
+  cfpEndDate: null,
   twitter: '@',
   comment: '',
 };
@@ -211,6 +211,7 @@ export default class ConferenceNewPage extends Component {
         comment,
         startDate,
         endDate,
+        cfpEndDate,
       },
     } = this.state;
     return (
@@ -337,7 +338,7 @@ export default class ConferenceNewPage extends Component {
                 <DatePicker
                   dateFormat="YYYY-MM-DD"
                   name="cfpEndDate"
-                  selected={this.state.cfpEndDate}
+                  selected={cfpEndDate}
                   onChange={this.handleDateChange.cfpEndDate}
                 />
               </div>
