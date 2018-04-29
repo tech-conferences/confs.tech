@@ -154,5 +154,16 @@
     "endDate": "2018-11-15",
     "city": "Stuttgart",
     "country": "Germany"
+  },
+  {
+    "name": "Write the Docs + Open Help Cincinnati 2018",
+    "url": "2018",
+    "startDate": "2018-08-18",
+    "endDate": "2018-08-22",
+    "city": "Cincinatti, OH",
+    "country": "USA",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
