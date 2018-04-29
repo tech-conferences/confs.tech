@@ -156,14 +156,14 @@
     "country": "Germany"
   },
   {
-    "name": "Write the Docs + Open Help Cincinnati 2018",
-    "url": "2018",
+    "name": "Write the Docs Cincinnati",
+    "url": "http://www.writethedocs.org/conf/cincinnati/2018/",
     "startDate": "2018-08-18",
     "endDate": "2018-08-22",
     "city": "Cincinatti, OH",
-    "country": "USA",
-    "twitter": null,
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "country": "U.S.A.",
+    "twitter": "@writethedocs",
+    "cfpUrl": "http://www.writethedocs.org/conf/cincinnati/2018/cfp/",
+    "cfpEndDate": "2018-06-18"
   }
 ]
