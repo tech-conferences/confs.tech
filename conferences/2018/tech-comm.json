@@ -154,5 +154,27 @@
     "endDate": "2018-11-15",
     "city": "Stuttgart",
     "country": "Germany"
+  },
+  {
+    "name": "Write the Docs Cincinnati",
+    "url": "http://www.writethedocs.org/conf/cincinnati/2018/",
+    "startDate": "2018-08-18",
+    "endDate": "2018-08-22",
+    "city": "Cincinatti, OH",
+    "country": "U.S.A.",
+    "twitter": "@writethedocs",
+    "cfpUrl": "http://www.writethedocs.org/conf/cincinnati/2018/cfp/",
+    "cfpEndDate": "2018-06-18"
+  },
+  {
+    "name": "Write the Docs Australia",
+    "url": "http://www.writethedocs.org/conf/australia/2018/",
+    "startDate": "2018-11-15",
+    "endDate": "2018-11-16",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@WriteTheDocsAU",
+    "cfpUrl": null,
+    "cfpEndDate": ""
   }
 ]
