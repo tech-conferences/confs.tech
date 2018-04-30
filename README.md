@@ -70,5 +70,6 @@ Some of the conferences have been pulled from other projects:
 - [See all Golang conferences](https://confs.tech/golang)
 - [See all Rust conferences](https://confs.tech/rust)
 - [See all Elixir conferences](https://confs.tech/elixir)
+- [See all Security conferences](https://confs.tech/security)
 - [See general conferences](https://confs.tech/general)
 
