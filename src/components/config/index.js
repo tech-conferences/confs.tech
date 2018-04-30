@@ -16,4 +16,5 @@ export const TOPICS = {
   devops: 'Dev Ops',
   'tech-comm': 'Technical communication',
   general: 'General',
+  security: 'Security',
 };
