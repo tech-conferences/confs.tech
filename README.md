@@ -4,7 +4,7 @@ Confs.tech is an open source project that lists upcoming tech conferences. Every
 
 ## Adding a conference
 
-All conferences are stored in [JSON files](https://github.com/tech-conferences/confs.tech/tree/master/conferences), sorted by topics and years. All data is open source and crowd sourced by the community. Wether added directly [from the website](https://confs.tech/conferences/new) by conference organizers or through pull requests.
+All conferences are stored in [JSON files](https://github.com/tech-conferences/confs.tech/tree/master/conferences), sorted by topics and years. All data is open source and crowd sourced by the community. Whether added directly [from the website](https://confs.tech/conferences/new) by conference organizers or through pull requests.
 
 Conference data have the following structure:
 
