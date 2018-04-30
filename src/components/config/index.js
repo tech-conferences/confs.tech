@@ -17,4 +17,5 @@ export const TOPICS = {
   'tech-comm': 'Technical communication',
   general: 'General',
   security: 'Security',
+  scala: 'Scala',
 };

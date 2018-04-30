@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Scala Days Europe",
+    "url": "https://eu.scaladays.org/",
+    "startDate": "2018-05-14",
+    "endDate": "2018-05-17",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@scaladays"
+  },
+  {
+    "name": "Lx Scala",
+    "url": "http://www.lxscala.com/",
+    "startDate": "2018-06-08",
+    "endDate": "2018-06-08",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "twitter": "@LX_Scala"
+  },
+  {
+    "name": "Scala Days North America",
+    "url": "https://na.scaladays.org/",
+    "startDate": "2018-06-19",
+    "endDate": "2018-06-21",
+    "city": "New York",
+    "country": "U.S.A.",
+    "twitter": "@scaladays"
+  }
+]
