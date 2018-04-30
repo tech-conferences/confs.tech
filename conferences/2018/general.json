@@ -871,5 +871,16 @@
     "endDate": "2018-05-31",
     "city": "San Francisco",
     "country": "U.S.A."
+  },
+  {
+    "name": "Mihael",
+    "url": "https://2018.webcampzg.org",
+    "startDate": "2018-10-05",
+    "endDate": "2018-10-06",
+    "city": "Novaki Bizovacki",
+    "country": "Croatia",
+    "twitter": "@webcampzagreb",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
