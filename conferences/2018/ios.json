@@ -228,5 +228,16 @@
     "twitter": "",
     "cfpUrl": "https://onticoconferences.typeform.com/to/Rb1GCj",
     "cfpEndDate": "2018-08-03"
+  },
+  {
+    "name": "NSSpain",
+    "url": "http://nsspain.com",
+    "startDate": "2018-09-12",
+    "endDate": "2018-09-13",
+    "city": "Logroño",
+    "country": "Spain",
+    "twitter": "@NSSpain",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
