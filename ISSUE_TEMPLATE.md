@@ -15,6 +15,7 @@ Where should it go?
 - [ ] Golang
 - [ ] Python
 - [ ] Elixir
+- [ ] Scala
 - [ ] General
 
 ```json
