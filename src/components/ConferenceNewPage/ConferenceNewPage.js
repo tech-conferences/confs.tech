@@ -55,6 +55,7 @@ export default class ConferenceNewPage extends Component {
   resetForm = () => {
     this.setState({
       submitted: false,
+      submitting: false,
       conference: defaultConference,
     });
   };
