@@ -882,5 +882,16 @@
     "twitter": "@webcampzagreb",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Commit Porto",
+    "url": "http://commitporto.com",
+    "startDate": "2018-06-30",
+    "endDate": "2018-06-30",
+    "city": "Porto",
+    "country": "Portugal",
+    "twitter": "@commitporto",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
