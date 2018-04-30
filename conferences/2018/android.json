@@ -272,5 +272,16 @@
     "twitter": "",
     "cfpUrl": "https://onticoconferences.typeform.com/to/Rb1GCj",
     "cfpEndDate": "2018-08-03"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://devfest.gdg.org.ua",
+    "startDate": "2018-10-12",
+    "endDate": "2018-10-13",
+    "city": "Lviv",
+    "country": "Ukraine",
+    "twitter": "@devfest_ukraine",
+    "cfpUrl": "https://sessionize.com/dfua",
+    "cfpEndDate": "2018-07-01"
   }
 ]
