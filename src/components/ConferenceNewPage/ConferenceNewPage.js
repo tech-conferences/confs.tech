@@ -234,7 +234,7 @@ export default class ConferenceNewPage extends Component {
           </InputGroup>
           <InputGroup>
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Conference name</label>
               <input
                 className={classNames(
                   this.hasError('name') && styles.error
