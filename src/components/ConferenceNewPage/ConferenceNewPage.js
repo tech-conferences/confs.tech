@@ -428,8 +428,8 @@ export default class ConferenceNewPage extends Component {
           <p>
             Submitting a conference will create a{' '}
             <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
-              pull requests  on github
-            </Link> that will be reviewed by our team in the shorthest delayed!
+              pull requests on GitHub
+            </Link> that will be reviewed by our team as soon as possible!
           </p>
         }
         {submitted ? this.submitted() : this.form()}
