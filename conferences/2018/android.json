@@ -283,5 +283,16 @@
     "twitter": "@devfest_ukraine",
     "cfpUrl": "https://sessionize.com/dfua",
     "cfpEndDate": "2018-07-01"
+  },
+  {
+    "name": "Ørede",
+    "url": "http://oredev.org",
+    "startDate": "2018-11-19",
+    "endDate": "2018-11-22",
+    "city": "Malmö",
+    "country": "Sweden",
+    "twitter": "@oredev",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
