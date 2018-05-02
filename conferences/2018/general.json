@@ -893,5 +893,16 @@
     "twitter": "@commitporto",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Dev Day",
+    "url": "https://devday.io",
+    "startDate": "2018-05-26",
+    "endDate": "2018-05-26",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
