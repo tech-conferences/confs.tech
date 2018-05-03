@@ -926,5 +926,16 @@
     "twitter": "@devfesttoulouse",
     "cfpUrl": "https://devfest-toulouse.cfp.io/",
     "cfpEndDate": "2018-07-01"
+  },
+  {
+    "name": "DevFest Nantes",
+    "url": "https://devfest.gdgnantes.com",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-19",
+    "city": "Nantes",
+    "country": "France",
+    "twitter": "@devfestnantes",
+    "cfpUrl": "https://cfp.gdgnantes.com/public/event/inzOQDR94h4bAaOVd7Db",
+    "cfpEndDate": "2018-06-30"
   }
 ]
