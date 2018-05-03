@@ -904,5 +904,16 @@
     "twitter": "",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "BDX I/O",
+    "url": "https://www.bdx.io",
+    "startDate": "2018-11-09",
+    "endDate": "2018-11-09",
+    "city": "Bordeaux",
+    "country": "France",
+    "twitter": "@bdxio",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
