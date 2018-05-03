@@ -915,5 +915,16 @@
     "twitter": "@bdxio",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "DevFest Toulouse",
+    "url": "https://devfesttoulouse.fr",
+    "startDate": "2018-11-08",
+    "endDate": "2018-11-08",
+    "city": "Toulouse",
+    "country": "France",
+    "twitter": "@devfesttoulouse",
+    "cfpUrl": "https://devfest-toulouse.cfp.io/",
+    "cfpEndDate": "2018-07-01"
   }
 ]
