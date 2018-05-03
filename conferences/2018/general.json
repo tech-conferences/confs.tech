@@ -937,5 +937,16 @@
     "twitter": "@devfestnantes",
     "cfpUrl": "https://cfp.gdgnantes.com/public/event/inzOQDR94h4bAaOVd7Db",
     "cfpEndDate": "2018-06-30"
+  },
+  {
+    "name": "Riviera DEV",
+    "url": "http://rivieradev.fr",
+    "startDate": "2018-05-16",
+    "endDate": "2018-05-18",
+    "city": "Sophia-Antipolis",
+    "country": "France",
+    "twitter": "@RivieraDEV",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
