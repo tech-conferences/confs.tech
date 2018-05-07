@@ -651,5 +651,16 @@
     "twitter": "@theuxconf",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "push",
+    "url": "http://push-conference.com/2018",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-19",
+    "city": "Munich",
+    "country": "Germany",
+    "twitter": "@push_conf",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
