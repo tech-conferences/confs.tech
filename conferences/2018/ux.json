@@ -662,5 +662,16 @@
     "twitter": "@push_conf",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "THAT Conference",
+    "url": "https://www.thatconference.com",
+    "startDate": "2018-08-06",
+    "endDate": "2018-08-08",
+    "city": "Wisconsin Dells",
+    "country": "U.S.A.",
+    "twitter": "@ThatConference",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
