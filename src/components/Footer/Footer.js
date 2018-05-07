@@ -18,14 +18,14 @@ export default function Footer({showCFP, togglePast, showPast}) {
         </Link>
         <Link url={getURL(showCFP)}>
           {showCFP
-            ? 'Hide Call For Papers'
-            : 'See Call For Papers'
+            ? 'Hide Call for Papers'
+            : 'See Call for Papers'
           }
         </Link>
       </p>
       <p>
         <Link url="https://github.com/tech-conferences/confs.tech/" external>
-          See on Github / contribute
+          Confs.tech on GitHub
         </Link>
       </p>
       <p>

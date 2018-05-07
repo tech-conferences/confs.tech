@@ -171,12 +171,13 @@ export default class ConferenceNewPage extends Component {
           Thank you for submitting a conference!
         </p>
         <p>
-          {"We'll revise soon and add it to the list."}
+          We will soon review it and add it to the list.
           <br />
-          You can also{' '}
+          You can find your submission and track its progress on{' '}
           <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
-            view the request on Guthub
+            GitHub
           </Link>
+          .
         </p>
         <p>
           <Link external url="https://github.com/tech-conferences/confs.tech/">
@@ -359,7 +360,7 @@ export default class ConferenceNewPage extends Component {
             {this.errorFor('twitter', 'Twitter handle is required.')}
           </InputGroup>
           <InputGroup>
-            <label htmlFor="comment">Additional comments / infos – <i>will only appear on github</i></label>
+            <label htmlFor="comment">Additional comments and info <i>(will only appear on GitHub)</i></label>
             <textarea
               type="text"
               name="comment"
@@ -379,7 +380,7 @@ export default class ConferenceNewPage extends Component {
               <br />
               If it still happens, you can&nbsp;
               <Link external url="https://github.com/tech-conferences/confs.tech/issues">
-                create an issue on our Github repo.
+                create an issue on our GitHub repo.
               </Link>
             </p>
           }
@@ -403,7 +404,7 @@ export default class ConferenceNewPage extends Component {
         </Link>
         {' – '}
         <Link external url="https://github.com/tech-conferences/confs.tech/">
-          Github repository
+          GitHub repository
         </Link>
         {' – '}
         <Link external url="https://confs.tech/">
@@ -426,10 +427,11 @@ export default class ConferenceNewPage extends Component {
         <Heading element="h1">Add a new conference</Heading>
         {!submitted &&
           <p>
-            Submitting a conference will create a{' '}
+            This will create a{' '}
             <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
               pull requests on GitHub
-            </Link> that will be reviewed by our team as soon as possible!
+            </Link>
+            . Our team will review it as soon as possible!
           </p>
         }
         {submitted ? this.submitted() : this.form()}
