@@ -95,7 +95,7 @@ class ConferencePage extends Component {
               {country ? ` in ${country}` : null}
             </h1>
             <Heading element="p">Find your next tech conference</Heading>
-            <Heading element="h2" level="sub">Open-source and crowd sourced conference website</Heading>
+            <Heading element="h2" level="sub">Open-source and crowd-sourced conference website</Heading>
           </div>
           <GithubStar />
         </header>
@@ -151,7 +151,7 @@ class ConferencePage extends Component {
 function CfpHeader({sortByCfpEndDate, sortBy}) {
   return (
     <div className={styles.CfpHeader}>
-      <Heading element="h2" level={2}>Call For Papers</Heading>
+      <Heading element="h2" level={2}>Call for Papers</Heading>
       <Link
         button
         onClick={sortByCfpEndDate}
