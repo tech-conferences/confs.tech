@@ -970,5 +970,16 @@
     "twitter": "@ThatConference",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "self.conference",
+    "url": "http://selfconference.org",
+    "startDate": "2018-08-17",
+    "endDate": "2018-08-18",
+    "city": "Detroit, MI",
+    "country": "U.S.A.",
+    "twitter": "@selfconference",
+    "cfpUrl": "http://selfconference.org/submit",
+    "cfpEndDate": "2018-05-18"
   }
 ]
