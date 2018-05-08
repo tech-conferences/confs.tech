@@ -38,7 +38,7 @@
 :global(.ais-RefinementList__itemCount) {
   border-radius: 30px;
   background-color: color(gray, lighter);
-  color: color(accent);
+  color: color(accent, dark);
   font-size: font-size(filter, itemCount);
   padding: 0 6px;
 }
