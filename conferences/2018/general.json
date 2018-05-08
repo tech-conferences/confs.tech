@@ -972,11 +972,11 @@
     "cfpEndDate": null
   },
   {
-    "name": "Self.conference",
+    "name": "self.conference",
     "url": "http://selfconference.org",
     "startDate": "2018-08-17",
     "endDate": "2018-08-18",
-    "city": "Detroit",
+    "city": "Detroit, MI",
     "country": "U.S.A.",
     "twitter": "@selfconference",
     "cfpUrl": "http://selfconference.org/submit",
