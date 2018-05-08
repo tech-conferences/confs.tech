@@ -4,7 +4,8 @@
 // stylelint-disable color-no-hex, no-indistinguishable-colors, function-max-empty-lines, value-list-max-empty-lines
 $color-palette-data: (
   accent: (
-    base: #53ACFE,
+    dark: #0a6cc6,
+    base: #0b76d8,
   ),
   accent-2: (
     base: #FFCA04,
@@ -13,8 +14,9 @@ $color-palette-data: (
     base: #4caf50,
   ),
   gray: (
+    darker: #000,
     dark: #555555,
-    base: #888888,
+    base: #777676,
     light: #CCCCCC,
     lighter: #EEEEEE,
   )
