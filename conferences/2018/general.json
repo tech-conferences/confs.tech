@@ -981,5 +981,16 @@
     "twitter": "@selfconference",
     "cfpUrl": "http://selfconference.org/submit",
     "cfpEndDate": "2018-05-18"
+  },
+  {
+    "name": "Tech in Asia Singapore 2018",
+    "url": "http://sg.techinasia.events/sg2018",
+    "startDate": "2018-05-15",
+    "endDate": "2018-05-16",
+    "city": "Singapore",
+    "country": "Singapore",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
