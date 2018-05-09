@@ -294,5 +294,16 @@
     "twitter": "@oredev",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Mobile Refresh 2018",
+    "url": "http://mrw.gdg.nz",
+    "startDate": "2018-09-07",
+    "endDate": "2018-09-07",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "twitter": "@GDGWellington",
+    "cfpUrl": "https://tinyurl.com/mrw18-call-for-papers",
+    "cfpEndDate": "2018-06-15"
   }
 ]
