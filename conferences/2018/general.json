@@ -992,5 +992,16 @@
     "twitter": null,
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Porto Tech Hub",
+    "url": "https://portotechhub.com",
+    "startDate": "2018-05-18",
+    "endDate": "2018-05-18",
+    "city": "Porto",
+    "country": "Portugal",
+    "twitter": "@PortoTechHub",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
