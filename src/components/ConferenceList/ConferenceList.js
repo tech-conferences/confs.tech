@@ -7,7 +7,7 @@ import Heading from '../Heading';
 import Divider from '../Divider';
 import Link from '../Link';
 import ConferenceItem from '../ConferenceItem';
-import styles from './ConferenceList.css';
+import styles from './ConferenceList.scss';
 
 class ConferenceList extends Component {
   renderConferences = (conferences) => {
