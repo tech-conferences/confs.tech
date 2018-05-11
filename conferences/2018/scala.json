@@ -36,5 +36,16 @@
     "twitter": "@lambda_world",
     "cfpUrl": "http://www.lambda.world/call-for-papers-2018/",
     "cfpEndDate": "2018-07-11"
+  },
+  {
+    "name": "Lambda World Seattle",
+    "url": "http://seattle.lambda.world",
+    "startDate": "2018-09-17",
+    "endDate": "2018-09-18",
+    "city": "Seattle, WA",
+    "country": "U.S.A.",
+    "twitter": "@Lambda_World",
+    "cfpUrl": "http://www.lambda.world/call-for-papers-2018/",
+    "cfpEndDate": "2018-06-04"
   }
 ]
