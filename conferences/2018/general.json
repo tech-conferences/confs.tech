@@ -1003,5 +1003,16 @@
     "twitter": "@PortoTechHub",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Tech Open Air",
+    "url": "https://toa.berlin",
+    "startDate": "2018-06-19",
+    "endDate": "2018-06-22",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@TOABerlin",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
