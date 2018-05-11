@@ -14,10 +14,20 @@
   line-height: 1.5em;
 }
 
+.dd {
+  margin-left: 0;
+}
+
 .Footer,
 .Footer a {
   font-weight: 200;
   color: color(gray);
+}
+
+.topics {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .topic {

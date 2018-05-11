@@ -24,7 +24,7 @@ export default class ConferenceItem extends PureComponent {
     } = this.props;
 
     return (
-      <div
+      <li
         className={classNames(
           styles.ConferenceItem
         )}
@@ -38,20 +38,26 @@ export default class ConferenceItem extends PureComponent {
             {name}
           </Link>
         </Heading>
-        <p className={styles.p}>
-          {`${Location(city, country)}・`}
-          <span className={styles.Date}>
-            {formatDate(startDate, endDate)}
-          </span>
-        </p>
-        <p className={classNames(styles.p, styles.Footer)}>
+        <dl>
+          <div>
+            <dt className="visuallyHidden">Location</dt>
+            <dd className={classNames(styles.p, styles.dd)}>
+              {`${Location(city, country)}`}
+            </dd>
+            <dt className="visuallyHidden">Date</dt>
+            <dd className={classNames(styles.Date, styles.dd)}>
+              {formatDate(startDate, endDate)}
+            </dd>
+          </div>
           {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
           {showCFP && <br />}
-          <Topics topics={topics} />
-          {twitter && ' – '}
-          <Twitter twitter={twitter} />
-        </p>
-      </div>
+          <div className={classNames(styles.p, styles.Footer)}>
+            <Topics topics={topics} />
+            {twitter && ' – '}
+            <Twitter twitter={twitter} />
+          </div>
+        </dl>
+      </li>
     );
   }
 }
@@ -60,9 +66,14 @@ function Twitter({twitter}) {
   if (!twitter) { return null; }
 
   return (
-    <Link url={`https://twitter.com/${twitter}`} external>
-      {twitter}
-    </Link>
+    <React.Fragment>
+      <dt className="visuallyHidden">Twitter username</dt>
+      <dd className={styles.dd}>
+        <Link url={`https://twitter.com/${twitter}`} external>
+          {twitter}
+        </Link>
+      </dd>
+    </React.Fragment>
   );
 }
 
@@ -76,13 +87,29 @@ function Location(city, country) {
 
 function Cfp({url, date}) {
   return (
-    <Link url={url} external className={styles.cfp}>
-      CFP closes {formatDate(parse(date))}
-    </Link>
+    <React.Fragment>
+      <dt className="visuallyHidden">Call for proposal</dt>
+      <dd className={styles.dd}>
+        <Link url={url} external className={styles.cfp}>
+          CFP closes {formatDate(parse(date))}
+        </Link>
+      </dd>
+    </React.Fragment>
   );
 }
 
 
 function Topics({topics}) {
-  return topics.map((topic) => `#${topic}`).join(' ');
+  const topicsList = topics.map((topic) => <li key={topic}>{topic}</li>);
+
+  return (
+    <React.Fragment>
+      <dt className="visuallyHidden">Topics</dt>
+      <dd className={styles.dd}>
+        <ul className={styles.topics}>
+          {topicsList}
+        </ul>
+      </dd>
+    </React.Fragment>
+  );
 }
