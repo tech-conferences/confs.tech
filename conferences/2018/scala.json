@@ -25,5 +25,16 @@
     "city": "New York",
     "country": "U.S.A.",
     "twitter": "@scaladays"
+  },
+  {
+    "name": "Lambda World Cádiz",
+    "url": "http://cadiz.lambda.world",
+    "startDate": "2018-10-25",
+    "endDate": "2018-10-26",
+    "city": "Cadiz",
+    "country": "Spain",
+    "twitter": "@lambda_world",
+    "cfpUrl": "http://www.lambda.world/call-for-papers-2018/",
+    "cfpEndDate": "2018-07-11"
   }
 ]
