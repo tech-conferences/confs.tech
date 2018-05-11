@@ -52,6 +52,7 @@ export default class Link extends PureComponent {
         onClick={onClick}
         onTouchStart={onClick}
         target={external ? '_blank' : null}
+        rel={external ? 'noopener' : null}
         href={url}
       >
         {this.props.children}
