@@ -16,9 +16,6 @@
 
   div {
     float: left;
-    &:nth-child(3) {
-      clear: left;
-    }
   }
   dd {
     margin-left: 0;
@@ -29,10 +26,19 @@
   display: inline-block;
   margin: 0 spacing(extra-tight);
 }
+
+.cfp {
+  clear: left;
+}
+
 .Footer,
 .Footer a {
   font-weight: 200;
   color: color(gray);
+}
+
+.topicsList {
+  clear: left;
 }
 
 .topics {

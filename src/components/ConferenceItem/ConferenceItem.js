@@ -51,9 +51,10 @@ export default class ConferenceItem extends PureComponent {
               <span aria-hidden="true">・</span>{formatDate(startDate, endDate)}
             </dd>
           </div>
-          {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
-          {showCFP && <br />}
-          <div className={styles.Footer}>
+          <div className={classNames(styles.cfp, styles.Footer)}>
+            {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
+          </div>
+          <div className={classNames(styles.topicsList, styles.Footer)}>
             <Topics topics={topics} />
           </div>
           <div className={styles.Footer}>
@@ -92,7 +93,7 @@ function Location(city, country) {
 function Cfp({url, date}) {
   return (
     <React.Fragment>
-      <dt className="visuallyHidden">Call for proposal</dt>
+      <dt className="visuallyHidden">Call for papers</dt>
       <dd>
         <Link url={url} external className={styles.cfp}>
           CFP closes {formatDate(parse(date))}
