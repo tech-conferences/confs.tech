@@ -86,19 +86,21 @@ function getMonthName(month) {
 }
 
 function Months({month, conferences, showCFP}) {
+  const months = conferences.map((conf) => {
+    return (
+      <ConferenceItem
+        {...conf}
+        key={conf.objectID}
+        showCFP={showCFP}
+      />
+    );
+  });
+
   return [
     <Heading key={month} element="h2" level={3}>
       {getMonthName(month)}
     </Heading>,
-    conferences.map((conf) => {
-      return (
-        <ConferenceItem
-          {...conf}
-          key={conf.objectID}
-          showCFP={showCFP}
-        />
-      );
-    }),
+    <ul key={month}>{months}</ul>,
   ];
 }
 
