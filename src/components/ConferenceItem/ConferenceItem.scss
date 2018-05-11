@@ -5,19 +5,30 @@
   margin-bottom: spacing(base);
 }
 
-.Date {
-  margin-right: spacing(tight);
-}
-
-.p {
+.dl {
   margin: 0;
-  line-height: 1.5em;
+  line-height: 1.5;
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  div {
+    float: left;
+    &:nth-child(3) {
+      clear: left;
+    }
+  }
+  dd {
+    margin-left: 0;
+  }
 }
 
-.dd {
-  margin-left: 0;
+.seperator {
+  display: inline-block;
+  margin: 0 spacing(extra-tight);
 }
-
 .Footer,
 .Footer a {
   font-weight: 200;
@@ -28,9 +39,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .topic {
   margin-right: spacing(extra-tight);
   vertical-align: middle;
+  &:last-child {
+    margin-right: 0;
+  }
 }

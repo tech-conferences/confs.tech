@@ -38,22 +38,25 @@ export default class ConferenceItem extends PureComponent {
             {name}
           </Link>
         </Heading>
-        <dl>
+        <dl className={styles.dl}>
           <div>
             <dt className="visuallyHidden">Location</dt>
-            <dd className={classNames(styles.p, styles.dd)}>
+            <dd>
               {`${Location(city, country)}`}
             </dd>
+          </div>
+          <div>
             <dt className="visuallyHidden">Date</dt>
-            <dd className={classNames(styles.Date, styles.dd)}>
-              {formatDate(startDate, endDate)}
+            <dd>
+              <span aria-hidden="true">・</span>{formatDate(startDate, endDate)}
             </dd>
           </div>
           {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
           {showCFP && <br />}
-          <div className={classNames(styles.p, styles.Footer)}>
+          <div className={styles.Footer}>
             <Topics topics={topics} />
-            {twitter && ' – '}
+          </div>
+          <div className={styles.Footer}>
             <Twitter twitter={twitter} />
           </div>
         </dl>
@@ -68,7 +71,8 @@ function Twitter({twitter}) {
   return (
     <React.Fragment>
       <dt className="visuallyHidden">Twitter username</dt>
-      <dd className={styles.dd}>
+      <dd>
+        <span className={styles.seperator} aria-hidden="true"> – </span>
         <Link url={`https://twitter.com/${twitter}`} external>
           {twitter}
         </Link>
@@ -89,7 +93,7 @@ function Cfp({url, date}) {
   return (
     <React.Fragment>
       <dt className="visuallyHidden">Call for proposal</dt>
-      <dd className={styles.dd}>
+      <dd>
         <Link url={url} external className={styles.cfp}>
           CFP closes {formatDate(parse(date))}
         </Link>
@@ -100,12 +104,12 @@ function Cfp({url, date}) {
 
 
 function Topics({topics}) {
-  const topicsList = topics.map((topic) => <li key={topic}>{topic}</li>);
+  const topicsList = topics.map((topic) => <li key={topic} className={styles.topic}><span aria-hidden="true">#</span>{topic}</li>);
 
   return (
     <React.Fragment>
       <dt className="visuallyHidden">Topics</dt>
-      <dd className={styles.dd}>
+      <dd>
         <ul className={styles.topics}>
           {topicsList}
         </ul>
