@@ -8,7 +8,7 @@ import {TOPICS} from '../src/components/config/index';
 const args = process.argv;
 
 const START_YEAR = 2017;
-const CURRENT_YEAR = (new Date()).getYear() + 1900;
+const CURRENT_YEAR = new Date().getFullYear();
 const conferencesJSON = {};
 
 // Remove JavaScript key

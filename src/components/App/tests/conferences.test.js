@@ -6,7 +6,7 @@ import {TOPICS} from '../../config';
 
 const BASE_DIR = '../../../../conferences';
 const START_YEAR = 2017;
-const CURRENT_YEAR = (new Date()).getYear() + 1900;
+const CURRENT_YEAR = new Date().getFullYear();
 const conferencesJSON = {};
 
 // Remove JavaScript key

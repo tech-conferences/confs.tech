@@ -21,7 +21,7 @@ import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
 import {TOPICS} from '../config';
 
-const CURRENT_YEAR = (new Date()).getYear() + 1900;
+const CURRENT_YEAR = new Date().getFullYear();
 const TODAY = Math.round(new Date().getTime() / 1000);
 const ONE_YEAR = 365 * 24 * 60 * 60;
 
