@@ -4,7 +4,7 @@ import {TOPICS} from '../config';
 import styles from './Footer.scss';
 import Link from '../Link';
 
-const CURRENT_YEAR = (new Date()).getYear() + 1900;
+const CURRENT_YEAR = new Date().getFullYear();
 export default function Footer({showCFP, togglePast, showPast}) {
   return (
     <footer className={styles.Footer}>
