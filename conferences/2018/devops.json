@@ -274,6 +274,15 @@
     "cfpEndDate": "2018-06-29"
   },
   {
+    "name": "Jazoon Techdays",
+    "url": "http://jazoon.com",
+    "startDate": "2018-09-06",
+    "endDate": "2018-09-07",
+    "city": "Bern",
+    "country": "Switzerland",
+    "twitter": "@jazoon"
+  },
+  {
     "name": "DevOpsDay - Raleigh",
     "url": "https://www.devopsdays.org/events/2018-raleigh",
     "startDate": "2018-09-10",
@@ -417,14 +426,5 @@
     "city": "Helsinki",
     "country": "Finland",
     "twitter": "@eficode"
-  },
-  {
-    "name": "Jazoon Techdays",
-    "url": "http://jazoon.com",
-    "startDate": "2018-09-06",
-    "endDate": "2018-09-07",
-    "city": "Bern",
-    "country": "Switzerland",
-    "twitter": "@jazoon"
   }
 ]

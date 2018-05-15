@@ -121,6 +121,17 @@
     "twitter": "@tMadisonRuby"
   },
   {
+    "name": "Madison+ Ruby: Chicago",
+    "url": "https://ti.to/adorable/madison-ruby-chicago/en",
+    "startDate": "2018-05-10",
+    "endDate": "2018-05-11",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "twitter": "@MadisonRuby",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "ROSS conf Amsterdam",
     "url": "https://rossconfams.eventbrite.co.uk",
     "startDate": "2018-05-11",
@@ -177,6 +188,17 @@
     "country": "Poland"
   },
   {
+    "name": "Saint P Rubyconf",
+    "url": "http://spbrubyconf.ru",
+    "startDate": "2018-06-10",
+    "endDate": "2018-06-10",
+    "city": "Saint Petersburg",
+    "country": "Russia",
+    "twitter": "@saintprug",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "Ruby Conf Kenya",
     "url": "http://rubyconf.nairuby.org/2018",
     "startDate": "2018-06-22",
@@ -223,28 +245,6 @@
     "cfpEndDate": "2018-07-01"
   },
   {
-    "name": "RubyConf MY",
-    "url": "http://rubyconf.my",
-    "startDate": "2018-10-25",
-    "endDate": "2018-10-26",
-    "city": "Kuala Lumpur",
-    "country": "Malaysia",
-    "twitter": null,
-    "cfpUrl": "http://rubyconf.my/call-for-proposals/",
-    "cfpEndDate": "2018-07-15"
-  },
-  {
-    "name": "Madison+ Ruby: Chicago",
-    "url": "https://ti.to/adorable/madison-ruby-chicago/en",
-    "startDate": "2018-05-10",
-    "endDate": "2018-05-11",
-    "city": "Chicago, IL",
-    "country": "U.S.A.",
-    "twitter": "@MadisonRuby",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
     "name": "GrillRB",
     "url": "http://grillrb.com",
     "startDate": "2018-08-11",
@@ -256,14 +256,14 @@
     "cfpEndDate": "2018-07-01"
   },
   {
-    "name": "Saint P Rubyconf",
-    "url": "http://spbrubyconf.ru",
-    "startDate": "2018-06-10",
-    "endDate": "2018-06-10",
-    "city": "Saint Petersburg",
-    "country": "Russia",
-    "twitter": "@saintprug",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "name": "RubyConf MY",
+    "url": "http://rubyconf.my",
+    "startDate": "2018-10-25",
+    "endDate": "2018-10-26",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "twitter": null,
+    "cfpUrl": "http://rubyconf.my/call-for-proposals/",
+    "cfpEndDate": "2018-07-15"
   }
 ]

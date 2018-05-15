@@ -67,6 +67,14 @@
     "country": "U.S.A."
   },
   {
+    "name": "App Builders",
+    "url": "https://www.appbuilders.ch",
+    "startDate": "2018-04-16",
+    "endDate": "2018-04-17",
+    "city": "Lugano",
+    "country": "Switzerland"
+  },
+  {
     "name": "Mobius",
     "url": "https://mobiusconf.com",
     "city": "St. Petersburg",
@@ -98,14 +106,6 @@
     "city": "Prague",
     "country": "Czechia",
     "startDate": "2018-06-15"
-  },
-  {
-    "name": "App Builders",
-    "url": "https://www.appbuilders.ch",
-    "startDate": "2018-04-16",
-    "endDate": "2018-04-17",
-    "city": "Lugano",
-    "country": "Switzerland"
   },
   {
     "name": "SwiftFest",
@@ -143,6 +143,17 @@
     "twitter": "@addconf"
   },
   {
+    "name": "/dev/world/2018",
+    "url": "http://devworld.com.au/",
+    "startDate": "2018-08-26",
+    "endDate": "2018-08-28",
+    "city": "Melbourne",
+    "country": "Australia",
+    "twitter": "@AUC_ANZ",
+    "cfpUrl": "http://devworld.com.au/#cfp",
+    "cfpEndDate": "2018-05-15"
+  },
+  {
     "name": "360|iDev",
     "url": "http://360idev.com",
     "startDate": "2018-08-26",
@@ -158,6 +169,28 @@
     "city": "Aberystwyth",
     "country": "U.K.",
     "twitter": "@IOSDEVUK"
+  },
+  {
+    "name": "NSSpain",
+    "url": "http://nsspain.com",
+    "startDate": "2018-09-12",
+    "endDate": "2018-09-13",
+    "city": "Logroño",
+    "country": "Spain",
+    "twitter": "@NSSpain",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
+    "name": "ServerSide.swift",
+    "url": "https://www.serversideswift.info",
+    "startDate": "2018-09-12",
+    "endDate": "2018-09-14",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@SwiftServerConf",
+    "cfpUrl": "https://goo.gl/forms/tQ7X5RSwf3f7CNKN2",
+    "cfpEndDate": "2018-06-15"
   },
   {
     "name": "SwiftConf",
@@ -177,48 +210,6 @@
     "twitter": "@FrenchKitConf"
   },
   {
-    "name": "Swift by Northwest",
-    "url": "https://swiftbynorthwest.com",
-    "startDate": "2018-10-18",
-    "endDate": "2018-10-20",
-    "city": "Portland, OR",
-    "country": "U.S.A.",
-    "twitter": "@SwiftxNW"
-  },
-  {
-    "name": "ServerSide.swift",
-    "url": "https://www.serversideswift.info",
-    "startDate": "2018-09-12",
-    "endDate": "2018-09-14",
-    "city": "Berlin",
-    "country": "Germany",
-    "twitter": "@SwiftServerConf",
-    "cfpUrl": "https://goo.gl/forms/tQ7X5RSwf3f7CNKN2",
-    "cfpEndDate": "2018-06-15"
-  },
-  {
-    "name": "/dev/world/2018",
-    "url": "http://devworld.com.au/",
-    "startDate": "2018-08-26",
-    "endDate": "2018-08-28",
-    "city": "Melbourne",
-    "country": "Australia",
-    "twitter": "@AUC_ANZ",
-    "cfpUrl": "http://devworld.com.au/#cfp",
-    "cfpEndDate": "2018-05-15"
-  },
-  {
-    "name": "Mobile Era",
-    "url": "https://mobileera.rocks",
-    "startDate": "2018-11-01",
-    "endDate": "2018-11-02",
-    "city": "Oslo",
-    "country": "Norway",
-    "twitter": "@mobileeraconf",
-    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeaoGqR9lG0nJeKGdms9FhkdL8zz4aQ6hNRL1mzp3vZU1fb9Q/viewform",
-    "cfpEndDate": "2018-05-17"
-  },
-  {
     "name": "AppsConf",
     "url": "http://appsconf.ru/2018",
     "startDate": "2018-10-08",
@@ -230,14 +221,23 @@
     "cfpEndDate": "2018-08-03"
   },
   {
-    "name": "NSSpain",
-    "url": "http://nsspain.com",
-    "startDate": "2018-09-12",
-    "endDate": "2018-09-13",
-    "city": "Logroño",
-    "country": "Spain",
-    "twitter": "@NSSpain",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "name": "Swift by Northwest",
+    "url": "https://swiftbynorthwest.com",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-20",
+    "city": "Portland, OR",
+    "country": "U.S.A.",
+    "twitter": "@SwiftxNW"
+  },
+  {
+    "name": "Mobile Era",
+    "url": "https://mobileera.rocks",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-02",
+    "city": "Oslo",
+    "country": "Norway",
+    "twitter": "@mobileeraconf",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeaoGqR9lG0nJeKGdms9FhkdL8zz4aQ6hNRL1mzp3vZU1fb9Q/viewform",
+    "cfpEndDate": "2018-05-17"
   }
 ]

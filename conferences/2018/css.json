@@ -1,16 +1,5 @@
 [
   {
-    "name": "Web Unleashed",
-    "url": "http://fitc.ca/event/webu18/",
-    "startDate": "2018-10-01",
-    "endDate": "2018-10-02",
-    "city": "Toronto",
-    "country": "Canada",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": "@fitc"
-  },
-  {
     "name": "CSSDay",
     "url": "http://2018.cssday.it",
     "startDate": "2018-03-16",
@@ -80,6 +69,17 @@
     "endDate": "2018-08-18",
     "city": "Buenos Aires",
     "country": "Argentina"
+  },
+  {
+    "name": "Web Unleashed",
+    "url": "http://fitc.ca/event/webu18/",
+    "startDate": "2018-10-01",
+    "endDate": "2018-10-02",
+    "city": "Toronto",
+    "country": "Canada",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@fitc"
   },
   {
     "name": "dotCSS",

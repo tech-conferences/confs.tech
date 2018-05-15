@@ -501,6 +501,17 @@
     "cfpEndDate": "2018-03-04"
   },
   {
+    "name": "THAT Conference",
+    "url": "https://www.thatconference.com",
+    "startDate": "2018-08-06",
+    "endDate": "2018-08-08",
+    "city": "Wisconsin Dells",
+    "country": "U.S.A.",
+    "twitter": "@ThatConference",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "UXWeek",
     "url": "http://uxweek.com",
     "startDate": "2018-08-21",
@@ -549,6 +560,17 @@
     "twitter": "@REFRESHRocks"
   },
   {
+    "name": "The UX Conference",
+    "url": "http://theuxconf.com",
+    "startDate": "2018-09-07",
+    "endDate": "2018-09-07",
+    "city": "London",
+    "country": "U.K.",
+    "twitter": "@theuxconf",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "UX Strat USA",
     "url": "https://uxstrat.com/usa",
     "startDate": "2018-09-18",
@@ -586,12 +608,34 @@
     "country": "Ireland"
   },
   {
+    "name": "MidwestUX",
+    "url": "https://www.2018.midwestuxconference.com/",
+    "startDate": "2018-10-11",
+    "endDate": "2018-10-13",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
+    "twitter": "@midwestux",
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "World Usability Congress",
     "url": "https://worldusabilitycongress.com",
     "startDate": "2018-10-16",
     "endDate": "2018-10-18",
     "city": "Graz",
     "country": "Austria"
+  },
+  {
+    "name": "push",
+    "url": "http://push-conference.com/2018",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-19",
+    "city": "Munich",
+    "country": "Germany",
+    "twitter": "@push_conf",
+    "cfpUrl": "",
+    "cfpEndDate": null
   },
   {
     "name": "DesignUp",
@@ -629,49 +673,5 @@
     "country": "Germany",
     "startDate": "2018-11-05",
     "endDate": "2018-11-07"
-  },
-  {
-    "name": "MidwestUX",
-    "url": "https://www.2018.midwestuxconference.com/",
-    "startDate": "2018-10-11",
-    "endDate": "2018-10-13",
-    "city": "Chicago, IL",
-    "country": "U.S.A.",
-    "twitter": "@midwestux",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "The UX Conference",
-    "url": "http://theuxconf.com",
-    "startDate": "2018-09-07",
-    "endDate": "2018-09-07",
-    "city": "London",
-    "country": "U.K.",
-    "twitter": "@theuxconf",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "push",
-    "url": "http://push-conference.com/2018",
-    "startDate": "2018-10-18",
-    "endDate": "2018-10-19",
-    "city": "Munich",
-    "country": "Germany",
-    "twitter": "@push_conf",
-    "cfpUrl": "",
-    "cfpEndDate": null
-  },
-  {
-    "name": "THAT Conference",
-    "url": "https://www.thatconference.com",
-    "startDate": "2018-08-06",
-    "endDate": "2018-08-08",
-    "city": "Wisconsin Dells",
-    "country": "U.S.A.",
-    "twitter": "@ThatConference",
-    "cfpUrl": "",
-    "cfpEndDate": null
   }
 ]

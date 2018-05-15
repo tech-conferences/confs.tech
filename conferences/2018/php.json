@@ -45,15 +45,6 @@
     "twitter": "@longhornphp"
   },
   {
-    "name": "JandBeyond",
-    "url": "https://jandbeyond.org/",
-    "startDate": "2018-05-11",
-    "endDate": "2018-05-13",
-    "city": "Cologne",
-    "country": "Germany",
-    "twitter": "@jandbeyond"
-  },
-  {
     "name": "phpDay",
     "url": "https://2018.phpday.it",
     "startDate": "2018-05-11",
@@ -61,6 +52,15 @@
     "city": "Verona",
     "country": "Italy",
     "twitter": "@phpday"
+  },
+  {
+    "name": "JandBeyond",
+    "url": "https://jandbeyond.org/",
+    "startDate": "2018-05-11",
+    "endDate": "2018-05-13",
+    "city": "Cologne",
+    "country": "Germany",
+    "twitter": "@jandbeyond"
   },
   {
     "name": "PHPCon China",
@@ -105,6 +105,17 @@
     "city": "Amsterdam",
     "country": "The Netherlands",
     "twitter": "@dpcon"
+  },
+  {
+    "name": "PHP fwdays",
+    "url": "https://fwdays.com/en/event/php-fwdays-2018",
+    "startDate": "2018-06-10",
+    "endDate": "2018-06-10",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "twitter": "@fwdays",
+    "cfpUrl": "",
+    "cfpEndDate": null
   },
   {
     "name": "Mid-Atlantic Dev Conference",
@@ -198,16 +209,5 @@
     "city": "Verona",
     "country": "Italy",
     "twitter": "@laraveldayit"
-  },
-  {
-    "name": "PHP fwdays",
-    "url": "https://fwdays.com/en/event/php-fwdays-2018",
-    "startDate": "2018-06-10",
-    "endDate": "2018-06-10",
-    "city": "Kyiv",
-    "country": "Ukraine",
-    "twitter": "@fwdays",
-    "cfpUrl": "",
-    "cfpEndDate": null
   }
 ]

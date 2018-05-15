@@ -1,36 +1,5 @@
 [
   {
-    "name": "Conference for Kotliners",
-    "url": "https://www.conferenceforkotliners.com",
-    "city": "Budapest",
-    "country": "Hungary",
-    "startDate": "2018-06-15",
-    "endDate": "2018-06-15",
-    "cfpEndDate": "2018-05-13",
-    "cfpUrl": "https://www.papercall.io/conference-for-kotliners",
-    "twitter": "@kotliners"
-  },
-  {
-    "name": "Mobile Fest",
-    "url": "http://mobilefest.com.ua/indexe.html",
-    "city": "Kiev",
-    "country": "Ukraine",
-    "startDate": "2018-06-02",
-    "endDate": "2018-06-02",
-    "cfpEndDate": "2018-04-29",
-    "cfpUrl": "http://mobilefest.com.ua/speakers_eng.html"
-  },
-  {
-    "name": "Android Enterprise Summit @ Droidcon",
-    "url": "https://www.de.droidcon.com/enterprise-summit",
-    "city": "Berlin",
-    "country": "Germany",
-    "startDate": "2018-06-25",
-    "endDate": "2018-06-27",
-    "cfpEndDate": "2018-04-30",
-    "cfpUrl": "https://sessionize.com/android-enterprise-summit"
-  },
-  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
@@ -156,6 +125,16 @@
     "startDate": "2018-05-26"
   },
   {
+    "name": "Mobile Fest",
+    "url": "http://mobilefest.com.ua/indexe.html",
+    "city": "Kiev",
+    "country": "Ukraine",
+    "startDate": "2018-06-02",
+    "endDate": "2018-06-02",
+    "cfpEndDate": "2018-04-29",
+    "cfpUrl": "http://mobilefest.com.ua/speakers_eng.html"
+  },
+  {
     "name": "MCE",
     "url": "https://2018.mceconf.com",
     "startDate": "2018-06-05",
@@ -175,6 +154,17 @@
     "cfpEndDate": "2018-04-15"
   },
   {
+    "name": "Conference for Kotliners",
+    "url": "https://www.conferenceforkotliners.com",
+    "city": "Budapest",
+    "country": "Hungary",
+    "startDate": "2018-06-15",
+    "endDate": "2018-06-15",
+    "cfpEndDate": "2018-05-13",
+    "cfpUrl": "https://www.papercall.io/conference-for-kotliners",
+    "twitter": "@kotliners"
+  },
+  {
     "name": "mDevCamp",
     "url": "https://mdevcamp.eu",
     "city": "Prague",
@@ -188,6 +178,16 @@
     "endDate": "2018-06-17",
     "city": "Lugano",
     "country": "Switzerland"
+  },
+  {
+    "name": "Android Enterprise Summit @ Droidcon",
+    "url": "https://www.de.droidcon.com/enterprise-summit",
+    "city": "Berlin",
+    "country": "Germany",
+    "startDate": "2018-06-25",
+    "endDate": "2018-06-27",
+    "cfpEndDate": "2018-04-30",
+    "cfpUrl": "https://sessionize.com/android-enterprise-summit"
   },
   {
     "name": "Droidcon Berlin",
@@ -243,6 +243,17 @@
     "twitter": "@DroidconNYC"
   },
   {
+    "name": "Mobile Refresh",
+    "url": "http://mrw.gdg.nz",
+    "startDate": "2018-09-07",
+    "endDate": "2018-09-07",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "twitter": "@GDGWellington",
+    "cfpUrl": "https://tinyurl.com/mrw18-call-for-papers",
+    "cfpEndDate": "2018-06-15"
+  },
+  {
     "name": "KotlinConf",
     "url": "https://kotlinconf.com",
     "city": "Amsterdam",
@@ -250,17 +261,6 @@
     "startDate": "2018-10-03",
     "endDate": "2018-10-05",
     "twitter": "@kotlinconf"
-  },
-  {
-    "name": "Mobile Era",
-    "url": "https://mobileera.rocks",
-    "startDate": "2018-11-01",
-    "endDate": "2018-11-02",
-    "city": "Oslo",
-    "country": "Norway",
-    "twitter": "@mobileeraconf",
-    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeaoGqR9lG0nJeKGdms9FhkdL8zz4aQ6hNRL1mzp3vZU1fb9Q/viewform",
-    "cfpEndDate": "2018-05-17"
   },
   {
     "name": "AppsConf",
@@ -285,6 +285,17 @@
     "cfpEndDate": "2018-07-01"
   },
   {
+    "name": "Mobile Era",
+    "url": "https://mobileera.rocks",
+    "startDate": "2018-11-01",
+    "endDate": "2018-11-02",
+    "city": "Oslo",
+    "country": "Norway",
+    "twitter": "@mobileeraconf",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeaoGqR9lG0nJeKGdms9FhkdL8zz4aQ6hNRL1mzp3vZU1fb9Q/viewform",
+    "cfpEndDate": "2018-05-17"
+  },
+  {
     "name": "Ørede",
     "url": "http://oredev.org",
     "startDate": "2018-11-19",
@@ -294,16 +305,5 @@
     "twitter": "@oredev",
     "cfpUrl": "",
     "cfpEndDate": null
-  },
-  {
-    "name": "Mobile Refresh",
-    "url": "http://mrw.gdg.nz",
-    "startDate": "2018-09-07",
-    "endDate": "2018-09-07",
-    "city": "Wellington",
-    "country": "New Zealand",
-    "twitter": "@GDGWellington",
-    "cfpUrl": "https://tinyurl.com/mrw18-call-for-papers",
-    "cfpEndDate": "2018-06-15"
   }
 ]
