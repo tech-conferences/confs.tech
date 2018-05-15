@@ -1,5 +1,16 @@
 [
   {
+    "name": "Web Unleashed",
+    "url": "http://fitc.ca/event/webu18/",
+    "startDate": "2018-10-01",
+    "endDate": "2018-10-02",
+    "city": "Toronto",
+    "country": "Canada",
+    "cfpUrl": "",
+    "cfpEndDate": "",
+    "twitter": "@fitc"
+  },
+  {
     "name": "Fronteers",
     "url": "https://fronteers.nl/congres/2018",
     "city": "Amsterdam",
