@@ -137,5 +137,16 @@
     "endDate": "2018-12-07",
     "city": "New York",
     "country": "U.S.A."
+  },
+  {
+    "name": " FutureWorld",
+    "url": "http://fitc.ca/event/futureworld2018",
+    "startDate": "2018-06-09",
+    "endDate": "2018-06-09",
+    "city": "Toronto",
+    "country": "Canada",
+    "twitter": "@fitc",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
