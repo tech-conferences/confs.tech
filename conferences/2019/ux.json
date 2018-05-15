@@ -1,5 +1,14 @@
 [
   {
+    "name": "FITC Amsterdam",
+    "url": "http://fitc.ca/event/am19/",
+    "startDate": "2018-02-18",
+    "endDate": "2018-02-19",
+    "city": "Amsterdam",
+    "country": "The Netherlands",
+    "twitter": "@fitc"
+  },
+  {
     "name": "FITC Toronto",
     "url": "http://fitc.ca/event/to19/",
     "startDate": "2018-04-21",
