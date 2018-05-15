@@ -135,8 +135,6 @@
     "endDate": "2018-03-14",
     "city": "Johannesburg",
     "country": "South Africa",
-    "cfpUrl": "",
-    "cfpEndDate": "",
     "twitter": "@letspixelup"
   },
   {
@@ -172,8 +170,6 @@
     "endDate": "2018-03-27",
     "city": "Bratislava",
     "country": "Slovakia",
-    "cfpUrl": "",
-    "cfpEndDate": "",
     "twitter": "@exconfba"
   },
   {
@@ -240,10 +236,7 @@
     "startDate": "2018-04-25",
     "endDate": "2018-04-27",
     "city": "New York",
-    "country": "U.S.A.",
-    "twitter": null,
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "country": "U.S.A."
   },
   {
     "name": "How Design Live",
@@ -288,9 +281,7 @@
     "endDate": "2018-05-11",
     "city": "Johannesburg",
     "country": "South Africa",
-    "twitter": "@UXSouthafrica",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@UXSouthafrica"
   },
   {
     "name": "Awwwards San Fransisco",
@@ -324,8 +315,6 @@
     "endDate": "2018-05-23",
     "city": "Minneapolis",
     "country": "U.S.A.",
-    "cfpUrl": "",
-    "cfpEndDate": "",
     "twitter": "@ConfabEvents"
   },
   {
@@ -475,8 +464,6 @@
     "endDate": "2018-06-29",
     "city": "Brighton",
     "country": "U.K.",
-    "cfpUrl": "",
-    "cfpEndDate": "",
     "twitter": "@ampersandconf"
   },
   {
@@ -507,9 +494,7 @@
     "endDate": "2018-08-08",
     "city": "Wisconsin Dells",
     "country": "U.S.A.",
-    "twitter": "@ThatConference",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@ThatConference"
   },
   {
     "name": "UXWeek",
@@ -566,9 +551,7 @@
     "endDate": "2018-09-07",
     "city": "London",
     "country": "U.K.",
-    "twitter": "@theuxconf",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@theuxconf"
   },
   {
     "name": "UX Strat USA",
@@ -595,9 +578,7 @@
     "endDate": "2018-09-27",
     "city": "Copenhagen",
     "country": "Denmark",
-    "twitter": "@designmattersdk",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@designmattersdk"
   },
   {
     "name": "UXDX",
@@ -614,9 +595,7 @@
     "endDate": "2018-10-13",
     "city": "Chicago, IL",
     "country": "U.S.A.",
-    "twitter": "@midwestux",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@midwestux"
   },
   {
     "name": "World Usability Congress",
@@ -633,9 +612,7 @@
     "endDate": "2018-10-19",
     "city": "Munich",
     "country": "Germany",
-    "twitter": "@push_conf",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@push_conf"
   },
   {
     "name": "DesignUp",
@@ -645,8 +622,7 @@
     "city": "Bangalore",
     "country": "India",
     "twitter": "@DesignUpConf",
-    "cfpUrl": "https://docs.google.com/forms/d/10TETca7YKDzFYadoL6QsEKR5H_Wb2sfDMzuiT-g12do/edit",
-    "cfpEndDate": null
+    "cfpUrl": "https://docs.google.com/forms/d/10TETca7YKDzFYadoL6QsEKR5H_Wb2sfDMzuiT-g12do/edit"
   },
   {
     "name": "Pixel Pioneers Belfast",

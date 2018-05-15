@@ -75,8 +75,6 @@
     "endDate": "2018-04-13",
     "city": "Chicago, IL",
     "country": "U.S.A.",
-    "cfpUrl": "",
-    "cfpEndDate": "",
     "twitter": "@chicagoroboto"
   },
   {
@@ -94,9 +92,7 @@
     "endDate": "2018-04-20",
     "city": "Turin",
     "country": "Italy",
-    "twitter": "@Droidconit",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@Droidconit"
   },
   {
     "name": "Android Makers",
@@ -269,7 +265,6 @@
     "endDate": "2018-10-09",
     "city": "Moscow",
     "country": "Russia",
-    "twitter": "",
     "cfpUrl": "https://onticoconferences.typeform.com/to/Rb1GCj",
     "cfpEndDate": "2018-08-03"
   },
@@ -302,8 +297,6 @@
     "endDate": "2018-11-22",
     "city": "Malmö",
     "country": "Sweden",
-    "twitter": "@oredev",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@oredev"
   }
 ]

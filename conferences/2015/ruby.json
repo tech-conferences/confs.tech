@@ -65,7 +65,6 @@
   },
   {
     "name": "Los Angeles Ruby Conference",
-    "url": "",
     "date": "October 10, 2015",
     "city": "Los Angeles",
     "country": "CA",
@@ -137,7 +136,6 @@
   },
   {
     "name": "Ruby Midwest",
-    "url": "",
     "date": "August 28-29, 2015",
     "city": "Kansas City",
     "country": "MO",
@@ -211,7 +209,6 @@
     "name": "RedDotRubyConf",
     "url": "http://www.reddotrubyconf.com",
     "date": "June 4-5, 2015",
-    "city": "",
     "country": "Singapore",
     "twitter": "https://twitter.com/reddotrubyconf"
   },
@@ -225,7 +222,6 @@
   },
   {
     "name": "RubyConf Kenya",
-    "url": "",
     "date": "May 8-9, 2015",
     "city": "Nairobi",
     "country": "Kenya",
@@ -313,7 +309,6 @@
   },
   {
     "name": "Ruby on Ales",
-    "url": "",
     "date": "March 5-6, 2015",
     "city": "Bend",
     "country": "OR",

@@ -101,9 +101,7 @@
     "endDate": "2018-07-31",
     "city": "Heraklion",
     "country": "Greece",
-    "twitter": "@agilecrete",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@agilecrete"
   },
   {
     "name": "Write the Docs Cincinnati",
@@ -173,8 +171,6 @@
     "endDate": "2018-11-16",
     "city": "Melbourne",
     "country": "Australia",
-    "twitter": "@WriteTheDocsAU",
-    "cfpUrl": null,
-    "cfpEndDate": ""
+    "twitter": "@WriteTheDocsAU"
   }
 ]

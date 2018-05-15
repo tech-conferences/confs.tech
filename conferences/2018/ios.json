@@ -7,7 +7,6 @@
     "city": "Paris",
     "country": "France",
     "cfpUrl": "https://www.dotswift.io/LT",
-    "cfpEndDate": "",
     "twitter": "@dotSwift"
   },
   {
@@ -177,9 +176,7 @@
     "endDate": "2018-09-13",
     "city": "Logroño",
     "country": "Spain",
-    "twitter": "@NSSpain",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@NSSpain"
   },
   {
     "name": "ServerSide.swift",
@@ -216,7 +213,6 @@
     "endDate": "2018-10-09",
     "city": "Moscow",
     "country": "Russia",
-    "twitter": "",
     "cfpUrl": "https://onticoconferences.typeform.com/to/Rb1GCj",
     "cfpEndDate": "2018-08-03"
   },

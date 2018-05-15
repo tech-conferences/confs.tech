@@ -91,8 +91,6 @@
     "endDate": "2018-04-12",
     "city": "Québec",
     "country": "Canada",
-    "cfpUrl": "",
-    "cfpEndDate": "",
     "twitter": "@webaquebec"
   },
   {
@@ -129,9 +127,7 @@
     "endDate": "2018-04-20",
     "city": "Paris",
     "country": "France",
-    "twitter": "@devoxxfr",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@devoxxfr"
   },
   {
     "name": "#LeadDev New York - The Lead Developer Conference",
@@ -164,9 +160,7 @@
     "endDate": "2018-05-03",
     "city": "New Orleans, LA",
     "country": "U.S.A.",
-    "twitter": "@collisionHQ",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@collisionHQ"
   },
   {
     "name": "KubeCon + CloudNativeCon",
@@ -174,10 +168,7 @@
     "startDate": "2018-05-02",
     "endDate": "2018-05-04",
     "city": "Copenhagen",
-    "country": "Denmark",
-    "twitter": null,
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "country": "Denmark"
   },
   {
     "name": "Haxe Summit",
@@ -187,7 +178,6 @@
     "city": "Seattle",
     "country": "U.S.A.",
     "twitter": "@haxesummit",
-    "cfpUrl": "",
     "cfpEndDate": "2018-03-20"
   },
   {
@@ -285,10 +275,7 @@
     "startDate": "2018-05-15",
     "endDate": "2018-05-16",
     "city": "Singapore",
-    "country": "Singapore",
-    "twitter": null,
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "country": "Singapore"
   },
   {
     "name": "Riviera DEV",
@@ -297,9 +284,7 @@
     "endDate": "2018-05-18",
     "city": "Sophia-Antipolis",
     "country": "France",
-    "twitter": "@RivieraDEV",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@RivieraDEV"
   },
   {
     "name": "WeAreDevelopers",
@@ -317,9 +302,7 @@
     "endDate": "2018-05-18",
     "city": "Porto",
     "country": "Portugal",
-    "twitter": "@PortoTechHub",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@PortoTechHub"
   },
   {
     "name": "Deconstruct",
@@ -337,8 +320,6 @@
     "endDate": "2018-05-25",
     "city": "Málaga",
     "country": "Spain",
-    "cfpUrl": "",
-    "cfpEndDate": "",
     "twitter": "@JOTB2018"
   },
   {
@@ -359,9 +340,7 @@
     "endDate": "2018-05-26",
     "city": "Anduze",
     "country": "France",
-    "twitter": "@sudweb",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@sudweb"
   },
   {
     "name": "Dev Day",
@@ -369,10 +348,7 @@
     "startDate": "2018-05-26",
     "endDate": "2018-05-26",
     "city": "Berlin",
-    "country": "Germany",
-    "twitter": "",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "country": "Germany"
   },
   {
     "name": "RigaDevDays",
@@ -381,9 +357,7 @@
     "endDate": "2018-05-31",
     "city": "Riga",
     "country": "Latvia",
-    "twitter": "@rigadevdays",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@rigadevdays"
   },
   {
     "name": "True North",
@@ -408,9 +382,7 @@
     "endDate": "2018-06-01",
     "city": "Stockholm",
     "country": "Sweden",
-    "twitter": "@DevSum_swe",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@DevSum_swe"
   },
   {
     "name": "Shift Conf",
@@ -487,9 +459,7 @@
     "endDate": "2018-06-22",
     "city": "Berlin",
     "country": "Germany",
-    "twitter": "@TOABerlin",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@TOABerlin"
   },
   {
     "name": "Devfest Lille",
@@ -520,9 +490,7 @@
     "endDate": "2018-06-24",
     "city": "Hyderabad",
     "country": "India",
-    "twitter": "@worldarvrexpo",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@worldarvrexpo"
   },
   {
     "name": "An Event Apart: Boston",
@@ -531,9 +499,7 @@
     "endDate": "2018-06-27",
     "city": "Boston, MA",
     "country": "U.S.A.",
-    "twitter": "@aneventapart",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@aneventapart"
   },
   {
     "name": "#LeadDev London - The Lead Developer Conference",
@@ -568,9 +534,7 @@
     "endDate": "2018-06-30",
     "city": "Porto",
     "country": "Portugal",
-    "twitter": "@commitporto",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@commitporto"
   },
   {
     "name": "RISE",
@@ -579,9 +543,7 @@
     "endDate": "2018-07-12",
     "city": "Hong Kong",
     "country": "Hong Kong",
-    "twitter": "@RISEConfHQ",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@RISEConfHQ"
   },
   {
     "name": "Mid-Atlantic Dev Conference",
@@ -610,7 +572,6 @@
     "endDate": "2018-07-20",
     "city": "Kingston",
     "country": "Jamaica",
-    "twitter": null,
     "cfpUrl": "https://www.papercall.io/webcraftconf",
     "cfpEndDate": "2018-04-30"
   },
@@ -621,9 +582,7 @@
     "endDate": "2018-08-01",
     "city": "Washington DC",
     "country": "U.S.A.",
-    "twitter": "@aneventapart",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@aneventapart"
   },
   {
     "name": "Web Directions Leaders",
@@ -651,9 +610,7 @@
     "endDate": "2018-08-08",
     "city": "Wisconsin Dells",
     "country": "U.S.A.",
-    "twitter": "@ThatConference",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@ThatConference"
   },
   {
     "name": "Traction",
@@ -680,10 +637,7 @@
     "startDate": "2018-08-20",
     "endDate": "2018-08-23",
     "city": "San Diego, CA",
-    "country": "U.S.A.",
-    "twitter": null,
-    "cfpUrl": "",
-    "cfpEndDate": ""
+    "country": "U.S.A."
   },
   {
     "name": "FrOSCon",
@@ -692,9 +646,7 @@
     "endDate": "2018-08-26",
     "city": "Sankt Augustin",
     "country": "Germany",
-    "twitter": "@froscon",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@froscon"
   },
   {
     "name": "An Event Apart: Chicago",
@@ -703,9 +655,7 @@
     "endDate": "2018-08-29",
     "city": "Chicago, IL",
     "country": "U.S.A.",
-    "twitter": "@aneventapart",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@aneventapart"
   },
   {
     "name": "Open Source Summit North America",
@@ -714,7 +664,6 @@
     "endDate": "2018-08-31",
     "city": "Vancouver, BC",
     "country": "Canada",
-    "twitter": null,
     "cfpUrl": "https://events.linuxfoundation.org/events/open-source-summit-north-america-2018/program/cfp/",
     "cfpEndDate": "2018-04-29"
   },
@@ -726,8 +675,7 @@
     "city": "Atlanta, GA",
     "country": "U.S.A.",
     "twitter": "@BlackTechPlanet",
-    "cfpUrl": "https://atlantablacktechweek.org/speaker-application/",
-    "cfpEndDate": null
+    "cfpUrl": "https://atlantablacktechweek.org/speaker-application/"
   },
   {
     "name": "NightlyBuild",
@@ -829,8 +777,6 @@
     "endDate": "2018-10-02",
     "city": "Toronto",
     "country": "Canada",
-    "cfpUrl": "",
-    "cfpEndDate": "",
     "twitter": "@fitc"
   },
   {
@@ -848,9 +794,7 @@
     "endDate": "2018-10-06",
     "city": "Zagreb",
     "country": "Croatia",
-    "twitter": "@webcampzagreb",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@webcampzagreb"
   },
   {
     "name": "An Event Apart: Orlando",
@@ -859,9 +803,7 @@
     "endDate": "2018-10-10",
     "city": "Orlando, FL",
     "country": "U.S.A.",
-    "twitter": "@aneventapart",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@aneventapart"
   },
   {
     "name": "PolarConf",
@@ -924,7 +866,6 @@
     "endDate": "2018-10-28",
     "city": "Edinburgh",
     "country": "U.K.",
-    "twitter": null,
     "cfpUrl": "https://events.linuxfoundation.org/events/open-source-summit-europe-2018/program/cfp/",
     "cfpEndDate": "2018-07-01"
   },
@@ -935,8 +876,6 @@
     "endDate": "2018-10-23",
     "city": "Rostock",
     "country": "Germany",
-    "cfpUrl": "",
-    "cfpEndDate": "",
     "facebook": "https://www.facebook.com/NConference"
   },
   {
@@ -1000,9 +939,7 @@
     "endDate": "2018-11-09",
     "city": "Bordeaux",
     "country": "France",
-    "twitter": "@bdxio",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@bdxio"
   },
   {
     "name": "Devternity",
@@ -1011,9 +948,7 @@
     "endDate": "2018-12-01",
     "city": "Riga",
     "country": "Latvia",
-    "twitter": "@devternity",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@devternity"
   },
   {
     "name": "An Event Apart: San Francisco",
@@ -1022,8 +957,6 @@
     "endDate": "2018-12-12",
     "city": "San Francisco, CA",
     "country": "U.S.A.",
-    "twitter": "@aneventapart",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@aneventapart"
   }
 ]

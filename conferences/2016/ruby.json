@@ -1,7 +1,6 @@
 [
   {
     "name": "RubyConf Taiwan",
-    "url": "",
     "date": "December 2-3, 2016",
     "city": "Taipei",
     "country": "Taiwan",
@@ -17,7 +16,6 @@
   },
   {
     "name": "Rail Israel",
-    "url": "",
     "date": "November 14-15, 2016",
     "city": "Tel Aviv",
     "country": "Israel",
@@ -65,7 +63,6 @@
   },
   {
     "name": "Conferencia Rails",
-    "url": "",
     "date": "October 14-15, 2016",
     "city": "Madrid",
     "country": "Spain",
@@ -169,7 +166,6 @@
   },
   {
     "name": "GrillRB",
-    "url": "",
     "date": "June 25-26, 2016",
     "city": "Wrocław",
     "country": "Poland",
@@ -179,7 +175,6 @@
     "name": "RedDotRubyConf",
     "url": "http://www.reddotrubyconf.com",
     "date": "June 23-24, 2016",
-    "city": "",
     "country": "Singapore",
     "twitter": "https://twitter.com/reddotrubyconf"
   },
@@ -187,7 +182,6 @@
     "name": "NordicRuby",
     "url": "http://www.nordicruby.org",
     "date": "June 17-19, 2016",
-    "city": "",
     "country": "Stockholm",
     "twitter": "https://twitter.com/nordicruby"
   },
@@ -265,7 +259,6 @@
   },
   {
     "name": "Ruby on Ales",
-    "url": "",
     "date": "March 31 & April 1, 2016",
     "city": "Bend",
     "country": "Oregon",

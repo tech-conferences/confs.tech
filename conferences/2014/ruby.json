@@ -97,7 +97,6 @@
   },
   {
     "name": "Golden Gate Ruby Conference",
-    "url": "",
     "date": "September 19-20, 2014",
     "city": "San Francisco",
     "country": "CA",
@@ -211,7 +210,6 @@
     "name": "RedDotRubyConf",
     "url": "http://reddotrubyconf.com",
     "date": "June 26-27, 2014",
-    "city": "",
     "country": "Singapore",
     "twitter": "https://twitter.com/reddotrubyconf"
   },
@@ -257,7 +255,6 @@
   },
   {
     "name": "RubyConf Uruguay",
-    "url": "",
     "date": "May 23-24, 2014",
     "city": "Montevideo",
     "country": "Uruguay",
@@ -337,7 +334,6 @@
   },
   {
     "name": "Ruby on Ales",
-    "url": "",
     "date": "March 6-7, 2014",
     "city": "Bend",
     "country": "OR",
@@ -345,7 +341,6 @@
   },
   {
     "name": "RubySauna",
-    "url": "",
     "date": "February 27, 2014",
     "city": "Oulu",
     "country": "Finland",
@@ -353,7 +348,6 @@
   },
   {
     "name": "Big Ruby",
-    "url": "",
     "date": "February 20-21, 2014",
     "city": "Dallas",
     "country": "TX",
@@ -369,7 +363,6 @@
   },
   {
     "name": "Los Angeles Ruby Conference",
-    "url": "",
     "date": "February 8, 2014",
     "city": "Los Angeles",
     "country": "CA",

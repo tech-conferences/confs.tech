@@ -127,9 +127,7 @@
     "endDate": "2018-05-11",
     "city": "Chicago, IL",
     "country": "U.S.A.",
-    "twitter": "@MadisonRuby",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@MadisonRuby"
   },
   {
     "name": "ROSS conf Amsterdam",
@@ -194,9 +192,7 @@
     "endDate": "2018-06-10",
     "city": "Saint Petersburg",
     "country": "Russia",
-    "twitter": "@saintprug",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "twitter": "@saintprug"
   },
   {
     "name": "Ruby Conf Kenya",
@@ -262,7 +258,6 @@
     "endDate": "2018-10-26",
     "city": "Kuala Lumpur",
     "country": "Malaysia",
-    "twitter": null,
     "cfpUrl": "http://rubyconf.my/call-for-proposals/",
     "cfpEndDate": "2018-07-15"
   }
