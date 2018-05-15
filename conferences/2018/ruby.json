@@ -254,5 +254,16 @@
     "twitter": "@grill_rb",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfZimHrS_CTL-lMJv44JYSp6df7_YtnggLqlA54ZLGGisKH2Q/viewform",
     "cfpEndDate": "2018-07-01"
+  },
+  {
+    "name": "Saint P Rubyconf",
+    "url": "http://spbrubyconf.ru",
+    "startDate": "2018-06-10",
+    "endDate": "2018-06-10",
+    "city": "Saint Petersburg",
+    "country": "Russia",
+    "twitter": "@saintprug",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
