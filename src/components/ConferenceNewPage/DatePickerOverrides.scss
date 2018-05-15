@@ -22,3 +22,7 @@
 :global(.react-datepicker__day--outside-month) {
   color: #AAA;
 }
+
+:global(.react-datepicker__day-name) {
+  width: 2rem;
+}
