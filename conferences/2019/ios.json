@@ -1,2 +1,11 @@
 [
+  {
+    "name": "FITC Toronto",
+    "url": "http://fitc.ca/event/to19/",
+    "startDate": "2018-04-21",
+    "endDate": "2018-04-23",
+    "city": "Toronto",
+    "country": "Canada",
+    "twitter": "@fitc"
+  }
 ]
