@@ -309,5 +309,16 @@
     "twitter": "",
     "cfpUrl": "https://www.papercall.io/d4dco",
     "cfpEndDate": "2018-06-30"
+  },
+  {
+    "name": "Droid Festival",
+    "url": "http://www.droidfestival.com",
+    "startDate": "2018-06-02",
+    "endDate": "2018-06-02",
+    "city": "Santiago",
+    "country": "Chile",
+    "twitter": "@DroidFestival",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
