@@ -298,5 +298,16 @@
     "city": "Malmö",
     "country": "Sweden",
     "twitter": "@oredev"
+  },
+  {
+    "name": "Droid Festival",
+    "url": "http://www.droidfestival.com",
+    "startDate": "2018-06-02",
+    "endDate": "2018-06-02",
+    "city": "Santiago",
+    "country": "Chile",
+    "twitter": "@DroidFestival",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
