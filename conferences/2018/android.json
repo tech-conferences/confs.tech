@@ -298,5 +298,16 @@
     "city": "Malmö",
     "country": "Sweden",
     "twitter": "@oredev"
+  },
+  {
+    "name": "Droids4Droids",
+    "url": "http://droids4droids.co",
+    "startDate": "2018-08-17",
+    "endDate": "2018-08-18",
+    "city": "Medellin",
+    "country": "Colombia",
+    "twitter": "",
+    "cfpUrl": "https://www.papercall.io/d4dco",
+    "cfpEndDate": "2018-06-30"
   }
 ]
