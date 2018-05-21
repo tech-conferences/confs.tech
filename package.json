@@ -81,7 +81,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-shopify": "^17.0.0",
     "husky": "^0.14.3",
-    "jest-cli": "^22.1.4",
+    "jest-cli": "^22.4.4",
     "jsonlint": "^1.6.3",
     "lint-staged": "^7.0.4",
     "node-sass": "^4.5.3",
