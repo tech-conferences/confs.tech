@@ -207,5 +207,16 @@
     "city": "Verona",
     "country": "Italy",
     "twitter": "@laraveldayit"
+  },
+  {
+    "name": "ZendCon & OpenEnterprise",
+    "url": "http://www.zendcon.com",
+    "startDate": "2018-10-15",
+    "endDate": "2018-10-17",
+    "city": "Las Vegas",
+    "country": "United States",
+    "twitter": "@zendcon",
+    "cfpUrl": "http://www.zendcon.com/cfp/",
+    "cfpEndDate": "2018-05-25"
   }
 ]
