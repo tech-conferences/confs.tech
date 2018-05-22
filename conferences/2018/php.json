@@ -218,5 +218,16 @@
     "twitter": "@zendcon",
     "cfpUrl": "http://www.zendcon.com/cfp/",
     "cfpEndDate": "2018-05-25"
+  },
+  {
+    "name": "International PHP Conference",
+    "url": "https://phpconference.com",
+    "startDate": "2018-06-04",
+    "endDate": "2018-06-08",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@phpconference",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
