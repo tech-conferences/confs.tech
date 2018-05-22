@@ -969,5 +969,16 @@
     "twitter": "@anxietytech",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Google Cloud Next",
+    "url": "https://cloud.withgoogle.com/next18/sf",
+    "startDate": "2018-07-24",
+    "endDate": "2018-07-26",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "twitter": "@googlecloud",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
