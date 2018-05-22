@@ -7,5 +7,16 @@
     "city": "Minneapolis, MN",
     "country": "U.S.A.",
     "twitter": "@railsconf"
+  },
+  {
+    "name": "RubyConf",
+    "url": "http://rubyconfindia.org",
+    "startDate": "2019-01-20",
+    "endDate": "2019-01-21",
+    "city": "Goa",
+    "country": "India",
+    "twitter": "@rubyconfindia",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
