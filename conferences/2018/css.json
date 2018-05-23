@@ -86,5 +86,16 @@
     "city": "Paris",
     "country": "France",
     "twitter": "@dotCSS"
+  },
+  {
+    "name": "Form Function & Class 9",
+    "url": "https://2018.formfunctionclass.com",
+    "startDate": "2018-08-18",
+    "endDate": "2018-08-18",
+    "city": "Taguig",
+    "country": "Philippines",
+    "twitter": "@ffcph",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
