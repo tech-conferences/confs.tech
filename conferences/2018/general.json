@@ -980,5 +980,16 @@
     "twitter": "@googlecloud",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "HackConf",
+    "url": "http://www.hackconf.bg/en",
+    "startDate": "2018-09-15",
+    "endDate": "2018-09-16",
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "twitter": "@HackConf_",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
