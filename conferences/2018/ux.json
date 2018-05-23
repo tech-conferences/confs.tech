@@ -649,5 +649,16 @@
     "country": "Germany",
     "startDate": "2018-11-05",
     "endDate": "2018-11-07"
+  },
+  {
+    "name": "FLA: UX and Digital Design Week ",
+    "url": "https://futurelondonacademy.co.uk/en/course/ux-and-digital-design",
+    "startDate": "2018-08-13",
+    "endDate": "2018-08-17",
+    "city": "London",
+    "country": "UK ",
+    "twitter": "@FutureLondonAcademy",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
