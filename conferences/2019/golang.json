@@ -1,2 +1,13 @@
 [
+  {
+    "name": "dotGo",
+    "url": "https://2019.dotgo.eu",
+    "startDate": "2019-05-25",
+    "endDate": "2019-05-25",
+    "city": "Paris",
+    "country": "France",
+    "twitter": "@dotGoEu",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfJjXZDjdvJKTKUz_HedK9oJt_sh9MN57GIm_7H0MfDnd4wOA/viewform?c=0&w=1",
+    "cfpEndDate": "2019-01-01"
+  }
 ]
