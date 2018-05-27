@@ -991,5 +991,16 @@
     "twitter": "@HackConf_",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Material 2018",
+    "url": "https://material.is",
+    "startDate": "2018-11-16",
+    "endDate": "2018-11-16",
+    "city": "Reykjavík",
+    "country": "Iceland",
+    "twitter": "",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
