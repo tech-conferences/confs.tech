@@ -649,5 +649,16 @@
     "country": "Germany",
     "startDate": "2018-11-05",
     "endDate": "2018-11-07"
+  },
+  {
+    "name": "Accessibility Club",
+    "url": "https://a11y.club",
+    "startDate": "2018-11-05",
+    "endDate": "2018-11-05",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@a11yclub",
+    "cfpUrl": "https://colloq.io/events/accessibility-club/2018/berlin/1/callforpapers",
+    "cfpEndDate": "2018-07-01"
   }
 ]
