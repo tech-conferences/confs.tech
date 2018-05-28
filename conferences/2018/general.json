@@ -1002,5 +1002,16 @@
     "twitter": "",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Web Weekend Kathmandu",
+    "url": "https://2018.wwktm.co",
+    "startDate": "2018-09-22",
+    "endDate": "2018-09-23",
+    "city": "Kathmandu",
+    "country": "Nepal",
+    "twitter": "@weekend_web",
+    "cfpUrl": "https://2018.wwktm.co/call-for-speakers.html",
+    "cfpEndDate": "2018-07-31"
   }
 ]
