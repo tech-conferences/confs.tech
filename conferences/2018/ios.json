@@ -235,5 +235,16 @@
     "twitter": "@mobileeraconf",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeaoGqR9lG0nJeKGdms9FhkdL8zz4aQ6hNRL1mzp3vZU1fb9Q/viewform",
     "cfpEndDate": "2018-05-17"
+  },
+  {
+    "name": "Swift & Fika",
+    "url": "http://www.swiftandfika.com",
+    "startDate": "2018-09-09",
+    "endDate": "2018-09-10",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "twitter": "@swiftandfika",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
