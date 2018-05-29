@@ -147,14 +147,6 @@
     "cfpEndDate": "2018-03-01"
   },
   {
-    "name": "DevOpsDay - Stockholm",
-    "url": "https://www.devopsdays.org/events/2018-stockholm",
-    "startDate": "2018-05-24",
-    "endDate": "2018-05-25",
-    "city": "Stockholm",
-    "country": "Sweden"
-  },
-  {
     "name": "DevOpsDays Stockholm",
     "url": "https://www.devopsdays.org/events/2018-stockholm/welcome",
     "startDate": "2018-05-24",
