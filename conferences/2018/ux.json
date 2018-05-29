@@ -660,5 +660,16 @@
     "twitter": "@a11yclub",
     "cfpUrl": "https://colloq.io/events/accessibility-club/2018/berlin/1/callforpapers",
     "cfpEndDate": "2018-07-01"
+  },
+  {
+    "name": "Mirror Conf",
+    "url": "https://www.mirrorconf.com",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-19",
+    "city": "Braga",
+    "country": "Portugal",
+    "twitter": "@MirrorConf",
+    "cfpUrl": "https://www.papercall.io/mirrorconf2018",
+    "cfpEndDate": "2018-07-16"
   }
 ]
