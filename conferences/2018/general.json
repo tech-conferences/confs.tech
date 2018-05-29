@@ -893,7 +893,7 @@
     "city": "Berlin",
     "country": "Germany",
     "startDate": "2018-11-05",
-    "endDate": "2018-11-07"
+    "endDate": "2018-11-08"
   },
   {
     "name": "DeveloperWeek",
@@ -902,15 +902,6 @@
     "endDate": "2018-11-08",
     "city": "Austin",
     "country": "U.S.A."
-  },
-  {
-    "name": "Beyond Tellerrand",
-    "url": "https://beyondtellerrand.com/events/berlin-2018",
-    "startDate": "2018-11-07",
-    "endDate": "2018-11-09",
-    "city": "Berlin",
-    "country": "Germany",
-    "twitter": "@btconf"
   },
   {
     "name": "DevFest Toulouse",
