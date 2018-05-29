@@ -34,10 +34,13 @@
   {
     "name": "Mobile Era",
     "url": "https://mobileera.rocks",
-    "startDate": "2017-10-06",
-    "endDate": "2017-10-07",
     "city": "Oslo",
-    "country": "Norway"
+    "country": "Norway",
+    "startDate": "2017-10-05",
+    "endDate": "2017-10-06",
+    "cfpStart": "2017-03-21",
+    "cfpEnd": "2017-05-15",
+    "cfpUrl": "https://mobileera.rocks/news/posts/c4p-time"
   },
   {
     "name": "Release Notes",
