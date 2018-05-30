@@ -429,7 +429,7 @@ export default class ConferenceNewPage extends Component {
           <p>
             This will create a{' '}
             <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
-              pull requests on GitHub
+              pull request on GitHub
             </Link>
             . Our team will review it as soon as possible!
           </p>
