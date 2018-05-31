@@ -72,5 +72,6 @@ Some of the conferences have been pulled from other projects:
 - [See all Elixir conferences](https://confs.tech/elixir)
 - [See all Security conferences](https://confs.tech/security)
 - [See all Scala conferences](https://confs.tech/scala)
+- [See all .NET conferences](https://confs.tech/dotnet)
 - [See general conferences](https://confs.tech/general)
 
