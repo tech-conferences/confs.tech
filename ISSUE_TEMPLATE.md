@@ -16,6 +16,7 @@ Where should it go?
 - [ ] Python
 - [ ] Elixir
 - [ ] Scala
+- [ ] .NET
 - [ ] General
 
 ```json
