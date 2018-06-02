@@ -995,5 +995,16 @@
     "twitter": "@weekend_web",
     "cfpUrl": "https://2018.wwktm.co/call-for-speakers.html",
     "cfpEndDate": "2018-07-31"
+  },
+  {
+    "name": "TECHinPORTO",
+    "url": "https://www.techinporto.com",
+    "startDate": "2018-06-14",
+    "endDate": "2018-06-15",
+    "city": "Porto",
+    "country": "Portugal",
+    "twitter": "@techinporto",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
