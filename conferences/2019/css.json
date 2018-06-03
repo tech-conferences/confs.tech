@@ -1,2 +1,10 @@
 [
+  {
+    "name": "CSSConf EU",
+    "url": "https://2019.cssconf.eu",
+    "startDate": "2019-05-31",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@cssconfeu"
+  }
 ]
