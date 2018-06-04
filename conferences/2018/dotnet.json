@@ -9,14 +9,12 @@
     "twitter": "@vslive"
   },
   {
-    "name": "Visual Studio Live! San Diego",
-    "url": "https://vslive.com/events/san-diego-2018/home.aspx?utm_source=AttendeeMktg&utm_medium=Client/Partner Generated&utm_campaign=Ctech",
+    "name": "Visual Studio Live!",
+    "url": "https://vslive.com/Events/San-Diego-2018/Home.aspx",
     "startDate": "2018-10-07",
     "endDate": "2018-10-11",
-    "city": "San Diego",
-    "country": "United States",
-    "twitter": "@vslive",
-    "cfpUrl": "",
-    "cfpEndDate": null
+    "city": "San Diego, CA",
+    "country": "U.S.A.",
+    "twitter": "@vslive"
   }
 ]
