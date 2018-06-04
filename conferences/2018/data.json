@@ -148,5 +148,14 @@
     "twitter": "@fitc",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "VOICE Summit",
+    "url": "https://www.voicesummit.ai",
+    "startDate": "2018-07-24",
+    "endDate": "2018-07-26",
+    "city": "Newark",
+    "country": "U.S.A.",
+    "twitter": "@https://twitter.com/VoiceSummitAI"
   }
 ]
