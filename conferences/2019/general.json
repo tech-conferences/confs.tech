@@ -33,5 +33,16 @@
     "city": "Riga",
     "country": "Latvia",
     "twitter": "@TechChill"
+  },
+  {
+    "name": "Latitude59",
+    "url": "http://www.latitude59.ee/en",
+    "startDate": "2019-05-16",
+    "endDate": "2019-05-17",
+    "city": "Tallinn",
+    "country": "Estonia",
+    "twitter": "@latitude59",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
