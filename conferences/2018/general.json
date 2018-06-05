@@ -1006,5 +1006,16 @@
     "twitter": "@techinporto",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Api Conf 2018",
+    "url": "https://2018.apiconf.it",
+    "startDate": "2018-06-21",
+    "endDate": "2018-06-21",
+    "city": "Torino",
+    "country": "Italy",
+    "twitter": "@_CloudConf_",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
