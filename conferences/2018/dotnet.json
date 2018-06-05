@@ -7,5 +7,14 @@
     "city": "Redmond, WA",
     "country": "U.S.A.",
     "twitter": "@vslive"
+  },
+  {
+    "name": "Visual Studio Live!",
+    "url": "https://vslive.com/Events/San-Diego-2018/Home.aspx",
+    "startDate": "2018-10-07",
+    "endDate": "2018-10-11",
+    "city": "San Diego, CA",
+    "country": "U.S.A.",
+    "twitter": "@vslive"
   }
 ]
