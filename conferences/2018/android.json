@@ -1,5 +1,13 @@
 [
   {
+    "name": "GDG DevFest",
+    "url": "http://devfestlevante.eu",
+    "city": "Levante",
+    "country": "Italy",
+    "startDate": "2018-08-25",
+    "endDate": "2018-09-01"
+  },
+  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
