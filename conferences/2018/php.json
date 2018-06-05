@@ -229,5 +229,16 @@
     "twitter": "@phpconference",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Symfony Day 2018",
+    "url": "https://2018.symfonyday.it",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-19",
+    "city": "Verona",
+    "country": "Italy",
+    "twitter": "@symfonydayit",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeiBTMPyCiaiz1T6OcGgyy55pQubLtT6AjhsLxqa03tI8xgtQ/viewform",
+    "cfpEndDate": "2018-06-10"
   }
 ]
