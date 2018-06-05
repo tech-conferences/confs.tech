@@ -1,6 +1,14 @@
 [
   {
     "name": "GDG DevFest",
+    "url": "https://devfest.gdglille.org",
+    "city": "Lille",
+    "country": "France",
+    "startDate": "2018-06-21",
+    "endDate": "2018-06-21"
+  },
+  {
+    "name": "GDG DevFest",
     "url": "http://devfestlevante.eu",
     "city": "Levante",
     "country": "Italy",
