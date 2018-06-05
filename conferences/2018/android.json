@@ -1,5 +1,13 @@
 [
   {
+    "name": "Devoxx",
+    "url": "http://devoxx.pl",
+    "city": "Krakow",
+    "country": "Poland",
+    "startDate": "2018-06-20",
+    "endDate": "2018-06-22"
+  },
+  {
     "name": "GDG DevFest",
     "url": "https://devfest.gdglille.org",
     "city": "Lille",
