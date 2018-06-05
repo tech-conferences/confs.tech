@@ -1,6 +1,16 @@
 [
   {
     "name": "Devoxx",
+    "url": "https://devoxx.org.ua/",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "startDate": "2018-11-23",
+    "endDate": "2018-11-24",
+    "cfpEndDate": "2018-09-03",
+    "cfpUrl": "https://dvua18.confinabox.com"
+  },
+  {
+    "name": "Devoxx",
     "url": "https://devoxx.ma",
     "city": "Casablanca",
     "country": "Morocco",
