@@ -1,6 +1,6 @@
 [
   {
-    "name": "Visual Studio Live!",
+    "name": "Visual Studio Live! Redmond",
     "url": "https://vslive.com/Events/Redmond-2018/Home.aspx",
     "startDate": "2018-08-13",
     "endDate": "2018-08-17",
@@ -9,11 +9,20 @@
     "twitter": "@vslive"
   },
   {
-    "name": "Visual Studio Live!",
+    "name": "Visual Studio Live! San Diego",
     "url": "https://vslive.com/Events/San-Diego-2018/Home.aspx",
     "startDate": "2018-10-07",
     "endDate": "2018-10-11",
     "city": "San Diego, CA",
+    "country": "U.S.A.",
+    "twitter": "@vslive"
+  },
+  {
+    "name": "Visual Studio Live! Chicago",
+    "url": "https://vslive.com/events/chicago-2018/home.aspx",
+    "startDate": "2018-09-17",
+    "endDate": "2018-09-20",
+    "city": "Chicago, IL",
     "country": "U.S.A.",
     "twitter": "@vslive"
   }
