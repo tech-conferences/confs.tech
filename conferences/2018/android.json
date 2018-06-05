@@ -1,6 +1,16 @@
 [
   {
     "name": "Devoxx",
+    "url": "https://devoxx.ma",
+    "city": "Casablanca",
+    "country": "Morocco",
+    "startDate": "2018-11-27",
+    "endDate": "2018-11-29",
+    "cfpEndDate": "2018-07-20",
+    "cfpUrl": "https://cfp.devoxx.ma"
+  },
+  {
+    "name": "Devoxx",
     "url": "http://devoxx.pl",
     "city": "Krakow",
     "country": "Poland",
