@@ -1,5 +1,59 @@
 [
   {
+    "name": "Devoxx",
+    "url": "https://devoxx.be",
+    "city": "Antwerp",
+    "country": "Belgium",
+    "startDate": "2018-11-12",
+    "endDate": "2018-11-16",
+    "cfpEndDate": "2018-09-03",
+    "cfpUrl": "https://dvua18.confinabox.com"
+  },
+  {
+    "name": "Devoxx",
+    "url": "https://devoxx.org.ua/",
+    "city": "Kyiv",
+    "country": "Ukraine",
+    "startDate": "2018-11-23",
+    "endDate": "2018-11-24",
+    "cfpEndDate": "2018-09-03",
+    "cfpUrl": "https://dvua18.confinabox.com"
+  },
+  {
+    "name": "Devoxx",
+    "url": "https://devoxx.ma",
+    "city": "Casablanca",
+    "country": "Morocco",
+    "startDate": "2018-11-27",
+    "endDate": "2018-11-29",
+    "cfpEndDate": "2018-07-20",
+    "cfpUrl": "https://cfp.devoxx.ma"
+  },
+  {
+    "name": "Devoxx",
+    "url": "http://devoxx.pl",
+    "city": "Krakow",
+    "country": "Poland",
+    "startDate": "2018-06-20",
+    "endDate": "2018-06-22"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://devfest.gdglille.org",
+    "city": "Lille",
+    "country": "France",
+    "startDate": "2018-06-21",
+    "endDate": "2018-06-21"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "http://devfestlevante.eu",
+    "city": "Levante",
+    "country": "Italy",
+    "startDate": "2018-08-25",
+    "endDate": "2018-09-01"
+  },
+  {
     "name": "DroidKaigi",
     "url": "https://droidkaigi.github.io/2018",
     "city": "Tokyo",
