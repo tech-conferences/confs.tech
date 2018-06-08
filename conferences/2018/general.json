@@ -1017,5 +1017,16 @@
     "twitter": "@_CloudConf_",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "GITPRO",
+    "url": "http://www.gitpro.org/2018",
+    "startDate": "2018-06-09",
+    "endDate": "2018-06-09",
+    "city": "San Jose",
+    "country": "CA",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
