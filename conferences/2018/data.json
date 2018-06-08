@@ -157,5 +157,16 @@
     "city": "Newark",
     "country": "U.S.A.",
     "twitter": "@https://twitter.com/VoiceSummitAI"
+  },
+  {
+    "name": "Emerging Technology Conference",
+    "url": "https://emerging.events",
+    "startDate": "2018-10-02",
+    "endDate": "2018-10-03",
+    "city": "Saint Paul",
+    "country": "United States",
+    "twitter": "@EventsEmerging",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
