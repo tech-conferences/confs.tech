@@ -107,5 +107,16 @@
     "city": "Hyderabad",
     "country": "India",
     "twitter": "@pyconindia"
+  },
+  {
+    "name": "PyCon Australia",
+    "url": "https://2018.pycon-au.org",
+    "startDate": "2018-08-24",
+    "endDate": "2018-08-28",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "@pyconau",
+    "cfpUrl": "https://2018.pycon-au.org/speak/",
+    "cfpEndDate": "2018-05-28"
   }
 ]
