@@ -8,9 +8,9 @@ export function formatDate(startDate, endDate) {
 
   if (endDate && startDate !== endDate) {
     const parsedEndDate = parse(endDate);
-    return `${format(parsedStartDate, 'MMMM, D')}${format(parsedEndDate, '-Do')}`;
+    return `${format(parsedStartDate, 'MMMM D')}${format(parsedEndDate, '-D')}`;
   } else {
-    return format(parsedStartDate, 'MMMM, Do');
+    return format(parsedStartDate, 'MMMM D');
   }
 }
 
