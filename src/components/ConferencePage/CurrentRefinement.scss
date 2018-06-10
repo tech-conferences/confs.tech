@@ -2,11 +2,21 @@
 @import '../style/foundation/colors';
 @import '../style/foundation/spacing';
 
-:global(.ais-CurrentRefinements__root) {
+:global(.ais-CurrentRefinements) {
   margin-bottom: spacing(base);
 }
 
-:global(.ais-CurrentRefinements__itemParent .ais-CurrentRefinements__item) {
+:global(.ais-CurrentRefinements-list) {
+  padding-left: 0;
+  margin: 0;
+}
+
+:global(.ais-CurrentRefinements-item) {
+  list-style: none;
+  display: inline-block;
+}
+
+:global(.ais-CurrentRefinements-list) :global(.ais-CurrentRefinements-category) {
   display: inline-block;
   margin-right: spacing(base);
   margin-bottom: spacing(tight);
@@ -18,25 +28,25 @@
   transition: all 100ms linear;
 }
 
-:global(.ais-CurrentRefinements__itemParent .ais-CurrentRefinements__item:hover) {
+:global(.ais-CurrentRefinements-list) :global(.ais-CurrentRefinements-category:hover) {
   background-color: color(gray);
   color: white;
 }
 
-:global(.ais-CurrentRefinements__itemParent) {
+:global(.ais-CurrentRefinements-list) {
   background-color: transparent;
   display: inline-block;
 }
 
-:global(.ais-CurrentRefinements__itemParent > .ais-CurrentRefinements__itemLabel) {
+:global(.ais-CurrentRefinements-label) {
   display: none;
 }
 
-:global(.ais-CurrentRefinements__itemLabel) {
+:global(.ais-CurrentRefinements-categoryLabel) {
   vertical-align: middle;
 }
 
-:global(.ais-CurrentRefinements__itemClear) {
+:global(.ais-CurrentRefinements-delete) {
   vertical-align: middle;
   appearance: none;
   margin-left: spacing(tight);
@@ -53,8 +63,7 @@
   transition: all 100ms linear;
 }
 
-:global(.ais-CurrentRefinements__itemParent .ais-CurrentRefinements__item:hover .ais-CurrentRefinements__itemClear) {
-  // background-color: color(gray);
+:global(.ais-CurrentRefinements-category:hover) :global(.ais-CurrentRefinements-delete) {
   color: color(gray);
   background-color: white;
 }

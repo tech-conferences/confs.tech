@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Favicon from 'react-favicon';
 import {Helmet} from 'react-helmet';
 import {orderBy} from 'lodash';
+import queryString from 'query-string';
 import {
   Configure,
   InstantSearch,
@@ -21,6 +22,7 @@ import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
 import {TOPICS} from '../config';
 
+const QUERY_SEPARATOR = '+';
 const CURRENT_YEAR = new Date().getFullYear();
 const TODAY = Math.round(new Date().getTime() / 1000);
 const ONE_YEAR = 365 * 24 * 60 * 60;
@@ -49,15 +51,21 @@ class ConferencePage extends Component {
     this.setState({
       refinementList: searchState.refinementList || {},
     }, () => {
+      const {match: {params}} = this.props;
       const {refinementList: {country, topics}} = this.state;
       const {history, showCFP} = this.props;
       const startURL = showCFP ? '/cfp' : '';
+      const queryParams = {
+        topics: (topics || [params.topic]).join(QUERY_SEPARATOR),
+        countries: (country || [params.country]).join(QUERY_SEPARATOR)
+      };
+
       if (topics && country) {
-        history.push(`${startURL}/${topics[0]}/${country[0]}`);
+        history.push(`${startURL}/${topics[0]}/${country[0]}?${queryString.stringify(queryParams)}`);
       } else if (topics) {
-        history.push(`${startURL}/${topics[0]}`);
+        history.push(`${startURL}/${topics[0]}?${queryString.stringify(queryParams)}`);
       } else {
-        history.push(`${startURL}/`);
+        history.push(`${startURL}/?${queryString.stringify(queryParams)}`);
       }
     });
   };
@@ -81,6 +89,9 @@ class ConferencePage extends Component {
   render() {
     const {showPast, sortBy, hitsPerPage} = this.state;
     const {showCFP, match: {params: {topic, country}}} = this.props;
+    const queryParams = queryString.parse(location.search);
+    const topics = (queryParams.topics && queryParams.topics.split(QUERY_SEPARATOR) || topic && [topic] || []);
+    const countries = (queryParams.countries && queryParams.countries.split(QUERY_SEPARATOR) || country && [country] || []);
 
     return (
       <div>
@@ -111,18 +122,18 @@ class ConferencePage extends Component {
             filters={this.algoliaFilter()}
           />
           <RefinementList
-            limitMin={20}
-            attributeName="topics"
-            defaultRefinement={topic ? [topic] : []}
+            limit={20}
+            attribute="topics"
+            defaultRefinement={topics}
             transformItems={transformTopicRefinements}
           />
           <RefinementList
-            limitMin={9}
-            limitMax={100}
+            showMoreLimit={9}
+            limit={100}
             showMore
-            attributeName="country"
+            attribute="country"
             transformItems={transformCountryRefinements}
-            defaultRefinement={country ? [country] : []}
+            defaultRefinement={countries}
           />
 
           <CurrentRefinements
@@ -178,7 +189,7 @@ function transformCountryRefinements(items) {
 }
 
 function transformCurrentRefinements(items) {
-  if (items.length && items[0].attributeName === 'topics') {
+  if (items.length && items[0].attribute === 'topics') {
     items[0].items.map((item) => {
       item.label = TOPICS[item.label] || item.label;
       return item;
