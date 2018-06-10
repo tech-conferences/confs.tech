@@ -129,8 +129,8 @@ class ConferencePage extends Component {
             transformItems={transformTopicRefinements}
           />
           <RefinementList
-            showMoreLimit={9}
-            limit={100}
+            showMoreLimit={100}
+            limit={9}
             showMore
             attribute="country"
             transformItems={transformCountryRefinements}
