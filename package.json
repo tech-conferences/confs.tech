@@ -55,7 +55,7 @@
     "postcss-loader": "2.0.6",
     "prettier": "^1.5.3",
     "promise": "8.0.1",
-    "query-string": "^6.1.0",
+    "qs": "^6.5.2",
     "react": "^16.2.0",
     "react-datepicker": "^1.2.1",
     "react-dev-utils": "^3.1.0",

@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 import Favicon from 'react-favicon';
 import {Helmet} from 'react-helmet';
 import {orderBy} from 'lodash';
-import queryString from 'query-string';
+import qs from 'qs';
+
 import {
   Configure,
   InstantSearch,
@@ -61,11 +62,11 @@ class ConferencePage extends Component {
       };
 
       if (topics && country) {
-        history.push(`${startURL}/${topics[0]}/${country[0]}?${queryString.stringify(queryParams)}`);
+        history.push(`${startURL}/${topics[0]}/${country[0]}?${qs.stringify(queryParams)}`);
       } else if (topics) {
-        history.push(`${startURL}/${topics[0]}?${queryString.stringify(queryParams)}`);
+        history.push(`${startURL}/${topics[0]}?${qs.stringify(queryParams)}`);
       } else {
-        history.push(`${startURL}/?${queryString.stringify(queryParams)}`);
+        history.push(`${startURL}/?${qs.stringify(queryParams)}`);
       }
     });
   };
@@ -89,7 +90,7 @@ class ConferencePage extends Component {
   render() {
     const {showPast, sortBy, hitsPerPage} = this.state;
     const {showCFP, match: {params: {topic, country}}} = this.props;
-    const queryParams = queryString.parse(location.search);
+    const queryParams = qs.parse(location.search.replace('?', ''));
     const topics = (queryParams.topics && queryParams.topics.split(QUERY_SEPARATOR) || topic && [topic] || []);
     const countries = (queryParams.countries && queryParams.countries.split(QUERY_SEPARATOR) || country && [country] || []);
 
