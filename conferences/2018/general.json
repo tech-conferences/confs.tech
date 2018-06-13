@@ -1017,5 +1017,16 @@
     "twitter": "@_CloudConf_",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Code Climate Summit",
+    "url": "https://codeclimate.com/summit",
+    "startDate": "2018-07-18",
+    "endDate": "2018-07-18",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "twitter": "@codeclimate",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
