@@ -25,5 +25,16 @@
     "city": "Chicago, IL",
     "country": "U.S.A.",
     "twitter": "@vslive"
+  },
+  {
+    "name": "NDC Sydney",
+    "url": "https://ndcsydney.com",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-21",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "@ndc_conferences",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
