@@ -86,5 +86,16 @@
     "city": "Paris",
     "country": "France",
     "twitter": "@dotCSS"
+  },
+  {
+    "name": "Refresh Conference",
+    "url": "https://refreshconference.nl",
+    "startDate": "2018-10-26",
+    "endDate": "2018-10-26",
+    "city": "Groningen",
+    "country": "The Netherlands",
+    "twitter": "@refreshcon",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
