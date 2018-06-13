@@ -418,5 +418,16 @@
     "city": "Helsinki",
     "country": "Finland",
     "twitter": "@eficode"
+  },
+  {
+    "name": "ContainerDay",
+    "url": "https://2018.containerday.it",
+    "startDate": "2018-10-25",
+    "endDate": "2018-10-26",
+    "city": "Verona",
+    "country": "Italy",
+    "twitter": "@ContainerDayIt",
+    "cfpUrl": "https://goo.gl/forms/yuEjoOWzLb5x04bQ2",
+    "cfpEndDate": "2018-08-31"
   }
 ]
