@@ -1,5 +1,14 @@
 [
   {
+    "name": "NDC Sydney",
+    "url": "https://ndcsydney.com",
+    "startDate": "2018-09-19",
+    "endDate": "2018-09-21",
+    "city": "Sydney",
+    "country": "Australia",
+    "twitter": "@ndc_conferences"
+  },
+  {
     "name": "CodeMash",
     "url": "https://www.codemash.org",
     "city": "Sandusky, OH",
