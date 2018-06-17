@@ -25,5 +25,13 @@
     "city": "Chicago, IL",
     "country": "U.S.A.",
     "twitter": "@vslive"
+  },
+  {
+    "name": "AngleBrackets",
+    "url": "https://anglebrackets.org",
+    "startDate": "2018-12-03",
+    "endDate": "2018-12-06",
+    "city": "Las Vegas, NV",
+    "country": "U.S.A."
   }
 ]
