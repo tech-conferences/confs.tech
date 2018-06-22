@@ -1048,5 +1048,16 @@
     "twitter": "@REdeployConf",
     "cfpUrl": "https://re-deploy.io/cfp/",
     "cfpEndDate": "2018-06-30"
+  },
+  {
+    "name": "Seattle CodeCamp",
+    "url": "https://seattle.codecamp.us",
+    "startDate": "2018-09-15",
+    "endDate": "2018-09-15",
+    "city": "Seattle, WA",
+    "country": "U.S.A.",
+    "twitter": null,
+    "cfpUrl": "https://sessionize.com/seattle-codecamp-2018/",
+    "cfpEndDate": "2018-07-31"
   }
 ]
