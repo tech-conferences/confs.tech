@@ -672,5 +672,16 @@
     "twitter": "@MirrorConf",
     "cfpUrl": "https://www.papercall.io/mirrorconf2018",
     "cfpEndDate": "2018-07-16"
+  },
+  {
+    "name": "Mirror Conf",
+    "url": "https://mirrorconf.com",
+    "startDate": "2018-10-15",
+    "endDate": "2018-10-19",
+    "city": "Braga",
+    "country": "Portugal",
+    "twitter": "@mirrorconf",
+    "cfpUrl": "https://www.papercall.io/mirrorconf2018",
+    "cfpEndDate": "2018-07-16"
   }
 ]
