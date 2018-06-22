@@ -1059,5 +1059,16 @@
     "twitter": null,
     "cfpUrl": "https://sessionize.com/seattle-codecamp-2018/",
     "cfpEndDate": "2018-07-31"
+  },
+  {
+    "name": "Mirror Conf 2018",
+    "url": "https://mirrorconf.com",
+    "startDate": "2018-10-15",
+    "endDate": "2018-10-19",
+    "city": "Braga",
+    "country": "Portugal",
+    "twitter": "@mirrorconf",
+    "cfpUrl": "https://www.papercall.io/mirrorconf2018",
+    "cfpEndDate": "2018-07-16"
   }
 ]
