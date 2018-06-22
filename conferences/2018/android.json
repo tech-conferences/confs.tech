@@ -94,7 +94,7 @@
     "country": "Netherlands"
   },
   {
-    "name": "Droidcon Boston",
+    "name": "droidcon Boston",
     "url": "http://www.droidcon-boston.com",
     "city": "Boston, MA",
     "country": "U.S.A.",
@@ -113,7 +113,7 @@
     "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers"
   },
   {
-    "name": "Droidcon",
+    "name": "droidcon Singapore",
     "url": "https://www.droidcon.sg",
     "startDate": "2018-04-05",
     "endDate": "2018-04-05",
@@ -140,7 +140,7 @@
     "endDate": "2018-04-17"
   },
   {
-    "name": "Droidcon Italy 2018 - Conference ",
+    "name": "droidcon Italy",
     "url": "http://it.droidcon.com/2018",
     "startDate": "2018-04-19",
     "endDate": "2018-04-20",
@@ -194,7 +194,7 @@
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLScCS83nXfBFKyieKKWCCKL_YJTleXmCTuMsdQ802DE-x_TsjA/viewform"
   },
   {
-    "name": "Droidcon",
+    "name": "droidcon Vienna",
     "url": "https://droidcon.at/",
     "city": "Vienna",
     "country": "Austria",
@@ -240,7 +240,7 @@
     "cfpUrl": "https://sessionize.com/android-enterprise-summit"
   },
   {
-    "name": "Droidcon Berlin",
+    "name": "droidcon Berlin",
     "url": "https://www.de.droidcon.com",
     "city": "Berlin",
     "country": "Germany",
