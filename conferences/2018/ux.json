@@ -22,7 +22,8 @@
     "startDate": "2018-02-07",
     "endDate": "2018-02-08",
     "city": "London",
-    "country": "U.K."
+    "country": "U.K.",
+    "twitter": "@smashingconf"
   },
   {
     "name": "Awwwards Berlin",
@@ -448,7 +449,8 @@
     "startDate": "2018-06-26",
     "endDate": "2018-06-27",
     "city": "Tonronto",
-    "country": "Canada"
+    "country": "Canada",
+    "twitter": "@smashingconf"
   },
   {
     "name": "UXPA",
