@@ -771,6 +771,15 @@
     "twitter": "@webaudioconf"
   },
   {
+    "name": "DevConf",
+    "url": "http://devconf.pl/",
+    "startDate": "2018-09-27",
+    "endDate": "2018-09-28",
+    "city": "Kraków",
+    "country": "Poland",
+    "twitter": "@devconfpl"
+  },
+  {
     "name": "Web Unleashed",
     "url": "http://fitc.ca/event/webu18/",
     "startDate": "2018-10-01",
