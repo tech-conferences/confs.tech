@@ -251,5 +251,16 @@
     "twitter": "@laravelconftw",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "PHPConf.Asia",
+    "url": "https://2018.phpconf.asia",
+    "startDate": "2018-09-27",
+    "endDate": "2018-09-28",
+    "city": "Singapore",
+    "country": "Singapore",
+    "twitter": "@phpconfasia",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
