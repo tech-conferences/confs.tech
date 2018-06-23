@@ -1068,5 +1068,16 @@
     "endDate": "2018-11-16",
     "city": "Vilnius",
     "country": "Lithuania"
+  },
+  {
+    "name": "Silicon Valley Code Camp",
+    "url": "https://www.siliconvalley-codecamp.com",
+    "startDate": "2018-10-13",
+    "endDate": "2018-10-14",
+    "city": "San Jose, CA",
+    "country": "U.S.A.",
+    "twitter": "@sv_code_camp",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
