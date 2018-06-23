@@ -1068,5 +1068,13 @@
     "twitter": null,
     "cfpUrl": "https://sessionize.com/seattle-codecamp-2018/",
     "cfpEndDate": "2018-07-31"
+  },
+  {
+    "name": "Build Stuff",
+    "url": "https://www.buildstuff.lt/",
+    "startDate": "2018-11-14",
+    "endDate": "2018-11-16",
+    "city": "Vilnius",
+    "country": "Lithuania"
   }
 ]
