@@ -253,6 +253,17 @@
     "cfpEndDate": null
   },
   {
+    "name": "Dot All Conf",
+    "url": "http://dotall.com/2018",
+    "startDate": "2018-09-26",
+    "endDate": "2018-09-28",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
+  },
+  {
     "name": "PHPConf.Asia",
     "url": "https://2018.phpconf.asia",
     "startDate": "2018-09-27",
