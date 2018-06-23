@@ -240,5 +240,16 @@
     "twitter": "@symfonydayit",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeiBTMPyCiaiz1T6OcGgyy55pQubLtT6AjhsLxqa03tI8xgtQ/viewform",
     "cfpEndDate": "2018-06-10"
+  },
+  {
+    "name": "LaravelConf Taiwan",
+    "url": "https://laravelconf.tw/en",
+    "startDate": "2018-07-08",
+    "endDate": "2018-07-08",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "twitter": "@laravelconftw",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
