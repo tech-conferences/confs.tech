@@ -57,5 +57,16 @@
     "endDate": "2018-12-06",
     "city": "Las Vegas, NV",
     "country": "U.S.A."
+  },
+  {
+    "name": "DotNext Moscow",
+    "url": "https://dotnext-moscow.ru",
+    "startDate": "2018-11-22",
+    "endDate": "2018-11-23",
+    "city": "Moscow",
+    "country": "Russia",
+    "twitter": "@DotNextConf",
+    "cfpUrl": "https://dotnext-moscow.ru/callforpapers/",
+    "cfpEndDate": "2018-09-10"
   }
 ]
