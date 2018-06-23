@@ -429,5 +429,16 @@
     "twitter": "@ContainerDayIt",
     "cfpUrl": "https://goo.gl/forms/yuEjoOWzLb5x04bQ2",
     "cfpEndDate": "2018-08-31"
+  },
+  {
+    "name": "HashiConf",
+    "url": "https://www.hashiconf.com",
+    "startDate": "2018-10-22",
+    "endDate": "2018-10-24",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
+    "twitter": null,
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
