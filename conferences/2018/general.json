@@ -1079,5 +1079,16 @@
     "twitter": "@sv_code_camp",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Digital PM Summit",
+    "url": "https://bureauofdigital.com/event/digital-pm-summit-2018",
+    "startDate": "2018-09-04",
+    "endDate": "2018-09-06",
+    "city": "Memphis",
+    "country": "United Statues",
+    "twitter": "@digitalPMsummit",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
