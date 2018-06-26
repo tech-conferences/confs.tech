@@ -440,5 +440,16 @@
     "twitter": null,
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Functions",
+    "url": "https://functions.events/2018/toronto",
+    "startDate": "2018-09-28",
+    "endDate": "2018-09-28",
+    "city": "Toronto, ON",
+    "country": "Canada",
+    "twitter": "@FunctionsConf",
+    "cfpUrl": "https://www.papercall.io/serverless-to-2018",
+    "cfpEndDate": "2018-07-31"
   }
 ]
