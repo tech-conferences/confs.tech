@@ -1079,5 +1079,16 @@
     "twitter": "@sv_code_camp",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Codemotion Milano 2018",
+    "url": "https://milan2018.codemotionworld.com",
+    "startDate": "2018-11-29",
+    "endDate": "2018-11-30",
+    "city": "Milan",
+    "country": "Italy",
+    "twitter": "@codemotionIT",
+    "cfpUrl": "https://milan2018.codemotionworld.com/call-for-papers-guidelines/",
+    "cfpEndDate": "2018-07-03"
   }
 ]
