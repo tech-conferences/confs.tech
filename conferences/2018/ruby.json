@@ -185,9 +185,10 @@
     "twitter": "@saintprug"
   },
   {
-    "name": "Ruby Conf Kenya",
+    "name": "RubyConf Kenya",
     "url": "http://rubyconf.nairuby.org/2018",
-    "startDate": "2018-06-22",
+    "startDate": "2018-06-28",
+    "endDate": "2018-06-28",
     "city": "Nairobi",
     "country": "Kenya",
     "twitter": "@nairubyke"
