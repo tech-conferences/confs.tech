@@ -521,7 +521,8 @@
   {
     "name": "EuroIA",
     "url": "http://www.euroia.org/",
-    "startDate": "2018-09",
+    "startDate": "2018-09-27",
+    "endDate": "2018-09-29",
     "city": "Dublin",
     "country": "Ireland",
     "cfpUrl": "http://euroia.org/submissions",
