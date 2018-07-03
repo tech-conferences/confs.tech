@@ -1090,5 +1090,16 @@
     "twitter": "@codemotionIT",
     "cfpUrl": "https://milan2018.codemotionworld.com/call-for-papers-guidelines/",
     "cfpEndDate": "2018-07-03"
+  },
+  {
+    "name": "re:develop",
+    "url": "https://redevelop.io",
+    "startDate": "2018-10-12",
+    "endDate": "2018-10-12",
+    "city": "Bournemouth",
+    "country": "United Kingdom",
+    "twitter": "@redevelopconf",
+    "cfpUrl": "https://redevelop.io/cfp",
+    "cfpEndDate": "2018-07-31"
   }
 ]
