@@ -374,5 +374,16 @@
     "twitter": "@DroidFestival",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Mobiconf",
+    "url": "http://2018.mobiconf.org",
+    "startDate": "2018-10-04",
+    "endDate": "2018-10-05",
+    "city": "Krakow",
+    "country": "Poland",
+    "twitter": "@mobiconf",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
