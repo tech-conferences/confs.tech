@@ -2,6 +2,7 @@ export const CURRENT_YEAR = (new Date()).getFullYear() - 1;
 
 export const TOPICS = {
   javascript: 'JavaScript',
+  graphql: 'GraphQL',
   css: 'CSS',
   ux: 'Design / UX',
   ruby: 'Ruby',

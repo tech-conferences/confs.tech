@@ -1,0 +1,29 @@
+[
+  {
+    "name": "GraphQL Finland",
+    "url": "https://graphql-finland.fi",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-19",
+    "city": "Helsinki",
+    "country": "Finland",
+    "twitter": "@GraphQLFinland"
+  },
+  {
+    "name": "GraphQL Europe",
+    "url": "https://graphql-europe.org",
+    "startDate": "2018-06-15",
+    "endDate": "2018-06-15",
+    "city": "Berlin",
+    "country": "Germany"
+  },
+  {
+    "name": "GraphQL Summit",
+    "url": "https://summit.graphql.com/",
+    "startDate": "2018-11-07",
+    "endDate": "2018-11-08",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "cfpEndDate": "2018-07-15",
+    "cfpUrl": "https://www.papercall.io/graphql-summit"
+  }
+]

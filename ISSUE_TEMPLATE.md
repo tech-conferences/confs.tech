@@ -17,6 +17,7 @@ Where should it go?
 - [ ] Elixir
 - [ ] Scala
 - [ ] .NET
+- [ ] GraphQL
 - [ ] General
 
 ```json
