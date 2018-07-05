@@ -168,5 +168,16 @@
     "twitter": "@EventsEmerging",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "GraphQL Finland",
+    "url": "https://graphql-finland.fi",
+    "startDate": "2018-10-18",
+    "endDate": "2018-10-19",
+    "city": "Helsinki",
+    "country": "Finland",
+    "twitter": "@GraphQLFinland",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
