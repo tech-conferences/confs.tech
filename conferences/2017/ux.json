@@ -9,8 +9,8 @@
   {
     "name": "Interaction 17",
     "url": "http://interaction17.ixda.org",
-    "date": "Feb 4-8",
     "startDate": "2017-02-04",
+    "endDate": "2017-02-08",
     "city": "New York City",
     "country": "U.S.A."
   },
@@ -38,32 +38,32 @@
   {
     "name": "IA Summit ",
     "url": "http://www.iasummit.org",
-    "date": "March 22-26",
     "startDate": "2017-03-22",
+    "endDate": "2017-03-26",
     "city": "Vancouver",
     "country": "Canada"
   },
   {
     "name": "Intelligent Content",
     "url": "http://www.intelligentcontentconference.com",
-    "date": "Mar 28-30",
-    "startDate": "2017-03-23",
+    "startDate": "2017-03-28",
+    "endDate": "2017-03-30",
     "city": "Las Vegas",
     "country": "U.S.A."
   },
   {
     "name": "ConveyUX",
     "url": "http://conveyux.com",
-    "date": "Feb28-March2",
-    "startDate": "2017-03-28",
+    "startDate": "2017-02-28",
+    "endDate": "2017-03-02",
     "city": "Seattle",
     "country": "U.S.A."
   },
   {
     "name": "Customer Experience Conf",
     "url": "https://www.conference-board.org/conferences/conferencedetail.cfm?conferenceid=2774",
-    "date": "March 23–24",
-    "startDate": "2017-03-28",
+    "startDate": "2017-03-23",
+    "endDate": "2017-03-24",
     "city": "New York City",
     "country": "U.S.A."
   },
@@ -77,24 +77,24 @@
   {
     "name": "WAQ",
     "url": "https://webaquebec.org",
-    "date": "April 4-6",
     "startDate": "2017-04-04",
+    "endDate": "2017-04-06",
     "city": "Quebec",
     "country": "Canada"
   },
   {
     "name": "How To Create Products Customers Love",
     "url": "http://svpg.com/how-to-create-products-customers-love-2",
-    "date": "April 11–12",
     "startDate": "2017-04-11",
+    "endDate": "2017-04-12",
     "city": "Quebec City",
     "country": "Canada"
   },
   {
     "name": "Unite",
     "url": "https://unite.shopify.com",
-    "date": "April 20–21",
     "startDate": "2017-04-20",
+    "endDate": "2017-04-21",
     "city": "San Fransisco",
     "country": "U.S.A."
   },
@@ -122,8 +122,8 @@
   {
     "name": "Write the Docs",
     "url": "http://www.writethedocs.org",
-    "date": "May 14-16",
     "startDate": "2017-05-14",
+    "endDate": "2017-05-16",
     "city": "San Fransisco",
     "country": "U.S.A."
   },
@@ -178,24 +178,24 @@
   {
     "name": "UXPA",
     "url": "http://uxpa.github.io",
-    "date": "June 5 - 8",
     "startDate": "2017-06-05",
+    "endDate": "2017-06-08",
     "city": "St John's, NL",
     "country": "Canada"
   },
   {
     "name": "Confab Central",
     "url": "http://confabevents.com",
-    "date": "June 7-9 ",
     "startDate": "2017-06-07",
+    "endDate": "2017-06-09",
     "city": "Minneapolis",
     "country": "Minneapolis"
   },
   {
     "name": "Enterprise UX",
     "url": "http://promo.rosenfeldmedia.com/euxsignup2017",
-    "date": "June 7-9 ",
     "startDate": "2017-06-07",
+    "endDate": "2017-06-09",
     "city": "San Fransisco",
     "country": "U.S.A."
   },
@@ -210,8 +210,8 @@
   {
     "name": "Collective",
     "url": "http://collectiveconf.com",
-    "date": "June 8–10",
     "startDate": "2017-06-08",
+    "endDate": "2017-06-10",
     "city": "Atlanta",
     "country": "U.S.A."
   },
@@ -225,24 +225,24 @@
   {
     "name": "UX Strat",
     "url": "http://www.uxstrat.com/europe",
-    "date": "June 15-18",
     "startDate": "2017-06-15",
+    "endDate": "2017-06-18",
     "city": "Amsterdam",
     "country": "Netherlands"
   },
   {
     "name": "UXcamp Europe",
     "url": "http://www.uxcampeurope.org",
-    "date": "June 25-26",
     "startDate": "2017-06-25",
+    "endDate": "2017-06-26",
     "city": "Berlin",
     "country": "Germany"
   },
   {
     "name": "Eyeo",
     "url": "http://eyeofestival.com",
-    "date": "June 26-29",
     "startDate": "2017-06-26",
+    "endDate": "2017-06-29",
     "city": "Minneapolis",
     "country": "U.S.A."
   },
@@ -256,8 +256,8 @@
   {
     "name": "Design and Content Conf",
     "url": "https://designcontentconf.com",
-    "date": "July 17-19",
     "startDate": "2017-07-17",
+    "endDate": "2017-07-19",
     "city": "Vancouver",
     "country": "Vancouver"
   },
@@ -273,8 +273,8 @@
   {
     "name": "MobileHCI",
     "url": "http://mobilehci.acm.org/2017",
-    "date": "Sept 4-7",
     "startDate": "2017-09-04",
+    "endDate": "2017-09-07",
     "city": "Vienna",
     "country": "Austria"
   },
@@ -298,8 +298,8 @@
   {
     "name": "MOBX (Mobile UX)",
     "url": "https://2017.mobxcon.com",
-    "date": "Sept 7-8",
     "startDate": "2017-09-07",
+    "endDate": "2017-09-08",
     "city": "Berlin",
     "country": "Germany"
   },
@@ -313,8 +313,8 @@
   {
     "name": "Brand New Conference",
     "url": "http://www.underconsideration.com/brandnewconference",
-    "date": "Sept 14-15",
     "startDate": "2017-09-14",
+    "endDate": "2017-09-15",
     "city": "Chicago",
     "country": "U.S.A."
   },
@@ -330,8 +330,8 @@
   {
     "name": "UX Strat USA",
     "url": "http://www.uxstrat.com/usa",
-    "date": "Sept 18-20",
     "startDate": "2017-09-18",
+    "endDate": "2017-09-20",
     "city": "Boulder, CO",
     "country": "U.S.A."
   },
@@ -363,8 +363,8 @@
   {
     "name": "Design Leadership Conference",
     "url": "http://www.dmi.org/?page=Conferences",
-    "date": "Sept 24-26",
     "startDate": "2017-09-24",
+    "endDate": "2017-09-26",
     "city": "Minneapolis",
     "country": "U.S.A."
   },
@@ -387,8 +387,8 @@
   {
     "name": "EuroIA",
     "url": "http://www.euroia.org",
-    "date": "Sept 28-30",
     "startDate": "2017-09-28",
+    "endDate": "2017-09-30",
     "city": "Stockholm",
     "country": "Sweden"
   },
@@ -404,15 +404,14 @@
   {
     "name": "UX Week",
     "url": "http://uxweek.com",
-    "date": "Aug29-Sept1",
-    "startDate": "2017-09-29",
+    "startDate": "2017-08-29",
+    "endDate": "2017-09-01",
     "city": "San Fransisco",
     "country": "U.S.A."
   },
   {
     "name": "Productized",
     "url": "http://www.productized.co",
-    "date": "October?",
     "startDate": "2017-10-01",
     "city": "Lisbon",
     "country": "Portugal"
@@ -454,7 +453,6 @@
   {
     "name": "Smashing Conference",
     "url": "https://smashingconf.com/barcelona-2017",
-    "date": "Oct 17-18",
     "startDate": "2017-10-17",
     "endDate": "2017-10-18",
     "city": "Barcelona",
@@ -472,24 +470,24 @@
   {
     "name": "Design Thinkers",
     "url": "https://www.designthinkers.com/News/2017/DesignThinkers-Montreal-2017.aspx",
-    "date": "Oct 19-20",
     "startDate": "2017-10-19",
+    "endDate": "2017-10-20",
     "city": "Montreal",
     "country": "Canada"
   },
   {
     "name": "Pop Tech",
     "url": "http://poptech.org/conferences",
-    "date": "October 19-21",
     "startDate": "2017-10-19",
+    "endDate": "2017-10-21",
     "city": "Camden, Maine",
     "country": "U.S.A."
   },
   {
     "name": "EPIC Conf",
     "url": "https://www.epicpeople.org",
-    "date": "Oct 22-25",
     "startDate": "2017-10-22",
+    "endDate": "2017-10-25",
     "city": "Montreal",
     "country": "Canada"
   },
@@ -539,32 +537,32 @@
   {
     "name": "CanUX",
     "url": "http://canux.io",
-    "date": "Nov 3-5",
     "startDate": "2017-11-03",
+    "endDate": "2017-11-05",
     "city": "Ottawa",
     "country": "Canada"
   },
   {
     "name": "LavaCon",
     "url": "https://lavacon.org/2017/portland",
-    "date": "Nov 5-8",
     "startDate": "2017-11-05",
+    "endDate": "2017-11-08",
     "city": "Portland, Oregon",
     "country": "U.S.A."
   },
   {
     "name": "Beyond Tellerrand",
     "url": "https://beyondtellerrand.com",
-    "date": "Nov 6-8",
     "startDate": "2017-11-06",
+    "endDate": "2017-11-08",
     "city": "Berlin",
     "country": "Germany"
   },
   {
     "name": "Taxonomy boot camp",
     "url": "http://www.taxonomybootcamp.com/2017/default.aspx",
-    "date": "Nov 6-7",
     "startDate": "2017-11-06",
+    "endDate": "2017-11-07",
     "city": "Washington, DC",
     "country": "U.S.A."
   },
@@ -589,7 +587,6 @@
   {
     "name": "DIBIConference",
     "url": "http://www.dibiconference.com",
-    "date": "November 10",
     "startDate": "2017-11-10",
     "city": "Newcastle",
     "country": "U.K."
@@ -597,8 +594,8 @@
   {
     "name": "Gather North",
     "url": "https://gathernorth.com",
-    "date": "Nov 17-19",
     "startDate": "2017-11-17",
+    "endDate": "2017-11-19",
     "city": "Montebello, Quebec",
     "country": "Canada"
   },
@@ -612,8 +609,8 @@
   {
     "name": "Clarity - design systems conf",
     "url": "http://clarityconf.com",
-    "date": "November 28, 30",
     "startDate": "2017-11-28",
+    "endDate": "2017-11-30",
     "city": "San Francisco",
     "country": "U.S.A."
   },
