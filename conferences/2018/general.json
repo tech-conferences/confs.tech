@@ -1101,5 +1101,14 @@
     "twitter": "@redevelopconf",
     "cfpUrl": "https://redevelop.io/cfp",
     "cfpEndDate": "2018-07-31"
+  },
+  {
+    "name": "Crowdsourcing Week ",
+    "url": "https://crowdsourcingweek.com/csw-global-2018",
+    "startDate": "2018-10-24",
+    "endDate": "2018-10-28",
+    "city": "Washington DC",
+    "country": "U.S.A.",
+    "twitter": "https://twitter.com/CrowdWeek"
   }
 ]
