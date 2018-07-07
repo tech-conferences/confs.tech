@@ -25,5 +25,16 @@
     "city": "Paris",
     "country": "France",
     "twitter": "@AndroidMakersFR"
+  },
+  {
+    "name": "Droidcon",
+    "url": "https://www.de.droidcon.com",
+    "startDate": "2019-05-27",
+    "endDate": "2019-05-29",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@droidconberlin",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
