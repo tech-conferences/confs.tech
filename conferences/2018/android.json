@@ -385,5 +385,16 @@
     "twitter": "@mobiconf",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Droidcon",
+    "url": "https://sf.droidcon.com",
+    "startDate": "2018-11-19",
+    "endDate": "2018-11-20",
+    "city": "San Francisco",
+    "country": "U.S.A.",
+    "twitter": "@droidconSF",
+    "cfpUrl": "https://sf.droidcon.com/speak",
+    "cfpEndDate": "2018-09-02"
   }
 ]
