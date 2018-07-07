@@ -168,5 +168,14 @@
     "twitter": "@EventsEmerging",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Big Data LDN",
+    "url": "https://bigdataldn.com",
+    "startDate": "2018-11-13",
+    "endDate": "2018-11-14",
+    "city": "London",
+    "country": "U.K.",
+    "twitter": "@bigdata_ldn"
   }
 ]
