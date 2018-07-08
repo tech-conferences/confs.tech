@@ -177,5 +177,16 @@
     "city": "London",
     "country": "U.K.",
     "twitter": "@bigdata_ldn"
+  },
+  {
+    "name": "BlockchainConf.Tech",
+    "url": "http://blockchainconf.tech",
+    "startDate": "2018-09-05",
+    "endDate": "2018-09-07",
+    "city": "Atlanta",
+    "country": "USA",
+    "twitter": "@blockchaincnf",
+    "cfpUrl": "http://blockchainconf.tech",
+    "cfpEndDate": "2018-07-13"
   }
 ]
