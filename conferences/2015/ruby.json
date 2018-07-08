@@ -22,8 +22,8 @@
     "url": "http://rubyconf.org",
     "startDate": "2015-11-15",
     "endDate": "2015-11-17",
-    "city": "San Antonio",
-    "country": "TX",
+    "city": "San Antonio, TX",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/rubyconf"
   },
   {
@@ -73,10 +73,11 @@
   },
   {
     "name": "Los Angeles Ruby Conference",
+    "url": "https://www.larubyconf.com/",
     "startDate": "2015-10-10",
     "endDate": "2015-10-10",
-    "city": "Los Angeles",
-    "country": "CA",
+    "city": "Los Angeles, CA",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/larubyconf"
   },
   {
@@ -102,8 +103,8 @@
     "url": "http://www.rockymtnruby.com",
     "startDate": "2015-09-23",
     "endDate": "2015-09-25",
-    "city": "Boulder",
-    "country": "CO",
+    "city": "Boulder, CO",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/rockymtnruby"
   },
   {
@@ -120,8 +121,8 @@
     "url": "http://www.windycityrails.org",
     "startDate": "2015-09-17",
     "endDate": "2015-09-18",
-    "city": "Chicago",
-    "country": "IL",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/windycityrails"
   },
   {
@@ -153,10 +154,11 @@
   },
   {
     "name": "Ruby Midwest",
+    "url": "http://www.rubymidwest.com/",
     "startDate": "2015-08-28",
     "endDate": "2015-08-29",
-    "city": "Kansas City",
-    "country": "MO",
+    "city": "Kansas City, MO",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/rubymidwest"
   },
   {
@@ -164,8 +166,8 @@
     "url": "http://madisonpl.us/ruby",
     "startDate": "2015-08-20",
     "endDate": "2015-08-22",
-    "city": "Madison",
-    "country": "WI",
+    "city": "Madison, WI",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/madisonruby"
   },
   {
@@ -191,8 +193,8 @@
     "url": "http://burlingtonruby.github.io/conference",
     "startDate": "2015-07-31",
     "endDate": "2015-08-02",
-    "city": "Burlington",
-    "country": "VT",
+    "city": "Burlington, VT",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/btvrubyconf"
   },
   {
@@ -218,8 +220,8 @@
     "url": "http://goruco.com",
     "startDate": "2015-06-20",
     "endDate": "2015-06-20",
-    "city": "New York",
-    "country": "NY",
+    "city": "New York, NY",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/goruco"
   },
   {
@@ -227,8 +229,8 @@
     "url": "http://www.rubynation.org",
     "startDate": "2015-06-12",
     "endDate": "2015-06-13",
-    "city": "Washington",
-    "country": "DC",
+    "city": "Washington, DC",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/rubynation"
   },
   {
@@ -236,6 +238,7 @@
     "url": "http://www.reddotrubyconf.com",
     "startDate": "2015-06-04",
     "endDate": "2015-06-05",
+    "city": "Singapore",
     "country": "Singapore",
     "twitter": "https://twitter.com/reddotrubyconf"
   },
@@ -250,6 +253,7 @@
   },
   {
     "name": "RubyConf Kenya",
+    "url": "http://rubyconf.nairuby.org/2015",
     "startDate": "2015-05-08",
     "endDate": "2015-05-09",
     "city": "Nairobi",
@@ -270,8 +274,8 @@
     "url": "http://www.railsconf.com",
     "startDate": "2015-04-21",
     "endDate": "2015-04-23",
-    "city": "Atlanta",
-    "country": "GA",
+    "city": "Atlanta, GA",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/railsconf"
   },
   {
@@ -297,8 +301,8 @@
     "url": "http://www.ancientcityruby.com",
     "startDate": "2015-03-26",
     "endDate": "2015-03-27",
-    "city": "St. Augustine",
-    "country": "FL",
+    "city": "St. Augustine, FL",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/ancientcityruby"
   },
   {
@@ -333,8 +337,8 @@
     "url": "http://mtnwestrubyconf.org",
     "startDate": "2015-03-09",
     "endDate": "2015-03-10",
-    "city": "Salt Lake City",
-    "country": "UT",
+    "city": "Salt Lake City, UT",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/mwrc"
   },
   {
@@ -348,10 +352,11 @@
   },
   {
     "name": "Ruby on Ales",
+    "url": "https://ruby.onales.com/",
     "startDate": "2015-03-05",
     "endDate": "2015-03-06",
-    "city": "Bend",
-    "country": "OR",
+    "city": "Bend, OR",
+    "country": "U.S.A.",
     "twitter": "https://twitter.com/rbonales"
   },
   {

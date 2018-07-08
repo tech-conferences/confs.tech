@@ -40,8 +40,8 @@
   {
     "name": "Mobile+Web DevCon",
     "url": "http://mobilewebdevconference.com/san-francisco-2017",
-    "city": "San Francisco",
-    "country": "CA",
+    "city": "San Francisco, CA",
+    "country": "U.S.A.",
     "startDate": "2017-03-01",
     "endDate": "2017-03-03",
     "cfpStart": "2016-11-02",
@@ -198,8 +198,8 @@
   {
     "name": "Chicago Roboto",
     "url": "http://chicagoroboto.com",
-    "city": "Chicago",
-    "country": "IL",
+    "city": "Chicago, IL",
+    "country": "U.S.A.",
     "startDate": "2017-04-20",
     "endDate": "2017-04-21",
     "cfpStart": "2016-11-08",
