@@ -3,105 +3,129 @@
     "name": "Design Indaba",
     "url": "http://www.designindaba.com/tags/design-indaba-conference-2016",
     "startDate": "2016-02-17",
-    "endDate": "2016-02-19"
+    "endDate": "2016-02-19",
+    "city": "Cape Town",
+    "country": "South Africa"
   },
   {
     "name": "Interaction 17",
     "url": "http://interaction17.ixda.org",
     "startDate": "2016-02-04",
     "endDate": "2016-02-08",
-    "city": "NYC"
+    "city": "NYC",
+    "country": "U.S.A."
   },
   {
     "name": "ConveyUX",
     "url": "http://conveyux.com",
     "startDate": "2016-02-28",
     "endDate": "2016-03-02",
-    "city": "Seattle"
+    "city": "Seattle",
+    "country": "U.S.A."
   },
   {
     "name": "Intelligent Content",
     "url": "http://www.intelligentcontentconference.com",
     "startDate": "2016-03-28",
     "endDate": "2016-03-30",
-    "city": "Vegas, baby"
+    "city": "Las Vegas",
+    "country": "U.S.A."
   },
   {
     "name": "Cambridge Workshop on Universal Access and Assistive Tech",
     "url": "http://www-edc.eng.cam.ac.uk/cwuaat",
     "startDate": "2016-03-21",
-    "endDate": "2016-03-23"
+    "endDate": "2016-03-23",
+    "city": "Cambridge",
+    "country": "U.K."
   },
   {
     "name": "Customer Experience Conf",
     "url": "https://www.conference-board.org/conferences/conferencedetail.cfm?conferenceid=2774",
     "startDate": "2016-03-23",
-    "endDate": "2016-03-24"
+    "endDate": "2016-03-24",
+    "city": "New York",
+    "country": "U.S.A."
   },
   {
     "name": "UX Burlington",
     "url": "http://uxburlington.com",
     "startDate": "2016-04-29",
-    "endDate": "2016-04-29"
+    "endDate": "2016-04-29",
+    "city": "Burlington",
+    "country": "U.S.A."
   },
   {
     "name": "IA Summit ",
     "url": "http://www.iasummit.org",
     "startDate": "2016-03-22",
     "endDate": "2016-03-26",
-    "city": "Vancouver!"
+    "city": "Vancouver",
+    "country": "Canada"
   },
   {
     "name": "DIBIConference",
     "url": "http://www.dibiconference.com",
     "startDate": "2016-03-30",
-    "endDate": "2016-03-31"
+    "endDate": "2016-03-31",
+    "city": "Edinburgh",
+    "country": "U.K."
   },
   {
     "name": "Clarity - design systems conf",
     "url": "http://clarityconf.com",
     "startDate": "2016-03-31",
-    "endDate": "2016-04-01"
+    "endDate": "2016-04-01",
+    "city": "San Francisco",
+    "country": "U.S.A."
   },
   {
     "name": "WAQ",
     "url": "https://webaquebec.org",
     "startDate": "2016-04-04",
-    "endDate": "2016-04-06"
+    "endDate": "2016-04-06",
+    "city": "Québec",
+    "country": "Canada"
   },
   {
     "name": "How To Create Products Customers Love",
     "url": "http://svpg.com/how-to-create-products-customers-love-2",
     "startDate": "2016-04-11",
     "endDate": "2016-04-12",
-    "city": "Quebec City"
+    "city": "Quebec City",
+    "country": "Canada"
   },
   {
     "name": "Unite",
     "url": "https://unite.shopify.com",
     "startDate": "2016-04-20",
     "endDate": "2016-04-21",
-    "city": "San Fran"
+    "city": "San Francisco",
+    "country": "U.S.A."
   },
   {
     "name": "Write the Docs",
     "url": "http://www.writethedocs.org",
     "startDate": "2016-05-14",
     "endDate": "2016-05-16",
-    "city": "San Fran"
+    "city": "San Francisco",
+    "country": "U.S.A."
   },
   {
     "name": "Design Management Conference Europe",
     "url": "http://www.dmi.org/?Adam2016Overview",
     "startDate": "2016-05-23",
     "endDate": "2016-05-25",
-    "city": "Portland, OR"
+    "city": "Portland, OR",
+    "country": "U.S.A."
   },
   {
     "name": "Design Science Research in Information Systems and Technologies (DESRIST) 2016 Conference",
     "url": "https://desrist2016.wordpress.com",
     "startDate": "2016-05-24",
-    "endDate": "2016-05-25"
+    "endDate": "2016-05-25",
+    "city": "St. John’s",
+    "country": "Canada"
   },
   {
     "name": "UXPA",
@@ -116,268 +140,319 @@
     "url": "http://promo.rosenfeldmedia.com/euxsignup2017",
     "startDate": "2016-06-07",
     "endDate": "2016-06-09",
-    "city": "San Fran"
+    "city": "San Francisco",
+    "country": "U.S.A."
   },
   {
     "name": "Confab Central",
     "url": "http://confabevents.com",
     "startDate": "2016-06-07",
     "endDate": "2016-06-09",
-    "city": "Minneapolis"
+    "city": "Minneapolis",
+    "country": "U.S.A."
   },
   {
     "name": "UX Scotland",
-    "url": "http://uxscotland.net/2017",
+    "url": "http://uxscotland.net/2016",
     "startDate": "2016-06-07",
-    "endDate": "2016-06-09"
+    "endDate": "2016-06-09",
+    "city": "Edinburgh",
+    "country": "U.K."
   },
   {
     "name": "Collective",
     "url": "http://collectiveconf.com",
     "startDate": "2016-06-08",
-    "endDate": "2016-06-10"
+    "endDate": "2016-06-10",
+    "city": "Atlanta",
+    "country": "U.S.A.",
+    "twitter": "https://twitter.com/collectiveconf"
   },
   {
     "name": "UX Strat 2017",
     "url": "http://www.uxstrat.com/europe",
     "startDate": "2016-06-15",
     "endDate": "2016-06-18",
-    "city": "Amsterdam"
+    "city": "Amsterdam",
+    "country": "Netherlands"
   },
   {
     "name": "UXcamp Europe",
     "url": "http://www.uxcampeurope.org",
     "startDate": "2016-06-25",
-    "endDate": "2016-06-26"
+    "endDate": "2016-06-26",
+    "city": "Berlin",
+    "country": "Germany"
   },
   {
     "name": "Eyeo 2017",
     "url": "http://eyeofestival.com",
     "startDate": "2016-06-26",
     "endDate": "2016-06-29",
-    "city": "MINNEAPOLIS"
+    "city": "Minneapolis",
+    "country": "U.S.A."
   },
   {
     "name": "Design Research Society Conf",
     "url": "http://www.drs2016.org",
     "startDate": "2016-06-27",
     "endDate": "2016-06-30",
-    "city": "[not until 2018]"
+    "city": "Brighton",
+    "country": "U.K."
   },
   {
     "name": "LavaCon Dublin",
     "url": "http://lavacon.org/2016/dublin",
     "startDate": "2016-06-05",
-    "endDate": "2016-06-07"
+    "endDate": "2016-06-07",
+    "city": "Dublin",
+    "country": "Ireland"
   },
   {
     "name": "Internation Conference of Experience Design",
     "url": "http://ixdc.org/2016/en/index.php",
     "startDate": "2016-06-29",
-    "endDate": "2016-07-03"
+    "endDate": "2016-07-03",
+    "city": "Beijing",
+    "country": "China"
   },
   {
     "name": "What Design Can Do",
     "url": "http://www.whatdesigncando.com/amsterdam-2016",
     "startDate": "2016-06-30",
     "endDate": "2016-07-01",
-    "city": "Amsterdam"
+    "city": "Amsterdam",
+    "country": "Netherlands"
   },
   {
     "name": "Design and Content Conf",
     "url": "https://designcontentconf.com",
     "startDate": "2016-07-17",
     "endDate": "2016-07-19",
-    "city": "Vancouver"
+    "city": "Vancouver",
+    "country": "Canada"
   },
   {
     "name": "AHFE 2016 ",
     "url": "http://www.ahfe2016.org",
     "startDate": "2016-07-27",
-    "endDate": "2016-07-31"
+    "endDate": "2016-07-31",
+    "city": "Orlando",
+    "country": "U.S.A."
   },
   {
     "name": "UX Week",
     "url": "http://uxweek.com",
     "startDate": "2016-08-29",
     "endDate": "2016-09-01",
-    "city": "San Fran"
+    "city": "San Francisco",
+    "country": "U.S.A."
   },
   {
     "name": "The Conference",
     "url": "http://2017.theconference.se",
     "startDate": "2016-09-04",
     "endDate": "2016-09-05",
-    "city": "Malmo, Sweden"
+    "city": "Malmo",
+    "country": "Sweden"
   },
   {
     "name": "MobileHCI",
     "url": "http://mobilehci.acm.org/2017",
     "startDate": "2016-09-04",
     "endDate": "2016-09-07",
-    "city": "Vienna, Austria"
+    "city": "Vienna",
+    "country": "Austria"
   },
   {
     "name": "MOBX (Mobile UX)",
     "url": "https://2017.mobxcon.com",
     "startDate": "2016-09-07",
     "endDate": "2016-09-08",
-    "city": "Berlin, Germany"
+    "city": "Berlin",
+    "country": "Germany"
   },
   {
     "name": "Brand New Conference",
     "url": "http://www.underconsideration.com/brandnewconference",
     "startDate": "2016-09-14",
     "endDate": "2016-09-15",
-    "city": "Chicago"
+    "city": "Chicago",
+    "country": "U.S.A."
   },
   {
     "name": "UX Strat USA",
     "url": "http://www.uxstrat.com/usa",
     "startDate": "2016-09-18",
     "endDate": "2016-09-20",
-    "city": "Boulder, CO"
+    "city": "Boulder, CO",
+    "country": "U.S.A."
   },
   {
     "name": "Confab Intensive",
     "url": "http://confabevents.com/events/intensive/2016",
     "startDate": "2016-09-11",
     "endDate": "2016-09-13",
-    "city": "Denver, CO"
+    "city": "Denver, CO",
+    "country": "U.S.A."
   },
   {
     "name": "EuroIA",
     "url": "http://www.euroia.org",
     "startDate": "2016-09-28",
     "endDate": "2016-09-30",
-    "city": "Stockholm"
+    "city": "Stockholm",
+    "country": "Sweden"
   },
   {
     "name": "Write the Docs Europe",
     "url": "http://www.writethedocs.org/conf/eu/2016/",
     "startDate": "2016-09-18",
     "endDate": "2016-09-20",
-    "city": "Prague"
+    "city": "Prague",
+    "country": "Czech Republic"
   },
   {
     "name": "Design Leadership Conference",
     "url": "http://www.dmi.org/?page=Conferences",
     "startDate": "2016-09-24",
     "endDate": "2016-09-26",
-    "city": "Minneapolis"
+    "city": "Minneapolis",
+    "country": "U.S.A."
   },
   {
     "name": "Fluxible ",
     "url": "http://www.fluxible.ca",
     "startDate": "2016-09-18",
     "endDate": "2016-09-24",
-    "city": "Waterloo, ON"
+    "city": "Waterloo, ON",
+    "country": "U.S.A."
   },
   {
     "name": "Design Matters '17",
     "url": "https://designmatters.io",
     "startDate": "2016-09-27",
     "endDate": "2016-09-28",
-    "city": "Copenhagen, Denmark"
+    "city": "Copenhagen",
+    "country": "Denmark"
   },
   {
     "name": "Interact",
     "url": "https://www.interact2017.org",
     "startDate": "2016-09-25",
     "endDate": "2016-09-29",
-    "city": "Mumbai, India"
+    "city": "Mumbai",
+    "country": "India"
   },
   {
     "name": "Content Strategy Forum",
     "url": "http://contentark.com.au/content-strategy-forum-2016",
     "startDate": "2016-10-05",
-    "endDate": "2016-10-07"
+    "endDate": "2016-10-07",
+    "city": "Melbourne",
+    "country": "Australia"
   },
   {
     "name": "GIANT Conference",
     "url": "http://www.giantconf.com/details",
     "startDate": "2016-10-17",
-    "endDate": "2016-10-19"
+    "endDate": "2016-10-19",
+    "city": "Charlotte, NC",
+    "country": "U.S.A."
   },
   {
     "name": "SmashingConf",
     "url": "https://smashingconf.com/barcelona-2017",
     "startDate": "2016-10-17",
     "endDate": "2016-10-18",
-    "city": "Barcelona, Spain"
+    "city": "Barcelona",
+    "country": "Spain"
   },
   {
     "name": "EPIC Conf",
     "url": "https://www.epicpeople.org",
     "startDate": "2016-10-22",
     "endDate": "2016-10-25",
-    "city": "Montreal!"
+    "city": "Montreal",
+    "country": "Canada"
   },
   {
     "name": "Design Thinkers",
     "url": "https://www.designthinkers.com/News/2017/DesignThinkers-Montreal-2017.aspx",
     "startDate": "2016-10-19",
     "endDate": "2016-10-20",
-    "city": "Montreal"
+    "city": "Montreal",
+    "country": "Canada"
   },
   {
     "name": "LavaCon",
     "url": "https://lavacon.org/2017/portland",
     "startDate": "2016-11-05",
     "endDate": "2016-11-08",
-    "city": "Portland, Oregon"
+    "city": "Portland, Oregon",
+    "country": "U.S.A."
   },
   {
     "name": "Productized",
     "url": "http://www.productized.co",
     "startDate": "2016-10-19",
     "endDate": "2016-10-21",
-    "city": "Lisbon, Portugal"
+    "city": "Lisbon",
+    "country": "Portugal"
   },
   {
     "name": "Pop Tech",
     "url": "http://poptech.org/conferences",
     "startDate": "2016-10-19",
     "endDate": "2016-10-21",
-    "city": "Camden, Maine"
+    "city": "Camden, Maine",
+    "country": "U.S.A."
   },
   {
     "name": "Service Design Network Conf",
     "url": "http://www.service-design-network.org/conferences",
     "startDate": "2016-10-27",
-    "endDate": "2016-10-28"
+    "endDate": "2016-10-28",
+    "city": "Amsterdam",
+    "country": "Netherlands"
   },
   {
     "name": "Beyond Tellerrand",
     "url": "https://beyondtellerrand.com",
     "startDate": "2016-11-06",
     "endDate": "2016-11-08",
-    "city": "Berlin, Germany"
+    "city": "Berlin",
+    "country": "Germany"
   },
   {
     "name": "CanUX",
     "url": "http://canux.io",
     "startDate": "2016-11-03",
     "endDate": "2016-11-05",
-    "city": "Ottawa"
+    "city": "Ottawa",
+    "country": "Canada"
   },
   {
     "name": "Gather North",
     "url": "https://gathernorth.com",
     "startDate": "2016-11-17",
     "endDate": "2016-11-19",
-    "city": "Montebello, Quebec"
+    "city": "Montebello, Quebec",
+    "country": "Canada"
   },
   {
     "name": "Taxonomy boot camp",
     "url": "http://www.taxonomybootcamp.com/2017/default.aspx",
     "startDate": "2016-11-06",
     "endDate": "2016-11-07",
-    "city": "Washington, DC"
+    "city": "Washington, DC",
+    "country": "U.S.A."
   },
   {
     "name": "Delight",
     "url": "http://delight.us/conference",
-    "startDate": "2016-12-08"
+    "startDate": "2016-12-08",
+    "city": "Portland",
+    "country": "U.S.A."
   }
 ]

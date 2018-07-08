@@ -298,7 +298,7 @@
     "url": "https://conference.awwwards.com/san-francisco",
     "startDate": "2018-05-10",
     "endDate": "2018-05-11",
-    "city": "San Fransisco",
+    "city": "San Francisco",
     "country": "U.S.A."
   },
   {
@@ -431,7 +431,7 @@
     "url": "http://uxscotland.net/2018",
     "startDate": "2018-06-13",
     "endDate": "2018-06-15",
-    "city": "Edimburgh",
+    "city": "Edinburgh",
     "country": "U.K."
   },
   {
@@ -456,7 +456,7 @@
     "url": "https://smashingconf.com/toronto-2018",
     "startDate": "2018-06-26",
     "endDate": "2018-06-27",
-    "city": "Tonronto",
+    "city": "Toronto",
     "country": "Canada",
     "twitter": "@smashingconf"
   },
@@ -512,7 +512,7 @@
     "url": "http://uxweek.com",
     "startDate": "2018-08-21",
     "endDate": "2018-08-24",
-    "city": "San Fransisco",
+    "city": "San Francisco",
     "country": "U.S.A.",
     "twitter": "@AdaptivePath"
   },
