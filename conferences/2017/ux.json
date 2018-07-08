@@ -79,7 +79,7 @@
     "url": "https://webaquebec.org",
     "startDate": "2017-04-04",
     "endDate": "2017-04-06",
-    "city": "Quebec",
+    "city": "Quebec City",
     "country": "Canada"
   },
   {
@@ -373,7 +373,7 @@
     "url": "https://www.interact2017.org",
     "startDate": "2017-09-25",
     "endDate": "2017-09-29",
-    "city": "Mumbai, India",
+    "city": "Mumbai",
     "country": "India"
   },
   {
@@ -381,7 +381,7 @@
     "url": "https://designmatters.io",
     "startDate": "2017-09-27",
     "endDate": "2017-09-28",
-    "city": "Copenhagen, Denmark",
+    "city": "Copenhagen",
     "country": "Denmark"
   },
   {
@@ -619,7 +619,7 @@
     "url": "http://www.slush.org",
     "startDate": "2017-11-30",
     "endDate": "2017-12-01",
-    "city": "HELSINKI",
+    "city": "Helsinki",
     "country": "Finland",
     "twitter": "@SlushHQ"
   }

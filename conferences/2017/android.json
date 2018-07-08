@@ -81,7 +81,7 @@
     "name": "AppDevCon",
     "url": "http://www.appdevcon.nl",
     "city": "Amsterdam",
-    "country": "NL",
+    "country": "Netherlands",
     "startDate": "2017-03-16",
     "endDate": "2017-03-17",
     "cfpStart": "2016-11-26",
@@ -99,8 +99,8 @@
   {
     "name": "Droid Knights",
     "url": "https://droidknights.github.io/2017",
-    "city": "Seoul, Sout",
-    "country": "Korea",
+    "city": "Seoul",
+    "country": "South Korea",
     "startDate": "2017-03-25",
     "endDate": "2017-03-25"
   },
@@ -124,7 +124,7 @@
     "name": "Droidcon",
     "url": "http://it.droidcon.com/2017",
     "city": "Turin",
-    "country": "IT",
+    "country": "Italy",
     "startDate": "2017-04-06",
     "endDate": "2017-04-07",
     "cfpStart": "2016-10-14",
@@ -164,7 +164,7 @@
     "name": "Droidcon",
     "url": "https://ticketbox.vn/event/droidcon-vietnam-64153",
     "city": "Ho Chi Minh City",
-    "country": "VN",
+    "country": "Vietnam",
     "startDate": "2017-04-15",
     "endDate": "2017-04-16"
   },
@@ -210,7 +210,7 @@
     "name": "Mobius",
     "url": "http://mobiusconf.com/en",
     "city": "Saint Petersburg",
-    "country": "RU",
+    "country": "Russia",
     "startDate": "2017-04-21",
     "endDate": "2017-04-22",
     "cfpStart": "2016-08-01",
@@ -358,8 +358,8 @@
   {
     "name": "APPFORUM Europe",
     "url": "https://www.zebra.com/us/en/events/appforum/europe.html",
-    "city": "Prague, Czec",
-    "country": "Republic",
+    "city": "Prague",
+    "country": "Czech Republic",
     "startDate": "2017-06-14",
     "endDate": "2017-06-16"
   },
@@ -452,8 +452,8 @@
   {
     "name": "Android Summit",
     "url": "http://androidsummit.org",
-    "city": "McLean",
-    "country": "VA",
+    "city": "McLean, VA",
+    "country": "U.S.A.",
     "startDate": "2017-08-24",
     "endDate": "2017-08-25",
     "cfpStart": "2017-03-21",
