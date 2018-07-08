@@ -5,7 +5,7 @@ import {getDuplicates} from './utils';
 import {TOPICS} from '../../config';
 
 const BASE_DIR = '../../../../conferences';
-const START_YEAR = 2017;
+const START_YEAR = 2014;
 const CURRENT_YEAR = new Date().getFullYear();
 const conferencesJSON = {};
 
@@ -23,7 +23,7 @@ range(START_YEAR, CURRENT_YEAR + 1).forEach((year) => {
   });
 });
 
-const REQUIRED_KEYS = ['name', 'url', 'startDate', 'country'];
+const REQUIRED_KEYS = ['name', 'url', 'startDate', 'country', 'city'];
 const DATES_KEYS = ['startDate', 'endDate', 'cfpEndDate'];
 const BAD_COUNTRY_NAMES = ['US', 'U.S.', 'U.S', 'USA', 'U.S.A', 'UK', 'U.K', 'UAE'];
 
