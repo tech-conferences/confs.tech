@@ -38,8 +38,8 @@
     "country": "Norway",
     "startDate": "2017-10-05",
     "endDate": "2017-10-06",
-    "cfpStart": "2017-03-21",
-    "cfpEnd": "2017-05-15",
+    "cfpStartDate": "2017-03-21",
+    "cfpEndDate": "2017-05-15",
     "cfpUrl": "https://mobileera.rocks/news/posts/c4p-time"
   },
   {
@@ -73,8 +73,8 @@
     "country": "Russia",
     "startDate": "2017-11-11",
     "endDate": "2017-11-11",
-    "cfpStart": "2017-06-22",
-    "cfpEnd": "cfp_site- https-//mobiusconf.com/en/cfp"
+    "cfpStartDate": "2017-06-22",
+    "cfpUrl": "https://mobiusconf.com/en/cfp/"
   },
   {
     "name": "Try Swift",
