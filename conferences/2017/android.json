@@ -6,8 +6,8 @@
     "country": "U.S.A.",
     "startDate": "2016-01-09",
     "endDate": "2016-01-09",
-    "cfpStart": "2015-10-31",
-    "cfpEnd": "2015-12-01",
+    "cfpStartDate": "2015-10-31",
+    "cfpEndDate": "2015-12-01",
     "cfpUrl": "https://docs.google.com/forms/d/1BpiGZRCscF-UIzmAY6IuvGDJS_M5Lk_RCeJnjG9IC1Q/viewform"
   },
   {
@@ -25,8 +25,8 @@
     "country": "U.S.A.",
     "startDate": "2017-02-04",
     "endDate": "2017-02-04",
-    "cfpStart": "2016-10-15",
-    "cfpEnd": "2016-12-31",
+    "cfpStartDate": "2016-10-15",
+    "cfpEndDate": "2016-12-31",
     "cfpUrl": "http://gdgtc.us10.list-manage1.com/track/click?u=6b1a454c86f7f8cc9693b328e&id=bc6af830ef&e=40d6c297e6"
   },
   {
@@ -44,8 +44,8 @@
     "country": "U.S.A.",
     "startDate": "2017-03-01",
     "endDate": "2017-03-03",
-    "cfpStart": "2016-11-02",
-    "cfpEnd": "2017-03-01",
+    "cfpStartDate": "2016-11-02",
+    "cfpEndDate": "2017-03-01",
     "cfpUrl": "http://mobilewebdevconference.com/san-francisco-2017/contact/speak-at-mwdcon"
   },
   {
@@ -55,7 +55,7 @@
     "country": "Dominicana",
     "startDate": "2017-03-03",
     "endDate": "2017-03-04",
-    "cfpStart": "2017-01-30",
+    "cfpStartDate": "2017-01-30",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdUY9z2OeNNaVZ2XES_L6LvG33kAIHAnVCZhKwQCJl775_F1w/viewform"
   },
   {
@@ -73,8 +73,8 @@
     "country": "Japan",
     "startDate": "2017-03-09",
     "endDate": "2017-03-10",
-    "cfpStart": "2016-10-01",
-    "cfpEnd": "2016-11-01",
+    "cfpStartDate": "2016-10-01",
+    "cfpEndDate": "2016-11-01",
     "cfpUrl": "https://droidkaigi.github.io/2017/en/requirements.html"
   },
   {
@@ -84,8 +84,8 @@
     "country": "Netherlands",
     "startDate": "2017-03-16",
     "endDate": "2017-03-17",
-    "cfpStart": "2016-11-26",
-    "cfpEnd": "2016-12-23",
+    "cfpStartDate": "2016-11-26",
+    "cfpEndDate": "2016-12-23",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc_Jks4rXUhtY1FZG6dOdMXamVwSosgHgqgMxKVg7l8kIYdNQ/viewform"
   },
   {
@@ -127,8 +127,8 @@
     "country": "Italy",
     "startDate": "2017-04-06",
     "endDate": "2017-04-07",
-    "cfpStart": "2016-10-14",
-    "cfpEnd": "2017-01-31",
+    "cfpStartDate": "2016-10-14",
+    "cfpEndDate": "2017-01-31",
     "cfpUrl": "http://it.droidcon.com/2017/call-for-papers-droidon-italy"
   },
   {
@@ -146,8 +146,8 @@
     "country": "France",
     "startDate": "2017-04-10",
     "endDate": "2017-04-11",
-    "cfpStart": "2016-12-01",
-    "cfpEnd": "2017-02-16",
+    "cfpStartDate": "2016-12-01",
+    "cfpEndDate": "2017-02-16",
     "cfpUrl": "http://cfp.androidmakers.fr"
   },
   {
@@ -157,8 +157,8 @@
     "country": "U.S.A.",
     "startDate": "2017-04-10",
     "endDate": "2017-04-11",
-    "cfpStart": "2016-12-05",
-    "cfpEnd": "2017-01-12"
+    "cfpStartDate": "2016-12-05",
+    "cfpEndDate": "2017-01-12"
   },
   {
     "name": "Droidcon",
@@ -175,8 +175,8 @@
     "country": "U.K.",
     "startDate": "2017-04-17",
     "endDate": "2017-04-20",
-    "cfpStart": "2016-09-01",
-    "cfpEnd": "2016-10-31",
+    "cfpStartDate": "2016-09-01",
+    "cfpEndDate": "2016-10-31",
     "cfpUrl": "http://www.codemobile.co.uk/call-for-speakers"
   },
   {
@@ -202,8 +202,8 @@
     "country": "U.S.A.",
     "startDate": "2017-04-20",
     "endDate": "2017-04-21",
-    "cfpStart": "2016-11-08",
-    "cfpEnd": "2017-01-18",
+    "cfpStartDate": "2016-11-08",
+    "cfpEndDate": "2017-01-18",
     "cfpUrl": "http://chicagoroboto.com/call-for-papers"
   },
   {
@@ -213,8 +213,8 @@
     "country": "Russia",
     "startDate": "2017-04-21",
     "endDate": "2017-04-22",
-    "cfpStart": "2016-08-01",
-    "cfpEnd": "2017-02-22",
+    "cfpStartDate": "2016-08-01",
+    "cfpEndDate": "2017-02-22",
     "cfpUrl": "http://mobiusconf.com/en/callforpapers"
   },
   {
@@ -248,8 +248,8 @@
     "country": "Brazil",
     "startDate": "2017-05-03",
     "endDate": "2017-05-06",
-    "cfpStart": "2017-01-17",
-    "cfpEnd": "2017-02-20",
+    "cfpStartDate": "2017-01-17",
+    "cfpEndDate": "2017-02-20",
     "cfpUrl": "http://www.thedevelopersconference.com.br/tdc/2017/florianopolis/call4papers"
   },
   {
@@ -259,8 +259,8 @@
     "country": "U.S.A.",
     "startDate": "2017-05-05",
     "endDate": "2017-05-06",
-    "cfpStart": "2017-02-08",
-    "cfpEnd": "2017-02-28",
+    "cfpStartDate": "2017-02-08",
+    "cfpEndDate": "2017-02-28",
     "cfpUrl": "https://goo.gl/forms/jKoMs7GEsTSBECf03"
   },
   {
@@ -294,8 +294,8 @@
     "country": "U.K.",
     "startDate": "2017-05-11",
     "endDate": "2017-05-12",
-    "cfpStart": "2016-12-28",
-    "cfpEnd": "2017-01-16",
+    "cfpStartDate": "2016-12-28",
+    "cfpEndDate": "2017-01-16",
     "cfpUrl": "http://cfp.devoxx.co.uk"
   },
   {
@@ -305,8 +305,8 @@
     "country": "Latvia",
     "startDate": "2017-05-15",
     "endDate": "2017-05-17",
-    "cfpStart": "2016-11-01",
-    "cfpEnd": "2017-01-24",
+    "cfpStartDate": "2016-11-01",
+    "cfpEndDate": "2017-01-24",
     "cpfUrl": "https://goo.gl/forms/Sy4J6mViU8RF9rCo1"
   },
   {
@@ -324,8 +324,8 @@
     "country": "Canada",
     "startDate": "2017-06-06",
     "endDate": "2017-06-07",
-    "cfpStart": "2017-02-14",
-    "cfpEnd": "2017-02-24",
+    "cfpStartDate": "2017-02-14",
+    "cfpEndDate": "2017-02-24",
     "cfpUrl": "http://prairiedevcon.com/CallForSpeakers"
   },
   {
@@ -351,8 +351,8 @@
     "country": "Greece",
     "startDate": "2017-06-13",
     "endDate": "2017-06-15",
-    "cfpStart": "2017-03-07",
-    "cfpEnd": "2017-05-14",
+    "cfpStartDate": "2017-03-07",
+    "cfpEndDate": "2017-05-14",
     "cfpUrl": "http://droidcongr17.moonshot.gr/call-for-papers"
   },
   {
@@ -370,8 +370,8 @@
     "country": "Spain",
     "startDate": "2017-06-22",
     "endDate": "2017-06-23",
-    "cfpStart": "2017-02-10",
-    "cfpEnd": "2017-03-15",
+    "cfpStartDate": "2017-02-10",
+    "cfpEndDate": "2017-03-15",
     "cfpUrl": "https://addconf.com/call_for_papers"
   },
   {
@@ -389,8 +389,8 @@
     "country": "U.S.A.",
     "startDate": "2017-07-13",
     "endDate": "2017-07-14",
-    "cfpStart": "2017-03-01",
-    "cfpEnd": "2017-04-07",
+    "cfpStartDate": "2017-03-01",
+    "cfpEndDate": "2017-04-07",
     "cfpUrl": "https://360andev.com/call-for-papers"
   },
   {
@@ -400,8 +400,8 @@
     "country": "U.S.A.",
     "startDate": "2017-07-17",
     "endDate": "2017-07-19",
-    "cfpStart": "2016-12-06",
-    "cfpEnd": "2017-02-13"
+    "cfpStartDate": "2016-12-06",
+    "cfpEndDate": "2017-02-13"
   },
   {
     "name": "The Developer's Conference",
@@ -410,8 +410,8 @@
     "country": "Brazil",
     "startDate": "2017-07-18",
     "endDate": "2017-07-22",
-    "cfpStart": "2017-05-16",
-    "cfpEnd": "2017-05-30",
+    "cfpStartDate": "2017-05-16",
+    "cfpEndDate": "2017-05-30",
     "cfpUrl": "http://www.thedevelopersconference.com.br/tdc/2017/saopaulo/call4papers"
   },
   {
@@ -445,8 +445,8 @@
     "country": "Brazil",
     "startDate": "2017-08-24",
     "endDate": "2017-08-25",
-    "cfpStart": "2017-04-19",
-    "cfpEnd": "2017-05-19",
+    "cfpStartDate": "2017-04-19",
+    "cfpEndDate": "2017-05-19",
     "cfpUrl": "https://goo.gl/forms/yERFwr67gwUajaVA3"
   },
   {
@@ -456,8 +456,8 @@
     "country": "U.S.A.",
     "startDate": "2017-08-24",
     "endDate": "2017-08-25",
-    "cfpStart": "2017-03-21",
-    "cfpEnd": "2017-07-14",
+    "cfpStartDate": "2017-03-21",
+    "cfpEndDate": "2017-07-14",
     "cfpUrl": "https://goo.gl/forms/N0vPmkWLKijfsHOy2"
   },
   {
@@ -467,8 +467,8 @@
     "country": "Germany",
     "startDate": "2017-09-03",
     "endDate": "2017-09-05",
-    "cfpStart": "2017-04-06",
-    "cfpEnd": "2017-06-06",
+    "cfpStartDate": "2017-04-06",
+    "cfpEndDate": "2017-06-06",
     "cfpUrl": "https://droidcon.de/en/berlin/17/call-papers"
   },
   {
@@ -494,8 +494,8 @@
     "endDate": "2017-09-10",
     "city": "Düsseldorf",
     "country": "Germany",
-    "cfpStart": "2017-07-17",
-    "cfpEnd": "2017-08-06",
+    "cfpStartDate": "2017-07-17",
+    "cfpEndDate": "2017-08-06",
     "cfpUrl": "https://www.papercall.io/devfest2017"
   },
   {
@@ -505,8 +505,8 @@
     "country": "India",
     "startDate": "2017-09-12",
     "endDate": "2017-09-13",
-    "cfpStart": "2017-05-17",
-    "cfpEnd": "2017-07-02",
+    "cfpStartDate": "2017-05-17",
+    "cfpEndDate": "2017-07-02",
     "cfpUrl": "https://fragments.talkfunnel.com/2017"
   },
   {
@@ -532,8 +532,8 @@
     "country": "Peru",
     "startDate": "2017-09-22",
     "endDate": "2017-09-22",
-    "cfpStart": "2017-08-01",
-    "cfpEnd": "2017-08-31",
+    "cfpStartDate": "2017-08-01",
+    "cfpEndDate": "2017-08-31",
     "cfpUrl": "https://goo.gl/forms/wsE42YMhpvh7k1us1"
   },
   {
@@ -551,8 +551,8 @@
     "country": "Russia",
     "startDate": "2017-09-23",
     "endDate": "2017-09-24",
-    "cfpStart": "2017-03-21",
-    "cfpEnd": "2017-07-01",
+    "cfpStartDate": "2017-03-21",
+    "cfpEndDate": "2017-07-01",
     "cfpUrl": "http://bit.ly/dfSiberia17-c4p"
   },
   {
@@ -562,8 +562,8 @@
     "country": "U.S.A.",
     "startDate": "2017-09-25",
     "endDate": "2017-09-26",
-    "cfpStart": "2017-05-24",
-    "cfpEnd": "2017-07-09",
+    "cfpStartDate": "2017-05-24",
+    "cfpEndDate": "2017-07-09",
     "cfpUrl": "https://droidcon-server.herokuapp.com"
   },
   {
@@ -573,8 +573,8 @@
     "country": "Brazil",
     "startDate": "2017-09-30",
     "endDate": "2017-09-30",
-    "cfpStart": "2017-07-02",
-    "cfpEnd": "2017-07-31",
+    "cfpStartDate": "2017-07-02",
+    "cfpEndDate": "2017-07-31",
     "cfpUrl": "https://docs.google.com/forms/d/1uFRfd34CyjAHJ9A6-U3RHK3JudKB6ZYHqQKrb5r4xJw"
   },
   {
@@ -600,8 +600,8 @@
     "country": "Norway",
     "startDate": "2017-10-05",
     "endDate": "2017-10-06",
-    "cfpStart": "2017-03-21",
-    "cfpEnd": "2017-05-15",
+    "cfpStartDate": "2017-03-21",
+    "cfpEndDate": "2017-05-15",
     "cfpUrl": "https://mobileera.rocks/news/posts/c4p-time"
   },
   {
@@ -619,8 +619,8 @@
     "country": "Guatemala",
     "startDate": "2017-10-18",
     "endDate": "2017-10-18",
-    "cfpStart": "2017-08-01",
-    "cfpEnd": "2017-09-01",
+    "cfpStartDate": "2017-08-01",
+    "cfpEndDate": "2017-09-01",
     "cfpUrl": "https://goo.gl/forms/4uWoC1e29P5Jorbp2"
   },
   {
@@ -630,8 +630,8 @@
     "country": "Poland",
     "startDate": "2017-10-21",
     "endDate": "2017-10-21",
-    "cfpStart": "2017-06-19",
-    "cfpEnd": "2017-08-31",
+    "cfpStartDate": "2017-06-19",
+    "cfpEndDate": "2017-08-31",
     "cfpUrl": "https://bit.ly/mobilization7-c4p"
   },
   {
@@ -641,8 +641,8 @@
     "country": "U.K.",
     "startDate": "2017-10-26",
     "endDate": "2017-10-27",
-    "cfpStart": "2017-03-23",
-    "cfpEnd": "2017-05-14",
+    "cfpStartDate": "2017-03-23",
+    "cfpEndDate": "2017-05-14",
     "cfpUrl": "https://skillsmatter.com/conferences/8265-droidcon-london-2017#get_involved"
   },
   {
@@ -660,8 +660,8 @@
     "country": "U.S.A.",
     "startDate": "2017-11-02",
     "endDate": "2017-11-03",
-    "cfpStart": "2017-03-14",
-    "cfpEnd": "2017-05-01",
+    "cfpStartDate": "2017-03-14",
+    "cfpEndDate": "2017-05-01",
     "cfpUrl": "https://sessionize.com/kotlinconf"
   },
   {
@@ -671,8 +671,8 @@
     "country": "Romania",
     "startDate": "2017-11-03",
     "endDate": "2017-11-04",
-    "cfpStart": "2017-09-05",
-    "cfpEnd": "2017-09-15",
+    "cfpStartDate": "2017-09-05",
+    "cfpEndDate": "2017-09-15",
     "cfpUrl": "https://ro.droidcon.com/en/bucharest/16/call-papers"
   },
   {
@@ -682,8 +682,8 @@
     "country": "U.S.A.",
     "startDate": "2017-11-06",
     "endDate": "2017-11-07",
-    "cfpStart": "2017-07-21",
-    "cfpEnd": "2017-08-31",
+    "cfpStartDate": "2017-07-21",
+    "cfpEndDate": "2017-08-31",
     "cfpUrl": "https://droidcon-server.herokuapp.com"
   },
   {
@@ -693,8 +693,8 @@
     "country": "Belgium",
     "startDate": "2017-11-06",
     "endDate": "2017-11-10",
-    "cfpStart": "2017-05-22",
-    "cfpEnd": "2017-07-07",
+    "cfpStartDate": "2017-05-22",
+    "cfpEndDate": "2017-07-07",
     "cfpUrl": "https://cfp.devoxx.be"
   },
   {
@@ -704,8 +704,8 @@
     "country": "U.S.A.",
     "startDate": "2017-11-11",
     "endDate": "2017-11-11",
-    "cfpStart": "2017-04-15",
-    "cfpEnd": "2017-07-17",
+    "cfpStartDate": "2017-04-15",
+    "cfpEndDate": "2017-07-17",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfcchhhaKETrOEVY-h5EngpTby7QMJl_G2LEl8XjYP5nXIS4g/viewform"
   },
   {
@@ -715,8 +715,8 @@
     "country": "Russia",
     "startDate": "2017-11-11",
     "endDate": "2017-11-11",
-    "cfpStart": "2017-06-22",
-    "cfpEnd": "cfp_site- https-//mobiusconf.com/en/cfp"
+    "cfpStartDate": "2017-06-22",
+    "cfpUrl": "https://mobiusconf.com/en/cfp"
   },
   {
     "name": "GOTO",
@@ -733,8 +733,8 @@
     "endDate": "2017-11-17",
     "city": "Riga",
     "country": "Latvia",
-    "cfpStart": "2017-08-07",
-    "cfpEnd": "2017-09-30",
+    "cfpStartDate": "2017-08-07",
+    "cfpEndDate": "2017-09-30",
     "cfpUrl": "https://www.papercall.io/devfest-baltics"
   },
   {
@@ -752,8 +752,8 @@
     "endDate": "2017-11-25",
     "city": "Munich",
     "country": "Germany",
-    "cfpStart": "2017-07-25",
-    "cfpEnd": "2017-08-27",
+    "cfpStartDate": "2017-07-25",
+    "cfpEndDate": "2017-08-27",
     "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfYY7zy7jRCxcv5peMJL-O6KYvujJQIyL_xg4cIipYc3e4H1w/viewform"
   },
   {
@@ -763,8 +763,8 @@
     "country": "Germany",
     "startDate": "2017-11-25",
     "endDate": "2017-11-26",
-    "cfpStart": "2017-07-26",
-    "cfpEnd": "2017-10-01",
+    "cfpStartDate": "2017-07-26",
+    "cfpEndDate": "2017-10-01",
     "cfpUrl": "https://goo.gl/c7BK25"
   },
   {
@@ -774,8 +774,8 @@
     "country": "Poland",
     "startDate": "2017-12-01",
     "endDate": "2017-12-02",
-    "cfpStart": "2017-08-22",
-    "cfpEnd": "2017-10-31",
+    "cfpStartDate": "2017-08-22",
+    "cfpEndDate": "2017-10-31",
     "cfpUrl": "https://goo.gl/forms/j2o5cgCfF3mIgI523"
   },
   {
