@@ -177,5 +177,16 @@
     "city": "London",
     "country": "U.K.",
     "twitter": "@bigdata_ldn"
+  },
+  {
+    "name": "data2day",
+    "url": "https://www.data2day.de",
+    "startDate": "2018-09-25",
+    "endDate": "2018-09-27",
+    "city": "Heidelberg",
+    "country": "Germany",
+    "twitter": "@data2day",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
