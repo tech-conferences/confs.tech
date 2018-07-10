@@ -1110,5 +1110,16 @@
     "city": "Washington DC",
     "country": "U.S.A.",
     "twitter": "https://twitter.com/CrowdWeek"
+  },
+  {
+    "name": "Herbstcampus",
+    "url": "https://www.herbstcampus.de",
+    "startDate": "2018-09-04",
+    "endDate": "2018-09-06",
+    "city": "Nürnberg",
+    "country": "Germany",
+    "twitter": "@Herbstcampus",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
