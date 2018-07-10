@@ -451,5 +451,16 @@
     "twitter": "@FunctionsConf",
     "cfpUrl": "https://www.papercall.io/serverless-to-2018",
     "cfpEndDate": "2018-07-31"
+  },
+  {
+    "name": "CLC",
+    "url": "https://www.continuouslifecycle.de",
+    "startDate": "2018-11-13",
+    "endDate": "2018-11-16",
+    "city": "Mannheim",
+    "country": "Germany",
+    "twitter": "@ConLifecycle ",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
