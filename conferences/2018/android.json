@@ -398,6 +398,15 @@
     "cfpEndDate": "2018-09-02"
   },
   {
+    "name": "MBLT DEV",
+    "url": "https://mbltdev.ru/en",
+    "startDate": "2018-09-28",
+    "endDate": "2018-09-28",
+    "city": "Moscow",
+    "country": "Russia",
+    "twitter": "@MBLTDev"
+  },
+  {
     "name": "GDG DevFest",
     "url": "https://2018.devfest.cz",
     "startDate": "2018-11-09",
