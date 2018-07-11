@@ -396,5 +396,16 @@
     "twitter": "@droidconSF",
     "cfpUrl": "https://sf.droidcon.com/speak",
     "cfpEndDate": "2018-09-02"
+  },
+  {
+    "name": "GDG DevFest",
+    "url": "https://2018.devfest.cz",
+    "startDate": "2018-11-09",
+    "endDate": "2018-11-10",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "twitter": "@DevFest_CZ",
+    "cfpUrl": "https://bit.ly/DevFestCZ18-CfP",
+    "cfpEndDate": "2018-08-26"
   }
 ]
