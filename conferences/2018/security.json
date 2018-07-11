@@ -7,5 +7,16 @@
     "city": "Kailua-Kona, Hawaiʻi",
     "country": "U.S.A.",
     "twitter": "@locomocosec"
+  },
+  {
+    "name": "heise devSec()",
+    "url": "https://www.heise-devsec.de",
+    "startDate": "2018-10-16",
+    "endDate": "2018-10-18",
+    "city": "Heidelberg",
+    "country": "Germany",
+    "twitter": "@heise_devSec",
+    "cfpUrl": "",
+    "cfpEndDate": null
   }
 ]
