@@ -1121,5 +1121,13 @@
     "twitter": "@Herbstcampus",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Software Craftmanship London",
+    "url": "http://sc-london.com",
+    "startDate": "2018-10-04",
+    "endDate": "2018-10-05",
+    "city": "London",
+    "country": "United Kingdom"
   }
 ]
