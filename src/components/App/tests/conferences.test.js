@@ -12,7 +12,7 @@ const conferencesJSON = {};
 // Remove JavaScript key
 const LANGUAGES = Object.keys(TOPICS);
 LANGUAGES.splice(LANGUAGES.indexOf('javascript'), 1);
-range(START_YEAR, CURRENT_YEAR + 1).forEach((year) => {
+range(START_YEAR, CURRENT_YEAR + 2).forEach((year) => {
   conferencesJSON[year] = {};
   LANGUAGES.forEach((lang) => {
     try {
