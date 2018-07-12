@@ -1129,5 +1129,14 @@
     "endDate": "2018-10-05",
     "city": "London",
     "country": "U.K."
+  },
+  {
+    "name": "Blacks in Technology",
+    "url": "https://www.bitcon2018.com",
+    "startDate": "2018-10-11",
+    "endDate": "2018-10-13",
+    "city": "Minneapolis",
+    "country": "USA",
+    "twitter": "@blkintechnology"
   }
 ]
