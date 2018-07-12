@@ -275,5 +275,13 @@
     "twitter": "@phpconfasia",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Test",
+    "url": "test.com",
+    "startDate": "2018-07-12",
+    "endDate": "2018-07-12",
+    "city": "Test",
+    "country": "Test"
   }
 ]
