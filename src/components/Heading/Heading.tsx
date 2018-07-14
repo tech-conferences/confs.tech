@@ -3,7 +3,12 @@ import classNames from 'classnames';
 
 import styles from './Heading.scss';
 
-export default class Heading extends PureComponent {
+interface Props {
+  level: number;
+  element: string;
+}
+
+export default class Heading extends PureComponent<Props> {
   render() {
     const {level} = this.props;
     const Element = this.props.element;

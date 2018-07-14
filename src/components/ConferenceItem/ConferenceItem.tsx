@@ -7,7 +7,21 @@ import Heading from '../Heading';
 import Link from '../Link';
 import styles from './ConferenceItem.scss';
 
-export default class ConferenceItem extends PureComponent {
+interface Props {
+  name: string;
+  topics: string[];
+  url: string;
+  city: string;
+  country: string;
+  startDate: string;
+  endDate: string;
+  twitter: string;
+  cfpEndDate: string;
+  cfpUrl: string;
+  showCFP: string;
+}
+
+export default class ConferenceItem extends PureComponent<Props> {
   render() {
     const {
       name,
@@ -56,7 +70,10 @@ export default class ConferenceItem extends PureComponent {
   }
 }
 
-function Twitter({twitter}) {
+interface TwitterProps {
+  twitter: string;
+}
+function Twitter({twitter}: TwitterProps) {
   if (!twitter) { return null; }
 
   return (
@@ -66,7 +83,7 @@ function Twitter({twitter}) {
   );
 }
 
-function Location(city, country) {
+function Location(city: string, country: string) {
   if (city && country) {
     return `${city}, ${country}`;
   }
@@ -74,7 +91,12 @@ function Location(city, country) {
   return country || city;
 }
 
-function Cfp({url, date}) {
+interface CfpProps {
+  url: string;
+  date: string;
+}
+
+function Cfp({url, date}: CfpProps) {
   return (
     <Link url={url} external className={styles.cfp}>
       CFP closes {formatDate(parse(date))}
@@ -83,6 +105,10 @@ function Cfp({url, date}) {
 }
 
 
-function Topics({topics}) {
-  return topics.map((topic) => `#${topic}`).join(' ');
+interface TopicsProps {
+  topics: string[];
+}
+
+function Topics({topics}: TopicsProps) {
+  return <>{topics.map((topic) => `#${topic}`).join(' ')}</>;
 }
