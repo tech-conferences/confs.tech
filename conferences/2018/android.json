@@ -416,5 +416,16 @@
     "twitter": "@DevFest_CZ",
     "cfpUrl": "https://bit.ly/DevFestCZ18-CfP",
     "cfpEndDate": "2018-08-26"
+  },
+  {
+    "name": "AndroidFest",
+    "url": "https://gdg-campinas.github.io/androidfest",
+    "startDate": "2018-10-20",
+    "endDate": "2018-10-20",
+    "city": "Campinas, São Paulo",
+    "country": "Brazil",
+    "twitter": "@gdgcampinas",
+    "cfpUrl": "https://docs.google.com/forms/d/e/1FAIpQLSf-1W7P1deiUIGAZNzM-DOyQfMUQ0Hgr-8NKF1m6odN7CqSlQ/viewform",
+    "cfpEndDate": "2018-09-02"
   }
 ]
