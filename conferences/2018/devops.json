@@ -462,5 +462,16 @@
     "twitter": "@ConLifecycle ",
     "cfpUrl": "",
     "cfpEndDate": null
+  },
+  {
+    "name": "Devopsdays Tel Aviv",
+    "url": "https://www.devopsdays.org/events/2018-tel-aviv",
+    "startDate": "2018-12-18",
+    "endDate": "2018-12-19",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "twitter": "@DevOpsDaysTLV",
+    "cfpUrl": "https://www.papercall.io/devopsdaystlv2018/",
+    "cfpEndDate": "2018-09-30"
   }
 ]
