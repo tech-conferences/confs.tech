@@ -1129,5 +1129,16 @@
     "endDate": "2018-10-05",
     "city": "London",
     "country": "U.K."
+  },
+  {
+    "name": "Cloud Native Israel",
+    "url": "https://www.cloudnativeisrael.com",
+    "startDate": "2018-11-05",
+    "endDate": "2018-11-05",
+    "city": "Tel Aviv",
+    "country": "Israel",
+    "twitter": "@cloudnativeil",
+    "cfpUrl": "https://www.cloudnativeisrael.com/call-for-papers",
+    "cfpEndDate": "2018-09-02"
   }
 ]
