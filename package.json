@@ -44,6 +44,7 @@
     "eslint-plugin-react": "7.1.0",
     "extract-text-webpack-plugin": "3.0.0",
     "file-loader": "0.11.2",
+    "fork-ts-checker-webpack-plugin": "^0.4.3",
     "fs-extra": "3.0.1",
     "gh-pages": "^1.0.0",
     "html-webpack-plugin": "2.29.0",
@@ -69,6 +70,8 @@
     "react-router-dom": "^4.2.0",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.4",
+    "ts-loader": "3.5.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
     "url-loader": "^1.0.1",
     "webpack": "3.5.1",
     "webpack-dev-server": "2.7.1",
@@ -76,6 +79,14 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.4",
+    "@types/react-helmet": "^5.0.6",
+    "@types/jest": "^23.1.6",
+    "@types/lodash": "^4.14.112",
+    "@types/node": "^10.5.2",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-router-dom": "^4.2.7",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.5.0",
@@ -87,7 +98,9 @@
     "lint-staged": "^7.0.4",
     "node-sass": "^4.5.3",
     "prettier": "^1.5.3",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.9.2"
   },
   "homepage": "https://confs.tech",
   "jest": {

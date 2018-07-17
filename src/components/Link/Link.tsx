@@ -4,7 +4,17 @@ import {Link as RoutedLink} from 'react-router-dom';
 
 import styles from './Link.scss';
 
-export default class Link extends PureComponent {
+interface Props {
+  url?: string;
+  selected?: boolean;
+  className?: string;
+  external?: boolean;
+  routed?: boolean;
+  button?: boolean;
+  onClick?(evt: any): void;
+}
+
+export default class Link extends PureComponent<Props> {
   static defaultProps = {
     selected: false,
   };
@@ -15,7 +25,7 @@ export default class Link extends PureComponent {
     return (
       <RoutedLink
         className={classNames(styles.Link, selected && styles.Selected, className)}
-        to={url}
+        to={url || ''}
       >
         {this.props.children}
       </RoutedLink>
@@ -51,8 +61,8 @@ export default class Link extends PureComponent {
         className={classNames(styles.Link, selected && styles.Selected, className)}
         onClick={onClick}
         onTouchStart={onClick}
-        target={external ? '_blank' : null}
-        rel={external ? 'noopener' : null}
+        target={external ? '_blank' : undefined}
+        rel={external ? 'noopener' : undefined}
         href={url}
       >
         {this.props.children}

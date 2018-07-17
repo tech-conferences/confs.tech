@@ -3,13 +3,24 @@ import React, {Component} from 'react';
 import {uniqueId} from 'lodash';
 import styles from './Select.scss';
 
-export default class Select extends Component {
+interface Props {
+  label: string;
+  value: string;
+  options: [string, string][];
+  onChange(evt: string): void;
+}
+
+interface State {
+  id: string;
+}
+
+export default class Select extends Component<Props, State> {
   componentWillMount() {
     const id = uniqueId('Select-');
     this.setState({id});
   }
 
-  handleSelect = (event) => {
+  handleSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const {onChange} = this.props;
 
     onChange(event.target.value);

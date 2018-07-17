@@ -4,8 +4,14 @@ import {TOPICS} from '../config';
 import styles from './Footer.scss';
 import Link from '../Link';
 
+interface Props {
+  showCFP: boolean;
+  showPast: boolean;
+  togglePast(evt: any): void;
+}
+
 const CURRENT_YEAR = new Date().getFullYear();
-export default function Footer({showCFP, togglePast, showPast}) {
+export default function Footer({showCFP, togglePast, showPast}: Props) {
   return (
     <footer className={styles.Footer}>
       <HiddenLinks />
@@ -38,7 +44,7 @@ export default function Footer({showCFP, togglePast, showPast}) {
   );
 }
 
-function Twitter(handle) {
+function Twitter(handle: string) {
   return (
     <Link url={`https://twitter.com/@${handle}`} external>
       @{handle}
@@ -46,7 +52,7 @@ function Twitter(handle) {
   );
 }
 
-function getURL(showCFP) {
+function getURL(showCFP: boolean) {
   if (showCFP) {
     return `${location.pathname}`.replace('/cfp', '')
   } else {
