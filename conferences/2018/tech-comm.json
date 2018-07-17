@@ -172,5 +172,16 @@
     "city": "Melbourne",
     "country": "Australia",
     "twitter": "@WriteTheDocsAU"
+  },
+  {
+    "name": "Blockchain Technology Conference",
+    "url": "https://blockchainconf.net",
+    "startDate": "2018-11-19",
+    "endDate": "2018-11-21",
+    "city": "Berlin",
+    "country": "Germany",
+    "twitter": "@BCTechConf",
+    "cfpUrl": "https://blockchainconf.net/call-for-papers-2018/",
+    "cfpEndDate": "2018-06-11"
   }
 ]
