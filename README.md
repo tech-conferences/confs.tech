@@ -4,7 +4,7 @@ Confs.tech is an open source project that lists upcoming tech conferences. Every
 
 ## Adding a conference
 
-All conferences are stored in [JSON files](https://github.com/tech-conferences/confs.tech/tree/master/conferences), sorted by topics and years. All data is open source and crowd sourced by the community. Whether added directly [from the website](https://confs.tech/conferences/new) by conference organizers or through pull requests.
+All conferences are stored in [JSON files](https://github.com/tech-conferences/conference-data/tree/master/conferences), sorted by topics and years. All data is open source and crowd sourced by the community. Whether added directly [from the website](https://confs.tech/conferences/new) by conference organizers or through pull requests.
 
 Conference data have the following structure:
 
@@ -22,9 +22,6 @@ Conference data have the following structure:
   }
 ```
 
-
-Currently, the JavaScript conferences are stored on the [javascript-conferences repo](https://github.com/tech-conferences/javascript-conferences) for legacy reasons (this might change in the future).
-
 ## Active contributors
 
 - [Nima Izadi](https://nimz.co)
@@ -39,7 +36,6 @@ $ npm run start
 ```
 
 Should do the trick!
-
 
 ## Related projects
 
