@@ -8,20 +8,10 @@ import Link from '../Link';
 import styles from './ConferenceItem.scss';
 
 interface Props {
-  name: string;
-  topics: string[];
-  url: string;
-  city: string;
-  country: string;
-  startDate: string;
-  endDate: string;
-  twitter: string;
-  cfpEndDate: string;
-  cfpUrl: string;
-  showCFP: string;
+  showCFP: boolean;
 }
 
-export default class ConferenceItem extends PureComponent<Props> {
+export default class ConferenceItem extends PureComponent<Props & Conference> {
   render() {
     const {
       name,
