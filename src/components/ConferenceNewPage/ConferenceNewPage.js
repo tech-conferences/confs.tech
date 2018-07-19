@@ -174,7 +174,7 @@ export default class ConferenceNewPage extends Component {
           We will soon review it and add it to the list.
           <br />
           You can find your submission and track its progress on{' '}
-          <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
+          <Link external url="https://github.com/tech-conferences/conference-data/pulls">
             GitHub
           </Link>
           .
@@ -379,7 +379,7 @@ export default class ConferenceNewPage extends Component {
               An error happened from the server.
               <br />
               If it still happens, you can&nbsp;
-              <Link external url="https://github.com/tech-conferences/confs.tech/issues">
+              <Link external url="https://github.com/tech-conferences/conference-data/issues">
                 create an issue on our GitHub repo.
               </Link>
             </p>
@@ -395,15 +395,15 @@ export default class ConferenceNewPage extends Component {
         </form>
 
         <Divider />
-        <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
+        <Link external url="https://github.com/tech-conferences/conference-data/pulls">
           Pull requests
         </Link>
         {' – '}
-        <Link external url="https://github.com/tech-conferences/confs.tech/issues">
+        <Link external url="https://github.com/tech-conferences/conference-data/issues">
           Create an issue
         </Link>
         {' – '}
-        <Link external url="https://github.com/tech-conferences/confs.tech/">
+        <Link external url="https://github.com/tech-conferences/conference-data/">
           GitHub repository
         </Link>
         {' – '}
