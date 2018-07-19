@@ -395,15 +395,15 @@ export default class ConferenceNewPage extends Component {
         </form>
 
         <Divider />
-        <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
+        <Link external url="https://github.com/tech-conferences/conference-data/pulls">
           Pull requests
         </Link>
         {' – '}
-        <Link external url="https://github.com/tech-conferences/confs.tech/issues">
+        <Link external url="https://github.com/tech-conferences/conference-data/issues">
           Create an issue
         </Link>
         {' – '}
-        <Link external url="https://github.com/tech-conferences/confs.tech/">
+        <Link external url="https://github.com/tech-conferences/conference-data/">
           GitHub repository
         </Link>
         {' – '}
