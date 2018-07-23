@@ -11,6 +11,7 @@ import {
   RefinementList,
   CurrentRefinements,
 } from 'react-instantsearch/dom';
+import {connectInfiniteHits} from 'react-instantsearch/connectors';
 
 import {withRouter} from 'react-router';
 import styles from './ConferencePage.scss';
@@ -48,33 +49,46 @@ class ConferencePage extends Component {
     });
   };
 
-  onSearchStateChange = (searchState) => {
-    this.setState({
-      refinementList: searchState.refinementList || {},
-    }, () => {
-      const {match: {params}} = this.props;
-      const {refinementList: {country, topics}} = this.state;
-      const {history, showCFP} = this.props;
-      const startURL = showCFP ? '/cfp' : '';
-      const queryParams = {
-        topics: (topics || [params.topic]).join(QUERY_SEPARATOR),
-        countries: (country || [params.country]).join(QUERY_SEPARATOR)
-      };
+  onSearchStateChange = searchState => {
+    this.setState(
+      {
+        refinementList: searchState.refinementList || {},
+      },
+      () => {
+        const {
+          match: {params},
+        } = this.props;
+        const {
+          refinementList: {country, topics},
+        } = this.state;
+        const {history, showCFP} = this.props;
+        const startURL = showCFP ? '/cfp' : '';
+        const queryParams = {
+          topics: (topics || [params.topic]).join(QUERY_SEPARATOR),
+          countries: (country || [params.country]).join(QUERY_SEPARATOR),
+        };
 
-      if (topics && country) {
-        history.push(`${startURL}/${topics[0]}/${country[0]}?${qs.stringify(queryParams)}`);
-      } else if (topics) {
-        history.push(`${startURL}/${topics[0]}?${qs.stringify(queryParams)}`);
-      } else {
-        history.push(`${startURL}/?${qs.stringify(queryParams)}`);
+        if (topics && country) {
+          history.push(
+            `${startURL}/${topics[0]}/${country[0]}?${qs.stringify(
+              queryParams
+            )}`
+          );
+        } else if (topics) {
+          history.push(`${startURL}/${topics[0]}?${qs.stringify(queryParams)}`);
+        } else {
+          history.push(`${startURL}/?${qs.stringify(queryParams)}`);
+        }
       }
-    });
+    );
   };
 
   algoliaFilter = () => {
     const {showPast} = this.state;
     const {showCFP} = this.props;
-    let filters = showPast ? `startDateUnix>${TODAY - ONE_YEAR}` : `startDateUnix>${TODAY}`;
+    let filters = showPast
+      ? `startDateUnix>${TODAY - ONE_YEAR}`
+      : `startDateUnix>${TODAY}`;
     if (showCFP) {
       filters += String(` AND cfpEndDateUnix>${TODAY}`);
     }
@@ -83,16 +97,27 @@ class ConferencePage extends Component {
 
   loadMore = () => {
     this.setState({
-      hitsPerPage: (this.state.hitsPerPage + 50),
+      hitsPerPage: this.state.hitsPerPage + 50,
     });
   };
 
   render() {
     const {showPast, sortBy, hitsPerPage} = this.state;
-    const {showCFP, match: {params: {topic, country}}} = this.props;
+    const {
+      showCFP,
+      match: {
+        params: {topic, country},
+      },
+    } = this.props;
     const queryParams = qs.parse(location.search.replace('?', ''));
-    const topics = (queryParams.topics && queryParams.topics.split(QUERY_SEPARATOR) || topic && [topic] || []);
-    const countries = (queryParams.countries && queryParams.countries.split(QUERY_SEPARATOR) || country && [country] || []);
+    const topics =
+      (queryParams.topics && queryParams.topics.split(QUERY_SEPARATOR)) ||
+      (topic && [topic]) ||
+      [];
+    const countries =
+      (queryParams.countries && queryParams.countries.split(QUERY_SEPARATOR)) ||
+      (country && [country]) ||
+      [];
 
     return (
       <div>
@@ -103,11 +128,14 @@ class ConferencePage extends Component {
         <header className={styles.Header}>
           <div>
             <h1 className="visuallyHidden">
-              List of all {topic ? TOPICS[topic] : 'tech'} conferences of {CURRENT_YEAR}
+              List of all {topic ? TOPICS[topic] : 'tech'} conferences of{' '}
+              {CURRENT_YEAR}
               {country ? ` in ${country}` : null}
             </h1>
             <Heading element="p">Find your next tech conference</Heading>
-            <Heading element="h2" level="sub">Open-source and crowd-sourced conference website</Heading>
+            <Heading element="h2" level="sub">
+              Open-source and crowd-sourced conference website
+            </Heading>
           </div>
           <GithubStar />
         </header>
@@ -118,10 +146,7 @@ class ConferencePage extends Component {
           onSearchStateChange={this.onSearchStateChange}
           indexName={'prod_conferences'}
         >
-          <Configure
-            hitsPerPage={hitsPerPage}
-            filters={this.algoliaFilter()}
-          />
+          <Configure hitsPerPage={hitsPerPage} filters={this.algoliaFilter()} />
           <RefinementList
             limit={20}
             attribute="topics"
@@ -137,12 +162,16 @@ class ConferencePage extends Component {
             defaultRefinement={countries}
           />
 
-          <CurrentRefinements
-            transformItems={transformCurrentRefinements}
-          />
+          <CurrentRefinements transformItems={transformCurrentRefinements} />
 
-          {showCFP && <CfpHeader sortByCfpEndDate={this.sortByCfpEndDate} sortBy={sortBy} />}
+          {showCFP && (
+            <CfpHeader
+              sortByCfpEndDate={this.sortByCfpEndDate}
+              sortBy={sortBy}
+            />
+          )}
 
+          <ConnectedScrollToConference hash={location.hash} />
           <ConferenceList
             onLoadMore={this.loadMore}
             sortBy={sortBy}
@@ -163,22 +192,18 @@ class ConferencePage extends Component {
 function CfpHeader({sortByCfpEndDate, sortBy}) {
   return (
     <div className={styles.CfpHeader}>
-      <Heading element="h2" level={2}>Call for Papers</Heading>
-      <Link
-        button
-        onClick={sortByCfpEndDate}
-      >
-        {sortBy === 'startDate'
-          ? 'Start date ⬇'
-          : 'CFP end date ⬇'
-        }
+      <Heading element="h2" level={2}>
+        Call for Papers
+      </Heading>
+      <Link button onClick={sortByCfpEndDate}>
+        {sortBy === 'startDate' ? 'Start date ⬇' : 'CFP end date ⬇'}
       </Link>
     </div>
   );
 }
 
 function transformTopicRefinements(items) {
-  items.map((item) => {
+  items.map(item => {
     item.label = TOPICS[item.label];
     return item;
   });
@@ -191,13 +216,38 @@ function transformCountryRefinements(items) {
 
 function transformCurrentRefinements(items) {
   if (items.length && items[0].attribute === 'topics') {
-    items[0].items.map((item) => {
+    items[0].items.map(item => {
       item.label = TOPICS[item.label] || item.label;
       return item;
     });
   }
   return items;
-
 }
+
+class ScrollToConference extends Component {
+  state = {
+    scrolled: false,
+  };
+
+  componentDidUpdate() {
+    const {hash} = this.props;
+    const {scrolled} = this.state;
+    if (scrolled || this.props.hits.length === 0) {
+      return;
+    }
+
+    this.setState({scrolled: true}, () => {
+      setTimeout(() => {
+        location.hash = '';
+        location.hash = hash;
+      });
+    });
+  }
+
+  render() {
+    return null;
+  }
+}
+const ConnectedScrollToConference = connectInfiniteHits(ScrollToConference);
 
 export default withRouter(ConferencePage);
