@@ -29,13 +29,21 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
 
     return (
       <div
-        className={classNames(
-          styles.ConferenceItem
-        )}
+        className={classNames(styles.ConferenceItem)}
+        id={idify(name, startDate)}
       >
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{__html: generateEventJSONLD({name, url, city, country, startDate, endDate})}}
+          dangerouslySetInnerHTML={{
+            __html: generateEventJSONLD({
+              name,
+              url,
+              city,
+              country,
+              startDate,
+              endDate,
+            }),
+          }}
         />
         <Heading element="p" level={4}>
           <Link url={url} external>
@@ -44,9 +52,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
         </Heading>
         <p className={styles.p}>
           {`${Location(city, country)}・`}
-          <span className={styles.Date}>
-            {formatDate(startDate, endDate)}
-          </span>
+          <span className={styles.Date}>{formatDate(startDate, endDate)}</span>
         </p>
         <p className={classNames(styles.p, styles.Footer)}>
           {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
@@ -64,7 +70,9 @@ interface TwitterProps {
   twitter: string;
 }
 function Twitter({twitter}: TwitterProps) {
-  if (!twitter) { return null; }
+  if (!twitter) {
+    return null;
+  }
 
   return (
     <Link url={`https://twitter.com/${twitter}`} external>
@@ -94,11 +102,16 @@ function Cfp({url, date}: CfpProps) {
   );
 }
 
-
 interface TopicsProps {
   topics: string[];
 }
 
 function Topics({topics}: TopicsProps) {
-  return <>{topics.map((topic) => `#${topic}`).join(' ')}</>;
+  return <>{topics.map(topic => `#${topic}`).join(' ')}</>;
+}
+
+function idify(conferenceName: string, startDate: string) {
+  return `${conferenceName
+    .toLocaleLowerCase()
+    .replace(/ /g, '-')}-${startDate}`;
 }
