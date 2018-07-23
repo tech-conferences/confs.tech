@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-import {TOPICS} from '../config';
+import { TOPICS } from '../config';
 import styles from './Footer.scss';
 import Link from '../Link';
 
@@ -11,7 +11,7 @@ interface Props {
 }
 
 const CURRENT_YEAR = new Date().getFullYear();
-export default function Footer({showCFP, togglePast, showPast}: Props) {
+export default function Footer({ showCFP, togglePast, showPast }: Props) {
   return (
     <footer className={styles.Footer}>
       <HiddenLinks />
@@ -22,16 +22,14 @@ export default function Footer({showCFP, togglePast, showPast}: Props) {
         <Link selected={showPast} onClick={togglePast}>
           {showPast ? 'Hide past conferences' : 'See past conferences'}
         </Link>
-        <Link url={getURL(showCFP)}>
-          {showCFP
-            ? 'Hide Call for Papers'
-            : 'See Call for Papers'
-          }
-        </Link>
+        <Link url={getURL(showCFP)}>{showCFP ? 'Hide Call for Papers' : 'See Call for Papers'}</Link>
       </p>
-      <p>
+      <p className={styles.FooterLinks}>
         <Link url="https://github.com/tech-conferences/confs.tech/" external>
           Confs.tech on GitHub
+        </Link>
+        <Link url="https://twitter.com/ConfsTech/" external>
+          Confs.tech on Twitter
         </Link>
       </p>
       <p>
@@ -54,9 +52,9 @@ function Twitter(handle: string) {
 
 function getURL(showCFP: boolean) {
   if (showCFP) {
-    return `${location.pathname}`.replace('/cfp', '')
+    return `${location.pathname}`.replace('/cfp', '');
   } else {
-    return `/cfp${location.pathname}`
+    return `/cfp${location.pathname}`;
   }
 }
 
@@ -68,13 +66,12 @@ function HiddenLinks() {
           <p key={topic}>
             <Link routed url={`/${topic}`}>
               {`${topic} conferences in ${CURRENT_YEAR}`}
-            </Link>
-            {' '}
+            </Link>{' '}
             <Link routed url={`/cfp/${topic}`}>
               {`Open call for papers for ${topic} conferences in ${CURRENT_YEAR}`}
             </Link>
           </p>
-        )
+        );
       })}
     </div>
   );
