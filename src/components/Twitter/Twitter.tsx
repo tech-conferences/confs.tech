@@ -10,15 +10,13 @@ export default class Twitter extends React.Component {
 
   render() {
     return (
-      <>
-        <a
-          href="https://twitter.com/ConfsTech"
-          className="twitter-follow-button"
-          data-show-count="false"
-        >
-          Follow @ConfsTech
-        </a>
-      </>
+      <a
+        href="https://twitter.com/ConfsTech"
+        className="twitter-follow-button"
+        data-show-count="false"
+      >
+        Follow @ConfsTech
+      </a>
     );
   }
 }
