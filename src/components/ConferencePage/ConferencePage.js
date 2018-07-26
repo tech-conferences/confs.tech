@@ -11,12 +11,13 @@ import {
   RefinementList,
   CurrentRefinements,
 } from 'react-instantsearch/dom';
-import {connectInfiniteHits} from 'react-instantsearch/connectors';
 
 import {withRouter} from 'react-router';
 import styles from './ConferencePage.scss';
 import './RefinementList.scss';
 import './CurrentRefinement.scss';
+
+import ScrollToConference from '../ScrollToConference';
 import Footer from '../Footer';
 import Link from '../Link';
 import GithubStar from '../GithubStar';
@@ -171,7 +172,7 @@ class ConferencePage extends Component {
             />
           )}
 
-          <ConnectedScrollToConference hash={location.hash} />
+          <ScrollToConference hash={location.hash} />
           <ConferenceList
             onLoadMore={this.loadMore}
             sortBy={sortBy}
@@ -223,31 +224,5 @@ function transformCurrentRefinements(items) {
   }
   return items;
 }
-
-class ScrollToConference extends Component {
-  state = {
-    scrolled: false,
-  };
-
-  componentDidUpdate() {
-    const {hash} = this.props;
-    const {scrolled} = this.state;
-    if (scrolled || this.props.hits.length === 0) {
-      return;
-    }
-
-    this.setState({scrolled: true}, () => {
-      setTimeout(() => {
-        location.hash = '';
-        location.hash = hash;
-      });
-    });
-  }
-
-  render() {
-    return null;
-  }
-}
-const ConnectedScrollToConference = connectInfiniteHits(ScrollToConference);
 
 export default withRouter(ConferencePage);
