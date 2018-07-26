@@ -4,6 +4,7 @@ import {filter, groupBy, sortBy as _sortBy} from 'lodash';
 import {isPast, parse, format} from 'date-fns';
 import {connectInfiniteHits} from 'react-instantsearch/connectors';
 
+import Twitter from '../Twitter';
 import Heading from '../Heading';
 import Divider from '../Divider';
 import Link from '../Link';
@@ -123,7 +124,10 @@ function Year({year}: {year: string}) {
       <Heading key={year} element="h2" level={2}>
         {year}
       </Heading>
-      <AddConferenceLink />
+      <div className={styles.AddConference}>
+        <AddConferenceLink />
+        <Twitter />
+      </div>
     </div>
   );
 }
