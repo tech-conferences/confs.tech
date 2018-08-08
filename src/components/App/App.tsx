@@ -2,6 +2,7 @@ import React from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
 
 import styles from './App.scss';
+import {AboutPage, NotFoundPage} from '../Pages';
 import Head from '../Head';
 import ConferencePage from '../ConferencePage';
 import ConferenceNewPage from '../ConferenceNewPage';
@@ -12,6 +13,7 @@ export default function App() {
       <Head />
       <div>
         <Switch>
+          <Route path="/pages/:page" component={renderPages} />
           <Route path="/conferences/new" component={ConferenceNewPage} />
           <Route path="/cfp/:topic/:country" render={renderCFP} />
           <Route path="/cfp/:topic/" render={renderCFP} />
@@ -28,6 +30,14 @@ export default function App() {
 }
 function renderCFP({match}: any) {
   return <ConferencePage match={match} showCFP />;
+}
+
+function renderPages({match}: any) {
+  switch(match.params.page) {
+    case 'about':
+    return <AboutPage />;
+  }
+  return <NotFoundPage />;
 }
 
 function redirect(props: any) {

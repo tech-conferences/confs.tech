@@ -3,6 +3,7 @@ import React from 'react';
 import { TOPICS } from '../config';
 import styles from './Footer.scss';
 import Link from '../Link';
+import Twitter from '../Twitter';
 
 interface Props {
   showCFP: boolean;
@@ -23,6 +24,7 @@ export default function Footer({ showCFP, togglePast, showPast }: Props) {
           {showPast ? 'Hide past conferences' : 'See past conferences'}
         </Link>
         <Link url={getURL(showCFP)}>{showCFP ? 'Hide Call for Papers' : 'See Call for Papers'}</Link>
+        <Link routed url="/pages/about">About Confs.tech</Link>
       </p>
       <p className={styles.FooterLinks}>
         <Link url="https://github.com/tech-conferences/confs.tech/" external>
@@ -33,7 +35,10 @@ export default function Footer({ showCFP, togglePast, showPast }: Props) {
         </Link>
       </p>
       <p>
-        Maintained by {Twitter('katyaprigara')}, {Twitter('nimz_co')} and {Twitter('trivikram')}
+        Maintained by{' '}
+        <Twitter handle='katyaprigara' />,{' '}
+        <Twitter handle='nimz_co' /> and{' '}
+        <Twitter handle='trivikram' />
       </p>
       <p>
         <img alt="Sponsor: Search by Algolia" src="./search-by-algolia.svg" height="20" />
@@ -42,13 +47,6 @@ export default function Footer({ showCFP, togglePast, showPast }: Props) {
   );
 }
 
-function Twitter(handle: string) {
-  return (
-    <Link url={`https://twitter.com/@${handle}`} external>
-      @{handle}
-    </Link>
-  );
-}
 
 function getURL(showCFP: boolean) {
   if (showCFP) {
