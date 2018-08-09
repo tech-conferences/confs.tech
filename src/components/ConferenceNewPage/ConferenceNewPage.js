@@ -428,7 +428,7 @@ export default class ConferenceNewPage extends Component {
         {!submitted &&
           <p>
             This will create a{' '}
-            <Link external url="https://github.com/tech-conferences/confs.tech/pulls">
+            <Link external url="https://github.com/tech-conferences/conference-data/pulls">
               pull request on GitHub
             </Link>
             . Our team will review it as soon as possible!
