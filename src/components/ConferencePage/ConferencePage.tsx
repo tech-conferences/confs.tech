@@ -30,8 +30,22 @@ const CURRENT_YEAR = new Date().getFullYear();
 const TODAY = Math.round(new Date().getTime() / 1000);
 const ONE_YEAR = 365 * 24 * 60 * 60;
 
-class ConferencePage extends Component {
-  state = {
+interface Props {
+  showCFP: boolean;
+  match: any;
+}
+
+interface State {
+  hitsPerPage: number;
+  sortBy: string;
+  showPast: boolean;
+  refinementList?: any;
+}
+
+type ComposedProps = Props & any;
+
+class ConferencePage extends Component<ComposedProps, State> {
+  state: State = {
     hitsPerPage: 150,
     sortBy: 'startDate',
     showPast: false,
@@ -50,7 +64,7 @@ class ConferencePage extends Component {
     });
   };
 
-  onSearchStateChange = searchState => {
+  onSearchStateChange = (searchState: any) => {
     this.setState(
       {
         refinementList: searchState.refinementList || {},
@@ -190,7 +204,7 @@ class ConferencePage extends Component {
   }
 }
 
-function CfpHeader({sortByCfpEndDate, sortBy}) {
+function CfpHeader({sortByCfpEndDate, sortBy}: any) {
   return (
     <div className={styles.CfpHeader}>
       <Heading element="h2" level={2}>
@@ -203,7 +217,7 @@ function CfpHeader({sortByCfpEndDate, sortBy}) {
   );
 }
 
-function transformTopicRefinements(items) {
+function transformTopicRefinements(items: any[]) {
   items.map(item => {
     item.label = TOPICS[item.label];
     return item;
@@ -211,13 +225,13 @@ function transformTopicRefinements(items) {
   return orderBy(items, ['count', 'name'], ['desc', 'desc']);
 }
 
-function transformCountryRefinements(items) {
+function transformCountryRefinements(items: any[]) {
   return orderBy(items, ['count', 'name'], ['desc', 'desc']);
 }
 
-function transformCurrentRefinements(items) {
+function transformCurrentRefinements(items: any[]) {
   if (items.length && items[0].attribute === 'topics') {
-    items[0].items.map(item => {
+    items[0].items.map((item: any) => {
       item.label = TOPICS[item.label] || item.label;
       return item;
     });

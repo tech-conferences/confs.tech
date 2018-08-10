@@ -13,9 +13,9 @@ import styles from './ConferenceList.scss';
 
 interface Props {
   showCFP: boolean;
-  hits: Conference[];
   sortBy: string;
-  hasMore: boolean;
+  hasMore?: boolean;
+  hits?: Conference[];
   onLoadMore(): void;
 }
 
@@ -41,7 +41,7 @@ class ConferenceList extends Component<Props, never> {
 
   render() {
     const {hits, showCFP, sortBy, hasMore, onLoadMore} = this.props;
-    let filteredConferences = hits;
+    let filteredConferences = hits as Conference[];
     if (showCFP) {
       filteredConferences = filter(hits, conf => {
         return conf.cfpEndDate && !isPast(parse(conf.cfpEndDate));
