@@ -1,22 +1,14 @@
 import React from 'react';
+import Link from '../Link';
 
-export default class Twitter extends React.Component {
-  componentDidMount() {
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://platform.twitter.com/widgets.js';
-    document.head.appendChild(script);
-  }
+interface Props {
+  handle: string;
+}
 
-  render() {
-    return (
-      <a
-        href="https://twitter.com/ConfsTech"
-        className="twitter-follow-button"
-        data-show-count="false"
-      >
-        Follow @ConfsTech
-      </a>
-    );
-  }
+export default function Twitter({handle}: Props) {
+  return (
+    <Link url={`https://twitter.com/@${handle}`} external>
+      @{handle}
+    </Link>
+  );
 }

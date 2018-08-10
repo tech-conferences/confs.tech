@@ -15,6 +15,9 @@ $line-height-data: (
   footer: (
     base: rem(24px)
   ),
+  page: (
+    base: rem(28px)
+  ),
 );
 
 $font-size-data: (
@@ -29,6 +32,9 @@ $font-size-data: (
   ),
   footer: (
     base: rem(14px)
+  ),
+  page: (
+    base: rem(18px)
   ),
 );
 

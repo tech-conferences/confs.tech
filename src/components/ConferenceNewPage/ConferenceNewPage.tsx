@@ -463,7 +463,7 @@ export default class ConferenceNewPage extends Component<Props> {
 }
 
 interface InputGroupProps {
-  children: any;
+  children: React.ReactNode;
   inline?: boolean;
 }
 
