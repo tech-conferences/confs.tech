@@ -27,7 +27,7 @@ export default class SponsoredConference extends PureComponent {
               </Link>
             </p>
           </div>
-          <span className={styles.sponsored}>sponsored</span>
+          <span className={styles.sponsored}>partner</span>
         </div>
       </div>
     );
