@@ -24,9 +24,9 @@ export default function Footer({ showCFP, togglePast, showPast }: Props) {
           {showPast ? 'Hide past conferences' : 'See past conferences'}
         </Link>
         <Link url={getURL(showCFP)}>{showCFP ? 'Hide Call for Papers' : 'See Call for Papers'}</Link>
-        <Link routed url="/pages/about">About Confs.tech</Link>
       </p>
       <p className={styles.FooterLinks}>
+        <Link routed url="/pages/about">About Confs.tech</Link>
         <Link url="https://github.com/tech-conferences/confs.tech/" external>
           Confs.tech on GitHub
         </Link>
