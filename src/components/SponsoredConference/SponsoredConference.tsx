@@ -12,7 +12,7 @@ export default class SponsoredConference extends PureComponent {
         <div className={styles.Content}>
           <div>
             <Heading element="p" level={4}>
-              <Link url="https://2018.dotjs.io/" external>
+              <Link url="https://www.dotjs.io/" external>
                 dotJS
               </Link>
             </Heading>
