@@ -12,13 +12,19 @@ export default class SponsoredConference extends PureComponent {
         <div className={styles.Content}>
           <div>
             <Heading element="p" level={4}>
-              <Link url="https://2018.dotjs.io/tickets?promocode=CONFSTECH" external>
+              <Link url="https://2018.dotjs.io/" external>
                 dotJS
               </Link>
             </Heading>
             <p>November 9, 2018 ・ Paris, France</p>
             <p className={styles.Footer}>
-              #javascript ・ 20% off with promocode: <span className={styles.promocode}>CONFSTECH</span>
+              #javascript ・ 20% off with promocode:{' '}
+              <Link
+                url="https://2018.dotjs.io/tickets?promocode=CONFSTECH"
+                external
+              >
+                <span className={styles.promocode}>CONFSTECH</span>
+              </Link>
             </p>
           </div>
           <span className={styles.sponsored}>sponsored</span>
