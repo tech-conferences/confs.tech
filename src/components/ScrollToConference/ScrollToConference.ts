@@ -4,7 +4,7 @@ import {connectInfiniteHits} from 'react-instantsearch/connectors';
 
 interface Props {
   hash: string;
-  hits: any[];
+  hits?: any[];
 }
 
 interface State {
@@ -19,7 +19,7 @@ class ScrollToConference extends Component<Props, State> {
   componentDidUpdate() {
     const {hash, hits} = this.props;
     const {scrolled} = this.state;
-    if (scrolled || hits.length === 0) {
+    if (scrolled || (hits && hits.length === 0)) {
       return;
     }
 

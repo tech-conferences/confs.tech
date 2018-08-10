@@ -2,7 +2,7 @@ declare module 'react-instantsearch/connectors' {
   import * as React from 'react';
 
   interface Connector {
-    (component: typeof React.Component): React.Component;
+    (component: any): any;
   }
 
   export const connectConfigure: Connector;
@@ -31,33 +31,33 @@ declare module 'react-instantsearch/connectors' {
 declare module 'react-instantsearch/dom' {
   import * as React from 'react';
 
-  export const InstantSearch: React.Component;
-  export const Index: React.Component;
-  export const Configure: React.Component;
-  export const CurrentRefinements: React.Component;
-  export const HierarchicalMenu: React.Component;
-  export const Highlight: React.Component;
-  export const Snippet: React.Component;
-  export const Hits: React.Component;
-  export const HitsPerPage: React.Component;
-  export const InfiniteHits: React.Component;
-  export const Menu: React.Component;
-  export const MenuSelect: React.Component;
-  export const NumericMenu: React.Component;
-  export const Pagination: React.Component;
-  export const PoweredBy: React.Component;
-  export const RangeInput: React.Component;
-  export const RangeSlider: React.Component;
-  export const RatingMenu: React.Component;
-  export const RefinementList: React.Component;
-  export const ClearRefinements: React.Component;
-  export const ScrollTo: React.Component;
-  export const SearchBox: React.Component;
-  export const SortBy: React.Component;
-  export const Stats: React.Component;
-  export const ToggleRefinement: React.Component;
-  export const Panel: React.Component;
-  export const Breadcrumb: React.Component;
+  export const InstantSearch: any;
+  export const Index: any;
+  export const Configure: any;
+  export const CurrentRefinements: any;
+  export const HierarchicalMenu: any;
+  export const Highlight: any;
+  export const Snippet: any;
+  export const Hits: any;
+  export const HitsPerPage: any;
+  export const InfiniteHits: any;
+  export const Menu: any;
+  export const MenuSelect: any;
+  export const NumericMenu: any;
+  export const Pagination: any;
+  export const PoweredBy: any;
+  export const RangeInput: any;
+  export const RangeSlider: any;
+  export const RatingMenu: any;
+  export const RefinementList: any;
+  export const ClearRefinements: any;
+  export const ScrollTo: any;
+  export const SearchBox: any;
+  export const SortBy: any;
+  export const Stats: any;
+  export const ToggleRefinement: any;
+  export const Panel: any;
+  export const Breadcrumb: any;
 }
 
 declare module 'react-instantsearch/native' {

@@ -1,5 +1,6 @@
 /* global process */
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+import {Moment} from 'moment';
 import React, {Component} from 'react';
 import {sortBy} from 'lodash';
 import classNames from 'classnames';
@@ -7,14 +8,18 @@ import {Helmet} from 'react-helmet';
 import DatePicker from 'react-datepicker';
 import Recaptcha from 'react-recaptcha';
 
-import styles from './ConferenceNewPage.scss';
+import * as styles from './ConferenceNewPage.scss';
 import Heading from '../Heading';
 import Divider from '../Divider';
 import Link from '../Link';
 import {TOPICS} from '../config';
 import './DatePickerOverrides.scss';
 
-const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) => TOPICS[x].toLocaleLowerCase());
+const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), x =>
+  TOPICS[x].toLocaleLowerCase()
+);
+
+interface Props {}
 
 const defaultConference = {
   name: '',
@@ -30,8 +35,13 @@ const defaultConference = {
   comment: '',
 };
 
-export default class ConferenceNewPage extends Component {
-
+export default class ConferenceNewPage extends Component<Props> {
+  private handleDateChange: {
+    [key: string]: (
+      date: Moment | null,
+      event: any,
+    ) => void;
+  };
   state = {
     recaptchaLoaded: false,
     captchaResponse: null,
@@ -42,7 +52,7 @@ export default class ConferenceNewPage extends Component {
     conference: defaultConference,
   };
 
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
 
     this.handleDateChange = {
@@ -60,7 +70,7 @@ export default class ConferenceNewPage extends Component {
     });
   };
 
-  validateForm = (conference) => {
+  validateForm = (conference: any) => {
     const {startDate, endDate, city, country, name, url} = conference;
 
     const errors = {
@@ -78,8 +88,11 @@ export default class ConferenceNewPage extends Component {
     return errors;
   };
 
-  handleStartDateSelect = (startDate) => {
-    const {conference, conference: {endDate}} = this.state;
+  handleStartDateSelect = (startDate: any) => {
+    const {
+      conference,
+      conference: {endDate},
+    } = this.state;
     this.setState({
       conference: {
         ...conference,
@@ -89,7 +102,7 @@ export default class ConferenceNewPage extends Component {
     });
   };
 
-  handleFieldChange = (event) => {
+  handleFieldChange = (event: any) => {
     this.setState({
       conference: {
         ...this.state.conference,
@@ -98,8 +111,8 @@ export default class ConferenceNewPage extends Component {
     });
   };
 
-  handleDateChangeBuilder = (key) => {
-    return (date) => {
+  handleDateChangeBuilder = (key: string) => {
+    return (date: any) => {
       this.setState({
         conference: {
           ...this.state.conference,
@@ -111,18 +124,22 @@ export default class ConferenceNewPage extends Component {
 
   // Executed once the captcha has been verified
   // can be used to post forms, redirect, etc.
-  handleVerifyRecaptcha = (captchaResponse) => {
+  handleVerifyRecaptcha = (captchaResponse: any) => {
     this.setState({captchaResponse});
   };
 
-  handleFormSubmit = (event) => {
+  handleFormSubmit = (event: React.FormEvent) => {
     const {recaptchaLoaded, captchaResponse, conference} = this.state;
     const errors = this.validateForm(conference);
     event.preventDefault();
-    const cannotBeSubmitted = Object.keys(errors).some((x) => errors[x]);
+    const cannotBeSubmitted = Object.keys(errors).some(x => errors[x]);
 
-    if (!recaptchaLoaded || captchaResponse === null) { return; }
-    if (cannotBeSubmitted) { return; }
+    if (!recaptchaLoaded || captchaResponse === null) {
+      return;
+    }
+    if (cannotBeSubmitted) {
+      return;
+    }
     this.setState({submitting: true});
 
     fetch(`${process.env.API_END_POINT_DOMAIN}/api/conferences`, {
@@ -132,18 +149,20 @@ export default class ConferenceNewPage extends Component {
       },
       method: 'post',
       body: getConferenceData(conference),
-    }).then((response) => {
-      if (response.status === 200) {
-        return this.setState({submitted: true});
-      } else {
-        return this.setState({submitting: false});
-      }
-    }).catch(() => {
-      return this.setState({
-        submitting: false,
-        serverError: true,
+    })
+      .then(response => {
+        if (response.status === 200) {
+          return this.setState({submitted: true});
+        } else {
+          return this.setState({submitting: false});
+        }
+      })
+      .catch(() => {
+        return this.setState({
+          submitting: false,
+          serverError: true,
+        });
       });
-    });
   };
 
   handleRecaptchaLoad = () => {
@@ -152,14 +171,16 @@ export default class ConferenceNewPage extends Component {
     });
   };
 
-  hasError = (field) => {
+  hasError = (field: string) => {
     const {errors} = this.state;
     return errors[field];
   };
 
-  errorFor = (field, errorMessage) => {
+  errorFor = (field: string, errorMessage: string) => {
     const {errors} = this.state;
-    if (!errors[field]) { return null; }
+    if (!errors[field]) {
+      return null;
+    }
 
     return <div className={styles.errorText}>{errorMessage}</div>;
   };
@@ -167,14 +188,15 @@ export default class ConferenceNewPage extends Component {
   submitted = () => {
     return (
       <div>
-        <p>
-          Thank you for submitting a conference!
-        </p>
+        <p>Thank you for submitting a conference!</p>
         <p>
           We will soon review it and add it to the list.
           <br />
           You can find your submission and track its progress on{' '}
-          <Link external url="https://github.com/tech-conferences/conference-data/pulls">
+          <Link
+            external
+            url="https://github.com/tech-conferences/conference-data/pulls"
+          >
             GitHub
           </Link>
           .
@@ -184,13 +206,9 @@ export default class ConferenceNewPage extends Component {
             Contact us
           </Link>
           {' – '}
-          <Link url="https://confs.tech/">
-            Go back to confs.tech
-          </Link>
+          <Link url="https://confs.tech/">Go back to confs.tech</Link>
           {' – '}
-          <Link onClick={this.resetForm}>
-            Add a new conference
-          </Link>
+          <Link onClick={this.resetForm}>Add a new conference</Link>
         </p>
       </div>
     );
@@ -226,10 +244,8 @@ export default class ConferenceNewPage extends Component {
               value={topic}
               onChange={this.handleFieldChange}
             >
-              {SORTED_TOPICS_KEYS.map((value) => (
-                <option key={value} value={value}>
-                  {TOPICS[value]}
-                </option>
+              {SORTED_TOPICS_KEYS.map((value: string) => (
+                <option key={value} value={value} label={TOPICS[value]} />
               ))}
             </select>
           </InputGroup>
@@ -237,9 +253,7 @@ export default class ConferenceNewPage extends Component {
             <div>
               <label htmlFor="name">Conference name</label>
               <input
-                className={classNames(
-                  this.hasError('name') && styles.error
-                )}
+                className={classNames(this.hasError('name') && styles.error)}
                 type="text"
                 name="name"
                 required
@@ -253,9 +267,7 @@ export default class ConferenceNewPage extends Component {
             <div>
               <label htmlFor="url">URL</label>
               <input
-                className={classNames(
-                  this.hasError('url') && styles.error
-                )}
+                className={classNames(this.hasError('url') && styles.error)}
                 type="text"
                 required
                 value={url}
@@ -294,9 +306,7 @@ export default class ConferenceNewPage extends Component {
             <div>
               <label htmlFor="city">City</label>
               <input
-                className={classNames(
-                  this.hasError('city') && styles.error
-                )}
+                className={classNames(this.hasError('city') && styles.error)}
                 required
                 type="text"
                 name="city"
@@ -308,9 +318,7 @@ export default class ConferenceNewPage extends Component {
             <div>
               <label htmlFor="country">Country</label>
               <input
-                className={classNames(
-                  this.hasError('country') && styles.error
-                )}
+                className={classNames(this.hasError('country') && styles.error)}
                 required
                 type="text"
                 name="country"
@@ -324,9 +332,7 @@ export default class ConferenceNewPage extends Component {
             <div>
               <label htmlFor="cfpUrl">CFP URL</label>
               <input
-                className={classNames(
-                  this.hasError('cfpUrl') && styles.error
-                )}
+                className={classNames(this.hasError('cfpUrl') && styles.error)}
                 type="text"
                 name="cfpUrl"
                 value={cfpUrl}
@@ -349,9 +355,7 @@ export default class ConferenceNewPage extends Component {
           <InputGroup>
             <label htmlFor="twitter">Conference @TwitterHandle</label>
             <input
-              className={classNames(
-                this.hasError('twitter') && styles.error
-              )}
+              className={classNames(this.hasError('twitter') && styles.error)}
               type="text"
               name="twitter"
               value={twitter}
@@ -360,9 +364,10 @@ export default class ConferenceNewPage extends Component {
             {this.errorFor('twitter', 'Twitter handle is required.')}
           </InputGroup>
           <InputGroup>
-            <label htmlFor="comment">Additional comments and info <i>(will only appear on GitHub)</i></label>
+            <label htmlFor="comment">
+              Additional comments and info <i>(will only appear on GitHub)</i>
+            </label>
             <textarea
-              type="text"
               name="comment"
               value={comment}
               onChange={this.handleFieldChange}
@@ -374,19 +379,24 @@ export default class ConferenceNewPage extends Component {
             verifyCallback={this.handleVerifyRecaptcha}
             onloadCallback={this.handleRecaptchaLoad}
           />
-          {serverError &&
+          {serverError && (
             <p className={styles.errorText}>
               An error happened from the server.
               <br />
               If it still happens, you can&nbsp;
-              <Link external url="https://github.com/tech-conferences/conference-data/issues">
+              <Link
+                external
+                url="https://github.com/tech-conferences/conference-data/issues"
+              >
                 create an issue on our GitHub repo.
               </Link>
             </p>
-          }
+          )}
           <button
             className={styles.Button}
-            disabled={submitting || !recaptchaLoaded || captchaResponse === null}
+            disabled={
+              submitting || !recaptchaLoaded || captchaResponse === null
+            }
             type="submit"
             value="Submit"
           >
@@ -395,15 +405,24 @@ export default class ConferenceNewPage extends Component {
         </form>
 
         <Divider />
-        <Link external url="https://github.com/tech-conferences/conference-data/pulls">
+        <Link
+          external
+          url="https://github.com/tech-conferences/conference-data/pulls"
+        >
           Pull requests
         </Link>
         {' – '}
-        <Link external url="https://github.com/tech-conferences/conference-data/issues">
+        <Link
+          external
+          url="https://github.com/tech-conferences/conference-data/issues"
+        >
           Create an issue
         </Link>
         {' – '}
-        <Link external url="https://github.com/tech-conferences/conference-data/">
+        <Link
+          external
+          url="https://github.com/tech-conferences/conference-data/"
+        >
           GitHub repository
         </Link>
         {' – '}
@@ -425,30 +444,43 @@ export default class ConferenceNewPage extends Component {
           <script src="https://www.google.com/recaptcha/api.js" async defer />
         </Helmet>
         <Heading element="h1">Add a new conference</Heading>
-        {!submitted &&
+        {!submitted && (
           <p>
             This will create a{' '}
-            <Link external url="https://github.com/tech-conferences/conference-data/pulls">
+            <Link
+              external
+              url="https://github.com/tech-conferences/conference-data/pulls"
+            >
               pull request on GitHub
             </Link>
             . Our team will review it as soon as possible!
           </p>
-        }
+        )}
         {submitted ? this.submitted() : this.form()}
       </div>
     );
   }
 }
 
-function InputGroup({children, inline}) {
+interface InputGroupProps {
+  children: any;
+  inline?: boolean;
+}
+
+function InputGroup({children, inline}: InputGroupProps) {
   return (
-    <div className={classNames(styles.InputGroup, inline && styles.InputGroupInline)}>
+    <div
+      className={classNames(
+        styles.InputGroup,
+        inline && styles.InputGroupInline
+      )}
+    >
       {children}
     </div>
   );
 }
 
-function getConferenceData(conference) {
+function getConferenceData(conference: any) {
   const {twitter, startDate, endDate, cfpEndDate} = conference;
 
   return JSON.stringify({

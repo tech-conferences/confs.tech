@@ -26,14 +26,14 @@ export default function App() {
     </div>
   );
 }
-function renderCFP({match}) {
+function renderCFP({match}: any) {
   return <ConferencePage match={match} showCFP />;
 }
 
-function redirect(props) {
+function redirect(props: any) {
   const {topic, country} = props.match.params;
 
-  return <Redirect to={`/${topic}/${country}`} state={{status: 301}} />;
+  return <Redirect to={`/${topic}/${country}`} />;
 }
 
 /*
@@ -41,20 +41,20 @@ function redirect(props) {
   If we detect that :topic is a year, the user actually wanted to reach
   the new route /:topic
 */
-function redirectOrRender(props) {
+function redirectOrRender(props: any) {
   const {topic, country} = props.match.params;
 
   if (isYear(topic)) {
-    return <Redirect to={`/${country}`} state={{status: 301}} />;
+    return <Redirect to={`/${country}`} />;
   } else {
     return <ConferencePage {...props} fallback={redirectToTopic} />;
   }
 }
 
-function isYear(year) {
+function isYear(year: any) {
   return (year.length === 4 && !isNaN(parseInt(year, 10)));
 }
 
-function redirectToTopic(topic) {
-  return <Redirect to={`/${topic}`} state={{status: 301}} />;
+function redirectToTopic(topic: any) {
+  return <Redirect to={`/${topic}`} />;
 }
