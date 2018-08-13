@@ -8,7 +8,7 @@ export default class SponsoredConference extends PureComponent {
   render() {
     return (
       <div className={styles.SponsoredConference}>
-        <img src="sponsors/dotjs.png" className={styles.Image} />
+        <img src="./sponsors/dotjs.png" className={styles.Image} />
         <div className={styles.Content}>
           <div>
             <Heading element="p" level={4}>
