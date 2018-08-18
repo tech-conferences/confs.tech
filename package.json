@@ -25,7 +25,6 @@
     "@types/qs": "^6.5.1",
     "@types/react-datepicker": "^1.1.7",
     "@types/react-recaptcha": "^2.3.3",
-    "@types/yamljs": "^0.2.30",
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
     "babel-eslint": "7.2.3",
@@ -80,8 +79,7 @@
     "webpack": "3.5.1",
     "webpack-dev-server": "2.7.1",
     "webpack-manifest-plugin": "1.2.1",
-    "whatwg-fetch": "2.0.3",
-    "yamljs": "^0.3.0"
+    "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.4",
@@ -145,6 +143,6 @@
     "extends": "react-app"
   },
   "engines": {
-    "node": "10.9.0"
+    "node": "10.8.0"
   }
 }
