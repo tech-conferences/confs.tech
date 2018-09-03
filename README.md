@@ -1,5 +1,7 @@
 # The open-source and crowd sourced conference website
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tech-conferences/confs.tech.svg)](https://greenkeeper.io/)
+
 Confs.tech is an open source project that lists upcoming tech conferences. Everything is free and will stay free. It's aimed to be simple and without useless clutter. You can filter by topics and [see upcoming CFPs](https://confs.tech/cfp).
 
 ## Adding a conference
