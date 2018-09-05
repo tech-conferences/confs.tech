@@ -146,5 +146,13 @@
   },
   "engines": {
     "node": "10.8.0"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "ts-loader",
+      "webpack",
+      "webpack-dev-server",
+      "webpack-manifest-plugin"
+    ]
   }
 }
