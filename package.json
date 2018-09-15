@@ -58,7 +58,7 @@
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
     "prettier": "^1.5.3",
-    "promise": "8.0.1",
+    "promise": "8.0.2",
     "qs": "^6.5.2",
     "react": "^16.2.0",
     "react-datepicker": "^1.2.1",
