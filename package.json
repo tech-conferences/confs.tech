@@ -95,7 +95,7 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^5.4.0",
     "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-shopify": "^23.1.0",
+    "eslint-plugin-shopify": "^24.1.1",
     "husky": "^0.14.3",
     "jest-cli": "^23.5.0",
     "jsonlint": "^1.6.3",
