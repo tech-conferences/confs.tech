@@ -39,7 +39,7 @@
     "date-fns": "^1.28.5",
     "dotenv": "6.0.0",
     "eslint": "5.4.0",
-    "eslint-config-react-app": "^2.0.0",
+    "eslint-config-react-app": "^3.0.2",
     "eslint-loader": "2.1.0",
     "eslint-plugin-flowtype": "2.50.0",
     "eslint-plugin-import": "2.14.0",
