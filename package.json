@@ -62,7 +62,7 @@
     "qs": "^6.5.2",
     "react": "^16.2.0",
     "react-datepicker": "^1.2.1",
-    "react-dev-utils": "^5.0.2",
+    "react-dev-utils": "^6.0.3",
     "react-dom": "^16.2.0",
     "react-error-overlay": "^4.0.1",
     "react-favicon": "0.0.14",
