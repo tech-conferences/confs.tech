@@ -188,7 +188,7 @@ class ConferencePage extends Component<ComposedProps, State> {
           )}
 
           <ScrollToConference hash={location.hash} />
-          {(topics.length === 0 || topics.indexOf('javascript') !== -1) && (
+          {(topics.length === 0 || topics.indexOf('css') !== -1) && (
             <SponsoredConference />
           )}
           <ConferenceList
