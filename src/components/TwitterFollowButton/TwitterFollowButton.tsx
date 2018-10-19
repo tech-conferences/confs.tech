@@ -5,7 +5,7 @@ export default class Twitter extends React.Component {
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = 'https://platform.twitter.com/widgets.js';
-    document.head.appendChild(script);
+    document.head && document.head.appendChild(script);
   }
 
   render() {
