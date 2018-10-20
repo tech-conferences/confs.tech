@@ -145,7 +145,7 @@ class ConferencePage extends Component<ComposedProps, State> {
           <div>
             <h1 className="visuallyHidden">
               List of all {topic ? TOPICS[topic] : 'tech'} conferences of{' '}
-              {CURRENT_YEAR}
+              {CURRENT_YEAR} and {CURRENT_YEAR + 1}
               {country ? ` in ${country}` : null}
             </h1>
             <Heading element="p">Find your next tech conference</Heading>
