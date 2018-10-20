@@ -46,7 +46,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           }}
         />
         <Heading element="p" level={4}>
-          <Link url={url} external>
+          <Link onClick={this.trackLink} url={url} external>
             {name}
           </Link>
         </Heading>
@@ -63,6 +63,14 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
         </p>
       </div>
     );
+  }
+
+  private trackLink(event: React.MouseEvent<HTMLAnchorElement>) {
+    const {href} = event.currentTarget;
+
+    ga('send', 'event', 'outbound', 'click', href, {
+      'transport': 'beacon',
+    });
   }
 }
 

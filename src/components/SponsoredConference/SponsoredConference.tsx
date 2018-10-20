@@ -12,7 +12,7 @@ export default class SponsoredConference extends PureComponent {
         <div className={styles.Content}>
           <div>
             <Heading element="p" level={4}>
-              <Link url="https://www.dotcss.io/" external>
+              <Link onClick={this.trackLink} url="https://www.dotcss.io/" external>
                 dotCSS
               </Link>
             </Heading>
@@ -31,5 +31,13 @@ export default class SponsoredConference extends PureComponent {
         </div>
       </div>
     );
+  }
+
+  private trackLink(event: React.MouseEvent<HTMLAnchorElement>) {
+    const {href} = event.currentTarget;
+
+    ga('send', 'event', 'outbound-sponsor', 'click', href, {
+      'transport': 'beacon',
+    });
   }
 }
