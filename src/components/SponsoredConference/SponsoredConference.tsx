@@ -20,6 +20,7 @@ export default class SponsoredConference extends PureComponent {
             <p className={styles.Footer}>
               #css ・ 20% off with promocode:{' '}
               <Link
+                onClick={this.trackLink}
                 url="https://2018.dotcss.io/tickets?promocode=CONFSTECH"
                 external
               >
