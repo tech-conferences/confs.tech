@@ -2,13 +2,11 @@
 @import '../style/foundation/colors';
 @import '../style/foundation/spacing';
 
-:global(.ais-CurrentRefinements) {
-  margin-bottom: spacing(base);
-}
-
 :global(.ais-CurrentRefinements-list) {
   padding-left: 0;
   margin: 0;
+  background-color: transparent;
+  display: block;
 }
 
 :global(.ais-CurrentRefinements-item) {
@@ -31,11 +29,6 @@
 :global(.ais-CurrentRefinements-list) :global(.ais-CurrentRefinements-category:hover) {
   background-color: color(gray);
   color: white;
-}
-
-:global(.ais-CurrentRefinements-list) {
-  background-color: transparent;
-  display: inline-block;
 }
 
 :global(.ais-CurrentRefinements-label) {
