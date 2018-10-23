@@ -4,7 +4,6 @@ import {filter, groupBy, sortBy as _sortBy} from 'lodash';
 import {isPast, parse, format} from 'date-fns';
 import {connectInfiniteHits} from 'react-instantsearch/connectors';
 
-import TwitterFollowButton from '../TwitterFollowButton';
 import Heading from '../Heading';
 import Divider from '../Divider';
 import Link from '../Link';
@@ -136,7 +135,6 @@ function Year({year, topics}: {year: string; topics?: string[]}) {
       </div>
       <div className={styles.AddConference}>
         <AddConferenceLink />
-        <TwitterFollowButton />
       </div>
     </div>
   );
