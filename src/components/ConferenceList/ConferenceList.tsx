@@ -16,6 +16,7 @@ interface Props {
   sortBy: string;
   hasMore?: boolean;
   hits?: Conference[];
+  topics?: string[];
   onLoadMore(): void;
 }
 
@@ -40,7 +41,7 @@ class ConferenceList extends Component<Props, never> {
   };
 
   render() {
-    const {hits, showCFP, sortBy, hasMore, onLoadMore} = this.props;
+    const {hits, showCFP, sortBy, hasMore, onLoadMore, topics} = this.props;
     let filteredConferences = hits as Conference[];
     if (showCFP) {
       filteredConferences = filter(hits, conf => {
@@ -52,7 +53,7 @@ class ConferenceList extends Component<Props, never> {
     const confsTable = Object.keys(confs).map(year => {
       return [
         <Divider key="hr" />,
-        <Year key={year} year={year} />,
+        <Year key={year} year={year} topics={topics} />,
         this.renderConferences(confs[year]),
       ];
     });
@@ -118,12 +119,21 @@ class Months extends Component<MonthsProps> {
   }
 }
 
-function Year({year}: {year: string}) {
+function Year({year, topics}: {year: string; topics?: string[]}) {
+  const topic = topics && topics.length > 0 ? `&TOPIC=${topics[0]}` : '';
   return (
     <div className={styles.Year}>
-      <Heading key={year} element="h2" level={2}>
-        {year}
-      </Heading>
+      <div>
+        <Heading key={year} element="h2" level={2}>
+          {year}
+        </Heading>
+        <Link
+          external
+          url={`https://tech.us19.list-manage.com/subscribe?u=246492d8cf0efc8c4ec6a9a60&id=84b8d4723e${topic}`}
+        >
+          Subscribe to our newsletter
+        </Link>
+      </div>
       <div className={styles.AddConference}>
         <AddConferenceLink />
         <TwitterFollowButton />
