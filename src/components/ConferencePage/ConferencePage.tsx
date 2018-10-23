@@ -79,9 +79,16 @@ class ConferencePage extends Component<ComposedProps, State> {
         } = this.state;
         const {history, showCFP} = this.props;
         const startURL = showCFP ? '/cfp' : '';
+
         const queryParams = {
-          topics: (topics || [params.topic]).join(QUERY_SEPARATOR),
-          countries: (country || [params.country]).join(QUERY_SEPARATOR),
+          topics:
+            topics === ''
+              ? ''
+              : (topics || [params.topic]).join(QUERY_SEPARATOR),
+          countries:
+            country === ''
+              ? ''
+              : (country || [params.country]).join(QUERY_SEPARATOR),
         };
 
         if (topics && country) {
