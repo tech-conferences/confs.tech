@@ -204,6 +204,7 @@ class ConferencePage extends Component<ComposedProps, State> {
             onLoadMore={this.loadMore}
             sortBy={sortBy}
             showCFP={showCFP}
+            topics={topics}
           />
         </InstantSearch>
 
