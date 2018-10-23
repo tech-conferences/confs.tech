@@ -93,12 +93,14 @@ class ConferencePage extends Component<ComposedProps, State> {
 
         if (topics && country) {
           history.push(
-            `${startURL}/${topics[0]}/${country[0]}?${qs.stringify(
+            `${startURL}/${getFirstTopic(topics)}/${country[0]}?${qs.stringify(
               queryParams
             )}`
           );
         } else if (topics) {
-          history.push(`${startURL}/${topics[0]}?${qs.stringify(queryParams)}`);
+          history.push(
+            `${startURL}/${getFirstTopic(topics)}?${qs.stringify(queryParams)}`
+          );
         } else {
           history.push(`${startURL}/?${qs.stringify(queryParams)}`);
         }
@@ -248,6 +250,14 @@ function transformCurrentRefinements(items: any[]) {
     });
   }
   return items;
+}
+
+function getFirstTopic(topics: string[]) {
+  if (topics.length > 1 && topics[0] === 'general') {
+    return topics[1];
+  }
+
+  return topics[0];
 }
 
 export default withRouter(ConferencePage);
