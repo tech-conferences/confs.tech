@@ -13,3 +13,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.WithDiscount {
+  margin-bottom: spacing();
+  > input, > label {
+    width: auto;
+    display: inline;
+  }
+}

@@ -18,7 +18,6 @@ import './RefinementList.scss';
 import './CurrentRefinement.scss';
 
 import ScrollToConference from '../ScrollToConference';
-import SponsoredConference from '../SponsoredConference';
 import Footer from '../Footer';
 import Link from '../Link';
 import GithubStar from '../GithubStar';
@@ -40,6 +39,7 @@ interface State {
   hitsPerPage: number;
   sortBy: string;
   showPast: boolean;
+  showDiscount: boolean;
   refinementList?: any;
 }
 
@@ -50,13 +50,7 @@ class ConferencePage extends Component<ComposedProps, State> {
     hitsPerPage: 150,
     sortBy: 'startDate',
     showPast: false,
-  };
-
-  togglePast = () => {
-    const {showPast} = this.state;
-    this.setState({showPast: !showPast}, () => {
-      window.scrollTo(0, 0);
-    });
+    showDiscount: false,
   };
 
   sortByCfpEndDate = () => {
@@ -109,14 +103,22 @@ class ConferencePage extends Component<ComposedProps, State> {
   };
 
   algoliaFilter = () => {
-    const {showPast} = this.state;
+    const {showPast, showDiscount} = this.state;
     const {showCFP} = this.props;
+
     let filters = showPast
       ? `startDateUnix>${TODAY - ONE_YEAR}`
       : `startDateUnix>${TODAY}`;
+
     if (showCFP) {
       filters += String(` AND cfpEndDateUnix>${TODAY}`);
     }
+
+    if (showDiscount) {
+      filters += String(' AND hasDiscount=1');
+    }
+    console.log(filters);
+
     return filters;
   };
 
@@ -187,6 +189,17 @@ class ConferencePage extends Component<ComposedProps, State> {
             defaultRefinement={countries}
           />
 
+          <div className={styles.WithDiscount}>
+            <label htmlFor="with-discount">
+              Show conferences with discounts
+            </label>
+            <input
+              id="with-discount"
+              type="checkbox"
+              onClick={this.toggleshowDiscounts}
+            />
+          </div>
+
           <CurrentRefinements transformItems={transformCurrentRefinements} />
 
           {showCFP && (
@@ -197,9 +210,7 @@ class ConferencePage extends Component<ComposedProps, State> {
           )}
 
           <ScrollToConference hash={location.hash} />
-          {(topics.length === 0 || topics.indexOf('css') !== -1) && (
-            <SponsoredConference />
-          )}
+
           <ConferenceList
             onLoadMore={this.loadMore}
             sortBy={sortBy}
@@ -216,6 +227,22 @@ class ConferencePage extends Component<ComposedProps, State> {
       </div>
     );
   }
+
+  private togglePast = () => {
+    const {showPast} = this.state;
+
+    this.setState({showPast: !showPast}, () => {
+      window.scrollTo(0, 0);
+    });
+  };
+
+  private toggleshowDiscounts = () => {
+    const {showDiscount} = this.state;
+
+    this.setState({
+      showDiscount: !showDiscount,
+    });
+  };
 }
 
 function CfpHeader({sortByCfpEndDate, sortBy}: any) {
