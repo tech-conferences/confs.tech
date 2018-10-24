@@ -25,6 +25,8 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       cfpEndDate,
       cfpUrl,
       showCFP,
+      affiliateText,
+      affiliateUrl,
     } = this.props;
 
     return (
@@ -58,20 +60,32 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
           {showCFP && <br />}
           <Topics topics={topics} />
-          {twitter && ' – '}
           <Twitter twitter={twitter} />
+          <Affiliate
+            text={affiliateText}
+            url={affiliateUrl}
+            callback={this.trackAffiliate}
+          />
         </p>
       </div>
     );
   }
 
-  private trackLink(event: React.MouseEvent<HTMLAnchorElement>) {
+  private trackAffiliate = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const {href} = event.currentTarget;
+    this.track('outbound-affiliate', href);
+  };
 
-    ga('send', 'event', 'outbound', 'click', href, {
-      'transport': 'beacon',
+  private trackLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    const {href} = event.currentTarget;
+    this.track('outbound', href);
+  };
+
+  private track = (eventName: string, url: string) => {
+    ga('send', 'event', eventName, 'click', url, {
+      transport: 'beacon',
     });
-  }
+  };
 }
 
 interface TwitterProps {
@@ -83,9 +97,32 @@ function Twitter({twitter}: TwitterProps) {
   }
 
   return (
-    <Link url={`https://twitter.com/${twitter}`} external>
-      {twitter}
-    </Link>
+    <>
+      ・
+      <Link url={`https://twitter.com/${twitter}`} external>
+        {twitter}
+      </Link>
+    </>
+  );
+}
+
+interface AffiliateProps {
+  url: string;
+  text: string;
+  callback: (event: React.MouseEvent<HTMLAnchorElement>) => void;
+}
+function Affiliate({url, text, callback}: AffiliateProps) {
+  if (!url) {
+    return null;
+  }
+
+  return (
+    <>
+      ・
+      <Link onClick={callback} url={url} external>
+        <span className={styles.promocode}>{text}</span>
+      </Link>
+    </>
   );
 }
 
