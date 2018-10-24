@@ -12,18 +12,23 @@ export default class SponsoredConference extends PureComponent {
         <div className={styles.Content}>
           <div>
             <Heading element="p" level={4}>
-              <Link onClick={this.trackLink} url="https://www.dotcss.io/" external>
+              <Link
+                onClick={this.trackLink}
+                url="https://www.dotcss.io/"
+                external
+              >
                 dotCSS
               </Link>
             </Heading>
             <p>November 8, 2018 ・ Paris, France</p>
             <p className={styles.Footer}>
-              #css ・ 20% off with promocode:{' '}
+              #css ・
               <Link
                 onClick={this.trackLink}
                 url="https://2018.dotcss.io/tickets?promocode=CONFSTECH"
                 external
               >
+                <span className={styles.Footer}>20% off with promocode: </span>
                 <span className={styles.promocode}>CONFSTECH</span>
               </Link>
             </p>
@@ -38,7 +43,7 @@ export default class SponsoredConference extends PureComponent {
     const {href} = event.currentTarget;
 
     ga('send', 'event', 'outbound-sponsor', 'click', href, {
-      'transport': 'beacon',
+      transport: 'beacon',
     });
   }
 }
