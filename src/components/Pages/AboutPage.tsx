@@ -31,7 +31,7 @@ export default function SponsorPage() {
         conference to the list.
       </p>
       <p>
-        If you have any partnership ideas, or want a discounted affiliate links,{' '}
+        If you have any partnership ideas, or want to give a discount to Confs.tech users through an affiliate link,{' '}
         <Link url="mailto:contact@confs.tech">email us.</Link>
       </p>
       <p>
