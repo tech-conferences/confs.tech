@@ -58,7 +58,7 @@ export default class StayTuned extends PureComponent<Props, State> {
                 value="Y"
                 className="av-checkbox"
               />
-              <label htmlFor="gdpr_18847">I accept to receive email – GDPR&nbsp;✅</label>
+              <label htmlFor="gdpr_18847">I accept to receive emails – GDPR&nbsp;✅</label>
             </div>
           </form>
           <Link url="https://twitter.com/ConfsTech/" external>
