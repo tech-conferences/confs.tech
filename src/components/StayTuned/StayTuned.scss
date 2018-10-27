@@ -49,10 +49,12 @@
   border-right: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  margin: 0;
 }
 
 .Button {
   width: auto;
+  margin: 0;
   background-color: color(gray, lighter);
   display: inline-block;
   padding: spacing(tight) spacing();
@@ -61,6 +63,8 @@
   border-bottom-left-radius: 0;
   cursor: pointer;
   transition: all 250ms cubic-bezier(0, 1.16, 1, 1);
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
   &:disabled {
     opacity: 0.8;
