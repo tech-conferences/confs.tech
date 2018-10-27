@@ -18,7 +18,7 @@ import './RefinementList.scss';
 import './CurrentRefinement.scss';
 
 import ScrollToConference from '../ScrollToConference';
-import SponsoredConference from '../SponsoredConference';
+import StayTuned from '../StayTuned';
 import Footer from '../Footer';
 import Link from '../Link';
 import GithubStar from '../GithubStar';
@@ -197,14 +197,11 @@ class ConferencePage extends Component<ComposedProps, State> {
           )}
 
           <ScrollToConference hash={location.hash} />
-          {(topics.length === 0 || topics.indexOf('css') !== -1) && (
-            <SponsoredConference />
-          )}
+          <StayTuned topic={getFirstTopic(topics)} />
           <ConferenceList
             onLoadMore={this.loadMore}
             sortBy={sortBy}
             showCFP={showCFP}
-            topics={topics}
           />
         </InstantSearch>
 
