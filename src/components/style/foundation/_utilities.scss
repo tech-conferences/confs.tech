@@ -22,6 +22,9 @@ $base-font-size: 16px;
   }
 }
 
+@function em($pixels, $context: $default-browser-font-size) {
+  @return #{$pixels/$context}em;
+}
 
 /// Returns the list of available names in a given map.
 /// @param {Map} $map - The map of data to list the names from.

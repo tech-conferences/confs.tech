@@ -14,6 +14,10 @@ input, textarea {
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;
+
+  &[type=checkbox] {
+    width: auto;
+  }
 }
 
 .InputGroup {
@@ -50,6 +54,10 @@ input, textarea {
   margin-bottom: spacing(extra-loose);
   transition: all 150ms ease-out;
   cursor: pointer;
+
+  &:disabled {
+    color: color(grey);
+  }
 
   &:not([disabled]):hover {
     background-color: #EEE;
