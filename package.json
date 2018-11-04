@@ -8,7 +8,8 @@
     "test": "node scripts/test.js --env=jsdom",
     "reorder-confs": "BABEL_ENV=node babel-node ./scripts/reorder-conferences-by-date.js",
     "precommit": "lint-staged",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "postinstall": "opencollective-postinstall"
   },
   "lint-staged": {
     "*.js": [
@@ -52,6 +53,7 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "object-assign": "4.1.1",
+    "opencollective-postinstall": "^2.0.1",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
     "prettier": "^1.5.3",
@@ -76,7 +78,8 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.7.1",
     "webpack-manifest-plugin": "^2.0.3",
-    "whatwg-fetch": "2.0.4"
+    "whatwg-fetch": "2.0.4",
+    "opencollective": "^1.0.3"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.4",
@@ -155,5 +158,9 @@
       "webpack-dev-server",
       "webpack-manifest-plugin"
     ]
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/confstech"
   }
 }
