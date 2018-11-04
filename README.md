@@ -1,6 +1,8 @@
 # The open-source and crowd sourced conference website
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/tech-conferences/confs.tech.svg)](https://greenkeeper.io/)
+[![Backers on Open Collective](https://opencollective.com/confstech/backers/badge.svg)](#backers) 
+[![Sponsors on Open Collective](https://opencollective.com/confstech/sponsors/badge.svg)](#sponsors) 
 
 Confs.tech is an open source project that lists upcoming tech conferences. Everything is free and will stay free. It's aimed to be simple and without useless clutter. You can filter by topics and [see upcoming CFPs](https://confs.tech/cfp).
 
@@ -47,6 +49,36 @@ Some of the conferences have been pulled from other projects:
 - Android: [AndroidStudyGroup/conferences](https://github.com/AndroidStudyGroup/conferences)
 - iOS: [Lascorbe/CocoaConferences](https://github.com/Lascorbe/CocoaConferences)
 - UX: [CSS Tricks conference guide](https://css-tricks.com/guide-2017-conferences)
+
+## Contributors
+
+This project exists thanks to all the people who contribute. 
+<a href="https://github.com/tech-conferences/confs.tech/contributors"><img src="https://opencollective.com/confstech/contributors.svg?width=890&button=false" /></a>
+
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/confstech#backer)]
+
+<a href="https://opencollective.com/confstech#backers" target="_blank"><img src="https://opencollective.com/confstech/backers.svg?width=890"></a>
+
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/confstech#sponsor)]
+
+<a href="https://opencollective.com/confstech/sponsor/0/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/confstech/sponsor/1/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/confstech/sponsor/2/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/confstech/sponsor/3/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/confstech/sponsor/4/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/confstech/sponsor/5/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/confstech/sponsor/6/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/confstech/sponsor/7/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/confstech/sponsor/8/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/confstech/sponsor/9/website" target="_blank"><img src="https://opencollective.com/confstech/sponsor/9/avatar.svg"></a>
+
+
 
 ## License
 
