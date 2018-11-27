@@ -29,6 +29,7 @@ Conference data have the following structure:
 - [Nima Izadi](https://nimz.co)
 - [Ekaterina Prigara](https://twitter.com/katyaprigara)
 - [Trivikram Kamat](https://twitter.com/trivikram)
+- [Christian Grail](https://twitter.com/cgrail)
 
 If you want to contribute, the project is React based (it's an ejected create-react-app), so running:
 
