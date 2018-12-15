@@ -3,6 +3,7 @@ import {Component} from 'react';
 import {filter, groupBy, sortBy as _sortBy} from 'lodash';
 import {isPast, parse, format} from 'date-fns';
 import {connectInfiniteHits} from 'react-instantsearch/connectors';
+import {Map as LeafletMap, TileLayer, Marker, Popup} from 'react-leaflet';
 
 import Heading from '../Heading';
 import Divider from '../Divider';
@@ -58,6 +59,27 @@ class ConferenceList extends Component<Props, never> {
 
     return (
       <div>
+        <LeafletMap center={{lat: 51.505, lng: -0.09}} zoom={5}>
+          <TileLayer
+            attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+            url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+          />
+          {filteredConferences.map(conference => {
+            return (
+              <Marker
+                key={conference.objectID}
+                position={{lat: conference.latitude, lng: conference.longitude}}
+              >
+                <Popup>
+                  <h3>{conference.name}</h3>
+                  <p>
+                    {conference.startDate}-{conference.endDate}
+                  </p>
+                </Popup>
+              </Marker>
+            );
+          })}
+        </LeafletMap>
         {confsTable}
         {hasMore && (
           <Link button onClick={onLoadMore}>
@@ -117,7 +139,7 @@ class Months extends Component<MonthsProps> {
   }
 }
 
-function Year({year}: {year: string;}) {
+function Year({year}: {year: string}) {
   return (
     <div className={styles.Year}>
       <div>

@@ -198,6 +198,7 @@ class ConferencePage extends Component<ComposedProps, State> {
 
           <ScrollToConference hash={location.hash} />
           <StayTuned topic={getFirstTopic(topics)} />
+
           <ConferenceList
             onLoadMore={this.loadMore}
             sortBy={sortBy}

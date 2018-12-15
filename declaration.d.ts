@@ -12,6 +12,8 @@ interface Conference {
   cfpUrl: string;
   affiliateText: string;
   affiliateUrl: string;
+  latitude: number;
+  longitude: number;
 }
 
 declare module '*.scss' {
