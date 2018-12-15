@@ -13,7 +13,7 @@ interface Props {
 export default class Heading extends PureComponent<Props> {
   render() {
     const {level} = this.props;
-    const Element = this.props.element;
+    const Element: any = this.props.element;
 
     return (
       <Element
