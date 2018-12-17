@@ -17,7 +17,7 @@
 }
 
 :global(.ais-RefinementList-item) {
-  margin-right: spacing(loose);
+  margin-right: spacing(tight);
   margin-bottom: spacing(tight);
   list-style: none;
 }
@@ -33,7 +33,13 @@
 
 
 :global(.ais-RefinementList-label) {
-  @include link();
+  font-size: 0.9em;
+  display: inline-block;
+  background-color: lighten(color(gray), 50);
+  padding: spacing(extra-tight) spacing(tight);
+  border-radius: 2px;
+  color: color(gray, darker);
+  cursor: pointer;
 
   &:focus {
     background: black;
@@ -48,16 +54,8 @@
   outline-style: auto;
 }
 
-:global(.ais-RefinementList-item--selected) :global(.ais-RefinementList-labelText) {
-  @include link--hover();
-}
-
 :global(.ais-RefinementList-count) {
-  border-radius: 30px;
-  background-color: color(gray, lighter);
-  color: color(accent, dark);
-  font-size: font-size(filter, itemCount);
-  padding: 0 6px;
+  display: none;
 }
 
 :global(.ais-RefinementList-showMore) {
@@ -66,4 +64,9 @@
   &:hover {
     @include link--hover();
   }
+}
+
+:global(.ais-RefinementList-item--selected .ais-RefinementList-label) {
+  background-color: lighten(color(gray), 20);
+  color: white;
 }

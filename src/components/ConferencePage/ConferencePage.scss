@@ -13,3 +13,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+.PageContainer {
+  display: flex;
+  height: 100vh;
+  padding-left: spacing();
+
+  > div:first-child {
+    flex: 1;
+  }
+}

@@ -1,7 +1,6 @@
 import React, {PureComponent} from 'react';
 import classNames from 'classnames';
-import {parse} from 'date-fns';
-
+import {format, parse} from 'date-fns';
 import {formatDate, generateEventJSONLD} from './utils';
 import Heading from '../Heading';
 import Link from '../Link';
@@ -47,20 +46,30 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
             }),
           }}
         />
+        <div className={styles.Date}>
+          <span className={styles.Day}>
+            {formatDate(startDate, endDate)}
+          </span>
+          <br />
+          <span className={styles.Month}>
+            {format(parse(`${startDate}`), 'MMM')}
+          </span>
+        </div>
         <Heading element="p" level={4}>
-          <Link onClick={this.trackLink} url={url} external>
+          <Link onClick={this.trackLink} url={url} external className={styles.Title}>
             {name}
           </Link>
         </Heading>
         <p className={styles.p}>
-          {`${Location(city, country)}・`}
-          <span className={styles.Date}>{formatDate(startDate, endDate)}</span>
+          {Location(city, country)}
         </p>
         <p className={classNames(styles.p, styles.Footer)}>
           {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
           {showCFP && <br />}
           <Topics topics={topics} />
+          <br />
           <Twitter twitter={twitter} />
+          <br />
           <Affiliate
             text={affiliateText}
             url={affiliateUrl}
@@ -98,7 +107,6 @@ function Twitter({twitter}: TwitterProps) {
 
   return (
     <>
-      ・
       <Link url={`https://twitter.com/${twitter}`} external>
         {twitter}
       </Link>
@@ -118,7 +126,6 @@ function Affiliate({url, text, callback}: AffiliateProps) {
 
   return (
     <>
-      ・
       <Link onClick={callback} url={url} external>
         <span className={styles.promocode}>{text}</span>
       </Link>

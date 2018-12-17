@@ -1,5 +1,16 @@
 @import '../style/foundation/spacing';
 
+.ConferenceListContainer {
+  padding: spacing();
+  flex: 1;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.MapContainer {
+  flex: 1;
+}
+
 .ConferenceList {
   width: 100%;
 }

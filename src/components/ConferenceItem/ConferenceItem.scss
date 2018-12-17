@@ -1,12 +1,38 @@
+@import '../style/foundation/border-radius';
+@import '../style/foundation/typography';
 @import '../style/foundation/spacing';
 @import '../style/foundation/colors';
 
 .ConferenceItem {
   margin-bottom: spacing(base);
+  background-color: white;
+  padding: spacing();
+  border-radius: border-radius();
+  width: 200px;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.Title {
+  color: black;
+  font-weight: normal;
+  font-size: font-size(conf-item);
 }
 
 .Date {
-  margin-right: spacing(tight);
+  margin-bottom: spacing(loose);
+}
+
+.Month {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #CCC;
+  font-size: 0.8em;
+}
+
+.Day {
+  font-weight: bold;
 }
 
 .p {
@@ -14,6 +40,9 @@
   line-height: 1.5em;
 }
 
+.Footer {
+  margin-top: spacing(loose);
+}
 .Footer,
 .Footer a {
   font-weight: 200;

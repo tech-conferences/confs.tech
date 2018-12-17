@@ -9,7 +9,7 @@ import {
   Configure,
   InstantSearch,
   RefinementList,
-  CurrentRefinements,
+  // CurrentRefinements,
 } from 'react-instantsearch/dom';
 
 import {withRouter} from 'react-router';
@@ -139,10 +139,10 @@ class ConferencePage extends Component<ComposedProps, State> {
       (queryParams.topics && queryParams.topics.split(QUERY_SEPARATOR)) ||
       (topic && [topic]) ||
       [];
-    const countries =
-      (queryParams.countries && queryParams.countries.split(QUERY_SEPARATOR)) ||
-      (country && [country]) ||
-      [];
+    // const countries =
+    //   (queryParams.countries && queryParams.countries.split(QUERY_SEPARATOR)) ||
+    //   (country && [country]) ||
+    //   [];
 
     return (
       <div>
@@ -150,21 +150,6 @@ class ConferencePage extends Component<ComposedProps, State> {
           <title>Tech conferences | Confs.tech</title>
         </Helmet>
         <Favicon url={`/${topic}.png`} />
-        <header className={styles.Header}>
-          <div>
-            <h1 className="visuallyHidden">
-              List of all {topic ? TOPICS[topic] : 'tech'} conferences of{' '}
-              {CURRENT_YEAR} and {CURRENT_YEAR + 1}
-              {country ? ` in ${country}` : null}
-            </h1>
-            <Heading element="p">Find your next tech conference</Heading>
-            <Heading element="h2" level="sub">
-              Open-source and crowd-sourced conference website
-            </Heading>
-          </div>
-          <GithubStar />
-        </header>
-
         <InstantSearch
           appId={process.env.ALGOLIA_APPLICATION_ID}
           apiKey={process.env.ALGOLIA_API_KEY}
@@ -172,38 +157,58 @@ class ConferencePage extends Component<ComposedProps, State> {
           indexName={'prod_conferences'}
         >
           <Configure hitsPerPage={hitsPerPage} filters={this.algoliaFilter()} />
-          <RefinementList
-            limit={20}
-            attribute="topics"
-            defaultRefinement={topics}
-            transformItems={transformTopicRefinements}
-          />
-          <RefinementList
-            showMoreLimit={100}
-            limit={9}
-            showMore
-            attribute="country"
-            transformItems={transformCountryRefinements}
-            defaultRefinement={countries}
-          />
+          <div className={styles.PageContainer}>
+            <div>
+              <header className={styles.Header}>
+                <div>
+                  <h1 className="visuallyHidden">
+                    List of all {topic ? TOPICS[topic] : 'tech'} conferences of{' '}
+                    {CURRENT_YEAR} and {CURRENT_YEAR + 1}
+                    {country ? ` in ${country}` : null}
+                  </h1>
+                  <Heading element="p">Find your next tech conference</Heading>
+                  <Heading element="h2" level="sub">
+                    Open-source and crowd-sourced conference website
+                  </Heading>
+                </div>
+                <GithubStar />
+              </header>
+              <RefinementList
+                limit={20}
+                attribute="topics"
+                defaultRefinement={topics}
+                transformItems={transformTopicRefinements}
+              />
+              {/* <RefinementList
+                showMoreLimit={100}
+                limit={9}
+                showMore
+                attribute="country"
+                transformItems={transformCountryRefinements}
+                defaultRefinement={countries}
+              /> */}
 
-          <CurrentRefinements transformItems={transformCurrentRefinements} />
+              {/* <CurrentRefinements
+                transformItems={transformCurrentRefinements}
+              /> */}
 
-          {showCFP && (
-            <CfpHeader
-              sortByCfpEndDate={this.sortByCfpEndDate}
+              {showCFP && (
+                <CfpHeader
+                  sortByCfpEndDate={this.sortByCfpEndDate}
+                  sortBy={sortBy}
+                />
+              )}
+
+              <ScrollToConference hash={location.hash} />
+              <StayTuned topic={getFirstTopic(topics)} />
+            </div>
+
+            <ConferenceList
+              onLoadMore={this.loadMore}
               sortBy={sortBy}
+              showCFP={showCFP}
             />
-          )}
-
-          <ScrollToConference hash={location.hash} />
-          <StayTuned topic={getFirstTopic(topics)} />
-
-          <ConferenceList
-            onLoadMore={this.loadMore}
-            sortBy={sortBy}
-            showCFP={showCFP}
-          />
+          </div>
         </InstantSearch>
 
         <Footer
@@ -237,19 +242,19 @@ function transformTopicRefinements(items: any[]) {
   return orderBy(items, ['count', 'name'], ['desc', 'desc']);
 }
 
-function transformCountryRefinements(items: any[]) {
-  return orderBy(items, ['count', 'name'], ['desc', 'desc']);
-}
+// function transformCountryRefinements(items: any[]) {
+//   return orderBy(items, ['count', 'name'], ['desc', 'desc']);
+// }
 
-function transformCurrentRefinements(items: any[]) {
-  if (items.length && items[0].attribute === 'topics') {
-    items[0].items.map((item: any) => {
-      item.label = TOPICS[item.label] || item.label;
-      return item;
-    });
-  }
-  return items;
-}
+// function transformCurrentRefinements(items: any[]) {
+//   if (items.length && items[0].attribute === 'topics') {
+//     items[0].items.map((item: any) => {
+//       item.label = TOPICS[item.label] || item.label;
+//       return item;
+//     });
+//   }
+//   return items;
+// }
 
 function getFirstTopic(topics: string[]) {
   if (topics.length > 1 && topics[0] === 'general') {

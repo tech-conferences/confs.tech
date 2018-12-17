@@ -58,35 +58,39 @@ class ConferenceList extends Component<Props, never> {
     });
 
     return (
-      <div>
-        <LeafletMap center={{lat: 51.505, lng: -0.09}} zoom={5}>
-          <TileLayer
-            attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-            url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-          />
-          {filteredConferences.map(conference => {
-            return (
-              <Marker
-                key={conference.objectID}
-                position={{lat: conference.latitude, lng: conference.longitude}}
-              >
-                <Popup>
-                  <h3>{conference.name}</h3>
-                  <p>
-                    {conference.startDate}-{conference.endDate}
-                  </p>
-                </Popup>
-              </Marker>
-            );
-          })}
-        </LeafletMap>
-        {confsTable}
-        {hasMore && (
-          <Link button onClick={onLoadMore}>
-            Load more
-          </Link>
-        )}
-      </div>
+      <>
+        <div className={styles.ConferenceListContainer}>
+          {confsTable}
+          {hasMore && (
+            <Link button onClick={onLoadMore}>
+              Load more
+            </Link>
+          )}
+        </div>
+        <div className={styles.MapContainer}>
+          <LeafletMap center={{lat: 51.505, lng: -0.09}} zoom={5}>
+            <TileLayer
+              attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+              url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+            />
+            {filteredConferences.map(conference => {
+              return (
+                <Marker
+                  key={conference.objectID}
+                  position={{lat: conference.latitude, lng: conference.longitude}}
+                >
+                  <Popup>
+                    <h3>{conference.name}</h3>
+                    <p>
+                      {conference.startDate}-{conference.endDate}
+                    </p>
+                  </Popup>
+                </Marker>
+              );
+            })}
+          </LeafletMap>
+        </div>
+      </>
     );
   }
 }
