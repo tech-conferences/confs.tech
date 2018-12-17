@@ -245,7 +245,7 @@ export default class ConferenceNewPage extends Component<Props> {
               onChange={this.handleFieldChange}
             >
               {SORTED_TOPICS_KEYS.map((value: string) => (
-                <option key={value} value={value} label={TOPICS[value]} />
+                <option key={value} value={value}>{TOPICS[value]}</option>
               ))}
             </select>
           </InputGroup>
