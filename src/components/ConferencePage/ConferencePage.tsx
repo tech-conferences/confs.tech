@@ -147,13 +147,15 @@ class ConferencePage extends Component<ComposedProps, State> {
     return (
       <div>
         <Helmet>
-          <title>Tech conferences | Confs.tech</title>
+          <title>
+            {topic ? TOPICS[topic] : 'Tech'} conferences in {`${CURRENT_YEAR} and ${CURRENT_YEAR + 1}`} | Confs.tech
+          </title>
         </Helmet>
         <Favicon url={`/${topic}.png`} />
         <header className={styles.Header}>
           <div>
             <h1 className="visuallyHidden">
-              List of all {topic ? TOPICS[topic] : 'tech'} conferences of{' '}
+              List of all {topic ? TOPICS[topic] : 'tech'} conferences in{' '}
               {CURRENT_YEAR} and {CURRENT_YEAR + 1}
               {country ? ` in ${country}` : null}
             </h1>
