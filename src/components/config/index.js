@@ -20,5 +20,6 @@ export const TOPICS = {
   general: 'General',
   security: 'Security',
   scala: 'Scala',
-  dotnet: '.NET'
+  dotnet: '.NET',
+  networking: 'Community / Networking'
 };
