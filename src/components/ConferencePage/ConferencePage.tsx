@@ -25,6 +25,7 @@ import GithubStar from '../GithubStar';
 import Heading from '../Heading';
 import ConferenceList from '../ConferenceList';
 import {TOPICS} from '../config';
+import Search from '../Search'
 
 const QUERY_SEPARATOR = '+';
 const CURRENT_YEAR = new Date().getFullYear();
@@ -174,6 +175,7 @@ class ConferencePage extends Component<ComposedProps, State> {
           indexName={'prod_conferences'}
         >
           <Configure hitsPerPage={hitsPerPage} filters={this.algoliaFilter()} />
+          <Search />
           <RefinementList
             limit={20}
             attribute="topics"
