@@ -10,6 +10,10 @@ import Link from '../Link';
 import ConferenceItem from '../ConferenceItem';
 import styles from './ConferenceList.scss';
 
+interface State {
+  loading: boolean;
+}
+
 interface Props {
   showCFP: boolean;
   sortBy: string;
@@ -18,7 +22,19 @@ interface Props {
   onLoadMore(): void;
 }
 
-class ConferenceList extends Component<Props, never> {
+class ConferenceList extends Component<Props, State> {
+  state: State = {
+    loading: true,
+  };
+
+  componentDidUpdate() {
+    const {hits} = this.props;
+    const {loading} = this.state;
+    if (loading && hits && hits.length > 0) {
+      this.setState({loading: false});
+    }
+  }
+
   renderConferences = (conferences: Conference[]) => {
     const {showCFP} = this.props;
     return (
@@ -36,6 +52,12 @@ class ConferenceList extends Component<Props, never> {
         })}
       </div>
     );
+  };
+
+  noResults = () => {
+    const {loading} = this.state;
+
+    return <div className={styles.NoResults}>{loading ? 'Loading...' : 'No results found.'}</div>;
   };
 
   render() {
@@ -58,7 +80,7 @@ class ConferenceList extends Component<Props, never> {
 
     return (
       <div>
-        {confsTable}
+        {confsTable.length > 0 ? confsTable : this.noResults()}
         {hasMore && (
           <Link button onClick={onLoadMore}>
             Load more
@@ -69,10 +91,7 @@ class ConferenceList extends Component<Props, never> {
   }
 }
 
-function groupAndSortConferences(
-  conferences: Conference[],
-  sortBy = 'startDate'
-) {
+function groupAndSortConferences(conferences: Conference[], sortBy = 'startDate') {
   // Group conferences by year
   // FIXME: remove any
   const confs: any = groupBy(conferences, conf => format(conf[sortBy], 'YYYY'));
@@ -81,10 +100,7 @@ function groupAndSortConferences(
   Object.keys(confs).map((year: string) => {
     confs[year] = groupBy(confs[year], conf => format(conf[sortBy], 'YYYY-MM'));
     Object.keys(confs[year]).map(month => {
-      confs[year][month] = _sortBy(
-        confs[year][month],
-        conference => conference[sortBy]
-      );
+      confs[year][month] = _sortBy(confs[year][month], conference => conference[sortBy]);
     });
   });
 
@@ -109,15 +125,13 @@ class Months extends Component<MonthsProps> {
         {getMonthName(month)}
       </Heading>,
       conferences.map(conf => {
-        return (
-          <ConferenceItem {...conf} key={conf.objectID} showCFP={showCFP} />
-        );
+        return <ConferenceItem {...conf} key={conf.objectID} showCFP={showCFP} />;
       }),
     ];
   }
 }
 
-function Year({year}: {year: string;}) {
+function Year({year}: {year: string}) {
   return (
     <div className={styles.Year}>
       <div>
