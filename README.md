@@ -11,17 +11,17 @@ All conferences are stored in [JSON files](https://github.com/tech-conferences/c
 Conference data have the following structure:
 
 ```json
-  {
-    "name": "",
-    "url": "",
-    "startDate": "YYYY-MM-DD",
-    "endDate": "YYYY-MM-DD",
-    "city": "",
-    "country": "",
-    "cfpUrl": "",
-    "cfpEndDate": "",
-    "twitter": ""
-  }
+{
+  "name": "",
+  "url": "",
+  "startDate": "YYYY-MM-DD",
+  "endDate": "YYYY-MM-DD",
+  "city": "",
+  "country": "",
+  "cfpUrl": "",
+  "cfpEndDate": "",
+  "twitter": ""
+}
 ```
 
 ## Active contributors
@@ -75,5 +75,5 @@ Some of the conferences have been pulled from other projects:
 - [See all .NET conferences](https://confs.tech/dotnet)
 - [See all GraphQL conferences](https://confs.tech/graphql)
 - [See all networking events](https://confs.tech/networking)
+- [See all Closure conferences](https://confs.tech/clojure)
 - [See general conferences](https://confs.tech/general)
-

@@ -7,6 +7,7 @@ export const TOPICS = {
   css: 'CSS',
   ux: 'Design / UX',
   ruby: 'Ruby',
+  clojure: 'Clojure',
   ios: 'iOS / Swift',
   android: 'Android',
   data: 'Data / AI',
