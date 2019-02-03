@@ -190,9 +190,15 @@ export default class ConferenceNewPage extends Component<Props> {
       <div>
         <p>Thank you for submitting a conference!</p>
         <p>
-          We will soon review it and add it to the list.
+          We will soon review it, add it to the list and tweet it on{' '}
+          <Link
+            external
+            url="https://twitter.com/ConfsTech"
+          >
+            @ConfsTech
+          </Link>
           <br />
-          You can find your submission and track its progress on{' '}
+          Find your submission and track its progress on{' '}
           <Link
             external
             url="https://github.com/tech-conferences/conference-data/pulls"
@@ -209,6 +215,8 @@ export default class ConferenceNewPage extends Component<Props> {
           <Link url="https://confs.tech/">Go back to confs.tech</Link>
           {' – '}
           <Link onClick={this.resetForm}>Add a new conference</Link>
+          {' – '}
+          <Link external url="https://twitter.com/ConfsTech/">Follow us on Twitter</Link>
         </p>
       </div>
     );
