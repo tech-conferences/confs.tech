@@ -47,7 +47,7 @@ type ComposedProps = Props & any;
 
 class ConferencePage extends Component<ComposedProps, State> {
   state: State = {
-    hitsPerPage: 150,
+    hitsPerPage: 600,
     sortBy: 'startDate',
     showPast: false,
   };
