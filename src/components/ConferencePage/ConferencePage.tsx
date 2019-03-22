@@ -175,7 +175,7 @@ class ConferencePage extends Component<ComposedProps, State> {
         >
           <Configure hitsPerPage={hitsPerPage} filters={this.algoliaFilter()} />
           <RefinementList
-            limit={20}
+            limit={40}
             attribute="topics"
             defaultRefinement={topics}
             transformItems={transformTopicRefinements}
