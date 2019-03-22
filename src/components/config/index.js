@@ -16,6 +16,7 @@ export const TOPICS = {
   rust: 'Rust',
   python: 'Python',
   golang: 'Golang',
+  groovy: 'Groovy',
   devops: 'Dev Ops',
   'tech-comm': 'Technical communication',
   general: 'General',
