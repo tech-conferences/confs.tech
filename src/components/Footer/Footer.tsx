@@ -8,11 +8,12 @@ import Twitter from '../Twitter';
 interface Props {
   showCFP: boolean;
   showPast: boolean;
+  cfpUrl: string;
   togglePast(evt: any): void;
 }
 
 const CURRENT_YEAR = new Date().getFullYear();
-export default function Footer({showCFP, togglePast, showPast}: Props) {
+export default function Footer({showCFP, togglePast, showPast, cfpUrl}: Props) {
   return (
     <footer className={styles.Footer}>
       <HiddenLinks />
@@ -23,7 +24,7 @@ export default function Footer({showCFP, togglePast, showPast}: Props) {
         <Link selected={showPast} onClick={togglePast}>
           {showPast ? 'Hide past conferences' : 'See past conferences'}
         </Link>
-        <Link url={getURL(showCFP)}>
+        <Link url={cfpUrl}>
           {showCFP ? 'Hide Call for Papers' : 'See Call for Papers'}
         </Link>
       </p>
@@ -57,14 +58,6 @@ export default function Footer({showCFP, togglePast, showPast}: Props) {
       </p>
     </footer>
   );
-}
-
-function getURL(showCFP: boolean) {
-  if (showCFP) {
-    return `${location.pathname}`.replace('/cfp', '');
-  } else {
-    return `/cfp${location.pathname}`;
-  }
 }
 
 function HiddenLinks() {

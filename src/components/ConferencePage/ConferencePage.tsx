@@ -191,6 +191,12 @@ class ConferencePage extends Component<ComposedProps, State> {
 
           <CurrentRefinements transformItems={transformCurrentRefinements} />
 
+          <p>
+            <Link url={getCfpUrl(showCFP)}>
+              {showCFP ? 'Hide Call for Papers' : 'See Call for Papers'}
+            </Link>
+          </p>
+
           {showCFP && (
             <CfpHeader
               sortByCfpEndDate={this.sortByCfpEndDate}
@@ -209,6 +215,7 @@ class ConferencePage extends Component<ComposedProps, State> {
 
         <Footer
           showCFP={showCFP}
+          cfpUrl={getCfpUrl(showCFP)}
           togglePast={this.togglePast}
           showPast={showPast}
         />
@@ -232,7 +239,7 @@ function CfpHeader({sortByCfpEndDate, sortBy}: any) {
 
 function transformTopicRefinements(items: any[]) {
   items.map(item => {
-    item.label = TOPICS[item.label];
+    item.label = TOPICS[item.label] || item.label;
     return item;
   });
   return orderBy(items, ['count', 'name'], ['desc', 'desc']);
@@ -258,6 +265,14 @@ function getFirstTopic(topics: string[]) {
   }
 
   return topics[0];
+}
+
+function getCfpUrl(showCFP: boolean) {
+  if (showCFP) {
+    return `${location.pathname}`.replace('/cfp', '');
+  } else {
+    return `/cfp${location.pathname}`;
+  }
 }
 
 export default withRouter(ConferencePage);
