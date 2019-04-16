@@ -1,0 +1,18 @@
+@import '../style/foundation/spacing';
+@import '../style/foundation/typography';
+@import '../style/foundation/colors';
+
+.Search {
+  margin-bottom: spacing();
+}
+
+:global {
+  .ais-SearchBox-form {
+    display: flex;
+  }
+
+  .ais-SearchBox-submit,
+  .ais-SearchBox-reset {
+    display: none;
+  }
+}
