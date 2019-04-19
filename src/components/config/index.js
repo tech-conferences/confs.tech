@@ -24,6 +24,6 @@ export const TOPICS = {
   rust: 'Rust',
   scala: 'Scala',
   security: 'Security',
-  typescript: 'Typescript',
+  typescript: 'TypeScript',
   ux: 'Design / UX',
 };
