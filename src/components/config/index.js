@@ -1,7 +1,7 @@
 export const CURRENT_YEAR = (new Date()).getFullYear() - 1;
 
 export const TOPICS = {
-  'tech-comm': 'Technical communication',
+  'tech-comm': 'Content strategy',
   android: 'Android',
   clojure: 'Clojure',
   cpp: 'C++',
