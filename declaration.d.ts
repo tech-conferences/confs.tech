@@ -10,8 +10,6 @@ interface Conference {
   twitter: string;
   cfpEndDate: string;
   cfpUrl: string;
-  affiliateText: string;
-  affiliateUrl: string;
 }
 
 declare module '*.scss' {

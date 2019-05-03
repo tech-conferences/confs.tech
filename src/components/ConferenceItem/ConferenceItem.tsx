@@ -25,8 +25,6 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       cfpEndDate,
       cfpUrl,
       showCFP,
-      affiliateText,
-      affiliateUrl,
     } = this.props;
 
     return (
@@ -61,20 +59,10 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           {showCFP && <br />}
           <Topics topics={topics} />
           <Twitter twitter={twitter} />
-          <Affiliate
-            text={affiliateText}
-            url={affiliateUrl}
-            callback={this.trackAffiliate}
-          />
         </p>
       </div>
     );
   }
-
-  private trackAffiliate = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const {href} = event.currentTarget;
-    this.track('outbound-affiliate', href);
-  };
 
   private trackLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
     const {href} = event.currentTarget;
@@ -101,26 +89,6 @@ function Twitter({twitter}: TwitterProps) {
       ・
       <Link url={`https://twitter.com/${twitter}`} external>
         {twitter}
-      </Link>
-    </>
-  );
-}
-
-interface AffiliateProps {
-  url: string;
-  text: string;
-  callback: (event: React.MouseEvent<HTMLAnchorElement>) => void;
-}
-function Affiliate({url, text, callback}: AffiliateProps) {
-  if (!url) {
-    return null;
-  }
-
-  return (
-    <>
-      ・
-      <Link onClick={callback} url={url} external>
-        <span className={styles.promocode}>{text}</span>
       </Link>
     </>
   );
