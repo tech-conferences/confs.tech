@@ -1,3 +1,4 @@
+@import '../style/foundation/mixins';
 @import '../style/foundation/typography';
 @import '../style/foundation/colors';
 @import '../style/foundation/spacing';
@@ -12,4 +13,9 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.active {
+  font-weight: 600;
+  @include link--hover();
 }

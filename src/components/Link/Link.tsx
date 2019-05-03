@@ -33,11 +33,11 @@ export default class Link extends PureComponent<Props> {
   }
 
   btnLink() {
-    const {onClick} = this.props;
+    const {onClick, className} = this.props;
 
     return (
       <button
-        className={classNames(styles.Link)}
+        className={classNames(styles.Link, className)}
         onClick={onClick}
       >
         {this.props.children}

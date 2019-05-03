@@ -233,9 +233,16 @@ function CfpHeader({sortByCfpEndDate, sortBy}: any) {
       <Heading element="h2" level={2}>
         Call for Papers
       </Heading>
-      <Link button onClick={sortByCfpEndDate}>
-        {sortBy === 'startDate' ? 'Start date ⬇' : 'CFP end date ⬇'}
-      </Link>
+      <div>
+        Sorted by:{' '}
+        <Link className={sortBy === 'startDate' ? styles.active : ''} button onClick={sortByCfpEndDate}>
+          Conference start date
+        </Link>
+        {' / '}
+        <Link className={sortBy === 'startDate' ? '' : styles.active} button onClick={sortByCfpEndDate}>
+          CFP end date
+        </Link>
+      </div>
     </div>
   );
 }
