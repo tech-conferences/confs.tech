@@ -25,6 +25,6 @@ export const TOPICS = {
   scala: 'Scala',
   security: 'Security',
   typescript: 'TypeScript',
-  elm: 'elm',
+  elm: 'Elm',
   ux: 'Design / UX',
 };
