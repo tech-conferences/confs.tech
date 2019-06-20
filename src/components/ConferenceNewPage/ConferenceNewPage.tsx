@@ -28,7 +28,7 @@ const defaultConference = {
   country: '',
   startDate: null,
   endDate: null,
-  topic: 'javascript',
+  topic: '',
   cfpUrl: '',
   cfpEndDate: null,
   twitter: '@',
@@ -71,9 +71,10 @@ export default class ConferenceNewPage extends Component<Props> {
   };
 
   validateForm = (conference: any) => {
-    const {startDate, endDate, city, country, name, url} = conference;
+    const {topic, startDate, endDate, city, country, name, url} = conference;
 
     const errors = {
+      topic: topic.length === 0,
       // eslint-disable-next-line no-extra-boolean-cast
       startDate: !Boolean(startDate),
       // eslint-disable-next-line no-extra-boolean-cast
@@ -246,16 +247,22 @@ export default class ConferenceNewPage extends Component<Props> {
       <div>
         <form onSubmit={this.handleFormSubmit} autoComplete="off">
           <InputGroup>
-            <label htmlFor="type">Topic</label>
-            <select
-              name="topic"
-              value={topic}
-              onChange={this.handleFieldChange}
-            >
-              {SORTED_TOPICS_KEYS.map((value: string) => (
-                <option key={value} value={value}>{TOPICS[value]}</option>
-              ))}
-            </select>
+            <div>
+              <label htmlFor="type">Topic</label>
+              <select
+                  className={classNames(this.hasError('topic') && styles.error)}
+                  name="topic"
+                  value={topic}
+                  required
+                  onChange={this.handleFieldChange}
+              >
+                <option key="placeholder" value="">Please select topic</option>
+                {SORTED_TOPICS_KEYS.map((value: string) => (
+                    <option key={value} value={value}>{TOPICS[value]}</option>
+                ))}
+              </select>
+              {this.errorFor('topic', 'Please select topic.')}
+            </div>
           </InputGroup>
           <InputGroup>
             <div>
