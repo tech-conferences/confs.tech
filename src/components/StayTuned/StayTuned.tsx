@@ -1,12 +1,9 @@
 import React, {PureComponent, ComponentType} from 'react';
 import classNames from 'classnames';
-import {withCookies, ReactCookieProps} from 'react-cookie';
 
-import Link from '../Link';
 import Heading from '../Heading';
 import styles from './StayTuned.scss';
 
-const DISMISSED_COOKIE = 'dismissed-stay-tuned';
 
 interface Props {
   topic: string;
@@ -14,31 +11,22 @@ interface Props {
 
 interface State {
   gdprChecked: boolean;
-  closed: boolean;
 }
-type ComposedProps = Props & ReactCookieProps;
+type ComposedProps = Props;
 
 class StayTuned extends PureComponent<ComposedProps, State> {
   state: State = {
-    gdprChecked: false,
-    closed: false,
+    gdprChecked: false
   };
 
   render() {
-    const {cookies, topic} = this.props;
-    const {gdprChecked, closed} = this.state;
-    if (cookies && cookies.get(DISMISSED_COOKIE)) {
-      return null;
-    }
-
+    const {topic} = this.props;
+    const {gdprChecked} = this.state;
     return (
-      <div className={classNames(styles.StayTuned, closed && styles.hidden)}>
+      <div className={classNames(styles.StayTuned)}>
         <Heading element="h4" level={4}>
           Stay tuned!
         </Heading>
-        <div className={styles.Close} onClick={this.close}>
-          <Link button>Close</Link>
-        </div>
         <div className={styles.Content}>
           <form
             action="https://tech.us19.list-manage.com/subscribe/post?u=246492d8cf0efc8c4ec6a9a60&amp;id=84b8d4723e"
@@ -96,9 +84,6 @@ class StayTuned extends PureComponent<ComposedProps, State> {
               </label>
             </div>
           </form>
-          <Link url="https://twitter.com/ConfsTech/" external>
-            Or follow us on Twitter
-          </Link>
         </div>
       </div>
     );
@@ -110,15 +95,6 @@ class StayTuned extends PureComponent<ComposedProps, State> {
     });
   };
 
-  private close = () => {
-    const {cookies} = this.props;
-    if (cookies) {
-      cookies.set(DISMISSED_COOKIE, true, {path: '/'});
-    }
-    this.setState({
-      closed: true,
-    });
-  };
 }
 
-export default withCookies(StayTuned) as ComponentType<Props>;
+export default StayTuned as ComponentType<Props>;

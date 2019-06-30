@@ -41,6 +41,7 @@ interface State {
   hitsPerPage: number;
   sortBy: string;
   showPast: boolean;
+  showNewsletterBanner: boolean;
   refinementList?: any;
 }
 
@@ -51,6 +52,7 @@ class ConferencePage extends Component<ComposedProps, State> {
     hitsPerPage: 600,
     sortBy: 'startDate',
     showPast: false,
+    showNewsletterBanner: false,
   };
 
   togglePast = () => {
@@ -127,8 +129,12 @@ class ConferencePage extends Component<ComposedProps, State> {
     });
   };
 
+  toggleNewsletter = () => {
+    this.setState({showNewsletterBanner: !this.state.showNewsletterBanner})
+  }
+
   render() {
-    const {showPast, sortBy, hitsPerPage} = this.state;
+    const {showPast, sortBy, hitsPerPage, showNewsletterBanner} = this.state;
     const {
       showCFP,
       match: {
@@ -194,11 +200,21 @@ class ConferencePage extends Component<ComposedProps, State> {
 
           <CurrentRefinements transformItems={transformCurrentRefinements} />
 
-          <p>
+          <p className={styles.topLinks}>
             <Link url={getCfpUrl(showCFP)}>
-              {showCFP ? 'Hide Call for Papers' : 'See Call for Papers'}
+              {showCFP ? 'Hide Call for Papers' : 'Call for Papers'}
+            </Link>
+
+            <Link onClick={this.toggleNewsletter}>
+              Newsletter
+            </Link>
+
+            <Link url="https://twitter.com/ConfsTech/" external>
+              Twitter
             </Link>
           </p>
+
+          {showNewsletterBanner && <StayTuned topic={getFirstTopic(topics)} />}
 
           {showCFP && (
             <CfpHeader
@@ -208,7 +224,6 @@ class ConferencePage extends Component<ComposedProps, State> {
           )}
 
           <ScrollToConference hash={location.hash} />
-          <StayTuned topic={getFirstTopic(topics)} />
           <ConferenceList
             onLoadMore={this.loadMore}
             sortBy={sortBy}

@@ -19,3 +19,9 @@
   font-weight: 600;
   @include link--hover();
 }
+
+.topLinks {
+  a {
+    margin-right: spacing(loose);
+  }
+}
