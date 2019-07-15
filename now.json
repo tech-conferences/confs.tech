@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "confs.tech",
-  "alias": ["confs.tech"],
+  "alias": "confs.tech",
   "builds": [
     {
       "src": "package.json",
