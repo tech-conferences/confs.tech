@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "heroku-postbuild": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "reorder-confs": "BABEL_ENV=node babel-node ./scripts/reorder-conferences-by-date.js",
     "precommit": "lint-staged",
@@ -102,7 +103,7 @@
     "husky": "^0.14.3",
     "jest-cli": "^23.5.0",
     "jsonlint": "^1.6.3",
-    "lint-staged": "^7.0.4",
+    "lint-staged": "^9.2.1",
     "node-sass": "^4.5.3",
     "prettier": "^1.5.3",
     "sass-loader": "^7.1.0",
