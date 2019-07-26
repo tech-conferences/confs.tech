@@ -76,7 +76,8 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7",
     "webpack-manifest-plugin": "^2.0.3",
-    "whatwg-fetch": "2.0.4"
+    "whatwg-fetch": "2.0.4",
+    "typescript": "^3.0.1"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.4",
@@ -106,8 +107,7 @@
     "prettier": "^1.5.3",
     "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.3",
-    "tslint": "5.11.0",
-    "typescript": "^3.0.1"
+    "tslint": "5.11.0"
   },
   "homepage": "https://confs.tech",
   "jest": {
