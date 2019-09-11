@@ -78,4 +78,5 @@ Some of the conferences have been pulled from other projects:
 - [See all networking events](https://confs.tech/networking)
 - [See all Closure conferences](https://confs.tech/clojure)
 - [See all Product conferences](https://confs.tech/product)
+- [See all Leadership conferences](https://confs.tech/product)
 - [See general conferences](https://confs.tech/general)
