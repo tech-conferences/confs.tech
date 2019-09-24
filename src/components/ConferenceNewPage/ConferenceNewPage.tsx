@@ -256,12 +256,12 @@ export default class ConferenceNewPage extends Component<Props> {
                   required
                   onChange={this.handleFieldChange}
               >
-                <option key="placeholder" value="">Please select topic</option>
+                <option key="placeholder" value="">Select a topic</option>
                 {SORTED_TOPICS_KEYS.map((value: string) => (
                     <option key={value} value={value}>{TOPICS[value]}</option>
                 ))}
               </select>
-              {this.errorFor('topic', 'Please select topic.')}
+              {this.errorFor('topic', 'Please select a topic.')}
             </div>
           </InputGroup>
           <InputGroup>
