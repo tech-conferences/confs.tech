@@ -52,7 +52,7 @@ export default function Footer({showCFP, togglePast, showPast, cfpUrl}: Props) {
       <p>
         <img
           alt="Sponsor: Search by Algolia"
-          src="/search-by-algolia.svg"
+          src="./search-by-algolia.svg"
           height="20"
         />
       </p>
