@@ -147,7 +147,7 @@
     "extends": "react-app"
   },
   "engines": {
-    "node": ">=10.8.0"
+    "node": "12.10.0"
   },
   "greenkeeper": {
     "ignore": [
