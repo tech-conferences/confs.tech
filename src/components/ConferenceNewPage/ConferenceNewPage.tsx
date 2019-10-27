@@ -21,7 +21,7 @@ const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), x =>
 
 interface Props {}
 
-const defaultConference = {
+const defaultConference: Conference = {
   name: '',
   url: '',
   city: '',
@@ -70,7 +70,7 @@ export default class ConferenceNewPage extends Component<Props> {
     });
   };
 
-  validateForm = (conference: any) => {
+  validateForm = (conference: Conference) => {
     const {topic, startDate, endDate, city, country, name, url} = conference;
 
     const errors = {
@@ -505,4 +505,18 @@ function getConferenceData(conference: any) {
     endDate: endDate ? endDate.format('YYYY-MM-DD') : null,
     cfpEndDate: cfpEndDate ? cfpEndDate.format('YYYY-MM-DD') : null,
   });
+}
+
+export interface Conference {
+  name: string,
+  url: string,
+  city: string,
+  country: string,
+  startDate: Moment | null | undefined,
+  endDate: Moment | null | undefined,
+  topic: string,
+  cfpUrl: string,
+  cfpEndDate: Moment | null | undefined,
+  twitter: string,
+  comment: string,
 }

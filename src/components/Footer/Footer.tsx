@@ -9,7 +9,7 @@ interface Props {
   showCFP: boolean;
   showPast: boolean;
   cfpUrl: string;
-  togglePast(evt: any): void;
+  togglePast(evt: React.MouseEvent<HTMLElement>): void;
 }
 
 const CURRENT_YEAR = new Date().getFullYear();
