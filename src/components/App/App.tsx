@@ -61,10 +61,10 @@ function redirectOrRender(props: any) {
   }
 }
 
-function isYear(year: any) {
+function isYear(year: string) {
   return (year.length === 4 && !isNaN(parseInt(year, 10)));
 }
 
-function redirectToTopic(topic: any) {
+function redirectToTopic(topic: string) {
   return <Redirect to={`/${topic}`} />;
 }
