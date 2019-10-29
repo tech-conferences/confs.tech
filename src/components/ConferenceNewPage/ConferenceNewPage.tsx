@@ -89,7 +89,7 @@ export default class ConferenceNewPage extends Component<Props> {
     return errors;
   };
 
-  handleStartDateSelect = (startDate: any) => {
+  handleStartDateSelect = (startDate: Moment | null | undefined) => {
     const {
       conference,
       conference: {endDate},
@@ -495,7 +495,7 @@ function InputGroup({children, inline}: InputGroupProps) {
   );
 }
 
-function getConferenceData(conference: any) {
+function getConferenceData(conference: Conference) {
   const {twitter, startDate, endDate, cfpEndDate} = conference;
 
   return JSON.stringify({
