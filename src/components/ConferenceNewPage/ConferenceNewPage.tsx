@@ -199,7 +199,7 @@ export default class ConferenceNewPage extends Component<Props> {
             @ConfsTech
           </Link>
           <br />
-          Find your submission and track its progress on{' '}
+          Find your submission and track its status on{' '}
           <Link
             external
             url="https://github.com/tech-conferences/conference-data/pulls"
@@ -460,16 +460,18 @@ export default class ConferenceNewPage extends Component<Props> {
         </Helmet>
         <Heading element="h1">Add a new conference</Heading>
         {!submitted && (
-          <p>
-            This will create a{' '}
+            <div>
+              <p>Confs.tech is focused on conferences on software development and related topics, such as product management, UX, and AI.</p>
+              <p>Know a conference on one of these topics? Feel free to submit it using this form!</p>
+              <p>This will create a{' '}
             <Link
               external
               url="https://github.com/tech-conferences/conference-data/pulls"
             >
               pull request on GitHub
             </Link>
-            . Our team will review it as soon as possible!
-          </p>
+                {' '}where you can also add additional comments and track submission status. Our team will review your request as soon as possible!</p>
+          </div>
         )}
         {submitted ? this.submitted() : this.form()}
       </div>

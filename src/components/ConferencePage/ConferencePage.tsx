@@ -168,7 +168,7 @@ class ConferencePage extends Component<ComposedProps, State> {
             </h1>
             <Heading element="p">Find your next tech conference</Heading>
             <Heading element="h2" level="sub">
-              Open-source and crowd-sourced conference website
+              Open-source and crowd-sourced list of conferences around software development
             </Heading>
           </div>
           <GithubStar />

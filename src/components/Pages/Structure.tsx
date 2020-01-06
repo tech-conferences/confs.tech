@@ -27,7 +27,7 @@ export default function Structure({children, title}: Props) {
             <Link routed url="/">
               Back to the conferences
             </Link>
-            {/* Open-source and crowd-sourced conference website */}
+            {/* Open-source and crowd-sourced list of conferences around software development */}
           </Heading>
         </div>
         <div>
