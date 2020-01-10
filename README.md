@@ -60,6 +60,7 @@ Some of the conferences have been pulled from other projects:
 - [See all Design / UX conferences](https://confs.tech/ux)
 - [See all Ruby conferences](https://confs.tech/ruby)
 - [See all iOS conferences](https://confs.tech/ios)
+- [See all IoT conferences](https://confs.tech/iot)
 - [See all Content strategy conferences](https://confs.tech/tech-comm)
 - [See all Data conferences](https://confs.tech/data)
 - [See all Dev Ops conferences](https://confs.tech/devops)
