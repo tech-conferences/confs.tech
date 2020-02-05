@@ -55,6 +55,7 @@ Some of the conferences have been pulled from other projects:
 
 - [See all JavaScript conferences](https://confs.tech/javascript)
 - [See all Java conferences](https://confs.tech/java)
+- [See all Kotlin conferences](https://confs.tech/kotlin)
 - [See all CSS conferences](https://confs.tech/css)
 - [See all PHP conferences](https://confs.tech/php)
 - [See all Design / UX conferences](https://confs.tech/ux)
