@@ -18,6 +18,7 @@ export const TOPICS = {
   iot: 'IoT / Hardware',
   java: 'Java',
   javascript: 'JavaScript',
+  kotlin: 'Kotlin',
   networking: 'Community / Networking',
   php: 'PHP',
   python: 'Python',
