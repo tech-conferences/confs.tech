@@ -1,0 +1,10 @@
+@import '../style/foundation/spacing';
+@import '../style/foundation/colors';
+
+.Banner {
+  margin: spacing() 0;
+  padding: spacing();
+  background: color(accent-2, pale);
+  border-radius: 3px;
+  position: relative;
+}
