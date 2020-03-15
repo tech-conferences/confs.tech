@@ -179,9 +179,12 @@ class ConferencePage extends Component<ComposedProps, State> {
           appId={process.env.ALGOLIA_APPLICATION_ID}
           apiKey={process.env.ALGOLIA_API_KEY}
           onSearchStateChange={this.onSearchStateChange}
-          indexName={'prod_conferences'}
+          indexName='prod_conferences'
         >
           <Configure hitsPerPage={hitsPerPage} filters={this.algoliaFilter()} />
+
+          <Search />
+
           <RefinementList
             limit={40}
             attribute="topics"
@@ -196,8 +199,6 @@ class ConferencePage extends Component<ComposedProps, State> {
             transformItems={transformCountryRefinements}
             defaultRefinement={countries}
           />
-
-          <Search />
 
           <CurrentRefinements transformItems={transformCurrentRefinements} />
 
