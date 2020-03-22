@@ -36,6 +36,7 @@ export function generateEventJSONLD({name, url, city, country, startDate, endDat
       },
       name: `${city}, ${country}`,
     },
+    eventAttendanceMode: 'https://schema.org/OnlineEventAttendanceMode',
     name,
     startDate,
     url,
