@@ -1,8 +1,8 @@
-import React, {PureComponent} from 'react';
+import React, { PureComponent } from 'react';
 import classNames from 'classnames';
-import {parse} from 'date-fns';
+import { parse } from 'date-fns';
 
-import {formatDate, generateEventJSONLD} from './utils';
+import { formatDate, generateEventJSONLD } from './utils';
 import Heading from '../Heading';
 import Link from '../Link';
 import styles from './ConferenceItem.scss';
@@ -72,12 +72,12 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
   }
 
   private trackAffiliate = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const {href} = event.currentTarget;
+    const { href } = event.currentTarget;
     this.track('outbound-affiliate', href);
   };
 
   private trackLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const {href} = event.currentTarget;
+    const { href } = event.currentTarget;
     this.track('outbound', href);
   };
 
@@ -91,7 +91,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
 interface TwitterProps {
   twitter: string;
 }
-function Twitter({twitter}: TwitterProps) {
+function Twitter({ twitter }: TwitterProps) {
   if (!twitter) {
     return null;
   }
@@ -107,7 +107,7 @@ function Twitter({twitter}: TwitterProps) {
 }
 
 function Location(city: string, country: string) {
-  if (city && country) {
+  if (city && country && city !== country) {
     return `${city}, ${country}`;
   }
 
@@ -119,7 +119,7 @@ interface CfpProps {
   date: string;
 }
 
-function Cfp({url, date}: CfpProps) {
+function Cfp({ url, date }: CfpProps) {
   return (
     <Link url={url} external className={styles.cfp}>
       CFP closes {formatDate(parse(date))}
@@ -131,7 +131,7 @@ interface TopicsProps {
   topics: string[];
 }
 
-function Topics({topics}: TopicsProps) {
+function Topics({ topics }: TopicsProps) {
   return <>{topics.map(topic => `#${topic}`).join(' ')}</>;
 }
 
@@ -147,7 +147,7 @@ interface AffiliateProps {
   callback: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-function Affiliate({url, text, callback}: AffiliateProps) {
+function Affiliate({ url, text, callback }: AffiliateProps) {
   if (!url) {
     return null;
   }
