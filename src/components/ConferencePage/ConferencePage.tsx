@@ -31,7 +31,6 @@ import Banner from "../Banner";
 const QUERY_SEPARATOR = '+';
 const CURRENT_YEAR = new Date().getFullYear();
 const TODAY = Math.round(new Date().getTime() / 1000);
-const ONE_YEAR = 365 * 24 * 60 * 60;
 
 interface Props {
   showCFP: boolean;
@@ -116,7 +115,7 @@ class ConferencePage extends Component<ComposedProps, State> {
     const {showPast} = this.state;
     const {showCFP} = this.props;
     let filters = showPast
-      ? `startDateUnix>${TODAY - ONE_YEAR}`
+      ? `startDateUnix<${TODAY}`
       : `startDateUnix>${TODAY}`;
     if (showCFP) {
       filters += String(` AND cfpEndDateUnix>${TODAY}`);
