@@ -27,8 +27,8 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       showCFP,
       affiliateText,
       affiliateUrl,
-      offersSignLanguageOrCC = true,
-      cocUrl = "https://confs.tech",
+      offersSignLanguageOrCC,
+      cocUrl,
     } = this.props;
 
     return (
