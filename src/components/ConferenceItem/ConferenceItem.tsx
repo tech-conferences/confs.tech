@@ -1,8 +1,8 @@
-import React, { PureComponent } from 'react';
+import React, {PureComponent} from 'react';
 import classNames from 'classnames';
-import { parse } from 'date-fns';
+import {parse} from 'date-fns';
 
-import { formatDate, generateEventJSONLD } from './utils';
+import {formatDate, generateEventJSONLD} from './utils';
 import Heading from '../Heading';
 import Link from '../Link';
 import styles from './ConferenceItem.scss';
@@ -27,13 +27,12 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       showCFP,
       affiliateText,
       affiliateUrl,
+      offersSignLanguageOrCC,
+      cocUrl,
     } = this.props;
 
     return (
-      <div
-        className={classNames(styles.ConferenceItem)}
-        id={idify(name, startDate)}
-      >
+      <div className={classNames(styles.ConferenceItem)} id={idify(name, startDate)}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -56,28 +55,36 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           {`${Location(city, country)}・`}
           <span className={styles.Date}>{formatDate(startDate, endDate)}</span>
         </p>
+        {offersSignLanguageOrCC && (
+          <p className={styles.p}>
+            Offers interpretation to International sign language or closed captions.
+          </p>
+        )}
         <p className={classNames(styles.p, styles.Footer)}>
           {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
           {showCFP && <br />}
           <Topics topics={topics} />
           <Twitter twitter={twitter} />
-          <Affiliate
-            text={affiliateText}
-            url={affiliateUrl}
-            callback={this.trackAffiliate}
-          />
+          {cocUrl && (
+            <>・
+            <Link url={cocUrl} external>
+              Code Of Conduct
+            </Link>
+            </>
+          )}
+          <Affiliate text={affiliateText} url={affiliateUrl} callback={this.trackAffiliate} />
         </p>
       </div>
     );
   }
 
   private trackAffiliate = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const { href } = event.currentTarget;
+    const {href} = event.currentTarget;
     this.track('outbound-affiliate', href);
   };
 
   private trackLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const { href } = event.currentTarget;
+    const {href} = event.currentTarget;
     this.track('outbound', href);
   };
 
@@ -91,7 +98,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
 interface TwitterProps {
   twitter: string;
 }
-function Twitter({ twitter }: TwitterProps) {
+function Twitter({twitter}: TwitterProps) {
   if (!twitter) {
     return null;
   }
@@ -119,7 +126,7 @@ interface CfpProps {
   date: string;
 }
 
-function Cfp({ url, date }: CfpProps) {
+function Cfp({url, date}: CfpProps) {
   return (
     <Link url={url} external className={styles.cfp}>
       CFP closes {formatDate(parse(date))}
@@ -131,14 +138,12 @@ interface TopicsProps {
   topics: string[];
 }
 
-function Topics({ topics }: TopicsProps) {
-  return <>{topics.map(topic => `#${topic}`).join(' ')}</>;
+function Topics({topics}: TopicsProps) {
+  return <>{topics.map((topic) => `#${topic}`).join(' ')}</>;
 }
 
 function idify(conferenceName: string, startDate: string) {
-  return `${conferenceName
-    .toLocaleLowerCase()
-    .replace(/ /g, '-')}-${startDate}`;
+  return `${conferenceName.toLocaleLowerCase().replace(/ /g, '-')}-${startDate}`;
 }
 
 interface AffiliateProps {
@@ -147,7 +152,7 @@ interface AffiliateProps {
   callback: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 }
 
-function Affiliate({ url, text, callback }: AffiliateProps) {
+function Affiliate({url, text, callback}: AffiliateProps) {
   if (!url) {
     return null;
   }

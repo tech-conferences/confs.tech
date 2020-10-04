@@ -4,7 +4,7 @@
 @import '../style/foundation/spacing';
 
 :global(.ais-RefinementList) {
-  margin-bottom: spacing(base);
+  margin-bottom: spacing(extra-loose);
 }
 
 :global(.ais-RefinementList-list) {
@@ -23,14 +23,13 @@
 }
 
 :global(.ais-RefinementList-checkbox) {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
-
 
 :global(.ais-RefinementList-label) {
   @include link();
@@ -44,7 +43,9 @@
   }
 }
 
-:global(:not(.ais-RefinementList-item--selected)) :global(.ais-RefinementList-checkbox:focus) + :global(.ais-RefinementList-labelText) {
+:global(:not(.ais-RefinementList-item--selected))
+  :global(.ais-RefinementList-checkbox:focus)
+  + :global(.ais-RefinementList-labelText) {
   outline-style: auto;
 }
 

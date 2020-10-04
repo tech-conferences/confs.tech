@@ -12,6 +12,8 @@ interface Conference {
   cfpUrl: string;
   affiliateText: string;
   affiliateUrl: string;
+  cocUrl: string;
+  offersSignLanguageOrCC: boolean;
 }
 
 declare module '*.scss' {
