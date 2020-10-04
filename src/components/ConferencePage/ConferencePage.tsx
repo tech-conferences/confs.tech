@@ -143,11 +143,11 @@ class ConferencePage extends Component<ComposedProps, State> {
     } = this.props;
     const queryParams = qs.parse(location.search.replace('?', ''));
     const topics =
-      (queryParams.topics && queryParams.topics.split(QUERY_SEPARATOR)) ||
+      (queryParams.topics && (queryParams.topics as string).split(QUERY_SEPARATOR)) ||
       (topic && [topic]) ||
       [];
     const countries =
-      (queryParams.countries && queryParams.countries.split(QUERY_SEPARATOR)) ||
+      (queryParams.countries && (queryParams.countries as string).split(QUERY_SEPARATOR)) ||
       (country && [country]) ||
       [];
 
