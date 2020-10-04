@@ -15,9 +15,7 @@ import Link from '../Link';
 import {TOPICS} from '../config';
 import './DatePickerOverrides.scss';
 
-const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), x =>
-  TOPICS[x].toLocaleLowerCase()
-);
+const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) => TOPICS[x].toLocaleLowerCase());
 
 interface Props {}
 
@@ -31,16 +29,15 @@ const defaultConference: Conference = {
   topic: '',
   cfpUrl: '',
   cfpEndDate: null,
+  cocUrl: '',
+  offersSignLanguageOrCC: false,
   twitter: '@',
   comment: '',
 };
 
 export default class ConferenceNewPage extends Component<Props> {
   private handleDateChange: {
-    [key: string]: (
-      date: Moment | null,
-      event: any,
-    ) => void;
+    [key: string]: (date: Moment | null, event: any) => void;
   };
   state = {
     recaptchaLoaded: false,
@@ -112,6 +109,15 @@ export default class ConferenceNewPage extends Component<Props> {
     });
   };
 
+  handleCheckboxChange = (event: any) => {
+    this.setState({
+      conference: {
+        ...this.state.conference,
+        [event.target.name]: !this.state.conference[event.target.name],
+      },
+    });
+  };
+
   handleDateChangeBuilder = (key: string) => {
     return (date: any) => {
       this.setState({
@@ -133,7 +139,7 @@ export default class ConferenceNewPage extends Component<Props> {
     const {recaptchaLoaded, captchaResponse, conference} = this.state;
     const errors = this.validateForm(conference);
     event.preventDefault();
-    const cannotBeSubmitted = Object.keys(errors).some(x => errors[x]);
+    const cannotBeSubmitted = Object.keys(errors).some((x) => errors[x]);
 
     if (!recaptchaLoaded || captchaResponse === null) {
       return;
@@ -151,7 +157,7 @@ export default class ConferenceNewPage extends Component<Props> {
       method: 'post',
       body: getConferenceData(conference),
     })
-      .then(response => {
+      .then((response) => {
         if (response.status === 200) {
           return this.setState({submitted: true});
         } else {
@@ -192,18 +198,12 @@ export default class ConferenceNewPage extends Component<Props> {
         <p>Thank you for submitting a conference!</p>
         <p>
           We will soon review it, add it to the list and tweet it on{' '}
-          <Link
-            external
-            url="https://twitter.com/ConfsTech"
-          >
+          <Link external url="https://twitter.com/ConfsTech">
             @ConfsTech
           </Link>
           <br />
           Find your submission and track its status on{' '}
-          <Link
-            external
-            url="https://github.com/tech-conferences/conference-data/pulls"
-          >
+          <Link external url="https://github.com/tech-conferences/conference-data/pulls">
             GitHub
           </Link>
           .
@@ -217,7 +217,9 @@ export default class ConferenceNewPage extends Component<Props> {
           {' – '}
           <Link onClick={this.resetForm}>Add a new conference</Link>
           {' – '}
-          <Link external url="https://twitter.com/ConfsTech/">Follow us on Twitter</Link>
+          <Link external url="https://twitter.com/ConfsTech/">
+            Follow us on Twitter
+          </Link>
         </p>
       </div>
     );
@@ -238,6 +240,8 @@ export default class ConferenceNewPage extends Component<Props> {
         cfpUrl,
         twitter,
         comment,
+        cocUrl,
+        offersSignLanguageOrCC,
         startDate,
         endDate,
         cfpEndDate,
@@ -250,15 +254,20 @@ export default class ConferenceNewPage extends Component<Props> {
             <div>
               <label htmlFor="type">Topic</label>
               <select
-                  className={classNames(this.hasError('topic') && styles.error)}
-                  name="topic"
-                  value={topic}
-                  required
-                  onChange={this.handleFieldChange}
+                id="type"
+                className={classNames(this.hasError('topic') && styles.error)}
+                name="topic"
+                value={topic}
+                required
+                onChange={this.handleFieldChange}
               >
-                <option key="placeholder" value="">Select a topic</option>
+                <option key="placeholder" value="">
+                  Select a topic
+                </option>
                 {SORTED_TOPICS_KEYS.map((value: string) => (
-                    <option key={value} value={value}>{TOPICS[value]}</option>
+                  <option key={value} value={value}>
+                    {TOPICS[value]}
+                  </option>
                 ))}
               </select>
               {this.errorFor('topic', 'Please select a topic.')}
@@ -272,7 +281,9 @@ export default class ConferenceNewPage extends Component<Props> {
                 type="text"
                 name="name"
                 required
+                placeholder="Conference name (without year)"
                 value={name}
+                id="name"
                 onChange={this.handleFieldChange}
               />
               {this.errorFor('name', 'Name is required.')}
@@ -284,9 +295,11 @@ export default class ConferenceNewPage extends Component<Props> {
               <input
                 className={classNames(this.hasError('url') && styles.error)}
                 type="text"
+                placeholder="https://confs.tech"
                 required
                 value={url}
                 name="url"
+                id="url"
                 onChange={this.handleFieldChange}
               />
               {this.errorFor('url', 'Url is required.')}
@@ -299,6 +312,7 @@ export default class ConferenceNewPage extends Component<Props> {
                 <DatePicker
                   dateFormat="YYYY-MM-DD"
                   name="startDate"
+                  id="startDate"
                   selected={startDate}
                   onChange={this.handleStartDateSelect}
                 />
@@ -311,6 +325,7 @@ export default class ConferenceNewPage extends Component<Props> {
                 <DatePicker
                   dateFormat="YYYY-MM-DD"
                   name="endDate"
+                  id="endDate"
                   selected={endDate}
                   onChange={this.handleDateChange.endDate}
                 />
@@ -324,6 +339,7 @@ export default class ConferenceNewPage extends Component<Props> {
                 className={classNames(this.hasError('city') && styles.error)}
                 required
                 type="text"
+                id="city"
                 name="city"
                 value={city}
                 onChange={this.handleFieldChange}
@@ -336,6 +352,7 @@ export default class ConferenceNewPage extends Component<Props> {
                 className={classNames(this.hasError('country') && styles.error)}
                 required
                 type="text"
+                id="country"
                 name="country"
                 value={country}
                 onChange={this.handleFieldChange}
@@ -350,6 +367,7 @@ export default class ConferenceNewPage extends Component<Props> {
                 className={classNames(this.hasError('cfpUrl') && styles.error)}
                 type="text"
                 name="cfpUrl"
+                id="cfpUrl"
                 value={cfpUrl}
                 onChange={this.handleFieldChange}
               />
@@ -361,6 +379,7 @@ export default class ConferenceNewPage extends Component<Props> {
                 <DatePicker
                   dateFormat="YYYY-MM-DD"
                   name="cfpEndDate"
+                  id="cfpEndDate"
                   selected={cfpEndDate}
                   onChange={this.handleDateChange.cfpEndDate}
                 />
@@ -373,10 +392,27 @@ export default class ConferenceNewPage extends Component<Props> {
               className={classNames(this.hasError('twitter') && styles.error)}
               type="text"
               name="twitter"
+              id="twitter"
               value={twitter}
               onChange={this.handleFieldChange}
             />
             {this.errorFor('twitter', 'Twitter handle is required.')}
+          </InputGroup>
+          <InputGroup>
+            <label htmlFor="cocUrl">Code Of Conduct URL</label>
+            <input type="text" name="cocUrl" id="cocUrl" value={cocUrl} onChange={this.handleFieldChange} />
+          </InputGroup>
+          <InputGroup inline>
+            <input
+              type="checkbox"
+              name="offersSignLanguageOrCC"
+              id="offersSignLanguageOrCC"
+              checked={offersSignLanguageOrCC}
+              onChange={this.handleCheckboxChange}
+            />
+            <label htmlFor="offersSignLanguageOrCC">
+              This conference offers interpretation to International sign language or closed captions.
+            </label>
           </InputGroup>
           <InputGroup>
             <label htmlFor="comment">
@@ -384,6 +420,7 @@ export default class ConferenceNewPage extends Component<Props> {
             </label>
             <textarea
               name="comment"
+              id="comment"
               value={comment}
               onChange={this.handleFieldChange}
             />
@@ -399,19 +436,14 @@ export default class ConferenceNewPage extends Component<Props> {
               An error happened from the server.
               <br />
               If it still happens, you can&nbsp;
-              <Link
-                external
-                url="https://github.com/tech-conferences/conference-data/issues"
-              >
+              <Link external url="https://github.com/tech-conferences/conference-data/issues">
                 create an issue on our GitHub repo.
               </Link>
             </p>
           )}
           <button
             className={styles.Button}
-            disabled={
-              submitting || !recaptchaLoaded || captchaResponse === null
-            }
+            disabled={submitting || !recaptchaLoaded || captchaResponse === null}
             type="submit"
             value="Submit"
           >
@@ -420,24 +452,15 @@ export default class ConferenceNewPage extends Component<Props> {
         </form>
 
         <Divider />
-        <Link
-          external
-          url="https://github.com/tech-conferences/conference-data/pulls"
-        >
+        <Link external url="https://github.com/tech-conferences/conference-data/pulls">
           Pull requests
         </Link>
         {' – '}
-        <Link
-          external
-          url="https://github.com/tech-conferences/conference-data/issues"
-        >
+        <Link external url="https://github.com/tech-conferences/conference-data/issues">
           Create an issue
         </Link>
         {' – '}
-        <Link
-          external
-          url="https://github.com/tech-conferences/conference-data/"
-        >
+        <Link external url="https://github.com/tech-conferences/conference-data/">
           GitHub repository
         </Link>
         {' – '}
@@ -460,17 +483,20 @@ export default class ConferenceNewPage extends Component<Props> {
         </Helmet>
         <Heading element="h1">Add a new conference</Heading>
         {!submitted && (
-            <div>
-              <p>Confs.tech is focused on conferences on software development and related topics, such as product management, UX, and AI.</p>
-              <p>Know a conference on one of these topics? Feel free to submit it using this form!</p>
-              <p>This will create a{' '}
-            <Link
-              external
-              url="https://github.com/tech-conferences/conference-data/pulls"
-            >
-              pull request on GitHub
-            </Link>
-                {' '}where you can also add additional comments and track submission status. Our team will review your request as soon as possible!</p>
+          <div>
+            <p>
+              Confs.tech is focused on conferences on software development and related topics, such
+              as product management, UX, and AI.
+            </p>
+            <p>Know a conference on one of these topics? Feel free to submit it using this form!</p>
+            <p>
+              This will create a{' '}
+              <Link external url="https://github.com/tech-conferences/conference-data/pulls">
+                pull request on GitHub
+              </Link>{' '}
+              where you can also add additional comments and track submission status. Our team will
+              review your request as soon as possible!
+            </p>
           </div>
         )}
         {submitted ? this.submitted() : this.form()}
@@ -486,12 +512,7 @@ interface InputGroupProps {
 
 function InputGroup({children, inline}: InputGroupProps) {
   return (
-    <div
-      className={classNames(
-        styles.InputGroup,
-        inline && styles.InputGroupInline
-      )}
-    >
+    <div className={classNames(styles.InputGroup, inline && styles.InputGroupInline)}>
       {children}
     </div>
   );
@@ -510,15 +531,17 @@ function getConferenceData(conference: Conference) {
 }
 
 export interface Conference {
-  name: string,
-  url: string,
-  city: string,
-  country: string,
-  startDate: Moment | null | undefined,
-  endDate: Moment | null | undefined,
-  topic: string,
-  cfpUrl: string,
-  cfpEndDate: Moment | null | undefined,
-  twitter: string,
-  comment: string,
+  name: string;
+  url: string;
+  city: string;
+  country: string;
+  startDate: Moment | null | undefined;
+  endDate: Moment | null | undefined;
+  topic: string;
+  cfpUrl: string;
+  cfpEndDate: Moment | null | undefined;
+  twitter: string;
+  comment: string;
+  cocUrl: string;
+  offersSignLanguageOrCC: boolean;
 }
