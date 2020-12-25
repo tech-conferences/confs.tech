@@ -44,6 +44,7 @@ input, textarea {
 
   > div {
     margin-right: spacing(base);
+    flex-grow: 1;
 
     &:last-child {
       margin-right: 0;
@@ -83,4 +84,12 @@ input, textarea {
 
 .errorText {
   color: #ff0000;
+}
+
+:global(.react-datepicker-wrapper) {
+  display: block;
+}
+
+:global(.react-datepicker__input-container) {
+  display: block;
 }
