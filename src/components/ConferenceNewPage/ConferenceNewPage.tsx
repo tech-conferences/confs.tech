@@ -308,28 +308,24 @@ export default class ConferenceNewPage extends Component<Props> {
           <InputGroup inline>
             <div>
               <label htmlFor="startDate">Start date</label>
-              <div>
-                <DatePicker
+              <DatePicker
                   dateFormat="YYYY-MM-DD"
                   name="startDate"
                   id="startDate"
                   selected={startDate}
                   onChange={this.handleStartDateSelect}
-                />
-                {this.errorFor('startDate', 'Start date is required.')}
-              </div>
+              />
+              {this.errorFor('startDate', 'Start date is required.')}
             </div>
             <div>
               <label htmlFor="endDate">End date</label>
-              <div>
-                <DatePicker
+              <DatePicker
                   dateFormat="YYYY-MM-DD"
                   name="endDate"
                   id="endDate"
                   selected={endDate}
                   onChange={this.handleDateChange.endDate}
-                />
-              </div>
+              />
             </div>
           </InputGroup>
           <InputGroup inline>
@@ -341,6 +337,7 @@ export default class ConferenceNewPage extends Component<Props> {
                 type="text"
                 id="city"
                 name="city"
+                placeholder="Online for online events"
                 value={city}
                 onChange={this.handleFieldChange}
               />
@@ -354,6 +351,7 @@ export default class ConferenceNewPage extends Component<Props> {
                 type="text"
                 id="country"
                 name="country"
+                placeholder="Online for online events"
                 value={country}
                 onChange={this.handleFieldChange}
               />
@@ -375,15 +373,13 @@ export default class ConferenceNewPage extends Component<Props> {
             </div>
             <div>
               <label htmlFor="cfpEndDate">CFP end date</label>
-              <div>
-                <DatePicker
+              <DatePicker
                   dateFormat="YYYY-MM-DD"
                   name="cfpEndDate"
                   id="cfpEndDate"
                   selected={cfpEndDate}
                   onChange={this.handleDateChange.cfpEndDate}
-                />
-              </div>
+              />
             </div>
           </InputGroup>
           <InputGroup>
