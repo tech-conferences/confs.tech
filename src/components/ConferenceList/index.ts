@@ -1,1 +1,1 @@
-export {default} from './ConferenceList';
+export { default } from './ConferenceList'

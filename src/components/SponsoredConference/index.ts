@@ -1,1 +1,1 @@
-export {default} from './SponsoredConference';
+export { default } from './SponsoredConference'

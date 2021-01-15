@@ -1,1 +1,1 @@
-export {default} from './GithubStar';
+export { default } from './GithubStar'

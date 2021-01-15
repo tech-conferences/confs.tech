@@ -1,1 +1,1 @@
-export {default} from './ConferenceNewPage';
+export { default } from './ConferenceNewPage'

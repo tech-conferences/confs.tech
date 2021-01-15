@@ -1,1 +1,1 @@
-export {default} from './ScrollToConference';
+export { default } from './ScrollToConference'

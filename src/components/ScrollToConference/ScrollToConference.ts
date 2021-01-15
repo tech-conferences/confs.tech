@@ -1,39 +1,39 @@
 /* global process */
-import {Component} from 'react';
-import {connectInfiniteHits} from 'react-instantsearch/connectors';
+import { Component } from 'react'
+import { connectInfiniteHits } from 'react-instantsearch/connectors'
 
 interface Props {
-  hash: string;
-  hits?: any[];
+  hash: string
+  hits?: any[]
 }
 
 interface State {
-  scrolled: boolean;
+  scrolled: boolean
 }
 
 class ScrollToConference extends Component<Props, State> {
   state = {
     scrolled: false,
-  };
+  }
 
   componentDidUpdate() {
-    const {hash, hits} = this.props;
-    const {scrolled} = this.state;
+    const { hash, hits } = this.props
+    const { scrolled } = this.state
     if (scrolled || (hits && hits.length === 0)) {
-      return;
+      return
     }
 
-    this.setState({scrolled: true}, () => {
+    this.setState({ scrolled: true }, () => {
       setTimeout(() => {
-        location.hash = '';
-        location.hash = hash;
-      });
-    });
+        location.hash = ''
+        location.hash = hash
+      })
+    })
   }
 
   render() {
-    return null;
+    return null
   }
 }
 
-export default connectInfiniteHits(ScrollToConference);
+export default connectInfiniteHits(ScrollToConference)

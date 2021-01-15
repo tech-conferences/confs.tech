@@ -1,29 +1,43 @@
-import {format, getMonth, parse} from 'date-fns';
+import { format, getMonth, parse } from 'date-fns'
 
 export function formatDate(startDate, endDate) {
   // If specific date is not defined yet. Meaning startDate is 2018-02 for instance
-  if (startDate.length === 7) { return format(parse(`${startDate}-01`), 'MMMM'); }
+  if (startDate.length === 7) {
+    return format(parse(`${startDate}-01`), 'MMMM')
+  }
 
-  const parsedStartDate = parse(startDate);
+  const parsedStartDate = parse(startDate)
 
   if (endDate && startDate !== endDate) {
-    const parsedEndDate = parse(endDate);
+    const parsedEndDate = parse(endDate)
 
-    const startMonth = getMonth(parsedStartDate);
-    const endMonth = getMonth(parsedEndDate);
+    const startMonth = getMonth(parsedStartDate)
+    const endMonth = getMonth(parsedEndDate)
 
     if (startMonth === endMonth) {
-      return `${format(parsedStartDate, 'MMMM D')}${format(parsedEndDate, '-D')}`;
-    }
-    else {
-      return `${format(parsedStartDate, 'MMMM D')}${format(parsedEndDate, ' - MMMM D')}`;
+      return `${format(parsedStartDate, 'MMMM D')}${format(
+        parsedEndDate,
+        '-D'
+      )}`
+    } else {
+      return `${format(parsedStartDate, 'MMMM D')}${format(
+        parsedEndDate,
+        ' - MMMM D'
+      )}`
     }
   } else {
-    return format(parsedStartDate, 'MMMM D');
+    return format(parsedStartDate, 'MMMM D')
   }
 }
 
-export function generateEventJSONLD({name, url, city, country, startDate, endDate}) {
+export function generateEventJSONLD({
+  name,
+  url,
+  city,
+  country,
+  startDate,
+  endDate,
+}) {
   const data = {
     '@context': 'http://schema.org',
     '@type': 'Event',
@@ -40,8 +54,8 @@ export function generateEventJSONLD({name, url, city, country, startDate, endDat
     name,
     startDate,
     url,
-    endDate: (endDate || startDate),
-  };
+    endDate: endDate || startDate,
+  }
 
-  return JSON.stringify(data);
+  return JSON.stringify(data)
 }

@@ -1,1 +1,1 @@
-export {default as loading} from './loading.svg';
+export { default as loading } from './loading.svg'

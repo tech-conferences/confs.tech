@@ -1,1 +1,1 @@
-export {default} from './ConferenceItem';
+export { default } from './ConferenceItem'

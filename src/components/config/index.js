@@ -1,4 +1,4 @@
-export const CURRENT_YEAR = (new Date()).getFullYear() - 1;
+export const CURRENT_YEAR = new Date().getFullYear() - 1
 
 export const TOPICS = {
   'tech-comm': 'Content strategy',
@@ -31,4 +31,4 @@ export const TOPICS = {
   product: 'Product',
   leadership: 'Leadership',
   ux: 'Design / UX',
-};
+}

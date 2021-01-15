@@ -1,4 +1,4 @@
-import AboutPage from './AboutPage';
-import NotFoundPage from './NotFoundPage';
+import AboutPage from './AboutPage'
+import NotFoundPage from './NotFoundPage'
 
-export {AboutPage, NotFoundPage};
+export { AboutPage, NotFoundPage }

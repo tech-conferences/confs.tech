@@ -1,1 +1,1 @@
-export {default} from './StayTuned';
+export { default } from './StayTuned'
