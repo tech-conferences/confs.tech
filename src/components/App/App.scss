@@ -3,3 +3,12 @@
 .App {
   font-family: font-family(base);
 }
+
+:root {
+  /* -------------------- SPACINGS ------------------- */
+  --SPACE-XS: 8px;
+  --SPACE-S: 12px;
+  --SPACE-UNIT: 16px;
+  --SPACE-M: 24px;
+  --SPACE-L: 32px;
+}
