@@ -1,20 +1,20 @@
-import React, {PureComponent} from 'react';
+import React, { PureComponent } from 'react'
 
-import Link from '../Link';
-import Heading from '../Heading';
-import styles from './SponsoredConference.scss';
+import Link from '../Link'
+import Heading from '../Heading'
+import styles from './SponsoredConference.scss'
 
 export default class SponsoredConference extends PureComponent {
   render() {
     return (
       <div className={styles.SponsoredConference}>
-        <img src="./sponsors/dotcss.png" className={styles.Image} />
+        <img src='./sponsors/dotcss.png' className={styles.Image} />
         <div className={styles.Content}>
           <div>
-            <Heading element="p" level={4}>
+            <Heading element='p' level={4}>
               <Link
                 onClick={this.trackLink}
-                url="https://www.dotcss.io/"
+                url='https://www.dotcss.io/'
                 external
               >
                 dotCSS
@@ -25,7 +25,7 @@ export default class SponsoredConference extends PureComponent {
               #css ・
               <Link
                 onClick={this.trackLink}
-                url="https://2018.dotcss.io/tickets?promocode=CONFSTECH"
+                url='https://2018.dotcss.io/tickets?promocode=CONFSTECH'
                 external
               >
                 <span className={styles.Footer}>20% off with promocode: </span>
@@ -36,14 +36,14 @@ export default class SponsoredConference extends PureComponent {
           <span className={styles.sponsored}>partner</span>
         </div>
       </div>
-    );
+    )
   }
 
   private trackLink(event: React.MouseEvent<HTMLAnchorElement>) {
-    const {href} = event.currentTarget;
+    const { href } = event.currentTarget
 
     ga('send', 'event', 'outbound-sponsor', 'click', href, {
       transport: 'beacon',
-    });
+    })
   }
 }
