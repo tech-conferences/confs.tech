@@ -6,7 +6,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "lint": "eslint --fix --ext .tsx",
+    "lint": "eslint --fix --ext .tsx .",
     "reorder-confs": "BABEL_ENV=node babel-node ./scripts/reorder-conferences-by-date.js",
     "precommit": "lint-staged",
     "predeploy": "npm run build"
