@@ -1,8 +1,26 @@
 {
-  "extends": ["plugin:shopify/react", "plugin:jsx-a11y/recommended", "prettier"],
-  "plugins": ["jsx-a11y"],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "prettier/react"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "prettier",
+    "jsx-a11y"
+  ],
+  "parser": "@typescript-eslint/parser",
   "rules": {
-    "react/jsx-filename-extension": ["jsx", "tsx"],
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "jsxSingleQuote": true,
+      "semi": false
+      }],
     "jsx-a11y/no-onchange": "off",
     "sort-class-members/sort-class-members": "off",
     "react/prop-types": "off",

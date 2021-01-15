@@ -6,12 +6,13 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
+    "lint": "eslint --fix --ext .tsx",
     "reorder-confs": "BABEL_ENV=node babel-node ./scripts/reorder-conferences-by-date.js",
     "precommit": "lint-staged",
     "predeploy": "npm run build"
   },
   "lint-staged": {
-    "*.js": [
+    "*.tsx?": [
       "eslint --fix",
       "git add"
     ],
@@ -39,8 +40,8 @@
     "eslint-config-react-app": "^2.0.0",
     "eslint-loader": "2.1.0",
     "eslint-plugin-flowtype": "2.50.0",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.11.1",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "2.0.0",
@@ -53,7 +54,7 @@
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
-    "prettier": "^1.5.3",
+    "prettier": "^2.2.1",
     "promise": "8.0.2",
     "qs": "^6.5.2",
     "react": "^16.2.0",
@@ -92,11 +93,15 @@
     "@types/react-router-dom": "^4.3.0",
     "@types/universal-cookie": "^2.2.0",
     "@types/webpack": "4.4.11",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "eslint": "^5.4.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-shopify": "^23.1.0",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "fork-ts-checker-webpack-plugin": "^1.4.3",
     "husky": "^0.14.3",
     "jest-cli": "^23.5.0",
@@ -142,9 +147,6 @@
       "jsx",
       "node"
     ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "engines": {
     "node": "12.10.0"
