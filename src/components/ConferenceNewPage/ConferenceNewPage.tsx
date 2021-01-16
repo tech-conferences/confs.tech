@@ -9,7 +9,7 @@ import DatePicker from 'react-datepicker'
 import Recaptcha from 'react-recaptcha'
 
 import * as styles from './ConferenceNewPage.scss'
-import { Card, Heading, Link } from 'src/components'
+import { Card, Heading, Link, InputGroup } from 'src/components'
 
 import { TOPICS } from '../config'
 import './DatePickerOverrides.scss'
@@ -336,6 +336,16 @@ export default class ConferenceNewPage extends Component<Props> {
               </div>
             </InputGroup>
             <InputGroup inline>
+              <input
+                type='checkbox'
+                name='online'
+                id='online'
+                checked={online}
+                onChange={this.handleCheckboxChange}
+              />
+              <label htmlFor='online'>Offers online streaming</label>
+            </InputGroup>{' '}
+            <InputGroup inline>
               <div>
                 <label htmlFor='city'>City</label>
                 <input
@@ -344,7 +354,7 @@ export default class ConferenceNewPage extends Component<Props> {
                   type='text'
                   id='city'
                   name='city'
-                  placeholder='Online for online events'
+                  placeholder={online ? 'Optional' : ''}
                   value={city}
                   onChange={this.handleFieldChange}
                 />
@@ -360,22 +370,12 @@ export default class ConferenceNewPage extends Component<Props> {
                   type='text'
                   id='country'
                   name='country'
-                  placeholder='Online for online events'
+                  placeholder={online ? 'Optional' : ''}
                   value={country}
                   onChange={this.handleFieldChange}
                 />
                 {this.errorFor('country', 'Country is required.')}
               </div>
-            </InputGroup>
-            <InputGroup inline>
-              <input
-                type='checkbox'
-                name='online'
-                id='online'
-                checked={online}
-                onChange={this.handleCheckboxChange}
-              />
-              <label htmlFor='online'>Offers online streaming</label>
             </InputGroup>
             <InputGroup inline>
               <div>
@@ -547,24 +547,6 @@ export default class ConferenceNewPage extends Component<Props> {
       </div>
     )
   }
-}
-
-interface InputGroupProps {
-  children: React.ReactNode
-  inline?: boolean
-}
-
-function InputGroup({ children, inline }: InputGroupProps) {
-  return (
-    <div
-      className={classNames(
-        styles.InputGroup,
-        inline && styles.InputGroupInline
-      )}
-    >
-      {children}
-    </div>
-  )
 }
 
 function getConferenceData(conference: Conference) {

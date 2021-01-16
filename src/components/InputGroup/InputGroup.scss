@@ -1,0 +1,26 @@
+@import '../style/foundation/spacing';
+
+.InputGroup {
+  margin-bottom: spacing(base);
+  max-width: 500px;
+
+  label {
+    margin-bottom: spacing(tight);
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.inline {
+  display: flex;
+  max-width: 500px;
+
+  > div {
+    margin-right: spacing(base);
+    flex-grow: 1;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
