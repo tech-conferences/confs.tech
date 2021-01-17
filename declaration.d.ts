@@ -1,6 +1,7 @@
 interface Conference {
   objectID: string
   name: string
+  online: boolean
   topics: string[]
   url: string
   city: string

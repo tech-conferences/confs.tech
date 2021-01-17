@@ -19,6 +19,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       url,
       city,
       country,
+      online,
       startDate,
       endDate,
       twitter,
@@ -55,7 +56,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           </Link>
         </Heading>
         <p className={styles.p}>
-          {`${Location(city, country)}・`}
+          {`${Location(city, country, online)}・`}
           <span className={styles.Date}>{formatDate(startDate, endDate)}</span>
         </p>
         {offersSignLanguageOrCC && (
@@ -122,12 +123,15 @@ function Twitter({ twitter }: TwitterProps) {
   )
 }
 
-function Location(city: string, country: string) {
-  if (city && country && city !== country) {
-    return `${city}, ${country}`
+function Location(city: string, country: string, online: boolean) {
+  switch (true) {
+    case online && !city:
+      return 'Online'
+    case online && city !== null:
+      return `${city}, ${country} & Online`
+    default:
+      return `${city}, ${country}`
   }
-
-  return country || city
 }
 
 interface CfpProps {
