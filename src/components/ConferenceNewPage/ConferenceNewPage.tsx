@@ -198,7 +198,6 @@ const ConferenceNewPage: React.FC = () => {
     twitter,
     comment,
     cocUrl,
-    online,
     offersSignLanguageOrCC,
     startDate,
     endDate,
