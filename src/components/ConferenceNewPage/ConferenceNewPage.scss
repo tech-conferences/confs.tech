@@ -4,8 +4,8 @@
 
 select {
   font-size: 16px;
-  border: 1px solid #CCC;
-  padding: 0.3em;
+  border: 1px solid color(gray, light);
+  padding: spacing(tight);
   border-radius: 3px;
 }
 
@@ -24,31 +24,6 @@ input, textarea {
 
   &[type=checkbox] + label{
     margin-left: 0.5em;
-  }
-}
-
-.InputGroup {
-  margin-bottom: spacing(base);
-  max-width: 500px;
-
-  label {
-    margin-bottom: spacing(tight);
-    display: block;
-    cursor: pointer;
-  }
-}
-
-.InputGroupInline {
-  display: flex;
-  max-width: 500px;
-
-  > div {
-    margin-right: spacing(base);
-    flex-grow: 1;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
