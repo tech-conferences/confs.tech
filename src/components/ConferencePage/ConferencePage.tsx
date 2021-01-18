@@ -8,6 +8,7 @@ import qs from 'qs'
 import {
   Configure,
   InstantSearch,
+  ToggleRefinement,
   RefinementList,
   CurrentRefinements,
 } from 'react-instantsearch/dom'
@@ -82,6 +83,7 @@ class ConferencePage extends Component<ComposedProps, State> {
         } = this.state
         const { history, showCFP } = this.props
         const startURL = showCFP ? '/cfp' : ''
+        const { online } = searchState.toggle
 
         const queryParams = {
           topics:
@@ -92,20 +94,24 @@ class ConferencePage extends Component<ComposedProps, State> {
             country === ''
               ? ''
               : (country || [params.country]).join(QUERY_SEPARATOR),
+          online: online === '' ? '' : online || params.online,
         }
 
-        if (topics && country) {
-          history.push(
-            `${startURL}/${getFirstTopic(topics)}/${country[0]}?${qs.stringify(
-              queryParams
-            )}`
-          )
-        } else if (topics) {
-          history.push(
-            `${startURL}/${getFirstTopic(topics)}?${qs.stringify(queryParams)}`
-          )
-        } else {
-          history.push(`${startURL}/?${qs.stringify(queryParams)}`)
+        switch (true) {
+          case topics && country:
+            return history.push(
+              `${startURL}/${getFirstTopic(topics)}/${
+                country[0]
+              }?${qs.stringify(queryParams)}`
+            )
+          case topics:
+            return history.push(
+              `${startURL}/${getFirstTopic(topics)}?${qs.stringify(
+                queryParams
+              )}`
+            )
+          default:
+            history.push(`${startURL}/?${qs.stringify(queryParams)}`)
         }
       }
     )
@@ -201,6 +207,12 @@ class ConferencePage extends Component<ComposedProps, State> {
             defaultRefinement={countries}
           />
 
+          <ToggleRefinement
+            attribute='online'
+            label='Only show online conferences'
+            value={true}
+          />
+
           <CurrentRefinements transformItems={transformCurrentRefinements} />
 
           <p className={styles.topLinks}>
@@ -287,13 +299,21 @@ function transformCountryRefinements(items: any[]) {
 }
 
 function transformCurrentRefinements(items: any[]) {
-  if (items.length && items[0].attribute === 'topics') {
-    items[0].items.map((item: any) => {
+  if (!items.length) {
+    return []
+  }
+
+  const topics = items.find((item) => item.attribute === 'topics')
+  // Change topic label
+  if (topics) {
+    topics.items.map((item: any) => {
       item.label = TOPICS[item.label] || item.label
       return item
     })
   }
-  return items
+
+  // Don't render 'online' refinement
+  return (items || []).filter((item) => item.attribute !== 'online')
 }
 
 function getFirstTopic(topics: string[]) {
