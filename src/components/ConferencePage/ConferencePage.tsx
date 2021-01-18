@@ -27,7 +27,6 @@ import Heading from '../Heading'
 import ConferenceList from '../ConferenceList'
 import { TOPICS } from '../config'
 import Search from '../Search'
-import Banner from '../Banner'
 
 const QUERY_SEPARATOR = '+'
 const CURRENT_YEAR = new Date().getFullYear()
@@ -237,8 +236,6 @@ class ConferencePage extends Component<ComposedProps, State> {
           )}
 
           <ScrollToConference hash={location.hash} />
-
-          <Banner />
 
           <ConferenceList
             onLoadMore={this.loadMore}
