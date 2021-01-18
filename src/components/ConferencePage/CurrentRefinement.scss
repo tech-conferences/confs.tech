@@ -36,8 +36,10 @@
     display: none;
   }
 
-  .ais-CurrentRefinements-categoryLabel, .ais-CurrentRefinements-label {
+  .ais-CurrentRefinements-categoryLabel,
+  .ais-CurrentRefinements-label {
     vertical-align: middle;
+    line-height: 1.5;
   }
 
   .ais-CurrentRefinements-delete {
