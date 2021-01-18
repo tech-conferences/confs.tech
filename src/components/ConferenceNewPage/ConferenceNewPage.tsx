@@ -93,8 +93,8 @@ const ConferenceNewPage: React.FC = () => {
       startDate: !Boolean(startDate),
       // eslint-disable-next-line no-extra-boolean-cast
       endDate: !Boolean(endDate),
-      city: city.length === 0,
-      country: country.length === 0,
+      city: locationType !== 'online' && city.length === 0,
+      country: locationType !== 'online' && country.length === 0,
       name: name.length === 0,
       url: url.length === 0,
     }
