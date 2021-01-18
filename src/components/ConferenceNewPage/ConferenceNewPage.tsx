@@ -539,6 +539,7 @@ const SubmittedMessage: React.FC<SubmittedMessageProps> = ({ resetForm }) => {
     </div>
   )
 }
+
 function getConferenceData(conference: Conference) {
   const { twitter, startDate, endDate, cfpEndDate } = conference
 

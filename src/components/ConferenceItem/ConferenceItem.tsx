@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import classNames from 'classnames'
-import { parse } from 'date-fns'
 
 import { formatDate, generateEventJSONLD } from './utils'
 import Heading from '../Heading'
@@ -142,7 +141,7 @@ interface CfpProps {
 function Cfp({ url, date }: CfpProps) {
   return (
     <Link url={url} external className={styles.cfp}>
-      CFP closes {formatDate(parse(date))}
+      CFP closes {formatDate(date)}
     </Link>
   )
 }

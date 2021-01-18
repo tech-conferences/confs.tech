@@ -1,32 +1,32 @@
-import { format, getMonth, parse } from 'date-fns'
+import { format, getMonth, parseISO } from 'date-fns'
 
-export function formatDate(startDate, endDate) {
+export function formatDate(startDate: string, endDate?: string) {
   // If specific date is not defined yet. Meaning startDate is 2018-02 for instance
   if (startDate.length === 7) {
-    return format(parse(`${startDate}-01`), 'MMMM')
+    return format(parseISO(`${startDate}-01`), 'MMMM')
   }
 
-  const parsedStartDate = parse(startDate)
+  const parsedStartDate = parseISO(startDate)
 
   if (endDate && startDate !== endDate) {
-    const parsedEndDate = parse(endDate)
+    const parsedEndDate = parseISO(endDate)
 
     const startMonth = getMonth(parsedStartDate)
     const endMonth = getMonth(parsedEndDate)
 
     if (startMonth === endMonth) {
-      return `${format(parsedStartDate, 'MMMM D')}${format(
+      return `${format(parsedStartDate, 'MMMM d')}${format(
         parsedEndDate,
-        '-D'
+        '-d'
       )}`
     } else {
-      return `${format(parsedStartDate, 'MMMM D')}${format(
+      return `${format(parsedStartDate, 'MMMM d')}${format(
         parsedEndDate,
-        ' - MMMM D'
+        ' - MMMM d'
       )}`
     }
   } else {
-    return format(parsedStartDate, 'MMMM D')
+    return format(parsedStartDate, 'MMMM d')
   }
 }
 
@@ -37,7 +37,7 @@ export function generateEventJSONLD({
   country,
   startDate,
   endDate,
-}) {
+}: any) {
   const data = {
     '@context': 'http://schema.org',
     '@type': 'Event',
