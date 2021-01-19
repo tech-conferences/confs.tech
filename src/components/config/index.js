@@ -3,7 +3,7 @@ export const CURRENT_YEAR = new Date().getFullYear() - 1
 export const TOPICS = {
   'tech-comm': 'Content strategy',
   android: 'Android',
-  cfml: 'ColdFusion Markup Language',
+  cfml: 'ColdFusion/CFML',
   clojure: 'Clojure',
   cpp: 'C++',
   css: 'CSS',
