@@ -82,7 +82,7 @@ class ConferencePage extends Component<ComposedProps, State> {
         } = this.state
         const { history, showCFP } = this.props
         const startURL = showCFP ? '/cfp' : ''
-        const { online } = searchState.toggle
+        const online = searchState.toggle ? searchState.toggle.online : false;
 
         const queryParams = {
           topics:
