@@ -85,7 +85,17 @@ const ConferenceNewPage: React.FC = () => {
   }
 
   const validateForm = (conference: Conference) => {
-    const { topic, startDate, endDate, city, country, name, url } = conference
+    const { topic, startDate, endDate, city, country, name, url, cfpUrl, twitter } = conference
+    const onlineRegex = /online|remote|everywhere|world|web|global|virtual|www|http/i
+    const isNotOnline = locationType !== 'online'
+    const httpRegex = /^http(s?):\/\//
+    const httpNoQuestionmarkRegex = /\?/
+    const urlShortener = /(\/bit\.ly)|(\/t\.co)/
+    const twitterRegex = /@(\w){1,15}$/
+
+    function isUrlValid(url:string) {
+      return httpRegex.test(url) && !httpNoQuestionmarkRegex.test(url) && !urlShortener.test(url)
+    }
 
     const errors = {
       topic: topic.length === 0,
@@ -93,10 +103,14 @@ const ConferenceNewPage: React.FC = () => {
       startDate: !Boolean(startDate),
       // eslint-disable-next-line no-extra-boolean-cast
       endDate: !Boolean(endDate),
-      city: locationType !== 'online' && city.length === 0,
-      country: locationType !== 'online' && country.length === 0,
+      city: isNotOnline && city.length === 0,
+      onlineCity: isNotOnline && onlineRegex.test(city),
+      country: isNotOnline && country.length === 0,
+      onlineCountry: isNotOnline && onlineRegex.test(country),
       name: name.length === 0,
-      url: url.length === 0,
+      url: url.length === 0 || !isUrlValid(url),
+      cfpUrl: url.length !== 0 && !isUrlValid(cfpUrl),
+      twitter: twitter.length !== 0 && !twitterRegex.test(twitter)
     }
 
     setErrors(errors)
@@ -293,7 +307,7 @@ const ConferenceNewPage: React.FC = () => {
                     id='url'
                     onChange={handleFieldChange}
                   />
-                  {errorFor('url', 'Url is required.')}
+                  {errorFor('url', 'Url is required and should be valid. No URL query parameters or URL shorteners are allowed.')}
                 </div>
               </InputGroup>
               <InputGroup inline>
@@ -350,6 +364,7 @@ const ConferenceNewPage: React.FC = () => {
                       onChange={handleFieldChange}
                     />
                     {errorFor('city', 'City is required.')}
+                    {errorFor('onlineCity', 'For Online conferences please select location "online"')}
                   </div>
                   <div>
                     <label htmlFor='country'>Country</label>
@@ -365,6 +380,7 @@ const ConferenceNewPage: React.FC = () => {
                       onChange={handleFieldChange}
                     />
                     {errorFor('country', 'Country is required.')}
+                    {errorFor('onlineCountry', 'For Online conferences please select location "online"')}
                   </div>
                 </InputGroup>
               )}
@@ -379,7 +395,7 @@ const ConferenceNewPage: React.FC = () => {
                     value={cfpUrl}
                     onChange={handleFieldChange}
                   />
-                  {errorFor('cfpUrl', 'CFP URL is required.')}
+                  {errorFor('cfpUrl', 'CFP URL should be valid. No URL query parameters or URL shorteners are allowed.')}
                 </div>
                 <div>
                   <label htmlFor='cfpEndDate'>CFP end date</label>
@@ -402,7 +418,7 @@ const ConferenceNewPage: React.FC = () => {
                   value={twitter}
                   onChange={handleFieldChange}
                 />
-                {errorFor('twitter', 'Twitter handle is required.')}
+                {errorFor('twitter', 'Twitter handle should be valid and formatted like @twitter')}
               </InputGroup>
               <InputGroup>
                 <label htmlFor='cocUrl'>Code Of Conduct URL</label>
