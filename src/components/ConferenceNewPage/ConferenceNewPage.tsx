@@ -399,7 +399,7 @@ const ConferenceNewPage: React.FC = () => {
                     value={cfpUrl}
                     onChange={handleFieldChange}
                   />
-                  {errorFor('cfpUrl', 'CFP URL should be valid. No URL query parameters or URL shorteners are allowed.')}
+                  {errorFor('cfpUrl', 'No URL query parameters or URL shorteners are allowed.')}
                 </div>
                 <div>
                   <label htmlFor='cfpEndDate'>CFP end date</label>
