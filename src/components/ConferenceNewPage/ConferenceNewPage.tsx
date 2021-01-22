@@ -21,7 +21,7 @@ const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) =>
 const LOCATION_ONLINE_REGEX = /online|remote|everywhere|world|web|global|virtual|www|http/i
 const VALID_URL_REGEX = /^http(s?):\/\//
 const URL_PARAMETER_REGEX = /\?/
-const URL_SHORTENER_REGEX = /(\/bit\.ly)|(\/t\.co)/
+const URL_SHORTENER_REGEX = /(\/bitly)|(\/bit\.ly)|(\/t\.co)/
 const TWITTER_REGEX = /@(\w){1,15}$/
 
 const LOCATION_TYPES = [
