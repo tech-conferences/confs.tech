@@ -18,6 +18,11 @@ import ReactDatePicker from 'react-datepicker'
 const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) =>
   TOPICS[x].toLocaleLowerCase()
 )
+const LOCATION_ONLINE_REGEX = /online|remote|everywhere|world|web|global|virtual|www|http/i
+const VALID_URL_REGEX = /^http(s?):\/\//
+const URL_PARAMETER_REGEX = /\?/
+const URL_SHORTENER_REGEX = /(\/bit\.ly)|(\/t\.co)/
+const TWITTER_REGEX = /@(\w){1,15}$/
 
 const LOCATION_TYPES = [
   {
@@ -84,8 +89,18 @@ const ConferenceNewPage: React.FC = () => {
     setConference(defaultConference)
   }
 
+  const isUrlValid = (url: string) => {
+    return (
+      VALID_URL_REGEX.test(url) &&
+      !URL_PARAMETER_REGEX.test(url) &&
+      !URL_SHORTENER_REGEX.test(url)
+    )
+  }
+
   const validateForm = (conference: Conference) => {
-    const { topic, startDate, endDate, city, country, name, url } = conference
+    const { topic, startDate, endDate, city, country, name, url, cfpUrl, cfpEndDate, twitter } = conference
+
+    const isNotOnline = locationType !== 'online'
 
     const errors = {
       topic: topic.length === 0,
@@ -93,10 +108,16 @@ const ConferenceNewPage: React.FC = () => {
       startDate: !Boolean(startDate),
       // eslint-disable-next-line no-extra-boolean-cast
       endDate: !Boolean(endDate),
-      city: locationType !== 'online' && city.length === 0,
-      country: locationType !== 'online' && country.length === 0,
+      endDateIsBeforeStartDate: startDate && endDate ? startDate > endDate : false,
+      city: isNotOnline && city.length === 0,
+      onlineCity: isNotOnline && LOCATION_ONLINE_REGEX.test(city),
+      country: isNotOnline && country.length === 0,
+      onlineCountry: isNotOnline && LOCATION_ONLINE_REGEX.test(country),
       name: name.length === 0,
-      url: url.length === 0,
+      url: url.length === 0 || !isUrlValid(url),
+      cfpUrl: cfpUrl.length === 0 ? false : !isUrlValid(cfpUrl),
+      cfpEndDateIsAfterStartDate: startDate && cfpEndDate ? cfpEndDate >= startDate : false,
+      twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter)
     }
 
     setErrors(errors)
@@ -293,7 +314,7 @@ const ConferenceNewPage: React.FC = () => {
                     id='url'
                     onChange={handleFieldChange}
                   />
-                  {errorFor('url', 'Url is required.')}
+                  {errorFor('url', 'Must be a valid URL. No query parameters or URL shorteners are allowed.')}
                 </div>
               </InputGroup>
               <InputGroup inline>
@@ -318,6 +339,7 @@ const ConferenceNewPage: React.FC = () => {
                     selected={endDate}
                     onChange={handleDateChange.endDate}
                   />
+                  {errorFor('endDateIsBeforeStartDate', 'End date is before start date.')}
                 </div>
               </InputGroup>
               <InputGroup>
@@ -350,6 +372,7 @@ const ConferenceNewPage: React.FC = () => {
                       onChange={handleFieldChange}
                     />
                     {errorFor('city', 'City is required.')}
+                    {errorFor('onlineCity', 'For Online conferences please select location "online"')}
                   </div>
                   <div>
                     <label htmlFor='country'>Country</label>
@@ -365,6 +388,7 @@ const ConferenceNewPage: React.FC = () => {
                       onChange={handleFieldChange}
                     />
                     {errorFor('country', 'Country is required.')}
+                    {errorFor('onlineCountry', 'For Online conferences please select location "online"')}
                   </div>
                 </InputGroup>
               )}
@@ -379,7 +403,7 @@ const ConferenceNewPage: React.FC = () => {
                     value={cfpUrl}
                     onChange={handleFieldChange}
                   />
-                  {errorFor('cfpUrl', 'CFP URL is required.')}
+                  {errorFor('cfpUrl', 'No URL query parameters or URL shorteners are allowed.')}
                 </div>
                 <div>
                   <label htmlFor='cfpEndDate'>CFP end date</label>
@@ -390,6 +414,7 @@ const ConferenceNewPage: React.FC = () => {
                     selected={cfpEndDate}
                     onChange={handleDateChange.cfpEndDate}
                   />
+                  {errorFor('cfpEndDateIsAfterStartDate', 'CFP end date is after start date.')}
                 </div>
               </InputGroup>
               <InputGroup>
@@ -402,7 +427,7 @@ const ConferenceNewPage: React.FC = () => {
                   value={twitter}
                   onChange={handleFieldChange}
                 />
-                {errorFor('twitter', 'Twitter handle is required.')}
+                {errorFor('twitter', 'Should be formatted like @twitter')}
               </InputGroup>
               <InputGroup>
                 <label htmlFor='cocUrl'>Code Of Conduct URL</label>
