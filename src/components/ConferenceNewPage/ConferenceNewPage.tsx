@@ -93,8 +93,12 @@ const ConferenceNewPage: React.FC = () => {
     const urlShortener = /(\/bit\.ly)|(\/t\.co)/
     const twitterRegex = /@(\w){1,15}$/
 
-    function isUrlValid(url:string) {
-      return httpRegex.test(url) && !httpNoQuestionmarkRegex.test(url) && !urlShortener.test(url)
+    function isUrlValid(url: string) {
+      return (
+        httpRegex.test(url) &&
+        !httpNoQuestionmarkRegex.test(url) &&
+        !urlShortener.test(url)
+      )
     }
 
     const errors = {
