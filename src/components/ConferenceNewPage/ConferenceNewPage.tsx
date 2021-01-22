@@ -307,7 +307,7 @@ const ConferenceNewPage: React.FC = () => {
                     id='url'
                     onChange={handleFieldChange}
                   />
-                  {errorFor('url', 'Url is required and should be valid. No URL query parameters or URL shorteners are allowed.')}
+                  {errorFor('url', 'No URL query parameters or URL shorteners are allowed.')}
                 </div>
               </InputGroup>
               <InputGroup inline>
