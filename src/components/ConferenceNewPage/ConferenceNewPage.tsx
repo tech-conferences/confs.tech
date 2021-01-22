@@ -114,6 +114,7 @@ const ConferenceNewPage: React.FC = () => {
       country: isNotOnline && country.length === 0,
       onlineCountry: isNotOnline && LOCATION_ONLINE_REGEX.test(country),
       name: name.length === 0,
+      nameWithoutYear: startDate ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !== -1 : false,
       url: url.length === 0 || !isUrlValid(url),
       cfpUrl: cfpUrl.length === 0 ? false : !isUrlValid(cfpUrl),
       cfpUrlSameAsUrl: cfpUrl.length === 0 ? false : url == cfpUrl,
@@ -300,6 +301,7 @@ const ConferenceNewPage: React.FC = () => {
                     onChange={handleFieldChange}
                   />
                   {errorFor('name', 'Name is required.')}
+                  {errorFor('nameWithoutYear', 'Name should not contain year.')}
                 </div>
               </InputGroup>
               <InputGroup>
