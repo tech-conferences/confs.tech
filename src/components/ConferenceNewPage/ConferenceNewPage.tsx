@@ -418,7 +418,7 @@ const ConferenceNewPage: React.FC = () => {
                   value={twitter}
                   onChange={handleFieldChange}
                 />
-                {errorFor('twitter', 'Twitter handle should be valid and formatted like @twitter')}
+                {errorFor('twitter', 'Should be formatted like @twitter')}
               </InputGroup>
               <InputGroup>
                 <label htmlFor='cocUrl'>Code Of Conduct URL</label>
