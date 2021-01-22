@@ -18,6 +18,11 @@ import ReactDatePicker from 'react-datepicker'
 const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) =>
   TOPICS[x].toLocaleLowerCase()
 )
+const LOCATION_ONLINE_REGEX = /online|remote|everywhere|world|web|global|virtual|www|http/i
+const VALID_URL_REGEX = /^http(s?):\/\//
+const URL_PARAMETER_REGEX = /\?/
+const URL_SHORTENER_REGEX = /(\/bit\.ly)|(\/t\.co)/
+const TWITTER_REGEX = /@(\w){1,15}$/
 
 const LOCATION_TYPES = [
   {
@@ -84,22 +89,18 @@ const ConferenceNewPage: React.FC = () => {
     setConference(defaultConference)
   }
 
-  const validateForm = (conference: Conference) => {
-    const { topic, startDate, endDate, city, country, name, url, cfpUrl, twitter } = conference
-    const onlineRegex = /online|remote|everywhere|world|web|global|virtual|www|http/i
-    const isNotOnline = locationType !== 'online'
-    const httpRegex = /^http(s?):\/\//
-    const httpNoQuestionmarkRegex = /\?/
-    const urlShortener = /(\/bit\.ly)|(\/t\.co)/
-    const twitterRegex = /@(\w){1,15}$/
+  const isUrlValid = (url: string) => {
+    return (
+      VALID_URL_REGEX.test(url) &&
+      !URL_PARAMETER_REGEX.test(url) &&
+      !URL_SHORTENER_REGEX.test(url)
+    )
+  }
 
-    function isUrlValid(url: string) {
-      return (
-        httpRegex.test(url) &&
-        !httpNoQuestionmarkRegex.test(url) &&
-        !urlShortener.test(url)
-      )
-    }
+  const validateForm = (conference: Conference) => {
+    const { topic, startDate, endDate, city, country, name, url, cfpUrl, cfpEndDate, twitter } = conference
+
+    const isNotOnline = locationType !== 'online'
 
     const errors = {
       topic: topic.length === 0,
@@ -107,14 +108,16 @@ const ConferenceNewPage: React.FC = () => {
       startDate: !Boolean(startDate),
       // eslint-disable-next-line no-extra-boolean-cast
       endDate: !Boolean(endDate),
+      endDateIsBeforeStartDate: startDate && endDate ? startDate > endDate : false,
       city: isNotOnline && city.length === 0,
-      onlineCity: isNotOnline && onlineRegex.test(city),
+      onlineCity: isNotOnline && LOCATION_ONLINE_REGEX.test(city),
       country: isNotOnline && country.length === 0,
-      onlineCountry: isNotOnline && onlineRegex.test(country),
+      onlineCountry: isNotOnline && LOCATION_ONLINE_REGEX.test(country),
       name: name.length === 0,
       url: url.length === 0 || !isUrlValid(url),
-      cfpUrl: url.length !== 0 && !isUrlValid(cfpUrl),
-      twitter: twitter.length !== 0 && !twitterRegex.test(twitter)
+      cfpUrl: cfpUrl.length === 0 ? false : !isUrlValid(cfpUrl),
+      cfpEndDateIsAfterStartDate: startDate && cfpEndDate ? cfpEndDate >= startDate : false,
+      twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter)
     }
 
     setErrors(errors)
@@ -311,7 +314,7 @@ const ConferenceNewPage: React.FC = () => {
                     id='url'
                     onChange={handleFieldChange}
                   />
-                  {errorFor('url', 'No URL query parameters or URL shorteners are allowed.')}
+                  {errorFor('url', 'Must be a valid URL. No query parameters or URL shorteners are allowed.')}
                 </div>
               </InputGroup>
               <InputGroup inline>
@@ -336,6 +339,7 @@ const ConferenceNewPage: React.FC = () => {
                     selected={endDate}
                     onChange={handleDateChange.endDate}
                   />
+                  {errorFor('endDateIsBeforeStartDate', 'End date is before start date.')}
                 </div>
               </InputGroup>
               <InputGroup>
@@ -410,6 +414,7 @@ const ConferenceNewPage: React.FC = () => {
                     selected={cfpEndDate}
                     onChange={handleDateChange.cfpEndDate}
                   />
+                  {errorFor('cfpEndDateIsAfterStartDate', 'CFP end date is after start date.')}
                 </div>
               </InputGroup>
               <InputGroup>
