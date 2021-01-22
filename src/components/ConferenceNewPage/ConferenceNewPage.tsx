@@ -116,6 +116,7 @@ const ConferenceNewPage: React.FC = () => {
       name: name.length === 0,
       url: url.length === 0 || !isUrlValid(url),
       cfpUrl: cfpUrl.length === 0 ? false : !isUrlValid(cfpUrl),
+      cfpUrlSameAsUrl: cfpUrl.length === 0 ? false : url == cfpUrl,
       cfpEndDateIsAfterStartDate: startDate && cfpEndDate ? cfpEndDate >= startDate : false,
       twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter)
     }
@@ -404,6 +405,7 @@ const ConferenceNewPage: React.FC = () => {
                     onChange={handleFieldChange}
                   />
                   {errorFor('cfpUrl', 'No URL query parameters or URL shorteners are allowed.')}
+                  {errorFor('cfpUrlSameAsUrl', 'CFP URL is the same as URL.')}
                 </div>
                 <div>
                   <label htmlFor='cfpEndDate'>CFP end date</label>
