@@ -181,11 +181,19 @@ const ConferenceNewPage: React.FC = () => {
       method: 'post',
       body: getConferenceData(conference),
     })
-      .then((response) => {
-        if (response.status === 200) {
-          return setSubmitted(true)
-        } else {
-          return setSubmitting(false)
+      .then(response => {
+        if (response.status !== 200) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json()
+      })
+      .then(responseJson => {
+        setSubmitted(true)
+        var pullRequestUrl = responseJson.data.find((element: string[]) => element[0] == "html_url")
+        if (pullRequestUrl){
+          setTimeout(() => {
+            window.location.href = pullRequestUrl[1]
+          }, 2000);
         }
       })
       .catch(() => {
