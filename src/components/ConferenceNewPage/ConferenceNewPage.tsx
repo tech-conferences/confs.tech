@@ -98,27 +98,18 @@ const ConferenceNewPage: React.FC = () => {
   }
 
   const validateForm = (conference: Conference) => {
-    const { topic, startDate, endDate, city, country, name, url, cfpUrl, cfpEndDate, twitter } = conference
+    const { startDate, endDate, city, country, name, url, cfpUrl, cfpEndDate, twitter } = conference
 
     const isNotOnline = locationType !== 'online'
 
     const errors = {
-      topic: topic.length === 0,
-      // eslint-disable-next-line no-extra-boolean-cast
-      startDate: !Boolean(startDate),
-      // eslint-disable-next-line no-extra-boolean-cast
-      endDate: !Boolean(endDate),
-      endDateIsBeforeStartDate: startDate && endDate ? startDate > endDate : false,
-      city: isNotOnline && city.length === 0,
-      onlineCity: isNotOnline && LOCATION_ONLINE_REGEX.test(city),
-      country: isNotOnline && country.length === 0,
-      onlineCountry: isNotOnline && LOCATION_ONLINE_REGEX.test(country),
-      name: name.length === 0,
-      nameWithoutYear: startDate ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !== -1 : false,
-      url: url.length === 0 || !isUrlValid(url),
-      cfpUrl: cfpUrl.length === 0 ? false : !isUrlValid(cfpUrl),
-      cfpUrlSameAsUrl: cfpUrl.length === 0 ? false : url == cfpUrl,
-      cfpEndDateIsAfterStartDate: startDate && cfpEndDate ? cfpEndDate >= startDate : false,
+      name: startDate ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !== -1 : false,
+      url: !isUrlValid(url),
+      endDate: startDate && endDate ? startDate > endDate : false,
+      city: isNotOnline && LOCATION_ONLINE_REGEX.test(city),
+      country: isNotOnline && LOCATION_ONLINE_REGEX.test(country),
+      cfpUrl: cfpUrl.length === 0 ? false : (!isUrlValid(cfpUrl) || url == cfpUrl),
+      cfpEndDate: startDate && cfpEndDate ? cfpEndDate >= startDate : false,
       twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter)
     }
 
@@ -167,12 +158,16 @@ const ConferenceNewPage: React.FC = () => {
   const handleFormSubmit = (event: React.FormEvent) => {
     const errors = validateForm(conference)
     event.preventDefault()
-    const cannotBeSubmitted = Object.keys(errors).some((x) => errors[x])
+    const erroneousFieldId = Object.keys(errors).find((x) => errors[x])
 
     if (!recaptchaLoaded || captchaResponse === null) {
       return
     }
-    if (cannotBeSubmitted) {
+    if (erroneousFieldId) {
+      const erroneousField = document.getElementById(erroneousFieldId)
+      if (erroneousField && erroneousField.focus) {
+        erroneousField.focus();
+      }
       return
     }
 
@@ -283,7 +278,6 @@ const ConferenceNewPage: React.FC = () => {
                       </option>
                     ))}
                   </select>
-                  {errorFor('topic', 'Please select a topic.')}
                 </div>
               </InputGroup>
               <InputGroup>
@@ -300,8 +294,7 @@ const ConferenceNewPage: React.FC = () => {
                     id='name'
                     onChange={handleFieldChange}
                   />
-                  {errorFor('name', 'Name is required.')}
-                  {errorFor('nameWithoutYear', 'Name should not contain year.')}
+                  {errorFor('name', 'Name should not contain year.')}
                 </div>
               </InputGroup>
               <InputGroup>
@@ -327,10 +320,10 @@ const ConferenceNewPage: React.FC = () => {
                     dateFormat={DATE_FORMAT}
                     name='startDate'
                     id='startDate'
+                    required
                     selected={startDate}
                     onChange={handleStartDateSelect}
                   />
-                  {errorFor('startDate', 'Start date is required.')}
                 </div>
                 <div>
                   <label htmlFor='endDate'>End date</label>
@@ -342,7 +335,7 @@ const ConferenceNewPage: React.FC = () => {
                     selected={endDate}
                     onChange={handleDateChange.endDate}
                   />
-                  {errorFor('endDateIsBeforeStartDate', 'End date is before start date.')}
+                  {errorFor('endDate', 'End date is before start date.')}
                 </div>
               </InputGroup>
               <InputGroup>
@@ -374,8 +367,7 @@ const ConferenceNewPage: React.FC = () => {
                       value={city}
                       onChange={handleFieldChange}
                     />
-                    {errorFor('city', 'City is required.')}
-                    {errorFor('onlineCity', 'For Online conferences please select location "online"')}
+                    {errorFor('city', 'For Online conferences please select location "online"')}
                   </div>
                   <div>
                     <label htmlFor='country'>Country</label>
@@ -390,8 +382,7 @@ const ConferenceNewPage: React.FC = () => {
                       value={country}
                       onChange={handleFieldChange}
                     />
-                    {errorFor('country', 'Country is required.')}
-                    {errorFor('onlineCountry', 'For Online conferences please select location "online"')}
+                    {errorFor('country', 'For Online conferences please select location "online"')}
                   </div>
                 </InputGroup>
               )}
@@ -406,8 +397,7 @@ const ConferenceNewPage: React.FC = () => {
                     value={cfpUrl}
                     onChange={handleFieldChange}
                   />
-                  {errorFor('cfpUrl', 'No URL query parameters or URL shorteners are allowed.')}
-                  {errorFor('cfpUrlSameAsUrl', 'CFP URL is the same as URL.')}
+                  {errorFor('cfpUrl', 'CFP URL must different than URL. No URL query parameters or URL shorteners are allowed.')}
                 </div>
                 <div>
                   <label htmlFor='cfpEndDate'>CFP end date</label>
@@ -418,7 +408,7 @@ const ConferenceNewPage: React.FC = () => {
                     selected={cfpEndDate}
                     onChange={handleDateChange.cfpEndDate}
                   />
-                  {errorFor('cfpEndDateIsAfterStartDate', 'CFP end date is after start date.')}
+                  {errorFor('cfpEndDate', 'CFP end date is after start date.')}
                 </div>
               </InputGroup>
               <InputGroup>
