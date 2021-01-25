@@ -63,7 +63,6 @@ const ConferenceNewPage: React.FC = () => {
   const [recaptchaLoaded, setRecaptchaLoaded] = useState(false)
   const [captchaResponse, setCaptchaResponse] = useState(null)
   const [submitting, setSubmitting] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
   const [serverError, setServerError] = useState(false)
   const [errors, setErrors] = useState({})
   const [conference, setConference] = useState(defaultConference)
@@ -81,12 +80,6 @@ const ConferenceNewPage: React.FC = () => {
     startDate: handleDateChangeBuilder('startDate'),
     endDate: handleDateChangeBuilder('endDate'),
     cfpEndDate: handleDateChangeBuilder('cfpEndDate'),
-  }
-
-  const resetForm = () => {
-    setSubmitted(false)
-    setSubmitting(false)
-    setConference(defaultConference)
   }
 
   const isUrlValid = (url: string) => {
@@ -188,16 +181,12 @@ const ConferenceNewPage: React.FC = () => {
         return response.json()
       })
       .then(responseJson => {
-        setSubmitted(true)
         var pullRequestUrl = responseJson.data.find((element: string[]) => element[0] == "html_url")
         if (pullRequestUrl){
-          setTimeout(() => {
-            window.location.href = pullRequestUrl[1]
-          }, 2000);
+          window.location.href = pullRequestUrl[1]
         }
       })
       .catch(() => {
-        setSubmitting(false)
         setServerError(true)
       })
   }
@@ -238,7 +227,7 @@ const ConferenceNewPage: React.FC = () => {
         <script src='https://www.google.com/recaptcha/api.js' async defer />
       </Helmet>
       <Heading element='h1'>Add a new conference</Heading>
-      {!submitted && (
+      {(
         <div>
           <p>
             Confs.tech is focused on conferences on software development and
@@ -261,8 +250,7 @@ const ConferenceNewPage: React.FC = () => {
           </p>
         </div>
       )}
-      {submitted && <SubmittedMessage resetForm={resetForm} />}
-      {!submitted && (
+      {(
         <div>
           <Card>
             <form onSubmit={handleFormSubmit} autoComplete='off'>
@@ -524,45 +512,6 @@ const ConferenceNewPage: React.FC = () => {
           </Link>
         </div>
       )}
-    </div>
-  )
-}
-
-interface SubmittedMessageProps {
-  resetForm(): void
-}
-const SubmittedMessage: React.FC<SubmittedMessageProps> = ({ resetForm }) => {
-  return (
-    <div>
-      <p>Thank you for submitting a conference!</p>
-      <p>
-        We will soon review it, add it to the list and tweet it on{' '}
-        <Link external url='https://twitter.com/ConfsTech'>
-          @ConfsTech
-        </Link>
-        <br />
-        Find your submission and track its status on{' '}
-        <Link
-          external
-          url='https://github.com/tech-conferences/conference-data/pulls'
-        >
-          GitHub
-        </Link>
-        .
-      </p>
-      <p>
-        <Link external url='https://github.com/tech-conferences/confs.tech/'>
-          Contact us
-        </Link>
-        {' – '}
-        <Link url='https://confs.tech/'>Go back to confs.tech</Link>
-        {' – '}
-        <Link onClick={resetForm}>Add a new conference</Link>
-        {' – '}
-        <Link external url='https://twitter.com/ConfsTech/'>
-          Follow us on Twitter
-        </Link>
-      </p>
     </div>
   )
 }
