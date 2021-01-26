@@ -19,9 +19,9 @@ const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) =>
   TOPICS[x].toLocaleLowerCase()
 )
 const LOCATION_ONLINE_REGEX = /online|remote|everywhere|world|web|global|virtual|www|http/i
-const VALID_URL_REGEX = /^http(s?):\/\//
+const VALID_URL_REGEX = /^http(s?):\/\//i
 const URL_PARAMETER_REGEX = /\?/
-const URL_SHORTENER_REGEX = /(\/bitly)|(\/bit\.ly)|(\/t\.co)/
+const URL_SHORTENER_REGEX = /(\/bitly)|(\/bit\.ly)|(\/t\.co)/i
 const TWITTER_REGEX = /@(\w){1,15}$/
 
 const LOCATION_TYPES = [
@@ -298,7 +298,7 @@ const ConferenceNewPage: React.FC = () => {
                   <label htmlFor='url'>URL</label>
                   <input
                     className={classNames(hasError('url') && styles.error)}
-                    type='text'
+                    type='url'
                     placeholder='https://confs.tech'
                     required
                     value={url}
@@ -328,6 +328,7 @@ const ConferenceNewPage: React.FC = () => {
                     dateFormat={DATE_FORMAT}
                     name='endDate'
                     id='endDate'
+                    required
                     selected={endDate}
                     onChange={handleDateChange.endDate}
                   />
@@ -387,7 +388,7 @@ const ConferenceNewPage: React.FC = () => {
                   <label htmlFor='cfpUrl'>CFP URL</label>
                   <input
                     className={classNames(hasError('cfpUrl') && styles.error)}
-                    type='text'
+                    type='url'
                     name='cfpUrl'
                     id='cfpUrl'
                     value={cfpUrl}
