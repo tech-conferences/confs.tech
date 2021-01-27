@@ -518,11 +518,14 @@ const ConferenceNewPage: React.FC = () => {
 }
 
 function getConferenceData(conference: Conference) {
-  const { twitter, startDate, endDate, cfpEndDate } = conference
+  const { name, city, country, twitter, startDate, endDate, cfpEndDate } = conference
 
   return JSON.stringify({
     ...conference,
-    twitter: twitter === '@' ? null : twitter,
+    name: name ? name.trim() : name,
+    city: city ? city.trim() : city,
+    country: country ? country.trim() : country,
+    twitter: twitter !== '@' ? twitter : null,
     startDate: startDate ? format(startDate, DATE_FORMAT) : null,
     endDate: endDate ? format(endDate, DATE_FORMAT) : null,
     cfpEndDate: cfpEndDate ? format(cfpEndDate, DATE_FORMAT) : null,
