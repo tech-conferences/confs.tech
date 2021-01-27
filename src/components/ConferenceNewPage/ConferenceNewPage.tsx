@@ -94,6 +94,7 @@ const ConferenceNewPage: React.FC = () => {
     const { startDate, endDate, city, country, name, url, cfpUrl, cfpEndDate, twitter } = conference
 
     const isNotOnline = locationType !== 'online'
+    const cfp = cfpUrl || cfpEndDate
 
     const errors = {
       name: startDate ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !== -1 : false,
@@ -101,8 +102,8 @@ const ConferenceNewPage: React.FC = () => {
       endDate: startDate && endDate ? startDate > endDate : false,
       city: isNotOnline && LOCATION_ONLINE_REGEX.test(city),
       country: isNotOnline && LOCATION_ONLINE_REGEX.test(country),
-      cfpUrl: cfpUrl.length === 0 ? false : (!isUrlValid(cfpUrl) || url == cfpUrl),
-      cfpEndDate: startDate && cfpEndDate ? cfpEndDate >= startDate : false,
+      cfpUrl: cfpUrl.length === 0 ? cfp : (!isUrlValid(cfpUrl) || url == cfpUrl),
+      cfpEndDate: startDate && cfpEndDate ? cfpEndDate >= startDate : cfp,
       twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter)
     }
 
