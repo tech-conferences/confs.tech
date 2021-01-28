@@ -296,7 +296,7 @@ const ConferenceNewPage: React.FC = () => {
               </InputGroup>
               <InputGroup>
                 <div>
-                  <label htmlFor='url'>URL</label>
+                  <label htmlFor='url'>URL - must be valid, up and running and specific for the conference</label>
                   <input
                     className={classNames(hasError('url') && styles.error)}
                     type='url'
