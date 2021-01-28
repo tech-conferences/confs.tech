@@ -91,20 +91,33 @@ const ConferenceNewPage: React.FC = () => {
   }
 
   const validateForm = (conference: Conference) => {
-    const { startDate, endDate, city, country, name, url, cfpUrl, cfpEndDate, twitter } = conference
+    const {
+      startDate,
+      endDate,
+      city,
+      country,
+      name,
+      url,
+      cfpUrl,
+      cfpEndDate,
+      twitter,
+    } = conference
 
     const isNotOnline = locationType !== 'online'
     const cfp = cfpUrl || cfpEndDate
 
     const errors = {
-      name: startDate ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !== -1 : false,
+      name: startDate
+        ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !==
+          -1
+        : false,
       url: !isUrlValid(url),
       endDate: startDate && endDate ? startDate > endDate : false,
       city: isNotOnline && LOCATION_ONLINE_REGEX.test(city),
       country: isNotOnline && LOCATION_ONLINE_REGEX.test(country),
-      cfpUrl: cfpUrl.length === 0 ? cfp : (!isUrlValid(cfpUrl) || url == cfpUrl),
+      cfpUrl: cfpUrl.length === 0 ? cfp : !isUrlValid(cfpUrl) || url == cfpUrl,
       cfpEndDate: startDate && cfpEndDate ? cfpEndDate >= startDate : cfp,
-      twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter)
+      twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter),
     }
 
     setErrors(errors)
@@ -160,7 +173,7 @@ const ConferenceNewPage: React.FC = () => {
     if (erroneousFieldId) {
       const erroneousField = document.getElementById(erroneousFieldId)
       if (erroneousField && erroneousField.focus) {
-        erroneousField.focus();
+        erroneousField.focus()
       }
       return
     }
@@ -175,15 +188,17 @@ const ConferenceNewPage: React.FC = () => {
       method: 'post',
       body: getConferenceData(conference),
     })
-      .then(response => {
+      .then((response) => {
         if (response.status !== 200) {
-          throw new Error('Network response was not ok');
+          throw new Error('Network response was not ok')
         }
         return response.json()
       })
-      .then(responseJson => {
-        var pullRequestUrl = responseJson.data.find((element: string[]) => element[0] == "html_url")
-        if (pullRequestUrl){
+      .then((responseJson) => {
+        const pullRequestUrl = responseJson.data.find(
+          (element: string[]) => element[0] == 'html_url'
+        )
+        if (pullRequestUrl) {
           window.location.href = pullRequestUrl[1]
         }
       })
@@ -228,7 +243,7 @@ const ConferenceNewPage: React.FC = () => {
         <script src='https://www.google.com/recaptcha/api.js' async defer />
       </Helmet>
       <Heading element='h1'>Add a new conference</Heading>
-      {(
+      {
         <div>
           <p>
             Confs.tech is focused on conferences on software development and
@@ -250,8 +265,8 @@ const ConferenceNewPage: React.FC = () => {
             status. Our team will review your request as soon as possible!
           </p>
         </div>
-      )}
-      {(
+      }
+      {
         <div>
           <Card>
             <form onSubmit={handleFormSubmit} autoComplete='off'>
@@ -296,7 +311,7 @@ const ConferenceNewPage: React.FC = () => {
               </InputGroup>
               <InputGroup>
                 <div>
-                  <label htmlFor='url'>URL - must be valid, up and running and specific for the conference</label>
+                  <label htmlFor='url'>URL</label>
                   <input
                     className={classNames(hasError('url') && styles.error)}
                     type='url'
@@ -307,7 +322,10 @@ const ConferenceNewPage: React.FC = () => {
                     id='url'
                     onChange={handleFieldChange}
                   />
-                  {errorFor('url', 'Must be a valid URL. No query parameters or URL shorteners are allowed.')}
+                  {errorFor(
+                    'url',
+                    'Must be a valid URL. No query parameters or URL shorteners are allowed.'
+                  )}
                 </div>
               </InputGroup>
               <InputGroup inline>
@@ -365,7 +383,10 @@ const ConferenceNewPage: React.FC = () => {
                       value={city}
                       onChange={handleFieldChange}
                     />
-                    {errorFor('city', 'For Online conferences please select location "online"')}
+                    {errorFor(
+                      'city',
+                      'For Online conferences please select location "online"'
+                    )}
                   </div>
                   <div>
                     <label htmlFor='country'>Country</label>
@@ -380,7 +401,10 @@ const ConferenceNewPage: React.FC = () => {
                       value={country}
                       onChange={handleFieldChange}
                     />
-                    {errorFor('country', 'For Online conferences please select location "online"')}
+                    {errorFor(
+                      'country',
+                      'For Online conferences please select location "online"'
+                    )}
                   </div>
                 </InputGroup>
               )}
@@ -395,7 +419,10 @@ const ConferenceNewPage: React.FC = () => {
                     value={cfpUrl}
                     onChange={handleFieldChange}
                   />
-                  {errorFor('cfpUrl', 'CFP URL must different than URL. No URL query parameters or URL shorteners are allowed.')}
+                  {errorFor(
+                    'cfpUrl',
+                    'CFP URL must different than URL. No URL query parameters or URL shorteners are allowed.'
+                  )}
                 </div>
                 <div>
                   <label htmlFor='cfpEndDate'>CFP end date</label>
@@ -513,13 +540,21 @@ const ConferenceNewPage: React.FC = () => {
             Go back to Confs.tech
           </Link>
         </div>
-      )}
+      }
     </div>
   )
 }
 
 function getConferenceData(conference: Conference) {
-  const { name, city, country, twitter, startDate, endDate, cfpEndDate } = conference
+  const {
+    name,
+    city,
+    country,
+    twitter,
+    startDate,
+    endDate,
+    cfpEndDate,
+  } = conference
 
   return JSON.stringify({
     ...conference,
