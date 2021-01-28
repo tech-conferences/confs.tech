@@ -322,6 +322,10 @@ const ConferenceNewPage: React.FC = () => {
                     id='url'
                     onChange={handleFieldChange}
                   />
+                  <div className={styles.InputHint}>
+                    Must be valid, up and running and specific for the
+                    conference
+                  </div>
                   {errorFor(
                     'url',
                     'Must be a valid URL. No query parameters or URL shorteners are allowed.'

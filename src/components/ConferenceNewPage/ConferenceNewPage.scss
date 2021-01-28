@@ -68,3 +68,8 @@ input, textarea {
 :global(.react-datepicker__input-container) {
   display: block;
 }
+
+.InputHint {
+  font-size: 14px;
+  color: color(gray, base);
+}
