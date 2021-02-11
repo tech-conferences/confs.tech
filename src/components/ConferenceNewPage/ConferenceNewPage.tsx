@@ -23,7 +23,7 @@ const VALID_URL_REGEX = /^http(s?):\/\//
 const URL_PARAMETER_REGEX = /\?/
 const URL_SHORTENER_REGEX = /(\/bitly)|(\/bit\.ly)|(\/t\.co)/i
 const TWITTER_REGEX = /@(\w){1,15}$/
-const UNWANTED_CONFERENCES_REGEX = /webinar|marketing|practical guide|meeting|trends|digimarcon|hackathon|101|estate|expo|techspo|outsourcing|physical|biology/i
+const UNWANTED_CONFERENCES_REGEX = /webinar|marketing|practical guide|meeting|trends|digimarcon|hackathon|101|estate|expo|techspo|outsourcing|physical|biology|neuroscience|healthcare/i
 
 const LOCATION_TYPES = [
   {
