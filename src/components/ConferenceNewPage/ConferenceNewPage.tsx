@@ -23,7 +23,8 @@ const VALID_URL_REGEX = /^http(s?):\/\//
 const URL_PARAMETER_REGEX = /\?/
 const URL_SHORTENER_REGEX = /(\/bitly)|(\/bit\.ly)|(\/t\.co)/i
 const TWITTER_REGEX = /@(\w){1,15}$/
-const UNWANTED_CONFERENCES_REGEX = /webinar|marketing|practical guide|meeting|trends|digimarcon|hackathon|101|estate|expo|techspo|outsourcing|physical|biology|neuroscience|healthcare/i
+const UNWANTED_CONFERENCE_NAME_REGEX = /webinar|marketing|practical guide|meeting|trends|digimarcon|hackathon|101|estate|expo|techspo|outsourcing|physical|biology|neuroscience|healthcare|nutrition|Food Science/i
+const UNWANTED_CONFERENCE_URL_REGEX = /digimarcon/i
 
 const LOCATION_TYPES = [
   {
@@ -87,7 +88,8 @@ const ConferenceNewPage: React.FC = () => {
     return (
       VALID_URL_REGEX.test(url) &&
       !URL_PARAMETER_REGEX.test(url) &&
-      !URL_SHORTENER_REGEX.test(url)
+      !URL_SHORTENER_REGEX.test(url) &&
+      !UNWANTED_CONFERENCE_URL_REGEX.test(url)
     )
   }
 
@@ -119,7 +121,7 @@ const ConferenceNewPage: React.FC = () => {
       cfpUrl: cfpUrl.length === 0 ? cfp : !isUrlValid(cfpUrl) || url == cfpUrl,
       cfpEndDate: startDate && cfpEndDate ? cfpEndDate >= startDate : cfp,
       twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter),
-      unwantedConference: name.length > 0 && UNWANTED_CONFERENCES_REGEX.test(name)
+      unwantedConference: name.length > 0 && UNWANTED_CONFERENCE_NAME_REGEX.test(name)
     }
 
     setErrors(errors)
@@ -510,7 +512,15 @@ const ConferenceNewPage: React.FC = () => {
               )}
               {errors["unwantedConference"] && (
                 <p className={styles.errorText}>
-                  A part of the conference name has been blacklisted (Webinar, Marketing, Hackathon, Meeting, Digimarcon, Techspo etc.)
+                  A part of the conference name has been blocklisted (Webinar, Marketing, Hackathon, Meeting, Digimarcon, Techspo etc.)
+                  <br />
+                  Those submissions will not get added to our list &nbsp;
+                  <Link
+                    external
+                    url='https://github.com/tech-conferences/conference-data/pulls?q=is%3Aunmerged'
+                  >
+                    (list of closed and not merged entries)
+                  </Link>
                   <br />
                   Confs.tech is focused on conferences related to software development. We believe that this event is not developer-related and therefore, it is out of the confs.tech's scope.
                   <br />
