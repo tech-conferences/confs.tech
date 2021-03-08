@@ -24,6 +24,9 @@
 }
 
 @mixin underlined() {
+  z-index: 0;
+  position: relative;
+
   &::after {
     content: '';
     position: absolute;
@@ -33,5 +36,10 @@
     width: 100%;
     height: 8px;
     background: color(accent-2);
+
+    :global(.theme--dark) & {
+      height: 4px;
+      bottom: 4px;
+    }
   }
 }

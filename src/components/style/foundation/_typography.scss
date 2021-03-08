@@ -28,7 +28,8 @@ $font-size-data: (
     itemCount: rem(12px)
   ),
   body: (
-    base: em(16px)
+    base: em(16px),
+    smaller: rem(14px)
   ),
   footer: (
     base: rem(14px)

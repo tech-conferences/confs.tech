@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from './GithubStar.scss'
-
+import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 export default function GithubStar() {
+  const {
+    values: { darkModeEnabled },
+  } = useDarkModeContext()
   return (
     <div className={styles.GithubStar}>
       <a
@@ -11,6 +14,7 @@ export default function GithubStar() {
         data-size='large'
         data-show-count='true'
         aria-label='Star tech-conferences/confs.tech on GitHub'
+        data-color-scheme={darkModeEnabled ? 'dark' : 'light'}
       >
         Star
       </a>

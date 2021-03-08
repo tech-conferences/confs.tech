@@ -4,10 +4,13 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.scss'
 
 import App from './components/App'
+import { DarkModeContextProvider } from './contexts/DarkModeContext'
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <DarkModeContextProvider>
+      <App />
+    </DarkModeContextProvider>
   </BrowserRouter>,
   document.getElementById('root')
 )

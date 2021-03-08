@@ -21,8 +21,14 @@
 
   .Inner {
     @include underlined();
+
     &::after {
       bottom: 6px;
+
+      :global(.theme--dark) & {
+        height: 5px;
+        bottom: 6px;
+      }
     }
   }
 }
@@ -53,3 +59,4 @@
   margin-top: 0;
   margin-bottom: spacing(extra-tight);
 }
+

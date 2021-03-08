@@ -1,3 +1,5 @@
+@import '../style/foundation/typography';
+@import '../style/foundation/colors';
 @import '../style/foundation/spacing';
 
 .InputGroup {
@@ -22,5 +24,40 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+}
+
+select {
+  font-size: 16px;
+  border: 1px solid color(gray, light);
+  padding: spacing(tight);
+  border-radius: 3px;
+}
+
+input, textarea {
+  padding: spacing(tight);
+  font-size: font-size(body);
+  background-color: #ffffff;
+  border: 1px solid color(gray, light);
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+
+  :global(.theme--dark) & {
+    background-color: rgb(32, 35, 39);
+    color: white;
+    border-color: transparent;
+  }
+
+  :global(.theme--dark) &:focus {
+    background-color: black;
+  }
+
+  &[type=checkbox] {
+    width: auto;
+  }
+
+  &[type=checkbox] + label{
+    margin-left: 0.5em;
   }
 }

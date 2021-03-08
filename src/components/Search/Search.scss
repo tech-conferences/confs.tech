@@ -15,4 +15,13 @@
   .ais-SearchBox-reset {
     display: none;
   }
+
+  .theme--dark .ais-SearchBox-input {
+    background-color: rgb(32, 35, 39);
+    border-color: transparent;
+  }
+
+  .theme--dark .ais-SearchBox-input:focus {
+    background-color: black;
+  }
 }

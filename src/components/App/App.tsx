@@ -1,17 +1,25 @@
 import React from 'react'
+import classnames from 'classnames'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 import styles from './App.scss'
 import { AboutPage, NotFoundPage } from '../Pages'
-import Head from '../Head'
-import ConferencePage from '../ConferencePage'
-import ConferenceNewPage from '../ConferenceNewPage'
+import { Head, ConferencePage, ConferenceNewPage } from 'src/components'
+import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
 export default function App() {
+  const {
+    values: { darkModeEnabled },
+  } = useDarkModeContext()
+
   return (
-    <div className={styles.App}>
+    <div
+      className={classnames(styles.AppContainer, {
+        'theme--dark': darkModeEnabled,
+      })}
+    >
       <Head />
-      <div>
+      <div className={styles.App}>
         <Switch>
           <Route path='/pages/:page' component={renderPages} />
           <Route path='/conferences/new' component={ConferenceNewPage} />
