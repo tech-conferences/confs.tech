@@ -46,8 +46,7 @@ export default function Footer({showCFP, togglePast, showPast, cfpUrl}: Props) {
         </Link>
       </p>
       <p>
-        Maintained by <Twitter handle="katyaprigara" />,{' '}
-        <Twitter handle="nimz_co" />, <Twitter handle="trivikram" /> and <Twitter handle="cgrail" />
+        Active maintainers: <Twitter handle="cgrail" /> · <Twitter handle="katyaprigara" /> · <Twitter handle="nimz_co" />
       </p>
       <p>
         <img
