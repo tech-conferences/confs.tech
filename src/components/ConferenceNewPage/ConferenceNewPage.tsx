@@ -1,13 +1,17 @@
 /* global process */
 import 'react-datepicker/dist/react-datepicker-cssmodules.css'
 import React, { useState, useRef } from 'react'
-import { format } from 'date-fns'
+import {
+  getConferenceData,
+  CONFERENCE_DATE_FORMAT,
+} from './utils/getConferenceData'
 import { sortBy } from 'lodash'
 import classNames from 'classnames'
 import { Helmet } from 'react-helmet'
 import DatePicker from 'react-datepicker'
 import Recaptcha from 'react-recaptcha'
-
+import { Conference } from './types/Conference'
+import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 import * as styles from './ConferenceNewPage.scss'
 import { Card, Heading, Link, InputGroup } from 'src/components'
 
@@ -40,7 +44,6 @@ const LOCATION_TYPES = [
     name: 'In person & online',
   },
 ]
-const DATE_FORMAT = 'y-MM-dd'
 
 const defaultConference: Conference = {
   name: '',
@@ -68,6 +71,9 @@ const ConferenceNewPage: React.FC = () => {
   const [serverError, setServerError] = useState(false)
   const [errors, setErrors] = useState({})
   const [conference, setConference] = useState(defaultConference)
+  const {
+    values: { darkModeEnabled },
+  } = useDarkModeContext()
 
   const handleDateChangeBuilder = (key: string) => {
     return (date: any) => {
@@ -341,7 +347,7 @@ const ConferenceNewPage: React.FC = () => {
                 <div>
                   <label htmlFor='startDate'>Start date</label>
                   <DatePicker
-                    dateFormat={DATE_FORMAT}
+                    dateFormat={CONFERENCE_DATE_FORMAT}
                     name='startDate'
                     id='startDate'
                     required
@@ -354,7 +360,7 @@ const ConferenceNewPage: React.FC = () => {
                   <label htmlFor='endDate'>End date</label>
                   <DatePicker
                     ref={endDateDatepickerRef}
-                    dateFormat={DATE_FORMAT}
+                    dateFormat={CONFERENCE_DATE_FORMAT}
                     name='endDate'
                     id='endDate'
                     required
@@ -438,7 +444,7 @@ const ConferenceNewPage: React.FC = () => {
                 <div>
                   <label htmlFor='cfpEndDate'>CFP end date</label>
                   <DatePicker
-                    dateFormat={DATE_FORMAT}
+                    dateFormat={CONFERENCE_DATE_FORMAT}
                     name='cfpEndDate'
                     id='cfpEndDate'
                     selected={cfpEndDate}
@@ -499,6 +505,7 @@ const ConferenceNewPage: React.FC = () => {
                 render='explicit'
                 verifyCallback={handleVerifyRecaptcha}
                 onloadCallback={() => setRecaptchaLoaded(true)}
+                theme={darkModeEnabled ? 'dark' : 'light'}
               />
               {serverError && (
                 <p className={styles.errorText}>
@@ -582,46 +589,6 @@ const ConferenceNewPage: React.FC = () => {
       }
     </div>
   )
-}
-
-function getConferenceData(conference: Conference) {
-  const {
-    name,
-    city,
-    country,
-    twitter,
-    startDate,
-    endDate,
-    cfpEndDate,
-  } = conference
-
-  return JSON.stringify({
-    ...conference,
-    name: name ? name.trim() : name,
-    city: city ? city.trim() : city,
-    country: country ? country.trim() : country,
-    twitter: twitter !== '@' ? twitter : null,
-    startDate: startDate ? format(startDate, DATE_FORMAT) : null,
-    endDate: endDate ? format(endDate, DATE_FORMAT) : null,
-    cfpEndDate: cfpEndDate ? format(cfpEndDate, DATE_FORMAT) : null,
-  })
-}
-
-export interface Conference {
-  name: string
-  url: string
-  city: string
-  country: string
-  online: boolean
-  startDate: Date | null | undefined
-  endDate: Date | null | undefined
-  topic: string
-  cfpUrl: string
-  cfpEndDate: Date | null | undefined
-  twitter: string
-  comment: string
-  cocUrl: string
-  offersSignLanguageOrCC: boolean
 }
 
 export default ConferenceNewPage

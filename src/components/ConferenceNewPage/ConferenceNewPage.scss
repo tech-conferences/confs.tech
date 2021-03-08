@@ -16,18 +16,38 @@
   background-color: white;
   color: black;
 
+  :global(.theme--dark) & {
+    background-color: color(grey, dark);
+    border-color: color(grey, dark);
+    color: white;
+  }
+
   &:disabled {
     background-color: color(grey, lighter);
     color: color(grey);
     cursor: not-allowed;
+
+    :global(.theme--dark) & {
+      color: color(grey, light);
+      background-color: color(grey, dark);
+    }
   }
 
   &:not([disabled]):hover {
     background-color: color(grey, lighter);
+
+    :global(.theme--dark) & {
+      background-color: color(grey);
+    }
   }
 
   &:not([disabled]):active {
     background-color: color(grey, light);
+
+    :global(.theme--dark) & {
+      background-color: color(grey, light);
+      color:  color(grey);
+    }
   }
 }
 
