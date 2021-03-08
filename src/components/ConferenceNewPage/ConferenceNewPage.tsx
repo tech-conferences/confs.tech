@@ -121,7 +121,8 @@ const ConferenceNewPage: React.FC = () => {
       cfpUrl: cfpUrl.length === 0 ? cfp : !isUrlValid(cfpUrl) || url == cfpUrl,
       cfpEndDate: startDate && cfpEndDate ? cfpEndDate >= startDate : cfp,
       twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter),
-      unwantedConference: name.length > 0 && UNWANTED_CONFERENCE_NAME_REGEX.test(name)
+      unwantedConference:
+        name.length > 0 && UNWANTED_CONFERENCE_NAME_REGEX.test(name),
     }
 
     setErrors(errors)
@@ -319,7 +320,7 @@ const ConferenceNewPage: React.FC = () => {
                   <input
                     className={classNames(hasError('url') && styles.error)}
                     type='url'
-                    placeholder='https://confs.tech'
+                    placeholder='Eg.: https://confs.tech'
                     required
                     value={url}
                     name='url'
@@ -346,6 +347,7 @@ const ConferenceNewPage: React.FC = () => {
                     required
                     selected={startDate}
                     onChange={handleStartDateSelect}
+                    placeholderText='Eg.: 2021-03-10'
                   />
                 </div>
                 <div>
@@ -358,6 +360,7 @@ const ConferenceNewPage: React.FC = () => {
                     required
                     selected={endDate}
                     onChange={handleDateChange.endDate}
+                    placeholderText='Eg.: 2021-03-12'
                   />
                   {errorFor('endDate', 'End date is before start date.')}
                 </div>
@@ -510,9 +513,10 @@ const ConferenceNewPage: React.FC = () => {
                   </Link>
                 </p>
               )}
-              {errors["unwantedConference"] && (
+              {errors['unwantedConference'] && (
                 <p className={styles.errorText}>
-                  A part of the conference name has been blocklisted (Webinar, Marketing, Hackathon, Meeting, Digimarcon, Techspo etc.)
+                  A part of the conference name has been blocklisted (Webinar,
+                  Marketing, Hackathon, Meeting, Digimarcon, Techspo etc.)
                   <br />
                   Those submissions will not get added to our list &nbsp;
                   <Link
@@ -522,9 +526,13 @@ const ConferenceNewPage: React.FC = () => {
                     (list of closed and not merged entries)
                   </Link>
                   <br />
-                  Confs.tech is focused on conferences related to software development. We believe that this event is not developer-related and therefore, it is out of the confs.tech's scope.
+                  Confs.tech is focused on conferences related to software
+                  development. We believe that this event is not
+                  developer-related and therefore, it is out of the confs.tech's
+                  scope.
                   <br />
-                  If you think this was an error, and you want to add a software developer related conference please &nbsp;
+                  If you think this was an error, and you want to add a software
+                  developer related conference please &nbsp;
                   <Link
                     external
                     url='https://github.com/tech-conferences/conference-data/issues/new'
@@ -552,21 +560,21 @@ const ConferenceNewPage: React.FC = () => {
           >
             Pull requests
           </Link>
-          {' – '}
+          {' · '}
           <Link
             external
             url='https://github.com/tech-conferences/conference-data/issues'
           >
             Create an issue
           </Link>
-          {' – '}
+          {' · '}
           <Link
             external
             url='https://github.com/tech-conferences/conference-data/'
           >
             GitHub repository
           </Link>
-          {' – '}
+          {' · '}
           <Link external url='https://confs.tech/'>
             Go back to Confs.tech
           </Link>
