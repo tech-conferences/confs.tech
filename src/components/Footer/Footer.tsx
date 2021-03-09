@@ -5,6 +5,8 @@ import styles from './Footer.scss';
 import Link from '../Link';
 import Twitter from '../Twitter';
 
+import { useDarkModeContext } from 'src/contexts/DarkModeContext'
+
 interface Props {
   showCFP: boolean;
   showPast: boolean;
@@ -13,7 +15,12 @@ interface Props {
 }
 
 const CURRENT_YEAR = new Date().getFullYear();
+
 export default function Footer({showCFP, togglePast, showPast, cfpUrl}: Props) {
+  const {
+    values: { darkModeEnabled },
+  } = useDarkModeContext()
+
   return (
     <footer className={styles.Footer}>
       <HiddenLinks />
@@ -51,7 +58,7 @@ export default function Footer({showCFP, togglePast, showPast, cfpUrl}: Props) {
       <p>
         <img
           alt="Sponsor: Search by Algolia"
-          src="/search-by-algolia.svg"
+          src={darkModeEnabled ? '/search-by-algolia-dark.svg' : '/search-by-algolia.svg'}
           height="20"
         />
       </p>
