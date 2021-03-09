@@ -7,9 +7,9 @@ export default function SponsorPage() {
   return (
     <Structure title='About Confs.tech'>
       <p>
-        At Confs.tech, we maintain a list of conferences on software development
-        going on around the world. We want to make it easier for everyone to
-        find relevant conferences.
+        Confs.tech is a list of conferences on software development going on
+        around the world. We want to make it easier for everyone to find
+        relevant conferences.
       </p>
       <p>
         All the data about the conferences is available on{' '}
@@ -36,8 +36,12 @@ export default function SponsorPage() {
         <Link url='mailto:contact@confs.tech'>email us.</Link>
       </p>
       <p>
-        With ❤️ – <Twitter handle='katyaprigara' />,{' '}
-        <Twitter handle='nimz_co' /> and <Twitter handle='trivikram' />
+        With{' '}
+        <span role='img' aria-label='heart'>
+          ❤️
+        </span>{' '}
+        – <Twitter handle='cgrail' /> · <Twitter handle='katyaprigara' /> ·{' '}
+        <Twitter handle='nimz_co' />
       </p>
     </Structure>
   )
