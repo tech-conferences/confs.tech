@@ -1,5 +1,5 @@
-@import '../style/foundation/spacing';
-@import '../style/foundation/media-queries';
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/media-queries';
 
 .GithubStar {
   margin: 0 0 spacing(base) 0;

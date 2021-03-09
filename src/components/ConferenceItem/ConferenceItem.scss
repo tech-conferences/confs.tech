@@ -1,5 +1,5 @@
-@import '../style/foundation/spacing';
-@import '../style/foundation/colors';
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/colors';
 
 .ConferenceItem {
   margin-bottom: spacing(base);
