@@ -38,7 +38,6 @@
     "dotenv": "6.0.0",
     "eslint-config-react-app": "^2.0.0",
     "eslint-plugin-flowtype": "2.50.0",
-    "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.11.1",
     "extract-text-webpack-plugin": "3.0.2",
@@ -89,14 +88,14 @@
     "@types/react-router-dom": "^4.3.0",
     "@types/universal-cookie": "^2.2.0",
     "@types/webpack": "4.4.11",
-    "@typescript-eslint/eslint-plugin": "^4.13.0",
-    "@typescript-eslint/parser": "^4.13.0",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "eslint": "^7.17.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint": "^7.21.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "fork-ts-checker-webpack-plugin": "^1.4.3",
@@ -114,14 +113,14 @@
   "homepage": "https://confs.tech",
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/*.{ts,tsx}"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
     ],
     "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.js?(x)",
-      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+      "<rootDir>/src/**/tests/*.ts?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).ts?(x)"
     ],
     "testEnvironment": "node",
     "testURL": "http://localhost",
@@ -131,7 +130,7 @@
       "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
     "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+      "[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$"
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
