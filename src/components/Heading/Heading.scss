@@ -14,7 +14,7 @@
 }
 
 .Heading-1 {
-  font-size: 2.5em;
+  font-size: font-size(heading, h1);
   font-weight: normal;
   margin: spacing(extra-loose) 0 0 0;
   position: relative;
@@ -42,11 +42,11 @@
 }
 
 .Heading-2 {
-  font-size: 2em;
+  font-size: font-size(heading, h2);
 }
 
 .Heading-3 {
-  font-size: 1.5em;
+  font-size: font-size(heading, h3);
   margin-top: spacing(extra-loose);
   margin-bottom: spacing(loose);
 

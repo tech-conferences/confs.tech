@@ -1,3 +1,7 @@
+:global(*) {
+  box-sizing: border-box;
+}
+
 :global(:root) {
   overflow-y: scroll;
 }
