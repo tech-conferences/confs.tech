@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { GithubStar, Heading } from 'src/components'
+import { ThemeSwitch, GithubStar, Heading } from 'src/components'
 
 import styles from './Header.scss'
 
@@ -22,7 +21,10 @@ const Header: React.FC<Props> = ({ searchEngineTitle, title, subtitle }) => {
           </Heading>
         )}
       </div>
-      <GithubStar />
+      <div className={styles.RightBar}>
+        <GithubStar />
+        <ThemeSwitch />
+      </div>
     </header>
   )
 }
