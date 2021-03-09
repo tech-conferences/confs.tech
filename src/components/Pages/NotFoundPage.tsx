@@ -3,8 +3,8 @@ import Structure from './Structure'
 
 export default function NotFoundPage() {
   return (
-    <Structure title='¯\_(ツ)_/¯'>
-      <p>Nothing to see here. 🚶🏾‍♀️</p>
+    <Structure title='Not found'>
+      <p>This page does not exist.</p>
     </Structure>
   )
 }
