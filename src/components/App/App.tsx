@@ -1,11 +1,12 @@
-import React from 'react'
 import classnames from 'classnames'
+import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
+import { AboutPage, NotFoundPage } from 'src/StaticPages'
+import { Head } from 'src/components'
+import { useDarkModeContext } from 'src/contexts/DarkModeContext'
+import { ConferencePage, ConferenceForm } from 'src/scenes'
 
 import styles from './App.scss'
-import { AboutPage, NotFoundPage } from '../Pages'
-import { Head, ConferencePage, ConferenceNewPage } from 'src/components'
-import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
 export default function App() {
   const {
@@ -22,7 +23,7 @@ export default function App() {
       <div className={styles.App}>
         <Switch>
           <Route path='/pages/:page' component={renderPages} />
-          <Route path='/conferences/new' component={ConferenceNewPage} />
+          <Route path='/conferences/new' component={ConferenceForm} />
           <Route path='/cfp/:topic/:country' render={renderCFP} />
           <Route path='/cfp/:topic/' render={renderCFP} />
           <Route path='/cfp' render={renderCFP} />
