@@ -1,10 +1,11 @@
-import React, { PureComponent } from 'react'
 import classNames from 'classnames'
+import React, { PureComponent } from 'react'
 
-import { formatDate, generateEventJSONLD } from './utils'
 import Heading from '../Heading'
 import Link from '../Link'
+
 import styles from './ConferenceItem.scss'
+import { formatDate, generateEventJSONLD } from './utils'
 
 interface Props {
   showCFP: boolean
