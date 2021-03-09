@@ -1,11 +1,13 @@
 import React from 'react'
-import Structure from './Structure'
-import Link from '../Link'
-import Twitter from '../Twitter'
+import { Twitter, Link, Page } from 'src/components'
 
 export default function SponsorPage() {
   return (
-    <Structure title='About Confs.tech'>
+    <Page
+      narrow
+      title='About Confs.tech'
+      htmlTitle='About Confs.tech open source project and team'
+    >
       <p>
         Confs.tech is a list of conferences on software development going on
         around the world. We want to make it easier for everyone to find
@@ -43,6 +45,6 @@ export default function SponsorPage() {
         – <Twitter handle='cgrail' /> · <Twitter handle='katyaprigara' /> ·{' '}
         <Twitter handle='nimz_co' />
       </p>
-    </Structure>
+    </Page>
   )
 }
