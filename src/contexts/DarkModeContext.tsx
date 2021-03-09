@@ -1,5 +1,4 @@
-import * as React from 'react'
-
+import React, { useCallback } from 'react'
 import useLocalStorage from 'src/hooks/useLocalStorage'
 
 export interface DarkModeContextProps {
@@ -7,7 +6,7 @@ export interface DarkModeContextProps {
     darkModeEnabled?: boolean
   }
   actions: {
-    setDarkModeEnabled?(val: boolean): void
+    toggleDarkMode?(): void
   }
 }
 
@@ -29,15 +28,18 @@ export const DarkModeContextProvider: React.FC = ({ children }) => {
     'darkModeEnabled',
     systemDarkMode
   )
+  const toggleDarkMode = useCallback(() => {
+    setDarkModeEnabled(!darkModeEnabled)
+  }, [setDarkModeEnabled, darkModeEnabled])
 
   const value = React.useMemo(
     () => ({
-      actions: { setDarkModeEnabled },
+      actions: { toggleDarkMode },
       values: {
         darkModeEnabled,
       },
     }),
-    [darkModeEnabled, setDarkModeEnabled]
+    [darkModeEnabled, toggleDarkMode]
   )
 
   return (
