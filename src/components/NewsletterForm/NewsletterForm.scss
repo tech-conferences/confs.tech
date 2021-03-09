@@ -1,16 +1,20 @@
-@import '../style/foundation/spacing';
-@import '../style/foundation/colors';
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/colors';
 
 .hidden {
   display: none;
 }
 
-.StayTuned {
+.NewsletterForm {
   margin: spacing() 0;
   padding: spacing();
   background: color(accent-2, pale);
   border-radius: 3px;
   position: relative;
+
+  :global(.theme--dark) & {
+    color: black;
+  }
 }
 
 .Content {
@@ -25,6 +29,7 @@
 }
 
 .FormFirstLine {
+  width: 100%;
   flex-wrap: nowrap;
   display: flex;
   margin-right: spacing()
@@ -38,15 +43,11 @@
   label {
     line-height: 1.2;
   }
-
-  input {
-    margin-right: spacing(tight);
-  }
 }
 
 .EmailInput {
-  max-width: 20em;
-  border-right: none;
+  max-width: 25em;
+  border: none;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin: 0;
@@ -58,7 +59,7 @@
   background-color: color(gray, lighter);
   display: inline-block;
   padding: spacing(tight) spacing();
-  border-left: none;
+  border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   cursor: pointer;
@@ -73,6 +74,9 @@
 
   &:hover:not([disabled]) {
     background-color: color(gray, light);
+    :global(.theme--dark) & {
+      background-color: color(gray, dark);
+    }
   }
 }
 
