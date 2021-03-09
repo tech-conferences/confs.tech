@@ -1,7 +1,5 @@
 import qs from 'qs'
 import React, { Component } from 'react'
-import Favicon from 'react-favicon'
-import { Helmet } from 'react-helmet'
 import {
   Configure,
   InstantSearch,
@@ -13,19 +11,17 @@ import { withRouter } from 'react-router'
 import {
   Search,
   NewsletterForm,
-  Header,
+  Page,
   Link,
-  Footer,
-  ConferenceList,
   ScrollToConference,
 } from 'src/components'
+import { TOPICS } from 'src/components/config'
 
 import './RefinementList.scss'
 import './CurrentRefinement.scss'
 
-import { TOPICS } from '../config'
-
 import styles from './ConferencePage.scss'
+import { ConferenceList } from './components'
 import { CFPHeader } from './components'
 import {
   transformTopicRefinements,
@@ -165,24 +161,18 @@ class ConferencePage extends Component<ComposedProps, State> {
       []
 
     return (
-      <div>
-        <Helmet>
-          <title>
-            {topic ? TOPICS[topic] : 'Tech'} conferences in{' '}
-            {`${CURRENT_YEAR} and ${CURRENT_YEAR + 1}`} | Confs.tech
-          </title>
-        </Helmet>
-        <Favicon url={`/${topic}.png`} />
-        <Header
-          searchEngineTitle={`List of all ${
-            topic ? TOPICS[topic] : 'tech'
-          } conferences in ${CURRENT_YEAR} and ${CURRENT_YEAR + 1}${
-            country ? ` in ${country}` : ''
-          }`}
-          title='Find your next tech conference'
-          subtitle='Open-source and crowd-sourced list of conferences around software development'
-        />
-
+      <Page
+        htmlTitle={`${
+          topic ? TOPICS[topic] : 'Tech'
+        } conferences in ${CURRENT_YEAR} and ${CURRENT_YEAR + 1} | Confs.tech`}
+        searchEngineTitle={`List of all ${
+          topic ? TOPICS[topic] : 'tech'
+        } conferences in ${CURRENT_YEAR} and ${CURRENT_YEAR + 1}${
+          country ? ` in ${country}` : ''
+        }`}
+        title='Find your next tech conference'
+        subtitle='Open-source and crowd-sourced list of conferences around software development'
+      >
         <InstantSearch
           appId={process.env.ALGOLIA_APPLICATION_ID}
           apiKey={process.env.ALGOLIA_API_KEY}
@@ -247,13 +237,12 @@ class ConferencePage extends Component<ComposedProps, State> {
           />
         </InstantSearch>
 
-        <Footer
-          showCFP={showCFP}
-          cfpUrl={getCfpUrl(showCFP)}
-          togglePast={this.togglePast}
-          showPast={showPast}
-        />
-      </div>
+        <p className={styles.FooterLinks}>
+          <Link selected={showPast} onClick={this.togglePast}>
+            {showPast ? 'Hide past conferences' : 'See past conferences'}
+          </Link>
+        </p>
+      </Page>
     )
   }
 }

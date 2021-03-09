@@ -1,8 +1,6 @@
 import classNames from 'classnames'
 import React, { PureComponent } from 'react'
-
-import Heading from '../Heading'
-import Link from '../Link'
+import { Heading, Link } from 'src/components'
 
 import styles from './ConferenceItem.scss'
 import { formatDate, generateEventJSONLD } from './utils'

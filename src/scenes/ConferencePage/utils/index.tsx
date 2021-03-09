@@ -1,6 +1,5 @@
 import { orderBy } from 'lodash'
-
-import { TOPICS } from '../../config'
+import { TOPICS } from 'src/components/config'
 
 export function transformTopicRefinements(items: any[]) {
   items.map((item) => {

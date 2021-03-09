@@ -1,13 +1,12 @@
+import { isPast, parseISO, format } from 'date-fns'
+import { filter, groupBy, sortBy as _sortBy } from 'lodash'
 import * as React from 'react'
 import { Component } from 'react'
-import { filter, groupBy, sortBy as _sortBy } from 'lodash'
-import { isPast, parseISO, format } from 'date-fns'
 import { connectInfiniteHits } from 'react-instantsearch/connectors'
+import { Divider, Heading, Link } from 'src/components'
 
-import Heading from '../Heading'
-import Divider from '../Divider'
-import Link from '../Link'
-import ConferenceItem from '../ConferenceItem'
+import { ConferenceItem } from '..'
+
 import styles from './ConferenceList.scss'
 
 interface State {
@@ -83,7 +82,7 @@ class ConferenceList extends Component<Props, State> {
     })
 
     return (
-      <div>
+      <div className={styles.Wrapper}>
         {confsTable.length > 0 ? confsTable : this.noResults()}
         {hasMore && (
           <Link button onClick={onLoadMore}>
