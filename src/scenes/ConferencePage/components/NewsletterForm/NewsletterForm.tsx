@@ -1,7 +1,6 @@
 import classNames from 'classnames'
 import React, { PureComponent, ComponentType } from 'react'
-
-import Heading from '../Heading'
+import { Heading } from 'src/components'
 
 import styles from './NewsletterForm.scss'
 

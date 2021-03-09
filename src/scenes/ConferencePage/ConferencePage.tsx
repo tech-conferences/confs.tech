@@ -8,20 +8,14 @@ import {
   CurrentRefinements,
 } from 'react-instantsearch/dom'
 import { withRouter } from 'react-router'
-import {
-  Search,
-  NewsletterForm,
-  Page,
-  Link,
-  ScrollToConference,
-} from 'src/components'
+import { Search, Page, Link, ScrollToConference } from 'src/components'
 import { TOPICS } from 'src/components/config'
 
 import './RefinementList.scss'
 import './CurrentRefinement.scss'
 
 import styles from './ConferencePage.scss'
-import { ConferenceList } from './components'
+import { ConferenceList, NewsletterForm } from './components'
 import { CFPHeader } from './components'
 import {
   transformTopicRefinements,
