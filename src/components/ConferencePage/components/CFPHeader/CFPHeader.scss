@@ -1,0 +1,13 @@
+@import 'src/components/style/foundation/mixins';
+
+.CFPHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.active {
+  font-weight: 600;
+  @include link--hover();
+}

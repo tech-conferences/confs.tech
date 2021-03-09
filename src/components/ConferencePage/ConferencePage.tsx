@@ -1,10 +1,7 @@
-/* global process */
+import qs from 'qs'
 import React, { Component } from 'react'
 import Favicon from 'react-favicon'
 import { Helmet } from 'react-helmet'
-import { orderBy } from 'lodash'
-import qs from 'qs'
-
 import {
   Configure,
   InstantSearch,
@@ -12,21 +9,31 @@ import {
   RefinementList,
   CurrentRefinements,
 } from 'react-instantsearch/dom'
-
 import { withRouter } from 'react-router'
-import styles from './ConferencePage.scss'
+import {
+  Search,
+  NewsletterForm,
+  Header,
+  Link,
+  Footer,
+  ConferenceList,
+  ScrollToConference,
+} from 'src/components'
+
 import './RefinementList.scss'
 import './CurrentRefinement.scss'
 
-import ScrollToConference from '../ScrollToConference'
-import StayTuned from '../StayTuned'
-import Footer from '../Footer'
-import Link from '../Link'
-import GithubStar from '../GithubStar'
-import Heading from '../Heading'
-import ConferenceList from '../ConferenceList'
 import { TOPICS } from '../config'
-import Search from '../Search'
+
+import styles from './ConferencePage.scss'
+import { CFPHeader } from './components'
+import {
+  transformTopicRefinements,
+  transformCountryRefinements,
+  transformCurrentRefinements,
+  getFirstTopic,
+  getCfpUrl,
+} from './utils'
 
 const QUERY_SEPARATOR = '+'
 const CURRENT_YEAR = new Date().getFullYear()
@@ -82,7 +89,7 @@ class ConferencePage extends Component<ComposedProps, State> {
         } = this.state
         const { history, showCFP } = this.props
         const startURL = showCFP ? '/cfp' : ''
-        const online = searchState.toggle ? searchState.toggle.online : false;
+        const online = searchState.toggle ? searchState.toggle.online : false
 
         const queryParams = {
           topics:
@@ -141,6 +148,7 @@ class ConferencePage extends Component<ComposedProps, State> {
     const {
       showCFP,
       match: {
+        // These are sets in the url, when reaching through /ux/France for instance
         params: { topic, country },
       },
     } = this.props
@@ -165,21 +173,15 @@ class ConferencePage extends Component<ComposedProps, State> {
           </title>
         </Helmet>
         <Favicon url={`/${topic}.png`} />
-        <header className={styles.Header}>
-          <div>
-            <h1 className='visuallyHidden'>
-              List of all {topic ? TOPICS[topic] : 'tech'} conferences in{' '}
-              {CURRENT_YEAR} and {CURRENT_YEAR + 1}
-              {country ? ` in ${country}` : null}
-            </h1>
-            <Heading element='p'>Find your next tech conference</Heading>
-            <Heading element='h2' level='sub'>
-              Open-source and crowd-sourced list of conferences around software
-              development
-            </Heading>
-          </div>
-          <GithubStar />
-        </header>
+        <Header
+          searchEngineTitle={`List of all ${
+            topic ? TOPICS[topic] : 'tech'
+          } conferences in ${CURRENT_YEAR} and ${CURRENT_YEAR + 1}${
+            country ? ` in ${country}` : ''
+          }`}
+          title='Find your next tech conference'
+          subtitle='Open-source and crowd-sourced list of conferences around software development'
+        />
 
         <InstantSearch
           appId={process.env.ALGOLIA_APPLICATION_ID}
@@ -188,6 +190,28 @@ class ConferencePage extends Component<ComposedProps, State> {
           indexName='prod_conferences'
         >
           <Configure hitsPerPage={hitsPerPage} filters={this.algoliaFilter()} />
+          <p className={styles.HeaderLinks}>
+            <Link url={getCfpUrl(showCFP)}>
+              {showCFP ? 'Hide Call for Papers' : 'Show Call for Papers'}
+            </Link>
+
+            <Link onClick={this.toggleNewsletter}>Newsletter</Link>
+
+            <Link url='https://twitter.com/ConfsTech/' external>
+              Twitter
+            </Link>
+          </p>
+
+          {showNewsletterBanner && (
+            <NewsletterForm topic={getFirstTopic(topics)} />
+          )}
+
+          {showCFP && (
+            <CFPHeader
+              sortByCfpEndDate={this.sortByCfpEndDate}
+              sortBy={sortBy}
+            />
+          )}
 
           <Search />
 
@@ -214,27 +238,6 @@ class ConferencePage extends Component<ComposedProps, State> {
 
           <CurrentRefinements transformItems={transformCurrentRefinements} />
 
-          <p className={styles.topLinks}>
-            <Link url={getCfpUrl(showCFP)}>
-              {showCFP ? 'Hide Call for Papers' : 'Call for Papers'}
-            </Link>
-
-            <Link onClick={this.toggleNewsletter}>Newsletter</Link>
-
-            <Link url='https://twitter.com/ConfsTech/' external>
-              Twitter
-            </Link>
-          </p>
-
-          {showNewsletterBanner && <StayTuned topic={getFirstTopic(topics)} />}
-
-          {showCFP && (
-            <CfpHeader
-              sortByCfpEndDate={this.sortByCfpEndDate}
-              sortBy={sortBy}
-            />
-          )}
-
           <ScrollToConference hash={location.hash} />
 
           <ConferenceList
@@ -252,80 +255,6 @@ class ConferencePage extends Component<ComposedProps, State> {
         />
       </div>
     )
-  }
-}
-
-function CfpHeader({ sortByCfpEndDate, sortBy }: any) {
-  return (
-    <div className={styles.CfpHeader}>
-      <Heading element='h2' level={2}>
-        Call for Papers
-      </Heading>
-      <div>
-        Sorted by:{' '}
-        <Link
-          className={sortBy === 'startDate' ? styles.active : ''}
-          button
-          onClick={sortByCfpEndDate}
-        >
-          Conference start date
-        </Link>
-        {' / '}
-        <Link
-          className={sortBy === 'startDate' ? '' : styles.active}
-          button
-          onClick={sortByCfpEndDate}
-        >
-          CFP end date
-        </Link>
-      </div>
-    </div>
-  )
-}
-
-function transformTopicRefinements(items: any[]) {
-  items.map((item) => {
-    item.label = TOPICS[item.label] || item.label
-    return item
-  })
-  return orderBy(items, ['count', 'name'], ['desc', 'desc'])
-}
-
-function transformCountryRefinements(items: any[]) {
-  return orderBy(items, ['count', 'name'], ['desc', 'desc'])
-}
-
-function transformCurrentRefinements(items: any[]) {
-  if (!items.length) {
-    return []
-  }
-
-  const topics = items.find((item) => item.attribute === 'topics')
-  // Change topic label
-  if (topics) {
-    topics.items.map((item: any) => {
-      item.label = TOPICS[item.label] || item.label
-      return item
-    })
-  }
-
-  // Don't render 'online' refinement
-  return (items || []).filter((item) => item.attribute !== 'online')
-}
-
-function getFirstTopic(topics: string[]) {
-  if (topics.length > 1 && topics[0] === 'general') {
-    return topics[1]
-  }
-
-  return topics[0]
-}
-
-function getCfpUrl(showCFP: boolean) {
-  if (showCFP) {
-    return `${location.pathname}`.replace('/cfp', '')
-  } else {
-    return `/cfp${location.pathname}`
   }
 }
 

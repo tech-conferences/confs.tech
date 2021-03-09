@@ -7,20 +7,16 @@
   text-align: center;
 }
 
-.Header,
-.CfpHeader {
+.Header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.active {
-  font-weight: 600;
-  @include link--hover();
-}
+.HeaderLinks {
+  margin: 0 0 spacing(loose) 0;
 
-.topLinks {
   a {
     margin-right: spacing(loose);
   }
