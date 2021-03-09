@@ -1,6 +1,7 @@
 import React from 'react'
-import styles from './GithubStar.scss'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
+
+import styles from './GithubStar.scss'
 export default function GithubStar() {
   const {
     values: { darkModeEnabled },

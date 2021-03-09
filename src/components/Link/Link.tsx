@@ -1,5 +1,5 @@
-import React from 'react'
 import classNames from 'classnames'
+import React from 'react'
 import { Link as RoutedLink } from 'react-router-dom'
 
 import styles from './Link.scss'

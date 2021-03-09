@@ -1,8 +1,10 @@
 // Reorder a file by running (from the scripts folder)
 
 import fs from 'fs'
-import { range, sortBy } from 'lodash'
+
 import { parse } from 'date-fns'
+import { range, sortBy } from 'lodash'
+
 import { TOPICS } from '../src/components/config/index'
 
 const args = process.argv

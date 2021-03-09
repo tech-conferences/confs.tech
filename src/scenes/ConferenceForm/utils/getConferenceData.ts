@@ -1,4 +1,5 @@
 import { format } from 'date-fns'
+
 import { Conference } from '../types/Conference'
 
 export const CONFERENCE_DATE_FORMAT = 'y-MM-dd'
