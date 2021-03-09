@@ -1,4 +1,3 @@
-/* global process */
 import { Component } from 'react'
 import { connectInfiniteHits } from 'react-instantsearch/connectors'
 
