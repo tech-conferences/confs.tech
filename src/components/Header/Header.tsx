@@ -18,7 +18,7 @@ const Header: React.FC<Props> = ({
 }) => {
   return (
     <header className={styles.Header}>
-      <div>
+      <div className={styles.Title}>
         <h1 className='visuallyHidden'>{searchEngineTitle || title}</h1>
         <Heading element='p'>{title}</Heading>
 

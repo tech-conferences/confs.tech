@@ -2,6 +2,7 @@
 @import 'src/components/style/foundation/typography';
 @import 'src/components/style/foundation/colors';
 @import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/media-queries';
 
 .Loader {
   text-align: center;
@@ -18,6 +19,11 @@
   margin: 0 0 spacing(loose) 0;
 
   a {
-    margin-right: spacing(loose);
+    display: block;
+    margin: 0 spacing(loose) spacing(tight) 0;
+
+    @include media($media-query--tablet-up) {
+      display: inline;
+    }
   }
 }

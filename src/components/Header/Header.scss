@@ -1,10 +1,38 @@
+@import 'src/components/style/foundation/media-queries';
+@import 'src/components/style/foundation/spacing';
+
 .Header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include media($media-query--tablet-up) {
+    flex-wrap: nowrap;
+  }
+}
+
+.Title {
+  margin-bottom: spacing(base);
+
+  @include media($media-query--tablet-up) {
+    margin-bottom: 0;
+  }
 }
 
 .Right {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row-reverse;
+  margin: 0 0 spacing(base) 0;
+
+  @include media($media-query--tablet-up) {
+    margin: 0;
+    width: auto;
+    text-align: right;
+    display: block;
+  }
 }

@@ -1,3 +1,4 @@
+@import 'src/components/style/foundation/media-queries';
 @import 'src/components/style/foundation/mixins';
 @import 'src/components/style/foundation/spacing';
 @import 'src/components/style/foundation/typography';
@@ -14,10 +15,14 @@
 }
 
 .Heading-1 {
-  font-size: font-size(heading, h1);
   font-weight: normal;
   margin: spacing(extra-loose) 0 0 0;
   position: relative;
+  font-size: font-size(heading, h1-mobile);
+
+  @include media($media-query--mobile-up) {
+    font-size: font-size(heading, h1);
+  }
 
   .Inner {
     @include underlined();
@@ -36,9 +41,13 @@
 .Heading-sub {
   font-size: 1em;
   font-family: font-family(base);
-  margin: 0 0 spacing(extra-loose) 0;
   font-weight: normal;
   color: color(gray);
+  margin: 0 0 spacing(tight) 0;
+
+  @include media($media-query--tablet-up) {
+    margin: 0 0 spacing(extra-loose) 0;
+  }
 }
 
 .Heading-2 {
