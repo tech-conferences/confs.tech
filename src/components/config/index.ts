@@ -8,7 +8,7 @@ export const TOPICS = {
   cpp: 'C++',
   css: 'CSS',
   data: 'Data / AI',
-  devops: 'Dev Ops',
+  devops: 'DevOps',
   dotnet: '.NET',
   elixir: 'Elixir',
   general: 'General',

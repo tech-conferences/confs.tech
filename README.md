@@ -64,7 +64,7 @@ Some of the conferences have been pulled from other projects:
 - [See all IoT conferences](https://confs.tech/iot)
 - [See all Content strategy conferences](https://confs.tech/tech-comm)
 - [See all Data conferences](https://confs.tech/data)
-- [See all Dev Ops conferences](https://confs.tech/devops)
+- [See all DevOps conferences](https://confs.tech/devops)
 - [See all Android conferences](https://confs.tech/android)
 - [See all Python conferences](https://confs.tech/python)
 - [See all Golang conferences](https://confs.tech/golang)
