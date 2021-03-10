@@ -2,7 +2,7 @@ import { isPast, parseISO, format } from 'date-fns'
 import { filter, groupBy, sortBy as _sortBy } from 'lodash'
 import * as React from 'react'
 import { Component } from 'react'
-import { connectInfiniteHits } from 'react-instantsearch/connectors'
+import { connectInfiniteHits } from 'react-instantsearch-dom'
 import { Divider, Heading, Link } from 'src/components'
 
 import { ConferenceItem } from '..'

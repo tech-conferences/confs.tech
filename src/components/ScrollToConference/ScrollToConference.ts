@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { connectInfiniteHits } from 'react-instantsearch/connectors'
+import { connectInfiniteHits } from 'react-instantsearch-dom'
 
 interface Props {
   hash: string

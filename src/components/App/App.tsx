@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { AboutPage, NotFoundPage } from 'src/StaticPages'
-import { ConferencePage, ConferenceForm } from 'src/scenes'
+import { ConferenceList, ConferenceForm } from 'src/scenes'
 
 import styles from './App.scss'
 
@@ -17,16 +17,16 @@ export default function App() {
           <Route path='/cfp' render={renderCFP} />
           <Route path='/:year/:topic/:country' render={redirect} />
           <Route path='/:topic/:country' render={redirectOrRender} />
-          <Route path='/:topic' component={ConferencePage} />
-          <Route exact path='/' component={ConferencePage} />
-          <Route component={ConferencePage} />
+          <Route path='/:topic' component={ConferenceList} />
+          <Route exact path='/' component={ConferenceList} />
+          <Route component={ConferenceList} />
         </Switch>
       </div>
     </div>
   )
 }
 function renderCFP({ match }: any) {
-  return <ConferencePage match={match} showCFP />
+  return <ConferenceList match={match} showCFP />
 }
 
 function renderPages({ match }: any) {
@@ -54,7 +54,7 @@ function redirectOrRender(props: any) {
   if (isYear(topic)) {
     return <Redirect to={`/${country}`} />
   } else {
-    return <ConferencePage {...props} fallback={redirectToTopic} />
+    return <ConferenceList {...props} fallback={redirectToTopic} />
   }
 }
 

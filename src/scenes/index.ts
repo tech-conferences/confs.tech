@@ -1,2 +1,2 @@
 export { default as ConferenceForm } from './ConferenceForm'
-export { default as ConferencePage } from './ConferencePage'
+export { default as ConferenceList } from './ConferenceList'

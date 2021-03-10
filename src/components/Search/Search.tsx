@@ -1,5 +1,5 @@
 import React from 'react'
-import { SearchBox } from 'react-instantsearch/dom'
+import { SearchBox } from 'react-instantsearch-dom'
 
 import styles from './Search.scss'
 

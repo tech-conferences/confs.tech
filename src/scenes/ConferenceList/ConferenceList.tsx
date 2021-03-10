@@ -1,3 +1,4 @@
+import algoliasearch from 'algoliasearch/lite'
 import qs from 'qs'
 import React, { Component } from 'react'
 import {
@@ -6,7 +7,7 @@ import {
   ToggleRefinement,
   RefinementList,
   CurrentRefinements,
-} from 'react-instantsearch/dom'
+} from 'react-instantsearch-dom'
 import { withRouter } from 'react-router'
 import { Search, Page, Link, ScrollToConference } from 'src/components'
 import { TOPICS } from 'src/components/config'
@@ -14,7 +15,7 @@ import { TOPICS } from 'src/components/config'
 import './RefinementList.scss'
 import './CurrentRefinement.scss'
 
-import styles from './ConferencePage.scss'
+import styles from './ConferenceList.scss'
 import { ConferenceList, NewsletterForm } from './components'
 import { CFPHeader } from './components'
 import {
@@ -44,7 +45,12 @@ interface State {
 
 type ComposedProps = Props & any
 
-class ConferencePage extends Component<ComposedProps, State> {
+const searchClient = algoliasearch(
+  process.env.ALGOLIA_APPLICATION_ID as string,
+  process.env.ALGOLIA_API_KEY as string
+)
+
+class ConferenceListPage extends Component<ComposedProps, State> {
   state: State = {
     hitsPerPage: 600,
     sortBy: 'startDate',
@@ -168,8 +174,7 @@ class ConferencePage extends Component<ComposedProps, State> {
         subtitle='Open-source and crowd-sourced list of conferences around software development'
       >
         <InstantSearch
-          appId={process.env.ALGOLIA_APPLICATION_ID}
-          apiKey={process.env.ALGOLIA_API_KEY}
+          searchClient={searchClient}
           onSearchStateChange={this.onSearchStateChange}
           indexName='prod_conferences'
         >
@@ -241,4 +246,4 @@ class ConferencePage extends Component<ComposedProps, State> {
   }
 }
 
-export default withRouter(ConferencePage)
+export default withRouter(ConferenceListPage)
