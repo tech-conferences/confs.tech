@@ -38,7 +38,6 @@
     "dotenv": "6.0.0",
     "eslint-config-react-app": "^2.0.0",
     "eslint-plugin-flowtype": "2.50.0",
-    "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.11.1",
     "extract-text-webpack-plugin": "3.0.2",
@@ -46,20 +45,20 @@
     "fs-extra": "7.0.0",
     "gh-pages": "^2.0.0",
     "html-webpack-plugin": "3.2.0",
-    "jest": "^23.5.0",
+    "jest": "^26.6.3",
     "lodash": "^4.17.4",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
     "promise": "8.0.2",
     "qs": "^6.5.2",
-    "react": "^16.2.0",
-    "react-datepicker": "^3.4.1",
+    "react": "^17.0.1",
+    "react-datepicker": "^3.6.0",
     "react-dev-utils": "^5.0.2",
-    "react-dom": "^16.2.0",
+    "react-dom": "^17.0.1",
     "react-error-overlay": "^4.0.1",
     "react-favicon": "0.0.14",
-    "react-helmet": "^5.1.3",
+    "react-helmet": "^6.1.0",
     "react-instantsearch": "^5.3.1",
     "react-recaptcha": "^2.3.7",
     "react-router": "^4.2.0",
@@ -89,14 +88,14 @@
     "@types/react-router-dom": "^4.3.0",
     "@types/universal-cookie": "^2.2.0",
     "@types/webpack": "4.4.11",
-    "@typescript-eslint/eslint-plugin": "^4.13.0",
-    "@typescript-eslint/parser": "^4.13.0",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "eslint": "^7.17.0",
-    "eslint-config-airbnb": "^18.2.1",
+    "eslint": "^7.21.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "fork-ts-checker-webpack-plugin": "^1.4.3",
@@ -109,35 +108,37 @@
     "sass-loader": "^7.1.0",
     "source-map-loader": "^0.2.3",
     "tslint": "5.11.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.2.3"
   },
   "homepage": "https://confs.tech",
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
+      "src/**/*.{ts,tsx}"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
     ],
     "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.js?(x)",
-      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+      "<rootDir>/src/**/tests/*.ts?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).ts?(x)"
     ],
     "testEnvironment": "node",
     "testURL": "http://localhost",
     "transform": {
-      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+      "^(?!.*\\.(ts|tsx|js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
     "transformIgnorePatterns": [
-      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+      "[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$"
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     },
     "moduleFileExtensions": [
       "web.js",
+      "ts",
+      "tsx",
       "js",
       "json",
       "web.jsx",

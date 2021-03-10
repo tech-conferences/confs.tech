@@ -1,0 +1,26 @@
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/colors';
+
+.ConferenceItem {
+  margin-bottom: spacing(base);
+}
+
+.Date {
+  margin-right: spacing(tight);
+}
+
+.p {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.Footer,
+.Footer a {
+  font-weight: 200;
+  color: color(gray);
+}
+
+.topic {
+  margin-right: spacing(extra-tight);
+  vertical-align: middle;
+}

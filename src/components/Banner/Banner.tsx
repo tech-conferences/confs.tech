@@ -1,4 +1,5 @@
 import React from 'react'
+
 import styles from './Banner.scss'
 
 export default function Banner() {

@@ -1,19 +1,37 @@
-:global(:root) {
-  overflow-y: scroll;
-}
+@import 'src/components/style/foundation/colors';
 
-:global(body) {
-  font-family: sans-serif;
-  font-size: 16px;
-  margin: auto;
-  max-width: 1000px;
-  padding: 1em;
-}
+:global {
+  * {
+    box-sizing: border-box;
+  }
 
-:global(.visuallyHidden) {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
+  :root {
+    overflow-y: scroll;
+  }
+
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: color(background, light);
+    color: black;
+  }
+
+  body.theme--dark {
+    background-color: color(background, dark);
+    color: white;
+  }
+
+  .visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+  }
+
+  span[role="img"]{
+    cursor: default;
+  }
 }

@@ -1,0 +1,19 @@
+@import 'src/components/style/foundation/typography';
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Content {
+  max-width: 500px;
+
+  p,
+  p a {
+    font-size: font-size(page);
+    line-height: line-height(page);
+  }
+}
+

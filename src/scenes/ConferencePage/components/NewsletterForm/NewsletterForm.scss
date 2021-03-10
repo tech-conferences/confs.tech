@@ -1,0 +1,88 @@
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/colors';
+
+.hidden {
+  display: none;
+}
+
+.NewsletterForm {
+  margin: spacing() 0;
+  padding: spacing();
+  background: color(accent-2, pale);
+  border-radius: 3px;
+  position: relative;
+
+  :global(.theme--dark) & {
+    color: black;
+  }
+}
+
+.Content {
+  margin-top: spacing();
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  > a {
+    margin-top: spacing(tight);
+  }
+}
+
+.FormFirstLine {
+  width: 100%;
+  flex-wrap: nowrap;
+  display: flex;
+  margin-right: spacing()
+}
+
+.GDPR {
+  display: flex;
+  align-content: center;
+  margin-top: spacing(tight);
+
+  label {
+    line-height: 1.2;
+  }
+}
+
+.EmailInput {
+  max-width: 25em;
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0;
+}
+
+.Button {
+  width: auto;
+  margin: 0;
+  background-color: color(gray, lighter);
+  display: inline-block;
+  padding: spacing(tight) spacing();
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0, 1.16, 1, 1);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:disabled {
+    opacity: 0.8;
+    color: color(gray);
+  }
+
+  &:hover:not([disabled]) {
+    background-color: color(gray, light);
+    :global(.theme--dark) & {
+      background-color: color(gray, dark);
+    }
+  }
+}
+
+.Close {
+  position: absolute;
+  top: spacing();
+  right: spacing();
+  font-size: 0.9em;
+}

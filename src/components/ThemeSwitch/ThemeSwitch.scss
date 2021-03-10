@@ -1,0 +1,62 @@
+@import 'src/components/style/foundation/colors';
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/media-queries';
+
+.ThemeSwitch {
+  margin: 0;
+
+  @include media($media-query--tablet-up) {
+    margin: 0 0 spacing(tight) auto;
+  }
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 15px;
+  border: 1px solid #EEE;
+  cursor: pointer;
+  position: relative;
+  height: 25px;
+  width: 50px;
+  padding: 3px;
+  display: block;
+  background-color: color(gray, darker);
+
+  &.dark {
+    border-color: color(gray, dark);
+  }
+
+  &::after,
+  &::before {
+    border-radius: 15px;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &::after {
+    content: '☀️';
+    right: 2px;
+  }
+
+  &::before {
+    content: '🌙';
+    left: 2px;
+  }
+}
+
+.Toggle {
+  position: absolute;
+  border-radius: 15px;
+  padding: 3px;
+  width: 20px;
+  z-index: 10;
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+  transition: all 250ms cubic-bezier(0, 1.16, 1, 1);
+  background-color: white;
+
+  .dark & {
+    transform: translateX(-25px);
+  }
+}

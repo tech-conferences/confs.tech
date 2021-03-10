@@ -1,6 +1,5 @@
-import * as React from 'react'
-import { PureComponent } from 'react'
 import classNames from 'classnames'
+import React from 'react'
 
 import styles from './Heading.scss'
 
@@ -10,17 +9,16 @@ interface Props {
   children: React.ReactNode
 }
 
-export default class Heading extends PureComponent<Props> {
-  render() {
-    const { level } = this.props
-    const Element: any = this.props.element
+const Heading: React.FC<Props> = ({ level, children, ...restProps }) => {
+  const Element: any = restProps.element
 
-    return (
-      <Element
-        className={classNames(styles.Heading, styles[`Heading-${level || 1}`])}
-      >
-        <span className={styles.Inner}>{this.props.children}</span>
-      </Element>
-    )
-  }
+  return (
+    <Element
+      className={classNames(styles.Heading, styles[`Heading-${level || 1}`])}
+    >
+      <span className={styles.Inner}>{children}</span>
+    </Element>
+  )
 }
+
+export default Heading

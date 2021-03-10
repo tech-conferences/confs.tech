@@ -1,10 +1,7 @@
-@import '../style/foundation/spacing';
-@import '../style/foundation/media-queries';
+@import 'src/components/style/foundation/spacing';
 
 .GithubStar {
-  margin: 0 0 spacing(base) 0;
-
-  @include media($media-query--tablet-up) {
-    margin: spacing(base) 0;
-  }
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
 }

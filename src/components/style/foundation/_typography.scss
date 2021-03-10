@@ -22,13 +22,18 @@ $line-height-data: (
 
 $font-size-data: (
   heading: (
-    base: rem(20px)
+    base: rem(20px),
+    h1: rem(40px),
+    h1-mobile: rem(34px),
+    h2: rem(30px),
+    h3: rem(24px),
   ),
   filter: (
     itemCount: rem(12px)
   ),
   body: (
-    base: em(16px)
+    base: em(16px),
+    smaller: rem(14px)
   ),
   footer: (
     base: rem(14px)

@@ -1,20 +1,17 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
+import { AboutPage, NotFoundPage } from 'src/StaticPages'
+import { ConferencePage, ConferenceForm } from 'src/scenes'
 
 import styles from './App.scss'
-import { AboutPage, NotFoundPage } from '../Pages'
-import Head from '../Head'
-import ConferencePage from '../ConferencePage'
-import ConferenceNewPage from '../ConferenceNewPage'
 
 export default function App() {
   return (
-    <div className={styles.App}>
-      <Head />
-      <div>
+    <div className={styles.AppContainer}>
+      <div className={styles.App}>
         <Switch>
           <Route path='/pages/:page' component={renderPages} />
-          <Route path='/conferences/new' component={ConferenceNewPage} />
+          <Route path='/conferences/new' component={ConferenceForm} />
           <Route path='/cfp/:topic/:country' render={renderCFP} />
           <Route path='/cfp/:topic/' render={renderCFP} />
           <Route path='/cfp' render={renderCFP} />

@@ -1,7 +1,8 @@
-@import '../style/foundation/mixins';
-@import '../style/foundation/spacing';
-@import '../style/foundation/typography';
-@import '../style/foundation/colors';
+@import 'src/components/style/foundation/media-queries';
+@import 'src/components/style/foundation/mixins';
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/typography';
+@import 'src/components/style/foundation/colors';
 
 .Heading {
   font-weight: bold;
@@ -14,15 +15,25 @@
 }
 
 .Heading-1 {
-  font-size: 2.5em;
   font-weight: normal;
   margin: spacing(extra-loose) 0 0 0;
   position: relative;
+  font-size: font-size(heading, h1-mobile);
+
+  @include media($media-query--mobile-up) {
+    font-size: font-size(heading, h1);
+  }
 
   .Inner {
     @include underlined();
+
     &::after {
       bottom: 6px;
+
+      :global(.theme--dark) & {
+        height: 5px;
+        bottom: 6px;
+      }
     }
   }
 }
@@ -30,17 +41,21 @@
 .Heading-sub {
   font-size: 1em;
   font-family: font-family(base);
-  margin: 0 0 spacing(extra-loose) 0;
   font-weight: normal;
   color: color(gray);
+  margin: 0 0 spacing(tight) 0;
+
+  @include media($media-query--tablet-up) {
+    margin: 0 0 spacing(extra-loose) 0;
+  }
 }
 
 .Heading-2 {
-  font-size: 2em;
+  font-size: font-size(heading, h2);
 }
 
 .Heading-3 {
-  font-size: 1.5em;
+  font-size: font-size(heading, h3);
   margin-top: spacing(extra-loose);
   margin-bottom: spacing(loose);
 
@@ -53,3 +68,4 @@
   margin-top: 0;
   margin-bottom: spacing(extra-tight);
 }
+

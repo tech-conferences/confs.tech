@@ -1,0 +1,84 @@
+@import 'src/components/style/foundation/mixins';
+@import 'src/components/style/foundation/typography';
+@import 'src/components/style/foundation/colors';
+@import 'src/components/style/foundation/spacing';
+
+:global {
+  .ais-RefinementList, .ais-ToggleRefinement {
+    margin-bottom: spacing(loose);
+  }
+
+  .ais-ToggleRefinement-labelText {
+    cursor: pointer;
+    margin-left: spacing(extra-tight);
+  }
+
+  .ais-RefinementList-list {
+    display: flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .ais-RefinementList-item {
+    margin-right: spacing(loose);
+    margin-bottom: spacing(tight);
+    list-style: none;
+  }
+
+  .ais-RefinementList-checkbox {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .ais-RefinementList-label {
+    @include link();
+
+    &:focus {
+      background: black;
+    }
+
+    &:hover {
+      @include link--hover();
+    }
+  }
+
+  :not(.ais-RefinementList-item--selected)
+    .ais-RefinementList-checkbox:focus
+    + .ais-RefinementList-labelText {
+    outline-style: auto;
+  }
+
+  .ais-RefinementList-item--selected .ais-RefinementList-labelText {
+    @include link--hover();
+  }
+
+  .ais-RefinementList-count {
+    border-radius: 30px;
+    background-color: color(gray, lighter);
+    color: color(accent);
+    font-size: font-size(filter, itemCount);
+    padding: 0 6px;
+  }
+
+  .theme--dark .ais-RefinementList-count {
+    background-color: rgb(33, 33, 60);
+  }
+
+  .ais-RefinementList-showMore {
+    @include link();
+    font-size: 0.9em;
+
+    &:hover {
+      @include link--hover();
+    }
+  }
+}
+
+

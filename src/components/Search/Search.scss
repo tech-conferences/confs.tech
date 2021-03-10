@@ -1,6 +1,6 @@
-@import '../style/foundation/spacing';
-@import '../style/foundation/typography';
-@import '../style/foundation/colors';
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/typography';
+@import 'src/components/style/foundation/colors';
 
 .Search {
   margin-bottom: spacing();
@@ -14,5 +14,14 @@
   .ais-SearchBox-submit,
   .ais-SearchBox-reset {
     display: none;
+  }
+
+  .theme--dark .ais-SearchBox-input {
+    background-color: rgb(32, 35, 39);
+    border-color: transparent;
+  }
+
+  .theme--dark .ais-SearchBox-input:focus {
+    background-color: black;
   }
 }

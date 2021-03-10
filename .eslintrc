@@ -1,6 +1,7 @@
 {
   "extends": [
-    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
     "plugin:jsx-a11y/recommended",
     "prettier",
     "plugin:prettier/recommended",
@@ -12,10 +13,45 @@
     "react",
     "react-hooks",
     "prettier",
-    "jsx-a11y"
+    "jsx-a11y",
+    "import"
   ],
   "parser": "@typescript-eslint/parser",
   "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/order": ["warn", {
+      "alphabetize": {
+        "order": "asc"
+      },
+      "pathGroups": [
+        {
+          "pattern": "src/**",
+          "group": "internal",
+          "position": "after"
+        },
+        {
+          "pattern": "snap-redux/**",
+          "group": "internal",
+          "position": "before"
+        },
+        {
+          "pattern": "stories/**",
+          "group": "internal"
+        }
+      ],
+      "groups": ["builtin", "external", "internal", "parent", "sibling", "unknown"],
+      "newlines-between": "always"
+    }],
+    "import/no-named-as-default-member": "off",
+    "import/extensions": ["off", "never"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "packageDir": ["./"],
+        "devDependencies": true
+      }
+    ],
+    "import/prefer-default-export": 0,
     "prettier/prettier": ["error", {
       "singleQuote": true,
       "jsxSingleQuote": true,
