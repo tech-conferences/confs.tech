@@ -178,11 +178,11 @@ class ConferencePage extends Component<ComposedProps, State> {
             <Link url={getCfpUrl(showCFP)}>
               {showCFP ? 'Hide Call for Papers' : 'Show Call for Papers'}
             </Link>
-
-            <Link onClick={this.toggleNewsletter}>Newsletter</Link>
-
-            <Link url='https://twitter.com/ConfsTech/' external>
-              Twitter
+            <Link onClick={this.toggleNewsletter}>
+              Subscribe to our Newsletter
+            </Link>
+            <Link url='https://github.com/tech-conferences/confs.tech' external>
+              ★ on GitHub
             </Link>
           </p>
 

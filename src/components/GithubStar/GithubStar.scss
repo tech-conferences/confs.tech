@@ -2,9 +2,7 @@
 @import 'src/components/style/foundation/media-queries';
 
 .GithubStar {
-  margin: 0 0 spacing(base) 0;
-
-  @include media($media-query--tablet-up) {
-    margin: spacing(base) 0;
-  }
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
 }

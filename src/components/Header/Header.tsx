@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, ThemeSwitch, GithubStar, Heading } from 'src/components'
+import { Link, ThemeSwitch, Heading, TwitterFollowButton } from 'src/components'
 
 import styles from './Header.scss'
 
@@ -34,9 +34,9 @@ const Header: React.FC<Props> = ({
           </Link>
         )}
       </div>
-      <div className={styles.RightBar}>
-        <GithubStar />
+      <div className={styles.Right}>
         <ThemeSwitch />
+        <TwitterFollowButton />
       </div>
     </header>
   )

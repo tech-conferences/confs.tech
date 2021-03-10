@@ -3,7 +3,7 @@
 
 
 .ThemeSwitch {
-  margin-left: spacing(tight);
+  margin: 0 0 spacing(tight) auto;
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 15px;
@@ -13,7 +13,7 @@
   height: 25px;
   width: 50px;
   padding: 3px;
-  // background-color: color(gray, lighter);
+  display: block;
   background-color: color(gray, darker);
 
   &.dark {

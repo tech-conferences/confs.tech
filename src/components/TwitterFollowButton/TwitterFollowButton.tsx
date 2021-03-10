@@ -1,22 +1,27 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
-export default class Twitter extends React.Component {
-  componentDidMount() {
-    const script = document.createElement('script')
-    script.type = 'text/javascript'
-    script.src = 'https://platform.twitter.com/widgets.js'
-    document.head && document.head.appendChild(script)
-  }
+const Twitter = () => {
+  return (
+    <>
+      <Helmet>
+        <script
+          async
+          defer
+          src='https://platform.twitter.com/widgets.js'
+        ></script>
+      </Helmet>
 
-  render() {
-    return (
       <a
         href='https://twitter.com/ConfsTech'
+        data-show-screen-name='false'
         className='twitter-follow-button'
-        data-show-count='false'
+        data-show-count='true'
       >
         Follow @ConfsTech
       </a>
-    )
-  }
+    </>
+  )
 }
+
+export default Twitter

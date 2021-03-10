@@ -1,9 +1,8 @@
 import classnames from 'classnames'
 import React from 'react'
-import Favicon from 'react-favicon'
 import { Helmet } from 'react-helmet'
+import { Head } from 'src/components'
 import { Header, HeaderProps, Footer } from 'src/components'
-import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
 import styles from './Page.scss'
 
@@ -21,17 +20,12 @@ const Page: React.FC<ComposedProps> = ({
   children,
   ...headerProps
 }) => {
-  const {
-    values: { darkModeEnabled },
-  } = useDarkModeContext()
-
   return (
     <div>
+      <Head />
       <Helmet>
         <title>{htmlTitle}</title>
       </Helmet>
-
-      <Favicon url={darkModeEnabled ? 'favicon-dark.png' : 'favicon.png'} />
 
       <Header {...headerProps} />
 

@@ -7,6 +7,7 @@ export default function SponsorPage() {
       narrow
       title='About Confs.tech'
       htmlTitle='About Confs.tech open source project and team'
+      backButton
     >
       <p>
         Confs.tech is a list of conferences on software development going on
