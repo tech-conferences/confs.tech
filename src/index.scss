@@ -1,22 +1,28 @@
-:global(*) {
-  box-sizing: border-box;
-}
+:global {
+  * {
+    box-sizing: border-box;
+  }
 
-:global(:root) {
-  overflow-y: scroll;
-}
+  :root {
+    overflow-y: scroll;
+  }
 
-:global(body) {
-  font-family: sans-serif;
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-}
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
 
-:global(.visuallyHidden) {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
+  .visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+  }
+
+  span[role="img"]{
+    cursor: default;
+  }
 }
