@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import useLocalStorage from 'src/hooks/useLocalStorage'
 
 export interface DarkModeContextProps {
@@ -41,6 +41,14 @@ export const DarkModeContextProvider: React.FC = ({ children }) => {
     }),
     [darkModeEnabled, toggleDarkMode]
   )
+
+  useEffect(() => {
+    if (darkModeEnabled) {
+      document.body.classList.add('theme--dark')
+    } else {
+      document.body.classList.remove('theme--dark')
+    }
+  }, [darkModeEnabled])
 
   return (
     <DarkModeContext.Provider value={value}>

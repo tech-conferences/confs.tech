@@ -1,23 +1,13 @@
-import classnames from 'classnames'
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { AboutPage, NotFoundPage } from 'src/StaticPages'
-import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 import { ConferencePage, ConferenceForm } from 'src/scenes'
 
 import styles from './App.scss'
 
 export default function App() {
-  const {
-    values: { darkModeEnabled },
-  } = useDarkModeContext()
-
   return (
-    <div
-      className={classnames(styles.AppContainer, {
-        'theme--dark': darkModeEnabled,
-      })}
-    >
+    <div className={styles.AppContainer}>
       <div className={styles.App}>
         <Switch>
           <Route path='/pages/:page' component={renderPages} />

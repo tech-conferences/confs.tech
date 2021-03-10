@@ -3,6 +3,10 @@
 
 // stylelint-disable color-no-hex, no-indistinguishable-colors, function-max-empty-lines, value-list-max-empty-lines
 $color-palette-data: (
+  background: (
+    light: #FFFFFF,
+    dark: #181818,
+  ),
   accent: (
     base: rgb(27, 149, 224),
     dark: rgb(29, 161, 242)
