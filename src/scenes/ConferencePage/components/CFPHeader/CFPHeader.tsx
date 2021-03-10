@@ -10,7 +10,7 @@ const CfpHeader = ({ sortByCfpEndDate, sortBy }: any) => {
         Showing Call for Papers
       </Heading>
       <div>
-        <span role='img' aria-label='Sorted by'>
+        <span role='img' aria-label='Sorted by' title='Sorted by'>
           ↕️
         </span>
         <Link
