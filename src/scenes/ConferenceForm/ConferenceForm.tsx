@@ -5,10 +5,10 @@ import { sortBy } from 'lodash'
 import React, { useState, useRef } from 'react'
 import DatePicker from 'react-datepicker'
 import { Helmet } from 'react-helmet'
-// import Recaptcha from 'react-recaptcha'
+import Recaptcha from 'react-recaptcha'
 import { Card, Link, InputGroup, Page } from 'src/components'
 import { TOPICS } from 'src/components/config'
-// import { useDarkModeContext } from 'src/contexts/DarkModeContext'
+import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
 import './DatePickerOverrides.scss'
 
@@ -65,15 +65,15 @@ const defaultConference: Conference = {
 const ConferenceForm: React.FC = () => {
   const endDateDatepickerRef = useRef<DatePicker>(null)
   const [locationType, setLocationType] = useState('online')
-  // const [recaptchaLoaded, setRecaptchaLoaded] = useState(false)
-  // const [captchaResponse, setCaptchaResponse] = useState(null)
+  const [recaptchaLoaded, setRecaptchaLoaded] = useState(false)
+  const [captchaResponse, setCaptchaResponse] = useState(null)
   const [submitting, setSubmitting] = useState(false)
   const [serverError, setServerError] = useState(false)
   const [errors, setErrors] = useState({})
   const [conference, setConference] = useState(defaultConference)
-  // const {
-  //   values: { darkModeEnabled },
-  // } = useDarkModeContext()
+  const {
+    values: { darkModeEnabled },
+  } = useDarkModeContext()
 
   const handleDateChangeBuilder = (key: string) => {
     return (date: any) => {
@@ -114,7 +114,6 @@ const ConferenceForm: React.FC = () => {
 
     const isNotOnline = locationType !== 'online'
     const cfp = cfpUrl || cfpEndDate
-    debugger
     const errors = {
       name: startDate
         ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !==
@@ -138,7 +137,7 @@ const ConferenceForm: React.FC = () => {
   const handleStartDateSelect = (startDate: Date) => {
     const { endDate } = conference
     endDateDatepickerRef.current?.setFocus()
-    debugger
+
     setConference({
       ...conference,
       startDate,
@@ -170,18 +169,18 @@ const ConferenceForm: React.FC = () => {
 
   // Executed once the captcha has been verified
   // can be used to post forms, redirect, etc.
-  // const handleVerifyRecaptcha = (captchaResponse: any) => {
-  //   setCaptchaResponse(captchaResponse)
-  // }
+  const handleVerifyRecaptcha = (captchaResponse: any) => {
+    setCaptchaResponse(captchaResponse)
+  }
 
   const handleFormSubmit = (event: React.FormEvent) => {
     const errors = validateForm(conference)
     event.preventDefault()
     const erroneousFieldId = Object.keys(errors).find((x) => errors[x])
 
-    // if (!recaptchaLoaded || captchaResponse === null) {
-    //   return
-    // }
+    if (!recaptchaLoaded || captchaResponse === null) {
+      return
+    }
     if (erroneousFieldId) {
       const erroneousField = document.getElementById(erroneousFieldId)
       if (erroneousField && erroneousField.focus) {
@@ -498,13 +497,13 @@ const ConferenceForm: React.FC = () => {
                 onChange={handleFieldChange}
               />
             </InputGroup>
-            {/* <Recaptcha
+            <Recaptcha
               sitekey='6Lf5FEoUAAAAAJtf3_sCGAAzV221KqRS4lAX9AAs'
               render='explicit'
               verifyCallback={handleVerifyRecaptcha}
               onloadCallback={() => setRecaptchaLoaded(true)}
               theme={darkModeEnabled ? 'dark' : 'light'}
-            /> */}
+            />
             {serverError && (
               <p className={styles.errorText}>
                 An error happened from the server.
@@ -547,9 +546,9 @@ const ConferenceForm: React.FC = () => {
             )}
             <button
               className={styles.Button}
-              // disabled={
-              //   submitting || !recaptchaLoaded || captchaResponse === null
-              // }
+              disabled={
+                submitting || !recaptchaLoaded || captchaResponse === null
+              }
               type='submit'
               value='Submit'
             >
