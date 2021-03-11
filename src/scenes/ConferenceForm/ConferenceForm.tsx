@@ -59,7 +59,6 @@ const defaultConference: Conference = {
   online: true,
   offersSignLanguageOrCC: false,
   twitter: '@',
-  comment: '',
 }
 
 const ConferenceForm: React.FC = () => {
@@ -238,7 +237,6 @@ const ConferenceForm: React.FC = () => {
     country,
     cfpUrl,
     twitter,
-    comment,
     cocUrl,
     offersSignLanguageOrCC,
     startDate,
@@ -485,17 +483,6 @@ const ConferenceForm: React.FC = () => {
                 This conference offers interpretation to International sign
                 language or closed captions.
               </label>
-            </InputGroup>
-            <InputGroup>
-              <label htmlFor='comment'>
-                Additional comments and info <i>(will only appear on GitHub)</i>
-              </label>
-              <textarea
-                name='comment'
-                id='comment'
-                value={comment}
-                onChange={handleFieldChange}
-              />
             </InputGroup>
             <Recaptcha
               sitekey='6Lf5FEoUAAAAAJtf3_sCGAAzV221KqRS4lAX9AAs'
