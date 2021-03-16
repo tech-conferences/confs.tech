@@ -27,8 +27,11 @@ export function transformCurrentRefinements(items: any[]) {
     })
   }
 
-  // Don't render 'online' refinement
-  return (items || []).filter((item) => item.attribute !== 'online')
+  // Don't render 'online' and 'offersSignLanguageOrCC' refinements
+  return (items || []).filter(
+    (item) =>
+      item.attribute !== 'online' && item.attribute !== 'offersSignLanguageOrCC'
+  )
 }
 
 export function getFirstTopic(topics: string[]) {

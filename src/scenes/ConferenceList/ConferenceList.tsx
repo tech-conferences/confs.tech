@@ -219,11 +219,19 @@ class ConferenceListPage extends Component<ComposedProps, State> {
             defaultRefinement={countries}
           />
 
-          <ToggleRefinement
-            attribute='online'
-            label='Only show online conferences'
-            value={true}
-          />
+          <div className={styles.ToggleRefinementsGroup}>
+            <ToggleRefinement
+              attribute='online'
+              label='Only show online conferences'
+              value={true}
+            />
+
+            <ToggleRefinement
+              attribute='offersSignLanguageOrCC'
+              label='Offers interpretation to International sign language or closed captions'
+              value={true}
+            />
+          </div>
 
           <CurrentRefinements transformItems={transformCurrentRefinements} />
 
