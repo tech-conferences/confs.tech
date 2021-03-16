@@ -25,8 +25,8 @@ export default function App() {
     </div>
   )
 }
-function renderCFP({ match }: any) {
-  return <ConferenceList match={match} showCFP />
+function renderCFP() {
+  return <ConferenceList showCFP />
 }
 
 function renderPages({ match }: any) {

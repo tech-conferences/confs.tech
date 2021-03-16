@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from 'react'
-import useLocalStorage from 'src/hooks/useLocalStorage'
+import { useLocalStorage } from 'src/hooks'
 
 export interface DarkModeContextProps {
   values: {
