@@ -33,3 +33,14 @@
   vertical-align: middle;
   margin-right: spacing(loose);
 }
+
+.CurrentRefinements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HitsCount {
+  font-size: font-size(body, smaller);
+  margin: 0;
+}

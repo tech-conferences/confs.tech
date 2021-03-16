@@ -1,149 +1,85 @@
-import { isPast, parseISO, format } from 'date-fns'
-import { filter, groupBy, sortBy as _sortBy } from 'lodash'
-import * as React from 'react'
-import { Component } from 'react'
+import { isPast, parseISO } from 'date-fns'
+import { filter } from 'lodash'
+import React from 'react'
 import { connectInfiniteHits } from 'react-instantsearch-dom'
 import { Divider, Heading, Link } from 'src/components'
 
 import { ConferenceItem } from '..'
 
 import styles from './ConferenceList.scss'
-
-interface State {
-  loading: boolean
-}
+import {
+  getConfsMonthsSorted,
+  groupAndSortConferences,
+  getMonthName,
+} from './utils'
 
 interface Props {
   showCFP: boolean
   sortBy: string
   hasMore?: boolean
-  hits?: Conference[]
+  hits: Conference[]
   onLoadMore(): void
 }
 
-class ConferenceList extends Component<Props, State> {
-  state: State = {
-    loading: true,
+const ConferenceList: React.FC<Props> = ({
+  hits,
+  showCFP,
+  sortBy,
+  hasMore,
+  onLoadMore,
+}) => {
+  let filteredConferences = hits as Conference[]
+
+  if (showCFP) {
+    filteredConferences = filter(hits, (conf) => {
+      return conf.cfpEndDate && !isPast(parseISO(conf.cfpEndDate))
+    }) as Conference[]
   }
+  const confs = groupAndSortConferences(filteredConferences, sortBy)
 
-  componentDidUpdate() {
-    const { hits } = this.props
-    const { loading } = this.state
-    if (loading && hits && hits.length > 0) {
-      this.setState({ loading: false })
-    }
-  }
+  return (
+    <div className={styles.Wrapper}>
+      {hits.length === 0 && (
+        <div className={styles.NoResults}>No results found.</div>
+      )}
 
-  renderConferences = (conferences: Conference[]) => {
-    const { showCFP } = this.props
-    return (
-      <div key={'list'} className={styles.ConferenceList}>
-        {getConfsMonthsSorted(conferences).map((monthKey: string) => {
-          const month = monthKey.split('-')[1]
-          return (
-            <Months
-              key={monthKey}
-              month={month}
-              showCFP={showCFP}
-              conferences={conferences[monthKey]}
-            />
-          )
-        })}
-      </div>
-    )
-  }
-
-  noResults = () => {
-    const { loading } = this.state
-
-    return (
-      <div className={styles.NoResults}>
-        {loading ? 'Loading...' : 'No results found.'}
-      </div>
-    )
-  }
-
-  render() {
-    const { hits, showCFP, sortBy, hasMore, onLoadMore } = this.props
-    let filteredConferences = hits as Conference[]
-    if (showCFP) {
-      filteredConferences = filter(hits, (conf) => {
-        return conf.cfpEndDate && !isPast(parseISO(conf.cfpEndDate))
-      }) as Conference[]
-    }
-    const confs = groupAndSortConferences(filteredConferences, sortBy)
-
-    const confsTable = Object.keys(confs).map((year) => {
-      return [
-        <Divider key='hr' />,
-        <Year key={year} year={year} />,
-        this.renderConferences(confs[year]),
-      ]
-    })
-
-    return (
-      <div className={styles.Wrapper}>
-        {confsTable.length > 0 ? confsTable : this.noResults()}
-        {hasMore && (
-          <Link button onClick={onLoadMore}>
-            Load more
-          </Link>
-        )}
-      </div>
-    )
-  }
-}
-
-function groupAndSortConferences(
-  conferences: Conference[],
-  sortBy = 'startDate'
-) {
-  // Group conferences by year
-  // FIXME: remove any
-  const confs: any = groupBy(conferences, (conf) =>
-    format(parseISO(conf[sortBy]), 'yyyy')
-  )
-
-  // Group conferences by month within the year
-  Object.keys(confs).map((year: string) => {
-    confs[year] = groupBy(confs[year], (conf) =>
-      format(parseISO(conf[sortBy]), 'yyyy-MM')
-    )
-    Object.keys(confs[year]).map((month) => {
-      confs[year][month] = _sortBy(
-        confs[year][month],
-        (conference) => conference[sortBy]
-      )
-    })
-  })
-
-  return confs
-}
-
-function getMonthName(month: string) {
-  return format(parseISO(`2017-${month}-01`), 'MMMM')
-}
-
-interface MonthsProps {
-  month: string
-  showCFP: boolean
-  conferences: Conference[]
-}
-
-class Months extends Component<MonthsProps> {
-  render() {
-    const { month, conferences, showCFP } = this.props
-    return [
-      <Heading key={month} element='h2' level={3}>
-        {getMonthName(month)}
-      </Heading>,
-      conferences.map((conf) => {
+      {Object.keys(confs).map((year) => {
         return (
-          <ConferenceItem {...conf} key={conf.objectID} showCFP={showCFP} />
+          <React.Fragment key={year}>
+            <Divider />
+            <Year year={year} />
+            <div className={styles.ConferenceList}>
+              {getConfsMonthsSorted(confs[year]).map((monthKey: string) => {
+                const month = monthKey.split('-')[1]
+                return (
+                  <>
+                    <Heading key={month} element='h2' level={3}>
+                      {getMonthName(month)}
+                    </Heading>
+                    {confs[year][monthKey].map((conf: Conference) => {
+                      return (
+                        <ConferenceItem
+                          {...conf}
+                          key={conf.objectID}
+                          showCFP={showCFP}
+                        />
+                      )
+                    })}
+                  </>
+                )
+              })}
+            </div>
+          </React.Fragment>
         )
-      }),
-    ]
-  }
+      })}
+
+      {hasMore && (
+        <Link button onClick={onLoadMore}>
+          Load more
+        </Link>
+      )}
+    </div>
+  )
 }
 
 function Year({ year }: { year: string }) {
@@ -159,12 +95,6 @@ function Year({ year }: { year: string }) {
       </div>
     </div>
   )
-}
-
-function getConfsMonthsSorted(conferences: Conference[]) {
-  return _sortBy(Object.keys(conferences), (conference) => {
-    return parseInt(conference.replace('-', ''), 10)
-  })
 }
 
 function AddConferenceLink() {

@@ -18,7 +18,7 @@
   .ais-CurrentRefinements-list .ais-CurrentRefinements-category {
     display: inline-block;
     margin-right: spacing(base);
-    margin-bottom: spacing(tight);
+    margin: spacing(extra-tight) spacing(base) spacing(extra-tight) 0;
     background-color: color(gray, lighter);
     color: color(gray, dark);
     padding: 0.3em 0.7em;
