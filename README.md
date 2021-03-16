@@ -2,6 +2,26 @@
 
 Confs.tech is an open source project that lists upcoming tech conferences. Everything is free and will stay free. It's aimed to be simple and without useless clutter. You can filter by topics and [see upcoming CFPs](https://confs.tech/cfp).
 
+- [The open-source and crowd sourced conference website](#the-open-source-and-crowd-sourced-conference-website)
+  - [Contributing](#contributing)
+  - [Adding a conference](#adding-a-conference)
+  - [Active contributors](#active-contributors)
+  - [Related projects](#related-projects)
+  - [Call for papers](#call-for-papers)
+  - [Conferences by category](#conferences-by-category)
+  - [License](#license)
+
+## Contributing 
+
+Contributing to the website is as simple as running:
+
+```sh
+npm install
+npm run start
+```
+
+Environment variables are defined in the .env files and are accessible on the repo since they are public.
+
 ## Adding a conference
 
 All conferences are stored in [JSON files](https://github.com/tech-conferences/conference-data/tree/master/conferences), sorted by topics and years. All data is open source and crowd sourced by the community. Whether added directly [from the website](https://confs.tech/conferences/new) by conference organizers or through pull requests.
@@ -24,19 +44,11 @@ Conference data have the following structure:
 
 ## Active contributors
 
-- [Nima Izadi](https://nimz.co)
-- [Ekaterina Prigara](https://twitter.com/katyaprigara)
-- [Trivikram Kamat](https://twitter.com/trivikram)
 - [Christian Grail](https://twitter.com/cgrail)
+- [Ekaterina Prigara](https://twitter.com/katyaprigara)
+- [Nima Izadi](https://nimz.co)
+- [Trivikram Kamat](https://twitter.com/trivikram)
 
-If you want to contribute, the project is React based (it's an ejected create-react-app), so running:
-
-```
-$ npm install
-$ npm run start
-```
-
-Should do the trick!
 
 ## Related projects
 
@@ -45,13 +57,11 @@ Some of the conferences have been pulled from other projects:
 - Ruby conferences: [ruby-conferences/ruby-conferences.github.io](https://github.com/ruby-conferences/ruby-conferences.github.io)
 - Android: [AndroidStudyGroup/conferences](https://github.com/AndroidStudyGroup/conferences)
 - iOS: [Lascorbe/CocoaConferences](https://github.com/Lascorbe/CocoaConferences)
-- UX: [CSS Tricks conference guide](https://css-tricks.com/guide-2017-conferences)
 
-## License
+## Call for papers
+- [See all open call for papers](https://confs.tech/cfp)
 
-[MIT](LICENSE.md)
-
-## Links
+## Conferences by category
 
 - [See all JavaScript conferences](https://confs.tech/javascript)
 - [See all Java conferences](https://confs.tech/java)
@@ -83,3 +93,7 @@ Some of the conferences have been pulled from other projects:
 - [See all Leadership conferences](https://confs.tech/product)
 - [See all ColdFusion Markup Language conferences](https://confs.tech/cfml)
 - [See general conferences](https://confs.tech/general)
+
+## License
+
+[MIT](LICENSE.md)
