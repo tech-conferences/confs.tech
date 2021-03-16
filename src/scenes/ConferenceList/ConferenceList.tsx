@@ -186,7 +186,7 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
         <div className={styles.ToggleRefinementsGroup}>
           <ToggleRefinement
             attribute='online'
-            label='Only show online conferences'
+            label='Online conferences'
             value={true}
             defaultRefinement={searchState.toggle.online}
           />
