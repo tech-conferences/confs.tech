@@ -1,12 +1,18 @@
-import { orderBy } from 'lodash'
+import { orderBy, reject } from 'lodash'
 import { TOPICS } from 'src/components/config'
+export const QUERY_SEPARATOR = '+'
 
 export function transformTopicRefinements(items: any[]) {
   items.map((item) => {
     item.label = TOPICS[item.label] || item.label
     return item
   })
-  return orderBy(items, ['count', 'name'], ['desc', 'desc'])
+
+  return orderBy(
+    reject(items, (item) => item.label === ''),
+    ['count', 'name'],
+    ['desc', 'desc']
+  )
 }
 
 export function transformCountryRefinements(items: any[]) {
@@ -27,10 +33,12 @@ export function transformCurrentRefinements(items: any[]) {
     })
   }
 
-  // Don't render 'online' and 'offersSignLanguageOrCC' refinements
   return (items || []).filter(
     (item) =>
-      item.attribute !== 'online' && item.attribute !== 'offersSignLanguageOrCC'
+      // Don't render 'online' refinements
+      item.attribute !== 'online' &&
+      // Don't render 'offersSignLanguageOrCC refinements
+      item.attribute !== 'offersSignLanguageOrCC' //&&
   )
 }
 
@@ -48,4 +56,12 @@ export function getCfpUrl(showCFP: boolean) {
   } else {
     return `/cfp${location.pathname}`
   }
+}
+
+export function paramsFromUrl(urlQueryString: any, paramKey: string) {
+  if (!urlQueryString[paramKey]) {
+    return null
+  }
+
+  return urlQueryString[paramKey]?.split(QUERY_SEPARATOR)
 }
