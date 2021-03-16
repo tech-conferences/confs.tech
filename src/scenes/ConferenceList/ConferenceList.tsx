@@ -7,6 +7,7 @@ import {
   ToggleRefinement,
   RefinementList,
   CurrentRefinements,
+  connectStats,
 } from 'react-instantsearch-dom'
 import { useHistory, useParams } from 'react-router'
 import { Search, Page, Link, ScrollToConference } from 'src/components'
@@ -199,7 +200,10 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
           />
         </div>
 
-        <CurrentRefinements transformItems={transformCurrentRefinements} />
+        <div className={styles.CurrentRefinements}>
+          <CurrentRefinements transformItems={transformCurrentRefinements} />
+          <ShowingResulstsCount />
+        </div>
 
         <ScrollToConference hash={location.hash} />
 
@@ -219,4 +223,11 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
   )
 }
 
+const ShowingResulstsCount = connectStats(({ nbHits }) => {
+  return (
+    <p className={styles.HitsCount}>
+      <i>Showing {nbHits} conferences</i>
+    </p>
+  )
+})
 export default ConferenceListPage
