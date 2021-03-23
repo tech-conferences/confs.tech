@@ -28,7 +28,7 @@ const URL_PARAMETER_REGEX = /\?/
 const URL_SHORTENER_REGEX = /(\/bitly)|(\/bit\.ly)|(\/t\.co)/i
 const TWITTER_REGEX = /@(\w){1,15}$/
 const UNWANTED_CONFERENCE_NAME_REGEX = /webinar|marketing|practical guide|meeting|trends|digimarcon|hackathon|101|estate|expo|techspo|outsourcing|physical|biology|neuroscience|healthcare|nutrition|Food Science/i
-const UNWANTED_CONFERENCE_URL_REGEX = /digimarcon/i
+const UNWANTED_CONFERENCE_URL_REGEX = /webinar|marketing|digimarcon/i
 
 const LOCATION_TYPES = [
   {
