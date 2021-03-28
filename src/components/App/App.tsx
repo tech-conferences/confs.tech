@@ -1,9 +1,8 @@
-import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 import { AboutPage, NotFoundPage } from 'src/StaticPages'
 import { ConferenceList, ConferenceForm } from 'src/scenes'
 
-import styles from './App.scss'
+import styles from './App.module.scss'
 
 export default function App() {
   return (

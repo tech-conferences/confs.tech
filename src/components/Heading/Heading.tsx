@@ -1,7 +1,6 @@
 import classNames from 'classnames'
-import React from 'react'
 
-import styles from './Heading.scss'
+import styles from './Heading.module.scss'
 
 interface Props {
   level?: number | string

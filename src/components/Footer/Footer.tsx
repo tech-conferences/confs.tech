@@ -1,11 +1,10 @@
-import React from 'react'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
 import Link from '../Link'
 import Twitter from '../Twitter'
 import { TOPICS } from '../config'
 
-import styles from './Footer.scss'
+import styles from './Footer.module.scss'
 
 const CURRENT_YEAR = new Date().getFullYear()
 

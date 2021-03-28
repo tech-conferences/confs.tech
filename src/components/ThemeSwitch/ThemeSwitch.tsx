@@ -1,8 +1,7 @@
 import classnames from 'classnames'
-import React from 'react'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
-import styles from './ThemeSwitch.scss'
+import styles from './ThemeSwitch.module.scss'
 
 const ThemeSwitch: React.FC = () => {
   const {

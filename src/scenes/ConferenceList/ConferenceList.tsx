@@ -14,10 +14,10 @@ import { Search, Page, Link, ScrollToConference } from 'src/components'
 import { TOPICS } from 'src/components/config'
 import { useToggle } from 'src/hooks'
 
-import './RefinementList.scss'
-import './CurrentRefinement.scss'
+import './RefinementList.module.scss'
+import './CurrentRefinement.module.scss'
 
-import styles from './ConferenceList.scss'
+import styles from './ConferenceList.module.scss'
 import { ConferenceList, NewsletterForm } from './components'
 import { CFPHeader } from './components'
 import {
@@ -48,9 +48,10 @@ interface SearchState {
   }
 }
 
+console.log(process.env)
 const searchClient = algoliasearch(
-  process.env.ALGOLIA_APPLICATION_ID as string,
-  process.env.ALGOLIA_API_KEY as string
+  process.env.REACT_APP_ALGOLIA_APPLICATION_ID as string,
+  process.env.REACT_APP_ALGOLIA_API_KEY as string
 )
 
 const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {

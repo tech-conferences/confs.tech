@@ -12,7 +12,7 @@ import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
 import './DatePickerOverrides.scss'
 
-import * as styles from './ConferenceForm.scss'
+import styles from './ConferenceForm.module.scss'
 import { Conference } from './types/Conference'
 import {
   getConferenceData,
@@ -190,7 +190,7 @@ const ConferenceForm: React.FC = () => {
 
     setSubmitting(true)
 
-    fetch(`${process.env.API_END_POINT_DOMAIN}/api/conferences`, {
+    fetch(`${process.env.REACT_APP_API_END_POINT_DOMAIN}/api/conferences`, {
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',

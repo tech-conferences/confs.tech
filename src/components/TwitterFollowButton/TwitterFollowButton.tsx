@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Helmet from 'react-helmet'
 
 const Twitter = () => {
   useEffect(() => {
-    if (window.twttr) {
-      window.twttr.widgets.load()
+    if ((window as any).twttr) {
+      ;(window as any).twttr.widgets.load()
     }
   })
 

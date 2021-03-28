@@ -3,10 +3,11 @@ import { filter } from 'lodash'
 import React from 'react'
 import { connectInfiniteHits } from 'react-instantsearch-dom'
 import { Divider, Heading, Link } from 'src/components'
+import { Conference } from 'types/conference'
 
 import { ConferenceItem } from '..'
 
-import styles from './ConferenceList.scss'
+import styles from './ConferenceList.module.scss'
 import {
   getConfsMonthsSorted,
   groupAndSortConferences,

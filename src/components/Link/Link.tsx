@@ -1,8 +1,7 @@
 import classNames from 'classnames'
-import React from 'react'
 import { Link as RoutedLink } from 'react-router-dom'
 
-import styles from './Link.scss'
+import styles from './Link.module.scss'
 
 interface Props {
   url?: string
