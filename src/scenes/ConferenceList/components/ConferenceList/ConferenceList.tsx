@@ -53,8 +53,8 @@ const ConferenceList: React.FC<Props> = ({
               {getConfsMonthsSorted(confs[year]).map((monthKey: string) => {
                 const month = monthKey.split('-')[1]
                 return (
-                  <>
-                    <Heading key={month} element='h2' level={3}>
+                  <React.Fragment key={month}>
+                    <Heading element='h2' level={3}>
                       {getMonthName(month)}
                     </Heading>
                     {confs[year][monthKey].map((conf: Conference) => {
@@ -66,7 +66,7 @@ const ConferenceList: React.FC<Props> = ({
                         />
                       )
                     })}
-                  </>
+                  </React.Fragment>
                 )
               })}
             </div>
