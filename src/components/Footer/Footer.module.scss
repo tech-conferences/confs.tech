@@ -16,8 +16,4 @@
 
 .FooterLinks a {
   margin: 0 spacing(loose) 0 0;
-
-  @include media($media-query--tablet-up) {
-    margin: 0 spacing(tight) 0 0;
-  }
 }
