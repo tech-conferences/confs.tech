@@ -43,7 +43,8 @@ interface SearchState {
     offersSignLanguageOrCC: boolean
   }
   refinementList: {
-    countries: string[]
+    continent?: string[]
+    country?: string[]
     topics: string[]
   }
 }
@@ -75,7 +76,8 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
       offersSignLanguageOrCC: urlQueryString.offersSignLanguageOrCC === 'true',
     },
     refinementList: {
-      countries:
+      continent: paramsFromUrl(urlQueryString, 'continents') || [],
+      country:
         paramsFromUrl(urlQueryString, 'countries') || [country].filter(Boolean), // Removes nullish values,
       topics:
         paramsFromUrl(urlQueryString, 'topics') || [topic].filter(Boolean), // Removes nullish values,
@@ -99,7 +101,10 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
         online: algoliaSearchState.toggle.online,
         offersSignLanguageOrCC:
           algoliaSearchState.toggle.offersSignLanguageOrCC,
-        countries: (algoliaSearchState.refinementList.countries || []).join(
+        continents: (algoliaSearchState.refinementList.continent || []).join(
+          QUERY_SEPARATOR
+        ),
+        countries: (algoliaSearchState.refinementList.country || []).join(
           QUERY_SEPARATOR
         ),
         topics: (algoliaSearchState.refinementList.topics || []).join(
@@ -152,19 +157,15 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
             ★ on GitHub
           </Link>
         </p>
-
         {showNewsletterBanner && (
           <NewsletterForm
             topic={getFirstTopic(searchState.refinementList.topics)}
           />
         )}
-
         {showCFP && (
           <CFPHeader sortByCfpEndDate={sortByCfpEndDate} sortBy={sortBy} />
         )}
-
         <Search />
-
         <RefinementList
           limit={40}
           attribute='topics'
@@ -174,16 +175,23 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
           transformItems={transformTopicRefinements}
         />
         <RefinementList
+          attribute='continent'
+          transformItems={transformCountryRefinements}
+          defaultRefinement={(
+            searchState.refinementList.continent || []
+          ).filter(Boolean)}
+        />
+
+        <RefinementList
           showMoreLimit={100}
           limit={9}
           showMore
           attribute='country'
           transformItems={transformCountryRefinements}
-          defaultRefinement={(
-            searchState.refinementList.countries || []
-          ).filter(Boolean)}
+          defaultRefinement={(searchState.refinementList.country || []).filter(
+            Boolean
+          )}
         />
-
         <div className={styles.ToggleRefinementsGroup}>
           <ToggleRefinement
             attribute='online'
@@ -199,14 +207,11 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
             defaultRefinement={searchState.toggle.offersSignLanguageOrCC}
           />
         </div>
-
         <div className={styles.CurrentRefinements}>
           <CurrentRefinements transformItems={transformCurrentRefinements} />
           <ShowingResulstsCount />
         </div>
-
         <ScrollToConference hash={location.hash} />
-
         <ConferenceList
           onLoadMore={loadMore}
           sortBy={sortBy}
