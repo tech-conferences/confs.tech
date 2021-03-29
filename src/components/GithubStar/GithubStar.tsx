@@ -1,8 +1,7 @@
-import React from 'react'
 import Helmet from 'react-helmet'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
-import styles from './GithubStar.scss'
+import styles from './GithubStar.module.scss'
 
 const GithubStar = () => {
   const {

@@ -1,7 +1,6 @@
-import React from 'react'
 import { SearchBox } from 'react-instantsearch-dom'
 
-import styles from './Search.scss'
+import styles from './Search.module.scss'
 
 export default function Search() {
   return (

@@ -30,6 +30,15 @@ export function formatDate(startDate: string, endDate?: string) {
   }
 }
 
+interface JSONLD {
+  name: string
+  url: string
+  city: string
+  country: string
+  startDate: string
+  endDate: string
+}
+
 export function generateEventJSONLD({
   name,
   url,
@@ -37,7 +46,7 @@ export function generateEventJSONLD({
   country,
   startDate,
   endDate,
-}: any) {
+}: JSONLD) {
   const data = {
     '@context': 'http://schema.org',
     '@type': 'Event',

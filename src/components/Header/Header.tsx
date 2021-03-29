@@ -1,7 +1,6 @@
-import React from 'react'
 import { Link, ThemeSwitch, Heading, TwitterFollowButton } from 'src/components'
 
-import styles from './Header.scss'
+import styles from './Header.module.scss'
 
 export interface Props {
   searchEngineTitle?: string

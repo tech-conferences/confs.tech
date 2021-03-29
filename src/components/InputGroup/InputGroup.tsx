@@ -1,7 +1,6 @@
 import classNames from 'classnames'
-import React from 'react'
 
-import * as styles from './InputGroup.scss'
+import styles from './InputGroup.module.scss'
 
 interface Props {
   inline?: boolean

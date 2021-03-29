@@ -1,5 +1,6 @@
 import { parseISO, format } from 'date-fns'
 import { sortBy, groupBy } from 'lodash'
+import { Conference } from 'types/conference'
 
 export function getConfsMonthsSorted(conferences: Conference[]) {
   return sortBy(Object.keys(conferences), (conference) => {

@@ -1,10 +1,10 @@
 import classnames from 'classnames'
-import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Head } from 'src/components'
-import { Header, HeaderProps, Footer } from 'src/components'
+import { Header, Footer } from 'src/components'
+import { Props as HeaderProps } from 'src/components/Header/Header'
 
-import styles from './Page.scss'
+import styles from './Page.module.scss'
 
 interface Props {
   children: React.ReactNode

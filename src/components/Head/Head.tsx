@@ -1,5 +1,3 @@
-import React from 'react'
-import Favicon from 'react-favicon'
 import { Helmet } from 'react-helmet'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
@@ -8,6 +6,8 @@ const Head = () => {
   const {
     values: { darkModeEnabled },
   } = useDarkModeContext()
+
+  const faviconUrl = darkModeEnabled ? '/favicon-dark.png' : '/favicon.png'
 
   return (
     <>
@@ -69,7 +69,12 @@ const Head = () => {
           `}
         </script>
       </Helmet>
-      <Favicon url={darkModeEnabled ? '/favicon-dark.png' : '/favicon.png'} />
+      <link rel='icon' type='image/png' href={faviconUrl} />
+      <link
+        rel='icon'
+        type='image/png'
+        href={`https://confs.tech${faviconUrl}`}
+      />
     </>
   )
 }

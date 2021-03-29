@@ -31,6 +31,7 @@ const useLocalStorage: UseLocalStorageI = (key, initialValue) => {
     }
   })
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const setValue = (value: any) => {
     try {
       const valueToStore =

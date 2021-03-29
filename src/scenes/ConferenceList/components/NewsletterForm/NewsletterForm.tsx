@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import React, { PureComponent, ComponentType } from 'react'
 import { Heading } from 'src/components'
 
-import styles from './NewsletterForm.scss'
+import styles from './NewsletterForm.module.scss'
 
 interface Props {
   topic: string

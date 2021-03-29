@@ -1,6 +1,15 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Helmet from 'react-helmet'
 
+declare global {
+  interface Window {
+    twttr: {
+      widgets: {
+        load(): void
+      }
+    }
+  }
+}
 const Twitter = () => {
   useEffect(() => {
     if (window.twttr) {

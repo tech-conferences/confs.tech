@@ -15,11 +15,16 @@ export function transformTopicRefinements(items: any[]) {
   )
 }
 
-export function transformCountryRefinements(items: any[]) {
+interface Item {
+  attribute: string
+  items: { [key: string]: string }[]
+}
+
+export function transformCountryRefinements(items: Item[]) {
   return orderBy(items, ['count', 'name'], ['desc', 'desc'])
 }
 
-export function transformCurrentRefinements(items: any[]) {
+export function transformCurrentRefinements(items: Item[]) {
   if (!items.length) {
     return []
   }

@@ -1,7 +1,6 @@
 import classNames from 'classnames'
-import React from 'react'
 
-import styles from './Heading.scss'
+import styles from './Heading.module.scss'
 
 interface Props {
   level?: number | string
@@ -10,6 +9,7 @@ interface Props {
 }
 
 const Heading: React.FC<Props> = ({ level, children, ...restProps }) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Element: any = restProps.element
 
   return (

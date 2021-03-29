@@ -1,9 +1,13 @@
-import React from 'react'
 import { Link, Heading } from 'src/components'
 
-import styles from './CFPHeader.scss'
+import styles from './CFPHeader.module.scss'
 
-const CfpHeader = ({ sortByCfpEndDate, sortBy }: any) => {
+interface Props {
+  sortByCfpEndDate(): void
+  sortBy: string
+}
+
+const CfpHeader = ({ sortByCfpEndDate, sortBy }: Props) => {
   return (
     <div className={styles.CFPHeader}>
       <Heading element='h2' level={2}>

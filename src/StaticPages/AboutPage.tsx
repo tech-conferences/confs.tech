@@ -1,4 +1,3 @@
-import React from 'react'
 import { Twitter, Link, Page } from 'src/components'
 
 export default function SponsorPage() {
