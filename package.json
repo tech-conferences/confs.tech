@@ -91,14 +91,6 @@
   "engines": {
     "node": "12.10.0"
   },
-  "greenkeeper": {
-    "ignore": [
-      "ts-loader",
-      "webpack",
-      "webpack-dev-server",
-      "webpack-manifest-plugin"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
