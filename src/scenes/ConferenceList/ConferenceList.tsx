@@ -71,8 +71,8 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
 
   const [searchState, setSearchState] = useState<SearchState>({
     toggle: {
-      online: Boolean(urlQueryString.online),
-      offersSignLanguageOrCC: Boolean(urlQueryString.offersSignLanguageOrCC),
+      online: urlQueryString.online === 'true',
+      offersSignLanguageOrCC: urlQueryString.offersSignLanguageOrCC === 'true',
     },
     refinementList: {
       countries:
