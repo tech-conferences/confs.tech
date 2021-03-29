@@ -1,6 +1,7 @@
 {
   "name": "confs.tech",
   "version": "1.0.0",
+  "homepage": "https://confs.tech",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
@@ -8,7 +9,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --fix .",
-    "reorder-confs": "BABEL_ENV=node babel-node ./scripts/reorder-conferences-by-date.js",
     "precommit": "lint-staged",
     "predeploy": "npm run build"
   },
@@ -87,7 +87,6 @@
     "tslint": "5.11.0",
     "typescript": "^4.2.3"
   },
-  "homepage": "https://confs.tech",
   "engines": {
     "node": "12.10.0"
   },
