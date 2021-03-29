@@ -1,4 +1,4 @@
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route, Redirect, RouteComponentProps } from 'react-router-dom'
 import { AboutPage, NotFoundPage } from 'src/StaticPages'
 import { ConferenceList, ConferenceForm } from 'src/scenes'
 
@@ -28,7 +28,7 @@ function renderCFP() {
   return <ConferenceList showCFP />
 }
 
-function renderPages({ match }: any) {
+function renderPages({ match }: RouteComponentProps<{ page: string }>) {
   switch (match.params.page) {
     case 'about':
       return <AboutPage />
@@ -36,7 +36,9 @@ function renderPages({ match }: any) {
   return <NotFoundPage />
 }
 
-function redirect(props: any) {
+function redirect(
+  props: RouteComponentProps<{ topic: string; country: string }>
+) {
   const { topic, country } = props.match.params
 
   return <Redirect to={`/${topic}/${country}`} />

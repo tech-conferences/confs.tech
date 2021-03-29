@@ -9,6 +9,7 @@ interface Props {
 }
 
 const Heading: React.FC<Props> = ({ level, children, ...restProps }) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Element: any = restProps.element
 
   return (

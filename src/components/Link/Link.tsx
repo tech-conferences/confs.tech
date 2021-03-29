@@ -10,7 +10,7 @@ interface Props {
   external?: boolean
   routed?: boolean
   button?: boolean
-  onClick?(evt: any): void
+  onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>
 }
 
 const BtnLink: React.FC<Partial<Props>> = ({
@@ -77,7 +77,9 @@ const Link: React.FC<Props> = ({
         [styles.Selected]: selected,
       })}
       onClick={onClick}
-      onTouchStart={onClick}
+      onTouchStart={
+        onClick as React.TouchEventHandler<HTMLAnchorElement> | undefined
+      }
       target={external ? '_blank' : undefined}
       rel={external ? 'noopener' : undefined}
       href={url}

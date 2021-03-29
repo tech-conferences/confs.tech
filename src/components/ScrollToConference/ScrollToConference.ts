@@ -3,7 +3,7 @@ import { connectInfiniteHits } from 'react-instantsearch-dom'
 
 interface Props {
   hash: string
-  hits?: any[]
+  hits?: { [key: string]: string }[]
 }
 
 interface State {

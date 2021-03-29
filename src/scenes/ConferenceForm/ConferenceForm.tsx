@@ -2,7 +2,7 @@ import 'react-datepicker/dist/react-datepicker-cssmodules.css'
 
 import classNames from 'classnames'
 import { sortBy } from 'lodash'
-import React, { useState, useRef } from 'react'
+import { useState, useRef, ChangeEvent } from 'react'
 import DatePicker from 'react-datepicker'
 import { Helmet } from 'react-helmet'
 import Recaptcha from 'react-recaptcha'
@@ -65,7 +65,7 @@ const ConferenceForm: React.FC = () => {
   const endDateDatepickerRef = useRef<DatePicker>(null)
   const [locationType, setLocationType] = useState('online')
   const [recaptchaLoaded, setRecaptchaLoaded] = useState(false)
-  const [captchaResponse, setCaptchaResponse] = useState(null)
+  const [captchaResponse, setCaptchaResponse] = useState<string | null>(null)
   const [submitting, setSubmitting] = useState(false)
   const [serverError, setServerError] = useState(false)
   const [errors, setErrors] = useState({})
@@ -75,7 +75,7 @@ const ConferenceForm: React.FC = () => {
   } = useDarkModeContext()
 
   const handleDateChangeBuilder = (key: string) => {
-    return (date: any) => {
+    return (date: Date) => {
       setConference({
         ...conference,
         [key]: date,
@@ -144,14 +144,16 @@ const ConferenceForm: React.FC = () => {
     })
   }
 
-  const handleFieldChange = (event: any) => {
+  const handleFieldChange = (
+    event: ChangeEvent<HTMLSelectElement | HTMLInputElement>
+  ) => {
     setConference({
       ...conference,
       [event.target.name]: event.target.value,
     })
   }
 
-  const handleLocationTypeChange = (event: any) => {
+  const handleLocationTypeChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setLocationType(event.target.value)
     setConference({
       ...conference,
@@ -159,7 +161,7 @@ const ConferenceForm: React.FC = () => {
     })
   }
 
-  const handleCheckboxChange = (event: any) => {
+  const handleCheckboxChange = (event: ChangeEvent<HTMLInputElement>) => {
     setConference({
       ...conference,
       [event.target.name]: !conference[event.target.name],
@@ -168,7 +170,7 @@ const ConferenceForm: React.FC = () => {
 
   // Executed once the captcha has been verified
   // can be used to post forms, redirect, etc.
-  const handleVerifyRecaptcha = (captchaResponse: any) => {
+  const handleVerifyRecaptcha = (captchaResponse: string) => {
     setCaptchaResponse(captchaResponse)
   }
 
