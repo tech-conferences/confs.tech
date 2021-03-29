@@ -48,7 +48,6 @@ interface SearchState {
   }
 }
 
-console.log(process.env)
 const searchClient = algoliasearch(
   process.env.REACT_APP_ALGOLIA_APPLICATION_ID as string,
   process.env.REACT_APP_ALGOLIA_API_KEY as string
