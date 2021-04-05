@@ -1,4 +1,4 @@
-import 'react-datepicker/dist/react-datepicker-cssmodules.css'
+import 'react-datepicker/dist/react-datepicker.css'
 
 import classNames from 'classnames'
 import { sortBy } from 'lodash'
@@ -10,7 +10,7 @@ import { Card, Link, InputGroup, Page } from 'src/components'
 import { TOPICS } from 'src/components/config'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
-import './DatePickerOverrides.scss'
+import './DatePickerOverrides.module.scss'
 
 import styles from './ConferenceForm.module.scss'
 import { Conference } from './types/Conference'
