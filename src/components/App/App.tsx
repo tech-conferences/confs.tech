@@ -49,6 +49,7 @@ function redirect(
   If we detect that :topic is a year, the user actually wanted to reach
   the new route /:topic
 */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function redirectOrRender(props: any) {
   const { topic, country } = props.match.params
 

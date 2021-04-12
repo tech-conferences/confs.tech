@@ -2,6 +2,7 @@ import { orderBy, reject } from 'lodash'
 import { TOPICS } from 'src/components/config'
 export const QUERY_SEPARATOR = '+'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function transformTopicRefinements(items: any[]) {
   items.map((item) => {
     item.label = TOPICS[item.label] || item.label
@@ -32,6 +33,7 @@ export function transformCurrentRefinements(items: Item[]) {
   const topics = items.find((item) => item.attribute === 'topics')
   // Change topic label
   if (topics) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     topics.items.map((item: any) => {
       item.label = TOPICS[item.label] || item.label
       return item
@@ -63,6 +65,7 @@ export function getCfpUrl(showCFP: boolean) {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function paramsFromUrl(urlQueryString: any, paramKey: string) {
   if (!urlQueryString[paramKey]) {
     return null

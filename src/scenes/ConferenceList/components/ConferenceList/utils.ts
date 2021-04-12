@@ -17,7 +17,7 @@ export function groupAndSortConferences(
   sortByKey = 'startDate'
 ) {
   // Group conferences by year
-  // FIXME: remove any
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const confs: any = groupBy<Conference>(conferences, (conf) =>
     format(parseISO(conf[sortByKey]), 'yyyy')
   )
