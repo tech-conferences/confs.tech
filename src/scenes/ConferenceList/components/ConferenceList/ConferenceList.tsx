@@ -57,15 +57,17 @@ const ConferenceList: React.FC<Props> = ({
                     <Heading element='h2' level={3}>
                       {getMonthName(month)}
                     </Heading>
-                    {confs[year][monthKey].map((conf: Conference) => {
-                      return (
-                        <ConferenceItem
-                          {...conf}
-                          key={conf.objectID}
-                          showCFP={showCFP}
-                        />
-                      )
-                    })}
+                    <ul>
+                      {confs[year][monthKey].map((conf: Conference) => {
+                        return (
+                          <ConferenceItem
+                            {...conf}
+                            key={conf.objectID}
+                            showCFP={showCFP}
+                          />
+                        )
+                      })}
+                    </ul>
                   </React.Fragment>
                 )
               })}

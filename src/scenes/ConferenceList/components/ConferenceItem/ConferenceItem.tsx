@@ -25,14 +25,12 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       cfpEndDate,
       cfpUrl,
       showCFP,
-      affiliateText,
-      affiliateUrl,
       offersSignLanguageOrCC,
       cocUrl,
     } = this.props
 
     return (
-      <div
+      <li
         className={classNames(styles.ConferenceItem)}
         id={idify(name, startDate)}
       >
@@ -49,47 +47,53 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
             }),
           }}
         />
-        <Heading element='p' level={4}>
-          <Link onClick={this.trackLink} url={url} external>
-            {name}
-          </Link>
-        </Heading>
-        <p className={styles.p}>
-          {`${Location(city, country, online)}・`}
-          <span className={styles.Date}>{formatDate(startDate, endDate)}</span>
-        </p>
-        {offersSignLanguageOrCC && (
-          <p className={styles.p}>
-            Offers interpretation to International sign language or closed
-            captions.
-          </p>
-        )}
-        <p className={classNames(styles.p, styles.Footer)}>
-          {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
-          {showCFP && <br />}
-          <Topics topics={topics} />
-          <Twitter twitter={twitter} />
-          {cocUrl && (
+        <dl className={styles.dl}>
+          <dt className='visuallyHidden'>Conference name</dt>
+          <Heading element='dd' level={4}>
+            <Link onClick={this.trackLink} url={url} external>
+              {name}
+            </Link>
+          </Heading>
+          <dt className='visuallyHidden'>Location and date</dt>
+          <dd>
+            <p className={styles.p}>
+              {Location(city, country, online)}
+              <span aria-hidden='true'>・</span>
+              <span className={styles.Date}>
+                {formatDate(startDate, endDate)}
+              </span>
+            </p>
+          </dd>
+          {offersSignLanguageOrCC && (
             <>
-              ・
-              <Link url={cocUrl} external>
-                Code Of Conduct
-              </Link>
+              <dt className='visuallyHidden'>Accessibility</dt>
+              <dd>
+                Offers interpretation to International sign language or closed
+                captions.
+              </dd>
             </>
           )}
-          <Affiliate
-            text={affiliateText}
-            url={affiliateUrl}
-            callback={this.trackAffiliate}
-          />
-        </p>
-      </div>
+          {showCFP && <Cfp url={cfpUrl || url} date={cfpEndDate} />}
+          <div className={classNames(styles.topicsList, styles.Footer)}>
+            <Topics topics={topics} />
+          </div>
+          <div className={styles.Footer}>
+            <Twitter twitter={twitter} />
+          </div>
+          {cocUrl && (
+            <>
+              <dt className='visuallyHidden'>Link to code of conduct</dt>
+              <dd>
+                <span aria-hidden='true'>・</span>
+                <Link url={cocUrl} external>
+                  Code Of Conduct
+                </Link>
+              </dd>
+            </>
+          )}
+        </dl>
+      </li>
     )
-  }
-
-  private trackAffiliate = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const { href } = event.currentTarget
-    this.track('outbound-affiliate', href)
   }
 
   private trackLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
@@ -114,10 +118,13 @@ function Twitter({ twitter }: TwitterProps) {
 
   return (
     <>
-      ・
-      <Link url={`https://twitter.com/${twitter}`} external>
-        {twitter}
-      </Link>
+      <dt className='visuallyHidden'>Twitter username</dt>
+      <dd>
+        <span aria-hidden='true'>・</span>
+        <Link url={`https://twitter.com/${twitter}`} external>
+          {twitter}
+        </Link>
+      </dd>
     </>
   )
 }
@@ -140,9 +147,14 @@ interface CfpProps {
 
 function Cfp({ url, date }: CfpProps) {
   return (
-    <Link url={url} external className={styles.cfp}>
-      CFP closes {formatDate(date)}
-    </Link>
+    <>
+      <dt className='visuallyHidden'>Call for paper end date</dt>
+      <dd>
+        <Link url={url} external className={styles.cfp}>
+          CFP closes {formatDate(date)}
+        </Link>
+      </dd>
+    </>
   )
 }
 
@@ -151,30 +163,23 @@ interface TopicsProps {
 }
 
 function Topics({ topics }: TopicsProps) {
-  return <>{topics.map((topic) => `#${topic}`).join(' ')}</>
+  const topicsList = topics.map((topic) => (
+    <li key={topic} className={styles.topic}>
+      <span aria-hidden='true'>#</span>
+      {topic}
+    </li>
+  ))
+
+  return (
+    <>
+      <dt className='visuallyHidden'>Topics</dt>
+      <dd>
+        <ul className={styles.topics}>{topicsList}</ul>
+      </dd>
+    </>
+  )
 }
 
 function idify(conferenceName: string, startDate: string) {
   return `${conferenceName.toLocaleLowerCase().replace(/ /g, '-')}-${startDate}`
-}
-
-interface AffiliateProps {
-  url: string
-  text: string
-  callback: (event: React.MouseEvent<HTMLAnchorElement>) => void
-}
-
-function Affiliate({ url, text, callback }: AffiliateProps) {
-  if (!url) {
-    return null
-  }
-
-  return (
-    <>
-      ・
-      <Link onClick={callback} url={url} external>
-        <span className={styles.promocode}>{text}</span>
-      </Link>
-    </>
-  )
 }

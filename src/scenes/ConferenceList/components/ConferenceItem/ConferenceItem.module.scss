@@ -20,7 +20,34 @@
   color: color(gray);
 }
 
+.topics {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .topic {
   margin-right: spacing(extra-tight);
   vertical-align: middle;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.dl {
+  margin: 0;
+  line-height: 1.5;
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  div {
+    float: left;
+  }
+  dd {
+    margin-left: 0;
+  }
 }

@@ -11,8 +11,6 @@ export interface Conference {
   twitter: string
   cfpEndDate: string
   cfpUrl: string
-  affiliateText: string
-  affiliateUrl: string
   cocUrl: string
   offersSignLanguageOrCC: boolean
 }
