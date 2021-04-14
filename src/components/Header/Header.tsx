@@ -18,14 +18,18 @@ const Header: React.FC<Props> = ({
   return (
     <header className={styles.Header}>
       <div className={styles.Title}>
-        <h1 className='visuallyHidden'>{searchEngineTitle || title}</h1>
-        <Heading element='p'>{title}</Heading>
+        <hgroup>
+          <h1 aria-hidden='true' className='visuallyHidden'>
+            {searchEngineTitle || title}
+          </h1>
+          <Heading element='h1'>{title}</Heading>
 
-        {subtitle && (
-          <Heading element='h2' level='sub'>
-            {subtitle}
-          </Heading>
-        )}
+          {subtitle && (
+            <Heading element='h2' level='sub'>
+              {subtitle}
+            </Heading>
+          )}
+        </hgroup>
 
         {backButton && (
           <Link routed url='/'>

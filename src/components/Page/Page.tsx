@@ -29,7 +29,9 @@ const Page: React.FC<ComposedProps> = ({
 
       <Header {...headerProps} />
 
-      <div className={classnames({ [styles.Content]: narrow })}>{children}</div>
+      <main className={classnames({ [styles.Content]: narrow })}>
+        {children}
+      </main>
 
       <Footer />
     </div>

@@ -68,13 +68,8 @@ const Head = () => {
               ga('send', 'pageview');
           `}
         </script>
+        <link rel='icon' type='image/png' href={faviconUrl} />
       </Helmet>
-      <link rel='icon' type='image/png' href={faviconUrl} />
-      <link
-        rel='icon'
-        type='image/png'
-        href={`https://confs.tech${faviconUrl}`}
-      />
     </>
   )
 }

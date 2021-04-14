@@ -39,7 +39,7 @@ const ConferenceList: React.FC<Props> = ({
   const confs = groupAndSortConferences(filteredConferences, sortBy)
 
   return (
-    <div className={styles.Wrapper}>
+    <section className={styles.Wrapper}>
       {hits.length === 0 && (
         <div className={styles.NoResults}>No results found.</div>
       )}
@@ -81,7 +81,7 @@ const ConferenceList: React.FC<Props> = ({
           Load more
         </Link>
       )}
-    </div>
+    </section>
   )
 }
 
