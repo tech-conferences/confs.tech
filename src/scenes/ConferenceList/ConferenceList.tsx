@@ -150,11 +150,11 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
           <Link url={getCfpUrl(showCFP)}>
             {showCFP ? 'Hide Call for Papers' : 'Show Call for Papers'}
           </Link>
-          <Link onClick={toggleNewsletterBanner}>
-            Subscribe to our Newsletter
-          </Link>
           <Link url='https://github.com/tech-conferences/confs.tech' external>
             ★ on GitHub
+          </Link>
+          <Link button onClick={toggleNewsletterBanner}>
+            Subscribe to our Newsletter
           </Link>
         </p>
         {showNewsletterBanner && (

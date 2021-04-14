@@ -2,6 +2,7 @@
 
 @mixin link() {
   color: color(accent);
+  font-family: font-family(base);
   display: inline-block;
   position: relative;
   cursor: pointer;

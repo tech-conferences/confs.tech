@@ -6,7 +6,11 @@
 
 .Heading {
   font-weight: bold;
-  font-family: font-family(heading);
+
+  &,
+  & a {
+    font-family: font-family(heading);
+  }
 }
 
 .Inner {
@@ -40,8 +44,8 @@
 
 .Heading-sub {
   font-size: 1em;
-  font-family: font-family(base);
   font-weight: normal;
+  font-family: font-family(base);
   color: color(gray);
   margin: 0 0 spacing(tight) 0;
 
