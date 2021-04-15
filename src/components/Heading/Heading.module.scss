@@ -49,6 +49,10 @@
   color: color(gray);
   margin: 0 0 spacing(tight) 0;
 
+  :global(.theme--dark) & {
+    color: color(gray, baseDark);
+  }
+
   @include media($media-query--tablet-up) {
     margin: 0 0 spacing(extra-loose) 0;
   }
