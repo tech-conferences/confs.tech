@@ -19,10 +19,12 @@ const Header: React.FC<Props> = ({
     <header className={styles.Header}>
       <div className={styles.Title}>
         <hgroup>
-          <h1 aria-hidden='true' className='visuallyHidden'>
-            {searchEngineTitle || title}
-          </h1>
-          <Heading element='h1'>{title}</Heading>
+          <Heading element='h1'>
+            <span aria-hidden='true' className='visuallyHidden'>
+              {searchEngineTitle || title}
+            </span>
+            {title}
+          </Heading>
 
           {subtitle && (
             <Heading element='h2' level='sub'>
