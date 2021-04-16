@@ -73,3 +73,5 @@ export function paramsFromUrl(urlQueryString: any, paramKey: string) {
 
   return urlQueryString[paramKey]?.split(QUERY_SEPARATOR)
 }
+
+export const dateToTime = (date: Date) => Math.round(date.getTime() / 1000)

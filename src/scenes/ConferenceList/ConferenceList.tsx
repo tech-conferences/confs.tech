@@ -1,4 +1,5 @@
 import algoliasearch from 'algoliasearch/lite'
+import { subMonths } from 'date-fns'
 import qs from 'qs'
 import React, { useState } from 'react'
 import {
@@ -27,11 +28,12 @@ import {
   paramsFromUrl,
   getFirstTopic,
   getCfpUrl,
+  dateToTime,
   QUERY_SEPARATOR,
 } from './utils'
 
 const CURRENT_YEAR = new Date().getFullYear()
-const TODAY = Math.round(new Date().getTime() / 1000)
+const TODAY = new Date()
 
 interface Props {
   showCFP: boolean
@@ -55,9 +57,13 @@ const searchClient = algoliasearch(
 )
 
 const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
+  const urlQueryString = qs.parse(window.location.search.replace('?', ''))
+
   const [hitsPerPage, setHitsPerPage] = useState(600)
   const [sortBy, setSortBy] = useState('startDate')
-  const [showPast, setShowPast] = useState(false)
+  const [pastConferencePage, setPastConferencePage] = useState(
+    urlQueryString.pastPage ? Number(urlQueryString.pastPage) : 0
+  )
   const [showNewsletterBanner, toggleNewsletterBanner] = useToggle(false)
   const history = useHistory()
 
@@ -67,8 +73,6 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
     topic: string
     country: string
   }>()
-
-  const urlQueryString = qs.parse(window.location.search.replace('?', ''))
 
   const [searchState, setSearchState] = useState<SearchState>({
     toggle: {
@@ -84,8 +88,8 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
     },
   })
 
-  const togglePast = () => {
-    setShowPast(!showPast)
+  const loadPast = () => {
+    setPastConferencePage((page) => page + 1)
     window.scrollTo(0, 0)
   }
 
@@ -98,6 +102,7 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
 
     history.push(
       `?${qs.stringify({
+        ...(pastConferencePage > 0 && { pastPage: pastConferencePage }),
         online: algoliaSearchState.toggle.online,
         offersSignLanguageOrCC:
           algoliaSearchState.toggle.offersSignLanguageOrCC,
@@ -115,15 +120,29 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
   }
 
   const algoliaFilter = () => {
-    let filters = showPast ? `startDateUnix<${TODAY}` : `startDateUnix>${TODAY}`
+    let filters =
+      pastConferencePage > 0
+        ? `startDateUnix>${dateToTime(
+            subMonths(TODAY, pastConferencePage * 5)
+          )} AND startDateUnix<${dateToTime(
+            subMonths(TODAY, (pastConferencePage - 1) * 5)
+          )}`
+        : `startDateUnix>${dateToTime(TODAY)}`
+    console.log(filters)
+    console.log(pastConferencePage)
     if (showCFP) {
-      filters += String(` AND cfpEndDateUnix>${TODAY}`)
+      filters += String(` AND cfpEndDateUnix>${dateToTime(TODAY)}`)
     }
+
     return filters
   }
 
   const loadMore = () => {
     setHitsPerPage(hitsPerPage + 50)
+  }
+
+  const hidePastConferences = () => {
+    setPastConferencePage(0)
   }
 
   return (
@@ -212,6 +231,17 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
           <ShowingResulstsCount />
         </div>
         <ScrollToConference hash={location.hash} />
+        {pastConferencePage > 0 && (
+          <p className={styles.LinkGroup}>
+            <Link button onClick={loadPast}>
+              See more conferences from the past
+            </Link>
+            <Link button onClick={hidePastConferences}>
+              Hide past conferences
+            </Link>
+          </p>
+        )}
+
         <ConferenceList
           onLoadMore={loadMore}
           sortBy={sortBy}
@@ -219,9 +249,15 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
         />
       </InstantSearch>
 
-      <p className={styles.FooterLinks}>
-        <Link selected={showPast} onClick={togglePast}>
-          {showPast ? 'Hide past conferences' : 'See past conferences'}
+      <p className={styles.LinkGroup}>
+        <Link
+          button
+          selected={pastConferencePage > 0}
+          onClick={pastConferencePage > 0 ? hidePastConferences : loadPast}
+        >
+          {pastConferencePage > 0
+            ? 'Hide past conferences'
+            : 'See past conferences'}
         </Link>
       </p>
     </Page>
