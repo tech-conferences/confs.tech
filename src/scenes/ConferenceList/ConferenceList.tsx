@@ -99,22 +99,30 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
 
   const updateUrlQueryParams = (algoliaSearchState: SearchState) => {
     setSearchState(algoliaSearchState)
-
+    const online = algoliaSearchState.toggle.online
+    const offersSignLanguageOrCC =
+      algoliaSearchState.toggle.offersSignLanguageOrCC
+    const continents = (algoliaSearchState.refinementList.continent || []).join(
+      QUERY_SEPARATOR
+    )
+    const countries = (algoliaSearchState.refinementList.country || []).join(
+      QUERY_SEPARATOR
+    )
+    const topics = (algoliaSearchState.refinementList.topics || []).join(
+      QUERY_SEPARATOR
+    )
     history.push(
       `?${qs.stringify({
         ...(pastConferencePage > 0 && { pastPage: pastConferencePage }),
-        online: algoliaSearchState.toggle.online,
-        offersSignLanguageOrCC:
-          algoliaSearchState.toggle.offersSignLanguageOrCC,
-        continents: (algoliaSearchState.refinementList.continent || []).join(
-          QUERY_SEPARATOR
-        ),
-        countries: (algoliaSearchState.refinementList.country || []).join(
-          QUERY_SEPARATOR
-        ),
-        topics: (algoliaSearchState.refinementList.topics || []).join(
-          QUERY_SEPARATOR
-        ),
+        ...(online && {
+          online: online,
+        }),
+        ...(offersSignLanguageOrCC && {
+          offersSignLanguageOrCC: offersSignLanguageOrCC,
+        }),
+        ...(continents && { continents: continents }),
+        ...(countries && { countries: countries }),
+        ...(topics && { topics: topics }),
       })}`
     )
   }
