@@ -93,6 +93,10 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
     window.scrollTo(0, 0)
   }
 
+  const loadRecent = () => {
+    setPastConferencePage((page) => page - 1)
+  }
+
   const sortByCfpEndDate = () => {
     setSortBy(sortBy === 'cfpEndDate' ? 'startDate' : 'cfpEndDate')
   }
@@ -258,15 +262,21 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
       </InstantSearch>
 
       <p className={styles.LinkGroup}>
-        <Link
-          button
-          selected={pastConferencePage > 0}
-          onClick={pastConferencePage > 0 ? hidePastConferences : loadPast}
-        >
-          {pastConferencePage > 0
-            ? 'Hide past conferences'
-            : 'See past conferences'}
-        </Link>
+        {pastConferencePage > 0 && (
+          <Link button onClick={loadRecent}>
+            See more recent conferences
+          </Link>
+        )}
+        {pastConferencePage === 0 && (
+          <Link button onClick={loadPast}>
+            See past conferences
+          </Link>
+        )}
+        {pastConferencePage > 1 && (
+          <Link button onClick={hidePastConferences}>
+            Hide past conferences
+          </Link>
+        )}
       </p>
     </Page>
   )
