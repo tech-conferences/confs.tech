@@ -11,7 +11,7 @@ const CfpHeader = ({ sortByCfpEndDate, sortBy }: Props) => {
   return (
     <div className={styles.CFPHeader}>
       <Heading element='h2' level={2}>
-        Showing Call for Papers
+        Call for Papers
       </Heading>
       <div>
         <span role='img' aria-label='Sorted by' title='Sorted by'>

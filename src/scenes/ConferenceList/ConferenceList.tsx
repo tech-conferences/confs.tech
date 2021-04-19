@@ -11,9 +11,17 @@ import {
   connectStats,
 } from 'react-instantsearch-dom'
 import { useHistory, useParams } from 'react-router'
-import { Search, Page, Link, ScrollToConference } from 'src/components'
+import {
+  Divider,
+  Heading,
+  Search,
+  Page,
+  Link,
+  ScrollToConference,
+} from 'src/components'
 import { TOPICS } from 'src/components/config'
 import { useToggle } from 'src/hooks'
+import { SortBy, SortDirection } from 'types/global'
 
 import './RefinementList.module.scss'
 import './CurrentRefinement.module.scss'
@@ -36,7 +44,8 @@ const CURRENT_YEAR = new Date().getFullYear()
 const TODAY = new Date()
 
 interface Props {
-  showCFP: boolean
+  showCFP?: boolean
+  showPast?: boolean
 }
 
 interface SearchState {
@@ -51,28 +60,34 @@ interface SearchState {
   }
 }
 
+interface Params {
+  topic: string
+  country: string
+}
+
 const searchClient = algoliasearch(
   process.env.REACT_APP_ALGOLIA_APPLICATION_ID as string,
   process.env.REACT_APP_ALGOLIA_API_KEY as string
 )
 
-const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
+const ConferenceListPage: React.FC<Props> = ({
+  showCFP = false,
+  showPast = false,
+}) => {
   const urlQueryString = qs.parse(window.location.search.replace('?', ''))
-
-  const [hitsPerPage, setHitsPerPage] = useState(600)
-  const [sortBy, setSortBy] = useState('startDate')
-  const [pastConferencePage, setPastConferencePage] = useState(
-    urlQueryString.pastPage ? Number(urlQueryString.pastPage) : 0
-  )
-  const [showNewsletterBanner, toggleNewsletterBanner] = useToggle(false)
-  const history = useHistory()
-
   // These are sets in the url, when reaching through /ux/France for instance
   // See routes definitions in App.tsx
-  const { topic, country } = useParams<{
-    topic: string
-    country: string
-  }>()
+  const { topic, country } = useParams<Params>()
+
+  const [hitsPerPage, setHitsPerPage] = useState(600)
+  const [sortBy, setSortBy] = useState<SortBy>('startDate')
+  const [sortDirection] = useState<SortDirection>(showPast ? 'desc' : 'asc')
+  const [pastConferencePage, setPastConferencePage] = useState(
+    urlQueryString.page ? Number(urlQueryString.page) : 1
+  )
+
+  const [showNewsletterBanner, toggleNewsletterBanner] = useToggle(false)
+  const history = useHistory()
 
   const [searchState, setSearchState] = useState<SearchState>({
     toggle: {
@@ -87,15 +102,6 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
         paramsFromUrl(urlQueryString, 'topics') || [topic].filter(Boolean), // Removes nullish values,
     },
   })
-
-  const loadPast = () => {
-    setPastConferencePage((page) => page + 1)
-    window.scrollTo(0, 0)
-  }
-
-  const loadRecent = () => {
-    setPastConferencePage((page) => page - 1)
-  }
 
   const sortByCfpEndDate = () => {
     setSortBy(sortBy === 'cfpEndDate' ? 'startDate' : 'cfpEndDate')
@@ -117,7 +123,6 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
     )
     history.push(
       `?${qs.stringify({
-        ...(pastConferencePage > 0 && { pastPage: pastConferencePage }),
         ...(online && {
           online: online,
         }),
@@ -132,16 +137,14 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
   }
 
   const algoliaFilter = () => {
-    let filters =
-      pastConferencePage > 0
-        ? `startDateUnix>${dateToTime(
-            subMonths(TODAY, pastConferencePage * 5)
-          )} AND startDateUnix<${dateToTime(
-            subMonths(TODAY, (pastConferencePage - 1) * 5)
-          )}`
-        : `startDateUnix>${dateToTime(TODAY)}`
-    console.log(filters)
-    console.log(pastConferencePage)
+    let filters = showPast
+      ? `startDateUnix>${dateToTime(
+          subMonths(TODAY, pastConferencePage * 5)
+        )} AND startDateUnix<${dateToTime(
+          subMonths(TODAY, (pastConferencePage - 1) * 5)
+        )}`
+      : `startDateUnix>${dateToTime(TODAY)}`
+
     if (showCFP) {
       filters += String(` AND cfpEndDateUnix>${dateToTime(TODAY)}`)
     }
@@ -151,10 +154,6 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
 
   const loadMore = () => {
     setHitsPerPage(hitsPerPage + 50)
-  }
-
-  const hidePastConferences = () => {
-    setPastConferencePage(0)
   }
 
   return (
@@ -192,9 +191,6 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
           <NewsletterForm
             topic={getFirstTopic(searchState.refinementList.topics)}
           />
-        )}
-        {showCFP && (
-          <CFPHeader sortByCfpEndDate={sortByCfpEndDate} sortBy={sortBy} />
         )}
         <Search />
         <RefinementList
@@ -243,39 +239,42 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
           <ShowingResulstsCount />
         </div>
         <ScrollToConference hash={location.hash} />
-        {pastConferencePage > 0 && (
-          <p className={styles.LinkGroup}>
-            <Link button onClick={loadPast}>
-              See more conferences from the past
-            </Link>
-            <Link button onClick={hidePastConferences}>
-              Hide past conferences
-            </Link>
-          </p>
+
+        <Divider />
+        {showCFP && (
+          <CFPHeader sortByCfpEndDate={sortByCfpEndDate} sortBy={sortBy} />
+        )}
+        {showPast && (
+          <>
+            <Heading element='h2' level={2}>
+              Past conferences
+            </Heading>
+            <p className={styles.LinkGroup}>
+              <Link url='/'>Upcoming conferences</Link>
+            </p>
+          </>
         )}
 
         <ConferenceList
           onLoadMore={loadMore}
           sortBy={sortBy}
+          sortDirection={sortDirection}
           showCFP={showCFP}
         />
       </InstantSearch>
 
       <p className={styles.LinkGroup}>
-        {pastConferencePage > 0 && (
-          <Link button onClick={loadRecent}>
-            See more recent conferences
-          </Link>
-        )}
-        {pastConferencePage === 0 && (
-          <Link button onClick={loadPast}>
-            See past conferences
-          </Link>
-        )}
-        {pastConferencePage > 1 && (
-          <Link button onClick={hidePastConferences}>
-            Hide past conferences
-          </Link>
+        {!showPast && <Link url='/past'>Show past conferences</Link>}
+        {showPast && (
+          <>
+            <Link
+              button
+              onClick={() => setPastConferencePage((page) => page + 1)}
+            >
+              Load more
+            </Link>
+            <Link url='/'>Go back to upcoming conferences</Link>
+          </>
         )}
       </p>
     </Page>

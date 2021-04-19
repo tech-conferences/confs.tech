@@ -1,4 +1,5 @@
 @import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/colors';
 
 .ConferenceList {
   width: 100%;
@@ -15,6 +16,16 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: spacing(loose) 0 spacing(base) 0;
+  position: sticky;
+  top: 0;
+  padding: spacing(base) 0;
+  border-bottom: 1px solid color(grey, darker);
+  z-index: 10;
+  background-color: color(background, light);
+
+  :global(.theme--dark) & {
+    background-color: color(background, dark);
+  }
 
   h2 {
     margin: 0;
