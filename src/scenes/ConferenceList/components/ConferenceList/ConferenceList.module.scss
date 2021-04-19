@@ -19,11 +19,12 @@
   position: sticky;
   top: 0;
   padding: spacing(base) 0;
-  border-bottom: 1px solid color(grey, darker);
   z-index: 10;
+  border-bottom: 1px solid color(grey, lighter);
   background-color: color(background, light);
 
   :global(.theme--dark) & {
+    border-bottom: 1px solid color(grey, darker);
     background-color: color(background, dark);
   }
 
