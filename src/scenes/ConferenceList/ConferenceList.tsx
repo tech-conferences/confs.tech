@@ -35,7 +35,6 @@ import {
   transformCurrentRefinements,
   paramsFromUrl,
   getFirstTopic,
-  getCfpUrl,
   dateToTime,
   QUERY_SEPARATOR,
 } from './utils'
@@ -177,9 +176,9 @@ const ConferenceListPage: React.FC<Props> = ({
       >
         <Configure hitsPerPage={hitsPerPage} filters={algoliaFilter()} />
         <p className={styles.HeaderLinks}>
-          <Link url={getCfpUrl(showCFP)}>
-            {showCFP ? 'Hide Call for Papers' : 'Show Call for Papers'}
-          </Link>
+          {(showPast || showCFP) && <Link url='/'>Upcoming conferences</Link>}
+          {!showCFP && <Link url='/cfp'>Call for Papers</Link>}
+          {!showPast && <Link url='/past'>Past conferences</Link>}
           <Link url='https://github.com/tech-conferences/confs.tech' external>
             ★ on GitHub
           </Link>
@@ -249,9 +248,6 @@ const ConferenceListPage: React.FC<Props> = ({
             <Heading element='h2' level={2}>
               Past conferences
             </Heading>
-            <p className={styles.LinkGroup}>
-              <Link url='/'>Upcoming conferences</Link>
-            </p>
           </>
         )}
 
@@ -263,20 +259,16 @@ const ConferenceListPage: React.FC<Props> = ({
         />
       </InstantSearch>
 
-      <p className={styles.LinkGroup}>
-        {!showPast && <Link url='/past'>Show past conferences</Link>}
-        {showPast && (
-          <>
-            <Link
-              button
-              onClick={() => setPastConferencePage((page) => page + 1)}
-            >
-              Load more
-            </Link>
-            <Link url='/'>Go back to upcoming conferences</Link>
-          </>
-        )}
-      </p>
+      {showPast && (
+        <p>
+          <Link
+            button
+            onClick={() => setPastConferencePage((page) => page + 1)}
+          >
+            Load more
+          </Link>
+        </p>
+      )}
     </Page>
   )
 }
