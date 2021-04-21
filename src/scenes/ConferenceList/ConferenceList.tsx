@@ -1,4 +1,5 @@
 import algoliasearch from 'algoliasearch/lite'
+import { subMonths } from 'date-fns'
 import qs from 'qs'
 import React, { useState } from 'react'
 import {
@@ -10,9 +11,17 @@ import {
   connectStats,
 } from 'react-instantsearch-dom'
 import { useHistory, useParams } from 'react-router'
-import { Search, Page, Link, ScrollToConference } from 'src/components'
+import {
+  Divider,
+  Heading,
+  Search,
+  Page,
+  Link,
+  ScrollToConference,
+} from 'src/components'
 import { TOPICS } from 'src/components/config'
 import { useToggle } from 'src/hooks'
+import { SortBy, SortDirection } from 'types/global'
 
 import './RefinementList.module.scss'
 import './CurrentRefinement.module.scss'
@@ -26,15 +35,16 @@ import {
   transformCurrentRefinements,
   paramsFromUrl,
   getFirstTopic,
-  getCfpUrl,
+  dateToTime,
   QUERY_SEPARATOR,
 } from './utils'
 
 const CURRENT_YEAR = new Date().getFullYear()
-const TODAY = Math.round(new Date().getTime() / 1000)
+const TODAY = new Date()
 
 interface Props {
-  showCFP: boolean
+  showCFP?: boolean
+  showPast?: boolean
 }
 
 interface SearchState {
@@ -49,26 +59,34 @@ interface SearchState {
   }
 }
 
+interface Params {
+  topic: string
+  country: string
+}
+
 const searchClient = algoliasearch(
   process.env.REACT_APP_ALGOLIA_APPLICATION_ID as string,
   process.env.REACT_APP_ALGOLIA_API_KEY as string
 )
 
-const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
-  const [hitsPerPage, setHitsPerPage] = useState(600)
-  const [sortBy, setSortBy] = useState('startDate')
-  const [showPast, setShowPast] = useState(false)
-  const [showNewsletterBanner, toggleNewsletterBanner] = useToggle(false)
-  const history = useHistory()
-
+const ConferenceListPage: React.FC<Props> = ({
+  showCFP = false,
+  showPast = false,
+}) => {
+  const urlQueryString = qs.parse(window.location.search.replace('?', ''))
   // These are sets in the url, when reaching through /ux/France for instance
   // See routes definitions in App.tsx
-  const { topic, country } = useParams<{
-    topic: string
-    country: string
-  }>()
+  const { topic, country } = useParams<Params>()
 
-  const urlQueryString = qs.parse(window.location.search.replace('?', ''))
+  const [hitsPerPage, setHitsPerPage] = useState(600)
+  const [sortBy, setSortBy] = useState<SortBy>('startDate')
+  const [sortDirection] = useState<SortDirection>(showPast ? 'desc' : 'asc')
+  const [pastConferencePage, setPastConferencePage] = useState(
+    urlQueryString.page ? Number(urlQueryString.page) : 1
+  )
+
+  const [showNewsletterBanner, toggleNewsletterBanner] = useToggle(false)
+  const history = useHistory()
 
   const [searchState, setSearchState] = useState<SearchState>({
     toggle: {
@@ -84,41 +102,52 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
     },
   })
 
-  const togglePast = () => {
-    setShowPast(!showPast)
-    window.scrollTo(0, 0)
-  }
-
   const sortByCfpEndDate = () => {
     setSortBy(sortBy === 'cfpEndDate' ? 'startDate' : 'cfpEndDate')
   }
 
   const updateUrlQueryParams = (algoliaSearchState: SearchState) => {
     setSearchState(algoliaSearchState)
-
+    const online = algoliaSearchState.toggle.online
+    const offersSignLanguageOrCC =
+      algoliaSearchState.toggle.offersSignLanguageOrCC
+    const continents = (algoliaSearchState.refinementList.continent || []).join(
+      QUERY_SEPARATOR
+    )
+    const countries = (algoliaSearchState.refinementList.country || []).join(
+      QUERY_SEPARATOR
+    )
+    const topics = (algoliaSearchState.refinementList.topics || []).join(
+      QUERY_SEPARATOR
+    )
     history.push(
       `?${qs.stringify({
-        online: algoliaSearchState.toggle.online,
-        offersSignLanguageOrCC:
-          algoliaSearchState.toggle.offersSignLanguageOrCC,
-        continents: (algoliaSearchState.refinementList.continent || []).join(
-          QUERY_SEPARATOR
-        ),
-        countries: (algoliaSearchState.refinementList.country || []).join(
-          QUERY_SEPARATOR
-        ),
-        topics: (algoliaSearchState.refinementList.topics || []).join(
-          QUERY_SEPARATOR
-        ),
+        ...(online && {
+          online: online,
+        }),
+        ...(offersSignLanguageOrCC && {
+          offersSignLanguageOrCC: offersSignLanguageOrCC,
+        }),
+        ...(continents && { continents: continents }),
+        ...(countries && { countries: countries }),
+        ...(topics && { topics: topics }),
       })}`
     )
   }
 
   const algoliaFilter = () => {
-    let filters = showPast ? `startDateUnix<${TODAY}` : `startDateUnix>${TODAY}`
+    let filters = showPast
+      ? `startDateUnix>${dateToTime(
+          subMonths(TODAY, pastConferencePage * 5)
+        )} AND startDateUnix<${dateToTime(
+          subMonths(TODAY, (pastConferencePage - 1) * 5)
+        )}`
+      : `startDateUnix>${dateToTime(TODAY)}`
+
     if (showCFP) {
-      filters += String(` AND cfpEndDateUnix>${TODAY}`)
+      filters += String(` AND cfpEndDateUnix>${dateToTime(TODAY)}`)
     }
+
     return filters
   }
 
@@ -147,9 +176,9 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
       >
         <Configure hitsPerPage={hitsPerPage} filters={algoliaFilter()} />
         <p className={styles.HeaderLinks}>
-          <Link url={getCfpUrl(showCFP)}>
-            {showCFP ? 'Hide Call for Papers' : 'Show Call for Papers'}
-          </Link>
+          {(showPast || showCFP) && <Link url='/'>Upcoming conferences</Link>}
+          {!showCFP && <Link url='/cfp'>Call for Papers</Link>}
+          {!showPast && <Link url='/past'>Past conferences</Link>}
           <Link url='https://github.com/tech-conferences/confs.tech' external>
             ★ on GitHub
           </Link>
@@ -161,9 +190,6 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
           <NewsletterForm
             topic={getFirstTopic(searchState.refinementList.topics)}
           />
-        )}
-        {showCFP && (
-          <CFPHeader sortByCfpEndDate={sortByCfpEndDate} sortBy={sortBy} />
         )}
         <Search />
         <RefinementList
@@ -212,18 +238,37 @@ const ConferenceListPage: React.FC<Props> = ({ showCFP }) => {
           <ShowingResulstsCount />
         </div>
         <ScrollToConference hash={location.hash} />
+
+        <Divider />
+        {showCFP && (
+          <CFPHeader sortByCfpEndDate={sortByCfpEndDate} sortBy={sortBy} />
+        )}
+        {showPast && (
+          <>
+            <Heading element='h2' level={2}>
+              Past conferences
+            </Heading>
+          </>
+        )}
+
         <ConferenceList
           onLoadMore={loadMore}
           sortBy={sortBy}
+          sortDirection={sortDirection}
           showCFP={showCFP}
         />
       </InstantSearch>
 
-      <p className={styles.FooterLinks}>
-        <Link selected={showPast} onClick={togglePast}>
-          {showPast ? 'Hide past conferences' : 'See past conferences'}
-        </Link>
-      </p>
+      {showPast && (
+        <p>
+          <Link
+            button
+            onClick={() => setPastConferencePage((page) => page + 1)}
+          >
+            Load more
+          </Link>
+        </p>
+      )}
     </Page>
   )
 }

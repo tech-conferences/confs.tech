@@ -44,3 +44,8 @@
   font-size: font-size(body, smaller);
   margin: 0;
 }
+
+.LinkGroup button,
+.LinkGroup a {
+  margin: 0 spacing(loose) 0 0;
+}

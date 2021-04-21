@@ -57,14 +57,6 @@ export function getFirstTopic(topics: string[]) {
   return topics[0]
 }
 
-export function getCfpUrl(showCFP: boolean) {
-  if (showCFP) {
-    return `${location.pathname}`.replace('/cfp', '')
-  } else {
-    return `/cfp${location.pathname}`
-  }
-}
-
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function paramsFromUrl(urlQueryString: any, paramKey: string) {
   if (!urlQueryString[paramKey]) {
@@ -73,3 +65,5 @@ export function paramsFromUrl(urlQueryString: any, paramKey: string) {
 
   return urlQueryString[paramKey]?.split(QUERY_SEPARATOR)
 }
+
+export const dateToTime = (date: Date) => Math.round(date.getTime() / 1000)

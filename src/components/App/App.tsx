@@ -11,6 +11,7 @@ export default function App() {
         <Switch>
           <Route path='/pages/:page' component={renderPages} />
           <Route path='/conferences/new' component={ConferenceForm} />
+          <Route path='/past' render={renderPast} />
           <Route path='/cfp/:topic/:country' render={renderCFP} />
           <Route path='/cfp/:topic/' render={renderCFP} />
           <Route path='/cfp' render={renderCFP} />
@@ -26,6 +27,10 @@ export default function App() {
 }
 function renderCFP() {
   return <ConferenceList showCFP />
+}
+
+function renderPast() {
+  return <ConferenceList showPast />
 }
 
 function renderPages({ match }: RouteComponentProps<{ page: string }>) {
