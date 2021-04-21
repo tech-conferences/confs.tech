@@ -28,12 +28,6 @@
   }
 }
 
-.ToggleRefinementsGroup > div {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: spacing(loose);
-}
-
 .CurrentRefinements {
   display: flex;
   justify-content: space-between;
@@ -48,4 +42,27 @@
 .LinkGroup button,
 .LinkGroup a {
   margin: 0 spacing(loose) 0 0;
+}
+
+.OnlineRadios {
+  margin-bottom: spacing(base);
+  display: flex;
+
+  input {
+    width: auto;
+  }
+
+  label {
+    margin-right: spacing(loose);
+    cursor: pointer;
+  }
+
+  input {
+    margin: 0 spacing(tight) 0 0;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+  }
 }
