@@ -1,7 +1,7 @@
 import algoliasearch from 'algoliasearch/lite'
 import { subMonths } from 'date-fns'
 import qs from 'qs'
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import {
   Configure,
   InstantSearch,
@@ -49,7 +49,6 @@ interface Props {
 
 interface SearchState {
   toggle: {
-    online: boolean
     offersSignLanguageOrCC: boolean
   }
   refinementList: {
@@ -69,6 +68,8 @@ const searchClient = algoliasearch(
   process.env.REACT_APP_ALGOLIA_API_KEY as string
 )
 
+type OnlineOptions = 'hybrid' | 'online' | 'inPerson'
+
 const ConferenceListPage: React.FC<Props> = ({
   showCFP = false,
   showPast = false,
@@ -80,6 +81,8 @@ const ConferenceListPage: React.FC<Props> = ({
 
   const [hitsPerPage, setHitsPerPage] = useState(600)
   const [sortBy, setSortBy] = useState<SortBy>('startDate')
+  const [online, setOnline] = useState<OnlineOptions>('hybrid')
+
   const [sortDirection] = useState<SortDirection>(showPast ? 'desc' : 'asc')
   const [pastConferencePage, setPastConferencePage] = useState(
     urlQueryString.page ? Number(urlQueryString.page) : 1
@@ -90,7 +93,6 @@ const ConferenceListPage: React.FC<Props> = ({
 
   const [searchState, setSearchState] = useState<SearchState>({
     toggle: {
-      online: urlQueryString.online === 'true',
       offersSignLanguageOrCC: urlQueryString.offersSignLanguageOrCC === 'true',
     },
     refinementList: {
@@ -108,7 +110,6 @@ const ConferenceListPage: React.FC<Props> = ({
 
   const updateUrlQueryParams = (algoliaSearchState: SearchState) => {
     setSearchState(algoliaSearchState)
-    const online = algoliaSearchState.toggle.online
     const offersSignLanguageOrCC =
       algoliaSearchState.toggle.offersSignLanguageOrCC
     const continents = (algoliaSearchState.refinementList.continent || []).join(
@@ -135,7 +136,7 @@ const ConferenceListPage: React.FC<Props> = ({
     )
   }
 
-  const algoliaFilter = () => {
+  const algoliaFilter = useMemo(() => {
     let filters = showPast
       ? `startDateUnix>${dateToTime(
           subMonths(TODAY, pastConferencePage * 5)
@@ -148,8 +149,12 @@ const ConferenceListPage: React.FC<Props> = ({
       filters += String(` AND cfpEndDateUnix>${dateToTime(TODAY)}`)
     }
 
+    if (online === 'inPerson' || online === 'online') {
+      filters += String(` AND online=${online === 'online' ? 1 : 0}`)
+    }
+
     return filters
-  }
+  }, [showPast, online])
 
   const loadMore = () => {
     setHitsPerPage(hitsPerPage + 50)
@@ -174,7 +179,7 @@ const ConferenceListPage: React.FC<Props> = ({
         searchState={searchState}
         indexName='prod_conferences'
       >
-        <Configure hitsPerPage={hitsPerPage} filters={algoliaFilter()} />
+        <Configure hitsPerPage={hitsPerPage} filters={algoliaFilter} />
         <p className={styles.HeaderLinks}>
           {(showPast || showCFP) && <Link url='/'>Upcoming conferences</Link>}
           {!showCFP && <Link url='/cfp'>Call for Papers</Link>}
@@ -218,14 +223,8 @@ const ConferenceListPage: React.FC<Props> = ({
             Boolean
           )}
         />
-        <div className={styles.ToggleRefinementsGroup}>
-          <ToggleRefinement
-            attribute='online'
-            label='Online conferences'
-            value={true}
-            defaultRefinement={searchState.toggle.online}
-          />
-
+        <div>
+          <OnlineRefinement value={online} onChange={setOnline} />
           <ToggleRefinement
             attribute='offersSignLanguageOrCC'
             label='Offers interpretation to International sign language or closed captions'
@@ -281,3 +280,51 @@ const ShowingResulstsCount = connectStats(({ nbHits }) => {
   )
 })
 export default ConferenceListPage
+
+interface OnlineRefinementProps {
+  value: OnlineOptions
+  onChange(arg: OnlineOptions): void
+}
+const OnlineRefinement = ({ value, onChange }: OnlineRefinementProps) => {
+  console.log(value)
+  return (
+    <div className={styles.OnlineRadios}>
+      <label>
+        <input
+          name='online'
+          checked={value === 'hybrid'}
+          value='hybrid'
+          type='radio'
+          onChange={(e) => {
+            onChange(e.target.value as OnlineOptions)
+          }}
+        />
+        <span>In person & Online</span>
+      </label>
+      <label>
+        <input
+          name='online'
+          checked={value === 'online'}
+          value='online'
+          type='radio'
+          onChange={(e) => {
+            onChange(e.target.value as OnlineOptions)
+          }}
+        />
+        <span>Online</span>
+      </label>
+      <label>
+        <input
+          name='online'
+          checked={value === 'inPerson'}
+          value='inPerson'
+          type='radio'
+          onChange={(e) => {
+            onChange(e.target.value as OnlineOptions)
+          }}
+        />
+        <span>In person</span>
+      </label>
+    </div>
+  )
+}
