@@ -154,7 +154,7 @@ const ConferenceListPage: React.FC<Props> = ({
     }
 
     return filters
-  }, [showPast, online])
+  }, [showPast, online, pastConferencePage])
 
   const loadMore = () => {
     setHitsPerPage(hitsPerPage + 50)
@@ -286,7 +286,6 @@ interface OnlineRefinementProps {
   onChange(arg: OnlineOptions): void
 }
 const OnlineRefinement = ({ value, onChange }: OnlineRefinementProps) => {
-  console.log(value)
   return (
     <div className={styles.OnlineRadios}>
       <label>
