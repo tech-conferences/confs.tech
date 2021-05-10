@@ -1,0 +1,24 @@
+@import 'src/components/style/foundation/media-queries';
+
+.Container {
+  display: none;
+  animation: slide cubic-bezier(0, 1.17, 0.48, 0.99) 1s forwards;
+  animation-delay: 2s;
+  transform: translateY(200%);
+
+  @include media($media-query--tablet-up) {
+    display: block;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(200%)
+  }
+  100% {
+    transform: translateX(0%)
+  }
+}

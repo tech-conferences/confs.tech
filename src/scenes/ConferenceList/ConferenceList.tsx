@@ -28,7 +28,7 @@ import './CurrentRefinement.module.scss'
 
 import styles from './ConferenceList.module.scss'
 import { ConferenceList, NewsletterForm } from './components'
-import { CFPHeader } from './components'
+import { CFPHeader, OpenCollectiveContribution } from './components'
 import {
   transformTopicRefinements,
   transformCountryRefinements,
@@ -173,6 +173,7 @@ const ConferenceListPage: React.FC<Props> = ({
       title='Find your next tech conference'
       subtitle='Open-source and crowd-sourced list of conferences around software development'
     >
+      <OpenCollectiveContribution />
       <InstantSearch
         searchClient={searchClient}
         onSearchStateChange={updateUrlQueryParams}
