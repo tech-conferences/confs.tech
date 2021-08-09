@@ -1,7 +1,6 @@
 export const CURRENT_YEAR = new Date().getFullYear() - 1
 
 export const TOPICS = {
-  'tech-comm': 'Content strategy',
   android: 'Android',
   cfml: 'ColdFusion/CFML',
   clojure: 'Clojure',
@@ -11,6 +10,7 @@ export const TOPICS = {
   devops: 'DevOps',
   dotnet: '.NET',
   elixir: 'Elixir',
+  elm: 'Elm',
   general: 'General',
   golang: 'Golang',
   graphql: 'GraphQL',
@@ -20,16 +20,17 @@ export const TOPICS = {
   java: 'Java',
   javascript: 'JavaScript',
   kotlin: 'Kotlin',
+  leadership: 'Leadership',
   networking: 'Community / Networking',
   php: 'PHP',
+  product: 'Product',
   python: 'Python',
   ruby: 'Ruby',
   rust: 'Rust',
   scala: 'Scala',
   security: 'Security',
+  testing: 'Testing',
   typescript: 'TypeScript',
-  elm: 'Elm',
-  product: 'Product',
-  leadership: 'Leadership',
+  'tech-comm': 'Content strategy',
   ux: 'Design / UX',
 }
