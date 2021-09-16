@@ -65,7 +65,7 @@ Some of the conferences have been pulled from other projects:
 
 - [See all .NET conferences](https://confs.tech/dotnet)
 - [See all Android conferences](https://confs.tech/android)
-- [See all Closure conferences](https://confs.tech/clojure)
+- [See all Clojure conferences](https://confs.tech/clojure)
 - [See all ColdFusion Markup Language conferences](https://confs.tech/cfml)
 - [See all Content strategy conferences](https://confs.tech/tech-comm)
 - [See all CSS conferences](https://confs.tech/css)
