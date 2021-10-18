@@ -6,6 +6,7 @@ import { useState, useRef, ChangeEvent } from 'react'
 import DatePicker from 'react-datepicker'
 import { Helmet } from 'react-helmet'
 import Recaptcha from 'react-recaptcha'
+import Select from 'react-select'
 import { Card, Link, InputGroup, Page } from 'src/components'
 import { TOPICS } from 'src/components/config'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
@@ -22,6 +23,14 @@ import {
 const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) =>
   TOPICS[x].toLocaleLowerCase()
 )
+
+const topicOptions = SORTED_TOPICS_KEYS.map((topic) => {
+  return {
+    value: topic,
+    label: TOPICS[topic],
+  }
+})
+
 const LOCATION_ONLINE_REGEX = /online|remote|everywhere|world|web|global|virtual|www|http/i
 const VALID_URL_REGEX = /^http(s?):\/\//
 const URL_PARAMETER_REGEX = /\?/
@@ -52,7 +61,7 @@ const defaultConference: Conference = {
   country: '',
   startDate: null,
   endDate: null,
-  topic: '',
+  topics: [],
   cfpUrl: '',
   cfpEndDate: null,
   cocUrl: '',
@@ -102,6 +111,7 @@ const ConferenceForm: React.FC = () => {
     const {
       startDate,
       endDate,
+      topics,
       city,
       country,
       name,
@@ -114,6 +124,7 @@ const ConferenceForm: React.FC = () => {
     const isNotOnline = locationType !== 'online'
     const cfp = cfpUrl || cfpEndDate
     const errors = {
+      topics: topics.length === 0,
       name: startDate
         ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !==
           -1
@@ -152,6 +163,13 @@ const ConferenceForm: React.FC = () => {
       [event.target.name]: event.target.value,
     })
   }
+
+  // const handleTopicsChange = (topics) => {
+  //   setConference({
+  //     ...conference,
+  //     topics: topics.map((topic) => topic.value),
+  //   })
+  // }
 
   const handleLocationTypeChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setLocationType(event.target.value)
@@ -234,7 +252,6 @@ const ConferenceForm: React.FC = () => {
   const {
     name,
     url,
-    topic,
     city,
     country,
     cfpUrl,
@@ -283,25 +300,21 @@ const ConferenceForm: React.FC = () => {
         <Card>
           <form onSubmit={handleFormSubmit} autoComplete='off'>
             <InputGroup>
-              <div>
+              <div className={styles.Select}>
                 <label htmlFor='type'>Topic</label>
-                <select
-                  id='type'
-                  className={classNames(hasError('topic') && styles.error)}
-                  name='topic'
-                  value={topic}
-                  required
-                  onChange={handleFieldChange}
-                >
-                  <option key='placeholder' value=''>
-                    Select a topic
-                  </option>
-                  {SORTED_TOPICS_KEYS.map((value: string) => (
-                    <option key={value} value={value}>
-                      {TOPICS[value]}
-                    </option>
-                  ))}
-                </select>
+                <Select
+                  defaultValue={null}
+                  isMulti
+                  placeholder='Select a topic'
+                  onChange={(topics) => {
+                    setConference({
+                      ...conference,
+                      topics: topics.map((topic) => topic?.value || ''),
+                    })
+                  }}
+                  options={topicOptions}
+                />
+                {errorFor('topics', 'You need to select at least one topic.')}
               </div>
             </InputGroup>
             <InputGroup>

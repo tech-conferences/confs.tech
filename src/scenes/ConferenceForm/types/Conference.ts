@@ -6,7 +6,7 @@ export interface Conference {
   online: boolean
   startDate: Date | null | undefined
   endDate: Date | null | undefined
-  topic: string
+  topics: string[]
   cfpUrl: string
   cfpEndDate: Date | null | undefined
   twitter: string
