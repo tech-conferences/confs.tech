@@ -35,7 +35,6 @@
     "fs-extra": "7.0.0",
     "gh-pages": "^2.0.0",
     "lodash": "^4.17.4",
-    "node-sass": "^5.0.0",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
@@ -52,9 +51,11 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "react-select": "^5.1.0",
     "whatwg-fetch": "2.0.4"
   },
   "devDependencies": {
+    "sass": "^1.43.2",
     "@types/algoliasearch": "^3.34.11",
     "@types/classnames": "^2.2.4",
     "@types/google.analytics": "^0.0.39",

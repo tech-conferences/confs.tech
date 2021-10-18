@@ -76,3 +76,9 @@
   font-size: font-size(body, smaller);
   color: color(gray, base);
 }
+
+.Select {
+  :global(.theme--dark) & :not(label) {
+    color: black;
+  }
+}
