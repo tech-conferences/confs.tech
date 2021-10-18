@@ -84,6 +84,7 @@ Some of the conferences have been pulled from other projects:
 - [See all Kotlin conferences](https://confs.tech/kotlin)
 - [See all Leadership conferences](https://confs.tech/product)
 - [See all networking events](https://confs.tech/networking)
+- [See all performance conferences](https://confs.tech/performance)
 - [See all PHP conferences](https://confs.tech/php)
 - [See all Product conferences](https://confs.tech/product)
 - [See all Python conferences](https://confs.tech/python)

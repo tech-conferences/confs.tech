@@ -22,6 +22,7 @@ export const TOPICS = {
   kotlin: 'Kotlin',
   leadership: 'Leadership',
   networking: 'Community / Networking',
+  performance: 'Performance',
   php: 'PHP',
   product: 'Product',
   python: 'Python',
