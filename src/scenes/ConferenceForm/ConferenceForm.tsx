@@ -305,7 +305,7 @@ const ConferenceForm: React.FC = () => {
                 <Select
                   defaultValue={null}
                   isMulti
-                  placeholder='Select a topic'
+                  placeholder='Select one or more topics'
                   onChange={(topics) => {
                     setConference({
                       ...conference,
