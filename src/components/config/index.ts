@@ -2,6 +2,7 @@ export const CURRENT_YEAR = new Date().getFullYear() - 1
 
 export const TOPICS = {
   android: 'Android',
+  api: 'API',
   cfml: 'ColdFusion/CFML',
   clojure: 'Clojure',
   cpp: 'C++',
