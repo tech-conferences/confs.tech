@@ -41,6 +41,12 @@ const Footer = () => {
         <Twitter handle='katyaprigara' />
         <Twitter handle='nimz_co' />
       </p>
+      <p className={styles.FooterLinks}>
+        <span className={styles.PartnershipLabel}>Partners</span>
+        <Link url='https://jooble.org' external>
+          Jobs on Jooble
+        </Link>
+      </p>
       <p>
         <img
           alt='Sponsor: Search by Algolia'
