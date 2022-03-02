@@ -1,0 +1,47 @@
+@import '../style/foundation/spacing';
+@import '../style/foundation/colors';
+
+.SponsoredConference {
+  margin-bottom: spacing(base);
+  align-items: center;
+  display: flex;
+
+  p {
+    margin: 0;
+    line-height: 1.5em;
+  }
+}
+
+.Content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}
+
+.full {
+  flex: 1;
+}
+
+.sponsored {
+  font-variant: small-caps;
+  font-weight: 600;
+  color: color(gray);
+}
+
+.Image {
+  margin-right: spacing();
+  height: 70px;
+  display: block;
+}
+
+.Footer {
+  font-weight: 200;
+  color: color(gray);
+}
+
+.promocode {
+  text-decoration: underline;
+  white-space: nowrap;
+}
