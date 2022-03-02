@@ -18,6 +18,7 @@ import {
   Page,
   Link,
   ScrollToConference,
+  SponsoredConference,
 } from 'src/components'
 import { TOPICS } from 'src/components/config'
 import { useToggle } from 'src/hooks'
@@ -27,8 +28,12 @@ import './RefinementList.module.scss'
 import './CurrentRefinement.module.scss'
 
 import styles from './ConferenceList.module.scss'
-import { ConferenceList, NewsletterForm } from './components'
-import { CFPHeader, OpenCollectiveContribution } from './components'
+import {
+  ConferenceList,
+  NewsletterForm,
+  CFPHeader,
+  OpenCollectiveContribution,
+} from './components'
 import {
   transformTopicRefinements,
   transformCountryRefinements,
@@ -238,6 +243,8 @@ const ConferenceListPage: React.FC<Props> = ({
           <ShowingResulstsCount />
         </div>
         <ScrollToConference hash={location.hash} />
+
+        <SponsoredConference />
 
         <Divider />
         {showCFP && (
