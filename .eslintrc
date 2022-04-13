@@ -52,7 +52,7 @@
       }
     ],
     "import/prefer-default-export": 0,
-    "prettier/prettier": ["error", {
+    "prettier/prettier": ["warn", {
       "singleQuote": true,
       "jsxSingleQuote": true,
       "semi": false
