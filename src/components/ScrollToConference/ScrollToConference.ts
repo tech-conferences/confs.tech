@@ -35,4 +35,5 @@ class ScrollToConference extends Component<Props, State> {
   }
 }
 
-export default connectInfiniteHits(ScrollToConference)
+// @ts-expect-error all
+export default connectInfiniteHits(ScrollToConference) as React.RC<Props>

@@ -11,6 +11,7 @@ interface Props {
   routed?: boolean
   button?: boolean
   onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>
+  children: React.ReactNode
 }
 
 const BtnLink: React.FC<Partial<Props>> = ({
@@ -40,6 +41,7 @@ const CustomRoutedLink: React.FC<Partial<Props>> = ({
       )}
       to={url || ''}
     >
+      {/* @ts-expect-error all */}
       {children}
     </RoutedLink>
   )
