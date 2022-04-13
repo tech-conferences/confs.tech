@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import React, { PureComponent, ComponentType } from 'react'
+import React, { PureComponent } from 'react'
 import { Heading } from 'src/components'
 
 import styles from './NewsletterForm.module.scss'
@@ -94,4 +94,4 @@ class NewsletterForm extends PureComponent<ComposedProps, State> {
   }
 }
 
-export default NewsletterForm as ComponentType<Props>
+export default NewsletterForm
