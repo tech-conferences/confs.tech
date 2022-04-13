@@ -16,6 +16,15 @@ import './DatePickerOverrides.module.scss'
 import styles from './ConferenceForm.module.scss'
 import { Conference } from './types/Conference'
 import {
+  LOCATION_ONLINE_REGEX,
+  isValidTwitterHandle,
+  VALID_URL_REGEX,
+  URL_PARAMETER_REGEX,
+  URL_SHORTENER_REGEX,
+  UNWANTED_CONFERENCE_NAME_REGEX,
+  UNWANTED_CONFERENCE_URL_REGEX,
+} from './utils'
+import {
   getConferenceData,
   CONFERENCE_DATE_FORMAT,
 } from './utils/getConferenceData'
@@ -30,14 +39,6 @@ const topicOptions = SORTED_TOPICS_KEYS.map((topic) => {
     label: TOPICS[topic],
   }
 })
-
-const LOCATION_ONLINE_REGEX = /online|remote|everywhere|world|web|global|virtual|www|http/i
-const VALID_URL_REGEX = /^http(s?):\/\//
-const URL_PARAMETER_REGEX = /\?/
-const URL_SHORTENER_REGEX = /(\/bitly)|(\/bit\.ly)|(\/t\.co)/i
-const TWITTER_REGEX = /@(\w){1,15}$/
-const UNWANTED_CONFERENCE_NAME_REGEX = /webinar|marketing|practical guide|meeting|trends|digimarcon|hackathon|101|estate|expo|techspo|outsourcing|physical|biology|neuroscience|healthcare|nutrition|Food Science/i
-const UNWANTED_CONFERENCE_URL_REGEX = /webinar|marketing|hackathon|digimarcon/i
 
 const LOCATION_TYPES = [
   {
@@ -135,7 +136,7 @@ const ConferenceForm: React.FC = () => {
       country: isNotOnline && LOCATION_ONLINE_REGEX.test(country),
       cfpUrl: cfpUrl.length === 0 ? cfp : !isUrlValid(cfpUrl) || url == cfpUrl,
       cfpEndDate: startDate && cfpEndDate ? cfpEndDate >= startDate : cfp,
-      twitter: twitter.length <= 1 ? false : !TWITTER_REGEX.test(twitter),
+      twitter: !isValidTwitterHandle(twitter),
       unwantedConference:
         name.length > 0 && UNWANTED_CONFERENCE_NAME_REGEX.test(name),
     }
