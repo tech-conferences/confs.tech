@@ -5,7 +5,6 @@ import './index.module.scss'
 import App from './components/App'
 import { DarkModeContextProvider } from './contexts/DarkModeContext'
 ReactDOM.render(
-  // @ts-expect-error all
   <BrowserRouter>
     <DarkModeContextProvider>
       <App />

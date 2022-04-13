@@ -41,7 +41,6 @@ const CustomRoutedLink: React.FC<Partial<Props>> = ({
       )}
       to={url || ''}
     >
-      {/* @ts-expect-error all */}
       {children}
     </RoutedLink>
   )
