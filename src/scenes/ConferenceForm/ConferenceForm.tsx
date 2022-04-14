@@ -382,7 +382,7 @@ const ConferenceForm: React.FC = () => {
                   onChange={handleDateChange.endDate}
                   placeholderText='Eg.: 2021-03-12'
                 />
-                {errorFor('endDate', 'End date is before start date.')}
+                {errorFor('endDate', 'End date must be after start date.')}
               </div>
             </InputGroup>
             <InputGroup>
@@ -462,7 +462,10 @@ const ConferenceForm: React.FC = () => {
                   selected={cfpEndDate}
                   onChange={handleDateChange.cfpEndDate}
                 />
-                {errorFor('cfpEndDate', 'CFP end date is after start date.')}
+                {errorFor(
+                  'cfpEndDate',
+                  'CFP end date must be before the conference start date.'
+                )}
               </div>
             </InputGroup>
             <InputGroup>
