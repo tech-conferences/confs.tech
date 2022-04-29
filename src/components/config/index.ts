@@ -1,6 +1,7 @@
 export const CURRENT_YEAR = new Date().getFullYear() - 1
 
 export const TOPICS = {
+  accessibility: 'Accessibility',
   android: 'Android',
   api: 'API',
   cfml: 'ColdFusion/CFML',
