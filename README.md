@@ -95,6 +95,7 @@ Some of the conferences have been pulled from other projects:
 - [See all Security conferences](https://confs.tech/security)
 - [See all Testing conferences](https://confs.tech/testing)
 - [See all TypeScript conferences](https://confs.tech/typescript)
+- [See all Accessibility conferences](https://confs.tech/accessibility)
 - [See general conferences](https://confs.tech/general)
 
 ## License
