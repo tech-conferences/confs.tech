@@ -14,6 +14,7 @@ import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 import './DatePickerOverrides.module.scss'
 
 import styles from './ConferenceForm.module.scss'
+import { ServerError } from './components'
 import { Conference } from './types/Conference'
 import {
   LOCATION_ONLINE_REGEX,
@@ -71,13 +72,19 @@ const defaultConference: Conference = {
   twitter: '@',
 }
 
+export enum ServerErrorEnum {
+  None = 0,
+  AlreadyExists = 1,
+  Generic = 10,
+}
+
 const ConferenceForm: React.FC = () => {
   const endDateDatepickerRef = useRef<DatePicker>(null)
   const [locationType, setLocationType] = useState('online')
   const [recaptchaLoaded, setRecaptchaLoaded] = useState(false)
   const [captchaResponse, setCaptchaResponse] = useState<string | null>(null)
   const [submitting, setSubmitting] = useState(false)
-  const [serverError, setServerError] = useState(false)
+  const [serverError, setServerError] = useState(ServerErrorEnum.None)
   const [errors, setErrors] = useState({})
   const [conference, setConference] = useState(defaultConference)
   const {
@@ -219,13 +226,17 @@ const ConferenceForm: React.FC = () => {
       method: 'post',
       body: getConferenceData(conference),
     })
-      .then((response) => {
-        if (response.status !== 200) {
-          throw new Error('Network response was not ok')
-        }
-        return response.json()
-      })
+      .then((response) => response.json())
       .then((responseJson) => {
+        if (responseJson.error) {
+          setSubmitting(false)
+          if (responseJson.error.uuid) {
+            setServerError(ServerErrorEnum.AlreadyExists)
+          } else {
+            setServerError(ServerErrorEnum.Generic)
+          }
+          return
+        }
         const pullRequestUrl = responseJson.data.find(
           (element: string[]) => element[0] == 'html_url'
         )
@@ -234,7 +245,8 @@ const ConferenceForm: React.FC = () => {
         }
       })
       .catch(() => {
-        setServerError(true)
+        setSubmitting(false)
+        setServerError(ServerErrorEnum.Generic)
       })
   }
 
@@ -510,19 +522,7 @@ const ConferenceForm: React.FC = () => {
               onloadCallback={() => setRecaptchaLoaded(true)}
               theme={darkModeEnabled ? 'dark' : 'light'}
             />
-            {serverError && (
-              <p className={styles.errorText}>
-                An error happened from the server.
-                <br />
-                If it still happens, you can&nbsp;
-                <Link
-                  external
-                  url='https://github.com/tech-conferences/conference-data/issues/new'
-                >
-                  create an issue on our GitHub repo.
-                </Link>
-              </p>
-            )}
+            {serverError ? <ServerError serverError={serverError} /> : null}
             {errors['unwantedConference'] && (
               <p className={styles.errorText}>
                 A part of the conference name has been blocklisted (Webinar,
