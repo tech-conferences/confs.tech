@@ -3,6 +3,13 @@ import Link from '../Link'
 
 import styles from './SponsoredConference.module.scss'
 
+const trackLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+  const { href } = event.currentTarget
+  ga('send', 'event', 'outbound-sponsored', 'click', href, {
+    transport: 'beacon',
+  })
+}
+
 const SponsoredConference = () => {
   return (
     <div className={styles.SponsoredConference}>
@@ -10,7 +17,7 @@ const SponsoredConference = () => {
       <div className={styles.Content}>
         <div>
           <Heading element='p' level={4}>
-            <Link url='https://devternity.com' external>
+            <Link onClick={trackLink} url='https://devternity.com' external>
               DevTernity
             </Link>
           </Heading>
