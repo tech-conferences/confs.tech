@@ -1,0 +1,60 @@
+@import 'src/components/style/foundation/media-queries';
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/typography';
+@import 'src/components/style/foundation/colors';
+
+.Heading h3 {
+  margin-bottom: spacing();
+
+  :global(.theme--dark) & {
+    color: white;
+  }
+}
+
+.Sponsors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Conference {
+  margin-bottom: spacing();
+  margin-right: spacing();
+  align-items: center;
+  padding: spacing();
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.03);
+  width: 100%;
+  text-align: center;
+
+  @include media($media-query--tablet-up) {
+    text-align: left;
+    flex-direction: row;
+    width: auto;
+    flex: 1;
+  }
+
+  :global(.theme--dark) & {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.Content {
+  margin-right: spacing();
+}
+
+.Image {
+  height: 25px;
+  margin-bottom: spacing();
+
+  @include media($media-query--tablet-up) {
+    margin-bottom: 0
+  }
+}
+
+.Date {
+  margin: 0;
+}
