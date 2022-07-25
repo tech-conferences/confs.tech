@@ -10,6 +10,7 @@ interface Props {
   external?: boolean
   routed?: boolean
   button?: boolean
+  unstyled?: boolean
   onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>
   children: React.ReactNode
 }
@@ -55,6 +56,7 @@ const Link: React.FC<Props> = ({
   routed,
   button,
   children,
+  unstyled = false,
 }) => {
   if (routed) {
     return (
@@ -74,8 +76,10 @@ const Link: React.FC<Props> = ({
 
   return (
     <a
-      className={classNames(styles.Link, className, {
+      className={classNames(className, {
         [styles.Selected]: selected,
+        [styles.Link]: !unstyled,
+        [styles.unstyled]: unstyled,
       })}
       onClick={onClick}
       onTouchStart={

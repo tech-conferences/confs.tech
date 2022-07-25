@@ -1,4 +1,5 @@
 @import 'src/components/style/foundation/typography';
+@import 'src/components/style/foundation/spacing';
 
 .Header {
   display: flex;
@@ -8,7 +9,12 @@
 }
 
 .Content {
+  padding: spacing();
+}
+
+.narrow {
   max-width: 500px;
+  padding: spacing();
 
   p,
   p a {

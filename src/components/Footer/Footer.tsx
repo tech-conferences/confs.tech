@@ -5,7 +5,7 @@ import Twitter from '../Twitter'
 import { TOPICS } from '../config'
 
 import styles from './Footer.module.scss'
-
+import SponsoredConferences from './SponsoredConferences'
 const CURRENT_YEAR = new Date().getFullYear()
 
 const Footer = () => {
@@ -16,6 +16,7 @@ const Footer = () => {
   return (
     <footer className={styles.Footer}>
       <HiddenLinks />
+      <SponsoredConferences />
       <p className={styles.FooterLinks}>
         <Link url='/conferences/new' routed>
           Add a conference

@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import React, { PureComponent } from 'react'
 import { Heading, Link } from 'src/components'
+import { trackLink } from 'src/utilities/tracking'
 import { Conference } from 'types/conference'
 
 import styles from './ConferenceItem.module.scss'
@@ -50,7 +51,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
         <dl className={styles.dl}>
           <dt className='visuallyHidden'>Conference name</dt>
           <Heading element='dd' level={4}>
-            <Link onClick={this.trackLink} url={url} external>
+            <Link onClick={trackLink('outbound')} url={url} external>
               {name}
             </Link>
           </Heading>
@@ -94,17 +95,6 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
         </dl>
       </li>
     )
-  }
-
-  private trackLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const { href } = event.currentTarget
-    this.track('outbound', href)
-  }
-
-  private track = (eventName: string, url: string) => {
-    ga('send', 'event', eventName, 'click', url, {
-      transport: 'beacon',
-    })
   }
 }
 
