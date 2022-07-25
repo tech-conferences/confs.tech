@@ -9,6 +9,7 @@
 }
 
 .Header {
+  padding: spacing(base);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,6 +27,10 @@
       display: inline;
     }
   }
+}
+
+.RefinementsWrapper {
+  padding: spacing(base);
 }
 
 .CurrentRefinements {

@@ -3,6 +3,7 @@
 
 .ConferenceList {
   width: 100%;
+  padding: spacing(base);
 
   ul {
     list-style: none;
@@ -18,7 +19,7 @@
   margin: spacing(loose) 0 spacing(base) 0;
   position: sticky;
   top: 0;
-  padding: spacing(base) 0;
+  padding: spacing(base);
   z-index: 10;
   border-bottom: 1px solid color(grey, lighter);
   background-color: color(background, light);

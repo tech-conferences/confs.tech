@@ -5,16 +5,16 @@ import styles from './SponsoredConferences.module.scss'
 
 const SPONSORED_CONFERENCES = [
   {
-    img: 'sponsors/testcon.png',
-    imgDark: 'sponsors/testcon.png',
+    img: '/sponsors/testcon.png',
+    imgDark: '/sponsors/testcon.png',
     url: 'https://testcon.lt',
     name: 'TestCon Europe 2022',
     date: 'October 26-27, 2022 ・ Online',
     topics: ['testing'],
   },
   {
-    img: 'sponsors/bidata.png',
-    imgDark: 'sponsors/bidata-dark.png',
+    img: '/sponsors/bidata.png',
+    imgDark: '/sponsors/bidata-dark.png',
     url: 'https://bigdataconference.eu',
     name: 'Big Data Europe 2022',
     date: 'November 23-24, 2022 ・ Online',

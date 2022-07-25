@@ -167,6 +167,7 @@ const ConferenceListPage: React.FC<Props> = ({
 
   return (
     <Page
+      noPadding
       htmlTitle={`${
         topic ? TOPICS[topic] : 'Tech'
       } conferences in ${CURRENT_YEAR} and ${CURRENT_YEAR + 1} | Confs.tech`}
@@ -186,67 +187,69 @@ const ConferenceListPage: React.FC<Props> = ({
         indexName='prod_conferences'
       >
         <Configure hitsPerPage={hitsPerPage} filters={algoliaFilter} />
-        <p className={styles.HeaderLinks}>
-          {(showPast || showCFP) && <Link url='/'>Upcoming conferences</Link>}
-          {!showCFP && <Link url='/cfp'>Call for Papers</Link>}
-          {!showPast && <Link url='/past'>Past conferences</Link>}
-          <Link url='https://github.com/tech-conferences/confs.tech' external>
-            ★ on GitHub
-          </Link>
-          <Link button onClick={toggleNewsletterBanner}>
-            Subscribe to our Newsletter
-          </Link>
-        </p>
-        {showNewsletterBanner && (
-          <NewsletterForm
-            topic={getFirstTopic(searchState.refinementList.topics)}
-          />
-        )}
-        <Search />
-        <RefinementList
-          limit={40}
-          attribute='topics'
-          defaultRefinement={(searchState.refinementList.topics || []).filter(
-            Boolean
+        <div className={styles.RefinementsWrapper}>
+          <p className={styles.HeaderLinks}>
+            {(showPast || showCFP) && <Link url='/'>Upcoming conferences</Link>}
+            {!showCFP && <Link url='/cfp'>Call for Papers</Link>}
+            {!showPast && <Link url='/past'>Past conferences</Link>}
+            <Link url='https://github.com/tech-conferences/confs.tech' external>
+              ★ on GitHub
+            </Link>
+            <Link button onClick={toggleNewsletterBanner}>
+              Subscribe to our Newsletter
+            </Link>
+          </p>
+          {showNewsletterBanner && (
+            <NewsletterForm
+              topic={getFirstTopic(searchState.refinementList.topics)}
+            />
           )}
-          transformItems={transformTopicRefinements}
-        />
-        <RefinementList
-          attribute='continent'
-          transformItems={transformCountryRefinements}
-          defaultRefinement={(
-            searchState.refinementList.continent || []
-          ).filter(Boolean)}
-        />
-
-        <RefinementList
-          showMoreLimit={100}
-          limit={9}
-          showMore
-          attribute='country'
-          transformItems={transformCountryRefinements}
-          defaultRefinement={(searchState.refinementList.country || []).filter(
-            Boolean
-          )}
-        />
-        <div>
-          <OnlineRefinement value={online} onChange={setOnline} />
-          <ToggleRefinement
-            attribute='offersSignLanguageOrCC'
-            label='Offers interpretation to International sign language or closed captions'
-            value={true}
-            defaultRefinement={searchState.toggle.offersSignLanguageOrCC}
+          <Search />
+          <RefinementList
+            limit={40}
+            attribute='topics'
+            defaultRefinement={(searchState.refinementList.topics || []).filter(
+              Boolean
+            )}
+            transformItems={transformTopicRefinements}
           />
-        </div>
-        <div className={styles.CurrentRefinements}>
-          <CurrentRefinements transformItems={transformCurrentRefinements} />
-          <ShowingResulstsCount />
-        </div>
-        <ScrollToConference hash={location.hash} />
+          <RefinementList
+            attribute='continent'
+            transformItems={transformCountryRefinements}
+            defaultRefinement={(
+              searchState.refinementList.continent || []
+            ).filter(Boolean)}
+          />
 
-        <SponsoredConference />
+          <RefinementList
+            showMoreLimit={100}
+            limit={9}
+            showMore
+            attribute='country'
+            transformItems={transformCountryRefinements}
+            defaultRefinement={(
+              searchState.refinementList.country || []
+            ).filter(Boolean)}
+          />
+          <div>
+            <OnlineRefinement value={online} onChange={setOnline} />
+            <ToggleRefinement
+              attribute='offersSignLanguageOrCC'
+              label='Offers interpretation to International sign language or closed captions'
+              value={true}
+              defaultRefinement={searchState.toggle.offersSignLanguageOrCC}
+            />
+          </div>
+          <div className={styles.CurrentRefinements}>
+            <CurrentRefinements transformItems={transformCurrentRefinements} />
+            <ShowingResulstsCount />
+          </div>
+          <ScrollToConference hash={location.hash} />
 
-        <Divider />
+          <SponsoredConference />
+
+          <Divider />
+        </div>
         {showCFP && (
           <CFPHeader sortByCfpEndDate={sortByCfpEndDate} sortBy={sortBy} />
         )}

@@ -9,6 +9,7 @@ import styles from './Page.module.scss'
 interface Props {
   children: React.ReactNode
   htmlTitle: string
+  noPadding?: boolean
   narrow?: boolean
 }
 
@@ -17,6 +18,7 @@ type ComposedProps = Props & HeaderProps
 const Page: React.FC<ComposedProps> = ({
   narrow,
   htmlTitle,
+  noPadding,
   children,
   ...headerProps
 }) => {
@@ -29,7 +31,12 @@ const Page: React.FC<ComposedProps> = ({
 
       <Header {...headerProps} />
 
-      <main className={classnames({ [styles.Content]: narrow })}>
+      <main
+        className={classnames({
+          [styles.narrow]: narrow,
+          [styles.Content]: !noPadding,
+        })}
+      >
         {children}
       </main>
 

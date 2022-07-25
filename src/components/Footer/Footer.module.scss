@@ -3,7 +3,7 @@
 @import 'src/components/style/foundation/colors';
 
 .Footer {
-  padding-top: spacing(extra-loose);
+  padding: spacing(extra-loose) spacing(base) 0 spacing(base);
   color: color(gray);
   margin-bottom: spacing(base);
   line-height: line-height(footer);

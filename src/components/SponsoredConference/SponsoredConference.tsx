@@ -10,7 +10,7 @@ const SponsoredConference = () => {
     <div className={styles.SponsoredConference}>
       <img
         alt={`Logo of Devternity conference`}
-        src={`sponsors/devternity.jpg`}
+        src={`/sponsors/devternity.jpg`}
         className={styles.Image}
       />
       <div className={styles.Content}>
