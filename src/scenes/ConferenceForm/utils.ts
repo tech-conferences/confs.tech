@@ -7,7 +7,12 @@ export const UNWANTED_CONFERENCE_NAME_REGEX = /webinar|marketing|practical guide
 export const UNWANTED_CONFERENCE_URL_REGEX = /webinar|marketing|hackathon|digimarcon/i
 
 export const isValidTwitterHandle = (twitterHandle: string) => {
-  if (twitterHandle.length <= 1) {
+  // Allow empty handle
+  if (twitterHandle.length === 0) {
+    return true
+  }
+
+  if (twitterHandle.length === 1) {
     return false
   }
 

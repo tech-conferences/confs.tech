@@ -7,6 +7,7 @@ describe('RegEx', () => {
     it('returns true for good handles', () => {
       expect(isValidTwitterHandle('@goodHandle')).toBeTruthy()
       expect(isValidTwitterHandle('@good.Handle')).toBeTruthy()
+      expect(isValidTwitterHandle('')).toBeTruthy()
     })
 
     it('returns false for good handles', () => {
