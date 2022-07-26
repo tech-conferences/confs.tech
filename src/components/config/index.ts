@@ -17,6 +17,7 @@ export const TOPICS = {
   golang: 'Golang',
   graphql: 'GraphQL',
   groovy: 'Groovy',
+  haskell: 'Haskell',
   ios: 'iOS / Swift',
   iot: 'IoT / Hardware',
   java: 'Java',

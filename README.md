@@ -78,6 +78,7 @@ Some of the conferences have been pulled from other projects:
 - [See all Golang conferences](https://confs.tech/golang)
 - [See all GraphQL conferences](https://confs.tech/graphql)
 - [See all Groovy conferences](https://confs.tech/groovy)
+- [See all Haskell conferences](https://confs.tech/haskell)
 - [See all iOS conferences](https://confs.tech/ios)
 - [See all IoT conferences](https://confs.tech/iot)
 - [See all Java conferences](https://confs.tech/java)
