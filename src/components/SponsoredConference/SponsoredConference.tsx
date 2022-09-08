@@ -1,13 +1,12 @@
-import { isBefore, isAfter, parseISO } from 'date-fns'
 import { trackLink } from 'src/utilities/tracking'
 
 import Heading from '../Heading'
 import Link from '../Link'
 
 import styles from './SponsoredConference.module.scss'
-import SPONSORS from './sponsors.json'
+import { sponsorConferenceForDate } from './utils'
 
-interface SponsoredConf {
+export interface SponsoredConf {
   name: string
   conferenceDate: string
   img: string
@@ -18,12 +17,7 @@ interface SponsoredConf {
 }
 
 const TODAY = new Date()
-const sponsorConference = (SPONSORS as SponsoredConf[]).find((conf) => {
-  return (
-    isBefore(TODAY, parseISO(conf.sponsorDateEnd)) &&
-    isAfter(TODAY, parseISO(conf.sponsorDateStart))
-  )
-})
+const sponsorConference = sponsorConferenceForDate(TODAY)
 
 const SponsoredConference = () => {
   if (!sponsorConference) {

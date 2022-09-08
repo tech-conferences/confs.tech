@@ -1,21 +1,25 @@
+import { format, addMonths, setDate } from 'date-fns'
+import { range } from 'lodash'
 import { Link, Page } from 'src/components'
+import { sponsorConferenceForDate } from 'src/components/SponsoredConference/utils'
 
 import styles from './SponsorshipPages.module.scss'
 
-// Month, availability
-const SPONSORS = [
-  ['September 2022', false],
-  ['October 2022', false],
-  ['November 2022', false],
-  ['December 2022', true],
-  ['January 2023', true],
-  ['February 2023', true],
-  ['March 2023', true],
-  ['April 2023', true],
-  ['May 2023', true],
-  ['June 2023', true],
-  ['July 2023', true],
-]
+// Set date to middle of the month to prevent from potential time bug
+const TODAY = setDate(new Date(), 15)
+
+// Create an array of the next 10 months with availability
+// Returns:
+//    [
+//      ['September 2022', false]
+//      ['October 2022', true]
+//      ...
+//    ]
+const SPONSORS_AVAILABILITY = range(0, 10).map((index) => {
+  const sponsorDate = addMonths(TODAY, index)
+  const isMonthTaken = sponsorConferenceForDate(sponsorDate)
+  return [format(sponsorDate, 'MMMM yyyy'), !isMonthTaken]
+})
 
 export default function SponsorshipPage() {
   return (
@@ -35,7 +39,7 @@ export default function SponsorshipPage() {
       </p>
       <h2>Schedule</h2>
       <dl className={styles.List}>
-        {SPONSORS.map((sponsorshipAvailability) => (
+        {SPONSORS_AVAILABILITY.map((sponsorshipAvailability) => (
           <>
             <dt>{sponsorshipAvailability[0]}</dt>
             <dd>
