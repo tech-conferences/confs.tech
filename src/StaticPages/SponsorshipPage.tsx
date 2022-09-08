@@ -35,7 +35,7 @@ export default function SponsorshipPage() {
         <br />
         Your conference will be sponsored at the top of the list for the
         duration of the sponsorship. We encourage event organizers to also give
-        a special discount for sponsored events.
+        a special discount for promoted events.
       </p>
       <h2>Schedule</h2>
       <dl className={styles.List}>
@@ -57,9 +57,9 @@ export default function SponsorshipPage() {
 
       <h2>Why sponsorships & how it works</h2>
       <p>
-        Send us the details of your conference and when you want to be
-        sponsored, along with a square logo of your conference and we will
-        schedule the sponsorship once the donation has been collected.
+        Send us the details of your conference and when you want to be promoted,
+        along with a square logo of your conference and we will schedule the
+        sponsorship once the donation has been collected.
         <br />
         We collect money through our{' '}
         <Link external url='https://opencollective.com/confstech/contribute'>
