@@ -1,5 +1,9 @@
 @import 'src/components/style/foundation/spacing';
 
+.SponsorList {
+  margin-top: spacing(tight);
+}
+
 .List {
   dd,
   dt {
