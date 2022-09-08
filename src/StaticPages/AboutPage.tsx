@@ -1,6 +1,6 @@
 import { Twitter, Link, Page } from 'src/components'
 
-export default function SponsorPage() {
+export default function AboutPage() {
   return (
     <Page
       narrow

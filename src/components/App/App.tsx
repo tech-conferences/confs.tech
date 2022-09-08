@@ -1,5 +1,5 @@
 import { Switch, Route, Redirect, RouteComponentProps } from 'react-router-dom'
-import { AboutPage, NotFoundPage } from 'src/StaticPages'
+import { AboutPage, NotFoundPage, SponsorshipPage } from 'src/StaticPages'
 import { ConferenceList, ConferenceForm } from 'src/scenes'
 
 import styles from './App.module.scss'
@@ -37,6 +37,8 @@ function renderPages({ match }: RouteComponentProps<{ page: string }>) {
   switch (match.params.page) {
     case 'about':
       return <AboutPage />
+    case 'sponsorships':
+      return <SponsorshipPage />
   }
   return <NotFoundPage />
 }
