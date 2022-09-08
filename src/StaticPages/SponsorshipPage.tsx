@@ -74,29 +74,29 @@ export default function SponsorshipPage() {
         <span role='img' aria-label='heart'>
           ❤️
         </span>
+        <ul className={styles.SponsorList}>
+          <li>
+            <Link external url='https://www.dotconferences.com/'>
+              dotConferences
+            </Link>
+          </li>
+          <li>
+            <Link external url='https://devternity.com/'>
+              DevTernity
+            </Link>
+          </li>
+          <li>
+            <Link external url='https://testcon.lt/'>
+              TestCon Europe
+            </Link>
+          </li>
+          <li>
+            <Link external url='https://bigdataconference.eu/'>
+              BigData Europe
+            </Link>
+          </li>
+        </ul>
       </p>
-      <ul>
-        <li>
-          <Link external url='https://www.dotconferences.com/'>
-            dotConferences
-          </Link>
-        </li>
-        <li>
-          <Link external url='https://devternity.com/'>
-            DevTernity
-          </Link>
-        </li>
-        <li>
-          <Link external url='https://testcon.lt/'>
-            TestCon Europe
-          </Link>
-        </li>
-        <li>
-          <Link external url='https://bigdataconference.eu/'>
-            BigData Europe
-          </Link>
-        </li>
-      </ul>
     </Page>
   )
 }
