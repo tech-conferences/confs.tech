@@ -1,0 +1,26 @@
+@import 'src/components/style/foundation/spacing';
+
+.List {
+  dd,
+  dt {
+    margin-bottom: spacing(tight);
+  }
+
+  dd {
+    display: inline;
+    font-style: italic;
+
+    a {
+      font-style: normal;
+    }
+  }
+  dt {
+    width: 10em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  dd:after {
+    display: block;
+    content: '';
+  }
+}

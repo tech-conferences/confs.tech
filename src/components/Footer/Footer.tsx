@@ -24,6 +24,9 @@ const Footer = () => {
         <Link routed url='/pages/about'>
           About Confs.tech
         </Link>
+        <Link routed url='/pages/sponsorships'>
+          Sponsor
+        </Link>
         <Link url='https://github.com/tech-conferences/confs.tech/' external>
           Confs.tech on GitHub
         </Link>
