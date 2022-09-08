@@ -7,7 +7,7 @@ const SPONSORS = [
   ['September 2022', false],
   ['October 2022', false],
   ['November 2022', false],
-  ['December 2022', false],
+  ['December 2022', true],
   ['January 2023', true],
   ['February 2023', true],
   ['March 2023', true],
