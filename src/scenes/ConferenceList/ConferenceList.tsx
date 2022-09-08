@@ -21,7 +21,6 @@ import {
   SponsoredConference,
 } from 'src/components'
 import { TOPICS } from 'src/components/config'
-import { useToggle } from 'src/hooks'
 import { SortBy, SortDirection } from 'types/global'
 
 import './RefinementList.module.scss'
@@ -30,7 +29,6 @@ import './CurrentRefinement.module.scss'
 import styles from './ConferenceList.module.scss'
 import {
   ConferenceList,
-  NewsletterForm,
   CFPHeader,
   OpenCollectiveContribution,
 } from './components'
@@ -39,7 +37,6 @@ import {
   transformCountryRefinements,
   transformCurrentRefinements,
   paramsFromUrl,
-  getFirstTopic,
   dateToTime,
   QUERY_SEPARATOR,
 } from './utils'
@@ -93,7 +90,6 @@ const ConferenceListPage: React.FC<Props> = ({
     urlQueryString.page ? Number(urlQueryString.page) : 1
   )
 
-  const [showNewsletterBanner, toggleNewsletterBanner] = useToggle(false)
   const history = useHistory()
 
   const [searchState, setSearchState] = useState<SearchState>({
@@ -192,18 +188,10 @@ const ConferenceListPage: React.FC<Props> = ({
             {(showPast || showCFP) && <Link url='/'>Upcoming conferences</Link>}
             {!showCFP && <Link url='/cfp'>Call for Papers</Link>}
             {!showPast && <Link url='/past'>Past conferences</Link>}
-            <Link url='https://github.com/tech-conferences/confs.tech' external>
-              ★ on GitHub
-            </Link>
-            <Link button onClick={toggleNewsletterBanner}>
-              Subscribe to our Newsletter
+            <Link url='/pages/sponsorships' routed>
+              Sponsor
             </Link>
           </p>
-          {showNewsletterBanner && (
-            <NewsletterForm
-              topic={getFirstTopic(searchState.refinementList.topics)}
-            />
-          )}
           <Search />
           <RefinementList
             limit={40}

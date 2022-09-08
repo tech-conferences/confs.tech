@@ -33,12 +33,6 @@ const Footer = () => {
         <Link url='https://twitter.com/ConfsTech/' external>
           Follow us on Twitter
         </Link>
-        <Link
-          url='https://tech.us19.list-manage.com/subscribe?u=246492d8cf0efc8c4ec6a9a60&id=84b8d4723e'
-          external
-        >
-          Subscribe to our newsletter
-        </Link>
       </p>
       <p className={styles.FooterLinks}>
         <Twitter handle='cgrail' />

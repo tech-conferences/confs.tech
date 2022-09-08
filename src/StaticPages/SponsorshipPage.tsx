@@ -26,7 +26,7 @@ export default function SponsorshipPage() {
       backButton
     >
       <p>
-        We reach an average of over 15,000 unique visitors per months, and our
+        We reach an average of 15,000 unique visitors per months, and our
         current sponsorship rate is 100€ per month.
         <br />
         Your conference will be sponsored at the top of the list for the
