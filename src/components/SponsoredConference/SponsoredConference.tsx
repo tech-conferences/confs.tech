@@ -29,7 +29,6 @@ const SponsoredConference = () => {
             Turning developers into architects and engineering leaders
           </p>
         </div>
-        {/* title='Learn more' */}
         <Link routed url='/pages/sponsorships' className={styles.sponsored}>
           sponsored
         </Link>
