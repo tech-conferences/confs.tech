@@ -1,6 +1,6 @@
 import { format, addMonths, setDate } from 'date-fns'
 import { range } from 'lodash'
-import { Link, Page } from 'src/components'
+import { Divider, Link, Page } from 'src/components'
 import { sponsorConferenceForDate } from 'src/components/SponsoredConference/utils'
 
 import styles from './SponsorshipPages.module.scss'
@@ -68,6 +68,29 @@ export default function SponsorshipPage() {
         . All funds are used to cover the operation costs related to running
         Confs.tech: servers, domain name and more.
       </p>
+      <Divider />
+      <h2>FAQ</h2>
+      <h3>How do I get an invoice for my payment?</h3>
+      <p>
+        Since you will be paying through our{' '}
+        <Link external url='https://opencollective.com/confstech/contribute'>
+          OpenCollective account
+        </Link>{' '}
+        you will be able to get a receipt their, directly. You can find the
+        details on how to do it
+        <Link
+          external
+          url='https://docs.opencollective.com/help/financial-contributors/receipts'
+        >
+          their help center.
+        </Link>
+      </p>
+      <h3>For how many months can I be a sponsor?</h3>
+      <p>
+        We only allow conference organizers to take the sponsor spot for a
+        maximum of 6 months.
+      </p>
+      <Divider />
       <h2>Past sponsors</h2>
       <p>
         Thank you to our past sponsors.
