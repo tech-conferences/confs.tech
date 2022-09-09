@@ -37,6 +37,7 @@ export default function SponsorshipPage() {
         the list for the duration of the sponsorship. We encourage event
         organizers to also give a special discount for the promoted events.
       </p>
+      <Divider />
       <h2>Schedule</h2>
       <dl className={styles.List}>
         {SPONSORS_AVAILABILITY.map((sponsorshipAvailability) => (
@@ -54,7 +55,7 @@ export default function SponsorshipPage() {
           </>
         ))}
       </dl>
-
+      <Divider />
       <h2>Why sponsorships & how it works</h2>
       <p>
         Send us the details of your conference and when you want to be promoted,
