@@ -77,13 +77,13 @@ export default function SponsorshipPage() {
         <Link external url='https://opencollective.com/confstech/contribute'>
           OpenCollective account
         </Link>{' '}
-        you will be able to get a receipt their, directly. You can find the
+        you will be able to get a receipt there, directly. You can find the
         details on how to do it
         <Link
           external
           url='https://docs.opencollective.com/help/financial-contributors/receipts'
         >
-          their help center.
+          in their help center.
         </Link>
       </p>
       <h3>For how many months can I be a sponsor?</h3>
