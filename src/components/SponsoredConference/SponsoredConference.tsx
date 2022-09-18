@@ -26,11 +26,18 @@ const SponsoredConference = () => {
 
   return (
     <div className={styles.SponsoredConference}>
-      <img
-        alt={`Logo of ${sponsorConference.name} conference`}
-        src={sponsorConference.img}
-        className={styles.Image}
-      />
+      <Link
+        onClick={trackLink('outbound-sponsored')}
+        url={sponsorConference.url}
+        unstyled
+        external
+      >
+        <img
+          alt={`Logo of ${sponsorConference.name} conference`}
+          src={sponsorConference.img}
+          className={styles.Image}
+        />
+      </Link>
       <div className={styles.Content}>
         <div>
           <Heading element='p' level={4}>
