@@ -7,5 +7,14 @@
     "tagline": "Turning developers into architects and engineering leaders",
     "sponsorDateStart": "2022-01-02",
     "sponsorDateEnd": "2022-12-01"
+  },
+  {
+    "name": "DevDays & DevOps Pro Europe 2023",
+    "conferenceDate": "May 23-24 ・ Online — May 25-26 ・ Vilnius, Lithuania",
+    "img": "/sponsors/2023-testcon-devdays.jpg",
+    "url": "https://devdays.lt/?utm_medium=partner&utm_source=devdaysdevops&utm_campaign=devdaysdevops",
+    "tagline": "Two conferences held in one location",
+    "sponsorDateStart": "2022-12-01",
+    "sponsorDateEnd": "2023-06-01"
   }
 ]
