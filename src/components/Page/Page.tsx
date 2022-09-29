@@ -1,4 +1,5 @@
 import classnames from 'classnames'
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { Head } from 'src/components'
 import { Header, Footer } from 'src/components'
@@ -22,6 +23,11 @@ const Page: React.FC<ComposedProps> = ({
   children,
   ...headerProps
 }) => {
+  // Scroll to top when changing page
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div>
       <Head />
