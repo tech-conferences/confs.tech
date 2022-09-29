@@ -15,18 +15,18 @@ export function formatDate(startDate: string, endDate?: string) {
     const endMonth = getMonth(parsedEndDate)
 
     if (startMonth === endMonth) {
-      return `${format(parsedStartDate, 'MMMM d')}${format(
+      return `${format(parsedStartDate, 'MMMM d')}${format(
         parsedEndDate,
         '-d'
       )}`
     } else {
-      return `${format(parsedStartDate, 'MMMM d')}${format(
+      return `${format(parsedStartDate, 'MMMM d')}${format(
         parsedEndDate,
-        ' - MMMM d'
+        ' - MMMM d'
       )}`
     }
   } else {
-    return format(parsedStartDate, 'MMMM d')
+    return format(parsedStartDate, 'MMMM d')
   }
 }
 
