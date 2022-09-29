@@ -17,13 +17,22 @@
 }
 
 .HeaderLinks {
-  margin: 0 0 spacing(loose) 0;
+  margin: 0 0 spacing() 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media($media-query--mobile-up) {
+    flex-direction: row;
+  }
 
   a {
-    display: block;
-    margin: 0 spacing(loose) spacing(tight) 0;
+    display: inline-block;
+    margin: 0 0 spacing(tight) 0;
+    text-align: center;
 
-    @include media($media-query--tablet-up) {
+    @include media($media-query--mobile-up) {
+      margin: 0 spacing(loose) 0 0;
       display: inline;
     }
   }
