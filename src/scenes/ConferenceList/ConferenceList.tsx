@@ -228,15 +228,17 @@ const ConferenceListPage: React.FC<Props> = ({
               defaultRefinement={searchState.toggle.offersSignLanguageOrCC}
             />
           </div>
-          <div className={styles.CurrentRefinements}>
-            <CurrentRefinements transformItems={transformCurrentRefinements} />
-            <ShowingResulstsCount />
-          </div>
-          <ScrollToConference hash={location.hash} />
 
           <SponsoredConference />
 
           <Divider />
+
+          <div className={styles.CurrentRefinements}>
+            <CurrentRefinements transformItems={transformCurrentRefinements} />
+            <ShowingResulstsCount />
+          </div>
+
+          <ScrollToConference hash={location.hash} />
         </div>
         {showCFP && (
           <CFPHeader sortByCfpEndDate={sortByCfpEndDate} sortBy={sortBy} />

@@ -70,4 +70,12 @@
     display: flex;
     align-items: center;
   }
+
+  @include media($media-query--mobile--vertical) {
+    flex-direction: column;
+
+    label {
+      margin-bottom: spacing(extra-tight);
+    }
+  }
 }
