@@ -45,7 +45,6 @@ const Page: React.FC<ComposedProps> = ({
       >
         {children}
       </main>
-
       <Footer />
     </div>
   )
