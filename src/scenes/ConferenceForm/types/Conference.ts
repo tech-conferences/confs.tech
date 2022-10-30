@@ -7,6 +7,7 @@ export interface Conference {
   startDate: Date | null | undefined
   endDate: Date | null | undefined
   topics: string[]
+  locales: string[]
   cfpUrl: string
   cfpEndDate: Date | null | undefined
   twitter: string

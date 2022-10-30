@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet'
 import Recaptcha from 'react-recaptcha'
 import Select from 'react-select'
 import { Card, Link, InputGroup, Page } from 'src/components'
-import { TOPICS } from 'src/components/config'
+import { TOPICS, LOCALES } from 'src/components/config'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
 import './DatePickerOverrides.module.scss'
@@ -41,6 +41,13 @@ const topicOptions = SORTED_TOPICS_KEYS.map((topic) => {
   }
 })
 
+const langOptions = Object.keys(LOCALES).map((locale) => {
+  return {
+    value: locale,
+    label: LOCALES[locale],
+  }
+})
+
 const LOCATION_TYPES = [
   {
     value: 'online',
@@ -63,6 +70,7 @@ const defaultConference: Conference = {
   country: '',
   startDate: null,
   endDate: null,
+  locales: [],
   topics: [],
   cfpUrl: '',
   cfpEndDate: null,
@@ -119,6 +127,7 @@ const ConferenceForm: React.FC = () => {
     const {
       startDate,
       endDate,
+      locales,
       topics,
       city,
       country,
@@ -132,6 +141,7 @@ const ConferenceForm: React.FC = () => {
     const isNotOnline = locationType !== 'online'
     const cfp = cfpUrl || cfpEndDate
     const errors = {
+      locales: locales.length === 0,
       topics: topics.length === 0,
       name: startDate
         ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !==
@@ -171,13 +181,6 @@ const ConferenceForm: React.FC = () => {
       [event.target.name]: event.target.value,
     })
   }
-
-  // const handleTopicsChange = (topics) => {
-  //   setConference({
-  //     ...conference,
-  //     topics: topics.map((topic) => topic.value),
-  //   })
-  // }
 
   const handleLocationTypeChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setLocationType(event.target.value)
@@ -312,6 +315,24 @@ const ConferenceForm: React.FC = () => {
       <div>
         <Card>
           <form onSubmit={handleFormSubmit} autoComplete='off'>
+            <InputGroup>
+              <div className={styles.Select}>
+                <label htmlFor='type'>Language of the conference</label>
+                <Select
+                  defaultValue={{ value: 'EN', label: 'English' }}
+                  isMulti
+                  placeholder='Select one ore more languages'
+                  onChange={(langs) => {
+                    setConference({
+                      ...conference,
+                      locales: langs.map((locale) => locale?.value || ''),
+                    })
+                  }}
+                  options={langOptions}
+                />
+                {errorFor('langs', 'You need to select at least one language.')}
+              </div>
+            </InputGroup>
             <InputGroup>
               <div className={styles.Select}>
                 <label htmlFor='type'>Topic</label>
