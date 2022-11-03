@@ -70,7 +70,7 @@ const defaultConference: Conference = {
   country: '',
   startDate: null,
   endDate: null,
-  locales: [],
+  locales: ['EN'],
   topics: [],
   cfpUrl: '',
   cfpEndDate: null,
@@ -319,7 +319,10 @@ const ConferenceForm: React.FC = () => {
               <div className={styles.Select}>
                 <label htmlFor='type'>Language of the conference</label>
                 <Select
-                  defaultValue={{ value: 'EN', label: 'English' }}
+                  defaultValue={defaultConference.locales.map((value) => ({
+                    value,
+                    label: LOCALES[value],
+                  }))}
                   isMulti
                   placeholder='Select one ore more languages'
                   onChange={(langs) => {
@@ -329,6 +332,7 @@ const ConferenceForm: React.FC = () => {
                     })
                   }}
                   options={langOptions}
+                  inputId='locales'
                 />
                 {errorFor('langs', 'You need to select at least one language.')}
               </div>
@@ -347,6 +351,7 @@ const ConferenceForm: React.FC = () => {
                     })
                   }}
                   options={topicOptions}
+                  inputId='topics'
                 />
                 {errorFor('topics', 'You need to select at least one topic.')}
               </div>
