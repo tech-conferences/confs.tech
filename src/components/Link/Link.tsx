@@ -13,6 +13,7 @@ interface Props {
   unstyled?: boolean
   onClick?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>
   children: React.ReactNode
+  muted?: boolean
 }
 
 const BtnLink: React.FC<Partial<Props>> = ({
@@ -57,6 +58,7 @@ const Link: React.FC<Props> = ({
   button,
   children,
   unstyled = false,
+  muted = false,
 }) => {
   if (routed) {
     return (
@@ -80,6 +82,7 @@ const Link: React.FC<Props> = ({
         [styles.Selected]: selected,
         [styles.Link]: !unstyled,
         [styles.unstyled]: unstyled,
+        [styles.muted]: muted,
       })}
       onClick={onClick}
       onTouchStart={
