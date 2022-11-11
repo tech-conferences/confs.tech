@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet'
 import Recaptcha from 'react-recaptcha'
 import Select from 'react-select'
 import { Card, Link, InputGroup, Page } from 'src/components'
+import Alert from 'src/components/Alert'
 import { TOPICS, LOCALES } from 'src/components/config'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
@@ -24,6 +25,7 @@ import {
   URL_SHORTENER_REGEX,
   UNWANTED_CONFERENCE_NAME_REGEX,
   UNWANTED_CONFERENCE_URL_REGEX,
+  showWarningForTopics,
 } from './utils'
 import {
   getConferenceData,
@@ -356,6 +358,13 @@ const ConferenceForm: React.FC = () => {
                 {errorFor('topics', 'You need to select at least one topic.')}
               </div>
             </InputGroup>
+            {showWarningForTopics(conference.topics) && (
+              <Alert>
+                We only accept software development related conferences. <br />
+                We <strong>do not accept</strong> meetups, company sponsored or
+                business events.
+              </Alert>
+            )}
             <InputGroup>
               <div>
                 <label htmlFor='name'>Conference name</label>

@@ -1,0 +1,29 @@
+@import 'src/components/style/foundation/colors';
+@import 'src/components/style/foundation/spacing';
+@import 'src/components/style/foundation/typography';
+
+
+.warning {
+  padding: spacing(tight) spacing(base);
+  border-radius: 3px;
+  max-width: 500px;
+  background-color: color(alerts, warning-bg);
+  color: color(alerts, warning-text);
+  font-size: font-size(body, smaller);
+
+  :global(.theme--dark) & {
+    background-color: color(alerts, warning-bg--dark);
+    color: color(alerts, warning-text--dark);
+  }
+
+  svg, span {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  svg {
+    fill: rgb(255, 167, 38);
+    width: 24px;
+    height: 24px;
+    margin-right: spacing(tight);
+  }
+}
