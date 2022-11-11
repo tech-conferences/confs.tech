@@ -191,6 +191,9 @@ const ConferenceListPage: React.FC<Props> = ({
             <Link url='/pages/sponsorships' routed>
               Sponsor
             </Link>
+            <Link url='/conferences/new' routed>
+              Add a conference
+            </Link>
           </p>
           <Search />
           <RefinementList

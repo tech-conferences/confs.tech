@@ -292,12 +292,12 @@ const ConferenceForm: React.FC = () => {
 
       <div>
         <p>
-          Confs.tech is focused on conferences on software development and
-          related topics, such as product management, UX, and AI.
+          Confs.tech is focused on software development conferences and related
+          topics, such as product management, UX, and AI.
         </p>
         <p>
-          Know a conference on one of these topics? Feel free to submit it using
-          this form!
+          You know a conference on one of these topics? Feel free to submit it
+          using this form!
         </p>
         <p>
           This will create a{' '}
@@ -308,7 +308,7 @@ const ConferenceForm: React.FC = () => {
             pull request on GitHub
           </Link>{' '}
           where you can also add additional comments and track submission
-          status. Our team will review your request as soon as possible!
+          status. Our team will review your request as soon as possible.
         </p>
       </div>
 
