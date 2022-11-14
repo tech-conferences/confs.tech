@@ -18,6 +18,12 @@ $color-palette-data: (
   green: (
     base: #4caf50,
   ),
+  alerts: (
+    warning-bg: rgb(255, 244, 229),
+    warning-text: rgb(102, 60, 0),
+    warning-bg--dark:  rgb(22, 11, 11),
+    warning-text--dark: rgb(255, 226, 183)
+  ),
   gray: (
     darker: #222222,
     dark: #555555,

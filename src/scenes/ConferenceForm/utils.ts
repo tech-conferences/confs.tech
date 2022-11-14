@@ -18,3 +18,15 @@ export const isValidTwitterHandle = (twitterHandle: string) => {
 
   return TWITTER_REGEX.test(twitterHandle)
 }
+
+const TOPICS_WITH_WARNING = [
+  'leadership',
+  'networking',
+  'general',
+  'iot',
+  'data',
+]
+
+export const showWarningForTopics = (topics: string[]) => {
+  return topics.find((topic) => TOPICS_WITH_WARNING.includes(topic))
+}
