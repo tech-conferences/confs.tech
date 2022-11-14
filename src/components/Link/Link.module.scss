@@ -14,3 +14,11 @@
 .unstyled {
   text-decoration: none;
 }
+
+.muted {
+  color: color(gray);
+
+  :global(.theme--dark) & {
+    color: color(gray);
+  }
+}

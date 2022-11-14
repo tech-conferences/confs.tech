@@ -85,8 +85,10 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
             <>
               <dt className='visuallyHidden'>Link to code of conduct</dt>
               <dd>
-                <span aria-hidden='true'>・</span>
-                <Link url={cocUrl} external>
+                <span className={styles.muted} aria-hidden='true'>
+                  ・
+                </span>
+                <Link url={cocUrl} external muted>
                   Code Of Conduct
                 </Link>
               </dd>
@@ -111,7 +113,7 @@ function Twitter({ twitter }: TwitterProps) {
       <dt className='visuallyHidden'>Twitter username</dt>
       <dd>
         <span aria-hidden='true'>・</span>
-        <Link url={`https://twitter.com/${twitter}`} external>
+        <Link url={`https://twitter.com/${twitter}`} external muted>
           {twitter}
         </Link>
       </dd>
