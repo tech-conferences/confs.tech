@@ -1,11 +1,9 @@
+import { Divider, Link, Twitter } from 'src/components'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
-import Link from '../Link'
-import Twitter from '../Twitter'
 import { TOPICS } from '../config'
 
 import styles from './Footer.module.scss'
-import SponsoredConferences from './SponsoredConferences'
 const CURRENT_YEAR = new Date().getFullYear()
 
 const Footer = () => {
@@ -15,8 +13,8 @@ const Footer = () => {
 
   return (
     <footer className={styles.Footer}>
+      <Divider />
       <HiddenLinks />
-      <SponsoredConferences />
       <p className={styles.FooterLinks}>
         <Link url='/conferences/new' routed>
           Add a conference
