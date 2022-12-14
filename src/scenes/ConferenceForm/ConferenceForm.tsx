@@ -126,6 +126,7 @@ const ConferenceForm: React.FC = () => {
   }
 
   const validateForm = (conference: Conference) => {
+    if (conference.twitter === '@') conference.twitter = ''
     const {
       startDate,
       endDate,
@@ -145,6 +146,7 @@ const ConferenceForm: React.FC = () => {
     const errors = {
       locales: locales.length === 0,
       topics: topics.length === 0,
+      tooManyTopics: topics.length >= 3,
       name: startDate
         ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !==
           -1
@@ -217,6 +219,8 @@ const ConferenceForm: React.FC = () => {
       const erroneousField = document.getElementById(erroneousFieldId)
       if (erroneousField && erroneousField.focus) {
         erroneousField.focus()
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
       }
       return
     }
@@ -364,6 +368,12 @@ const ConferenceForm: React.FC = () => {
                 We <strong>do not accept</strong> meetups, company sponsored or
                 business events.
               </Alert>
+            )}
+            {errors['tooManyTopics'] && (
+              <p className={styles.errorText}>
+                If a conference covers more than 3 topics, please select the
+                topic General.
+              </p>
             )}
             <InputGroup>
               <div>
