@@ -4,6 +4,7 @@ export interface Conference {
   online: boolean
   topics: string[]
   url: string
+  locales: string
   city: string
   country: string
   startDate: string

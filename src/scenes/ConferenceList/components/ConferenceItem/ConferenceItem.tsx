@@ -1,6 +1,7 @@
 import classNames from 'classnames'
-import React, { PureComponent } from 'react'
+import { PureComponent } from 'react'
 import { Heading, Link } from 'src/components'
+import { getLocales } from 'src/utilities/locales'
 import { trackLink } from 'src/utilities/tracking'
 import { Conference } from 'types/conference'
 
@@ -18,6 +19,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       topics,
       url,
       city,
+      locales,
       country,
       online,
       startDate,
@@ -82,7 +84,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
             <Twitter twitter={twitter} />
           </div>
           {cocUrl && (
-            <>
+            <div className={styles.Footer}>
               <dt className='visuallyHidden'>Link to code of conduct</dt>
               <dd>
                 <span className={styles.muted} aria-hidden='true'>
@@ -92,8 +94,9 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
                   Code Of Conduct
                 </Link>
               </dd>
-            </>
+            </div>
           )}
+          <div className={styles.Footer}>・{getLocales(locales)}</div>
         </dl>
       </li>
     )
