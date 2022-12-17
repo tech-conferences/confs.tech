@@ -30,12 +30,14 @@ export default function SponsorshipPage() {
       backButton
     >
       <p>
-        We reach an average of 15,000 unique visitors per months, and our
-        current sponsorship rate is 100€ per month.
+        We reach more than 18,000 unique visitors per months, and our current
+        sponsorship rate is 200€ per month.
         <br />
         When sponsoring Confs.tech, your conference will be shown at the top of
         the list for the duration of the sponsorship. We encourage event
         organizers to also give a special discount for the promoted events.
+        <br />
+        You can expect between 600 and 1,000 clicks per months.
       </p>
       <Divider />
       <h2>Schedule</h2>
