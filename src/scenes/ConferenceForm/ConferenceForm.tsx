@@ -390,6 +390,37 @@ const ConferenceForm: React.FC = () => {
                   onChange={handleFieldChange}
                 />
                 {errorFor('name', 'Name should not contain year.')}
+                {errors['unwantedConference'] && (
+                  <p className={styles.errorText}>
+                    A part of the conference name or URL has been blocklisted
+                    &nbsp;
+                    <Link
+                      external
+                      url='https://github.com/tech-conferences/confs.tech/blob/main/src/scenes/ConferenceForm/utils.ts#L6'
+                    >
+                      (Details).
+                    </Link>
+                    Those kind of submissions will not be added to our list.
+                    <br />
+                    <Link
+                      external
+                      url='https://github.com/tech-conferences/conference-data/pulls?q=is%3Aunmerged'
+                    >
+                      See the list of closed and not merged pull requests
+                    </Link>
+                    <br />
+                    This site is focused on conferences related to software
+                    development.
+                    <br />
+                    If you think this is an error, please &nbsp;
+                    <Link
+                      external
+                      url='https://github.com/tech-conferences/conference-data/issues/new'
+                    >
+                      create an issue on our GitHub repo.
+                    </Link>
+                  </p>
+                )}
               </div>
             </InputGroup>
             <InputGroup>
@@ -410,7 +441,7 @@ const ConferenceForm: React.FC = () => {
                 </div>
                 {errorFor(
                   'url',
-                  'Must be a valid URL. No query parameters or URL shorteners are allowed.'
+                  'Must be a valid URL. No query parameters or URL shorteners are allowed. URL might be blocklisted.'
                 )}
               </div>
             </InputGroup>
@@ -568,33 +599,6 @@ const ConferenceForm: React.FC = () => {
               theme={darkModeEnabled ? 'dark' : 'light'}
             />
             {serverError ? <ServerError serverError={serverError} /> : null}
-            {errors['unwantedConference'] && (
-              <p className={styles.errorText}>
-                A part of the conference name has been blocklisted (Webinar,
-                Marketing, Hackathon, Meeting, Digimarcon, Techspo etc.)
-                <br />
-                Those submissions will not get added to our list &nbsp;
-                <Link
-                  external
-                  url='https://github.com/tech-conferences/conference-data/pulls?q=is%3Aunmerged'
-                >
-                  (list of closed and not merged entries)
-                </Link>
-                <br />
-                Confs.tech is focused on conferences related to software
-                development. We believe that this event is not developer-related
-                and therefore, it is out of the confs.tech's scope.
-                <br />
-                If you think this was an error, and you want to add a software
-                developer related conference please &nbsp;
-                <Link
-                  external
-                  url='https://github.com/tech-conferences/conference-data/issues/new'
-                >
-                  create an issue on our GitHub repo.
-                </Link>
-              </p>
-            )}
             <button
               className={styles.Button}
               disabled={
