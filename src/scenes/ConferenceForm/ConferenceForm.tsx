@@ -146,7 +146,7 @@ const ConferenceForm: React.FC = () => {
     const errors = {
       locales: locales.length === 0,
       topics: topics.length === 0,
-      tooManyTopics: topics.length >= 3,
+      tooManyTopics: topics.length > 3,
       name: startDate
         ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !==
           -1
