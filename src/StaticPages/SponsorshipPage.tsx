@@ -80,7 +80,7 @@ export default function SponsorshipPage() {
           OpenCollective account
         </Link>{' '}
         you will be able to get a receipt there, directly. You can find the
-        details on how to do it
+        details on how to do it{' '}
         <Link
           external
           url='https://docs.opencollective.com/help/financial-contributors/receipts'
