@@ -1,6 +1,6 @@
 [
   {
-    "name": "Devternity",
+    "name": "DevTernity",
     "conferenceDate": "December 8, 2022 ・ Online",
     "img": "/sponsors/devternity.jpg",
     "url": "https://devternity.com",
@@ -16,5 +16,14 @@
     "tagline": "Two conferences held in one location",
     "sponsorDateStart": "2022-12-01",
     "sponsorDateEnd": "2023-06-01"
+  },
+  {
+    "name": "DevTernity",
+    "conferenceDate": "December 7-8, 2023 ・ Online",
+    "img": "/sponsors/devternity.jpg",
+    "url": "https://devternity.com",
+    "tagline": "Turning developers into architects and engineering leaders",
+    "sponsorDateStart": "2023-06-01",
+    "sponsorDateEnd": "2023-12-01"
   }
 ]
