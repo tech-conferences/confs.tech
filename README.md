@@ -94,6 +94,7 @@ Some of the conferences have been pulled from other projects:
 - [See all Rust conferences](https://confs.tech/rust)
 - [See all Scala conferences](https://confs.tech/scala)
 - [See all Security conferences](https://confs.tech/security)
+- [See all SRE conferences](https://confs.tech/sre)
 - [See all Testing conferences](https://confs.tech/testing)
 - [See all TypeScript conferences](https://confs.tech/typescript)
 - [See all Accessibility conferences](https://confs.tech/accessibility)
