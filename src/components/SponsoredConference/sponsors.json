@@ -25,5 +25,32 @@
     "tagline": "Turning developers into architects and engineering leaders",
     "sponsorDateStart": "2023-06-01",
     "sponsorDateEnd": "2023-12-01"
+  },
+  {
+    "name": "GitNation",
+    "conferenceDate": "11 remote conferences in 2024",
+    "img": "/sponsors/gitnation.jpg",
+    "url": "https://portal.gitnation.org/multipass",
+    "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
+    "sponsorDateStart": "2024-01-01",
+    "sponsorDateEnd": "2024-02-01"
+  },
+  {
+    "name": "GitNation",
+    "conferenceDate": "11 remote conferences in 2024",
+    "img": "/sponsors/gitnation.jpg",
+    "url": "https://portal.gitnation.org/multipass",
+    "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
+    "sponsorDateStart": "2024-03-01",
+    "sponsorDateEnd": "2024-06-01"
+  },
+  {
+    "name": "GitNation",
+    "conferenceDate": "11 remote conferences in 2024",
+    "img": "/sponsors/gitnation.jpg",
+    "url": "https://portal.gitnation.org/multipass",
+    "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
+    "sponsorDateStart": "2024-09-01",
+    "sponsorDateEnd": "2024-11-01"
   }
 ]
