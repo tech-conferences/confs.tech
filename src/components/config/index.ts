@@ -33,6 +33,7 @@ export const TOPICS = {
   rust: 'Rust',
   scala: 'Scala',
   security: 'Security',
+  sre: 'SRE',
   testing: 'Testing',
   typescript: 'TypeScript',
   'tech-comm': 'Content strategy',
