@@ -1,5 +1,3 @@
-import { trackLink } from 'src/utilities/tracking'
-
 import Heading from '../Heading'
 import Link from '../Link'
 
@@ -26,12 +24,7 @@ const SponsoredConference = () => {
 
   return (
     <div className={styles.SponsoredConference}>
-      <Link
-        onClick={trackLink('outbound-sponsored')}
-        url={sponsorConference.url}
-        unstyled
-        external
-      >
+      <Link url={sponsorConference.url} unstyled external>
         <img
           alt={`Logo of ${sponsorConference.name} conference`}
           src={sponsorConference.img}
@@ -41,11 +34,7 @@ const SponsoredConference = () => {
       <div className={styles.Content}>
         <div>
           <Heading element='p' level={4}>
-            <Link
-              onClick={trackLink('outbound-sponsored')}
-              url={sponsorConference.url}
-              external
-            >
+            <Link url={sponsorConference.url} external>
               {sponsorConference.name}
             </Link>
           </Heading>

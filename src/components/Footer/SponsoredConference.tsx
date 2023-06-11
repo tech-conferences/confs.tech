@@ -1,6 +1,5 @@
 import React from 'react'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
-import { trackLink } from 'src/utilities/tracking'
 
 import Heading from '../Heading'
 import Link from '../Link'
@@ -29,13 +28,7 @@ const SponsoredConference: React.FC<Props> = ({
   } = useDarkModeContext()
 
   return (
-    <Link
-      className={styles.Conference}
-      unstyled
-      onClick={trackLink('outbound-sponsored-footer')}
-      url={url}
-      external
-    >
+    <Link className={styles.Conference} unstyled url={url} external>
       <div className={styles.Content}>
         <Heading element='p' level={4}>
           {name}
