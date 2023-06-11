@@ -1,7 +1,6 @@
 import classNames from 'classnames'
 import React, { PureComponent } from 'react'
 import { Heading, Link } from 'src/components'
-import { trackLink } from 'src/utilities/tracking'
 import { Conference } from 'types/conference'
 
 import styles from './ConferenceItem.module.scss'
@@ -51,7 +50,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
         <dl className={styles.dl}>
           <dt className='visuallyHidden'>Conference name</dt>
           <Heading element='dd' level={4}>
-            <Link onClick={trackLink('outbound')} url={url} external>
+            <Link url={url} external>
               {name}
             </Link>
           </Heading>
