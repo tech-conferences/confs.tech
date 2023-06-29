@@ -11,6 +11,7 @@ export interface Conference {
   cfpUrl: string
   cfpEndDate: Date | null | undefined
   twitter: string
+  github: string
   cocUrl: string
   offersSignLanguageOrCC: boolean
 }
