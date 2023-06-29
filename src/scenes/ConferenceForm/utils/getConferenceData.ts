@@ -15,6 +15,7 @@ export function getConferenceData(conference: Conference) {
     endDate,
     cfpEndDate,
     locales,
+    github,
   } = conference
 
   return JSON.stringify({
@@ -23,6 +24,7 @@ export function getConferenceData(conference: Conference) {
     city: city ? city.trim() : city,
     country: country ? country.trim() : country,
     twitter: twitter !== '@' ? twitter : null,
+    github: github !== '' ? github : null,
     startDate: startDate ? format(startDate, CONFERENCE_DATE_FORMAT) : null,
     endDate: endDate ? format(endDate, CONFERENCE_DATE_FORMAT) : null,
     cfpEndDate: cfpEndDate ? format(cfpEndDate, CONFERENCE_DATE_FORMAT) : null,

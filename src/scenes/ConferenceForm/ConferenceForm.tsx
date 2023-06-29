@@ -80,6 +80,7 @@ const defaultConference: Conference = {
   online: true,
   offersSignLanguageOrCC: false,
   twitter: '@',
+  github: '',
 }
 
 export enum ServerErrorEnum {
@@ -278,6 +279,7 @@ const ConferenceForm: React.FC = () => {
     country,
     cfpUrl,
     twitter,
+    github,
     cocUrl,
     offersSignLanguageOrCC,
     startDate,
@@ -567,6 +569,16 @@ const ConferenceForm: React.FC = () => {
                 onChange={handleFieldChange}
               />
               {errorFor('twitter', 'Should be formatted like @twitter')}
+            </InputGroup>
+            <InputGroup>
+              <label htmlFor='github'>Github handle of submitter</label>
+              <input
+                type='text'
+                name='github'
+                id='github'
+                value={github}
+                onChange={handleFieldChange}
+              />
             </InputGroup>
             <InputGroup>
               <label htmlFor='cocUrl'>Code Of Conduct URL</label>
