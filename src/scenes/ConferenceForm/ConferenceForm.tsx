@@ -571,7 +571,7 @@ const ConferenceForm: React.FC = () => {
               {errorFor('twitter', 'Should be formatted like @twitter')}
             </InputGroup>
             <InputGroup>
-              <label htmlFor='github'>Github handle of submitter</label>
+              <label htmlFor='github'>Github username of submitter</label>
               <input
                 type='text'
                 name='github'
@@ -579,6 +579,10 @@ const ConferenceForm: React.FC = () => {
                 value={github}
                 onChange={handleFieldChange}
               />
+              <div className={styles.InputHint}>
+                Needed to be able to get in touch with you regarding questions
+                and inform you about approval or rejection
+              </div>
             </InputGroup>
             <InputGroup>
               <label htmlFor='cocUrl'>Code Of Conduct URL</label>
