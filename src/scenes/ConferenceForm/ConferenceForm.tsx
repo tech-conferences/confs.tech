@@ -7,7 +7,7 @@ import DatePicker from 'react-datepicker'
 import { Helmet } from 'react-helmet'
 import Recaptcha from 'react-recaptcha'
 import Select from 'react-select'
-import { Card, Link, InputGroup, Page } from 'src/components'
+import { Card, Link, InputGroup, Page, Divider } from 'src/components'
 import Alert from 'src/components/Alert'
 import { TOPICS, LOCALES } from 'src/components/config'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
@@ -571,20 +571,6 @@ const ConferenceForm: React.FC = () => {
               {errorFor('twitter', 'Should be formatted like @twitter')}
             </InputGroup>
             <InputGroup>
-              <label htmlFor='github'>Github username of submitter</label>
-              <input
-                type='text'
-                name='github'
-                id='github'
-                value={github}
-                onChange={handleFieldChange}
-              />
-              <div className={styles.InputHint}>
-                Needed to be able to get in touch with you regarding questions
-                and inform you about approval or rejection
-              </div>
-            </InputGroup>
-            <InputGroup>
               <label htmlFor='cocUrl'>Code Of Conduct URL</label>
               <input
                 type='text'
@@ -606,6 +592,21 @@ const ConferenceForm: React.FC = () => {
                 This conference offers interpretation to International sign
                 language or closed captions.
               </label>
+            </InputGroup>
+            <InputGroup>
+              <Divider />
+              <h4>Contact</h4>
+              <label htmlFor='github'>Your GitHub username (optional)</label>
+              <input
+                type='text'
+                name='github'
+                id='github'
+                value={github}
+                onChange={handleFieldChange}
+              />
+              <div className={styles.InputHint}>
+                In case we need to contact your about your submission.
+              </div>
             </InputGroup>
             <Recaptcha
               sitekey='6Lf5FEoUAAAAAJtf3_sCGAAzV221KqRS4lAX9AAs'
