@@ -55,6 +55,7 @@
     "whatwg-fetch": "2.0.4"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/algoliasearch": "^3.34.11",
     "@types/classnames": "^2.2.4",
     "@types/google.analytics": "^0.0.39",
@@ -77,7 +78,7 @@
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-hooks": "^5.0.0-canary-1fdacbefd-20230630",
     "husky": "^4.3.7",
     "jsonlint": "^1.6.3",
     "lint-staged": "^9.2.1",

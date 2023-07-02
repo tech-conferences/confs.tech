@@ -18,6 +18,7 @@
   ],
   "parser": "@typescript-eslint/parser",
   "rules": {
+    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "import/order": ["warn", {
       "alphabetize": {
