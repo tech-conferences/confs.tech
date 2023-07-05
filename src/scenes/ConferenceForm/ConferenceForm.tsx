@@ -596,7 +596,7 @@ const ConferenceForm: React.FC = () => {
             <InputGroup>
               <Divider />
               <h4>Contact</h4>
-              <label htmlFor='github'>Your GitHub username (optional)</label>
+              <label htmlFor='github'>Your GitHub username</label>
               <input
                 type='text'
                 name='github'
