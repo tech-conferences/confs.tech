@@ -20,6 +20,7 @@ import { Conference } from './types/Conference'
 import {
   LOCATION_ONLINE_REGEX,
   isValidTwitterHandle,
+  isValidMastodonHandle,
   VALID_URL_REGEX,
   URL_PARAMETER_REGEX,
   URL_SHORTENER_REGEX,
@@ -81,6 +82,7 @@ const defaultConference: Conference = {
   offersSignLanguageOrCC: false,
   twitter: '@',
   github: '',
+  mastodon: '',
 }
 
 export enum ServerErrorEnum {
@@ -140,6 +142,7 @@ const ConferenceForm: React.FC = () => {
       cfpUrl,
       cfpEndDate,
       twitter,
+      mastodon,
     } = conference
 
     const isNotOnline = locationType !== 'online'
@@ -159,6 +162,7 @@ const ConferenceForm: React.FC = () => {
       cfpUrl: cfpUrl.length === 0 ? cfp : !isUrlValid(cfpUrl) || url == cfpUrl,
       cfpEndDate: startDate && cfpEndDate ? cfpEndDate >= startDate : cfp,
       twitter: !isValidTwitterHandle(twitter),
+      mastodon: !isValidMastodonHandle(mastodon),
       unwantedConference:
         name.length > 0 && UNWANTED_CONFERENCE_NAME_REGEX.test(name),
     }
@@ -280,6 +284,7 @@ const ConferenceForm: React.FC = () => {
     cfpUrl,
     twitter,
     github,
+    mastodon,
     cocUrl,
     offersSignLanguageOrCC,
     startDate,
@@ -569,6 +574,18 @@ const ConferenceForm: React.FC = () => {
                 onChange={handleFieldChange}
               />
               {errorFor('twitter', 'Should be formatted like @twitter')}
+            </InputGroup>
+            <InputGroup>
+              <label htmlFor='mastodon'>Conference @MastodonHandle</label>
+              <input
+                className={classNames(hasError('mastodon') && styles.error)}
+                type='text'
+                name='mastodon'
+                id='mastodon'
+                value={mastodon}
+                onChange={handleFieldChange}
+              />
+              {errorFor('mastodon', 'Should be formatted like @username@instance')}
             </InputGroup>
             <InputGroup>
               <label htmlFor='cocUrl'>Code Of Conduct URL</label>
