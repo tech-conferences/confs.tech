@@ -11,7 +11,7 @@ Confs.tech is an open source project that lists upcoming tech conferences. Every
   - [Conferences by category](#conferences-by-category)
   - [License](#license)
 
-## Contributing 
+## Contributing
 
 Contributing to the website is as simple as running:
 
@@ -38,7 +38,8 @@ Conference data have the following structure:
   "country": "",
   "cfpUrl": "",
   "cfpEndDate": "",
-  "twitter": ""
+  "twitter": "",
+  "mastodon": ""
 }
 ```
 

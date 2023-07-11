@@ -12,6 +12,7 @@ export interface Conference {
   cfpEndDate: Date | null | undefined
   twitter: string
   github: string
+  mastodon: string
   cocUrl: string
   offersSignLanguageOrCC: boolean
 }
