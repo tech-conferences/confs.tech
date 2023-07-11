@@ -564,30 +564,6 @@ const ConferenceForm: React.FC = () => {
               </div>
             </InputGroup>
             <InputGroup>
-              <label htmlFor='twitter'>Conference @TwitterHandle</label>
-              <input
-                className={classNames(hasError('twitter') && styles.error)}
-                type='text'
-                name='twitter'
-                id='twitter'
-                value={twitter}
-                onChange={handleFieldChange}
-              />
-              {errorFor('twitter', 'Should be formatted like @twitter')}
-            </InputGroup>
-            <InputGroup>
-              <label htmlFor='mastodon'>Conference @MastodonHandle</label>
-              <input
-                className={classNames(hasError('mastodon') && styles.error)}
-                type='text'
-                name='mastodon'
-                id='mastodon'
-                value={mastodon}
-                onChange={handleFieldChange}
-              />
-              {errorFor('mastodon', 'Should be formatted like @username@instance')}
-            </InputGroup>
-            <InputGroup>
               <label htmlFor='cocUrl'>Code Of Conduct URL</label>
               <input
                 type='text'
@@ -609,6 +585,37 @@ const ConferenceForm: React.FC = () => {
                 This conference offers interpretation to International sign
                 language or closed captions.
               </label>
+            </InputGroup>
+            <InputGroup>
+              <Divider />
+              <h4>Social</h4>
+              <InputGroup>
+                <label htmlFor='twitter'>Conference @TwitterHandle</label>
+                <input
+                  className={classNames(hasError('twitter') && styles.error)}
+                  type='text'
+                  name='twitter'
+                  id='twitter'
+                  value={twitter}
+                  onChange={handleFieldChange}
+                />
+                {errorFor('twitter', 'Should be formatted like @twitter')}
+              </InputGroup>
+              <InputGroup>
+                <label htmlFor='mastodon'>Conference @MastodonHandle</label>
+                <input
+                  className={classNames(hasError('mastodon') && styles.error)}
+                  type='text'
+                  name='mastodon'
+                  id='mastodon'
+                  value={mastodon}
+                  onChange={handleFieldChange}
+                />
+                {errorFor(
+                  'mastodon',
+                  'Should be formatted like @username@instance'
+                )}
+              </InputGroup>
             </InputGroup>
             <InputGroup>
               <Divider />
