@@ -1,5 +1,6 @@
 import { format, addMonths, setDate } from 'date-fns'
 import { range } from 'lodash'
+import React from 'react'
 import { Divider, Link, Page } from 'src/components'
 import { sponsorConferenceForDate } from 'src/components/SponsoredConference/utils'
 
@@ -11,15 +12,21 @@ const TODAY = setDate(new Date(), 15)
 // Create an array of the next 10 months with availability
 // Returns:
 //    [
-//      ['September 2022', false]
-//      ['October 2022', true]
+//      ['September 2022', false, 'Conference name']
+//      ['October 2022', true, 'Conference name']
 //      ...
 //    ]
-const SPONSORS_AVAILABILITY = range(0, 10).map((index) => {
-  const sponsorDate = addMonths(TODAY, index)
-  const isMonthTaken = sponsorConferenceForDate(sponsorDate)
-  return [format(sponsorDate, 'MMMM yyyy'), !isMonthTaken]
-})
+const SPONSORS_AVAILABILITY: [string, boolean, string][] = range(0, 16).map(
+  (index) => {
+    const sponsorDate = addMonths(TODAY, index)
+    const conference = sponsorConferenceForDate(sponsorDate)
+    return [
+      format(sponsorDate, 'MMMM yyyy'),
+      Boolean(!conference),
+      conference?.name || '',
+    ]
+  }
+)
 
 export default function SponsorshipPage() {
   return (
@@ -43,7 +50,7 @@ export default function SponsorshipPage() {
       <h2>Schedule</h2>
       <dl className={styles.List}>
         {SPONSORS_AVAILABILITY.map((sponsorshipAvailability) => (
-          <>
+          <React.Fragment key={sponsorshipAvailability[0]}>
             <dt>{sponsorshipAvailability[0]}</dt>
             <dd>
               {sponsorshipAvailability[1] ? (
@@ -53,8 +60,11 @@ export default function SponsorshipPage() {
               ) : (
                 'Sold'
               )}
+              {!sponsorshipAvailability[1] &&
+                process.env.NODE_ENV === 'development' &&
+                ` (${sponsorshipAvailability[2]})`}
             </dd>
-          </>
+          </React.Fragment>
         ))}
       </dl>
       <Divider />
@@ -100,29 +110,29 @@ export default function SponsorshipPage() {
         <span role='img' aria-label='heart'>
           ❤️
         </span>
-        <ul className={styles.SponsorList}>
-          <li>
-            <Link external url='https://www.dotconferences.com/'>
-              dotConferences
-            </Link>
-          </li>
-          <li>
-            <Link external url='https://devternity.com/'>
-              DevTernity
-            </Link>
-          </li>
-          <li>
-            <Link external url='https://testcon.lt/'>
-              TestCon Europe
-            </Link>
-          </li>
-          <li>
-            <Link external url='https://bigdataconference.eu/'>
-              BigData Europe
-            </Link>
-          </li>
-        </ul>
       </p>
+      <ul className={styles.SponsorList}>
+        <li>
+          <Link external url='https://www.dotconferences.com/'>
+            dotConferences
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://devternity.com/'>
+            DevTernity
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://testcon.lt/'>
+            TestCon Europe
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://bigdataconference.eu/'>
+            BigData Europe
+          </Link>
+        </li>
+      </ul>
     </Page>
   )
 }
