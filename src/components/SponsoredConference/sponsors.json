@@ -27,6 +27,15 @@
     "sponsorDateEnd": "2023-12-01"
   },
   {
+    "name": "DevTernity",
+    "conferenceDate": "December, 2024 ・ Online",
+    "img": "/sponsors/devternity.jpg",
+    "url": "https://devternity.com",
+    "tagline": "Turning developers into architects and engineering leaders",
+    "sponsorDateStart": "2023-12-01",
+    "sponsorDateEnd": "2024-01-01"
+  },
+  {
     "name": "GitNation",
     "conferenceDate": "11 remote conferences in 2024",
     "img": "/sponsors/gitnation.jpg",
@@ -34,6 +43,15 @@
     "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
     "sponsorDateStart": "2024-01-01",
     "sponsorDateEnd": "2024-02-01"
+  },
+  {
+    "name": "DevTernity",
+    "conferenceDate": "December, 2024 ・ Online",
+    "img": "/sponsors/devternity.jpg",
+    "url": "https://devternity.com",
+    "tagline": "Turning developers into architects and engineering leaders",
+    "sponsorDateStart": "2024-02-01",
+    "sponsorDateEnd": "2024-03-01"
   },
   {
     "name": "GitNation",
@@ -45,6 +63,15 @@
     "sponsorDateEnd": "2024-06-01"
   },
   {
+    "name": "DevTernity",
+    "conferenceDate": "December, 2024 ・ Online",
+    "img": "/sponsors/devternity.jpg",
+    "url": "https://devternity.com",
+    "tagline": "Turning developers into architects and engineering leaders",
+    "sponsorDateStart": "2024-06-01",
+    "sponsorDateEnd": "2024-09-01"
+  },
+  {
     "name": "GitNation",
     "conferenceDate": "11 remote conferences in 2024",
     "img": "/sponsors/gitnation.jpg",
@@ -52,5 +79,14 @@
     "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
     "sponsorDateStart": "2024-09-01",
     "sponsorDateEnd": "2024-11-01"
+  },
+  {
+    "name": "DevTernity",
+    "conferenceDate": "December, 2024 ・ Online",
+    "img": "/sponsors/devternity.jpg",
+    "url": "https://devternity.com",
+    "tagline": "Turning developers into architects and engineering leaders",
+    "sponsorDateStart": "2024-11-01",
+    "sponsorDateEnd": "2025-01-01"
   }
 ]
