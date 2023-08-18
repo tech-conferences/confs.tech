@@ -22,6 +22,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       startDate,
       endDate,
       twitter,
+      mastodon,
       cfpEndDate,
       cfpUrl,
       showCFP,
@@ -77,9 +78,16 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           <div className={classNames(styles.topicsList, styles.Footer)}>
             <Topics topics={topics} />
           </div>
-          <div className={styles.Footer}>
-            <Twitter twitter={twitter} />
-          </div>
+          {twitter && (
+            <div className={styles.Footer}>
+              <Twitter twitter={twitter} />
+            </div>
+          )}
+          {mastodon && (
+            <div className={styles.Footer}>
+              <Mastodon mastodon={mastodon} />
+            </div>
+          )}
           {cocUrl && (
             <>
               <dt className='visuallyHidden'>Link to code of conduct</dt>
@@ -103,10 +111,6 @@ interface TwitterProps {
   twitter: string
 }
 function Twitter({ twitter }: TwitterProps) {
-  if (!twitter) {
-    return null
-  }
-
   return (
     <>
       <dt className='visuallyHidden'>Twitter username</dt>
@@ -114,6 +118,27 @@ function Twitter({ twitter }: TwitterProps) {
         <span aria-hidden='true'>・</span>
         <Link url={`https://twitter.com/${twitter}`} external muted>
           {twitter}
+        </Link>
+      </dd>
+    </>
+  )
+}
+
+interface MastodonProps {
+  mastodon: string
+}
+
+function Mastodon({ mastodon }: MastodonProps) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [_, username, domain] = mastodon.split('@')
+
+  return (
+    <>
+      <dt className='visuallyHidden'>Mastodon username</dt>
+      <dd>
+        <span aria-hidden='true'>・</span>
+        <Link url={`https://${domain}/@${username}`} external muted>
+          @{username}
         </Link>
       </dd>
     </>
