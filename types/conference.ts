@@ -9,6 +9,7 @@ export interface Conference {
   startDate: string
   endDate: string
   twitter: string
+  mastodon: string
   cfpEndDate: string
   cfpUrl: string
   cocUrl: string
