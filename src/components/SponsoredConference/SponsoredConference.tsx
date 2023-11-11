@@ -1,3 +1,5 @@
+import { useDarkModeContext } from 'src/contexts/DarkModeContext'
+
 import Heading from '../Heading'
 import Link from '../Link'
 
@@ -8,6 +10,7 @@ export interface SponsoredConf {
   name: string
   conferenceDate: string
   img: string
+  imgDark: string
   url: string
   tagline: string
   sponsorDateStart: string
@@ -21,13 +24,19 @@ const SponsoredConference = () => {
   if (!sponsorConference) {
     return null
   }
-
+  const {
+    values: { darkModeEnabled },
+  } = useDarkModeContext()
+  const sponsorImgSrc =
+    darkModeEnabled && sponsorConference.imgDark
+      ? sponsorConference.imgDark
+      : sponsorConference.img
   return (
     <div className={styles.SponsoredConference}>
       <Link url={sponsorConference.url} unstyled external>
         <img
           alt={`Logo of ${sponsorConference.name} conference`}
-          src={sponsorConference.img}
+          src={sponsorImgSrc}
           className={styles.Image}
         />
       </Link>
