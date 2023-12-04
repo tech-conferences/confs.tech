@@ -27,15 +27,6 @@
     "sponsorDateEnd": "2023-12-01"
   },
   {
-    "name": "JDKon 2024",
-    "conferenceDate": "May 23-24 ・ Online",
-    "img": "/sponsors/jdkon.jpg",
-    "url": "https://jdkon.io",
-    "tagline": "The place where professional Java developers grow.",
-    "sponsorDateStart": "2023-12-01",
-    "sponsorDateEnd": "2024-01-01"
-  },
-  {
     "name": "JSNation",
     "conferenceDate": "June 13 (hybrid in Amsterdam) & June 17 (remote), 2024",
     "img": "/sponsors/jsnation.png",
@@ -44,15 +35,6 @@
     "tagline": "Gathering 1,500 people in Amsterdam and 10,000 developers remotely. Amsterdam festival vibe with city boat tours and the biggest JS party.",
     "sponsorDateStart": "2023-01-01",
     "sponsorDateEnd": "2024-02-01"
-  },
-  {
-    "name": "JDKon 2024",
-    "conferenceDate": "May 23-24 ・ Online",
-    "img": "/sponsors/jdkon.jpg",
-    "url": "https://jdkon.io",
-    "tagline": "The place where professional Java developers grow.",
-    "sponsorDateStart": "2024-02-01",
-    "sponsorDateEnd": "2024-03-01"
   },
   {
     "name": "GitNation",
@@ -83,15 +65,6 @@
     "sponsorDateEnd": "2024-06-01"
   },
   {
-    "name": "DevTernity",
-    "conferenceDate": "December, 2024 ・ Online",
-    "img": "/sponsors/devternity.jpg",
-    "url": "https://devternity.com",
-    "tagline": "Turning developers into architects and engineering leaders",
-    "sponsorDateStart": "2024-06-01",
-    "sponsorDateEnd": "2024-09-01"
-  },
-  {
     "name": "GitNation",
     "conferenceDate": "11 remote conferences in 2024",
     "img": "/sponsors/gitnation.jpg",
@@ -99,14 +72,5 @@
     "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
     "sponsorDateStart": "2024-09-01",
     "sponsorDateEnd": "2024-11-01"
-  },
-  {
-    "name": "DevTernity",
-    "conferenceDate": "December, 2024 ・ Online",
-    "img": "/sponsors/devternity.jpg",
-    "url": "https://devternity.com",
-    "tagline": "Turning developers into architects and engineering leaders",
-    "sponsorDateStart": "2024-11-01",
-    "sponsorDateEnd": "2025-01-01"
   }
 ]
