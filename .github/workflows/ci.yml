@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  CI: true
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: '.nvmrc'
+    - run: npm ci
+    - run: npm test
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: '.nvmrc'
+    - run: npm ci
+    - run: npm run lint
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version-file: '.nvmrc'
+    - run: npm ci
+    - run: npm run build
