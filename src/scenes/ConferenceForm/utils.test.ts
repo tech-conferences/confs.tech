@@ -1,6 +1,10 @@
 /* global describe, it, expect */
 
-import { isValidTwitterHandle, isValidMastodonHandle, showWarningForTopics } from './utils'
+import {
+  isValidTwitterHandle,
+  isValidMastodonHandle,
+  showWarningForTopics,
+} from './utils'
 
 describe('RegEx', () => {
   describe('showWarningForTopics', () => {
