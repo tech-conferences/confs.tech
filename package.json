@@ -39,7 +39,7 @@
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
-    "promise": "8.0.2",
+    "promise": "8.3.0",
     "qs": "^6.5.2",
     "react": "^17.0.1",
     "react-datepicker": "^3.6.0",
