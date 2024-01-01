@@ -32,7 +32,7 @@
     "chalk": "2.4.1",
     "classnames": "^2.2.5",
     "date-fns": "^2.16.1",
-    "dotenv": "6.0.0",
+    "dotenv": "16.3.1",
     "fs-extra": "7.0.0",
     "gh-pages": "^2.0.0",
     "lodash": "^4.17.4",
