@@ -1,4 +1,4 @@
-import { Switch, Route, Redirect, RouteComponentProps } from 'react-router-dom'
+import { Routes, Route, Redirect, RouteComponentProps } from 'react-router-dom'
 import { AboutPage, NotFoundPage, SponsorshipPage } from 'src/StaticPages'
 import { ConferenceList, ConferenceForm } from 'src/scenes'
 
@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className={styles.AppContainer}>
       <div className={styles.App}>
-        <Switch>
+        <Routes>
           <Route path='/pages/:page' component={renderPages} />
           <Route path='/conferences/new' component={ConferenceForm} />
           <Route path='/past' render={renderPast} />
@@ -20,7 +20,7 @@ export default function App() {
           <Route path='/:topic' component={ConferenceList} />
           <Route exact path='/' component={ConferenceList} />
           <Route component={ConferenceList} />
-        </Switch>
+        </Routes>
       </div>
     </div>
   )
