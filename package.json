@@ -53,7 +53,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
     "react-select": "^5.1.0",
-    "whatwg-fetch": "2.0.4"
+    "whatwg-fetch": "3.6.20"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
