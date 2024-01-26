@@ -27,7 +27,7 @@
   "dependencies": {
     "algoliasearch": "^4.8.6",
     "autoprefixer": "10.4.16",
-    "babel-core": "^4.7.16",
+    "babel-core": "^6.26.3",
     "babel-preset-react-app": "^3.0.0",
     "babel-runtime": "6.26.0",
     "chalk": "2.4.1",
