@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "format": "eslint --fix .",
     "precommit": "lint-staged",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.tsx?": [
@@ -80,7 +81,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react-hooks": "^5.0.0-next-987292815-20221019",
-    "husky": "^4.3.7",
+    "husky": "^9.0.6",
     "jest": "^27.5.1",
     "jsonlint": "^1.6.3",
     "lint-staged": "^9.2.1",
