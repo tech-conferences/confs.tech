@@ -85,7 +85,6 @@
     "jest": "^27.5.1",
     "jsonlint": "^1.6.3",
     "lint-staged": "^9.2.1",
-    "prettier": "^2.2.1",
     "sass": "^1.43.2",
     "source-map-loader": "^0.2.3",
     "tslint": "^4.5.1",
