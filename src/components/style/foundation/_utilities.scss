@@ -14,16 +14,16 @@ $base-font-size: 16px;
   @if $unit == 'rem' {
     @return $value;
   } @else if $unit == 'px' {
-    @return $value / $base-font-size * 1rem;
+    @return calc($value / $base-font-size * 1rem);
   } @else if $unit == 'em' {
-    @return $unit / 1em * 1rem;
+    @return calc($unit / 1em * 1rem);
   } @else {
     @error 'Value must be in px, em, or rem.';
   }
 }
 
 @function em($pixels, $context: $default-browser-font-size) {
-  @return #{$pixels/$context}em;
+  @return #{calc($pixels/$context)}em;
 }
 
 /// Returns the list of available names in a given map.
