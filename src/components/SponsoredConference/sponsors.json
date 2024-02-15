@@ -37,11 +37,11 @@
     "sponsorDateEnd": "2024-02-01"
   },
   {
-    "name": "GitNation",
+    "name": "C3 Dev Festival 2024",
     "conferenceDate": "11 remote conferences in 2024",
-    "img": "/sponsors/gitnation.jpg",
-    "url": "https://portal.gitnation.org/multipass",
-    "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
+    "img": "/sponsors/gitnation-c3.jpg",
+    "url": "https://portal.gitnation.org/events/c3-festival-2024/speakers",
+    "tagline": "Join a contemporary software engineering and design festival in Amsterdam. 30+ industry stars talking about career, code, innovations and AI. 12+ DJs and artists (techno/house/algorave/experimental) on 3 stages. Your ultimate summer experience is here!",
     "sponsorDateStart": "2024-02-01",
     "sponsorDateEnd": "2024-04-01"
   },
