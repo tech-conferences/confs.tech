@@ -87,7 +87,7 @@
     "source-map-loader": "^0.2.3",
     "tslint": "^4.5.1",
     "typescript": "^4.2.3",
-    "webpack": "^5.89.0",
+    "webpack": "^5.91.0",
     "webpack-dev-server": "^4.15.1"
   },
   "browserslist": {
