@@ -18,6 +18,7 @@ export const TOPICS = {
   graphql: 'GraphQL',
   groovy: 'Groovy',
   haskell: 'Haskell',
+  identity: 'Identity',
   ios: 'iOS / Swift',
   iot: 'IoT / Hardware',
   java: 'Java',
