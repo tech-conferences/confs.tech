@@ -69,17 +69,17 @@ const LOCATION_TYPES = [
 const defaultConference: Conference = {
   name: '',
   url: '',
-  city: '',
-  country: '',
   startDate: null,
   endDate: null,
+  city: '',
+  country: '',
+  online: true,
   locales: ['EN'],
+  offersSignLanguageOrCC: false,
   topics: [],
+  cocUrl: '',
   cfpUrl: '',
   cfpEndDate: null,
-  cocUrl: '',
-  online: true,
-  offersSignLanguageOrCC: false,
   twitter: '@',
   github: '',
   mastodon: '',
@@ -153,7 +153,7 @@ const ConferenceForm: React.FC = () => {
       tooManyTopics: topics.length > 3,
       name: startDate
         ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !==
-          -1
+        -1
         : false,
       url: !isUrlValid(url),
       endDate: startDate && endDate ? startDate > endDate : false,
