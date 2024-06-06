@@ -153,7 +153,7 @@ const ConferenceForm: React.FC = () => {
       tooManyTopics: topics.length > 3,
       name: startDate
         ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !==
-        -1
+          -1
         : false,
       url: !isUrlValid(url),
       endDate: startDate && endDate ? startDate > endDate : false,
