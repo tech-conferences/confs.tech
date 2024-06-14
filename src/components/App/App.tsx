@@ -1,5 +1,10 @@
 import { Routes, Route, Navigate, useParams } from 'react-router-dom'
-import { AboutPage, NotFoundPage, SponsorshipPage } from 'src/StaticPages'
+import {
+  AboutPage,
+  TeamPage,
+  NotFoundPage,
+  SponsorshipPage,
+} from 'src/StaticPages'
 import { ConferenceList, ConferenceForm } from 'src/scenes'
 
 import styles from './App.module.scss'
@@ -28,13 +33,14 @@ export default function App() {
     </div>
   )
 }
-
 function Pages() {
   const params = useParams<keyof Params>() as Params
 
   switch (params.page) {
     case 'about':
       return <AboutPage />
+    case 'team':
+      return <TeamPage />
     case 'sponsorships':
       return <SponsorshipPage />
   }
