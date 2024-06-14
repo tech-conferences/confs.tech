@@ -42,7 +42,7 @@ function renderPages({ match }: RouteComponentProps<{ page: string }>) {
   switch (match.params.page) {
     case "about":
       return <AboutPage />;
-    case "Team":
+    case "team":
       return <TeamPage />;
     case "sponsorships":
       return <SponsorshipPage />;
