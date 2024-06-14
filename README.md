@@ -5,7 +5,8 @@ Confs.tech is an open source project that lists upcoming tech conferences. Every
 - [The open-source and crowd sourced conference website](#the-open-source-and-crowd-sourced-conference-website)
   - [Contributing](#contributing)
   - [Adding a conference](#adding-a-conference)
-  - [Active contributors](#active-contributors)
+  - [Maintainers](#maintainers)
+  - [Top 10 Contributors](#top-10-contributors)
   - [Related projects](#related-projects)
   - [Call for papers](#call-for-papers)
   - [Conferences by category](#conferences-by-category)
@@ -43,13 +44,30 @@ Conference data have the following structure:
 }
 ```
 
-## Active contributors
+## Maintainers
 
-- [Christian Grail](https://twitter.com/cgrail)
-- [Ekaterina Prigara](https://twitter.com/katyaprigara)
-- [Nima Izadi](https://nimz.co)
-- [Trivikram Kamat](https://twitter.com/trivikram)
+Need help while contributing? Tag any of the maintainers when creating the issue. You can tag us using: `@username`
 
+<table>
+    <tr>
+        <td align="center" width="200">
+            <pre><a href="https://github.com/cgrail"><img src="https://avatars.githubusercontent.com/u/5702278?size=200" width="200" alt="GitHub Profile picture of Christian Grail" /><br><sub>Christian Grail</sub></a><br>@cgrail</pre>
+        </td>
+        <td align="center" width="200">
+            <pre><a href="https://github.com/nimzco"><img src="https://avatars.githubusercontent.com/u/445045?size=200" width="200" alt="GitHub Profile picture of Nima Izadi" /><br><sub>Nima Izadi</sub></a><br>@nimzco</pre>
+        </td>
+        <td align="center" width="200">
+            <pre><a href="https://github.com/prigara"><img src="https://avatars.githubusercontent.com/u/782562?size=200" width="200" alt="GitHub Profile picture of Ekaterina Prigara" /><br><sub>Ekaterina Prigara</sub></a><br>@prigara</pre>
+        </td>
+        <td align="center" width="200">
+            <pre><a href="https://github.com/trivikr"><img src="https://avatars.githubusercontent.com/u/16024985?size=200" width="200" alt="GitHub Profile picture of Trivikram Kamat" /><br><sub>Trivikram Kamat</sub></a><br>@trivikr</pre>
+        </td>
+    </tr>
+</table>
+
+## Top 10 Contributors
+
+<a href="https://github.com/tech-conferences/confs.tech/graphs/contributors"><img src="https://contrib.rocks/image?max=10&repo=tech-conferences/confs.tech" /></a>
 
 ## Related projects
 
@@ -60,6 +78,7 @@ Some of the conferences have been pulled from other projects:
 - iOS: [Lascorbe/CocoaConferences](https://github.com/Lascorbe/CocoaConferences)
 
 ## Call for papers
+
 - [See all open call for papers](https://confs.tech/cfp)
 
 ## Conferences by category
