@@ -1,14 +1,13 @@
 import { Routes, Route, Navigate, useParams } from 'react-router-dom'
 import {
   AboutPage,
+  TeamPage,
   NotFoundPage,
   SponsorshipPage,
-  TeamPage,
 } from 'src/StaticPages'
 import { ConferenceList, ConferenceForm } from 'src/scenes'
 
 import styles from './App.module.scss'
-
 export default function App() {
   return (
     <div className={styles.AppContainer}>
