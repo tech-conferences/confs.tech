@@ -1,10 +1,10 @@
-// export const maintainersData = [
-//   { login: "nimz_co", name: "Nima Izadi" },
-//   { login: "cgrail", name: "Cyril Grail" },
-//   { login: "prigara", name: "Ekaterina Prigara" },
-//   { login: "trivikr", name: "Trivikram Kamat" },
-//   { login: "JuanPabloDiaz", name: "Juan Diaz" },
-// ];
+export const maintainersData = [
+  { login: "nimz_co", name: "Nima Izadi" },
+  { login: "cgrail", name: "Cyril Grail" },
+  { login: "prigara", name: "Ekaterina Prigara" },
+  { login: "trivikr", name: "Trivikram Kamat" },
+  { login: "JuanPabloDiaz", name: "Juan Diaz" },
+];
 
 export interface MaintainersDataInterface {
   name: string;
@@ -94,11 +94,99 @@ export const Maintainers: MaintainersDataInterface[] = [
   },
 ];
 
-// export interface Contributor {
-//   twitter_username?: string;
-//   id: number;
-//   avatar_url: string;
-//   name: string;
-//   login: string;
-//   contributions: number;
-// }
+export interface Contributor {
+  login: string;
+  contributions: number;
+  avatar_url: string;
+  html_url: string;
+  twitter_username?: string;
+  id: number;
+  name?: string;
+}
+
+export const dummyContributors: Contributor[] = [
+  {
+    id: 1,
+    avatar_url: "https://avatars.githubusercontent.com/u/25883220?v=4",
+    name: "Juan Diaz",
+    login: "juanpablodiaz",
+    contributions: 200,
+  },
+  {
+    id: 2,
+    avatar_url: "https://randomuser.me/api/portraits/men/2.jpg",
+    name: "John Doe",
+    login: "johndoe",
+    contributions: 15,
+  },
+  {
+    id: 3,
+    avatar_url: "https://randomuser.me/api/portraits/women/3.jpg",
+    name: "jane mith",
+    login: "janesmith",
+    contributions: 10,
+  },
+  {
+    id: 4,
+    avatar_url: "https://randomuser.me/api/portraits/men/4.jpg",
+    name: "Bob Smith Johnson",
+    login: "bobjohnson",
+    contributions: 5,
+  },
+  {
+    id: 5,
+    avatar_url: "https://randomuser.me/api/portraits/men/5.jpg",
+    name: "Bob Johnson",
+    login: "bobjohnson",
+    contributions: 18,
+  },
+  {
+    id: 6,
+    avatar_url: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "one two three",
+    login: "bobjohnson",
+    contributions: 34,
+  },
+  {
+    id: 7,
+    avatar_url: "https://randomuser.me/api/portraits/men/7.jpg",
+    name: "capital letter name",
+    login: "bobjohnson",
+    contributions: 12,
+  },
+  {
+    id: 8,
+    avatar_url: "https://randomuser.me/api/portraits/men/8.jpg",
+    name: "Bob Johnson",
+    login: "bobjohnson",
+    contributions: 6,
+  },
+  {
+    id: 9,
+    avatar_url: "https://randomuser.me/api/portraits/men/9.jpg",
+    name: "Ella Young",
+    login: "bobjohnson",
+    contributions: 5,
+  },
+  {
+    id: 10,
+    avatar_url: "https://randomuser.me/api/portraits/men/10.jpg",
+    name: "Eli Vasquez",
+    login: "bobjohnson",
+    contributions: 25,
+  },
+  {
+    id: 11,
+    avatar_url: "https://randomuser.me/api/portraits/men/11.jpg",
+    name: "Bob Johnson",
+    login: "bobjohnson",
+    contributions: 50,
+  },
+  {
+    id: 12,
+    avatar_url: "https://randomuser.me/api/portraits/men/12.jpg",
+    name: "Bob Johnson",
+    login: "bobjohnson",
+    contributions: 17,
+  },
+];
