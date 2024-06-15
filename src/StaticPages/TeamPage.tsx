@@ -1,11 +1,127 @@
 import { Divider, Link, Page } from "src/components";
-import { Maintainers } from "src/data/maintainersData";
 import { Github, Linkedin, Mastodon, Site, TwitterX } from "src/icons/icons";
-
 import styles from "./TeamPage.module.scss";
+import { useEffect, useState } from "react";
+
+import {
+  Maintainers,
+  maintainersData,
+  Contributor,
+  dummyContributors,
+} from "src/data/maintainersData";
 
 export default function TeamPage() {
-  const getFourthIcon = (fourthTxt: string) => {
+  // const confsTechContributors = dummyContributors;
+  const [confsTechContributors, setConfsTechContributors] = useState<
+    Contributor[]
+  >([]);
+  const [conferenceDataContributors, setConferenceDataContributors] = useState<
+    Contributor[]
+  >([]);
+
+  useEffect(() => {
+    const fetchContributors = async (url, setContributorsState) => {
+      try {
+        const response = await fetch(url);
+        console.log(response);
+        if (response.ok) {
+          const contributors = await response.json();
+
+          // Fetch additional data for each contributor
+          const contributorsWithNames = await Promise.all(
+            contributors.map(async (contributor) => {
+              const userResponse = await fetch(
+                `https://api.github.com/users/${contributor.login}`
+              );
+              if (userResponse.ok) {
+                const userData = await userResponse.json();
+                return { ...contributor, name: userData.name };
+              }
+              return contributor;
+            })
+          );
+          console.log(contributorsWithNames);
+
+          setContributorsState(contributorsWithNames); // Use the passed setter function
+        }
+      } catch (error) {
+        console.error(
+          "Failed to fetch contributors data from GitHub API:",
+          error
+        );
+      }
+    };
+
+    fetchContributors(
+      "https://api.github.com/repos/tech-conferences/confs.tech/contributors",
+      setConfsTechContributors // Pass the appropriate setter function
+    );
+    fetchContributors(
+      "https://api.github.com/repos/tech-conferences/conference-data/contributors",
+      setConferenceDataContributors // Pass the appropriate setter function
+    );
+  }, []);
+
+  async function fetchContributors(url, setContributors) {
+    const response = await fetch(url);
+    const data = await response.json();
+    setContributors(data);
+  }
+
+  function capitalizeFirstLetter(string) {
+    let result = string
+      .split(" ")
+      .slice(0, 2) // Take only the first two words
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+
+    // Truncate the result to 20 characters if necessary
+    if (result.length > 20) {
+      result = result.substring(0, 20);
+    }
+
+    return result;
+  }
+
+  const TeamSection = ({ contributors, contributionsUrlBase }) => (
+    <section className={styles.team}>
+      {contributors.map((contributor) => {
+        const name = capitalizeFirstLetter(
+          contributor.name || contributor.login
+        );
+        return (
+          <div key={contributor.id} className={styles.teamMember}>
+            <h3>{name}</h3>
+            <div className={styles.avatar}>
+              <img
+                src={contributor.avatar_url}
+                alt={contributor.login}
+                className={styles.avatarImg}
+              />
+            </div>
+            <p className={styles.githubUsername}>@{contributor.login}</p>
+            <div className={styles.links}>
+              <Link url={contributor.html_url} className={styles.link_item}>
+                <Github />
+                <span>GitHub</span>
+              </Link>
+              <Link
+                url={`${contributionsUrlBase}/commits?author=${contributor.login}`}
+                className={styles.link_item}
+              >
+                <div className={styles.contributionContainer}>
+                  {contributor.contributions}
+                  <span className={styles.contribution}>Contributions</span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        );
+      })}
+    </section>
+  );
+
+  const dynamic_icon = (fourthTxt: string) => {
     switch (fourthTxt) {
       case "Site":
         return <Site />;
@@ -15,11 +131,11 @@ export default function TeamPage() {
         return <Site />;
     }
   };
-
   return (
     <Page
       narrow
       title="Team Confs.tech"
+      subtitle="Meet the team behind Confs.tech"
       htmlTitle="Team Confs.tech open source project"
       backButton
     >
@@ -27,9 +143,9 @@ export default function TeamPage() {
         Meet Our Team, Passionate About Open Source and Making Conf.tech
         possible.
       </p>
-      <section className={styles.Team}>
+      <section className={styles.team}>
         {Maintainers.map((maintainer, id) => (
-          <div key={id} className={styles.TeamMember}>
+          <div key={id} className={styles.teamMember}>
             <h3>{maintainer.name}</h3>
             <div className={styles.avatar}>
               <img
@@ -61,7 +177,7 @@ export default function TeamPage() {
               </Link>
               <Link url={maintainer.fourthLink}>
                 <span className={styles.icon}>
-                  {getFourthIcon(maintainer.fourthTxt)}
+                  {dynamic_icon(maintainer.fourthTxt)}
                 </span>
                 {maintainer.fourthTxt}
               </Link>
@@ -70,12 +186,6 @@ export default function TeamPage() {
         ))}
       </section>
       <Divider />
-      <h2>Meet the team</h2>
-      <p>Contribute to Confs.tech and support the developer community.</p>
-      <Divider />
-      <p>Fetch GitHub API to display contributors</p>
-      <Divider />
-
       <h3>How do I join the team?</h3>
       <p>
         We are always looking for new contributors to help us improve
@@ -85,6 +195,29 @@ export default function TeamPage() {
       <Link external url="https://github.com/tech-conferences/conference-data">
         Join our awesome team!
       </Link>
+      <Divider />
+      <h2>Meet the rest of the team</h2>
+      <p>Contribute to Confs.tech and support the developer community.</p>
+      <>
+        {/* <h3>Dummy Data</h3>
+        <TeamSection
+          contributors={confsTechContributors}
+          contributionsUrlBase="https://github.com/tech-conferences/confs.tech"
+        /> */}
+        <h3>Confs.tech contributors</h3>
+        <TeamSection
+          contributors={confsTechContributors}
+          contributionsUrlBase="https://github.com/tech-conferences/confs.tech"
+        />
+
+        <div className={styles.repo}>
+          <h3>Conference Data contributors</h3>
+          <TeamSection
+            contributors={conferenceDataContributors}
+            contributionsUrlBase="https://github.com/tech-conferences/conference-data"
+          />
+        </div>
+      </>
     </Page>
   );
 }

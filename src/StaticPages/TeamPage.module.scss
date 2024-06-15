@@ -1,7 +1,7 @@
 @import "src/components/style/foundation/spacing";
 @import "src/components/style/foundation/colors";
 
-.Team {
+.team {
   // border: 1px solid color(gray, lighter);
   width: 1000px;
   // width: max-content;
@@ -11,7 +11,7 @@
   gap: 20px;
   margin-top: 20px;
 
-  .TeamMember {
+  .teamMember {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,13 +34,6 @@
       background: rgba(255, 255, 255, 0.1);
     }
 
-    // mine
-    // h2 {
-    //   font-size: 18px;
-    //   color: #fff;
-    //   margin-bottom: 10px;
-    // }
-
     .avatar {
       width: 100px;
       height: 100px;
@@ -54,7 +47,8 @@
       }
     }
     .designation,
-    .role {
+    .role,
+    .githubUsername {
       font-size: 14px;
       margin: 5px 0;
     }
@@ -64,56 +58,53 @@
     }
 
     .role {
-      color: #007bff;
+      color: #c8c7c7;
     }
-    // .links {
-    //   display: flex;
-    //   flex-direction: row;
-    //   align-items: center;
-    //   gap: 5px;
-    //   margin-top: 10px;
+    .githubUsername {
+      color: #c8c7c7;
+      font-size: small;
+    }
+  }
 
-    //   .firstLink {
-    //     display: flex;
-    //     flex-direction: row;
-    //     align-items: center;
-    //   }
-    //   .icon {
-    //     font-size: 20px;
-    //     color: #fff;
-    //   }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 
-    //   a {
-    //     font-size: 14px;
-    //     color: #007bff;
-    //     text-decoration: none;
+    .link_item {
+      padding: 5px 10px;
+      gap: 5px;
+    }
+    .contributionContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      // color: color(gray, lighter);
+      color: color(gray);
 
-    //     &:hover {
-    //       text-decoration: underline;
-    //     }
-    //   }
-    // }
+      :global(.theme--dark) & {
+        color: color(gray, lighter);
+      }
+    }
+    .contribution {
+      font-size: x-small;
+      // fill: currentColor;
+      color: color(gray, base);
+    }
 
-    //----------------------------
-    .links {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); // Creates two columns
-      gap: 10px; // Adjust the gap as needed
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
 
-      a {
+      .icon {
+        margin-right: 8px;
         display: flex;
         align-items: center;
-        color: inherit;
-        text-decoration: none;
 
-        .icon {
-          margin-right: 8px;
-          display: flex;
-          align-items: center;
-
-          svg {
-            fill: currentColor;
-          }
+        svg {
+          fill: currentColor;
         }
       }
     }
