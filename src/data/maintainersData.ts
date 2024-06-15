@@ -1,10 +1,10 @@
-export const maintainersData = [
-  { login: "nimz_co", name: "Nima Izadi" },
-  { login: "cgrail", name: "Cyril Grail" },
-  { login: "prigara", name: "Ekaterina Prigara" },
-  { login: "trivikr", name: "Trivikram Kamat" },
-  { login: "JuanPabloDiaz", name: "Juan Diaz" },
-];
+// export const maintainersData = [
+//   { login: "nimz_co", name: "Nima Izadi" },
+//   { login: "cgrail", name: "Cyril Grail" },
+//   { login: "prigara", name: "Ekaterina Prigara" },
+//   { login: "trivikr", name: "Trivikram Kamat" },
+//   { login: "JuanPabloDiaz", name: "Juan Diaz" },
+// ];
 
 export interface MaintainersDataInterface {
   name: string;
@@ -29,12 +29,12 @@ export const Maintainers: MaintainersDataInterface[] = [
     role: "Founder",
     firstLink: "https://github.com/nimzco",
     firstTxt: "GitHub",
-    secondLink: "https://nimz.co/",
-    secondTxt: "Website",
+    secondLink: "https://www.linkedin.com/in/nimzco/",
+    secondTxt: "LinkedIn",
     thirdLink: "https://x.com/nimz_co",
     thirdTxt: "Twitter",
-    fourthLink: "https://www.linkedin.com/in/nimzco/",
-    fourthTxt: "LinkedIn",
+    fourthLink: "https://nimz.co/",
+    fourthTxt: "Website",
   },
   {
     name: "Christian Grail",
@@ -43,12 +43,12 @@ export const Maintainers: MaintainersDataInterface[] = [
     role: "Core Maintainer",
     firstLink: "https://github.com/cgrail",
     firstTxt: "GitHub",
-    secondLink: "https://grails.de/about/",
-    secondTxt: "Website",
+    secondLink: "https://www.linkedin.com/in/cgrail/",
+    secondTxt: "LinkedIn",
     thirdLink: "https://x.com/cgrail",
     thirdTxt: "Twitter",
-    fourthLink: "https://www.linkedin.com/in/cgrail/",
-    fourthTxt: "LinkedIn",
+    fourthLink: "https://grails.de/about/",
+    fourthTxt: "Website",
   },
   {
     name: "Ekaterina Prigara",
@@ -57,12 +57,12 @@ export const Maintainers: MaintainersDataInterface[] = [
     role: "Maintainer",
     firstLink: "https://github.com/prigara",
     firstTxt: "GitHub",
-    secondLink: "",
-    secondTxt: "Website",
+    secondLink: "https://www.linkedin.com/in/prigara/",
+    secondTxt: "LinkedIn",
     thirdLink: "https://x.com/katyaprigara",
     thirdTxt: "Twitter",
-    fourthLink: "https://www.linkedin.com/in/prigara/",
-    fourthTxt: "LinkedIn",
+    fourthLink: "",
+    fourthTxt: "Need_URL",
   },
   {
     name: "Trivikram Kamat",
@@ -71,12 +71,12 @@ export const Maintainers: MaintainersDataInterface[] = [
     role: "Maintainer",
     firstLink: "https://github.com/trivikr",
     firstTxt: "GitHub",
-    secondLink: "https://fosstodon.org/@trivikram",
-    secondTxt: "Mastodon",
+    secondLink: "https://www.linkedin.com/in/trivikramkamat/",
+    secondTxt: "LinkedIn",
     thirdLink: "https://x.com/trivikram",
     thirdTxt: "Twitter",
-    fourthLink: "https://www.linkedin.com/in/trivikramkamat/",
-    fourthTxt: "LinkedIn",
+    fourthLink: "https://fosstodon.org/@trivikram",
+    fourthTxt: "Mastodon",
   },
   {
     name: "Juan Diaz",
@@ -85,20 +85,20 @@ export const Maintainers: MaintainersDataInterface[] = [
     role: "Maintainer",
     firstLink: "https://github.com/JuanPabloDiaz",
     firstTxt: "GitHub",
-    secondLink: "https://jpdiaz.dev/",
-    secondTxt: "Website",
+    secondLink: "https://www.linkedin.com/in/1diazdev/",
+    secondTxt: "LinkedIn",
     thirdLink: "https://x.com/1diazdev",
     thirdTxt: "Twitter",
-    fourthLink: "https://www.linkedin.com/in/1diazdev/",
-    fourthTxt: "LinkedIn",
+    fourthLink: "https://jpdiaz.dev/",
+    fourthTxt: "Website",
   },
 ];
 
-export interface Contributor {
-  twitter_username?: string;
-  id: number;
-  avatar_url: string;
-  name: string;
-  login: string;
-  contributions: number;
-}
+// export interface Contributor {
+//   twitter_username?: string;
+//   id: number;
+//   avatar_url: string;
+//   name: string;
+//   login: string;
+//   contributions: number;
+// }

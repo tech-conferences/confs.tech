@@ -1,16 +1,22 @@
-import { Divider, Link, Page, Twitter } from "src/components";
-import {
-  maintainersData,
-  Maintainers,
-  Contributor,
-  MaintainersDataInterface,
-} from "src/data/maintainersData";
+import { Divider, Link, Page } from "src/components";
+import { Maintainers } from "src/data/maintainersData";
 
-import { Community, Github, Linkedin, TwitterX } from "src/icons/icons";
+import { Github, Linkedin, Mastodon, Site, TwitterX } from "src/icons/icons";
 
 import styles from "./TeamPage.module.scss";
 
 export default function TeamPage() {
+  const getFourthIcon = (fourthTxt: string) => {
+    switch (fourthTxt) {
+      case "Site":
+        return <Site />;
+      case "Mastodon":
+        return <Mastodon />;
+      default:
+        return <Site />;
+    }
+  };
+
   return (
     <Page
       narrow
@@ -22,13 +28,10 @@ export default function TeamPage() {
         Meet Our Team, Passionate About Open Source and Making Conf.tech
         possible.
       </p>
-
-      <Divider />
-
       <section className={styles.Team}>
         {Maintainers.map((maintainer, id) => (
           <div key={id} className={styles.TeamMember}>
-            <h2>{maintainer.name}</h2>
+            <h3>{maintainer.name}</h3>
             <div className={styles.avatar}>
               <img
                 src={maintainer.avatarUrl}
@@ -47,7 +50,7 @@ export default function TeamPage() {
               </Link>
               <Link url={maintainer.secondLink}>
                 <span className={styles.icon}>
-                  <Community />
+                  <Linkedin />
                 </span>
                 {maintainer.secondTxt}
               </Link>
@@ -59,7 +62,7 @@ export default function TeamPage() {
               </Link>
               <Link url={maintainer.fourthLink}>
                 <span className={styles.icon}>
-                  <Linkedin />
+                  {getFourthIcon(maintainer.fourthTxt)}
                 </span>
                 {maintainer.fourthTxt}
               </Link>
@@ -67,6 +70,22 @@ export default function TeamPage() {
           </div>
         ))}
       </section>
+      <Divider />
+      <h2>Meet the team</h2>
+      <p>Contribute to Confs.tech and support the developer community.</p>
+      <Divider />
+      <p>Fetch GitHub API to display contributors</p>
+      <Divider />
+
+      <h3>How do I join the team?</h3>
+      <p>
+        We are always looking for new contributors to help us improve
+        Confs.tech. If you are interested in joining the team, please check out
+        our GitHub repository and get in touch with us.
+      </p>
+      <Link external url="https://github.com/tech-conferences/conference-data">
+        Join our awesome team!
+      </Link>
     </Page>
   );
 }
