@@ -133,7 +133,6 @@ export default function TeamPage() {
   };
   return (
     <Page
-      narrow
       title="Team Confs.tech"
       subtitle="Meet the team behind Confs.tech"
       htmlTitle="Team Confs.tech open source project"
