@@ -98,7 +98,7 @@ export interface Contributor {
   login: string;
   contributions: number;
   avatar_url: string;
-  html_url: string;
+  html_url?: string;
   twitter_username?: string;
   id: number;
   name?: string;
