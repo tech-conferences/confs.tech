@@ -3,7 +3,8 @@
 
 .team {
   // border: 1px solid color(gray, lighter);
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   // width: max-content;
   display: flex;
   flex-wrap: wrap;
