@@ -44,7 +44,7 @@ function renderPages({ match }: RouteComponentProps<{ page: string }>) {
 }
 
 function redirect(
-  props: RouteComponentProps<{ topic: string; country: string }>
+  props: RouteComponentProps<{ topic: string; country: string }>,
 ) {
   const { topic, country } = props.match.params
 
