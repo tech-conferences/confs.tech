@@ -67,7 +67,7 @@ interface Params {
 
 const searchClient = algoliasearch(
   process.env.REACT_APP_ALGOLIA_APPLICATION_ID as string,
-  process.env.REACT_APP_ALGOLIA_API_KEY as string
+  process.env.REACT_APP_ALGOLIA_API_KEY as string,
 )
 
 type OnlineOptions = 'hybrid' | 'online' | 'inPerson'
@@ -87,7 +87,7 @@ const ConferenceListPage: React.FC<Props> = ({
 
   const [sortDirection] = useState<SortDirection>(showPast ? 'desc' : 'asc')
   const [pastConferencePage, setPastConferencePage] = useState(
-    urlQueryString.page ? Number(urlQueryString.page) : 1
+    urlQueryString.page ? Number(urlQueryString.page) : 1,
   )
 
   const history = useHistory()
@@ -114,13 +114,13 @@ const ConferenceListPage: React.FC<Props> = ({
     const offersSignLanguageOrCC =
       algoliaSearchState.toggle.offersSignLanguageOrCC
     const continents = (algoliaSearchState.refinementList.continent || []).join(
-      QUERY_SEPARATOR
+      QUERY_SEPARATOR,
     )
     const countries = (algoliaSearchState.refinementList.country || []).join(
-      QUERY_SEPARATOR
+      QUERY_SEPARATOR,
     )
     const topics = (algoliaSearchState.refinementList.topics || []).join(
-      QUERY_SEPARATOR
+      QUERY_SEPARATOR,
     )
     history.push(
       `?${qs.stringify({
@@ -133,16 +133,16 @@ const ConferenceListPage: React.FC<Props> = ({
         ...(continents && { continents: continents }),
         ...(countries && { countries: countries }),
         ...(topics && { topics: topics }),
-      })}`
+      })}`,
     )
   }
 
   const algoliaFilter = useMemo(() => {
     let filters = showPast
       ? `startDateUnix>${dateToTime(
-          subMonths(TODAY, pastConferencePage * 5)
+          subMonths(TODAY, pastConferencePage * 5),
         )} AND startDateUnix<${dateToTime(
-          subMonths(TODAY, (pastConferencePage - 1) * 5)
+          subMonths(TODAY, (pastConferencePage - 1) * 5),
         )}`
       : `startDateUnix>${dateToTime(TODAY)}`
 
@@ -200,7 +200,7 @@ const ConferenceListPage: React.FC<Props> = ({
             limit={40}
             attribute='topics'
             defaultRefinement={(searchState.refinementList.topics || []).filter(
-              Boolean
+              Boolean,
             )}
             transformItems={transformTopicRefinements}
           />

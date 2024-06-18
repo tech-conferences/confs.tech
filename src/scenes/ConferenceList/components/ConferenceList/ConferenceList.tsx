@@ -42,7 +42,7 @@ const ConferenceList: React.FC<Props> = ({
   const confs = groupAndSortConferences(
     filteredConferences,
     sortBy,
-    sortDirection
+    sortDirection,
   )
 
   const conferenceYears =
@@ -80,7 +80,7 @@ const ConferenceList: React.FC<Props> = ({
                       </ul>
                     </React.Fragment>
                   )
-                }
+                },
               )}
             </div>
           </React.Fragment>
