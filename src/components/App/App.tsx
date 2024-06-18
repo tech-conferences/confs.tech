@@ -30,7 +30,7 @@ export default function App() {
 }
 
 function Pages() {
-  const params = useParams()
+  const params = useParams<keyof Params>() as Params
 
   switch (params.page) {
     case 'about':
@@ -42,7 +42,7 @@ function Pages() {
 }
 
 function HandleRedirect() {
-  const { topic, country } = useParams()
+  const { topic, country } = useParams<keyof Params>() as Params
 
   return <Navigate to={`/${topic}/${country}`} />
 }
@@ -53,6 +53,7 @@ function HandleRedirect() {
   the new route /:topic
 */
 interface Params {
+  page: string
   topic: string
   country: string
 }
