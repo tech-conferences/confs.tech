@@ -7,7 +7,7 @@ interface LocalStorageState {
 interface UseLocalStorageI {
   <K extends keyof LocalStorageState>(
     key: K,
-    initialValue: LocalStorageState[K]
+    initialValue: LocalStorageState[K],
   ): [LocalStorageState[K], (v: LocalStorageState[K]) => void]
 }
 

@@ -25,7 +25,7 @@ const SPONSORS_AVAILABILITY: [string, boolean, string][] = range(0, 16).map(
       Boolean(!conference),
       conference?.name || '',
     ]
-  }
+  },
 )
 
 export default function SponsorshipPage() {
