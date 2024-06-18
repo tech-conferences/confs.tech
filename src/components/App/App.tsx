@@ -1,4 +1,4 @@
-import { Switch, Route, Redirect, RouteComponentProps } from 'react-router-dom'
+import { Routes, Route, Navigate, useParams } from 'react-router-dom'
 import { AboutPage, NotFoundPage, SponsorshipPage } from 'src/StaticPages'
 import { ConferenceList, ConferenceForm } from 'src/scenes'
 
@@ -8,33 +8,31 @@ export default function App() {
   return (
     <div className={styles.AppContainer}>
       <div className={styles.App}>
-        <Switch>
-          <Route path='/pages/:page' component={renderPages} />
-          <Route path='/conferences/new' component={ConferenceForm} />
-          <Route path='/past' render={renderPast} />
-          <Route path='/cfp/:topic/:country' render={renderCFP} />
-          <Route path='/cfp/:topic/' render={renderCFP} />
-          <Route path='/cfp' render={renderCFP} />
-          <Route path='/:year/:topic/:country' render={redirect} />
-          <Route path='/:topic/:country' render={redirectOrRender} />
-          <Route path='/:topic' component={ConferenceList} />
-          <Route exact path='/' component={ConferenceList} />
-          <Route component={ConferenceList} />
-        </Switch>
+        <Routes>
+          <Route path='/pages/:page' element={<Pages />} />
+          <Route path='/conferences/new' element={<ConferenceForm />} />
+          <Route path='/past' element={<ConferenceList showPast />} />
+          <Route
+            path='/cfp/:topic/:country'
+            element={<ConferenceList showCFP />}
+          />
+          <Route path='/cfp/:topic/' element={<ConferenceList showCFP />} />
+          <Route path='/cfp' element={<ConferenceList showCFP />} />
+          <Route path='/:year/:topic/:country' element={<HandleRedirect />} />
+          <Route path='/:topic/:country' element={<HandleRedirectOrRender />} />
+          <Route path='/:topic' element={<ConferenceList />} />
+          <Route path='/' element={<ConferenceList />} />
+          <Route element={<ConferenceList />} />
+        </Routes>
       </div>
     </div>
   )
 }
-function renderCFP() {
-  return <ConferenceList showCFP />
-}
 
-function renderPast() {
-  return <ConferenceList showPast />
-}
+function Pages() {
+  const params = useParams()
 
-function renderPages({ match }: RouteComponentProps<{ page: string }>) {
-  switch (match.params.page) {
+  switch (params.page) {
     case 'about':
       return <AboutPage />
     case 'sponsorships':
@@ -43,12 +41,10 @@ function renderPages({ match }: RouteComponentProps<{ page: string }>) {
   return <NotFoundPage />
 }
 
-function redirect(
-  props: RouteComponentProps<{ topic: string; country: string }>,
-) {
-  const { topic, country } = props.match.params
+function HandleRedirect() {
+  const { topic, country } = useParams()
 
-  return <Redirect to={`/${topic}/${country}`} />
+  return <Navigate to={`/${topic}/${country}`} />
 }
 
 /*
@@ -56,21 +52,24 @@ function redirect(
   If we detect that :topic is a year, the user actually wanted to reach
   the new route /:topic
 */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function redirectOrRender(props: any) {
-  const { topic, country } = props.match.params
+interface Params {
+  topic: string
+  country: string
+}
+function HandleRedirectOrRender() {
+  const { topic, country } = useParams<keyof Params>() as Params
 
   if (isYear(topic)) {
-    return <Redirect to={`/${country}`} />
+    return <Navigate to={`/${country}`} />
   } else {
-    return <ConferenceList {...props} fallback={redirectToTopic} />
+    return <ConferenceList />
   }
 }
 
-function isYear(year: string) {
-  return year.length === 4 && !isNaN(parseInt(year, 10))
-}
+function isYear(year?: string) {
+  if (!year) {
+    return false
+  }
 
-function redirectToTopic(topic: string) {
-  return <Redirect to={`/${topic}`} />
+  return year.length === 4 && !isNaN(parseInt(year, 10))
 }
