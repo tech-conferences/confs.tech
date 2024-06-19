@@ -1,9 +1,11 @@
 import classNames from 'classnames'
+import { ReactNode } from 'react'
 
 import styles from './InputGroup.module.scss'
 
 interface Props {
   inline?: boolean
+  children: ReactNode
 }
 
 const InputGroup: React.FC<Props> = ({ children, inline }) => {

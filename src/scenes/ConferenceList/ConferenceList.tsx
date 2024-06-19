@@ -10,7 +10,7 @@ import {
   CurrentRefinements,
   connectStats,
 } from 'react-instantsearch-dom'
-import { useHistory, useParams } from 'react-router'
+import { useNavigate, useParams } from 'react-router'
 import {
   Divider,
   Heading,
@@ -79,7 +79,7 @@ const ConferenceListPage: React.FC<Props> = ({
   const urlQueryString = qs.parse(window.location.search.replace('?', ''))
   // These are sets in the url, when reaching through /ux/France for instance
   // See routes definitions in App.tsx
-  const { topic, country } = useParams<Params>()
+  const { topic, country } = useParams<keyof Params>() as Params
 
   const [hitsPerPage, setHitsPerPage] = useState(600)
   const [sortBy, setSortBy] = useState<SortBy>('startDate')
@@ -90,7 +90,7 @@ const ConferenceListPage: React.FC<Props> = ({
     urlQueryString.page ? Number(urlQueryString.page) : 1,
   )
 
-  const history = useHistory()
+  const navigate = useNavigate()
 
   const [searchState, setSearchState] = useState<SearchState>({
     toggle: {
@@ -122,7 +122,7 @@ const ConferenceListPage: React.FC<Props> = ({
     const topics = (algoliaSearchState.refinementList.topics || []).join(
       QUERY_SEPARATOR,
     )
-    history.push(
+    navigate(
       `?${qs.stringify({
         ...(online && {
           online: online,

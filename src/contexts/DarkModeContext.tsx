@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { ReactNode, useCallback, useEffect } from 'react'
 import { useLocalStorage } from 'src/hooks'
 
 export interface DarkModeContextProps {
@@ -15,7 +15,11 @@ const DarkModeContext = React.createContext<DarkModeContextProps>({
   actions: {},
 })
 
-export const DarkModeContextProvider: React.FC = ({ children }) => {
+interface Props {
+  children: ReactNode
+}
+
+export const DarkModeContextProvider: React.FC<Props> = ({ children }) => {
   let systemDarkMode = false
   if (
     window.matchMedia &&
