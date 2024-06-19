@@ -10,5 +10,5 @@ ReactDOM.render(
       <App />
     </DarkModeContextProvider>
   </BrowserRouter>,
-  document.getElementById('root'),
+  document.getElementById('root')
 )
