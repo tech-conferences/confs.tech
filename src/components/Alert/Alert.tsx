@@ -1,6 +1,12 @@
+import { ReactNode } from 'react'
+
 import styles from './Alert.module.scss'
 
-const Alert: React.FC = ({ children }) => {
+interface Props {
+  children: ReactNode
+}
+
+const Alert: React.FC<Props> = ({ children }) => {
   return (
     <p className={styles.warning}>
       <span aria-hidden>

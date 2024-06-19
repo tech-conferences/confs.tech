@@ -105,7 +105,7 @@ const ConferenceForm: React.FC = () => {
   } = useDarkModeContext()
 
   const handleDateChangeBuilder = (key: string) => {
-    return (date: Date) => {
+    return (date: Date | null) => {
       setConference({
         ...conference,
         [key]: date,
@@ -171,7 +171,7 @@ const ConferenceForm: React.FC = () => {
     return errors
   }
 
-  const handleStartDateSelect = (startDate: Date) => {
+  const handleStartDateSelect = (startDate: Date | null) => {
     const { endDate } = conference
     endDateDatepickerRef.current?.setFocus()
 
