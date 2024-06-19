@@ -5,7 +5,7 @@ import { SortBy, SortDirection } from 'types/global'
 
 export function getConfsMonthsSorted(
   conferences: Conference[],
-  sortDirection: SortDirection
+  sortDirection: SortDirection,
 ) {
   return sortBy(Object.keys(conferences), (conferenceDate) => {
     const monthNumber = parseInt(conferenceDate.split('-')[1], 10)
@@ -20,18 +20,18 @@ export function getMonthName(month: string) {
 export function groupAndSortConferences(
   conferences: Conference[],
   sortByKey: SortBy,
-  sortDirection: SortDirection
+  sortDirection: SortDirection,
 ) {
   // Group conferences by year
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const confs: any = groupBy<Conference>(conferences, (conf) =>
-    format(parseISO(conf[sortByKey]), 'yyyy')
+    format(parseISO(conf[sortByKey]), 'yyyy'),
   )
 
   // Group conferences by month within the year
   Object.keys(confs).map((year: string) => {
     confs[year] = groupBy(confs[year], (conf) =>
-      format(parseISO(conf[sortByKey]), 'yyyy-MM')
+      format(parseISO(conf[sortByKey]), 'yyyy-MM'),
     )
 
     Object.keys(confs[year]).map((month) => {

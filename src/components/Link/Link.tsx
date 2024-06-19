@@ -39,7 +39,7 @@ const CustomRoutedLink: React.FC<Partial<Props>> = ({
       className={classNames(
         styles.Link,
         selected && styles.Selected,
-        className
+        className,
       )}
       to={url || ''}
     >

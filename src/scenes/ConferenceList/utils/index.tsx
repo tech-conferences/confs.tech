@@ -12,7 +12,7 @@ export function transformTopicRefinements(items: any[]) {
   return orderBy(
     reject(items, (item) => item.label === ''),
     ['count', 'name'],
-    ['desc', 'desc']
+    ['desc', 'desc'],
   )
 }
 
@@ -45,7 +45,7 @@ export function transformCurrentRefinements(items: Item[]) {
       // Don't render 'online' refinements
       item.attribute !== 'online' &&
       // Don't render 'offersSignLanguageOrCC refinements
-      item.attribute !== 'offersSignLanguageOrCC' //&&
+      item.attribute !== 'offersSignLanguageOrCC', //&&
   )
 }
 
