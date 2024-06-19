@@ -62,7 +62,7 @@ export const Maintainers: MaintainersDataInterface[] = [
     thirdLink: 'https://x.com/katyaprigara',
     thirdTxt: 'Twitter',
     fourthLink: '',
-    fourthTxt: 'Need_URL',
+    fourthTxt: '',
   },
   {
     name: 'Trivikram Kamat',

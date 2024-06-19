@@ -12,6 +12,7 @@ export default function TeamPage() {
   const [conferenceDataContributors, setConferenceDataContributors] = useState<
     Contributor[]
   >([])
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const fetchContributors = async (
@@ -20,6 +21,10 @@ export default function TeamPage() {
     ) => {
       try {
         const response = await fetch(url)
+        if (response.status === 429 || response.status === 403) {
+          setError('Too Many Requests, try again later')
+          return
+        }
         if (response.ok) {
           const contributors = await response.json()
 
@@ -37,7 +42,7 @@ export default function TeamPage() {
             }),
           )
 
-          setContributorsState(contributorsWithNames) // Use the passed setter function
+          setContributorsState(contributorsWithNames)
         }
       } catch (error) {
         console.error(
@@ -49,18 +54,18 @@ export default function TeamPage() {
 
     fetchContributors(
       'https://api.github.com/repos/tech-conferences/confs.tech/contributors',
-      setConfsTechContributors, // Pass the appropriate setter function
+      setConfsTechContributors,
     )
     fetchContributors(
       'https://api.github.com/repos/tech-conferences/conference-data/contributors',
-      setConferenceDataContributors, // Pass the appropriate setter function
+      setConferenceDataContributors,
     )
   }, [])
 
   function capitalizeFirstLetter(string: string): string {
     let result = string
       .split(' ')
-      .slice(0, 2) // Take only the first two words
+      .slice(0, 2)
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ')
 
@@ -119,14 +124,15 @@ export default function TeamPage() {
 
   const dynamic_icon = (fourthTxt: string) => {
     switch (fourthTxt) {
-      case 'Site':
+      case 'Website':
         return <Site />
       case 'Mastodon':
         return <Mastodon />
       default:
-        return <Site />
+        return null
     }
   }
+
   return (
     <Page
       title='Team Confs.tech'
@@ -190,24 +196,34 @@ export default function TeamPage() {
       <Link external url='https://github.com/tech-conferences/conference-data'>
         Join our awesome team!
       </Link>
-      <Divider />
-      <h2>Meet the rest of the team</h2>
-      <p>Contribute to Confs.tech and support the developer community.</p>
-      <>
-        <h3>Confs.tech contributors</h3>
-        <TeamSection
-          contributors={confsTechContributors}
-          contributionsUrlBase='https://github.com/tech-conferences/confs.tech'
-        />
+      {error ? (
+        <>
+          {/* <Divider />
+          <h2>{error}</h2>
+          <p>Too many requests, try again later</p> */}
+        </>
+      ) : (
+        <section>
+          <Divider />
+          <h2>Meet the rest of the team</h2>
+          <p>Contribute to Confs.tech and support the developer community.</p>
+          <>
+            <h3>Confs.tech contributors</h3>
+            <TeamSection
+              contributors={confsTechContributors}
+              contributionsUrlBase='https://github.com/tech-conferences/confs.tech'
+            />
 
-        <div className={styles.repo}>
-          <h3>Conference Data contributors</h3>
-          <TeamSection
-            contributors={conferenceDataContributors}
-            contributionsUrlBase='https://github.com/tech-conferences/conference-data'
-          />
-        </div>
-      </>
+            <div className={styles.repo}>
+              <h3>Conference Data contributors</h3>
+              <TeamSection
+                contributors={conferenceDataContributors}
+                contributionsUrlBase='https://github.com/tech-conferences/conference-data'
+              />
+            </div>
+          </>
+        </section>
+      )}
     </Page>
   )
 }
