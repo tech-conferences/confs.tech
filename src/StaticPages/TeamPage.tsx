@@ -16,7 +16,7 @@ export default function TeamPage() {
   useEffect(() => {
     const fetchContributors = async (
       url: string,
-      setContributorsState: (contributorNames: Contributor[]) => void
+      setContributorsState: (contributorNames: Contributor[]) => void,
     ) => {
       try {
         const response = await fetch(url)
@@ -27,14 +27,14 @@ export default function TeamPage() {
           const contributorsWithNames: Contributor[] = await Promise.all(
             contributors.map(async (contributor: Contributor) => {
               const userResponse = await fetch(
-                `https://api.github.com/users/${contributor.login}`
+                `https://api.github.com/users/${contributor.login}`,
               )
               if (userResponse.ok) {
                 const userData = await userResponse.json()
                 return { ...contributor, name: userData.name }
               }
               return contributor
-            })
+            }),
           )
 
           setContributorsState(contributorsWithNames) // Use the passed setter function
@@ -42,18 +42,18 @@ export default function TeamPage() {
       } catch (error) {
         console.error(
           'Failed to fetch contributors data from GitHub API:',
-          error
+          error,
         )
       }
     }
 
     fetchContributors(
       'https://api.github.com/repos/tech-conferences/confs.tech/contributors',
-      setConfsTechContributors // Pass the appropriate setter function
+      setConfsTechContributors, // Pass the appropriate setter function
     )
     fetchContributors(
       'https://api.github.com/repos/tech-conferences/conference-data/contributors',
-      setConferenceDataContributors // Pass the appropriate setter function
+      setConferenceDataContributors, // Pass the appropriate setter function
     )
   }, [])
 
@@ -83,7 +83,7 @@ export default function TeamPage() {
     <section className={styles.team}>
       {contributors.map((contributor) => {
         const name = capitalizeFirstLetter(
-          contributor.name || contributor.login
+          contributor.name || contributor.login,
         )
         return (
           <div key={contributor.id} className={styles.teamMember}>

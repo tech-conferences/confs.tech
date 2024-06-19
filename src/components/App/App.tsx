@@ -1,9 +1,9 @@
 import { Routes, Route, Navigate, useParams } from 'react-router-dom'
 import {
   AboutPage,
-  TeamPage,
   NotFoundPage,
   SponsorshipPage,
+  TeamPage,
 } from 'src/StaticPages'
 import { ConferenceList, ConferenceForm } from 'src/scenes'
 
@@ -33,6 +33,7 @@ export default function App() {
     </div>
   )
 }
+
 function Pages() {
   const params = useParams<keyof Params>() as Params
 
