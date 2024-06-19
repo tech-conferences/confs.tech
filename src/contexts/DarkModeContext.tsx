@@ -30,7 +30,7 @@ export const DarkModeContextProvider: React.FC<Props> = ({ children }) => {
 
   const [darkModeEnabled, setDarkModeEnabled] = useLocalStorage(
     'darkModeEnabled',
-    systemDarkMode
+    systemDarkMode,
   )
   const toggleDarkMode = useCallback(() => {
     setDarkModeEnabled(!darkModeEnabled)
@@ -43,7 +43,7 @@ export const DarkModeContextProvider: React.FC<Props> = ({ children }) => {
         darkModeEnabled,
       },
     }),
-    [darkModeEnabled, toggleDarkMode]
+    [darkModeEnabled, toggleDarkMode],
   )
 
   useEffect(() => {
