@@ -1,80 +1,80 @@
-import { useEffect, useState } from "react";
-import { Divider, Link, Page } from "src/components";
-import { Maintainers, Contributor } from "src/data/maintainersData";
-import { Github, Linkedin, Mastodon, Site, TwitterX } from "src/icons/icons";
+import { useEffect, useState } from 'react'
+import { Divider, Link, Page } from 'src/components'
+import { Maintainers, Contributor } from 'src/data/maintainersData'
+import { Github, Linkedin, Mastodon, Site, TwitterX } from 'src/icons/icons'
 
-import styles from "./TeamPage.module.scss";
+import styles from './TeamPage.module.scss'
 
 export default function TeamPage() {
   const [confsTechContributors, setConfsTechContributors] = useState<
     Contributor[]
-  >([]);
+  >([])
   const [conferenceDataContributors, setConferenceDataContributors] = useState<
     Contributor[]
-  >([]);
+  >([])
 
   useEffect(() => {
     const fetchContributors = async (
       url: string,
-      setContributorsState: (contributorNames: Contributor[]) => void
+      setContributorsState: (contributorNames: Contributor[]) => void,
     ) => {
       try {
-        const response = await fetch(url);
+        const response = await fetch(url)
         if (response.ok) {
-          const contributors = await response.json();
+          const contributors = await response.json()
 
           // Fetch additional data for each contributor
           const contributorsWithNames: Contributor[] = await Promise.all(
             contributors.map(async (contributor: Contributor) => {
               const userResponse = await fetch(
-                `https://api.github.com/users/${contributor.login}`
-              );
+                `https://api.github.com/users/${contributor.login}`,
+              )
               if (userResponse.ok) {
-                const userData = await userResponse.json();
-                return { ...contributor, name: userData.name };
+                const userData = await userResponse.json()
+                return { ...contributor, name: userData.name }
               }
-              return contributor;
-            })
-          );
+              return contributor
+            }),
+          )
 
-          setContributorsState(contributorsWithNames); // Use the passed setter function
+          setContributorsState(contributorsWithNames) // Use the passed setter function
         }
       } catch (error) {
         console.error(
-          "Failed to fetch contributors data from GitHub API:",
-          error
-        );
+          'Failed to fetch contributors data from GitHub API:',
+          error,
+        )
       }
-    };
+    }
 
     fetchContributors(
-      "https://api.github.com/repos/tech-conferences/confs.tech/contributors",
-      setConfsTechContributors // Pass the appropriate setter function
-    );
+      'https://api.github.com/repos/tech-conferences/confs.tech/contributors',
+      setConfsTechContributors, // Pass the appropriate setter function
+    )
     fetchContributors(
-      "https://api.github.com/repos/tech-conferences/conference-data/contributors",
-      setConferenceDataContributors // Pass the appropriate setter function
-    );
-  }, []);
+      'https://api.github.com/repos/tech-conferences/conference-data/contributors',
+      setConferenceDataContributors, // Pass the appropriate setter function
+    )
+  }, [])
 
   function capitalizeFirstLetter(string: string): string {
     let result = string
-      .split(" ")
+      .split(' ')
       .slice(0, 2) // Take only the first two words
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
+      .join(' ')
 
     // Truncate the result to 20 characters if necessary
     if (result.length > 20) {
-      result = result.substring(0, 20);
+      result = result.substring(0, 20)
     }
 
-    return result;
+    return result
   }
 
   interface TeamSectionProps {
-    contributors: Contributor[];
-    contributionsUrlBase: string;
+    contributors: Contributor[]
+    contributionsUrlBase: string
   }
   const TeamSection = ({
     contributors,
@@ -83,8 +83,8 @@ export default function TeamPage() {
     <section className={styles.team}>
       {contributors.map((contributor) => {
         const name = capitalizeFirstLetter(
-          contributor.name || contributor.login
-        );
+          contributor.name || contributor.login,
+        )
         return (
           <div key={contributor.id} className={styles.teamMember}>
             <h3>{name}</h3>
@@ -112,26 +112,26 @@ export default function TeamPage() {
               </Link>
             </div>
           </div>
-        );
+        )
       })}
     </section>
-  );
+  )
 
   const dynamic_icon = (fourthTxt: string) => {
     switch (fourthTxt) {
-      case "Site":
-        return <Site />;
-      case "Mastodon":
-        return <Mastodon />;
+      case 'Site':
+        return <Site />
+      case 'Mastodon':
+        return <Mastodon />
       default:
-        return <Site />;
+        return <Site />
     }
-  };
+  }
   return (
     <Page
-      title="Team Confs.tech"
-      subtitle="Meet the team behind Confs.tech"
-      htmlTitle="Team Confs.tech open source project"
+      title='Team Confs.tech'
+      subtitle='Meet the team behind Confs.tech'
+      htmlTitle='Team Confs.tech open source project'
       backButton
     >
       <p>
@@ -187,7 +187,7 @@ export default function TeamPage() {
         Confs.tech. If you are interested in joining the team, please check out
         our GitHub repository and get in touch with us.
       </p>
-      <Link external url="https://github.com/tech-conferences/conference-data">
+      <Link external url='https://github.com/tech-conferences/conference-data'>
         Join our awesome team!
       </Link>
       <Divider />
@@ -197,17 +197,17 @@ export default function TeamPage() {
         <h3>Confs.tech contributors</h3>
         <TeamSection
           contributors={confsTechContributors}
-          contributionsUrlBase="https://github.com/tech-conferences/confs.tech"
+          contributionsUrlBase='https://github.com/tech-conferences/confs.tech'
         />
 
         <div className={styles.repo}>
           <h3>Conference Data contributors</h3>
           <TeamSection
             contributors={conferenceDataContributors}
-            contributionsUrlBase="https://github.com/tech-conferences/conference-data"
+            contributionsUrlBase='https://github.com/tech-conferences/conference-data'
           />
         </div>
       </>
     </Page>
-  );
+  )
 }
