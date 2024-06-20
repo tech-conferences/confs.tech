@@ -102,7 +102,7 @@ export default function TeamPage() {
             </div>
             <p className={styles.githubUsername}>@{contributor.login}</p>
             <div className={styles.links}>
-              <Link url={contributor.html_url} className={styles.link_item}>
+              <Link url={contributor.html_url} className={styles.link_item} external>
                 <Github />
                 <span>GitHub</span>
               </Link>
