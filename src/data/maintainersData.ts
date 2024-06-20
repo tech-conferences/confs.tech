@@ -26,7 +26,7 @@ export const Maintainers: MaintainersDataInterface[] = [
     name: 'Nima Izadi',
     avatarUrl: 'https://avatars.githubusercontent.com/u/445045?v=4',
     designation: 'Engineer Manager',
-    role: 'Founder',
+    role: 'Creator',
     firstLink: 'https://github.com/nimzco',
     firstTxt: 'GitHub',
     secondLink: 'https://www.linkedin.com/in/nimzco/',
