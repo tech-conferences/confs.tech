@@ -159,25 +159,25 @@ export default function TeamPage() {
             <p className={styles.designation}>{maintainer.designation}</p>
             <p className={styles.role}>{maintainer.role}</p>
             <div className={styles.links}>
-              <Link url={maintainer.firstLink}>
+              <Link url={maintainer.firstLink} external>
                 <span className={styles.icon}>
                   <Github />
                 </span>
                 {maintainer.firstTxt}
               </Link>
-              <Link url={maintainer.secondLink}>
+              <Link url={maintainer.secondLink} external>
                 <span className={styles.icon}>
                   <Linkedin />
                 </span>
                 {maintainer.secondTxt}
               </Link>
-              <Link url={maintainer.thirdLink}>
+              <Link url={maintainer.thirdLink} external>
                 <span className={styles.icon}>
                   <TwitterX />
                 </span>
                 {maintainer.thirdTxt}
               </Link>
-              <Link url={maintainer.fourthLink}>
+              <Link url={maintainer.fourthLink} external>
                 <span className={styles.icon}>
                   {dynamic_icon(maintainer.fourthTxt)}
                 </span>
