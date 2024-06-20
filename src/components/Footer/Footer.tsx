@@ -22,6 +22,9 @@ const Footer = () => {
         <Link routed url='/pages/about'>
           About Confs.tech
         </Link>
+        <Link routed url='/pages/team'>
+          Our Team
+        </Link>
         <Link routed url='/pages/sponsorships'>
           Sponsor
         </Link>
