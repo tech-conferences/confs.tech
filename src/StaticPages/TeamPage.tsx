@@ -107,6 +107,7 @@ export default function TeamPage() {
                 <span>GitHub</span>
               </Link>
               <Link
+                external
                 url={`${contributionsUrlBase}/commits?author=${contributor.login}`}
                 className={styles.link_item}
               >
