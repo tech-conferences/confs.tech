@@ -123,7 +123,7 @@ export default function TeamPage() {
     </section>
   )
 
-  const dynamic_icon = (fourthTxt: string) => {
+  const dynamicIcon = (fourthTxt: string) => {
     switch (fourthTxt) {
       case 'Website':
         return <Site />
@@ -179,7 +179,7 @@ export default function TeamPage() {
               </Link>
               <Link url={maintainer.fourthLink} external>
                 <span className={styles.icon}>
-                  {dynamic_icon(maintainer.fourthTxt)}
+                  {dynamicIcon(maintainer.fourthTxt)}
                 </span>
                 {maintainer.fourthTxt}
               </Link>
