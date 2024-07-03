@@ -198,18 +198,17 @@ export default function TeamPage() {
         Confs.tech. If you are interested in joining the team, please check out
         our GitHub repository and get in touch with us.
       </p>
-      <Link external url='https://github.com/tech-conferences/conference-data'>
-        Join our awesome team!
-      </Link>
-      {error ? (
-        <>
-          {/* <Divider />
-          <h2>{error}</h2>
-          <p>Too many requests, try again later</p> */}
-        </>
-      ) : (
+      <p>
+        <Link
+          external
+          url='https://github.com/tech-conferences/conference-data/issues'
+        >
+          Reach out to join our team!
+        </Link>
+      </p>
+      <Divider />
+      {!error && (
         <section>
-          <Divider />
           <h2>Meet the rest of the team</h2>
           <p>Contribute to Confs.tech and support the developer community.</p>
           <>
