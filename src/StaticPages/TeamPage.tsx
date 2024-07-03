@@ -209,7 +209,7 @@ export default function TeamPage() {
       <Divider />
       {!error && (
         <section>
-          <h2>Meet the rest of the team</h2>
+          <h2>Meet our active contributors</h2>
           <p>Contribute to Confs.tech and support the developer community.</p>
           <>
             <h3>Confs.tech contributors</h3>
