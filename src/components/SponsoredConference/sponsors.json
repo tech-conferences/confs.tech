@@ -108,7 +108,7 @@
     "url": "https://devdays.lt",
     "tagline": "Software Development Conference Created for Developers, by Developers",
     "sponsorDateStart": "2024-12-01",
-    "sponsorDateEnd": "2024-16-01"
+    "sponsorDateEnd": "2025-06-01"
   },
   {
     "name": "TestCon Europe 2025",
@@ -116,7 +116,7 @@
     "img": "/sponsors/testcon-2.png",
     "url": "https://testcon.lt",
     "tagline": "Biggest Software Testing & QA Conference in Europe",
-    "sponsorDateStart": "2024-06-01",
-    "sponsorDateEnd": "2024-11-01"
+    "sponsorDateStart": "2025-06-01",
+    "sponsorDateEnd": "2025-11-01"
   }
 ]
