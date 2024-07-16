@@ -3,10 +3,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
     "plugin:jsx-a11y/recommended",
-    "prettier",
     "plugin:prettier/recommended",
-    "prettier/@typescript-eslint",
-    "prettier/react"
+    "prettier"
   ],
   "plugins": [
     "@typescript-eslint",
