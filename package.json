@@ -97,7 +97,7 @@
     "@types/google.analytics": "^0.0.46",
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.14.112",
-    "@types/node": "20.12.2",
+    "@types/node": "20.14.11",
     "@types/qs": "^6.9.15",
     "@types/react": "^18.3.3",
     "@types/react-datepicker": "^6.2.0",
