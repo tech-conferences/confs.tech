@@ -15,7 +15,7 @@
     "url": "https://devdays.lt/?utm_medium=partner&utm_source=devdaysdevops&utm_campaign=devdaysdevops",
     "tagline": "Two conferences held in one location",
     "sponsorDateStart": "2022-12-01",
-    "sponsorDateEnd": "2023-06-01"
+    "sponsorDateEnd": "2022-06-01"
   },
   {
     "name": "DevTernity",
@@ -82,5 +82,41 @@
     "tagline": "Submit your Talks by June 15, 2024",
     "sponsorDateStart": "2024-06-01",
     "sponsorDateEnd": "2024-06-15"
+  },
+  {
+    "name": "TestCon Europe 2024",
+    "conferenceDate": "October 22-25, Vilnius and Online",
+    "img": "/sponsors/testcon-2.png",
+    "url": "https://testcon.lt",
+    "tagline": "Biggest Software Testing & QA Conference in Europe",
+    "sponsorDateStart": "2024-07-01",
+    "sponsorDateEnd": "2024-09-01"
+  },
+  {
+    "name": "Big Data Europe 2024 Conference",
+    "conferenceDate": "November 19-22, Vilnius and Online",
+    "img": "/sponsors/bidata.png",
+    "url": "https://bigdataconference.eu",
+    "tagline": "AI, Cloud and Data Conference for Professionals",
+    "sponsorDateStart": "2024-11-01",
+    "sponsorDateEnd": "2024-12-01"
+  },
+  {
+    "name": "DevDays Europe 2025",
+    "conferenceDate": "May 20-23, Vilnius and Online",
+    "img": "/sponsors/devdays.jpg",
+    "url": "https://devdays.lt",
+    "tagline": "Software Development Conference Created for Developers, by Developers",
+    "sponsorDateStart": "2024-12-01",
+    "sponsorDateEnd": "2025-06-01"
+  },
+  {
+    "name": "TestCon Europe 2025",
+    "conferenceDate": "October, Vilnius and Online",
+    "img": "/sponsors/testcon-2.png",
+    "url": "https://testcon.lt",
+    "tagline": "Biggest Software Testing & QA Conference in Europe",
+    "sponsorDateStart": "2025-06-01",
+    "sponsorDateEnd": "2025-11-01"
   }
 ]

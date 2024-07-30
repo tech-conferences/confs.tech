@@ -1,6 +1,12 @@
+import { ReactNode } from 'react'
+
 import styles from './Card.module.scss'
 
-const Card: React.FC = ({ children }) => {
+interface Props {
+  children: ReactNode
+}
+
+const Card: React.FC<Props> = ({ children }) => {
   return <div className={styles.Card}>{children}</div>
 }
 export default Card

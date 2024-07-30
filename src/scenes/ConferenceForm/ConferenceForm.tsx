@@ -34,7 +34,7 @@ import {
 } from './utils/getConferenceData'
 
 const SORTED_TOPICS_KEYS = sortBy(Object.keys(TOPICS), (x) =>
-  TOPICS[x].toLocaleLowerCase()
+  TOPICS[x].toLocaleLowerCase(),
 )
 
 const topicOptions = SORTED_TOPICS_KEYS.map((topic) => {
@@ -105,7 +105,7 @@ const ConferenceForm: React.FC = () => {
   } = useDarkModeContext()
 
   const handleDateChangeBuilder = (key: string) => {
-    return (date: Date) => {
+    return (date: Date | null) => {
       setConference({
         ...conference,
         [key]: date,
@@ -171,7 +171,7 @@ const ConferenceForm: React.FC = () => {
     return errors
   }
 
-  const handleStartDateSelect = (startDate: Date) => {
+  const handleStartDateSelect = (startDate: Date | null) => {
     const { endDate } = conference
     endDateDatepickerRef.current?.setFocus()
 
@@ -183,7 +183,7 @@ const ConferenceForm: React.FC = () => {
   }
 
   const handleFieldChange = (
-    event: ChangeEvent<HTMLSelectElement | HTMLInputElement>
+    event: ChangeEvent<HTMLSelectElement | HTMLInputElement>,
   ) => {
     setConference({
       ...conference,
@@ -252,7 +252,7 @@ const ConferenceForm: React.FC = () => {
           return
         }
         const pullRequestUrl = responseJson.data.find(
-          (element: string[]) => element[0] == 'html_url'
+          (element: string[]) => element[0] == 'html_url',
         )
         if (pullRequestUrl) {
           window.location.href = pullRequestUrl[1]
@@ -448,7 +448,7 @@ const ConferenceForm: React.FC = () => {
                 </div>
                 {errorFor(
                   'url',
-                  'Must be a valid URL. No query parameters or URL shorteners are allowed. URL might be blocklisted.'
+                  'Must be a valid URL. No query parameters or URL shorteners are allowed. URL might be blocklisted.',
                 )}
               </div>
             </InputGroup>
@@ -511,7 +511,7 @@ const ConferenceForm: React.FC = () => {
                   />
                   {errorFor(
                     'city',
-                    'For Online conferences please select location "online"'
+                    'For Online conferences please select location "online"',
                   )}
                 </div>
                 <div>
@@ -527,7 +527,7 @@ const ConferenceForm: React.FC = () => {
                   />
                   {errorFor(
                     'country',
-                    'For Online conferences please select location "online"'
+                    'For Online conferences please select location "online"',
                   )}
                 </div>
               </InputGroup>
@@ -545,7 +545,7 @@ const ConferenceForm: React.FC = () => {
                 />
                 {errorFor(
                   'cfpUrl',
-                  'CFP URL must different than URL. No URL query parameters or URL shorteners are allowed.'
+                  'CFP URL must different than URL. No URL query parameters or URL shorteners are allowed.',
                 )}
               </div>
               <div>
@@ -559,7 +559,7 @@ const ConferenceForm: React.FC = () => {
                 />
                 {errorFor(
                   'cfpEndDate',
-                  'CFP end date must be before the conference start date.'
+                  'CFP end date must be before the conference start date.',
                 )}
               </div>
             </InputGroup>
@@ -613,7 +613,7 @@ const ConferenceForm: React.FC = () => {
                 />
                 {errorFor(
                   'mastodon',
-                  'Should be formatted like @username@instance'
+                  'Should be formatted like @username@instance',
                 )}
               </InputGroup>
             </InputGroup>
