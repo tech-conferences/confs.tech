@@ -9,6 +9,7 @@
     "test": "node scripts/test.js",
     "lint": "eslint .",
     "format": "eslint --fix .",
+    "prettier": "npx prettier --write \"**/*.{ts,tsx,}\"",
     "precommit": "lint-staged",
     "predeploy": "npm run build",
     "prepare": "husky"
