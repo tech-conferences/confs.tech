@@ -45,7 +45,7 @@
     "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "dotenv-expand": "^5.1.0",
-    "eslint": "^8.3.0",
+    "eslint": "^8.57.0",
     "eslint-webpack-plugin": "^4.2.0",
     "file-loader": "^6.2.0",
     "fs-extra": "^11.2.0",
