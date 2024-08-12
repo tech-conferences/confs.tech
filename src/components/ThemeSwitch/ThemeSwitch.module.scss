@@ -4,11 +4,6 @@
 
 .ThemeSwitch {
   margin: 0;
-
-  @include media($media-query--tablet-up) {
-    margin: 0 0 spacing(tight) auto;
-  }
-
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 15px;
@@ -20,6 +15,12 @@
   padding: 3px;
   display: block;
   background-color: color(gray, darker);
+
+  & {
+    @include media($media-query--tablet-up) {
+      margin: 0 0 spacing(tight) auto;
+    }
+  }
 
   &.dark {
     border-color: color(gray, dark);
