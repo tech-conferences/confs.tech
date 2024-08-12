@@ -1,6 +1,6 @@
 export const CURRENT_YEAR = new Date().getFullYear() - 1
 
-export const TOPICS = {
+export const TOPICS: { [key: string]: string } = {
   accessibility: 'Accessibility',
   android: 'Android',
   api: 'API',
@@ -41,7 +41,7 @@ export const TOPICS = {
   ux: 'Design / UX',
 }
 
-export const LOCALES = {
+export const LOCALES: { [key: string]: string } = {
   AF: 'Afrikaans',
   AK: 'Akan',
   AM: 'Amharic',

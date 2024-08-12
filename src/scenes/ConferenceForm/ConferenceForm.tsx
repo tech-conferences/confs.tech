@@ -98,7 +98,7 @@ const ConferenceForm: React.FC = () => {
   const [captchaResponse, setCaptchaResponse] = useState<string | null>(null)
   const [submitting, setSubmitting] = useState(false)
   const [serverError, setServerError] = useState(ServerErrorEnum.None)
-  const [errors, setErrors] = useState({})
+  const [errors, setErrors] = useState<{ [key: string]: boolean }>({})
   const [conference, setConference] = useState(defaultConference)
   const {
     values: { darkModeEnabled },
@@ -146,8 +146,8 @@ const ConferenceForm: React.FC = () => {
     } = conference
 
     const isNotOnline = locationType !== 'online'
-    const cfp = cfpUrl || cfpEndDate
-    const errors = {
+    const cfp = Boolean(cfpUrl || cfpEndDate)
+    const errors: { [key: string]: boolean } = {
       locales: locales.length === 0,
       topics: topics.length === 0,
       tooManyTopics: topics.length > 3,
@@ -199,10 +199,10 @@ const ConferenceForm: React.FC = () => {
     })
   }
 
-  const handleCheckboxChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const toggleOffersSignLanguageOrCC = () => {
     setConference({
       ...conference,
-      [event.target.name]: !conference[event.target.name],
+      offersSignLanguageOrCC: !conference.offersSignLanguageOrCC,
     })
   }
 
@@ -579,7 +579,7 @@ const ConferenceForm: React.FC = () => {
                 name='offersSignLanguageOrCC'
                 id='offersSignLanguageOrCC'
                 checked={offersSignLanguageOrCC}
-                onChange={handleCheckboxChange}
+                onChange={toggleOffersSignLanguageOrCC}
               />
               <label htmlFor='offersSignLanguageOrCC'>
                 This conference offers interpretation to International sign
