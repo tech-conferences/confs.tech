@@ -64,7 +64,7 @@
     "postcss-preset-env": "^9.5.15",
     "promise": "8.3.0",
     "prompts": "^2.4.2",
-    "qs": "^6.12.3",
+    "qs": "^6.13.0",
     "react": "^18.3.1",
     "react-app-polyfill": "^3.0.0",
     "react-datepicker": "^7.3.0",
