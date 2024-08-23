@@ -294,13 +294,13 @@ const ConferenceForm: React.FC = () => {
 
   return (
     <Page
-      htmlTitle="Add a new conference to Confs.tech"
-      title="Add a new conference"
-      searchEngineTitle="Add a conference to Confs.tech and gain visibility"
+      htmlTitle='Add a new conference to Confs.tech'
+      title='Add a new conference'
+      searchEngineTitle='Add a conference to Confs.tech and gain visibility'
       backButton
     >
       <Helmet>
-        <script src="https://www.google.com/recaptcha/api.js" async defer />
+        <script src='https://www.google.com/recaptcha/api.js' async defer />
       </Helmet>
 
       <div>
@@ -316,7 +316,7 @@ const ConferenceForm: React.FC = () => {
           This will create a{' '}
           <Link
             external
-            url="https://github.com/tech-conferences/conference-data/pulls"
+            url='https://github.com/tech-conferences/conference-data/pulls'
           >
             pull request on GitHub
           </Link>{' '}
@@ -327,17 +327,17 @@ const ConferenceForm: React.FC = () => {
 
       <div>
         <Card>
-          <form onSubmit={handleFormSubmit} autoComplete="off">
+          <form onSubmit={handleFormSubmit} autoComplete='off'>
             <InputGroup>
               <div className={styles.Select}>
-                <label htmlFor="type">Language of the conference</label>
+                <label htmlFor='type'>Language of the conference</label>
                 <Select
                   defaultValue={defaultConference.locales.map((value) => ({
                     value,
                     label: LOCALES[value],
                   }))}
                   isMulti
-                  placeholder="Select one ore more languages"
+                  placeholder='Select one ore more languages'
                   onChange={(langs) => {
                     setConference({
                       ...conference,
@@ -345,18 +345,18 @@ const ConferenceForm: React.FC = () => {
                     })
                   }}
                   options={langOptions}
-                  inputId="locales"
+                  inputId='locales'
                 />
                 {errorFor('langs', 'You need to select at least one language.')}
               </div>
             </InputGroup>
             <InputGroup>
               <div className={styles.Select}>
-                <label htmlFor="type">Topic</label>
+                <label htmlFor='type'>Topic</label>
                 <Select
                   defaultValue={null}
                   isMulti
-                  placeholder="Select one or more topics"
+                  placeholder='Select one or more topics'
                   onChange={(topics) => {
                     setConference({
                       ...conference,
@@ -364,7 +364,7 @@ const ConferenceForm: React.FC = () => {
                     })
                   }}
                   options={topicOptions}
-                  inputId="topics"
+                  inputId='topics'
                 />
                 {errorFor('topics', 'You need to select at least one topic.')}
               </div>
@@ -384,16 +384,16 @@ const ConferenceForm: React.FC = () => {
             )}
             <InputGroup>
               <div>
-                <label htmlFor="name">Conference name</label>
+                <label htmlFor='name'>Conference name</label>
                 <input
                   className={classNames(hasError('name') && styles.error)}
-                  type="text"
-                  name="name"
+                  type='text'
+                  name='name'
                   required
-                  autoComplete="off"
-                  placeholder="Conference name (without year)"
+                  autoComplete='off'
+                  placeholder='Conference name (without year)'
                   value={name}
-                  id="name"
+                  id='name'
                   onChange={handleFieldChange}
                 />
                 {errorFor('name', 'Name should not contain year.')}
@@ -403,7 +403,7 @@ const ConferenceForm: React.FC = () => {
                     &nbsp;
                     <Link
                       external
-                      url="https://github.com/tech-conferences/confs.tech/blob/main/src/scenes/ConferenceForm/utils.ts#L6"
+                      url='https://github.com/tech-conferences/confs.tech/blob/main/src/scenes/ConferenceForm/utils.ts#L6'
                     >
                       (Details).
                     </Link>
@@ -411,7 +411,7 @@ const ConferenceForm: React.FC = () => {
                     <br />
                     <Link
                       external
-                      url="https://github.com/tech-conferences/conference-data/pulls?q=is%3Aunmerged"
+                      url='https://github.com/tech-conferences/conference-data/pulls?q=is%3Aunmerged'
                     >
                       See the list of closed and not merged pull requests
                     </Link>
@@ -422,7 +422,7 @@ const ConferenceForm: React.FC = () => {
                     If you think this is an error, please &nbsp;
                     <Link
                       external
-                      url="https://github.com/tech-conferences/conference-data/issues/new"
+                      url='https://github.com/tech-conferences/conference-data/issues/new'
                     >
                       create an issue on our GitHub repo.
                     </Link>
@@ -432,15 +432,15 @@ const ConferenceForm: React.FC = () => {
             </InputGroup>
             <InputGroup>
               <div>
-                <label htmlFor="url">URL</label>
+                <label htmlFor='url'>URL</label>
                 <input
                   className={classNames(hasError('url') && styles.error)}
-                  type="url"
-                  placeholder="Eg.: https://confs.tech"
+                  type='url'
+                  placeholder='Eg.: https://confs.tech'
                   required
                   value={url}
-                  name="url"
-                  id="url"
+                  name='url'
+                  id='url'
                   onChange={handleFieldChange}
                 />
                 <div className={styles.InputHint}>
@@ -454,37 +454,37 @@ const ConferenceForm: React.FC = () => {
             </InputGroup>
             <InputGroup inline>
               <div>
-                <label htmlFor="startDate">Start date</label>
+                <label htmlFor='startDate'>Start date</label>
                 <DatePicker
                   dateFormat={CONFERENCE_DATE_FORMAT}
-                  name="startDate"
-                  id="startDate"
+                  name='startDate'
+                  id='startDate'
                   required
                   selected={startDate}
                   onChange={handleStartDateSelect}
-                  placeholderText="Eg.: 2021-03-10"
+                  placeholderText='Eg.: 2021-03-10'
                 />
               </div>
               <div>
-                <label htmlFor="endDate">End date</label>
+                <label htmlFor='endDate'>End date</label>
                 <DatePicker
                   ref={endDateDatepickerRef}
                   dateFormat={CONFERENCE_DATE_FORMAT}
-                  name="endDate"
-                  id="endDate"
+                  name='endDate'
+                  id='endDate'
                   required
                   selected={endDate}
                   onChange={handleDateChange.endDate}
-                  placeholderText="Eg.: 2021-03-12"
+                  placeholderText='Eg.: 2021-03-12'
                 />
                 {errorFor('endDate', 'End date must be after start date.')}
               </div>
             </InputGroup>
             <InputGroup>
-              <label htmlFor="locationType">Location</label>
+              <label htmlFor='locationType'>Location</label>
               <select
-                id="locationType"
-                name="locationType"
+                id='locationType'
+                name='locationType'
                 value={locationType}
                 required
                 onChange={handleLocationTypeChange}
@@ -499,13 +499,13 @@ const ConferenceForm: React.FC = () => {
             {locationType !== 'online' && (
               <InputGroup inline>
                 <div>
-                  <label htmlFor="city">City</label>
+                  <label htmlFor='city'>City</label>
                   <input
                     className={classNames(hasError('city') && styles.error)}
                     required={locationType !== 'online'}
-                    type="text"
-                    id="city"
-                    name="city"
+                    type='text'
+                    id='city'
+                    name='city'
                     value={city}
                     onChange={handleFieldChange}
                   />
@@ -515,13 +515,13 @@ const ConferenceForm: React.FC = () => {
                   )}
                 </div>
                 <div>
-                  <label htmlFor="country">Country</label>
+                  <label htmlFor='country'>Country</label>
                   <input
                     className={classNames(hasError('country') && styles.error)}
                     required={locationType !== 'online'}
-                    type="text"
-                    id="country"
-                    name="country"
+                    type='text'
+                    id='country'
+                    name='country'
                     value={country}
                     onChange={handleFieldChange}
                   />
@@ -534,12 +534,12 @@ const ConferenceForm: React.FC = () => {
             )}
             <InputGroup inline>
               <div>
-                <label htmlFor="cfpUrl">CFP URL</label>
+                <label htmlFor='cfpUrl'>CFP URL</label>
                 <input
                   className={classNames(hasError('cfpUrl') && styles.error)}
-                  type="url"
-                  name="cfpUrl"
-                  id="cfpUrl"
+                  type='url'
+                  name='cfpUrl'
+                  id='cfpUrl'
                   value={cfpUrl}
                   onChange={handleFieldChange}
                 />
@@ -549,11 +549,11 @@ const ConferenceForm: React.FC = () => {
                 )}
               </div>
               <div>
-                <label htmlFor="cfpEndDate">CFP end date</label>
+                <label htmlFor='cfpEndDate'>CFP end date</label>
                 <DatePicker
                   dateFormat={CONFERENCE_DATE_FORMAT}
-                  name="cfpEndDate"
-                  id="cfpEndDate"
+                  name='cfpEndDate'
+                  id='cfpEndDate'
                   selected={cfpEndDate}
                   onChange={handleDateChange.cfpEndDate}
                 />
@@ -564,24 +564,24 @@ const ConferenceForm: React.FC = () => {
               </div>
             </InputGroup>
             <InputGroup>
-              <label htmlFor="cocUrl">Code Of Conduct URL</label>
+              <label htmlFor='cocUrl'>Code Of Conduct URL</label>
               <input
-                type="text"
-                name="cocUrl"
-                id="cocUrl"
+                type='text'
+                name='cocUrl'
+                id='cocUrl'
                 value={cocUrl}
                 onChange={handleFieldChange}
               />
             </InputGroup>
             <InputGroup inline>
               <input
-                type="checkbox"
-                name="offersSignLanguageOrCC"
-                id="offersSignLanguageOrCC"
+                type='checkbox'
+                name='offersSignLanguageOrCC'
+                id='offersSignLanguageOrCC'
                 checked={offersSignLanguageOrCC}
                 onChange={toggleOffersSignLanguageOrCC}
               />
-              <label htmlFor="offersSignLanguageOrCC">
+              <label htmlFor='offersSignLanguageOrCC'>
                 This conference offers interpretation to International sign
                 language or closed captions.
               </label>
@@ -590,24 +590,24 @@ const ConferenceForm: React.FC = () => {
               <Divider />
               <h4>Social</h4>
               <InputGroup>
-                <label htmlFor="twitter">Conference @TwitterHandle</label>
+                <label htmlFor='twitter'>Conference @TwitterHandle</label>
                 <input
                   className={classNames(hasError('twitter') && styles.error)}
-                  type="text"
-                  name="twitter"
-                  id="twitter"
+                  type='text'
+                  name='twitter'
+                  id='twitter'
                   value={twitter}
                   onChange={handleFieldChange}
                 />
                 {errorFor('twitter', 'Should be formatted like @twitter')}
               </InputGroup>
               <InputGroup>
-                <label htmlFor="mastodon">Conference @MastodonHandle</label>
+                <label htmlFor='mastodon'>Conference @MastodonHandle</label>
                 <input
                   className={classNames(hasError('mastodon') && styles.error)}
-                  type="text"
-                  name="mastodon"
-                  id="mastodon"
+                  type='text'
+                  name='mastodon'
+                  id='mastodon'
                   value={mastodon}
                   onChange={handleFieldChange}
                 />
@@ -620,11 +620,11 @@ const ConferenceForm: React.FC = () => {
             <InputGroup>
               <Divider />
               <h4>Contact</h4>
-              <label htmlFor="github">Your GitHub username</label>
+              <label htmlFor='github'>Your GitHub username</label>
               <input
-                type="text"
-                name="github"
-                id="github"
+                type='text'
+                name='github'
+                id='github'
                 value={github}
                 onChange={handleFieldChange}
               />
@@ -633,8 +633,8 @@ const ConferenceForm: React.FC = () => {
               </div>
             </InputGroup>
             <Recaptcha
-              sitekey="6Lf5FEoUAAAAAJtf3_sCGAAzV221KqRS4lAX9AAs"
-              render="explicit"
+              sitekey='6Lf5FEoUAAAAAJtf3_sCGAAzV221KqRS4lAX9AAs'
+              render='explicit'
               verifyCallback={handleVerifyRecaptcha}
               onloadCallback={() => setRecaptchaLoaded(true)}
               theme={darkModeEnabled ? 'dark' : 'light'}
@@ -645,8 +645,8 @@ const ConferenceForm: React.FC = () => {
               disabled={
                 submitting || !recaptchaLoaded || captchaResponse === null
               }
-              type="submit"
-              value="Submit"
+              type='submit'
+              value='Submit'
             >
               {submitting ? 'Submitting...' : 'Submit'}
             </button>
