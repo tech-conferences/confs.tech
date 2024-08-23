@@ -140,9 +140,9 @@ export default function TeamPage() {
 
   return (
     <Page
-      title='Team Confs.tech'
-      subtitle='Meet the team behind Confs.tech'
-      htmlTitle='Team Confs.tech open source project'
+      title="Team Confs.tech"
+      subtitle="Meet the team behind Confs.tech"
+      htmlTitle="Team Confs.tech open source project"
       backButton
     >
       <p>
@@ -201,7 +201,7 @@ export default function TeamPage() {
       <p>
         <Link
           external
-          url='https://github.com/tech-conferences/conference-data/issues'
+          url="https://github.com/tech-conferences/conference-data/issues"
         >
           Reach out to join our team!
         </Link>
@@ -215,14 +215,14 @@ export default function TeamPage() {
             <h3>Confs.tech contributors</h3>
             <TeamSection
               contributors={confsTechContributors}
-              contributionsUrlBase='https://github.com/tech-conferences/confs.tech'
+              contributionsUrlBase="https://github.com/tech-conferences/confs.tech"
             />
 
             <div className={styles.repo}>
               <h3>Conference Data contributors</h3>
               <TeamSection
                 contributors={conferenceDataContributors}
-                contributionsUrlBase='https://github.com/tech-conferences/conference-data'
+                contributionsUrlBase="https://github.com/tech-conferences/conference-data"
               />
             </div>
           </>
