@@ -32,8 +32,8 @@ export default function SponsorshipPage() {
   return (
     <Page
       narrow
-      title="Sponsorship"
-      htmlTitle="Become a sponsor of Confs.tech"
+      title='Sponsorship'
+      htmlTitle='Become a sponsor of Confs.tech'
       backButton
     >
       <p>
@@ -54,7 +54,7 @@ export default function SponsorshipPage() {
             <dt>{sponsorshipAvailability[0]}</dt>
             <dd>
               {sponsorshipAvailability[1] ? (
-                <Link url="mailto:contact@confs.tech?subject=Sponsorship">
+                <Link url='mailto:contact@confs.tech?subject=Sponsorship'>
                   Available
                 </Link>
               ) : (
@@ -75,7 +75,7 @@ export default function SponsorshipPage() {
         sponsorship once the donation has been collected.
         <br />
         We collect money through our{' '}
-        <Link external url="https://opencollective.com/confstech/contribute">
+        <Link external url='https://opencollective.com/confstech/contribute'>
           OpenCollective account
         </Link>
         . All funds are used to cover the operation costs related to running
@@ -86,14 +86,14 @@ export default function SponsorshipPage() {
       <h3>How do I get an invoice for my payment?</h3>
       <p>
         Since you will be paying through our{' '}
-        <Link external url="https://opencollective.com/confstech/contribute">
+        <Link external url='https://opencollective.com/confstech/contribute'>
           OpenCollective account
         </Link>{' '}
         you will be able to get a receipt there, directly. You can find the
         details on how to do it{' '}
         <Link
           external
-          url="https://docs.opencollective.com/help/financial-contributors/receipts"
+          url='https://docs.opencollective.com/help/financial-contributors/receipts'
         >
           in their help center.
         </Link>
@@ -107,28 +107,28 @@ export default function SponsorshipPage() {
       <h2>Past sponsors</h2>
       <p>
         Thank you to our past sponsors.
-        <span role="img" aria-label="heart">
+        <span role='img' aria-label='heart'>
           ❤️
         </span>
       </p>
       <ul className={styles.SponsorList}>
         <li>
-          <Link external url="https://www.dotconferences.com/">
+          <Link external url='https://www.dotconferences.com/'>
             dotConferences
           </Link>
         </li>
         <li>
-          <Link external url="https://devternity.com/">
+          <Link external url='https://devternity.com/'>
             DevTernity
           </Link>
         </li>
         <li>
-          <Link external url="https://testcon.lt/">
+          <Link external url='https://testcon.lt/'>
             TestCon Europe
           </Link>
         </li>
         <li>
-          <Link external url="https://bigdataconference.eu/">
+          <Link external url='https://bigdataconference.eu/'>
             BigData Europe
           </Link>
         </li>

@@ -14,12 +14,12 @@ const ServerError = ({ serverError }: ServerErrorProps) => {
           This conference has already been added.
           <br />
           If you don't find it on{' '}
-          <Link external url="https://confs.tech">
+          <Link external url='https://confs.tech'>
             Confs.tech
           </Link>{' '}
           <Link
             external
-            url="https://github.com/tech-conferences/conference-data/issues/new"
+            url='https://github.com/tech-conferences/conference-data/issues/new'
           >
             create an issue on our GitHub repo.
           </Link>
@@ -33,7 +33,7 @@ const ServerError = ({ serverError }: ServerErrorProps) => {
           If it still happens, you can&nbsp;
           <Link
             external
-            url="https://github.com/tech-conferences/conference-data/issues/new"
+            url='https://github.com/tech-conferences/conference-data/issues/new'
           >
             create an issue on our GitHub repo.
           </Link>

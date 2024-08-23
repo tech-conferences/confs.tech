@@ -36,7 +36,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
         id={idify(name, startDate)}
       >
         <script
-          type="application/ld+json"
+          type='application/ld+json'
           dangerouslySetInnerHTML={{
             __html: generateEventJSONLD({
               name,
@@ -49,17 +49,17 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           }}
         />
         <dl className={styles.dl}>
-          <dt className="visuallyHidden">Conference name</dt>
-          <Heading element="dd" level={4}>
+          <dt className='visuallyHidden'>Conference name</dt>
+          <Heading element='dd' level={4}>
             <Link url={url} external>
               {name}
             </Link>
           </Heading>
-          <dt className="visuallyHidden">Location and date</dt>
+          <dt className='visuallyHidden'>Location and date</dt>
           <dd>
             <p className={styles.p}>
               {Location(city, country, online)}
-              <span aria-hidden="true">・</span>
+              <span aria-hidden='true'>・</span>
               <span className={styles.Date}>
                 {formatDate(startDate, endDate)}
               </span>
@@ -67,7 +67,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           </dd>
           {offersSignLanguageOrCC && (
             <>
-              <dt className="visuallyHidden">Accessibility</dt>
+              <dt className='visuallyHidden'>Accessibility</dt>
               <dd>
                 Offers interpretation to International sign language or closed
                 captions.
@@ -90,9 +90,9 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           )}
           {cocUrl && (
             <>
-              <dt className="visuallyHidden">Link to code of conduct</dt>
+              <dt className='visuallyHidden'>Link to code of conduct</dt>
               <dd>
-                <span className={styles.muted} aria-hidden="true">
+                <span className={styles.muted} aria-hidden='true'>
                   ・
                 </span>
                 <Link url={cocUrl} external muted>
@@ -113,9 +113,9 @@ interface TwitterProps {
 function Twitter({ twitter }: TwitterProps) {
   return (
     <>
-      <dt className="visuallyHidden">Twitter username</dt>
+      <dt className='visuallyHidden'>Twitter username</dt>
       <dd>
-        <span aria-hidden="true">・</span>
+        <span aria-hidden='true'>・</span>
         <Link url={`https://twitter.com/${twitter}`} external muted>
           {twitter}
         </Link>
@@ -134,9 +134,9 @@ function Mastodon({ mastodon }: MastodonProps) {
 
   return (
     <>
-      <dt className="visuallyHidden">Mastodon username</dt>
+      <dt className='visuallyHidden'>Mastodon username</dt>
       <dd>
-        <span aria-hidden="true">・</span>
+        <span aria-hidden='true'>・</span>
         <Link url={`https://${domain}/@${username}`} external muted>
           @{username}
         </Link>
@@ -164,7 +164,7 @@ interface CfpProps {
 function Cfp({ url, date }: CfpProps) {
   return (
     <>
-      <dt className="visuallyHidden">Call for paper end date</dt>
+      <dt className='visuallyHidden'>Call for paper end date</dt>
       <dd>
         <Link url={url} external className={styles.cfp}>
           CFP closes {formatDate(date)}
@@ -181,14 +181,14 @@ interface TopicsProps {
 function Topics({ topics }: TopicsProps) {
   const topicsList = topics.map((topic) => (
     <li key={topic} className={styles.topic}>
-      <span aria-hidden="true">#</span>
+      <span aria-hidden='true'>#</span>
       {topic}
     </li>
   ))
 
   return (
     <>
-      <dt className="visuallyHidden">Topics</dt>
+      <dt className='visuallyHidden'>Topics</dt>
       <dd>
         <ul className={styles.topics}>{topicsList}</ul>
       </dd>
