@@ -72,14 +72,14 @@
   }
 
   .ais-RefinementList-showMore {
-    & {
-      @include link();
-    }
-
-    font-size: 0.9em;
+    @include link();
 
     &:hover {
       @include link--hover();
+    }
+
+    & {
+      font-size: 0.9em;
     }
   }
 
