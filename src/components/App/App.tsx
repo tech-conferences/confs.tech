@@ -13,19 +13,19 @@ export default function App() {
     <div className={styles.AppContainer}>
       <div className={styles.App}>
         <Routes>
-          <Route path='/pages/:page' element={<Pages />} />
-          <Route path='/conferences/new' element={<ConferenceForm />} />
-          <Route path='/past' element={<ConferenceList showPast />} />
+          <Route path="/pages/:page" element={<Pages />} />
+          <Route path="/conferences/new" element={<ConferenceForm />} />
+          <Route path="/past" element={<ConferenceList showPast />} />
           <Route
-            path='/cfp/:topic/:country'
+            path="/cfp/:topic/:country"
             element={<ConferenceList showCFP />}
           />
-          <Route path='/cfp/:topic/' element={<ConferenceList showCFP />} />
-          <Route path='/cfp' element={<ConferenceList showCFP />} />
-          <Route path='/:year/:topic/:country' element={<HandleRedirect />} />
-          <Route path='/:topic/:country' element={<HandleRedirectOrRender />} />
-          <Route path='/:topic' element={<ConferenceList />} />
-          <Route path='/' element={<ConferenceList />} />
+          <Route path="/cfp/:topic/" element={<ConferenceList showCFP />} />
+          <Route path="/cfp" element={<ConferenceList showCFP />} />
+          <Route path="/:year/:topic/:country" element={<HandleRedirect />} />
+          <Route path="/:topic/:country" element={<HandleRedirectOrRender />} />
+          <Route path="/:topic" element={<ConferenceList />} />
+          <Route path="/" element={<ConferenceList />} />
           <Route element={<ConferenceList />} />
         </Routes>
       </div>

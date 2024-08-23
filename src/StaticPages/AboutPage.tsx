@@ -4,8 +4,8 @@ export default function AboutPage() {
   return (
     <Page
       narrow
-      title='About Confs.tech'
-      htmlTitle='About Confs.tech open source project and team'
+      title="About Confs.tech"
+      htmlTitle="About Confs.tech open source project and team"
       backButton
     >
       <p>
@@ -17,16 +17,16 @@ export default function AboutPage() {
         All the data about the conferences is available on{' '}
         <Link
           external
-          url='https://github.com/tech-conferences/conference-data'
+          url="https://github.com/tech-conferences/conference-data"
         >
           GitHub
         </Link>{' '}
         and anyone can submit a new event using{' '}
-        <Link routed url='/conferences/new'>
+        <Link routed url="/conferences/new">
           the form
         </Link>{' '}
         or by
-        <Link url='https://github.com/tech-conferences/conference-data'>
+        <Link url="https://github.com/tech-conferences/conference-data">
           sending a pull request.
         </Link>{' '}
         Confs.tech is a non-profit initiative and we don’t charge for adding a
@@ -35,15 +35,15 @@ export default function AboutPage() {
       <p>
         If you want to help us with the website or want to give discounts to
         Confs.tech visitors,{' '}
-        <Link url='mailto:contact@confs.tech'>email us.</Link>
+        <Link url="mailto:contact@confs.tech">email us.</Link>
       </p>
       <p>
         With{' '}
-        <span role='img' aria-label='heart'>
+        <span role="img" aria-label="heart">
           ❤️
         </span>{' '}
-        – <Twitter handle='cgrail' /> · <Twitter handle='katyaprigara' /> ·{' '}
-        <Twitter handle='nimz_co' />
+        – <Twitter handle="cgrail" /> · <Twitter handle="katyaprigara" /> ·{' '}
+        <Twitter handle="nimz_co" />
       </p>
     </Page>
   )

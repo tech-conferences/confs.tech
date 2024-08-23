@@ -23,15 +23,15 @@ const Twitter = () => {
         <script
           async
           defer
-          src='https://platform.twitter.com/widgets.js'
+          src="https://platform.twitter.com/widgets.js"
         ></script>
       </Helmet>
 
       <a
-        href='https://twitter.com/ConfsTech'
-        data-show-screen-name='false'
-        className='twitter-follow-button'
-        data-show-count='true'
+        href="https://twitter.com/ConfsTech"
+        data-show-screen-name="false"
+        className="twitter-follow-button"
+        data-show-count="true"
       >
         Follow @ConfsTech
       </a>
