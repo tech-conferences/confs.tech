@@ -172,40 +172,40 @@ const ConferenceListPage: React.FC<Props> = ({
       } conferences in ${CURRENT_YEAR} and ${CURRENT_YEAR + 1}${
         country ? ` in ${country}` : ''
       }`}
-      title='Find your next tech conference'
-      subtitle='Open-source and crowd-sourced list of conferences around software development'
+      title="Find your next tech conference"
+      subtitle="Open-source and crowd-sourced list of conferences around software development"
     >
       <OpenCollectiveContribution />
       <InstantSearch
         searchClient={searchClient}
         onSearchStateChange={updateUrlQueryParams}
         searchState={searchState}
-        indexName='prod_conferences'
+        indexName="prod_conferences"
       >
         <Configure hitsPerPage={hitsPerPage} filters={algoliaFilter} />
         <div className={styles.RefinementsWrapper}>
           <p className={styles.HeaderLinks}>
-            {(showPast || showCFP) && <Link url='/'>Upcoming conferences</Link>}
-            {!showCFP && <Link url='/cfp'>Call for Papers</Link>}
-            {!showPast && <Link url='/past'>Past conferences</Link>}
-            <Link url='/pages/sponsorships' routed>
+            {(showPast || showCFP) && <Link url="/">Upcoming conferences</Link>}
+            {!showCFP && <Link url="/cfp">Call for Papers</Link>}
+            {!showPast && <Link url="/past">Past conferences</Link>}
+            <Link url="/pages/sponsorships" routed>
               Sponsor
             </Link>
-            <Link url='/conferences/new' routed>
+            <Link url="/conferences/new" routed>
               Add a conference
             </Link>
           </p>
           <Search />
           <RefinementList
             limit={40}
-            attribute='topics'
+            attribute="topics"
             defaultRefinement={(searchState.refinementList.topics || []).filter(
               Boolean,
             )}
             transformItems={transformTopicRefinements}
           />
           <RefinementList
-            attribute='continent'
+            attribute="continent"
             transformItems={transformCountryRefinements}
             defaultRefinement={(
               searchState.refinementList.continent || []
@@ -216,7 +216,7 @@ const ConferenceListPage: React.FC<Props> = ({
             showMoreLimit={100}
             limit={9}
             showMore
-            attribute='country'
+            attribute="country"
             transformItems={transformCountryRefinements}
             defaultRefinement={(
               searchState.refinementList.country || []
@@ -225,8 +225,8 @@ const ConferenceListPage: React.FC<Props> = ({
           <div>
             <OnlineRefinement value={online} onChange={setOnline} />
             <ToggleRefinement
-              attribute='offersSignLanguageOrCC'
-              label='Offers interpretation to International sign language or closed captions'
+              attribute="offersSignLanguageOrCC"
+              label="Offers interpretation to International sign language or closed captions"
               value={true}
               defaultRefinement={searchState.toggle.offersSignLanguageOrCC}
             />
@@ -248,7 +248,7 @@ const ConferenceListPage: React.FC<Props> = ({
         )}
         {showPast && (
           <>
-            <Heading element='h2' level={2}>
+            <Heading element="h2" level={2}>
               Past conferences
             </Heading>
           </>
@@ -294,10 +294,10 @@ const OnlineRefinement = ({ value, onChange }: OnlineRefinementProps) => {
     <div className={styles.OnlineRadios}>
       <label>
         <input
-          name='online'
+          name="online"
           checked={value === 'hybrid'}
-          value='hybrid'
-          type='radio'
+          value="hybrid"
+          type="radio"
           onChange={(e) => {
             onChange(e.target.value as OnlineOptions)
           }}
@@ -306,10 +306,10 @@ const OnlineRefinement = ({ value, onChange }: OnlineRefinementProps) => {
       </label>
       <label>
         <input
-          name='online'
+          name="online"
           checked={value === 'online'}
-          value='online'
-          type='radio'
+          value="online"
+          type="radio"
           onChange={(e) => {
             onChange(e.target.value as OnlineOptions)
           }}
@@ -318,10 +318,10 @@ const OnlineRefinement = ({ value, onChange }: OnlineRefinementProps) => {
       </label>
       <label>
         <input
-          name='online'
+          name="online"
           checked={value === 'inPerson'}
-          value='inPerson'
-          type='radio'
+          value="inPerson"
+          type="radio"
           onChange={(e) => {
             onChange(e.target.value as OnlineOptions)
           }}

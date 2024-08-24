@@ -19,22 +19,22 @@ const Header: React.FC<Props> = ({
     <header className={styles.Header}>
       <div className={styles.Title}>
         <hgroup>
-          <Heading element='h1'>
-            <span aria-hidden='true' className='visuallyHidden'>
+          <Heading element="h1">
+            <span aria-hidden="true" className="visuallyHidden">
               {searchEngineTitle || title}
             </span>
             {title}
           </Heading>
 
           {subtitle && (
-            <Heading element='h2' level='sub'>
+            <Heading element="h2" level="sub">
               {subtitle}
             </Heading>
           )}
         </hgroup>
 
         {backButton && (
-          <Link routed url='/'>
+          <Link routed url="/">
             Back to the conferences
           </Link>
         )}
