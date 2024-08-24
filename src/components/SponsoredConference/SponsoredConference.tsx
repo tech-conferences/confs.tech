@@ -42,7 +42,7 @@ const SponsoredConference = () => {
       </Link>
       <div className={styles.Content}>
         <div>
-          <Heading element="p" level={4}>
+          <Heading element='p' level={4}>
             <Link url={sponsorConference.url} external>
               {sponsorConference.name}
             </Link>
@@ -50,7 +50,7 @@ const SponsoredConference = () => {
           <p>{sponsorConference.conferenceDate}</p>
           <p className={styles.Footer}>{sponsorConference.tagline}</p>
         </div>
-        <Link routed url="/pages/sponsorships" className={styles.sponsored}>
+        <Link routed url='/pages/sponsorships' className={styles.sponsored}>
           sponsored
         </Link>
       </div>

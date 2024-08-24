@@ -10,11 +10,11 @@ interface Props {
 const CfpHeader = ({ sortByCfpEndDate, sortBy }: Props) => {
   return (
     <div className={styles.CFPHeader}>
-      <Heading element="h2" level={2}>
+      <Heading element='h2' level={2}>
         Call for Papers
       </Heading>
       <div>
-        <span role="img" aria-label="Sorted by" title="Sorted by">
+        <span role='img' aria-label='Sorted by' title='Sorted by'>
           ↕️
         </span>
         <Link

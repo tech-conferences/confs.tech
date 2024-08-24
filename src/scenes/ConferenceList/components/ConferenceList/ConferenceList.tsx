@@ -64,7 +64,7 @@ const ConferenceList: React.FC<Props> = ({
                   const month = monthKey.split('-')[1]
                   return (
                     <React.Fragment key={month}>
-                      <Heading element="h2" level={3}>
+                      <Heading element='h2' level={3}>
                         {getMonthName(month)}
                       </Heading>
                       <ul>
@@ -100,7 +100,7 @@ function Year({ year }: { year: string }) {
   return (
     <div className={styles.Year}>
       <div>
-        <Heading key={year} element="h2" level={2}>
+        <Heading key={year} element='h2' level={2}>
           {year}
         </Heading>
       </div>
@@ -114,7 +114,7 @@ function Year({ year }: { year: string }) {
 function AddConferenceLink() {
   return (
     <div className={styles.AddConfPanelWrapper}>
-      <Link url="/conferences/new" routed>
+      <Link url='/conferences/new' routed>
         Add a conference
       </Link>
     </div>

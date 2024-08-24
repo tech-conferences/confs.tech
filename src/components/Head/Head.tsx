@@ -12,54 +12,54 @@ const Head = () => {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
+        <meta charSet='utf-8' />
         <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          name='viewport'
+          content='width=device-width, initial-scale=1, shrink-to-fit=no'
         />
         <meta
-          name="description"
-          content="Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc"
+          name='description'
+          content='Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc'
         />
         <title>
           Find your next tech conference | JavaScript, UX, Ruby and more
         </title>
         <link
-          href="https://fonts.googleapis.com/css?family=Merriweather|Lato"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css?family=Merriweather|Lato'
+          rel='stylesheet'
         />
 
-        <meta content="/logo.png" property="og:image" />
+        <meta content='/logo.png' property='og:image' />
         <meta
-          content="Confs.tech | List of tech conferences: JavaScript, UX / Design, Ruby"
-          property="og:site_name"
+          content='Confs.tech | List of tech conferences: JavaScript, UX / Design, Ruby'
+          property='og:site_name'
         />
-        <meta content="website" property="og:type" />
-        <meta content="Confs.tech" property="og:title" />
-        <meta content="https://confs.tech" property="og:url" />
+        <meta content='website' property='og:type' />
+        <meta content='Confs.tech' property='og:title' />
+        <meta content='https://confs.tech' property='og:url' />
         <meta
-          content="Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc"
-          property="og:description"
+          content='Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc'
+          property='og:description'
         />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@ConfsTech" />
-        <meta name="twitter:creator" content="@nimz_co" />
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:site' content='@ConfsTech' />
+        <meta name='twitter:creator' content='@nimz_co' />
         <meta
-          name="twitter:title"
+          name='twitter:title'
           content={`Confs.tech | All tech conferences in ${CURRENT_YEAR} and ${
             CURRENT_YEAR + 1
           }`}
         />
         <meta
-          name="twitter:description"
-          content="Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc"
+          name='twitter:description'
+          content='Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc'
         />
-        <meta name="twitter:image" content="/logo.png" />
+        <meta name='twitter:image' content='/logo.png' />
         {/* <!-- Google tag (gtag.js) --> */}
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-FBVEHTPVZC"
+          src='https://www.googletagmanager.com/gtag/js?id=G-FBVEHTPVZC'
         ></script>
         <script>
           {`
@@ -70,7 +70,7 @@ const Head = () => {
           gtag('config', 'G-FBVEHTPVZC');
           `}
         </script>
-        <link rel="icon" type="image/png" href={faviconUrl} />
+        <link rel='icon' type='image/png' href={faviconUrl} />
       </Helmet>
     </>
   )
