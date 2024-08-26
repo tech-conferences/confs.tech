@@ -28,7 +28,7 @@
     "@babel/core": "^7.25.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "@svgr/webpack": "^8.1.0",
-    "algoliasearch": "^4.24.0",
+    "algoliasearch": "^5.1.1",
     "autoprefixer": "10.4.20",
     "babel-core": "^6.26.3",
     "babel-jest": "^29.7.0",
