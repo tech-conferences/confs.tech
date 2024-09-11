@@ -90,12 +90,16 @@ const ConferenceListPage: React.FC<Props> = ({
   const [startDate, setStartDate] = useState<Date | null>(null)
   const [endDate, setEndDate] = useState<Date | null>(null)
 
-  const handleStartDateSelect = (date: Date) => {
-    setStartDate(date)
+  const handleStartDateSelect = (date: Date | null) => {
+    if (date) {
+      setStartDate(date)
+    }
   }
 
-  const handleEndDateSelect = (date: Date) => {
-    setEndDate(date)
+  const handleEndDateSelect = (date: Date | null) => {
+    if (date) {
+      setEndDate(date)
+    }
   }
 
   const [sortDirection] = useState<SortDirection>(showPast ? 'desc' : 'asc')
