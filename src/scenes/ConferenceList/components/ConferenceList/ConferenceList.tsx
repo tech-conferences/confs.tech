@@ -1,4 +1,4 @@
-import { isPast, parseISO } from 'date-fns'
+import { isPast, parseISO, isWithinInterval } from 'date-fns'
 import { filter } from 'lodash'
 import React from 'react'
 import { connectInfiniteHits } from 'react-instantsearch-dom'
@@ -22,6 +22,8 @@ interface Props {
   hasMore?: boolean
   hits: Conference[]
   onLoadMore(): void
+  startDate: Date | null
+  endDate: Date | null
 }
 
 const ConferenceList: React.FC<Props> = ({
@@ -31,6 +33,8 @@ const ConferenceList: React.FC<Props> = ({
   sortDirection,
   hasMore,
   onLoadMore,
+  startDate,
+  endDate,
 }) => {
   let filteredConferences = hits as Conference[]
 
@@ -39,6 +43,20 @@ const ConferenceList: React.FC<Props> = ({
       return conf.cfpEndDate && !isPast(parseISO(conf.cfpEndDate))
     }) as Conference[]
   }
+  if (startDate && endDate) {
+    filteredConferences = filteredConferences.filter((conf) => {
+      const conferenceStartDate = parseISO(conf.startDate)
+      const conferenceEndDate = parseISO(conf.endDate)
+      return (
+        isWithinInterval(conferenceStartDate, {
+          start: startDate,
+          end: endDate,
+        }) ||
+        isWithinInterval(conferenceEndDate, { start: startDate, end: endDate })
+      )
+    })
+  }
+
   const confs = groupAndSortConferences(
     filteredConferences,
     sortBy,
