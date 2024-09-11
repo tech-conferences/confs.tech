@@ -220,8 +220,8 @@ const ConferenceListPage: React.FC<Props> = ({
               onSelect={handleStartDateSelect}
               onChange={() => {}}
               selectsStart
-              startDate={startDate}
-              endDate={endDate}
+              startDate={startDate ?? undefined}
+              endDate={endDate ?? undefined}
               placeholderText='Start Date'
             />
             <DatePicker
@@ -230,8 +230,8 @@ const ConferenceListPage: React.FC<Props> = ({
               onSelect={handleEndDateSelect}
               onChange={() => {}}
               selectsEnd
-              startDate={startDate}
-              endDate={endDate}
+              startDate={startDate ?? undefined}
+              endDate={endDate ?? undefined}
               placeholderText='End Date'
             />
           </div>
