@@ -21,6 +21,14 @@
   }
 }
 
+.GithubStar {
+  display: flex;
+
+  @include media($media-query--tablet-up) {
+    display: block;
+  }
+}
+
 .Right {
   display: flex;
   align-items: center;
