@@ -212,28 +212,29 @@ const ConferenceListPage: React.FC<Props> = ({
               Add a conference
             </Link>
           </p>
-          <Search />
-          <div className={styles.dateRangePicker}>
-            <DatePicker
-              className={styles.customDatePicker}
-              selected={startDate}
-              onSelect={handleStartDateSelect}
-              onChange={() => {}}
-              selectsStart
-              startDate={startDate ?? undefined}
-              endDate={endDate ?? undefined}
-              placeholderText='Start Date'
-            />
-            <DatePicker
-              className={styles.customDatePicker}
-              selected={endDate}
-              onSelect={handleEndDateSelect}
-              onChange={() => {}}
-              selectsEnd
-              startDate={startDate ?? undefined}
-              endDate={endDate ?? undefined}
-              placeholderText='End Date'
-            />
+
+          <div className={styles.searchAndDate}>
+            <Search />
+            <div className={styles.dateRangePicker}>
+              <DatePicker
+                selected={startDate}
+                onSelect={handleStartDateSelect}
+                onChange={() => {}}
+                selectsStart
+                startDate={startDate ?? undefined}
+                endDate={endDate ?? undefined}
+                placeholderText='Start Date'
+              />
+              <DatePicker
+                selected={endDate}
+                onSelect={handleEndDateSelect}
+                onChange={() => {}}
+                selectsEnd
+                startDate={startDate ?? undefined}
+                endDate={endDate ?? undefined}
+                placeholderText='End Date'
+              />
+            </div>
           </div>
 
           <RefinementList

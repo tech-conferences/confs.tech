@@ -88,3 +88,17 @@
     }
   }
 }
+
+.searchAndDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: spacing(loose);
+}
+
+.dateRangePicker {
+  display: flex;
+  width: 400px;
+  padding: 2px;
+  gap: 2px;
+}
