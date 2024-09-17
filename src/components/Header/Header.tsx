@@ -1,10 +1,4 @@
-import {
-  Link,
-  ThemeSwitch,
-  Heading,
-  TwitterFollowButton,
-  GithubStar,
-} from 'src/components'
+import { Link, ThemeSwitch, Heading, TwitterFollowButton } from 'src/components'
 
 import styles from './Header.module.scss'
 
@@ -44,9 +38,6 @@ const Header: React.FC<Props> = ({
             Back to the conferences
           </Link>
         )}
-      </div>
-      <div className={styles.GithubStar}>
-        <GithubStar />
       </div>
       <div className={styles.Right}>
         <ThemeSwitch />
