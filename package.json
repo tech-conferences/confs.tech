@@ -98,7 +98,7 @@
     "@types/classnames": "^2.2.4",
     "@types/google.analytics": "^0.0.46",
     "@types/jest": "^29.5.12",
-    "@types/lodash": "^4.17.7",
+    "@types/lodash": "^4.17.9",
     "@types/node": "22.5.5",
     "@types/qs": "^6.9.15",
     "@types/react": "^18.3.5",
