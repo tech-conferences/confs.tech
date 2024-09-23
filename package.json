@@ -58,7 +58,7 @@
     "lodash": "^4.17.4",
     "mini-css-extract-plugin": "^2.9.1",
     "object-assign": "4.1.1",
-    "postcss": "^8.4.44",
+    "postcss": "^8.4.47",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^8.1.1",
     "postcss-normalize": "^10.0.1",
