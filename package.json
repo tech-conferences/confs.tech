@@ -100,7 +100,7 @@
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.9",
     "@types/node": "22.5.5",
-    "@types/qs": "^6.9.15",
+    "@types/qs": "^6.9.16",
     "@types/react": "^18.3.5",
     "@types/react-datepicker": "^7.0.0",
     "@types/react-dom": "^18.3.0",
