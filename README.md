@@ -105,6 +105,7 @@ Some of the conferences have been pulled from other projects:
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)](https://confs.tech/javascript)
 [![Leadership](https://img.shields.io/badge/Leadership-4B0082.svg?style=for-the-badge)](https://confs.tech/leadership)
 [![Performance](https://img.shields.io/badge/Performance-00FF7F.svg?style=for-the-badge)](https://confs.tech/performance)
+[![Open Source](https://img.shields.io/badge/Open%20Source-3DA639.svg?style=for-the-badge)](https://confs.tech/performance)
 [![PHP](https://img.shields.io/badge/PHP-777BB4.svg?style=for-the-badge&logo=PHP&logoColor=white)](https://confs.tech/php)
 [![Product](https://img.shields.io/badge/Product-DC143C.svg?style=for-the-badge)](https://confs.tech/product)
 [![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white)](https://confs.tech/python)
