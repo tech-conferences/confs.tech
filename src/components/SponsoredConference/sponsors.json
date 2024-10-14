@@ -75,11 +75,13 @@
   },
   {
     "name": "JSNation US",
-    "conferenceDate": "November 18 (hybrid in New York) & November 21 (remote), 2024",
+    "conferenceDate": "November 18 & 21, 2024 | New York & Online",
     "img": "/sponsors/jsnation.png",
     "imgDark": "/sponsors/jsnation-dark.png",
     "url": "https://jsnation.us?utm_source=website&utm_medium=confstech",
-    "tagline": "The main JS conference in the US - 50+ stellar thinkers, shaping JS’s future - 700 explorers, immersed in dev discovery 10K devs, connected worldwide",
+    "tagline": "Join 800+ developers in the biggest US Planetarium with 50+ JavaScript stars. Connect with industry leaders and explore emerging trends.",
+    "discountText": "Discount Code: CONFSTECH10 for 10% off!",
+    "discountUrl": "https://ti.to/gitnation/jsnation-us-edition/discount/CONFSTECH10",
     "sponsorDateStart": "2024-10-01",
     "sponsorDateEnd": "2024-11-01"
   },

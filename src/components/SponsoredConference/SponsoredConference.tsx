@@ -13,6 +13,8 @@ export interface SponsoredConf {
   imgDark: string
   url: string
   tagline: string
+  discountText?: string
+  discountUrl?: string
   sponsorDateStart: string
   sponsorDateEnd: string
 }
@@ -49,6 +51,10 @@ const SponsoredConference = () => {
           </Heading>
           <p>{sponsorConference.conferenceDate}</p>
           <p className={styles.Footer}>{sponsorConference.tagline}</p>
+          <DiscountText
+            text={sponsorConference.discountText}
+            url={sponsorConference.discountUrl}
+          />
         </div>
         <Link routed url='/pages/sponsorships' className={styles.sponsored}>
           sponsored
@@ -56,6 +62,27 @@ const SponsoredConference = () => {
       </div>
     </div>
   )
+}
+
+interface DiscountProps {
+  text?: string
+  url?: string
+}
+const DiscountText = ({ text, url }: DiscountProps) => {
+  if (!text) {
+    return null
+  }
+  if (url) {
+    return (
+      <p className={styles.Footer}>
+        <Link url={url} external>
+          {text}
+        </Link>
+      </p>
+    )
+  } else {
+    return <p className={styles.Footer}>{text}</p>
+  }
 }
 
 export default SponsoredConference
