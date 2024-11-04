@@ -81,7 +81,7 @@
     "react-select": "^5.8.1",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^5.0.0",
-    "sass-loader": "^16.0.1",
+    "sass-loader": "^16.0.3",
     "semver": "^7.6.3",
     "source-map-loader": "^5.0.0",
     "style-loader": "^4.0.0",
