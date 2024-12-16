@@ -147,10 +147,12 @@ const ConferenceForm: React.FC = () => {
 
     const isNotOnline = locationType !== 'online'
     const cfp = Boolean(cfpUrl || cfpEndDate)
+    const generalConferenceWithOtherTopics =
+      topics.length > 1 && topics.indexOf('general') !== -1
     const errors: { [key: string]: boolean } = {
       locales: locales.length === 0,
       topics: topics.length === 0,
-      tooManyTopics: topics.length > 3,
+      tooManyTopics: topics.length > 3 || generalConferenceWithOtherTopics,
       name: startDate
         ? name.indexOf(startDate.getFullYear().toString().substring(2, 4)) !==
           -1
