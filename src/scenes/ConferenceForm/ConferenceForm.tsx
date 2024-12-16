@@ -6,10 +6,11 @@ import { useState, useRef, ChangeEvent } from 'react'
 import DatePicker from 'react-datepicker'
 import { Helmet } from 'react-helmet'
 import Recaptcha from 'react-recaptcha'
-import Select from 'react-select'
+import Select, { SingleValue } from 'react-select'
 import { Card, Link, InputGroup, Page, Divider } from 'src/components'
 import Alert from 'src/components/Alert'
 import { TOPICS, LOCALES } from 'src/components/config'
+import { validLocations } from 'src/components/config/validLocations'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
 import './DatePickerOverrides.module.scss'
@@ -50,6 +51,20 @@ const langOptions = Object.keys(LOCALES).map((locale) => {
     label: LOCALES[locale],
   }
 })
+
+const knownCountries = Object.keys(validLocations).map((country) => {
+  return {
+    value: country,
+    label: country,
+  }
+})
+
+type OptionType = {
+  label: string
+  value: string
+}
+
+let knownCities: OptionType[]
 
 const LOCATION_TYPES = [
   {
@@ -201,6 +216,31 @@ const ConferenceForm: React.FC = () => {
     })
   }
 
+  const handleCountryChange = (newValue: SingleValue<{ value: string; label: string; } | null>) => {
+    if (newValue && validLocations.hasOwnProperty(newValue.value)) {
+      const countryKey = newValue.value as keyof typeof validLocations
+      const countryObject = validLocations[countryKey]
+      knownCities = countryObject.map((city) => {
+        return {
+          label: city,
+          value: city,
+        }
+      })
+    }
+    setConference({
+      ...conference,
+      city: '',
+      country: newValue?.value || '',
+    })
+  }
+
+  const handleCityChange = (newValue: SingleValue<{ value: string; label: string; } | null>) => {
+    setConference({
+      ...conference,
+      city: newValue?.value || '',
+    })
+  }
+
   const toggleOffersSignLanguageOrCC = () => {
     setConference({
       ...conference,
@@ -281,8 +321,6 @@ const ConferenceForm: React.FC = () => {
   const {
     name,
     url,
-    city,
-    country,
     cfpUrl,
     twitter,
     github,
@@ -501,34 +539,34 @@ const ConferenceForm: React.FC = () => {
             {locationType !== 'online' && (
               <InputGroup inline>
                 <div>
-                  <label htmlFor='city'>City</label>
-                  <input
-                    className={classNames(hasError('city') && styles.error)}
+                  <label htmlFor='country'>Country</label>
+                  <Select
+                    className={classNames(hasError('country') && styles.error)}
+                    defaultValue={null}
                     required={locationType !== 'online'}
-                    type='text'
-                    id='city'
-                    name='city'
-                    value={city}
-                    onChange={handleFieldChange}
+                    placeholder='Select a country'
+                    options={knownCountries}
+                    onChange={handleCountryChange}
+                    inputId='country'
                   />
                   {errorFor(
-                    'city',
+                    'country',
                     'For Online conferences please select location "online"',
                   )}
                 </div>
                 <div>
-                  <label htmlFor='country'>Country</label>
-                  <input
-                    className={classNames(hasError('country') && styles.error)}
+                  <label htmlFor='city'>City</label>
+                  <Select
+                    className={classNames(hasError('city') && styles.error)}
+                    defaultValue={null}
                     required={locationType !== 'online'}
-                    type='text'
-                    id='country'
-                    name='country'
-                    value={country}
-                    onChange={handleFieldChange}
+                    placeholder='Select a country'
+                    options={knownCities}
+                    onChange={handleCityChange}
+                    inputId='city'
                   />
                   {errorFor(
-                    'country',
+                    'city',
                     'For Online conferences please select location "online"',
                   )}
                 </div>
