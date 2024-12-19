@@ -59,18 +59,7 @@ const knownCountries = Object.keys(validLocations).map((country) => {
   }
 })
 
-type OptionType = {
-  label: string
-  value: string
-}
-
-let knownCities: OptionType[]
-
 const LOCATION_TYPES = [
-  {
-    value: 'online',
-    name: 'Online',
-  },
   {
     value: 'in-person',
     name: 'In person',
@@ -78,6 +67,10 @@ const LOCATION_TYPES = [
   {
     value: 'hybrid',
     name: 'In person & online',
+  },
+  {
+    value: 'online',
+    name: 'Online',
   },
 ]
 
@@ -88,7 +81,7 @@ const defaultConference: Conference = {
   endDate: null,
   city: '',
   country: '',
-  online: true,
+  online: false,
   locales: ['EN'],
   offersSignLanguageOrCC: false,
   topics: [],
@@ -108,7 +101,12 @@ export enum ServerErrorEnum {
 
 const ConferenceForm: React.FC = () => {
   const endDateDatepickerRef = useRef<DatePicker>(null)
-  const [locationType, setLocationType] = useState('online')
+  const [selectedCity, setSelectedCity] =
+    useState<SingleValue<{ value: string; label: string } | null>>(null)
+  const [knownCities, setKnownCities] = useState<
+    { value: string; label: string }[]
+  >([])
+  const [locationType, setLocationType] = useState('in-person')
   const [recaptchaLoaded, setRecaptchaLoaded] = useState(false)
   const [captchaResponse, setCaptchaResponse] = useState<string | null>(null)
   const [submitting, setSubmitting] = useState(false)
@@ -216,16 +214,19 @@ const ConferenceForm: React.FC = () => {
     })
   }
 
-  const handleCountryChange = (newValue: SingleValue<{ value: string; label: string; } | null>) => {
+  const handleCountryChange = (
+    newValue: SingleValue<{ value: string; label: string } | null>,
+  ) => {
     if (newValue && validLocations.hasOwnProperty(newValue.value)) {
       const countryKey = newValue.value as keyof typeof validLocations
       const countryObject = validLocations[countryKey]
-      knownCities = countryObject.map((city) => {
-        return {
+      setKnownCities(
+        countryObject.map((city) => ({
           label: city,
           value: city,
-        }
-      })
+        })),
+      )
+      setSelectedCity(null)
     }
     setConference({
       ...conference,
@@ -234,7 +235,10 @@ const ConferenceForm: React.FC = () => {
     })
   }
 
-  const handleCityChange = (newValue: SingleValue<{ value: string; label: string; } | null>) => {
+  const handleCityChange = (
+    newValue: SingleValue<{ value: string; label: string } | null>,
+  ) => {
+    setSelectedCity(newValue)
     setConference({
       ...conference,
       city: newValue?.value || '',
@@ -537,9 +541,18 @@ const ConferenceForm: React.FC = () => {
               </select>
             </InputGroup>{' '}
             {locationType !== 'online' && (
-              <InputGroup inline>
+              <InputGroup>
                 <div>
                   <label htmlFor='country'>Country</label>
+                  <p>
+                    If a country is missing in the list, please &nbsp;
+                    <Link
+                      external
+                      url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
+                    >
+                      create a Github issue.
+                    </Link>
+                  </p>
                   <Select
                     className={classNames(hasError('country') && styles.error)}
                     defaultValue={null}
@@ -556,11 +569,21 @@ const ConferenceForm: React.FC = () => {
                 </div>
                 <div>
                   <label htmlFor='city'>City</label>
+                  <p>
+                    If a city is missing in the list, please &nbsp;
+                    <Link
+                      external
+                      url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
+                    >
+                      create a Github issue.
+                    </Link>
+                  </p>
                   <Select
                     className={classNames(hasError('city') && styles.error)}
+                    value={selectedCity}
                     defaultValue={null}
                     required={locationType !== 'online'}
-                    placeholder='Select a country'
+                    placeholder='Select a city'
                     options={knownCities}
                     onChange={handleCityChange}
                     inputId='city'
