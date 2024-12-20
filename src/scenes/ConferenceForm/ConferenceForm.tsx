@@ -101,6 +101,8 @@ export enum ServerErrorEnum {
 
 const ConferenceForm: React.FC = () => {
   const endDateDatepickerRef = useRef<DatePicker>(null)
+  const [selectedCountry, setSelectedCountry] =
+    useState<SingleValue<{ value: string; label: string } | null>>(null)
   const [selectedCity, setSelectedCity] =
     useState<SingleValue<{ value: string; label: string } | null>>(null)
   const [knownCities, setKnownCities] = useState<
@@ -208,6 +210,8 @@ const ConferenceForm: React.FC = () => {
 
   const handleLocationTypeChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setLocationType(event.target.value)
+    setSelectedCountry(null)
+    setSelectedCity(null)
     setConference({
       ...conference,
       online: ['online', 'hybrid'].includes(event.target.value),
@@ -217,6 +221,7 @@ const ConferenceForm: React.FC = () => {
   const handleCountryChange = (
     newValue: SingleValue<{ value: string; label: string } | null>,
   ) => {
+    setSelectedCountry(newValue)
     if (newValue && validLocations.hasOwnProperty(newValue.value)) {
       const countryKey = newValue.value as keyof typeof validLocations
       const countryObject = validLocations[countryKey]
@@ -544,6 +549,16 @@ const ConferenceForm: React.FC = () => {
               <InputGroup>
                 <div>
                   <label htmlFor='country'>Country</label>
+                  <Select
+                    className={classNames(hasError('country') && styles.error)}
+                    value={selectedCountry}
+                    defaultValue={null}
+                    required={locationType !== 'online'}
+                    placeholder='Select a country'
+                    options={knownCountries}
+                    onChange={handleCountryChange}
+                    inputId='country'
+                  />
                   <p>
                     If a country is missing in the list, please &nbsp;
                     <Link
@@ -553,31 +568,17 @@ const ConferenceForm: React.FC = () => {
                       create a Github issue.
                     </Link>
                   </p>
-                  <Select
-                    className={classNames(hasError('country') && styles.error)}
-                    defaultValue={null}
-                    required={locationType !== 'online'}
-                    placeholder='Select a country'
-                    options={knownCountries}
-                    onChange={handleCountryChange}
-                    inputId='country'
-                  />
                   {errorFor(
                     'country',
                     'For Online conferences please select location "online"',
                   )}
                 </div>
+              </InputGroup>
+            )}
+            {locationType !== 'online' && selectedCountry !== null && (
+              <InputGroup>
                 <div>
                   <label htmlFor='city'>City</label>
-                  <p>
-                    If a city is missing in the list, please &nbsp;
-                    <Link
-                      external
-                      url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
-                    >
-                      create a Github issue.
-                    </Link>
-                  </p>
                   <Select
                     className={classNames(hasError('city') && styles.error)}
                     value={selectedCity}
@@ -588,6 +589,15 @@ const ConferenceForm: React.FC = () => {
                     onChange={handleCityChange}
                     inputId='city'
                   />
+                  <p>
+                    If a city is missing in the list, please &nbsp;
+                    <Link
+                      external
+                      url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
+                    >
+                      create a Github issue.
+                    </Link>
+                  </p>
                   {errorFor(
                     'city',
                     'For Online conferences please select location "online"',
