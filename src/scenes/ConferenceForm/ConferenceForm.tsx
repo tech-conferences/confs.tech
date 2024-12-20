@@ -6,10 +6,11 @@ import { useState, useRef, ChangeEvent } from 'react'
 import DatePicker from 'react-datepicker'
 import { Helmet } from 'react-helmet'
 import Recaptcha from 'react-recaptcha'
-import Select from 'react-select'
+import Select, { SingleValue } from 'react-select'
 import { Card, Link, InputGroup, Page, Divider } from 'src/components'
 import Alert from 'src/components/Alert'
 import { TOPICS, LOCALES } from 'src/components/config'
+import { validLocations } from 'src/components/config/validLocations'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
 import './DatePickerOverrides.module.scss'
@@ -51,11 +52,14 @@ const langOptions = Object.keys(LOCALES).map((locale) => {
   }
 })
 
+const knownCountries = Object.keys(validLocations).map((country) => {
+  return {
+    value: country,
+    label: country,
+  }
+})
+
 const LOCATION_TYPES = [
-  {
-    value: 'online',
-    name: 'Online',
-  },
   {
     value: 'in-person',
     name: 'In person',
@@ -63,6 +67,10 @@ const LOCATION_TYPES = [
   {
     value: 'hybrid',
     name: 'In person & online',
+  },
+  {
+    value: 'online',
+    name: 'Online',
   },
 ]
 
@@ -73,7 +81,7 @@ const defaultConference: Conference = {
   endDate: null,
   city: '',
   country: '',
-  online: true,
+  online: false,
   locales: ['EN'],
   offersSignLanguageOrCC: false,
   topics: [],
@@ -93,7 +101,14 @@ export enum ServerErrorEnum {
 
 const ConferenceForm: React.FC = () => {
   const endDateDatepickerRef = useRef<DatePicker>(null)
-  const [locationType, setLocationType] = useState('online')
+  const [selectedCountry, setSelectedCountry] =
+    useState<SingleValue<{ value: string; label: string } | null>>(null)
+  const [selectedCity, setSelectedCity] =
+    useState<SingleValue<{ value: string; label: string } | null>>(null)
+  const [knownCities, setKnownCities] = useState<
+    { value: string; label: string }[]
+  >([])
+  const [locationType, setLocationType] = useState('in-person')
   const [recaptchaLoaded, setRecaptchaLoaded] = useState(false)
   const [captchaResponse, setCaptchaResponse] = useState<string | null>(null)
   const [submitting, setSubmitting] = useState(false)
@@ -195,9 +210,43 @@ const ConferenceForm: React.FC = () => {
 
   const handleLocationTypeChange = (event: ChangeEvent<HTMLSelectElement>) => {
     setLocationType(event.target.value)
+    setSelectedCountry(null)
+    setSelectedCity(null)
     setConference({
       ...conference,
       online: ['online', 'hybrid'].includes(event.target.value),
+    })
+  }
+
+  const handleCountryChange = (
+    newValue: SingleValue<{ value: string; label: string } | null>,
+  ) => {
+    setSelectedCountry(newValue)
+    if (newValue && validLocations.hasOwnProperty(newValue.value)) {
+      const countryKey = newValue.value as keyof typeof validLocations
+      const countryObject = validLocations[countryKey]
+      setKnownCities(
+        countryObject.map((city) => ({
+          label: city,
+          value: city,
+        })),
+      )
+      setSelectedCity(null)
+    }
+    setConference({
+      ...conference,
+      city: '',
+      country: newValue?.value || '',
+    })
+  }
+
+  const handleCityChange = (
+    newValue: SingleValue<{ value: string; label: string } | null>,
+  ) => {
+    setSelectedCity(newValue)
+    setConference({
+      ...conference,
+      city: newValue?.value || '',
     })
   }
 
@@ -281,8 +330,6 @@ const ConferenceForm: React.FC = () => {
   const {
     name,
     url,
-    city,
-    country,
     cfpUrl,
     twitter,
     github,
@@ -499,36 +546,60 @@ const ConferenceForm: React.FC = () => {
               </select>
             </InputGroup>{' '}
             {locationType !== 'online' && (
-              <InputGroup inline>
+              <InputGroup>
                 <div>
-                  <label htmlFor='city'>City</label>
-                  <input
-                    className={classNames(hasError('city') && styles.error)}
+                  <label htmlFor='country'>Country</label>
+                  <Select
+                    className={classNames(hasError('country') && styles.error)}
+                    value={selectedCountry}
+                    defaultValue={null}
                     required={locationType !== 'online'}
-                    type='text'
-                    id='city'
-                    name='city'
-                    value={city}
-                    onChange={handleFieldChange}
+                    placeholder='Select a country'
+                    options={knownCountries}
+                    onChange={handleCountryChange}
+                    inputId='country'
                   />
+                  <p>
+                    If a country is missing in the list, please &nbsp;
+                    <Link
+                      external
+                      url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
+                    >
+                      create a Github issue.
+                    </Link>
+                  </p>
                   {errorFor(
-                    'city',
+                    'country',
                     'For Online conferences please select location "online"',
                   )}
                 </div>
+              </InputGroup>
+            )}
+            {locationType !== 'online' && selectedCountry !== null && (
+              <InputGroup>
                 <div>
-                  <label htmlFor='country'>Country</label>
-                  <input
-                    className={classNames(hasError('country') && styles.error)}
+                  <label htmlFor='city'>City</label>
+                  <Select
+                    className={classNames(hasError('city') && styles.error)}
+                    value={selectedCity}
+                    defaultValue={null}
                     required={locationType !== 'online'}
-                    type='text'
-                    id='country'
-                    name='country'
-                    value={country}
-                    onChange={handleFieldChange}
+                    placeholder='Select a city'
+                    options={knownCities}
+                    onChange={handleCityChange}
+                    inputId='city'
                   />
+                  <p>
+                    If a city is missing in the list, please &nbsp;
+                    <Link
+                      external
+                      url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
+                    >
+                      create a Github issue.
+                    </Link>
+                  </p>
                   {errorFor(
-                    'country',
+                    'city',
                     'For Online conferences please select location "online"',
                   )}
                 </div>
