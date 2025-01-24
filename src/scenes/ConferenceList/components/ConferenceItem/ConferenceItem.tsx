@@ -21,8 +21,9 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       online,
       startDate,
       endDate,
-      twitter,
+      bluesky,
       mastodon,
+      twitter,
       cfpEndDate,
       cfpUrl,
       showCFP,
@@ -78,14 +79,19 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
           <div className={classNames(styles.topicsList, styles.Footer)}>
             <Topics topics={topics} />
           </div>
-          {twitter && (
+          {bluesky && (
             <div className={styles.Footer}>
-              <Twitter twitter={twitter} />
+              <Bluesky bluesky={bluesky} />
             </div>
           )}
           {mastodon && (
             <div className={styles.Footer}>
               <Mastodon mastodon={mastodon} />
+            </div>
+          )}
+          {twitter && (
+            <div className={styles.Footer}>
+              <Twitter twitter={twitter} />
             </div>
           )}
           {cocUrl && (
@@ -105,6 +111,24 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       </li>
     )
   }
+}
+
+interface BlueskyProps {
+  bluesky: string
+}
+
+function Bluesky({ bluesky }: BlueskyProps) {
+  return (
+    <>
+      <dt className='visuallyHidden'>Bluesky handle</dt>
+      <dd>
+        <span aria-hidden='true'>・</span>
+        <Link url={`https://bsky.app/profile/${bluesky}`} external muted>
+          @{bluesky}
+        </Link>
+      </dd>
+    </>
+  )
 }
 
 interface TwitterProps {

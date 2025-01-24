@@ -39,8 +39,9 @@ Conference data have the following structure:
   "country": "",
   "cfpUrl": "",
   "cfpEndDate": "",
-  "twitter": "",
-  "mastodon": ""
+  "bluesky": "",
+  "mastodon": "",
+  "twitter": ""
 }
 ```
 

@@ -8,8 +8,9 @@ export interface Conference {
   country: string
   startDate: string
   endDate: string
-  twitter: string
+  bluesky: string
   mastodon: string
+  twitter: string
   cfpEndDate: string
   cfpUrl: string
   cocUrl: string
