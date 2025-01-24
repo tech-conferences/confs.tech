@@ -130,5 +130,14 @@
     "tagline": "Biggest Software Testing & QA Conference in Europe",
     "sponsorDateStart": "2025-06-01",
     "sponsorDateEnd": "2025-11-01"
+  },
+  {
+    "name": "GitNation",
+    "conferenceDate": "11 remote conferences in 2025",
+    "img": "/sponsors/gitnation.jpg",
+    "url": "https://portal.gitnation.org/multipass",
+    "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
+    "sponsorDateStart": "2025-11-01",
+    "sponsorDateEnd": "2026-01-01"
   }
 ]
