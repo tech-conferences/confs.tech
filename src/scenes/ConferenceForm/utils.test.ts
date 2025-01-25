@@ -1,8 +1,9 @@
 /* global describe, it, expect */
 
 import {
-  isValidTwitterHandle,
+  isValidBlueskyHandle,
   isValidMastodonHandle,
+  isValidTwitterHandle,
   showWarningForTopics,
 } from './utils'
 
@@ -16,6 +17,25 @@ describe('RegEx', () => {
       expect(showWarningForTopics(['javascript'])).toBeFalsy()
     })
   })
+
+  describe('BLUESKY_REGEX', () => {
+    it('returns true for good handles', () => {
+      expect(isValidBlueskyHandle('standard.bsky.social')).toBeTruthy()
+      expect(isValidBlueskyHandle('other.website.com')).toBeTruthy()
+      expect(isValidBlueskyHandle('other.website.eu')).toBeTruthy()
+      expect(isValidBlueskyHandle('')).toBeTruthy()
+    })
+
+    it('returns false for bad handles', () => {
+      expect(isValidBlueskyHandle('@username')).toBeFalsy()
+      expect(isValidBlueskyHandle('username')).toBeFalsy()
+      expect(isValidBlueskyHandle('@.instance')).toBeFalsy()
+      expect(isValidBlueskyHandle('@username.instance')).toBeFalsy()
+      expect(isValidBlueskyHandle('username@instance.com')).toBeFalsy()
+      expect(isValidBlueskyHandle('@username.instance@')).toBeFalsy()
+    })
+  })
+
   describe('TWITTER_REGEX', () => {
     it('returns true for good handles', () => {
       expect(isValidTwitterHandle('@goodHandle')).toBeTruthy()

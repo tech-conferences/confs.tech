@@ -20,8 +20,9 @@ import { ServerError } from './components'
 import { Conference } from './types/Conference'
 import {
   LOCATION_ONLINE_REGEX,
-  isValidTwitterHandle,
+  isValidBlueskyHandle,
   isValidMastodonHandle,
+  isValidTwitterHandle,
   VALID_URL_REGEX,
   URL_PARAMETER_REGEX,
   URL_SHORTENER_REGEX,
@@ -88,9 +89,10 @@ const defaultConference: Conference = {
   cocUrl: '',
   cfpUrl: '',
   cfpEndDate: null,
-  twitter: '@',
+  bluesky: '',
   github: '',
   mastodon: '',
+  twitter: '@',
 }
 
 export enum ServerErrorEnum {
@@ -156,8 +158,9 @@ const ConferenceForm: React.FC = () => {
       url,
       cfpUrl,
       cfpEndDate,
-      twitter,
+      bluesky,
       mastodon,
+      twitter,
     } = conference
 
     const isNotOnline = locationType !== 'online'
@@ -178,8 +181,9 @@ const ConferenceForm: React.FC = () => {
       country: isNotOnline && LOCATION_ONLINE_REGEX.test(country),
       cfpUrl: cfpUrl.length === 0 ? cfp : !isUrlValid(cfpUrl) || url == cfpUrl,
       cfpEndDate: startDate && cfpEndDate ? cfpEndDate >= startDate : cfp,
-      twitter: !isValidTwitterHandle(twitter),
+      bluesky: !isValidBlueskyHandle(bluesky),
       mastodon: !isValidMastodonHandle(mastodon),
+      twitter: !isValidTwitterHandle(twitter),
       unwantedConference:
         name.length > 0 && UNWANTED_CONFERENCE_NAME_REGEX.test(name),
     }
@@ -331,9 +335,10 @@ const ConferenceForm: React.FC = () => {
     name,
     url,
     cfpUrl,
-    twitter,
+    bluesky,
     github,
     mastodon,
+    twitter,
     cocUrl,
     offersSignLanguageOrCC,
     startDate,
@@ -663,16 +668,16 @@ const ConferenceForm: React.FC = () => {
               <Divider />
               <h4>Social</h4>
               <InputGroup>
-                <label htmlFor='twitter'>Conference @TwitterHandle</label>
+                <label htmlFor='mastodon'>Conference Bluesky Handle</label>
                 <input
-                  className={classNames(hasError('twitter') && styles.error)}
+                  className={classNames(hasError('bluesky') && styles.error)}
                   type='text'
-                  name='twitter'
-                  id='twitter'
-                  value={twitter}
+                  name='bluesky'
+                  id='bluesky'
+                  value={bluesky}
                   onChange={handleFieldChange}
                 />
-                {errorFor('twitter', 'Should be formatted like @twitter')}
+                {errorFor('bluesky', 'Should be formatted like username.site')}
               </InputGroup>
               <InputGroup>
                 <label htmlFor='mastodon'>Conference @MastodonHandle</label>
@@ -688,6 +693,18 @@ const ConferenceForm: React.FC = () => {
                   'mastodon',
                   'Should be formatted like @username@instance',
                 )}
+              </InputGroup>
+              <InputGroup>
+                <label htmlFor='twitter'>Conference @TwitterHandle</label>
+                <input
+                  className={classNames(hasError('twitter') && styles.error)}
+                  type='text'
+                  name='twitter'
+                  id='twitter'
+                  value={twitter}
+                  onChange={handleFieldChange}
+                />
+                {errorFor('twitter', 'Should be formatted like @twitter')}
               </InputGroup>
             </InputGroup>
             <InputGroup>
