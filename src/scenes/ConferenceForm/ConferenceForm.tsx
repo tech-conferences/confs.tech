@@ -552,7 +552,7 @@ const ConferenceForm: React.FC = () => {
             </InputGroup>{' '}
             {locationType !== 'online' && (
               <InputGroup>
-                <div>
+                <div className={styles.Select}>
                   <label htmlFor='country'>Country</label>
                   <Select
                     className={classNames(hasError('country') && styles.error)}
@@ -564,25 +564,25 @@ const ConferenceForm: React.FC = () => {
                     onChange={handleCountryChange}
                     inputId='country'
                   />
-                  <p>
-                    If a country is missing in the list, please &nbsp;
-                    <Link
-                      external
-                      url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
-                    >
-                      create a Github issue.
-                    </Link>
-                  </p>
                   {errorFor(
                     'country',
                     'For Online conferences please select location "online"',
                   )}
                 </div>
+                <div className={styles.InputHint}>
+                  If a country is missing in the list, please &nbsp;
+                  <Link
+                    external
+                    url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
+                  >
+                    create a Github issue.
+                  </Link>
+                </div>
               </InputGroup>
             )}
             {locationType !== 'online' && selectedCountry !== null && (
               <InputGroup>
-                <div>
+                <div className={styles.Select}>
                   <label htmlFor='city'>City</label>
                   <Select
                     className={classNames(hasError('city') && styles.error)}
@@ -594,19 +594,19 @@ const ConferenceForm: React.FC = () => {
                     onChange={handleCityChange}
                     inputId='city'
                   />
-                  <p>
-                    If a city is missing in the list, please &nbsp;
-                    <Link
-                      external
-                      url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
-                    >
-                      create a Github issue.
-                    </Link>
-                  </p>
                   {errorFor(
                     'city',
                     'For Online conferences please select location "online"',
                   )}
+                </div>
+                <div className={styles.InputHint}>
+                  If a city is missing in the list, please &nbsp;
+                  <Link
+                    external
+                    url='https://github.com/tech-conferences/conference-data/issues/new?&template=suggest-new-location.md&title=Suggest%20new%20location'
+                  >
+                    create a Github issue.
+                  </Link>
                 </div>
               </InputGroup>
             )}
@@ -719,7 +719,7 @@ const ConferenceForm: React.FC = () => {
                 onChange={handleFieldChange}
               />
               <div className={styles.InputHint}>
-                In case we need to contact your about your submission.
+                In case we need to contact you about your submission.
               </div>
             </InputGroup>
             <Recaptcha
