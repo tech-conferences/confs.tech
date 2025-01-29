@@ -96,8 +96,12 @@
 }
 
 .dateRangePicker {
-  display: flex;
+  display: none;
   width: 400px;
   padding: 2px;
   gap: 2px;
+
+  @include media($media-query--mobile-up) {
+    display: flex;
+  }
 }
