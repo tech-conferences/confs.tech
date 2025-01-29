@@ -10,9 +10,10 @@ export interface Conference {
   locales: string[]
   cfpUrl: string
   cfpEndDate: Date | null | undefined
-  twitter: string
+  bluesky: string
   github: string
   mastodon: string
+  twitter: string
   cocUrl: string
   offersSignLanguageOrCC: boolean
 }

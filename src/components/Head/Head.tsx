@@ -1,6 +1,17 @@
 import { Helmet } from 'react-helmet'
 import { useDarkModeContext } from 'src/contexts/DarkModeContext'
 
+/*
+Note: Keep this file in sync with public/index.html!
+---
+confs.tech is deployed as a static site on Heroku.
+Site previews such as on social media don't wait for the page to load.
+See: https://github.com/tech-conferences/confs.tech/issues/863
+*/
+
+const description =
+  'Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc'
+
 const CURRENT_YEAR = new Date().getFullYear()
 const Head = () => {
   const {
@@ -17,13 +28,8 @@ const Head = () => {
           name='viewport'
           content='width=device-width, initial-scale=1, shrink-to-fit=no'
         />
-        <meta
-          name='description'
-          content='Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc'
-        />
-        <title>
-          Find your next tech conference | JavaScript, UX, Ruby and more
-        </title>
+        <meta name='description' content={description} />
+        <title>confs.tech | Find your next tech conference</title>
         <link
           href='https://fonts.googleapis.com/css?family=Merriweather|Lato'
           rel='stylesheet'
@@ -37,10 +43,7 @@ const Head = () => {
         <meta content='website' property='og:type' />
         <meta content='Confs.tech' property='og:title' />
         <meta content='https://confs.tech' property='og:url' />
-        <meta
-          content='Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc'
-          property='og:description'
-        />
+        <meta content={description} property='og:description' />
 
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@ConfsTech' />
@@ -51,10 +54,7 @@ const Head = () => {
             CURRENT_YEAR + 1
           }`}
         />
-        <meta
-          name='twitter:description'
-          content='Find your next tech conference: JavaScript, UX / Design, DevOps, Android, iOS, PHP, Ruby, Python etc'
-        />
+        <meta name='twitter:description' content={description} />
         <meta name='twitter:image' content='/logo.png' />
         {/* <!-- Google tag (gtag.js) --> */}
         <script

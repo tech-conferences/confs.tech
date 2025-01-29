@@ -20,6 +20,7 @@ import {
   Link,
   ScrollToConference,
   SponsoredConference,
+  GithubStar,
 } from 'src/components'
 import { TOPICS } from 'src/components/config'
 import { SortBy, SortDirection } from 'types/global'
@@ -211,6 +212,7 @@ const ConferenceListPage: React.FC<Props> = ({
             <Link url='/conferences/new' routed>
               Add a conference
             </Link>
+            <GithubStar />
           </p>
 
           <div className={styles.searchAndDate}>

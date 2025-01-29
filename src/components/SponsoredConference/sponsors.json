@@ -71,6 +71,18 @@
     "url": "https://reactadvanced.com/?utm_source=website&utm_medium=confstech",
     "tagline": "Deep dive into advanced React and Web Development topics. Discount CONFSTECH10 for 10% off",
     "sponsorDateStart": "2024-09-01",
+    "sponsorDateEnd": "2024-10-01"
+  },
+  {
+    "name": "JSNation US",
+    "conferenceDate": "November 18 & 21, 2024 | New York & Online",
+    "img": "/sponsors/jsnation.png",
+    "imgDark": "/sponsors/jsnation-dark.png",
+    "url": "https://jsnation.us?utm_source=website&utm_medium=confstech",
+    "tagline": "Join 800+ developers in the biggest US Planetarium with 50+ JavaScript stars. Connect with industry leaders and explore emerging trends.",
+    "discountText": "Discount Code: CONFSTECH10 for 10% off!",
+    "discountUrl": "https://ti.to/gitnation/jsnation-us-edition/discount/CONFSTECH10",
+    "sponsorDateStart": "2024-10-01",
     "sponsorDateEnd": "2024-11-01"
   },
   {
@@ -118,5 +130,14 @@
     "tagline": "Biggest Software Testing & QA Conference in Europe",
     "sponsorDateStart": "2025-06-01",
     "sponsorDateEnd": "2025-11-01"
+  },
+  {
+    "name": "GitNation",
+    "conferenceDate": "11 remote conferences in 2025",
+    "img": "/sponsors/gitnation.jpg",
+    "url": "https://portal.gitnation.org/multipass",
+    "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
+    "sponsorDateStart": "2025-11-01",
+    "sponsorDateEnd": "2026-01-01"
   }
 ]

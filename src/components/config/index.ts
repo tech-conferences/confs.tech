@@ -26,6 +26,7 @@ export const TOPICS: { [key: string]: string } = {
   kotlin: 'Kotlin',
   leadership: 'Leadership',
   networking: 'Community / Networking',
+  opensource: 'Open Source',
   performance: 'Performance',
   php: 'PHP',
   product: 'Product',
