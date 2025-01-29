@@ -99,7 +99,7 @@
   display: none;
   width: 400px;
   padding: 2px;
-  gap: 2px;
+  gap: spacing(tight);
 
   @include media($media-query--mobile-up) {
     display: flex;
