@@ -95,7 +95,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/algoliasearch": "^4.0.0",
-    "@types/classnames": "^2.2.4",
+    "@types/classnames": "^2.3.4",
     "@types/google.analytics": "^0.0.46",
     "@types/jest": "^29.5.14",
     "@types/lodash": "^4.17.9",
