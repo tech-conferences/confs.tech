@@ -25,7 +25,7 @@
     ]
   },
   "dependencies": {
-    "@babel/core": "^7.25.8",
+    "@babel/core": "^7.26.8",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
     "@svgr/webpack": "^8.1.0",
     "algoliasearch": "^4.24.0",
