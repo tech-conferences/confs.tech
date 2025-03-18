@@ -89,7 +89,7 @@
     "terser-webpack-plugin": "^5.3.11",
     "webpack": "^5.93.0",
     "webpack-dev-server": "^5.2.0",
-    "webpack-manifest-plugin": "^5.0.0",
+    "webpack-manifest-plugin": "^5.0.1",
     "workbox-webpack-plugin": "^7.3.0"
   },
   "devDependencies": {
