@@ -42,7 +42,7 @@
     "chalk": "5.3.0",
     "classnames": "^2.2.5",
     "css-loader": "^6.5.1",
-    "css-minimizer-webpack-plugin": "^7.0.0",
+    "css-minimizer-webpack-plugin": "^7.0.2",
     "date-fns": "^4.1.0",
     "dotenv": "^16.4.7",
     "dotenv-expand": "^5.1.0",
