@@ -47,7 +47,7 @@
     "dotenv": "^16.5.0",
     "dotenv-expand": "^5.1.0",
     "eslint": "^8.57.1",
-    "eslint-webpack-plugin": "^4.2.0",
+    "eslint-webpack-plugin": "^5.0.1",
     "express": "^4.21.2",
     "file-loader": "^6.2.0",
     "fs-extra": "^11.3.0",
