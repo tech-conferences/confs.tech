@@ -110,7 +110,7 @@
     "@types/react-router-dom": "^5.2.0",
     "@types/universal-cookie": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^7.17.0",
-    "@typescript-eslint/parser": "^7.18.0",
+    "@typescript-eslint/parser": "^8.32.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-env": "^1.4.0",
     "eslint-config-prettier": "^10.1.2",
