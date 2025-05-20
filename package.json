@@ -68,7 +68,7 @@
     "qs": "^6.14.0",
     "react": "^18.3.1",
     "react-app-polyfill": "^3.0.0",
-    "react-datepicker": "^7.6.0",
+    "react-datepicker": "^8.3.0",
     "react-dev-utils": "^12.0.1",
     "react-dom": "^18.3.1",
     "react-error-overlay": "^6.1.0",
