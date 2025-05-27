@@ -37,7 +37,7 @@
     "babel-preset-react-app": "^10.0.1",
     "babel-runtime": "6.26.0",
     "bfj": "^9.1.2",
-    "browserslist": "^4.24.4",
+    "browserslist": "^4.24.5",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "chalk": "5.4.1",
     "classnames": "^2.2.5",
