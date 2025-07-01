@@ -54,7 +54,7 @@
     "html-webpack-plugin": "^5.6.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.3",
-    "jest-resolve": "^29.7.0",
+    "jest-resolve": "^30.0.2",
     "lodash": "^4.17.4",
     "mini-css-extract-plugin": "^2.9.2",
     "object-assign": "4.1.1",
