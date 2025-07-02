@@ -504,6 +504,7 @@ module.exports = function (webpackEnv) {
                 modules: {
                   mode: 'local',
                   getLocalIdent: getCSSModuleLocalIdent,
+                  namedExport: false
                 },
               }),
             },
@@ -544,6 +545,7 @@ module.exports = function (webpackEnv) {
                   modules: {
                     mode: 'local',
                     getLocalIdent: getCSSModuleLocalIdent,
+                    namedExport: false
                   },
                 },
                 'sass-loader',
