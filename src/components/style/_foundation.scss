@@ -1,6 +1,6 @@
-@import './foundation/mixins';
-@import './foundation/utilities';
-@import './foundation/colors';
-@import './foundation/borders';
-@import './foundation/typography';
-@import './foundation/inputs';
+@use './foundation/mixins' as mixins;
+@use './foundation/utilities' as utils;
+@use './foundation/colors' as colors;
+@use './foundation/borders' as borders;
+@use './foundation/typography' as typography;
+@use './foundation/inputs' as inputs;

@@ -1,9 +1,9 @@
-@import 'src/components/style/foundation/spacing';
-@import 'src/components/style/foundation/typography';
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/typography' as typography;
+@use 'src/components/style/foundation/colors' as colors;
 
 .Search {
-  margin-bottom: spacing();
+  margin-bottom: spacing.spacing();
 }
 
 :global {

@@ -1,13 +1,13 @@
-@import 'src/components/style/foundation/spacing';
+@use 'src/components/style/foundation/spacing' as spacing;
 
 .SponsorList {
-  margin-top: spacing(tight);
+  margin-top: spacing.spacing(tight);
 }
 
 .List {
   dd,
   dt {
-    margin-bottom: spacing(tight);
+    margin-bottom: spacing.spacing(tight);
   }
 
   dd {

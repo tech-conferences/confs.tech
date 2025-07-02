@@ -1,4 +1,5 @@
-@import './utilities';
+@use "sass:map";
+@use './utilities' as utils;
 
 $border-radius-data: (
   base: 3px,
@@ -10,5 +11,5 @@ $border-radius-data: (
 /// @return {Number} The border radius value.
 
 @function border-radius($size: base) {
-  @return map-get($border-radius-data, $size);
+  @return map.get($border-radius-data, $size);
 }
