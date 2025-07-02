@@ -1,5 +1,7 @@
 // UTILITIES
 // -----------------------------------------------------------------------------
+@use 'sass:math';
+@use 'sass:meta';
 
 $default-browser-font-size: 16px;
 $base-font-size: 16px;
@@ -9,7 +11,7 @@ $base-font-size: 16px;
 /// @return {Number} The converted value in rem.
 
 @function rem($value) {
-  $unit: unit($value);
+  $unit: math.unit($value);
 
   @if $unit == 'rem' {
     @return $value;

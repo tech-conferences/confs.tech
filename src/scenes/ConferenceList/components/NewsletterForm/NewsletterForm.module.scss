@@ -1,14 +1,14 @@
-@import 'src/components/style/foundation/spacing';
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/colors' as colors;
 
 .hidden {
   display: none;
 }
 
 .NewsletterForm {
-  margin: spacing() 0;
-  padding: spacing();
-  background: color(accent-2, pale);
+  margin: spacing.spacing() 0;
+  padding: spacing.spacing();
+  background: colors.color(accent-2, pale);
   border-radius: 3px;
   position: relative;
 
@@ -18,13 +18,13 @@
 }
 
 .Content {
-  margin-top: spacing();
+  margin-top: spacing.spacing();
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
 
   > a {
-    margin-top: spacing(tight);
+    margin-top: spacing.spacing(tight);
   }
 }
 
@@ -32,13 +32,13 @@
   width: 100%;
   flex-wrap: nowrap;
   display: flex;
-  margin-right: spacing()
+  margin-right: spacing.spacing()
 }
 
 .GDPR {
   display: flex;
   align-content: center;
-  margin-top: spacing(tight);
+  margin-top: spacing.spacing(tight);
 
   label {
     line-height: 1.2;
@@ -56,33 +56,34 @@
 .Button {
   width: auto;
   margin: 0;
-  background-color: color(gray, lighter);
+  background-color: colors.color(gray, lighter);
   display: inline-block;
-  padding: spacing(tight) spacing();
+  padding: spacing.spacing(tight) spacing.spacing();
   border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   cursor: pointer;
   transition: all 250ms cubic-bezier(0, 1.16, 1, 1);
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 
   &:disabled {
     opacity: 0.8;
-    color: color(gray);
+    color: colors.color(gray);
   }
 
   &:hover:not([disabled]) {
-    background-color: color(gray, light);
+    background-color: colors.color(gray, light);
     :global(.theme--dark) & {
-      background-color: color(gray, dark);
+      background-color: colors.color(gray, dark);
     }
   }
 }
 
 .Close {
   position: absolute;
-  top: spacing();
-  right: spacing();
+  top: spacing.spacing();
+  right: spacing.spacing();
   font-size: 0.9em;
 }
