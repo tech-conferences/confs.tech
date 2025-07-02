@@ -10,8 +10,8 @@ $color-palette-data: (
     dark: #181818,
   ),
   accent: (
-    base: rgb(27, 149, 224),
-    dark: rgb(34, 171, 255)
+    base: rgb(0, 90, 156),
+    dark: rgb(82, 196, 255) 
   ),
   accent-2: (
     base: #FFCA04,
@@ -29,7 +29,7 @@ $color-palette-data: (
   gray: (
     darker: #222222,
     dark: #555555,
-    base: #777676,
+    base: #5a5a5a, /* Darkened for better contrast */
     baseDark: #a7a7a7,
     light: #DDDDDD,
     lighter: #EEEEEE,
