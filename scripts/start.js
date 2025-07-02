@@ -76,7 +76,7 @@ checkBrowsers(paths.appPath, isInteractive)
     // run on a different port. `choosePort()` Promise resolves to the next free port.
     return choosePort(HOST, DEFAULT_PORT)
   })
-  .then(async (port) => {
+  .then((port) => {
     if (port == null) {
       // We have not found a port.
       return
@@ -117,8 +117,8 @@ checkBrowsers(paths.appPath, isInteractive)
     }
     const devServer = new WebpackDevServer(serverConfig, compiler)
     // Launch WebpackDevServer.
-    await devServer.start()
-    if (isInteractive) {
+    devServer.startCallback(() => {
+      if (isInteractive) {
       clearConsole()
     }
 
@@ -135,7 +135,7 @@ checkBrowsers(paths.appPath, isInteractive)
 
     ;['SIGINT', 'SIGTERM'].forEach(function (sig) {
       process.on(sig, function () {
-        devServer.stop()
+        devServer.close()
         process.exit()
       })
     })
@@ -143,7 +143,7 @@ checkBrowsers(paths.appPath, isInteractive)
     if (process.env.CI !== 'true') {
       // Gracefully exit when stdin ends
       process.stdin.on('end', function () {
-        devServer.stop()
+        devServer.close()
         process.exit()
       })
     }
