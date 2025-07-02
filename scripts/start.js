@@ -133,7 +133,6 @@ checkBrowsers(paths.appPath, isInteractive)
 
       console.log(chalk.cyan('Starting the development server...\n'))
       openBrowser(urls.localUrlForBrowser)
-
       ;['SIGINT', 'SIGTERM'].forEach(function (sig) {
         process.on(sig, function () {
           devServer.close()
@@ -142,7 +141,7 @@ checkBrowsers(paths.appPath, isInteractive)
       })
 
       if (process.env.CI !== 'true') {
-      // Gracefully exit when stdin ends
+        // Gracefully exit when stdin ends
         process.stdin.on('end', function () {
           devServer.close()
           process.exit()

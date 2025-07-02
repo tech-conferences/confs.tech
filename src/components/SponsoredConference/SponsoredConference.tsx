@@ -40,9 +40,9 @@ const SponsoredConference = () => {
           alt={`Logo of ${sponsorConference.name} conference`}
           src={sponsorImgSrc}
           className={styles.Image}
-          width="140"
-          height="70"
-          loading="eager"
+          width='140'
+          height='70'
+          loading='eager'
         />
       </Link>
       <div className={styles.Content}>

@@ -280,7 +280,7 @@ module.exports = function (webpackEnv) {
               inline: 2,
               drop_console: true,
               drop_debugger: true,
-              pure_funcs: ['console.log', 'console.info', 'console.debug']
+              pure_funcs: ['console.log', 'console.info', 'console.debug'],
             },
             mangle: {
               safari10: true,
@@ -302,10 +302,7 @@ module.exports = function (webpackEnv) {
         new CssMinimizerPlugin({
           parallel: true,
           minimizerOptions: {
-            preset: [
-              'default',
-              { discardComments: { removeAll: true } }
-            ],
+            preset: ['default', { discardComments: { removeAll: true } }],
           },
         }),
       ],
