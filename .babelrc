@@ -1,8 +1,8 @@
 {
   "env": {
     "node": {
-      "plugins": ["transform-es2015-modules-commonjs"],
-      "presets": ["env"]
+      "plugins": ["@babel/plugin-transform-modules-commonjs"],
+      "presets": ["@babel/preset-env"]
     },
     "development": {
       "presets": ["react-app"]
