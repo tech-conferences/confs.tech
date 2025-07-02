@@ -69,15 +69,13 @@
   label {
     margin-right: spacing.spacing(loose);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: spacing.spacing(tight) 0;
   }
 
   input {
     margin: 0 spacing.spacing(tight) 0 0;
-  }
-
-  label {
-    display: flex;
-    align-items: center;
   }
 
   @include media.media(media.$media-query--mobile--vertical) {
