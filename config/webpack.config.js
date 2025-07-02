@@ -196,11 +196,6 @@ module.exports = function (webpackEnv) {
     // Webpack noise constrained to errors and warnings
     stats: 'errors-warnings',
     mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development',
-    // Ignorar advertencias específicas para evitar ruido en la consola
-    ignoreWarnings: [
-      // Ignorar advertencias relacionadas con source maps de react-datepicker
-      /Failed to parse source map/,
-    ],
     // Stop compilation early in production
     bail: isEnvProduction,
     devtool: isEnvProduction
