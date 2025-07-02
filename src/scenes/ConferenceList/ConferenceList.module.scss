@@ -1,15 +1,15 @@
-@import 'src/components/style/foundation/mixins';
-@import 'src/components/style/foundation/typography';
-@import 'src/components/style/foundation/colors';
-@import 'src/components/style/foundation/spacing';
-@import 'src/components/style/foundation/media-queries';
+@use 'src/components/style/foundation/mixins' as mixins;
+@use 'src/components/style/foundation/typography' as typography;
+@use 'src/components/style/foundation/colors' as colors;
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/media-queries' as media;
 
 .Loader {
   text-align: center;
 }
 
 .Header {
-  padding: spacing(base);
+  padding: spacing.spacing(base);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,29 +17,29 @@
 }
 
 .HeaderLinks {
-  margin: 0 0 spacing() 0;
+  margin: 0 0 spacing.spacing() 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  @include media($media-query--mobile-up) {
+  @include media.media(media.$media-query--mobile-up) {
     flex-direction: row;
   }
 
   a {
     display: inline-block;
-    margin: 0 0 spacing(tight) 0;
+    margin: 0 0 spacing.spacing(tight) 0;
     text-align: center;
 
-    @include media($media-query--mobile-up) {
-      margin: 0 spacing(loose) 0 0;
+    @include media.media(media.$media-query--mobile-up) {
+      margin: 0 spacing.spacing(loose) 0 0;
       display: inline;
     }
   }
 }
 
 .RefinementsWrapper {
-  padding: spacing(base);
+  padding: spacing.spacing(base);
 }
 
 .CurrentRefinements {
@@ -49,17 +49,17 @@
 }
 
 .HitsCount {
-  font-size: font-size(body, smaller);
+  font-size: typography.font-size(body, smaller);
   margin: 0;
 }
 
 .LinkGroup button,
 .LinkGroup a {
-  margin: 0 spacing(loose) 0 0;
+  margin: 0 spacing.spacing(loose) 0 0;
 }
 
 .OnlineRadios {
-  margin-bottom: spacing(base);
+  margin-bottom: spacing.spacing(base);
   display: flex;
 
   input {
@@ -67,12 +67,12 @@
   }
 
   label {
-    margin-right: spacing(loose);
+    margin-right: spacing.spacing(loose);
     cursor: pointer;
   }
 
   input {
-    margin: 0 spacing(tight) 0 0;
+    margin: 0 spacing.spacing(tight) 0 0;
   }
 
   label {
@@ -80,11 +80,11 @@
     align-items: center;
   }
 
-  @include media($media-query--mobile--vertical) {
+  @include media.media(media.$media-query--mobile--vertical) {
     flex-direction: column;
 
     label {
-      margin-bottom: spacing(extra-tight);
+      margin-bottom: spacing.spacing(extra-tight);
     }
   }
 }

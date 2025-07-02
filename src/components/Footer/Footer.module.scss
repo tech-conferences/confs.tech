@@ -1,18 +1,18 @@
-@import 'src/components/style/foundation/spacing';
-@import 'src/components/style/foundation/typography';
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/typography' as typography;
+@use 'src/components/style/foundation/colors' as colors;
 
 .Footer {
-  padding: spacing(extra-loose) spacing(base) 0 spacing(base);
-  color: color(gray);
-  margin-bottom: spacing(base);
-  line-height: line-height(footer);
+  padding: spacing.spacing(extra-loose) spacing.spacing(base) 0 spacing.spacing(base);
+  color: colors.color(gray);
+  margin-bottom: spacing.spacing(base);
+  line-height: typography.line-height(footer);
 
   &, a {
-    font-size: font-size(footer);
+    font-size: typography.font-size(footer);
   }
 }
 
 .FooterLinks a {
-  margin: 0 spacing(loose) 0 0;
+  margin: 0 spacing.spacing(loose) 0 0;
 }

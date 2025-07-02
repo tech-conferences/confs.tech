@@ -1,8 +1,8 @@
-@import 'src/components/style/foundation/spacing';
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/colors' as colors;
 
 .ConferenceItem {
-  margin: 0 -1em spacing(extra-tight) -1em;
+  margin: 0 -1em spacing.spacing(extra-tight) -1em;
   padding: 1em;
   border-radius: 10px;
 
@@ -16,7 +16,7 @@
 }
 
 .Date {
-  margin-right: spacing(tight);
+  margin-right: spacing.spacing(tight);
 }
 
 .p {
@@ -27,7 +27,7 @@
 .Footer,
 .Footer a {
   font-weight: 200;
-  color: color(gray);
+  color: colors.color(gray);
 }
 
 .topics {
@@ -39,7 +39,7 @@
 }
 
 .topic {
-  margin-right: spacing(extra-tight);
+  margin-right: spacing.spacing(extra-tight);
   vertical-align: middle;
   &:last-child {
     margin-right: 0;
@@ -64,5 +64,5 @@
 }
 
 .muted {
-  color: color(gray);
+  color: colors.color(gray);
 }

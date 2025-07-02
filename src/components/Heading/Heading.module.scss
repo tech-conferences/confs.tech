@@ -1,15 +1,15 @@
-@import 'src/components/style/foundation/media-queries';
-@import 'src/components/style/foundation/mixins';
-@import 'src/components/style/foundation/spacing';
-@import 'src/components/style/foundation/typography';
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/media-queries' as media;
+@use 'src/components/style/foundation/mixins' as mixins;
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/typography' as typography;
+@use 'src/components/style/foundation/colors' as colors;
 
 .Heading {
   font-weight: bold;
 
   &,
   & a {
-    font-family: font-family(heading);
+    font-family: typography.font-family(heading);
   }
 }
 
@@ -20,16 +20,16 @@
 
 .Heading-1 {
   font-weight: normal;
-  margin: spacing(extra-loose) 0 0 0;
+  margin: spacing.spacing(extra-loose) 0 0 0;
   position: relative;
-  font-size: font-size(heading, h1-mobile);
+  font-size: typography.font-size(heading, h1-mobile);
 
-  @include media($media-query--mobile-up) {
-    font-size: font-size(heading, h1);
+  @include media.media(media.$media-query--mobile-up) {
+    font-size: typography.font-size(heading, h1);
   }
 
   .Inner {
-    @include underlined();
+    @include mixins.underlined();
 
     &::after {
       bottom: 6px;
@@ -45,35 +45,35 @@
 .Heading-sub {
   font-size: 1em;
   font-weight: normal;
-  font-family: font-family(base);
-  color: color(gray);
-  margin: 0 0 spacing(tight) 0;
+  font-family: typography.font-family(base);
+  color: colors.color(gray);
+  margin: 0 0 spacing.spacing(tight) 0;
 
   :global(.theme--dark) & {
-    color: color(gray, baseDark);
+    color: colors.color(gray, baseDark);
   }
 
-  @include media($media-query--tablet-up) {
-    margin: 0 0 spacing(extra-loose) 0;
+  @include media.media(media.$media-query--tablet-up) {
+    margin: 0 0 spacing.spacing(extra-loose) 0;
   }
 }
 
 .Heading-2 {
-  font-size: font-size(heading, h2);
+  font-size: typography.font-size(heading, h2);
 }
 
 .Heading-3 {
-  font-size: font-size(heading, h3);
-  margin-top: spacing(extra-loose);
-  margin-bottom: spacing(loose);
+  font-size: typography.font-size(heading, h3);
+  margin-top: spacing.spacing(extra-loose);
+  margin-bottom: spacing.spacing(loose);
 
   .Inner {
-    @include underlined();
+    @include mixins.underlined();
   }
 }
 
 .Heading-4 {
   margin-top: 0;
-  margin-bottom: spacing(extra-tight);
+  margin-bottom: spacing.spacing(extra-tight);
 }
 

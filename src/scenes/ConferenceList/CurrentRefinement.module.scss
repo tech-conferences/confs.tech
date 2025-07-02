@@ -1,6 +1,7 @@
-@import 'src/components/style/foundation/typography';
-@import 'src/components/style/foundation/colors';
-@import 'src/components/style/foundation/spacing';
+@use "sass:color";
+@use 'src/components/style/foundation/typography' as typography;
+@use 'src/components/style/foundation/colors' as colors;
+@use 'src/components/style/foundation/spacing' as spacing;
 
 :global {
   .ais-CurrentRefinements-list {
@@ -17,23 +18,23 @@
 
   .ais-CurrentRefinements-list .ais-CurrentRefinements-category {
     display: inline-block;
-    margin-right: spacing(base);
-    margin: spacing(extra-tight) spacing(base) spacing(extra-tight) 0;
-    background-color: color(gray, lighter);
-    color: color(gray, dark);
+    margin-right: spacing.spacing(base);
+    margin: spacing.spacing(extra-tight) spacing.spacing(base) spacing.spacing(extra-tight) 0;
+    background-color: colors.color(gray, lighter);
+    color: colors.color(gray, dark);
     padding: 0.3em 0.7em;
     border-radius: 20px;
     font-size: 0.8em;
     transition: all 100ms linear;
 
     :global(.theme--dark) & {
-      background-color: color(gray, dark);
+      background-color: colors.color(gray, dark);
       color: white
     }
   }
 
   .ais-CurrentRefinements-list .ais-CurrentRefinements-category:hover {
-    background-color: color(gray);
+    background-color: colors.color(gray);
     color: white;
   }
 
@@ -50,8 +51,8 @@
   .ais-CurrentRefinements-delete {
     vertical-align: middle;
     appearance: none;
-    margin-left: spacing(tight);
-    background-color: lighten(color(gray), 20);
+    margin-left: spacing.spacing(tight);
+    background-color: color.adjust(colors.color(gray), $lightness: 20%);
     border-radius: 30px;
     border: none;
     display: inline-block;
@@ -61,12 +62,12 @@
     padding: 0;
     font-size: 12px;
     line-height: 12px;
-    color: color(gray, darker);
+    color: colors.color(gray, darker);
     transition: all 100ms linear;
   }
 
   .ais-CurrentRefinements-category:hover .ais-CurrentRefinements-delete {
-    color: color(gray);
+    color: colors.color(gray);
     background-color: white;
   }
 }

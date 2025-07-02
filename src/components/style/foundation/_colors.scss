@@ -1,5 +1,7 @@
 // COLORS
 // -----------------------------------------------------------------------------
+@use 'sass:map';
+@use 'sass:meta';
 
 // stylelint-disable color-no-hex, no-indistinguishable-colors, function-max-empty-lines, value-list-max-empty-lines
 $color-palette-data: (
@@ -43,13 +45,13 @@ $color-palette-data: (
 /// @return {Color} The color value.
 
 @function color($hue, $value: base) {
-  $fetched-color: map-get(map-get($color-palette-data, $hue), $value);
+  $fetched-color: map.get(map.get($color-palette-data, $hue), $value);
 
-  @if map-has-key($color-palette-data, $fetched-color) {
-    $fetched-color: map-get(map-get($color-palette-data, $fetched-color), $value);
+  @if map.has-key($color-palette-data, $fetched-color) {
+    $fetched-color: map.get(map.get($color-palette-data, $fetched-color), $value);
   }
 
-  @if type-of($fetched-color) == color {
+  @if meta.type-of($fetched-color) == color {
     @return $fetched-color;
   } @else {
     @error 'Color `#{$hue} - #{$value}` not found. Available colors: #{available-names($color-palette-data)}';

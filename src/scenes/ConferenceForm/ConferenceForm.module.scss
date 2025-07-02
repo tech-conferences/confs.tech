@@ -1,58 +1,58 @@
-@import 'src/components/style/foundation/typography';
-@import 'src/components/style/foundation/colors';
-@import 'src/components/style/foundation/spacing';
+@use 'src/components/style/foundation/typography' as typography;
+@use 'src/components/style/foundation/colors' as colors;
+@use 'src/components/style/foundation/spacing' as spacing;
 
 .Button {
-  font-size: font-size(body);
+  font-size: typography.font-size(body);
   font-family: inherit;
-  padding: spacing(tight) spacing(base);
+  padding: spacing.spacing(tight) spacing.spacing(base);
   display: block;
   border-radius: 3px;
-  margin-top: spacing(loose);
-  margin-bottom: spacing(extra-loose);
+  margin-top: spacing.spacing(loose);
+  margin-bottom: spacing.spacing(extra-loose);
   transition: all 150ms ease-out;
   cursor: pointer;
-  border: 1px solid color(grey, light);
+  border: 1px solid colors.color(grey, light);
   background-color: white;
   color: black;
 
   :global(.theme--dark) & {
-    background-color: color(grey, dark);
-    border-color: color(grey, dark);
+    background-color: colors.color(grey, dark);
+    border-color: colors.color(grey, dark);
     color: white;
   }
 
   &:disabled {
-    background-color: color(grey, lighter);
-    color: color(grey);
+    background-color: colors.color(grey, lighter);
+    color: colors.color(grey);
     cursor: not-allowed;
 
     :global(.theme--dark) & {
-      color: color(grey, light);
-      background-color: color(grey, dark);
+      color: colors.color(grey, light);
+      background-color: colors.color(grey, dark);
     }
   }
 
   &:not([disabled]):hover {
-    background-color: color(grey, lighter);
+    background-color: colors.color(grey, lighter);
 
     :global(.theme--dark) & {
-      background-color: color(grey);
+      background-color: colors.color(grey);
     }
   }
 
   &:not([disabled]):active {
-    background-color: color(grey, light);
+    background-color: colors.color(grey, light);
 
     :global(.theme--dark) & {
-      background-color: color(grey, light);
-      color:  color(grey);
+      background-color: colors.color(grey, light);
+      color:  colors.color(grey);
     }
   }
 }
 
 :global(.g-recaptcha) {
-  margin-top: spacing();
+  margin-top: spacing.spacing();
 }
 
 .error {
@@ -73,8 +73,8 @@
 }
 
 .InputHint {
-  font-size: font-size(body, smaller);
-  color: color(gray, base);
+  font-size: typography.font-size(body, smaller);
+  color: colors.color(gray, base);
 }
 
 .Select {

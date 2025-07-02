@@ -1,9 +1,10 @@
+@use "sass:map";
 // OUTSIDE BORDER
 // -----------------------------------------------------------------------------
-@import './colors';
+@use './colors' as colors;
 
 $borders-data: (
-  base: solid 1px color(gray),
+  base: solid 1px colors.color(gray),
 );
 
 /// Returns the default border
@@ -11,7 +12,7 @@ $borders-data: (
 /// @return {List} The border value.
 
 @function border($variant: base) {
-  $fetched-value: map-get($borders-data, $variant);
+  $fetched-value: map.get($borders-data, $variant);
 
   @if $fetched-value {
     @return $fetched-value;

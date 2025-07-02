@@ -1,4 +1,4 @@
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/colors' as colors;
 
 :global {
   .react-datepicker {
@@ -28,14 +28,14 @@
 
   .react-datepicker__day--selected,
   .react-datepicker__day--keyboard-selected {
-    background-color: color(accent);
+    background-color: colors.color(accent);
   }
 
   .theme--dark {
     .react-datepicker,
     .react-datepicker__header {
-      background-color: color(grey, darker);
-      border-color: color(grey, dark);
+      background-color: colors.color(grey, darker);
+      border-color: colors.color(grey, dark);
     }
 
     .react-datepicker,
@@ -46,21 +46,21 @@
     }
 
     .react-datepicker__day:hover {
-      background-color: color(grey);
+      background-color: colors.color(grey);
     }
 
     .react-datepicker__day--outside-month {
-      color: color(grey);
+      color: colors.color(grey);
     }
 
     .react-datepicker__triangle {
-      border-top-color: color(grey, darker) !important;
-      border-bottom-color: color(grey, darker) !important;
+      border-top-color: colors.color(grey, darker) !important;
+      border-bottom-color: colors.color(grey, darker) !important;
     }
 
     .react-datepicker__triangle::before {
-      border-top-color: color(grey, dark) !important;
-      border-bottom-color: color(grey, dark) !important;
+      border-top-color: colors.color(grey, dark) !important;
+      border-bottom-color: colors.color(grey, dark) !important;
     }
   }
 }

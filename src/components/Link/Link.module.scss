@@ -1,13 +1,13 @@
-@import 'src/components/style/foundation/mixins';
-@import 'src/components/style/foundation/typography';
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/mixins' as mixins;
+@use 'src/components/style/foundation/typography' as typography;
+@use 'src/components/style/foundation/colors' as colors;
 
 .Link {
-  @include link();
+  @include mixins.link();
 
   &:hover,
   &.Selected {
-    @include link--hover();
+    @include mixins.link--hover();
   }
 }
 
@@ -16,9 +16,9 @@
 }
 
 .muted {
-  color: color(gray);
+  color: colors.color(gray);
 
   :global(.theme--dark) & {
-    color: color(gray);
+    color: colors.color(gray);
   }
 }
