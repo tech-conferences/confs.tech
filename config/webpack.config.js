@@ -278,6 +278,9 @@ module.exports = function (webpackEnv) {
               // Pending further investigation:
               // https://github.com/terser-js/terser/issues/120
               inline: 2,
+              drop_console: true,
+              drop_debugger: true,
+              pure_funcs: ['console.log', 'console.info', 'console.debug']
             },
             mangle: {
               safari10: true,
@@ -293,10 +296,31 @@ module.exports = function (webpackEnv) {
               ascii_only: true,
             },
           },
+          parallel: true,
         }),
         // This is only used in production mode
-        new CssMinimizerPlugin(),
+        new CssMinimizerPlugin({
+          parallel: true,
+          minimizerOptions: {
+            preset: [
+              'default',
+              { discardComments: { removeAll: true } }
+            ],
+          },
+        }),
       ],
+      splitChunks: {
+        chunks: 'all',
+        name: false,
+        cacheGroups: {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all',
+          },
+        },
+      },
+      runtimeChunk: 'single',
     },
     resolve: {
       // This allows you to set a fallback for where webpack should look for modules.
@@ -368,6 +392,11 @@ module.exports = function (webpackEnv) {
                   maxSize: imageInlineSizeLimit,
                 },
               },
+              generator: {
+                filename: 'static/media/[name].[hash:8].[ext]',
+                // Add additional image optimization options
+                quality: 85,
+              },
             },
             // "url" loader works like "file" loader except that it embeds assets
             // smaller than specified limit in bytes as data URLs to avoid requests.
@@ -379,6 +408,11 @@ module.exports = function (webpackEnv) {
                 dataUrlCondition: {
                   maxSize: imageInlineSizeLimit,
                 },
+              },
+              generator: {
+                filename: 'static/media/[name].[hash:8].[ext]',
+                // Add additional image optimization options
+                quality: 85,
               },
             },
             {

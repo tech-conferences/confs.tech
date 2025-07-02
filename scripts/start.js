@@ -116,7 +116,7 @@ checkBrowsers(paths.appPath, isInteractive)
       port,
     }
 
-    const devServer = new WebpackDevServer(serverConfig, compiler)
+    const devServer = new WebpackDevServer(compiler, serverConfig)
     // Launch WebpackDevServer.
     devServer.startCallback(() => {
       if (isInteractive) {

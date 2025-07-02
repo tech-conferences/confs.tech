@@ -33,6 +33,8 @@
 .Image {
   margin-right: spacing.spacing();
   height: 70px;
+  width: 140px;
+  object-fit: contain;
   display: block;
 }
 
