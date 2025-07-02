@@ -116,7 +116,7 @@ checkBrowsers(paths.appPath, isInteractive)
       port,
     }
 
-    const devServer = new WebpackDevServer(serverConfig, compiler)
+    const devServer = new WebpackDevServer(compiler, serverConfig)
     // Launch WebpackDevServer.
     devServer.startCallback(() => {
       if (isInteractive) {
@@ -133,7 +133,6 @@ checkBrowsers(paths.appPath, isInteractive)
 
       console.log(chalk.cyan('Starting the development server...\n'))
       openBrowser(urls.localUrlForBrowser)
-
       ;['SIGINT', 'SIGTERM'].forEach(function (sig) {
         process.on(sig, function () {
           devServer.close()
@@ -142,7 +141,7 @@ checkBrowsers(paths.appPath, isInteractive)
       })
 
       if (process.env.CI !== 'true') {
-      // Gracefully exit when stdin ends
+        // Gracefully exit when stdin ends
         process.stdin.on('end', function () {
           devServer.close()
           process.exit()

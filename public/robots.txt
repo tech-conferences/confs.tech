@@ -1,2 +1,7 @@
+# Allow all crawlers
 User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://confs.tech/sitemap.xml
 Allow: /
