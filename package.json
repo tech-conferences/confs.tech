@@ -104,7 +104,7 @@
     "@types/classnames": "^2.3.4",
     "@types/google.analytics": "^0.0.46",
     "@types/jest": "^29.5.14",
-    "@types/lodash": "^4.17.16",
+    "@types/lodash": "^4.17.20",
     "@types/node": "22.15.9",
     "@types/qs": "^6.9.18",
     "@types/react": "^18.3.5",
