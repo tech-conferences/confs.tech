@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "clean": "rm -rf build dist node_modules package-lock.json coverage .eslintcache",
     "format": "eslint --fix .",
-    "prettier": "npx prettier --write \"**/*.{ts,tsx,}\"",
+    "prettier": "npx prettier --write \"**/*.{ts,tsx}\"",
     "precommit": "lint-staged",
     "predeploy": "npm run build",
     "prepare": "husky"
