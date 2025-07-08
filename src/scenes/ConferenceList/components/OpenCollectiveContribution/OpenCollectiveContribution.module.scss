@@ -13,6 +13,13 @@
     bottom: 1em;
     right: 1em;
   }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 275 / 50;
+  }
 }
 
 @keyframes slide {
