@@ -2,6 +2,8 @@
   "name": "confs.tech",
   "version": "1.0.0",
   "homepage": "https://confs.tech",
+  "description": "Open-source and crowd-sourced list of conferences around software development.",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "node scripts/start.js",
@@ -9,6 +11,7 @@
     "preview": "node scripts/preview.js",
     "test": "node scripts/test.js",
     "lint": "eslint .",
+    "clean": "rm -rf build dist node_modules package-lock.json coverage .eslintcache",
     "format": "eslint --fix .",
     "prettier": "npx prettier --write \"**/*.{ts,tsx,}\"",
     "precommit": "lint-staged",
