@@ -99,6 +99,7 @@
   width: 400px;
   gap: spacing.spacing(tight);
   align-items: flex-start;
+  position: relative;
 
   @include media.media(media.$media-query--mobile-up) {
     display: flex;
@@ -107,5 +108,33 @@
   input {
     height: auto;
     box-sizing: border-box;
+  }
+}
+
+.clearDateButton {
+  background: colors.color(gray, lighter);
+  border: 1px solid colors.color(gray, light);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  color: colors.color(gray, darker);
+  margin-left: spacing.spacing(extra-tight);
+  flex-shrink: 0;
+  padding: 0;
+
+  &:hover {
+    background: colors.color(gray, light);
+    color: colors.color(gray, darker);
+  }
+
+  &:focus {
+    outline: 2px solid colors.color(accent, base);
+    outline-offset: 2px;
   }
 }

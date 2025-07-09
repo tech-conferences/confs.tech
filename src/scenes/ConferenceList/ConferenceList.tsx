@@ -94,12 +94,19 @@ const ConferenceListPage: React.FC<Props> = ({
   const handleStartDateSelect = (date: Date | null) => {
     if (date) {
       setStartDate(date)
+      // If end date is before the new start date, clear end date
+      if (endDate && date > endDate) {
+        setEndDate(null)
+      }
     }
   }
 
   const handleEndDateSelect = (date: Date | null) => {
     if (date) {
-      setEndDate(date)
+      // Only set end date if it's after or equal to start date
+      if (!startDate || date >= startDate) {
+        setEndDate(date)
+      }
     }
   }
 
@@ -225,6 +232,7 @@ const ConferenceListPage: React.FC<Props> = ({
                 selectsStart
                 startDate={startDate ?? undefined}
                 endDate={endDate ?? undefined}
+                maxDate={endDate ?? undefined}
                 placeholderText='Start Date'
               />
               <DatePicker
@@ -234,8 +242,28 @@ const ConferenceListPage: React.FC<Props> = ({
                 selectsEnd
                 startDate={startDate ?? undefined}
                 endDate={endDate ?? undefined}
+                minDate={startDate ?? undefined}
                 placeholderText='End Date'
               />
+              {(startDate || endDate) && (
+                <button
+                  className={styles.clearDateButton}
+                  onClick={() => {
+                    setStartDate(null)
+                    setEndDate(null)
+                    navigate(
+                      `?${qs.stringify({
+                        ...searchState,
+                        page: undefined,
+                      })}`,
+                    )
+                  }}
+                  title='Clear date range'
+                  type='button'
+                >
+                  ×
+                </button>
+              )}
             </div>
           </div>
 
