@@ -149,6 +149,20 @@
     "json5": "^2.2.3",
     "lodash": "^4.17.21"
   },
+  "overrides": {
+    "react-instantsearch-dom": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "react-helmet": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "react-select": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
+  },
   "jest": {
     "roots": [
       "<rootDir>/src"
