@@ -1,16 +1,16 @@
-@import 'src/components/style/foundation/mixins';
-@import 'src/components/style/foundation/typography';
-@import 'src/components/style/foundation/colors';
-@import 'src/components/style/foundation/spacing';
+@use 'src/components/style/foundation/mixins' as mixins;
+@use 'src/components/style/foundation/typography' as typography;
+@use 'src/components/style/foundation/colors' as colors;
+@use 'src/components/style/foundation/spacing' as spacing;
 
 :global {
   .ais-RefinementList, .ais-ToggleRefinement {
-    margin-bottom: spacing(loose);
+    margin-bottom: spacing.spacing(loose);
   }
 
   .ais-ToggleRefinement-labelText {
     cursor: pointer;
-    margin-left: spacing(extra-tight);
+    margin-left: spacing.spacing(extra-tight);
   }
 
   .ais-RefinementList-list {
@@ -23,8 +23,8 @@
   }
 
   .ais-RefinementList-item {
-    margin-right: spacing(loose);
-    margin-bottom: spacing(tight);
+    margin-right: spacing.spacing(loose);
+    margin-bottom: spacing.spacing(tight);
     list-style: none;
   }
 
@@ -38,14 +38,14 @@
   }
 
   .ais-RefinementList-label {
-    @include link();
+    @include mixins.link();
 
     &:focus {
       background: black;
     }
 
     &:hover {
-      @include link--hover();
+      @include mixins.link--hover();
     }
   }
 
@@ -56,14 +56,14 @@
   }
 
   .ais-RefinementList-item--selected .ais-RefinementList-labelText {
-    @include link--hover();
+    @include mixins.link--hover();
   }
 
   .ais-RefinementList-count {
     border-radius: 30px;
-    background-color: color(gray, lighter);
-    color: color(accent);
-    font-size: font-size(filter, itemCount);
+    background-color: colors.color(gray, lighter);
+    color: colors.color(accent);
+    font-size: typography.font-size(filter, itemCount);
     padding: 0 6px;
   }
 
@@ -72,10 +72,10 @@
   }
 
   .ais-RefinementList-showMore {
-    @include link();
+    @include mixins.link();
 
     &:hover {
-      @include link--hover();
+      @include mixins.link--hover();
     }
 
     & {

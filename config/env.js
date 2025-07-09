@@ -3,6 +3,9 @@
 const fs = require('fs')
 const path = require('path')
 
+const dotenv = require('dotenv')
+const dotenvExpand = require('dotenv-expand')
+
 const paths = require('./paths')
 
 // Make sure that including paths.js after env.js will read .env variables.
@@ -33,11 +36,10 @@ const dotenvFiles = [
 // https://github.com/motdotla/dotenv-expand
 dotenvFiles.forEach((dotenvFile) => {
   if (fs.existsSync(dotenvFile)) {
-    require('dotenv-expand')(
-      require('dotenv').config({
-        path: dotenvFile,
-      }),
-    )
+    const env = dotenv.config({
+      path: dotenvFile,
+    })
+    dotenvExpand.expand(env)
   }
 })
 

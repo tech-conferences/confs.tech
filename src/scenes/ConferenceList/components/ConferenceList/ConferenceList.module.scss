@@ -1,9 +1,9 @@
-@import 'src/components/style/foundation/spacing';
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/colors' as colors;
 
 .ConferenceList {
   width: 100%;
-  padding: spacing(base);
+  padding: spacing.spacing(base);
 
   ul {
     list-style: none;
@@ -16,17 +16,17 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: spacing(loose) 0 spacing(base) 0;
+  margin: spacing.spacing(loose) 0 spacing.spacing(base) 0;
   position: sticky;
   top: 0;
-  padding: spacing(base);
+  padding: spacing.spacing(base);
   z-index: 10;
-  border-bottom: 1px solid color(grey, lighter);
-  background-color: color(background, light);
+  border-bottom: 1px solid colors.color(grey, lighter);
+  background-color: colors.color(background, light);
 
   :global(.theme--dark) & {
-    border-bottom: 1px solid color(grey, darker);
-    background-color: color(background, dark);
+    border-bottom: 1px solid colors.color(grey, darker);
+    background-color: colors.color(background, dark);
   }
 
   h2 {
@@ -44,7 +44,7 @@
 .NoResults {
   text-align: center;
   font-size: 0.9em;
-  margin: spacing(extra-loose);
+  margin: spacing.spacing(extra-loose);
 }
 
 .dateRangePicker {

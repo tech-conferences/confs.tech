@@ -348,7 +348,7 @@ module.exports = function (webpackEnv) {
         // Handle node_modules packages that contain sourcemaps
         shouldUseSourceMap && {
           enforce: 'pre',
-          exclude: /@babel(?:\/|\\{1,2})runtime/,
+          exclude: [/@babel(?:\/|\\{1,2})runtime/, /react-datepicker/],
           test: /\.(js|mjs|jsx|ts|tsx|css)$/,
           loader: require.resolve('source-map-loader'),
         },
@@ -504,6 +504,7 @@ module.exports = function (webpackEnv) {
                 modules: {
                   mode: 'local',
                   getLocalIdent: getCSSModuleLocalIdent,
+                  namedExport: false,
                 },
               }),
             },
@@ -544,6 +545,7 @@ module.exports = function (webpackEnv) {
                   modules: {
                     mode: 'local',
                     getLocalIdent: getCSSModuleLocalIdent,
+                    namedExport: false,
                   },
                 },
                 'sass-loader',
@@ -733,7 +735,7 @@ module.exports = function (webpackEnv) {
           // Plugin options
           extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
           formatter: require.resolve('react-dev-utils/eslintFormatter'),
-          eslintPath: require.resolve('eslint'),
+          eslintPath: require.resolve('eslint/use-at-your-own-risk'),
           failOnError: !(isEnvDevelopment && emitErrorsAsWarnings),
           context: paths.appSrc,
           cache: true,

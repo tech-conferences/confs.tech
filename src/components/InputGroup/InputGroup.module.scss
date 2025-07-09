@@ -1,13 +1,13 @@
-@import 'src/components/style/foundation/typography';
-@import 'src/components/style/foundation/colors';
-@import 'src/components/style/foundation/spacing';
+@use 'src/components/style/foundation/typography' as typography;
+@use 'src/components/style/foundation/colors' as colors;
+@use 'src/components/style/foundation/spacing' as spacing;
 
 .InputGroup {
-  margin-bottom: spacing(base);
+  margin-bottom: spacing.spacing(base);
   max-width: 500px;
 
   label {
-    margin-bottom: spacing(tight);
+    margin-bottom: spacing.spacing(tight);
     display: block;
     cursor: pointer;
   }
@@ -18,7 +18,7 @@
   max-width: 500px;
 
   > div {
-    margin-right: spacing(base);
+    margin-right: spacing.spacing(base);
     flex-grow: 1;
 
     &:last-child {
@@ -29,16 +29,16 @@
 
 select {
   font-size: 16px;
-  border: 1px solid color(gray, light);
-  padding: spacing(tight);
+  border: 1px solid colors.color(gray, light);
+  padding: spacing.spacing(tight);
   border-radius: 3px;
 }
 
 input, textarea {
-  padding: spacing(tight);
-  font-size: font-size(body);
+  padding: spacing.spacing(tight);
+  font-size: typography.font-size(body);
   background-color: #ffffff;
-  border: 1px solid color(gray, light);
+  border: 1px solid colors.color(gray, light);
   border-radius: 3px;
   width: 100%;
   box-sizing: border-box;

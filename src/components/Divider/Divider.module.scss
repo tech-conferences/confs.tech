@@ -1,10 +1,10 @@
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/colors' as colors;
 
 .Divider {
   border: none;
-  border-bottom: 2px inset color(gray, lighter);
+  border-bottom: 2px inset colors.color(gray, lighter);
 
   :global(.theme--dark) & {
-    border-bottom: 2px inset color(gray, darker);
+    border-bottom: 2px inset colors.color(gray, darker);
   }
 }

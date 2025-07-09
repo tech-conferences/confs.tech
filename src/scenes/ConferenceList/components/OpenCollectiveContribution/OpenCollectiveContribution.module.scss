@@ -1,4 +1,4 @@
-@import 'src/components/style/foundation/media-queries';
+@use 'src/components/style/foundation/media-queries' as media;
 
 .Container {
   display: none;
@@ -7,11 +7,18 @@
   transform: translateY(200%);
   z-index: 1000;
 
-  @include media($media-query--tablet-up) {
+  @include media.media(media.$media-query--tablet-up) {
     display: block;
     position: fixed;
     bottom: 1em;
     right: 1em;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 275 / 50;
   }
 }
 

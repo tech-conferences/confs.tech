@@ -1,6 +1,6 @@
-@import 'src/components/style/foundation/colors';
-@import 'src/components/style/foundation/spacing';
-@import 'src/components/style/foundation/media-queries';
+@use 'src/components/style/foundation/colors' as colors;
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/media-queries' as media;
 
 .ThemeSwitch {
   margin: 0;
@@ -14,16 +14,16 @@
   width: 50px;
   padding: 3px;
   display: block;
-  background-color: color(gray, darker);
+  background-color: colors.color(gray, darker);
 
   & {
-    @include media($media-query--tablet-up) {
-      margin: 0 0 spacing(tight) auto;
+    @include media.media(media.$media-query--tablet-up) {
+      margin: 0 0 spacing.spacing(tight) auto;
     }
   }
 
   &.dark {
-    border-color: color(gray, dark);
+    border-color: colors.color(gray, dark);
   }
 
   &::after,

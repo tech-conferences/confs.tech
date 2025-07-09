@@ -1,4 +1,4 @@
-import { isPast, parseISO, isWithinInterval } from 'date-fns'
+import { isPast, parseISO, isWithinInterval, isFuture, isToday } from 'date-fns'
 import { filter } from 'lodash'
 import React from 'react'
 import { connectInfiniteHits } from 'react-instantsearch-dom'
@@ -40,7 +40,9 @@ const ConferenceList: React.FC<Props> = ({
 
   if (showCFP) {
     filteredConferences = filter(hits, (conf) => {
-      return conf.cfpEndDate && !isPast(parseISO(conf.cfpEndDate))
+      if (!conf.cfpEndDate) return false
+      const cfpEndDate = parseISO(conf.cfpEndDate)
+      return isToday(cfpEndDate) || isFuture(cfpEndDate)
     }) as Conference[]
   }
   if (startDate && endDate) {

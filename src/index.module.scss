@@ -1,4 +1,4 @@
-@import 'src/components/style/foundation/colors';
+@use 'src/components/style/foundation/colors' as colors;
 
 :global {
   * {
@@ -14,12 +14,12 @@
     font-size: 16px;
     padding: 0;
     margin: 0;
-    background-color: color(background, light);
+    background-color: colors.color(background, light);
     color: black;
   }
 
   body.theme--dark {
-    background-color: color(background, dark);
+    background-color: colors.color(background, dark);
     color: white;
   }
 

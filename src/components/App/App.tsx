@@ -5,6 +5,7 @@ import {
   NotFoundPage,
   SponsorshipPage,
 } from 'src/StaticPages'
+import { CookieConsent } from 'src/components'
 import { ConferenceList, ConferenceForm } from 'src/scenes'
 
 import styles from './App.module.scss'
@@ -28,6 +29,7 @@ export default function App() {
           <Route path='/' element={<ConferenceList />} />
           <Route element={<ConferenceList />} />
         </Routes>
+        <CookieConsent />
       </div>
     </div>
   )

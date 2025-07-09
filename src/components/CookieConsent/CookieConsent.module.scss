@@ -1,0 +1,106 @@
+@use 'src/components/style/foundation/colors' as colors;
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/typography' as typography;
+
+.cookieConsent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: colors.color(background, light);
+  border-top: 1px solid colors.color(gray, light);
+  padding: spacing.spacing(base);
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+
+  :global(.theme--dark) & {
+    background-color: colors.color(background, dark);
+    border-top: 1px solid colors.color(gray, dark);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: spacing.spacing(base);
+
+  p {
+    margin: 0;
+    font-size: typography.font-size(body);
+    flex: 1;
+    min-width: 300px;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: spacing.spacing(tight);
+  flex-shrink: 0;
+}
+
+.acceptButton,
+.declineButton {
+  padding: spacing.spacing(tight) spacing.spacing(base);
+  border: 1px solid colors.color(gray, light);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: typography.font-size(body);
+  transition: all 0.2s ease;
+}
+
+.acceptButton {
+  background-color: colors.color(accent);
+  color: white;
+  border-color: colors.color(accent);
+
+  &:hover {
+    background-color: colors.color(accent, dark);
+    border-color: colors.color(accent, dark);
+  }
+
+  :global(.theme--dark) & {
+    background-color: colors.color(accent, dark);
+    border-color: colors.color(accent, dark);
+
+    &:hover {
+      background-color: colors.color(accent);
+      border-color: colors.color(accent);
+    }
+  }
+}
+
+.declineButton {
+  background-color: transparent;
+  color: colors.color(gray);
+  border-color: colors.color(gray, light);
+
+  &:hover {
+    background-color: colors.color(gray, light);
+  }
+
+  :global(.theme--dark) & {
+    color: colors.color(gray, baseDark);
+    border-color: colors.color(gray, dark);
+
+    &:hover {
+      background-color: colors.color(gray, dark);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}

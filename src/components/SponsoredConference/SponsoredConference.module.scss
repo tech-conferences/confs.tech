@@ -1,8 +1,8 @@
-@import '../style/foundation/spacing';
-@import '../style/foundation/colors';
+@use '../style/foundation/spacing' as spacing;
+@use '../style/foundation/colors' as colors;
 
 .SponsoredConference {
-  margin-bottom: spacing(base);
+  margin-bottom: spacing.spacing(base);
   align-items: center;
   display: flex;
 
@@ -27,18 +27,20 @@
 .sponsored {
   font-variant: small-caps;
   font-weight: 600;
-  color: color(gray);
+  color: colors.color(gray);
 }
 
 .Image {
-  margin-right: spacing();
+  margin-right: spacing.spacing();
   height: 70px;
+  width: 140px;
+  object-fit: contain;
   display: block;
 }
 
 .Footer {
   font-weight: 200;
-  color: color(gray);
+  color: colors.color(gray);
 }
 
 .promocode {

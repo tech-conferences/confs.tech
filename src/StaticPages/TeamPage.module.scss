@@ -1,5 +1,5 @@
-@import "src/components/style/foundation/spacing";
-@import "src/components/style/foundation/colors";
+@use 'src/components/style/foundation/spacing' as spacing;
+@use 'src/components/style/foundation/colors' as colors;
 
 .team {
   width: 100%;
@@ -17,13 +17,13 @@
     width: 230px;
     border-radius: 10px;
     // from card
-    padding: spacing(loose);
-    border: 1px solid color(gray, lighter);
-    box-shadow: 0px 0px 10px color(gray, lighter);
-    margin-bottom: spacing(loose);
+    padding: spacing.spacing(loose);
+    border: 1px solid colors.color(gray, lighter);
+    box-shadow: 0px 0px 10px colors.color(gray, lighter);
+    margin-bottom: spacing.spacing(loose);
     :global(.theme--dark) & {
-      border-color: color(gray, darker);
-      box-shadow: 0px 0px 10px color(gray, darker);
+      border-color: colors.color(gray, darker);
+      box-shadow: 0px 0px 10px colors.color(gray, darker);
     }
     // From conference item
     &:hover {
@@ -79,15 +79,15 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      color: color(gray);
+      color: colors.color(gray);
 
       :global(.theme--dark) & {
-        color: color(gray, lighter);
+        color: colors.color(gray, lighter);
       }
     }
     .contribution {
       font-size: x-small;
-      color: color(gray, base);
+      color: colors.color(gray, base);
     }
 
     a {

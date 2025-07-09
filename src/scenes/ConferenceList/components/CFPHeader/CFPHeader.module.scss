@@ -1,4 +1,4 @@
-@import 'src/components/style/foundation/mixins';
+@use 'src/components/style/foundation/mixins' as mixins;
 
 .CFPHeader {
   display: flex;
@@ -9,5 +9,5 @@
 
 .active {
   font-weight: 600;
-  @include link--hover();
+  @include mixins.link--hover();
 }
