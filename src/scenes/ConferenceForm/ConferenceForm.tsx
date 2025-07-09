@@ -6,7 +6,7 @@ import { useState, useRef, ChangeEvent } from 'react'
 import DatePicker from 'react-datepicker'
 import { Helmet } from 'react-helmet'
 import Recaptcha from 'react-recaptcha'
-import Select, { SingleValue } from 'react-select'
+import Select, { SingleValue, MultiValue } from 'react-select'
 import { Card, Link, InputGroup, Page, Divider } from 'src/components'
 import Alert from 'src/components/Alert'
 import { TOPICS, LOCALES } from 'src/components/config'
@@ -392,7 +392,9 @@ const ConferenceForm: React.FC = () => {
                   }))}
                   isMulti
                   placeholder='Select one ore more languages'
-                  onChange={(langs) => {
+                  onChange={(
+                    langs: MultiValue<{ value: string; label: string }>,
+                  ) => {
                     setConference({
                       ...conference,
                       locales: langs.map((locale) => locale?.value || ''),
@@ -411,7 +413,9 @@ const ConferenceForm: React.FC = () => {
                   defaultValue={null}
                   isMulti
                   placeholder='Select one or more topics'
-                  onChange={(topics) => {
+                  onChange={(
+                    topics: MultiValue<{ value: string; label: string }>,
+                  ) => {
                     setConference({
                       ...conference,
                       topics: topics.map((topic) => topic?.value || ''),
