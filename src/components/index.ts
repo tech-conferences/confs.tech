@@ -1,4 +1,5 @@
 export { default as Card } from './Card'
+export { default as CookieConsent } from './CookieConsent'
 export { default as Divider } from './Divider'
 export { default as Footer } from './Footer'
 export { default as GithubStar } from './GithubStar'
