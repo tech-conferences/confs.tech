@@ -90,16 +90,22 @@
 .searchAndDate {
   display: flex;
   justify-content: space-between;
-  gap: spacing(loose);
+  gap: spacing.spacing(loose);
+  align-items: flex-start;
 }
 
 .dateRangePicker {
   display: none;
   width: 400px;
-  padding: 2px;
   gap: spacing.spacing(tight);
+  align-items: flex-start;
 
   @include media.media(media.$media-query--mobile-up) {
     display: flex;
+  }
+
+  input {
+    height: auto;
+    box-sizing: border-box;
   }
 }
