@@ -1,4 +1,4 @@
-import { isPast, parseISO, isWithinInterval, isFuture, isToday } from 'date-fns'
+import { parseISO, isWithinInterval, isFuture, isToday } from 'date-fns'
 import { filter } from 'lodash'
 import React from 'react'
 import { connectInfiniteHits } from 'react-instantsearch-dom'
