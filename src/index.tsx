@@ -1,17 +1,23 @@
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.module.scss'
 
 import App from './components/App'
 import { DarkModeContextProvider } from './contexts/DarkModeContext'
 import * as serviceWorker from './serviceWorker'
-ReactDOM.render(
+
+const container = document.getElementById('root')
+if (!container) {
+  throw new Error('Failed to find the root element')
+}
+
+const root = createRoot(container)
+root.render(
   <BrowserRouter>
     <DarkModeContextProvider>
       <App />
     </DarkModeContextProvider>
   </BrowserRouter>,
-  document.getElementById('root'),
 )
 
 // Register service worker for offline capability and better performance
