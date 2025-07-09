@@ -97,9 +97,9 @@
   display: none;
   width: 400px;
   padding: 2px;
-  gap: spacing(tight);
+  gap: spacing.spacing(tight);
 
-  @include media($media-query--mobile-up) {
+  @include media.media(media.$media-query--mobile-up) {
     display: flex;
   }
 }
