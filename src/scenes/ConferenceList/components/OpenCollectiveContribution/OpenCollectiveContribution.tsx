@@ -7,6 +7,7 @@ const OpenCollectiveContribution = () => {
         <img
           src='https://opencollective.com/confstech/contribute/button@2x.png?color=blue'
           width={275}
+          height={50}
           alt='Contribute to confs.tech through open collective'
         />
       </a>
