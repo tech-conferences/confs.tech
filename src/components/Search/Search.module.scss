@@ -4,7 +4,7 @@
 
 .Search {
   width: 100%;
-  margin: 0; // Remove bottom margin that might affect alignment
+  margin-bottom: spacing.spacing();
 }
 
 :global {
@@ -13,14 +13,14 @@
   }
 
   .ais-SearchBox-input {
-    height: 40px; // Set explicit height to match date picker inputs
-    padding: 8px 12px; // Consistent padding
+    height: 40px;
+    padding: 8px 12px;
     border: 1px solid colors.color(gray, light);
     border-radius: 4px;
     font-size: 14px;
     box-sizing: border-box;
-    line-height: 1.5; // Match line height with date inputs
-    margin: 0; // Remove any default margins
+    line-height: 1.5;
+    margin: 0;
     width: 100%;
   }
 

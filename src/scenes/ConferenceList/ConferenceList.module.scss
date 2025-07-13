@@ -91,7 +91,7 @@
   display: flex;
   justify-content: space-between;
   gap: spacing.spacing(loose);
-  align-items: flex-start; // Keep flex-start to align based on content
+  align-items: flex-start;
 }
 
 .dateRangePicker {
@@ -105,7 +105,7 @@
   }
 
   input {
-    height: 40px; // Match search box height exactly
+    height: 40px;
     box-sizing: border-box;
     padding: 8px 12px;
     border: 1px solid colors.color(gray, light);
@@ -113,10 +113,10 @@
     font-size: 14px;
     width: 140px;
     outline: none;
-    margin: 0; // Remove any default margins
-    vertical-align: top; // Ensure consistent baseline
-    line-height: 1.5; // Match line height with search input
-    
+    margin: 0;
+    vertical-align: top;
+    line-height: 1.5;
+
     &:focus {
       border-color: colors.color(accent, base);
       box-shadow: 0 0 0 2px rgba(0, 90, 156, 0.2);
@@ -126,7 +126,7 @@
   // Ensure React DatePicker wrapper aligns properly
   :global(.react-datepicker-wrapper) {
     display: block;
-    
+
     input {
       width: 140px !important;
       height: 40px !important;
@@ -161,7 +161,7 @@
   margin-left: spacing.spacing(extra-tight);
   flex-shrink: 0;
   padding: 0;
-  align-self: center; // Ensure the button is centered vertically
+  align-self: center;
 
   &:hover {
     background: colors.color(gray, light);
