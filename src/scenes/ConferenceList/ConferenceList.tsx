@@ -184,8 +184,22 @@ const ConferenceListPage: React.FC<Props> = ({
       filters += String(` AND online=${online === 'online' ? 1 : 0}`)
     }
 
+    // Add date range filtering to Algolia filter
+    if (startDate && endDate) {
+      // Both start and end dates are set
+      filters += String(
+        ` AND startDateUnix>=${dateToTime(startDate)} AND endDateUnix<=${dateToTime(endDate)}`,
+      )
+    } else if (startDate && !endDate) {
+      // Only start date is set - show conferences that start on or after this date
+      filters += String(` AND startDateUnix>=${dateToTime(startDate)}`)
+    } else if (!startDate && endDate) {
+      // Only end date is set - show conferences that end on or before this date
+      filters += String(` AND endDateUnix<=${dateToTime(endDate)}`)
+    }
+
     return filters
-  }, [showPast, online, pastConferencePage])
+  }, [showPast, online, pastConferencePage, startDate, endDate])
 
   const loadMore = () => {
     setHitsPerPage(hitsPerPage + 50)
@@ -336,8 +350,6 @@ const ConferenceListPage: React.FC<Props> = ({
           sortBy={sortBy}
           sortDirection={sortDirection}
           showCFP={showCFP}
-          startDate={startDate}
-          endDate={endDate}
         />
       </InstantSearch>
 
