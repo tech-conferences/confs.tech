@@ -45,13 +45,13 @@ const ConferenceList: React.FC<Props> = ({
       return isToday(cfpEndDate) || isFuture(cfpEndDate)
     }) as Conference[]
   }
-  // Filter by date range - start filtering as soon as start date is selected
-  if (startDate) {
+  // Filter by date range - filter when either start date or end date is selected
+  if (startDate || endDate) {
     filteredConferences = filteredConferences.filter((conf) => {
       const conferenceStartDate = parseISO(conf.startDate)
       const conferenceEndDate = parseISO(conf.endDate)
 
-      if (endDate) {
+      if (startDate && endDate) {
         // Both start and end dates are set - check if conference overlaps with the range
         return (
           isWithinInterval(conferenceStartDate, {
@@ -64,10 +64,15 @@ const ConferenceList: React.FC<Props> = ({
           }) ||
           (conferenceStartDate <= startDate && conferenceEndDate >= endDate)
         )
-      } else {
+      } else if (startDate && !endDate) {
         // Only start date is set - show conferences that start on or after this date
         return conferenceStartDate >= startDate
+      } else if (!startDate && endDate) {
+        // Only end date is set - show conferences that end on or before this date
+        return conferenceEndDate <= endDate
       }
+      
+      return true
     })
   }
 
