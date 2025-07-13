@@ -1,7 +1,7 @@
 import algoliasearch from 'algoliasearch/lite'
 import { subMonths } from 'date-fns'
 import qs from 'qs'
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useState, useRef } from 'react'
 import DatePicker from 'react-datepicker'
 import {
   Configure,
@@ -90,6 +90,7 @@ const ConferenceListPage: React.FC<Props> = ({
   const [online, setOnline] = useState<OnlineOptions>('hybrid')
   const [startDate, setStartDate] = useState<Date | null>(null)
   const [endDate, setEndDate] = useState<Date | null>(null)
+  const endDatePickerRef = useRef<DatePicker>(null)
 
   const handleStartDateSelect = (date: Date | null) => {
     if (date) {
@@ -98,6 +99,10 @@ const ConferenceListPage: React.FC<Props> = ({
       if (endDate && date > endDate) {
         setEndDate(null)
       }
+      // Auto-focus on end date picker after selecting start date
+      setTimeout(() => {
+        endDatePickerRef.current?.setFocus()
+      }, 100)
     }
   }
 
@@ -236,6 +241,7 @@ const ConferenceListPage: React.FC<Props> = ({
                 placeholderText='Start Date'
               />
               <DatePicker
+                ref={endDatePickerRef}
                 selected={endDate}
                 onSelect={handleEndDateSelect}
                 onChange={() => {}}
