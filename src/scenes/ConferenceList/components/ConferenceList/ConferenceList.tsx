@@ -71,7 +71,7 @@ const ConferenceList: React.FC<Props> = ({
         // Only end date is set - show conferences that end on or before this date
         return conferenceEndDate <= endDate
       }
-      
+
       return true
     })
   }
