@@ -228,7 +228,7 @@ const ConferenceListPage: React.FC<Props> = ({
       >
         <Configure hitsPerPage={hitsPerPage} filters={algoliaFilter} />
         <div className={styles.RefinementsWrapper}>
-          <p className={styles.HeaderLinks}>
+          <div className={styles.HeaderLinks}>
             {(showPast || showCFP) && <Link url='/'>Upcoming conferences</Link>}
             {!showCFP && <Link url='/cfp'>Call for Papers</Link>}
             {!showPast && <Link url='/past'>Past conferences</Link>}
@@ -239,7 +239,7 @@ const ConferenceListPage: React.FC<Props> = ({
               Add a conference
             </Link>
             <GithubStar />
-          </p>
+          </div>
 
           <div className={styles.searchAndDate}>
             <Search />
