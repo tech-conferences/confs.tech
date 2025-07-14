@@ -1,4 +1,4 @@
-import { isFuture, isToday, parseISO } from 'date-fns'
+import { parseISO, isFuture, isToday } from 'date-fns'
 import { filter } from 'lodash'
 import React from 'react'
 import { connectInfiniteHits } from 'react-instantsearch-dom'
@@ -41,6 +41,7 @@ const ConferenceList: React.FC<Props> = ({
       return isToday(cfpEndDate) || isFuture(cfpEndDate)
     }) as Conference[]
   }
+
   const confs = groupAndSortConferences(
     filteredConferences,
     sortBy,

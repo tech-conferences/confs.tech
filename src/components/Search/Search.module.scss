@@ -3,12 +3,25 @@
 @use 'src/components/style/foundation/colors' as colors;
 
 .Search {
+  width: 100%;
   margin-bottom: spacing.spacing();
 }
 
 :global {
   .ais-SearchBox-form {
     display: flex;
+  }
+
+  .ais-SearchBox-input {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid colors.color(gray, light);
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 0;
+    width: 100%;
   }
 
   .ais-SearchBox-submit,

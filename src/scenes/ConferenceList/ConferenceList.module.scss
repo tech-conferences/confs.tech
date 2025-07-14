@@ -86,3 +86,95 @@
     }
   }
 }
+
+.searchAndDate {
+  display: flex;
+  justify-content: space-between;
+  gap: spacing.spacing(loose);
+  align-items: flex-start;
+}
+
+.dateRangePicker {
+  display: none;
+  gap: spacing.spacing(tight);
+  align-items: center;
+  position: relative;
+
+  @include media.media(media.$media-query--mobile-up) {
+    display: flex;
+  }
+
+  input {
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid colors.color(gray, light);
+    border-radius: 4px;
+    font-size: 14px;
+    width: 140px;
+    margin: 0;
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  // Ensure React DatePicker wrapper aligns properly
+  :global(.react-datepicker-wrapper) {
+    display: block;
+
+    input {
+      width: 140px !important;
+      height: 40px !important;
+    }
+  }
+
+  // Dark mode styles for date picker inputs
+  :global(.theme--dark) & input {
+    background-color: rgb(32, 35, 39);
+    border-color: transparent;
+    color: white;
+
+    &:focus {
+      background-color: black;
+    }
+  }
+}
+
+.clearDateButton {
+  background: colors.color(gray, lighter);
+  border: 1px solid colors.color(gray, light);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  color: colors.color(gray, darker);
+  margin-left: spacing.spacing(extra-tight);
+  flex-shrink: 0;
+  padding: 0;
+  align-self: center;
+
+  &:hover {
+    background: colors.color(gray, light);
+    color: colors.color(gray, darker);
+  }
+
+  &:focus {
+    outline: 2px solid colors.color(accent, base);
+    outline-offset: 2px;
+  }
+
+  // Dark mode styles
+  :global(.theme--dark) & {
+    background: colors.color(gray, darker);
+    border-color: colors.color(gray, dark);
+    color: colors.color(gray, lighter);
+
+    &:hover {
+      background: colors.color(gray, dark);
+    }
+  }
+}

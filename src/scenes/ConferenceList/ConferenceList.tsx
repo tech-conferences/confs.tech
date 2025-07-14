@@ -1,7 +1,8 @@
 import algoliasearch from 'algoliasearch/lite'
 import { subMonths } from 'date-fns'
 import qs from 'qs'
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useState, useRef } from 'react'
+import DatePicker from 'react-datepicker'
 import {
   Configure,
   InstantSearch,
@@ -41,6 +42,8 @@ import {
   dateToTime,
   QUERY_SEPARATOR,
 } from './utils'
+
+import 'react-datepicker/dist/react-datepicker.css'
 
 const CURRENT_YEAR = new Date().getFullYear()
 const TODAY = new Date()
@@ -85,6 +88,32 @@ const ConferenceListPage: React.FC<Props> = ({
   const [hitsPerPage, setHitsPerPage] = useState(600)
   const [sortBy, setSortBy] = useState<SortBy>('startDate')
   const [online, setOnline] = useState<OnlineOptions>('hybrid')
+  const [startDate, setStartDate] = useState<Date | null>(null)
+  const [endDate, setEndDate] = useState<Date | null>(null)
+  const endDatePickerRef = useRef<DatePicker>(null)
+
+  const handleStartDateSelect = (date: Date | null) => {
+    if (date) {
+      setStartDate(date)
+      // If end date is before the new start date, clear end date
+      if (endDate && date > endDate) {
+        setEndDate(null)
+      }
+      // Auto-focus on end date picker after selecting start date
+      setTimeout(() => {
+        endDatePickerRef.current?.setFocus()
+      }, 100)
+    }
+  }
+
+  const handleEndDateSelect = (date: Date | null) => {
+    if (date) {
+      // Only set end date if it's after or equal to start date
+      if (!startDate || date >= startDate) {
+        setEndDate(date)
+      }
+    }
+  }
 
   const [sortDirection] = useState<SortDirection>(showPast ? 'desc' : 'asc')
   const [pastConferencePage, setPastConferencePage] = useState(
@@ -155,8 +184,22 @@ const ConferenceListPage: React.FC<Props> = ({
       filters += String(` AND online=${online === 'online' ? 1 : 0}`)
     }
 
+    // Add date range filtering to Algolia filter
+    if (startDate && endDate) {
+      // Both start and end dates are set
+      filters += String(
+        ` AND startDateUnix>=${dateToTime(startDate)} AND endDateUnix<=${dateToTime(endDate)}`,
+      )
+    } else if (startDate && !endDate) {
+      // Only start date is set - show conferences that start on or after this date
+      filters += String(` AND startDateUnix>=${dateToTime(startDate)}`)
+    } else if (!startDate && endDate) {
+      // Only end date is set - show conferences that end on or before this date
+      filters += String(` AND endDateUnix<=${dateToTime(endDate)}`)
+    }
+
     return filters
-  }, [showPast, online, pastConferencePage])
+  }, [showPast, online, pastConferencePage, startDate, endDate])
 
   const loadMore = () => {
     setHitsPerPage(hitsPerPage + 50)
@@ -185,7 +228,7 @@ const ConferenceListPage: React.FC<Props> = ({
       >
         <Configure hitsPerPage={hitsPerPage} filters={algoliaFilter} />
         <div className={styles.RefinementsWrapper}>
-          <p className={styles.HeaderLinks}>
+          <div className={styles.HeaderLinks}>
             {(showPast || showCFP) && <Link url='/'>Upcoming conferences</Link>}
             {!showCFP && <Link url='/cfp'>Call for Papers</Link>}
             {!showPast && <Link url='/past'>Past conferences</Link>}
@@ -196,8 +239,54 @@ const ConferenceListPage: React.FC<Props> = ({
               Add a conference
             </Link>
             <GithubStar />
-          </p>
-          <Search />
+          </div>
+
+          <div className={styles.searchAndDate}>
+            <Search />
+            <div className={styles.dateRangePicker}>
+              <DatePicker
+                selected={startDate}
+                onSelect={handleStartDateSelect}
+                onChange={() => {}}
+                selectsStart
+                startDate={startDate ?? undefined}
+                endDate={endDate ?? undefined}
+                maxDate={endDate ?? undefined}
+                placeholderText='Start Date'
+              />
+              <DatePicker
+                ref={endDatePickerRef}
+                selected={endDate}
+                onSelect={handleEndDateSelect}
+                onChange={() => {}}
+                selectsEnd
+                startDate={startDate ?? undefined}
+                endDate={endDate ?? undefined}
+                minDate={startDate ?? undefined}
+                placeholderText='End Date'
+              />
+              {(startDate || endDate) && (
+                <button
+                  className={styles.clearDateButton}
+                  onClick={() => {
+                    setStartDate(null)
+                    setEndDate(null)
+                    navigate(
+                      `?${qs.stringify({
+                        ...searchState,
+                        page: undefined,
+                      })}`,
+                    )
+                  }}
+                  title='Clear date range'
+                  type='button'
+                >
+                  ×
+                </button>
+              )}
+            </div>
+          </div>
+
           <RefinementList
             limit={40}
             attribute='topics'
