@@ -46,21 +46,3 @@
   font-size: 0.9em;
   margin: spacing.spacing(extra-loose);
 }
-
-.dateRangePicker {
-  display: flex !important;
-  flex-direction: row !important; // Force it to be in a row
-  gap: 0.5rem !important;
-  align-items: center !important;
-  padding: 0.5rem !important;
-
-  .customDatePicker {
-    border: 1px solid #d1d5db !important;
-    padding: 0.25rem !important;
-    width: auto !important;
-    max-width: 12rem !important;
-    height: 35px !important;
-    color: black !important;
-    border-radius: 0.375rem !important;
-  }
-}
