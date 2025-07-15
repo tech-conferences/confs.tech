@@ -113,7 +113,7 @@
     "@types/react-instantsearch-dom": "^6.12.9",
     "@types/react-recaptcha": "^2.3.3",
     "@types/react-router-dom": "^5.2.0",
-    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/eslint-plugin": "^8.37.0",
     "@typescript-eslint/parser": "^7.18.0",
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-import": "^2.31.0",
