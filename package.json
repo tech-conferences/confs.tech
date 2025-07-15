@@ -126,7 +126,7 @@
     "jest-watch-typeahead": "^3.0.1",
     "jsonlint": "^1.6.3",
     "latest-version": "^9.0.0",
-    "lint-staged": "^15.5.0",
+    "lint-staged": "^16.1.2",
     "sass": "^1.89.2",
     "source-map-loader": "^5.0.0",
     "typescript": "^5.5.4",
