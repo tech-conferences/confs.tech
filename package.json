@@ -29,7 +29,7 @@
     ]
   },
   "dependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
     "@svgr/webpack": "^8.1.0",
     "algoliasearch": "^4.25.2",
     "autoprefixer": "10.4.21",
