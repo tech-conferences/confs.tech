@@ -11,7 +11,7 @@ import {
   CurrentRefinements,
   connectStats,
 } from 'react-instantsearch-dom'
-import { useNavigate, useParams } from 'react-router'
+import { useNavigate, useParams } from 'react-router-dom'
 import {
   Divider,
   Heading,
