@@ -87,7 +87,7 @@ export const Maintainers: MaintainersDataInterface[] = [
     firstTxt: 'GitHub',
     secondLink: 'https://www.linkedin.com/in/1diazdev/',
     secondTxt: 'LinkedIn',
-    thirdLink: 'https://x.com/1diazdev',
+    thirdLink: 'https://x.com/JuanDiaz_427',
     thirdTxt: 'Twitter',
     fourthLink: 'https://jpdiaz.dev/',
     fourthTxt: 'Website',
