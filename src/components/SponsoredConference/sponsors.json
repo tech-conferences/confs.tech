@@ -139,5 +139,14 @@
     "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
     "sponsorDateStart": "2025-11-01",
     "sponsorDateEnd": "2026-01-01"
+  },
+  {
+    "name": "ÜberConf 2026",
+    "conferenceDate": "July 14 - 17 · Denver, U.S.A.",
+    "img": "/sponsors/uberconf.jpg",
+    "url": "https://uberconf.com",
+    "tagline": "The ultimate conference for software developers and architects",
+    "sponsorDateStart": "2026-01-01",
+    "sponsorDateEnd": "2026-05-31"
   }
 ]
