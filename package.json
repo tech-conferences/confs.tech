@@ -58,7 +58,7 @@
     "jest-resolve": "^30.0.2",
     "json5": "^2.2.3",
     "lodash": "^4.17.21",
-    "mini-css-extract-plugin": "^2.9.3",
+    "mini-css-extract-plugin": "^2.9.4",
     "object-assign": "4.1.1",
     "postcss": "^8.5.6",
     "postcss-flexbugs-fixes": "^5.0.2",
