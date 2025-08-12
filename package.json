@@ -78,7 +78,7 @@
     "react-instantsearch-dom": "^6.10.3",
     "react-recaptcha": "^2.3.7",
     "react-refresh": "^0.17.0",
-    "react-router": "^7.6.3",
+    "react-router": "^7.8.0",
     "react-router-dom": "^7.6.3",
     "react-select": "^5.10.2",
     "resolve": "^1.22.10",
