@@ -79,7 +79,7 @@
     "react-recaptcha": "^2.3.7",
     "react-refresh": "^0.17.0",
     "react-router": "^7.6.3",
-    "react-router-dom": "^7.6.3",
+    "react-router-dom": "^7.8.0",
     "react-select": "^5.10.2",
     "resolve": "^1.22.10",
     "resolve-url-loader": "^5.0.0",
