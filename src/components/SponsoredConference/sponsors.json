@@ -148,5 +148,14 @@
     "tagline": "The ultimate conference for software developers and architects",
     "sponsorDateStart": "2026-01-01",
     "sponsorDateEnd": "2026-05-31"
+  },
+  {
+    "name": "Blocked for: ArchConf 2026/Tech Leader Summit 2026",
+    "conferenceDate": "TODO",
+    "img": "",
+    "url": "",
+    "tagline": "TODO",
+    "sponsorDateStart": "2026-07-01",
+    "sponsorDateEnd": "2026-11-31"
   }
 ]
