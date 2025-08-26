@@ -107,7 +107,7 @@
     "@types/lodash": "^4.17.20",
     "@types/node": "24.3.0",
     "@types/qs": "^6.9.18",
-    "@types/react": "^19.1.10",
+    "@types/react": "^19.1.11",
     "@types/react-dom": "^19.1.6",
     "@types/react-helmet": "^6.1.11",
     "@types/react-instantsearch-dom": "^6.12.9",
