@@ -127,7 +127,7 @@
     "jsonlint": "^1.6.3",
     "latest-version": "^9.0.0",
     "lint-staged": "^16.1.2",
-    "sass": "^1.89.2",
+    "sass": "^1.91.0",
     "source-map-loader": "^5.0.0",
     "typescript": "^5.5.4",
     "webpack": "^5.99.7",
