@@ -31,7 +31,7 @@
   "dependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
     "@svgr/webpack": "^8.1.0",
-    "algoliasearch": "^4.25.2",
+    "algoliasearch": "^5.39.0",
     "autoprefixer": "10.4.21",
     "babel-jest": "^30.0.5",
     "babel-loader": "^10.0.0",
