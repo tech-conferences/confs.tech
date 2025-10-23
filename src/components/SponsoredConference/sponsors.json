@@ -132,11 +132,11 @@
     "sponsorDateEnd": "2025-11-01"
   },
   {
-    "name": "GitNation",
-    "conferenceDate": "11 remote conferences in 2025",
+    "name": "React Advanced",
+    "conferenceDate": "Nov 28 & Dec 1 (London & online)",
     "img": "/sponsors/gitnation.jpg",
-    "url": "https://portal.gitnation.org/multipass",
-    "tagline": "Multi pass from €160 a year - JSNation, React Summit, TypeScript congress and more!",
+    "url": "https://reactadvanced.com/?utm_source=website&utm_medium=confs.tech",
+    "tagline": "Deep dive into React, web dev, & AI with speakers from Latent.Space, Lynx, and O’Reilly Media. 🎟️ Use code TECH10 for 10% off.",
     "sponsorDateStart": "2025-11-01",
     "sponsorDateEnd": "2026-01-01"
   },
