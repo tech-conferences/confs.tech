@@ -13,6 +13,7 @@ export interface SponsoredConf {
   imgDark: string
   url: string
   tagline: string
+  promoCode?: string
   discountText?: string
   discountUrl?: string
   sponsorDateStart: string
@@ -53,7 +54,11 @@ const SponsoredConference = () => {
             </Link>
           </Heading>
           <p>{sponsorConference.conferenceDate}</p>
-          <p className={styles.Footer}>{sponsorConference.tagline}</p>
+          <p className={styles.Footer}>
+            {sponsorConference.tagline}
+            {sponsorConference.promoCode ? <br /> : null}
+            {sponsorConference.promoCode}
+          </p>
           <DiscountText
             text={sponsorConference.discountText}
             url={sponsorConference.discountUrl}
