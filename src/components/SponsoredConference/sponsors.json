@@ -134,11 +134,21 @@
   {
     "name": "React Advanced",
     "conferenceDate": "Nov 28 & Dec 1 (London & online)",
-    "img": "/sponsors/RADV_Sign_Black.png",
+    "img": "/sponsors/react-advanced-2025.png",
     "url": "https://reactadvanced.com/?utm_source=website&utm_medium=confs.tech",
     "tagline": "Dive deep into React, web dev, & AI with speakers from Latent.Space, Lynx, and O’Reilly Media.",
     "promoCode": "🎟️ Use code TECH10 for 10% off.",
     "sponsorDateStart": "2025-11-01",
+    "sponsorDateEnd": "2025-11-26"
+  },
+  {
+    "name": "React Summit 2026",
+    "conferenceDate": "June 12 & 16, 2026 | Amsterdam & Online",
+    "img": "/sponsors/react-summit-2026.png",
+    "url": "https://reactsummit.com/?utm_source=website&utm_medium=confstech",
+    "tagline": "Join 1,500+ React and JS engineers at the world’s biggest React conference. Learn from industry leaders, explore the latest trends, and connect with the global React community.",
+    "promoCode": "Early Bird tickets for React Summit 2026 are now live – and they’re the lowest they’ll ever be!",
+    "sponsorDateStart": "2025-11-27",
     "sponsorDateEnd": "2026-01-01"
   },
   {
