@@ -145,6 +145,7 @@
     "name": "React Summit 2026",
     "conferenceDate": "June 12 & 16, 2026 | Amsterdam & Online",
     "img": "/sponsors/react-summit-2026.png",
+    "imgDark": "/sponsors/react-summit-2026-dark.png",
     "url": "https://reactsummit.com/?utm_source=website&utm_medium=confstech",
     "tagline": "Join 1,500+ React and JS engineers at the world’s biggest React conference. Learn from industry leaders, explore the latest trends, and connect with the global React community.",
     "promoCode": "Early Bird tickets for React Summit 2026 are now live – and they’re the lowest they’ll ever be!",
