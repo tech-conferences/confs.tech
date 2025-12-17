@@ -155,18 +155,20 @@
   {
     "name": "ÜberConf 2026",
     "conferenceDate": "July 14 - 17 · Denver, U.S.A.",
-    "img": "/sponsors/uberconf.jpg",
+    "img": "/sponsors/uberconf_250_light.png",
+    "imgDark": "/sponsors/uberconf_250_dark.png",
     "url": "https://uberconf.com",
     "tagline": "The ultimate conference for software developers and architects",
     "sponsorDateStart": "2026-01-01",
     "sponsorDateEnd": "2026-05-31"
   },
   {
-    "name": "Blocked for: ArchConf 2026/Tech Leader Summit 2026",
+    "name": "ArchConf 2026/Tech Leader Summit 2026",
     "conferenceDate": "TODO",
-    "img": "",
+    "img": "/sponsors/archconf_250_light.png",
+    "imgDark": "/sponsors/archconf_250_dark.png",
     "url": "",
-    "tagline": "TODO",
+    "tagline": "Join 300+ Software Architects at the world’s premier Software Architecture Conference, ArchConf 2026 returning to Clearwater, FL on Dec 7-10th.  ArchConf 2026 brings together the brightest minds in software architecture for an immersive experience packed with cutting-edge insights, real-world solutions and hands-on learning opportunities.",
     "sponsorDateStart": "2026-07-01",
     "sponsorDateEnd": "2026-11-31"
   }
