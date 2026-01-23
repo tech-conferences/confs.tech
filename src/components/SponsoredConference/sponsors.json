@@ -171,5 +171,23 @@
     "tagline": "Join 300+ Software Architects at the world’s premier Software Architecture Conference, ArchConf 2026 returning to Clearwater, FL on Dec 7-10th.  ArchConf 2026 brings together the brightest minds in software architecture for an immersive experience packed with cutting-edge insights, real-world solutions and hands-on learning opportunities.",
     "sponsorDateStart": "2026-07-01",
     "sponsorDateEnd": "2026-11-31"
+  },
+  {
+    "name": "GitNation",
+    "conferenceDate": "Placeholder - September-November 2026",
+    "img": "/sponsors/gitnation.jpg",
+    "url": "https://portal.gitnation.org",
+    "tagline": "Placeholder sponsorship for September-November 2026",
+    "sponsorDateStart": "2026-09-01",
+    "sponsorDateEnd": "2026-12-01"
+  },
+  {
+    "name": "GitNation",
+    "conferenceDate": "Placeholder - February-April 2027",
+    "img": "/sponsors/gitnation.jpg",
+    "url": "https://portal.gitnation.org",
+    "tagline": "Placeholder sponsorship for February-April 2027",
+    "sponsorDateStart": "2027-02-01",
+    "sponsorDateEnd": "2027-05-01"
   }
 ]
