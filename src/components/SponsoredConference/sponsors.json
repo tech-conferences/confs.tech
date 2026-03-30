@@ -163,13 +163,13 @@
     "sponsorDateEnd": "2026-05-31"
   },
   {
-    "name": "ArchConf 2026/Tech Leader Summit 2026",
-    "conferenceDate": "TODO",
+    "name": "ArchConf 2026",
+    "conferenceDate": "December 7 - 10 · Clearwater, FL",
     "img": "/sponsors/archconf_250_light.png",
     "imgDark": "/sponsors/archconf_250_dark.png",
-    "url": "",
+    "url": "https://archconf.com/",
     "tagline": "Join 300+ Software Architects at the world’s premier Software Architecture Conference, ArchConf 2026 returning to Clearwater, FL on Dec 7-10th.  ArchConf 2026 brings together the brightest minds in software architecture for an immersive experience packed with cutting-edge insights, real-world solutions and hands-on learning opportunities.",
-    "sponsorDateStart": "2026-07-01",
+    "sponsorDateStart": "2026-05-01",
     "sponsorDateEnd": "2026-11-31"
   },
   {
