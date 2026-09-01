@@ -17,6 +17,10 @@
 
 .Date {
   margin-right: spacing.spacing(tight);
+
+  &.noMarginRight {
+    margin-right: 0;
+  }
 }
 
 .p {

@@ -17,6 +17,7 @@ export function getConferenceData(conference: Conference) {
     twitter,
     github,
     mastodon,
+    discountCode,
   } = conference
 
   return JSON.stringify({
@@ -31,5 +32,6 @@ export function getConferenceData(conference: Conference) {
     twitter: twitter !== '@' ? twitter : null,
     github: github !== '' ? github : null,
     mastodon: mastodon !== '' ? mastodon : null,
+    discountCode: discountCode !== '' ? discountCode : null,
   })
 }
