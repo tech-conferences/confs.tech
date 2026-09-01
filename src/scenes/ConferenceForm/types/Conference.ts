@@ -16,4 +16,5 @@ export interface Conference {
   twitter: string
   cocUrl: string
   offersSignLanguageOrCC: boolean
+  discountCode: string
 }

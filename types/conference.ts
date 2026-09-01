@@ -15,4 +15,5 @@ export interface Conference {
   cfpUrl: string
   cocUrl: string
   offersSignLanguageOrCC: boolean
+  discountCode: string
 }

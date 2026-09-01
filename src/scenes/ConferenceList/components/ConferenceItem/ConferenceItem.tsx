@@ -29,6 +29,7 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
       showCFP,
       offersSignLanguageOrCC,
       cocUrl,
+      discountCode,
     } = this.props
 
     return (
@@ -61,9 +62,15 @@ export default class ConferenceItem extends PureComponent<Props & Conference> {
             <p className={styles.p}>
               {Location(city, country, online)}
               <span aria-hidden='true'>・</span>
-              <span className={styles.Date}>
+              <span
+                className={classNames(
+                  styles.Date,
+                  discountCode && styles.noMarginRight,
+                )}
+              >
                 {formatDate(startDate, endDate)}
               </span>
+              {discountCode && <DiscountCode discountCode={discountCode} />}
             </p>
           </dd>
           {offersSignLanguageOrCC && (
@@ -151,7 +158,6 @@ function Twitter({ twitter }: TwitterProps) {
 interface MastodonProps {
   mastodon: string
 }
-
 function Mastodon({ mastodon }: MastodonProps) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_, username, domain] = mastodon.split('@')
@@ -165,6 +171,19 @@ function Mastodon({ mastodon }: MastodonProps) {
           @{username}
         </Link>
       </dd>
+    </>
+  )
+}
+
+interface DiscountCodeProps {
+  discountCode: string
+}
+
+function DiscountCode({ discountCode }: DiscountCodeProps) {
+  return (
+    <>
+      <span aria-hidden='true'>・</span>
+      <span>Discount code: {discountCode}</span>
     </>
   )
 }

@@ -93,6 +93,7 @@ const defaultConference: Conference = {
   github: '',
   mastodon: '',
   twitter: '@',
+  discountCode: '',
 }
 
 export enum ServerErrorEnum {
@@ -344,6 +345,7 @@ const ConferenceForm: React.FC = () => {
     startDate,
     endDate,
     cfpEndDate,
+    discountCode,
   } = conference
 
   return (
@@ -710,6 +712,21 @@ const ConferenceForm: React.FC = () => {
                 />
                 {errorFor('twitter', 'Should be formatted like @twitter')}
               </InputGroup>
+            </InputGroup>
+            <InputGroup>
+              <Divider />
+              <h4>Discount</h4>
+              <label htmlFor='discountCode'>Discount Code</label>
+              <input
+                type='text'
+                name='discountCode'
+                id='discountCode'
+                value={discountCode}
+                onChange={handleFieldChange}
+              />
+              <div className={styles.InputHint}>
+                Optional code attendees can use for a discount.
+              </div>
             </InputGroup>
             <InputGroup>
               <Divider />
