@@ -1,5 +1,6 @@
 export interface Conference {
   objectID: string
+  _geoloc?: { lat: number; lng: number }
   name: string
   online: boolean
   topics: string[]

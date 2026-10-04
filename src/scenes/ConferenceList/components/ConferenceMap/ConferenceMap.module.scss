@@ -1,0 +1,338 @@
+@use 'src/components/style/foundation/colors' as colors;
+@use 'src/components/style/foundation/spacing' as spacing;
+
+.MapSection {
+  padding: spacing.spacing(base) 0;
+}
+
+.MapHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: spacing.spacing(base);
+  margin-bottom: spacing.spacing(tight);
+
+  h2,
+  p {
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+  }
+
+  p {
+    margin-top: 4px;
+    color: colors.color(gray, dark);
+    font-size: 0.85rem;
+  }
+}
+
+.ExpandButton {
+  flex: 0 0 auto;
+  border: 1px solid colors.color(gray, light);
+  background: transparent;
+  color: inherit;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    border-color: colors.color(accent, base);
+  }
+}
+
+.MapViewport {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid colors.color(gray, light);
+  border-radius: 8px;
+  background: #e8edf0;
+  transition: height 220ms ease;
+
+  &.Expanded {
+    height: min(620px, 70vh);
+  }
+}
+
+.MapCanvas {
+  width: 100%;
+  height: 100%;
+
+  :global(.leaflet-popup-content-wrapper) {
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgb(22 37 62 / 9%);
+    border-radius: 16px;
+    background: colors.color(background, light);
+    box-shadow: 0 16px 40px rgb(20 35 60 / 24%), 0 3px 10px rgb(20 35 60 / 10%);
+  }
+
+  :global(.leaflet-popup-content) {
+    width: 258px !important;
+    max-width: calc(100vw - 88px);
+    margin: 0;
+  }
+
+  :global(.leaflet-popup-tip) {
+    background: colors.color(background, light);
+    box-shadow: 3px 3px 8px rgb(20 35 60 / 12%);
+  }
+
+  :global(.leaflet-popup-close-button) {
+    top: 12px !important;
+    right: 12px !important;
+    width: 30px !important;
+    height: 30px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #f2f5f9;
+    color: #546179 !important;
+    font: 22px/1 Arial, sans-serif !important;
+    transition:
+      background 140ms ease,
+      color 140ms ease;
+
+    &:hover {
+      background: #e5ebf4;
+      color: #17243d !important;
+    }
+  }
+}
+
+.CityMarker {
+  border: 0;
+  background: transparent;
+  white-space: nowrap;
+
+  .MarkerPill {
+    min-width: 44px;
+    max-width: 190px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 5px 4px 12px;
+    border: 1px solid rgb(255 255 255 / 95%);
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgb(20 35 60 / 26%), 0 1px 3px rgb(20 35 60 / 16%);
+    color: #17243d;
+    cursor: pointer;
+    transition:
+      box-shadow 140ms ease,
+      transform 140ms ease;
+
+    &:hover {
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 6px 16px rgb(20 35 60 / 30%);
+    }
+  }
+
+  .PillCity {
+    overflow: hidden;
+    max-width: 132px;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: 650;
+  }
+
+  .PillCount {
+    min-width: 25px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+    border-radius: 999px;
+    background: #315bd6;
+    color: white;
+    font-size: 11px;
+    font-weight: 750;
+  }
+}
+
+.ClusterMarker {
+  border: 0;
+  background: transparent;
+
+  .ClusterPill {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(255 255 255 / 95%);
+    border-radius: 50%;
+    background: #263e8c;
+    box-shadow: 0 3px 12px rgb(20 35 60 / 30%);
+    color: white;
+    font-size: 13px;
+    font-weight: 750;
+    transition:
+      transform 140ms ease,
+      box-shadow 140ms ease;
+  }
+
+  &:hover .ClusterPill {
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgb(20 35 60 / 36%);
+  }
+}
+
+.Popup {
+  color: #17243d;
+}
+
+.PopupHeader {
+  padding: 18px 52px 14px 18px;
+  border-bottom: 1px solid #edf0f5;
+  background: linear-gradient(135deg, #fff 0%, #f7f9fc 100%);
+}
+
+.PopupTitle {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.PopupSummary {
+  display: inline-block;
+  margin-top: 6px;
+  color: #67748a;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.PopupList {
+  max-height: 190px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 5px 10px 10px;
+  list-style: none;
+}
+
+.PopupListItem {
+  & + & {
+    border-top: 1px solid #edf0f5;
+  }
+
+  a {
+    display: block;
+    position: relative;
+    padding: 11px 25px 11px 9px;
+    border-radius: 7px;
+    color: #1767a5;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 1.35;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition:
+      background 120ms ease,
+      color 120ms ease;
+
+    &::after {
+      content: '↗';
+      position: absolute;
+      top: 10px;
+      right: 8px;
+      color: #9aa7b8;
+      font-size: 13px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: #f0f6fc;
+      color: #0d4f84;
+      text-decoration: none;
+    }
+  }
+}
+
+:global(.theme--dark) .MapCanvas {
+  :global(.leaflet-popup-content-wrapper),
+  :global(.leaflet-popup-tip) {
+    background: #202630;
+    border-color: rgb(255 255 255 / 9%);
+  }
+
+  :global(.leaflet-popup-close-button) {
+    background: #303a49;
+    color: #dae2ef !important;
+
+    &:hover {
+      background: #3c485a;
+      color: white !important;
+    }
+  }
+}
+
+:global(.theme--dark) .Popup {
+  color: #edf2fa;
+}
+
+:global(.theme--dark) .PopupHeader {
+  border-color: #343e4c;
+  background: linear-gradient(135deg, #202630 0%, #252e3b 100%);
+}
+
+:global(.theme--dark) .PopupSummary {
+  color: #aebbd0;
+}
+
+:global(.theme--dark) .PopupListItem {
+  & + & {
+    border-color: #343e4c;
+  }
+
+  a {
+    color: #78bdf0;
+
+    &::after {
+      color: #8695aa;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: #2b3747;
+      color: #a7d5fb;
+    }
+  }
+}
+
+:global(.theme--dark) {
+  .MapHeader p {
+    color: colors.color(gray, lighter);
+  }
+
+  .MapViewport {
+    border-color: colors.color(gray, dark);
+  }
+}
+
+@media (max-width: 600px) {
+  .MapHeader {
+    align-items: flex-start;
+  }
+
+  .MapHeader h2 {
+    font-size: 1rem;
+  }
+
+  .ExpandButton {
+    padding: 7px 9px;
+  }
+
+  .MapViewport.Expanded {
+    height: 65vh;
+  }
+}

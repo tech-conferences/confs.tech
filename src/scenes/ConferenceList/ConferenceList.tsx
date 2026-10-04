@@ -34,6 +34,7 @@ import {
   CFPHeader,
   OpenCollectiveContribution,
 } from './components'
+import { ConferenceMap } from './components/ConferenceMap'
 import {
   transformTopicRefinements,
   transformCountryRefinements,
@@ -323,6 +324,7 @@ const ConferenceListPage: React.FC<Props> = ({
             />
           </div>
 
+          <ConferenceMap />
           <SponsoredConference />
 
           <Divider />
