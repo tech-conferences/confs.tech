@@ -29,7 +29,7 @@
     ]
   },
   "dependencies": {
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.3",
     "@svgr/webpack": "^8.1.0",
     "algoliasearch": "^4.25.2",
     "autoprefixer": "10.4.23",
@@ -39,12 +39,12 @@
     "babel-preset-react-app": "^10.0.1",
     "babel-runtime": "6.26.0",
     "bfj": "^9.1.2",
-    "browserslist": "^4.24.5",
+    "browserslist": "^4.29.3",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "chalk": "5.6.2",
     "classnames": "^2.2.5",
     "css-loader": "^6.11.0",
-    "css-minimizer-webpack-plugin": "^7.0.2",
+    "css-minimizer-webpack-plugin": "^8.0.0",
     "date-fns": "^4.1.0",
     "dotenv": "^17.0.1",
     "dotenv-expand": "^12.0.2",
@@ -57,17 +57,17 @@
     "identity-obj-proxy": "^3.0.0",
     "jest-resolve": "^30.0.2",
     "json5": "^2.2.3",
-    "lodash": "^4.17.21",
+    "lodash": "^4.18.1",
     "mini-css-extract-plugin": "^2.9.4",
     "object-assign": "4.1.1",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.29",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^8.1.1",
     "postcss-normalize": "^13.0.1",
     "postcss-preset-env": "^10.2.4",
     "promise": "8.3.0",
     "prompts": "^2.4.2",
-    "qs": "^6.14.0",
+    "qs": "^6.16.0",
     "react": "^19.2.0",
     "react-app-polyfill": "^3.0.0",
     "react-datepicker": "^8.3.0",
@@ -78,8 +78,8 @@
     "react-instantsearch-dom": "^6.10.3",
     "react-recaptcha": "^2.3.7",
     "react-refresh": "^0.17.0",
-    "react-router": "^7.8.1",
-    "react-router-dom": "^7.8.2",
+    "react-router": "^7.18.4",
+    "react-router-dom": "^7.18.4",
     "react-select": "^5.10.2",
     "resolve": "^1.22.10",
     "resolve-url-loader": "^5.0.0",
@@ -88,16 +88,16 @@
     "source-map-loader": "^5.0.0",
     "style-loader": "^4.0.0",
     "tailwindcss": "^4.1.11",
-    "terser-webpack-plugin": "^5.3.14",
+    "terser-webpack-plugin": "^5.6.1",
     "underscore": "^1.13.7",
     "webpack": "^5.99.7",
-    "webpack-dev-server": "^5.2.1",
+    "webpack-dev-server": "^6.0.0",
     "webpack-manifest-plugin": "^5.0.1",
-    "workbox-webpack-plugin": "^7.3.0"
+    "workbox-webpack-plugin": "^7.4.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
-    "@babel/core": "^7.28.0",
+    "@babel/core": "^7.29.7",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-modules-commonjs": "^7.27.1",
     "@babel/preset-env": "^7.28.0",
@@ -131,7 +131,7 @@
     "source-map-loader": "^5.0.0",
     "typescript": "^5.5.4",
     "webpack": "^5.99.7",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^6.0.0"
   },
   "browserslist": {
     "production": [
@@ -147,7 +147,7 @@
   },
   "resolutions": {
     "json5": "^2.2.3",
-    "lodash": "^4.17.21"
+    "lodash": "^4.18.1"
   },
   "overrides": {
     "react-instantsearch-dom": {
