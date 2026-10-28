@@ -180,5 +180,14 @@
     "tagline": "Placeholder sponsorship for February-April 2027",
     "sponsorDateStart": "2027-02-01",
     "sponsorDateEnd": "2027-04-30"
+  },
+  {
+    "name": "GitNation",
+    "conferenceDate": "Placeholder - August-October 2027",
+    "img": "/sponsors/gitnation.jpg",
+    "url": "https://portal.gitnation.org",
+    "tagline": "Placeholder sponsorship for February-April 2027",
+    "sponsorDateStart": "2027-08-01",
+    "sponsorDateEnd": "2027-10-30"
   }
 ]
