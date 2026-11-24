@@ -113,8 +113,23 @@ export default function SponsorshipPage() {
       </p>
       <ul className={styles.SponsorList}>
         <li>
-          <Link external url='https://www.dotconferences.com/'>
-            dotConferences
+          <Link external url='https://archconf.com/'>
+            ArchConf
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://bigdataconference.eu/'>
+            BigData Europe
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://c3fest.com/'>
+            C3 Dev Festival
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://devdays.lt/'>
+            DevDays Europe
           </Link>
         </li>
         <li>
@@ -123,13 +138,43 @@ export default function SponsorshipPage() {
           </Link>
         </li>
         <li>
+          <Link external url='https://www.dotconferences.com/'>
+            dotConferences
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://portal.gitnation.org/'>
+            GitNation
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://jsnation.com/'>
+            JSNation
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://sessionize.com/nodes-2024/'>
+            Nodes 24
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://reactadvanced.com/'>
+            React Advanced
+          </Link>
+        </li>
+        <li>
+          <Link external url='https://reactsummit.com/'>
+            React Summit
+          </Link>
+        </li>
+        <li>
           <Link external url='https://testcon.lt/'>
             TestCon Europe
           </Link>
         </li>
         <li>
-          <Link external url='https://bigdataconference.eu/'>
-            BigData Europe
+          <Link external url='https://uberconf.com/'>
+            ÜberConf
           </Link>
         </li>
       </ul>
