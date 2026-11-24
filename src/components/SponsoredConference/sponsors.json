@@ -189,5 +189,14 @@
     "tagline": "Placeholder sponsorship for February-April 2027",
     "sponsorDateStart": "2027-08-01",
     "sponsorDateEnd": "2027-10-30"
+  },
+  {
+    "name": "Spring I/O 2027",
+    "conferenceDate": "29–30 April 2027",
+    "img": "/sponsors/gitnation.jpg",
+    "url": "https://2027.springio.net/",
+    "tagline": "Placeholder sponsorship for December 2026-January 2027",
+    "sponsorDateStart": "2026-12-01",
+    "sponsorDateEnd": "2027-01-31"
   }
 ]
